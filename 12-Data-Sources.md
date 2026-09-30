@@ -61,3 +61,54 @@ cheap or free sources plausible.
 
 Free tiers for the backtest and shadow mode. Decide on a paid plan only after
 results show the edge exists.
+
+## More alternatives found (second search round)
+
+Still from search summaries; none tested yet (sandbox network blocks them).
+
+### Football / general sports
+
+| Provider | Reported | Fit for us |
+|---|---|---|
+| Sportmonks | From ~EUR 29/month (entry plan covers only ~5 leagues), 2,300+ competitions, multi-source validation | Solid paid option after backtest |
+| API-Football | Free (100 req/day) or ~$19/month | Cheapest upgrade path |
+| football-data.org | Free; ~$30/month paid tier for 12 competitions | Good for learning |
+| TheSportsDB | Free tier; ~$9/month | Community-maintained, less reliable; use only as a weak extra check |
+| iSports API | Claimed balance of cost, coverage, historical depth | Worth testing |
+| Goalserve, Highlightly, SportsDataIO | Mentioned as alternatives | Check later |
+| Sportradar | Enterprise, custom annual contracts | Too expensive; but note Polymarket uses Sportradar data for MLB |
+
+### Esports
+
+| Provider | Reported | Fit for us |
+|---|---|---|
+| Liquipedia API | Free tier, many titles, history back to 2000s | Good for results and backtest history; check rate rules |
+| OpenDota | Dota 2 pro matches: winner, score, length | Free, Dota only |
+| Riot (LoL esports) | Live data from the official lolesports API | Official source for LoL |
+| Abios | Industry esports data, 20 titles | Paid |
+| PandaScore | See above | Free plan = schedules/results only |
+| bo3.gg | Mentioned, few details | Check later |
+| OddsPapi | Free esports odds from many bookmakers (incl. Pinnacle) | Price reference, not results |
+
+## Key insight: check the source Polymarket itself uses
+
+Polymarket resolves from a **hierarchy of official sources**: first the
+governing body or tournament organiser, then official scorecards and databases,
+then major outlets (AP, Reuters, ESPN, BBC Sport) and data providers. Examples:
+cricket via ESPN Cricinfo, FIFA World Cup via fifa.com, MLB with official
+Sportradar data. So the best "second opinion" is the **official league or
+tournament result**, not only a third-party API. Each market's rules text names
+its resolution source; our mapper should read it.
+
+## Idea: Kalshi as an extra independent signal (unverified)
+
+Kalshi has a public market-data API (no key for reads) with status stages
+"determined" (result known, settlement timer running) and "finalized" (paid).
+For the same match, a Kalshi "determined" state could be a third independent
+confirmation. Needs testing; Kalshi resolution is typically within hours.
+
+## Speed reminder
+
+Polymarket resolves sports fast (NBA median ~22 minutes; overall median ~41
+minutes). The buying window is short, so provider **delay** matters: measure
+how many minutes after the real end each provider reports "finished".

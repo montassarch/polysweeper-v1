@@ -64,6 +64,8 @@ class Shadow:
         OUT.mkdir(parents=True, exist_ok=True)
         self.snap_f = (OUT / "snapshots.jsonl").open("a")
         self.trade_f = (OUT / "trades.jsonl").open("a")
+        self.event_f = (OUT / "events.jsonl").open("a")
+        self.last_event_state = {}
         self.state_path = OUT / "state.json"
         self.state = json.loads(self.state_path.read_text()) if self.state_path.exists() else {"pending": {}, "entered": []}
         all_l = leagues()
@@ -110,6 +112,7 @@ class Shadow:
         for mid, info in list(self.markets.items()):
             e, m = info["event"], info["market"]
             ev_state = {"live": e.get("live"), "ended": e.get("ended"), "score": e.get("score"), "period": e.get("period")}
+            self.note_event_state(e, info["league"], ev_state)
             for idx, tok in enumerate(info["tokens"]):
                 book = get_json(f"{CLOB}/book?token_id={tok}")
                 if not book:
@@ -118,7 +121,7 @@ class Shadow:
                 bids = book.get("bids", [])
                 best_ask = min((float(a["price"]) for a in asks), default=None)
                 best_bid = max((float(b["price"]) for b in bids), default=None)
-                if best_ask is None or best_ask < WATCH_MIN_ASK:
+                if best_ask is None or best_ask < WATCH_MIN_ASK or best_ask > self.limits.price_max:
                     continue
                 snap = {"ts": now_iso(), "market_id": mid, "league": info["league"], "outcome": info["outcomes"][idx],
                         "best_ask": best_ask, "best_bid": best_bid,
@@ -128,6 +131,15 @@ class Shadow:
                 self.log(self.snap_f, snap)
                 self.counters["snapshots"] += 1
                 self.maybe_enter(mid, tok, idx, info, e, best_ask, asks, ev_state)
+
+    def note_event_state(self, e, league, ev_state):
+        """Log when a match goes live / ends. Gives true start and end times."""
+        eid = e.get("id")
+        sig = (ev_state["live"], ev_state["ended"], ev_state["period"])
+        if self.last_event_state.get(eid) != sig:
+            self.last_event_state[eid] = sig
+            self.log(self.event_f, {"ts": now_iso(), "event_id": eid, "league": league,
+                                    "title": e.get("title"), "state": ev_state})
 
     def maybe_enter(self, mid, tok, idx, info, e, best_ask, asks, ev_state):
         L = self.limits

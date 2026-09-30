@@ -32,6 +32,7 @@ Obsidian Git plugin) and the `[[wikilinks]]` below will work.
 - [[14-Real-Data-Findings]] — first look at real Polymarket data (min order size, resolution sources, price behaviour)
 - [[15-First-Real-Backtest]] — first real results on esports: win rates, timing, honest caveats
 - [[16-Football-Results-and-Shadow-Mode]] — football results and the shadow mode tool
+- [[17-Run-Shadow-On-Your-PC]] — how to run shadow mode on your Windows PC
 - [[Sources]] — every link used
 
 ## Reliability warning

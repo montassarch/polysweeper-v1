@@ -1,0 +1,21 @@
+{
+  "bankroll": 50.0,
+  "max_stake_per_trade": 2.0,
+  "max_open_total": 15.0,
+  "max_open_per_sport": 6.0,
+  "max_trades_per_market": 2,
+  "daily_loss_limit": 3.0,
+  "pause_on_loss": true,
+  "price_min": 0.96,
+  "price_max": 0.995,
+  "depth_fraction": 0.25,
+  "min_shares": 1.0,
+  "min_net_edge": 0.005,
+  "fee_rate": 0.05,
+  "min_sources": 2,
+  "confirm_minutes": 10,
+  "max_data_age_minutes": 15,
+  "min_mapping_confidence": 0.95,
+  "enabled_sports": ["football", "esports"],
+  "allowed_market_types": ["moneyline"]
+}

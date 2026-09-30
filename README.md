@@ -28,6 +28,7 @@ Obsidian Git plugin) and the `[[wikilinks]]` below will work.
 - [[10-Friend-Bot-Brainstorm]] — the after-the-match sweeper idea, architecture, kill switch
 - [[11-V1-Plan-Simple]] — the v1 plan in plain language, risk rules, backtest plan
 - [[12-Data-Sources]] — Polymarket data and sports results APIs
+- [[13-Code-Overview]] — what the code does, in plain language (code is in `code/`)
 - [[Sources]] — every link used
 
 ## Reliability warning

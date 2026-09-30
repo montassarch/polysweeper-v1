@@ -26,6 +26,8 @@ Obsidian Git plugin) and the `[[wikilinks]]` below will work.
 - [[08-Strategy-Catalog]] — every strategy type found, to study one by one
 - [[09-Sports-Markets]] — sports focus: how they work and which strategies fit
 - [[10-Friend-Bot-Brainstorm]] — the after-the-match sweeper idea, architecture, kill switch
+- [[11-V1-Plan-Simple]] — the v1 plan in plain language, risk rules, backtest plan
+- [[12-Data-Sources]] — Polymarket data and sports results APIs
 - [[Sources]] — every link used
 
 ## Reliability warning

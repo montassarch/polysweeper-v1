@@ -36,3 +36,18 @@ Back to [[README]]
 - [ ] Create `Polysweep-V2` manually if still wanted (session cannot).
 - [ ] Open this folder as an Obsidian vault (or use the Obsidian Git plugin).
 - [ ] Never commit keys: add `.env` to `.gitignore` before any code exists.
+
+## Owner's answers (2026-09-30)
+
+- Building own version from scratch; friend's code not used.
+- Does not code; needs plain-language explanations.
+- Backtest with fake $50; real money later.
+- Country: Tunisia.
+- Sports: esports and football first, then all sports.
+- Risk: wants to avoid losses; risk management is a priority.
+- Uses Telegram; will pay for a data API after the backtest.
+- Goal: learn and profit; start small, improve gradually.
+- Still to ask the friend (on hold): which results API, how long after the end
+  he buys, price range, how often he lost.
+
+See [[11-V1-Plan-Simple]].

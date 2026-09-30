@@ -37,3 +37,12 @@ From search summaries:
 - [ ] Read the current Terms of Use and geoblock doc
       (https://docs.polymarket.com/api-reference/geoblock).
 - [ ] Decide on tax record-keeping.
+
+## Tunisia (owner's location)
+
+- One source lists **Tunisia as accessible** (not on the restricted list) as
+  of mid-2026. Confirm on the official geoblock page before anything else.
+- Do **not** use a VPN to bypass geoblocks; the terms forbid it.
+- **Not researched yet:** Tunisian rules on crypto and foreign exchange, how to
+  fund a wallet with pUSD from Tunisia, and tax treatment. Check local law.
+- Sources: see [[Sources]] (Tunisia/geoblock section).

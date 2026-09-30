@@ -31,3 +31,15 @@ Back to [[README]].
 - Pushing from the session was refused: Claude GitHub App not installed on
   the repo (https://github.com/apps/claude/installations/select_target).
 - Notes are committed locally only until both are fixed.
+
+## Later in 2026-09-30
+
+- Pushed notes to the now-private repo; installed Obsidian Git plugin.
+- Listed 13 strategy types ([[08-Strategy-Catalog]]); focused on sports
+  ([[09-Sports-Markets]]).
+- Brainstormed the friend's after-the-match sweeper
+  ([[10-Friend-Bot-Brainstorm]]).
+- Owner answered setup questions; wrote [[11-V1-Plan-Simple]] and
+  [[12-Data-Sources]]. Found: Tunisia listed accessible; 50/50 resolution
+  rule for forfeits/cancellations; fee is tiny near 0.99; price history has
+  no depth data.

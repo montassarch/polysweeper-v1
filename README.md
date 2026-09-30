@@ -1,0 +1,34 @@
+---
+title: PolySweeper Vault — Index
+tags: [polysweeper, polymarket, index]
+created: 2026-09-30
+---
+
+# PolySweeper (v1) — Research Vault
+
+Research notes on building a **Polymarket "sweeper" bot**. This folder is an
+Obsidian vault: open the repo folder in Obsidian (or sync it with the
+Obsidian Git plugin) and the `[[wikilinks]]` below will work.
+
+> Status: **research phase, nothing built yet.** Started 2026-09-30.
+> Author knows nothing about the topic yet, so notes start from zero.
+
+## Map of content
+
+- [[00-Session-Log]] — what was asked and decided, in order
+- [[01-What-is-a-Sweeper]] — plain-language explanation
+- [[02-Strategy-and-Math]] — how profit is made, formulas, examples
+- [[03-Risks]] — what can go wrong (read before anything else)
+- [[04-Technical-Stack]] — APIs, SDKs, wallets, rate limits
+- [[05-Fees-and-Costs]] — Polymarket fee structure
+- [[06-Legal-and-Compliance]] — jurisdictions, terms of use
+- [[07-Open-Questions-and-Next-Steps]] — what to do next
+- [[Sources]] — every link used
+
+## Reliability warning
+
+Facts in this vault come from **web-search summaries of secondary sources**
+(blogs, Medium, Substack, vendor pages). Polymarket's own docs could not be
+fetched directly in the research environment (network blocked), so nothing
+here is verified against primary docs yet. Treat numbers as leads to verify,
+not as facts. Many "make $1,000 a day" articles are promotional.

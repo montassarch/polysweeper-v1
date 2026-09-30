@@ -1,0 +1,4 @@
+.env
+*.key
+.obsidian/workspace*.json
+.DS_Store

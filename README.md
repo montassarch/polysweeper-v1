@@ -29,6 +29,7 @@ Obsidian Git plugin) and the `[[wikilinks]]` below will work.
 - [[11-V1-Plan-Simple]] — the v1 plan in plain language, risk rules, backtest plan
 - [[12-Data-Sources]] — Polymarket data and sports results APIs
 - [[13-Code-Overview]] — what the code does, in plain language (code is in `code/`)
+- [[14-Real-Data-Findings]] — first look at real Polymarket data (min order size, resolution sources, price behaviour)
 - [[Sources]] — every link used
 
 ## Reliability warning

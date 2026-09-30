@@ -36,3 +36,10 @@ Practical takeaways:
 - **Fee-free categories** (geopolitics/world events) are attractive for this
   strategy, but check resolution-risk there.
 - Crypto up/down markets carry the highest fee rate and the most tail risk.
+
+## Update: sports fees (conflicting source)
+
+One source reports the sports taker rate rose from 0.03 to **0.05 in July 2026**
+(max ~$1.25 per 100 shares) and the sports maker rebate fell from 25% to
+**15%**. Older sources say 0.03. Verify on the official docs. See
+[[09-Sports-Markets]].

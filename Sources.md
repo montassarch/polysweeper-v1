@@ -53,3 +53,16 @@ secondary/promotional; verify with Polymarket's own docs.
 - [Polymarket US Launched a Regulated API](https://casatrick.substack.com/p/polymarket-trading-bot-us-api-launch)
 - [Polymarket Geo Restrictions and 24/7 API Automation](https://tradingvps.io/polymarket-geo-restrictions-and-24-7-api-automation/)
 - [Polymarket Supported and Restricted Countries (2026)](https://www.datawallet.com/crypto/polymarket-restricted-countries)
+
+## Sports
+- [Polymarket NBA Markets 2026 (SI)](https://www.si.com/prediction-markets/reviews/polymarket-nba)
+- [Polymarket NFL Markets 2026 (SI)](https://www.si.com/prediction-markets/reviews/polymarket-nfl)
+- [How to Bet Esports on Polymarket](https://startpolymarket.com/guides/polymarket-esports/)
+- [Sports Betting Bots on Polymarket (QuantVPS)](https://www.quantvps.com/blog/automated-sports-betting-bots-on-polymarket)
+- [How Latency Impacts Polymarket Bot Performance](https://www.quantvps.com/blog/how-latency-impacts-polymarket-trading-performance)
+- [Order Lifecycle (Polymarket docs)](https://docs.polymarket.com/concepts/order-lifecycle)
+- [Broadcast-lag anecdote (Phemex)](https://phemex.com/news/article/algorithm-exploits-broadcast-lag-to-turn-5-into-37m-on-polymarket-53969)
+- [Polymarket sports fee change (iGaming Business)](https://igamingbusiness.com/prediction-markets/polymarket-sports-fee-hike-2026/)
+- [Maker Rebates Program (Polymarket docs)](https://docs.polymarket.com/programs/maker-rebates)
+- [Polymarket Arbitrage vs Sportsbooks (Laika Labs)](https://laikalabs.ai/prediction-markets/polymarket-arbitrage-sportsbooks)
+- [Cross-venue arbitrage scanner (GitHub)](https://github.com/VV1Git/sportstrades)

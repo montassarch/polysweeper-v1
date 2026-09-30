@@ -24,6 +24,7 @@ Obsidian Git plugin) and the `[[wikilinks]]` below will work.
 - [[06-Legal-and-Compliance]] — jurisdictions, terms of use
 - [[07-Open-Questions-and-Next-Steps]] — what to do next
 - [[08-Strategy-Catalog]] — every strategy type found, to study one by one
+- [[09-Sports-Markets]] — sports focus: how they work and which strategies fit
 - [[Sources]] — every link used
 
 ## Reliability warning

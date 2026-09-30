@@ -1,4 +1,4 @@
 .env
 *.key
-.obsidian/workspace*.json
+.obsidian/
 .DS_Store

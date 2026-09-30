@@ -3,3 +3,6 @@
 .obsidian/
 .DS_Store
 code/data/real/
+code/data/shadow/
+code/data/collect.log
+code/data/shadow_test.log

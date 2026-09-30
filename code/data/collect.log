@@ -1,3 +1,58 @@
 cs2: looked at 300 events, wrote 300 new moneyline markets -> data/real/cs2.jsonl
 lol: looked at 300 events, wrote 300 new moneyline markets -> data/real/lol.jsonl
 dota2: looked at 300 events, wrote 300 new moneyline markets -> data/real/dota2.jsonl
+val: looked at 300 events, wrote 300 new moneyline markets -> data/real/val.jsonl
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/user/polysweeper-v1/code/polysweeper/collector.py", line 172, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/user/polysweeper-v1/code/polysweeper/collector.py", line 167, in main
+    collect(lk, args.events)
+  File "/home/user/polysweeper-v1/code/polysweeper/collector.py", line 148, in collect
+    rec = market_record(ev, m, lg)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/polysweeper-v1/code/polysweeper/collector.py", line 98, in market_record
+    hist = price_history(tok, start, end)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/polysweeper-v1/code/polysweeper/collector.py", line 73, in price_history
+    h = get_json(f"{CLOB}/prices-history?market={token_id}&startTs={start}&endTs={end}&fidelity=1")
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/polysweeper-v1/code/polysweeper/collector.py", line 34, in get_json
+    with urllib.request.urlopen(req, timeout=40) as r:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 519, in open
+    response = self._open(req, data)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 536, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 1391, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 1352, in do_open
+    r = h.getresponse()
+        ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/http/client.py", line 1415, in getresponse
+    response.begin()
+  File "/usr/lib/python3.11/http/client.py", line 330, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/http/client.py", line 299, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+epl: looked at 800 events, wrote 64 new moneyline markets -> data/real/epl.jsonl
+lal: looked at 800 events, wrote 276 new moneyline markets -> data/real/lal.jsonl
+bun: looked at 800 events, wrote 393 new moneyline markets -> data/real/bun.jsonl
+sea: looked at 800 events, wrote 312 new moneyline markets -> data/real/sea.jsonl
+fl1: looked at 800 events, wrote 309 new moneyline markets -> data/real/fl1.jsonl
+ucl: looked at 800 events, wrote 342 new moneyline markets -> data/real/ucl.jsonl
+uel: looked at 800 events, wrote 345 new moneyline markets -> data/real/uel.jsonl
+por: looked at 800 events, wrote 732 new moneyline markets -> data/real/por.jsonl

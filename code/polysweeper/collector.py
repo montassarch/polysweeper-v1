@@ -10,6 +10,7 @@ Only read-only public endpoints are used. Be polite: small pause between calls.
 from __future__ import annotations
 
 import argparse
+import http.client
 import json
 import sys
 import time
@@ -42,7 +43,7 @@ def get_json(url: str, tries: int = 5):
             if e.code == 404:
                 return None
             raise
-        except (urllib.error.URLError, TimeoutError):
+        except (urllib.error.URLError, TimeoutError, ConnectionError, http.client.HTTPException, OSError):
             time.sleep(delay)
             delay *= 2
     return None

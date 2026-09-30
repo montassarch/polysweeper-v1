@@ -152,3 +152,19 @@ class BacktestTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class ShadowBookTests(unittest.TestCase):
+    def test_walk_book_fills_across_levels(self):
+        from polysweeper.shadow import walk_book
+        asks = [{"price": "0.97", "size": "3"}, {"price": "0.98", "size": "10"}, {"price": "0.999", "size": "50"}]
+        vwap, worst, avail = walk_book(asks, 5, 0.995)
+        self.assertAlmostEqual(vwap, (3 * 0.97 + 2 * 0.98) / 5)
+        self.assertEqual(worst, 0.98)
+        self.assertEqual(avail, 13)
+
+    def test_walk_book_thin_returns_none(self):
+        from polysweeper.shadow import walk_book
+        vwap, worst, avail = walk_book([{"price": "0.97", "size": "2"}, {"price": "0.999", "size": "50"}], 5, 0.995)
+        self.assertIsNone(vwap)
+        self.assertEqual(avail, 2)

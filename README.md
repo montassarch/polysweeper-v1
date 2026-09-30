@@ -25,6 +25,7 @@ Obsidian Git plugin) and the `[[wikilinks]]` below will work.
 - [[07-Open-Questions-and-Next-Steps]] — what to do next
 - [[08-Strategy-Catalog]] — every strategy type found, to study one by one
 - [[09-Sports-Markets]] — sports focus: how they work and which strategies fit
+- [[10-Friend-Bot-Brainstorm]] — the after-the-match sweeper idea, architecture, kill switch
 - [[Sources]] — every link used
 
 ## Reliability warning

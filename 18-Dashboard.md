@@ -21,6 +21,18 @@ backtest. It is generated on **your own PC** from your own result files, needs
 
 If the window shows an error, send me a screenshot of it.
 
+## Live mode (near-live, every 15 seconds)
+
+Double-click **`dashboard_live.bat`** instead. It opens the page, then rebuilds
+it every **15 seconds** and the page reloads itself. Leave its black window open
+next to the shadow-mode window; close it to stop.
+
+- 15 seconds is the practical floor: shadow mode itself reads new data every 15
+  seconds, so a faster dashboard would have nothing newer to show.
+- It is still a **local page on your PC**, not a website. You can't open it from
+  your phone.
+- Matches settle every few minutes, so most refreshes will look unchanged.
+
 ## What it shows
 
 **Shadow mode (live, real prices, pretend orders)**

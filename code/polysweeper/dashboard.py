@@ -10,8 +10,10 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import statistics
 import sys
+import time
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -103,14 +105,31 @@ def main(argv=None):
     ap.add_argument("--summary", default="data/backtest_summary.json")
     ap.add_argument("--config", default="config.json")
     ap.add_argument("--out", default="dashboard.html")
+    ap.add_argument("--watch", type=int, default=0, metavar="SECONDS",
+                    help="keep rebuilding every N seconds (min 5); the page reloads itself")
     a = ap.parse_args(argv)
+    refresh = max(5, a.watch) if a.watch else 0
+    try:
+        while True:
+            write_once(a, refresh)
+            if not refresh:
+                return 0
+            time.sleep(refresh)
+    except KeyboardInterrupt:
+        print("stopped")
+        return 0
+
+
+def write_once(a, refresh):
     data = build(a.shadow_dir, a.summary, a.config)
     payload = json.dumps(data).replace("</", "<\\/")
-    html = TEMPLATE.replace("__DATA__", payload)
-    Path(a.out).write_text(html, encoding="utf-8")
+    meta = f'<meta http-equiv="refresh" content="{refresh}">' if refresh else ""
+    html = TEMPLATE.replace("__DATA__", payload).replace("__REFRESH__", meta)
+    tmp = Path(a.out + ".tmp")
+    tmp.write_text(html, encoding="utf-8")
+    os.replace(tmp, a.out)                  # swap in one step so the browser never reads half a file
     k = data["shadow"]["kpi"]
-    print(f"wrote {a.out} | shadow: {k['entries']} pretend buys, {k['settled']} settled, P&L {k['pnl']:+.2f}")
-    return 0
+    print(f"{datetime.now().strftime('%H:%M:%S')} wrote {a.out} | shadow: {k['entries']} pretend buys, {k['settled']} settled, P&L {k['pnl']:+.2f}")
 
 
 TEMPLATE = r'''<!doctype html>
@@ -118,6 +137,7 @@ TEMPLATE = r'''<!doctype html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+__REFRESH__
 <title>PolySweeper Dashboard</title>
 <style>
 :root {

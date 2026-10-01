@@ -1,5 +1,11 @@
 """SHADOW MODE: watch live matches, place NO orders, record what would have happened.
 
+Two pretend strategies are recorded side by side:
+  price_only - buy when the real ask is 0.96-0.995 and 5 shares are for sale.
+  confirmed  - same, but ONLY when an outside source (ESPN for football, OpenDota
+               for Dota 2) confirms a normal finish with this token as winner AND
+               Polymarket has flagged the match as ended.
+
 For every token whose real best ask enters the sweep window, it "pretends" to buy
 the minimum order (5 shares) by walking the REAL order book, records the average
 fill price, fees, and whether Polymarket had already flagged the match as ended.
@@ -22,6 +28,7 @@ from pathlib import Path
 
 from .collector import CLOB, GAMMA, get_json, leagues, parse_ts
 from .config import Limits
+from .confirm import Confirmer
 from .fees import taker_fee
 from .killswitch import KillSwitch
 
@@ -72,6 +79,7 @@ class Shadow:
         self.series = {k: all_l[k]["series"] for k in league_keys if k in all_l}
         self.markets = {}          # market_id -> dict(event, market, tokens)
         self.counters = {"snapshots": 0, "entries": 0, "thin": 0, "settled": 0}
+        self.confirmer = Confirmer()
 
     # -- bookkeeping ---------------------------------------------------
     def save(self):
@@ -109,10 +117,12 @@ class Shadow:
 
     # -- polling -------------------------------------------------------
     def poll(self):
+        L = self.limits
         for mid, info in list(self.markets.items()):
-            e, m = info["event"], info["market"]
+            e = info["event"]
             ev_state = {"live": e.get("live"), "ended": e.get("ended"), "score": e.get("score"), "period": e.get("period")}
             self.note_event_state(e, info["league"], ev_state)
+            in_window = []
             for idx, tok in enumerate(info["tokens"]):
                 book = get_json(f"{CLOB}/book?token_id={tok}")
                 if not book:
@@ -121,16 +131,32 @@ class Shadow:
                 bids = book.get("bids", [])
                 best_ask = min((float(a["price"]) for a in asks), default=None)
                 best_bid = max((float(b["price"]) for b in bids), default=None)
-                if best_ask is None or best_ask < WATCH_MIN_ASK or best_ask > self.limits.price_max:
+                if best_ask is None or best_ask < WATCH_MIN_ASK or best_ask > L.price_max:
                     continue
-                snap = {"ts": now_iso(), "market_id": mid, "league": info["league"], "outcome": info["outcomes"][idx],
-                        "best_ask": best_ask, "best_bid": best_bid,
-                        "asks_top5": sorted(([float(a["price"]), float(a["size"])] for a in asks))[:5],
-                        "bids_top3": sorted(([float(b["price"]), float(b["size"])] for b in bids), reverse=True)[:3],
-                        "event": ev_state}
-                self.log(self.snap_f, snap)
+                self.log(self.snap_f, {"ts": now_iso(), "market_id": mid, "league": info["league"],
+                                       "outcome": info["outcomes"][idx], "best_ask": best_ask, "best_bid": best_bid,
+                                       "asks_top5": sorted(([float(a["price"]), float(a["size"])] for a in asks))[:5],
+                                       "bids_top3": sorted(([float(b["price"]), float(b["size"])] for b in bids), reverse=True)[:3],
+                                       "event": ev_state})
                 self.counters["snapshots"] += 1
-                self.maybe_enter(mid, tok, idx, info, e, best_ask, asks, ev_state)
+                if L.price_min <= best_ask <= L.price_max:
+                    in_window.append((idx, best_ask, asks))
+            if not in_window:
+                continue
+            # Rule 1: price only (buy when the real ask is in range and 5 shares are for sale)
+            for idx, best_ask, asks in in_window:
+                self.maybe_enter("price_only", mid, idx, info, best_ask, asks, ev_state, None)
+            # Rule 2: confirmed result (external source says this token won, normal finish,
+            #         AND Polymarket has flagged the match as ended)
+            win_idx, why = self.confirmer.winner_index(info["league"], e, info["market"], info["outcomes"])
+            if win_idx is not None and mid not in self.state.setdefault("confirmed_logged", []):
+                self.state["confirmed_logged"].append(mid)
+                self.log(self.event_f, {"ts": now_iso(), "type": "confirmed", "event_id": e.get("id"),
+                                        "market_id": mid, "league": info["league"], "winner_idx": win_idx,
+                                        "detail": why, "polymarket_ended": ev_state["ended"]})
+            for idx, best_ask, asks in in_window:
+                if win_idx == idx and ev_state["ended"] is True:
+                    self.maybe_enter("confirmed", mid, idx, info, best_ask, asks, ev_state, why)
 
     def note_event_state(self, e, league, ev_state):
         """Log when a match goes live / ends. Gives true start and end times."""
@@ -141,33 +167,32 @@ class Shadow:
             self.log(self.event_f, {"ts": now_iso(), "event_id": eid, "league": league,
                                     "title": e.get("title"), "state": ev_state})
 
-    def maybe_enter(self, mid, tok, idx, info, e, best_ask, asks, ev_state):
+    def maybe_enter(self, rule, mid, idx, info, best_ask, asks, ev_state, confirm_detail):
         L = self.limits
-        key = f"{mid}:{idx}"
+        key = f"{mid}:{idx}" if rule == "price_only" else f"C:{mid}:{idx}"
         if key in self.state["entered"]:
-            return
-        if not (L.price_min <= best_ask <= L.price_max):
             return
         vwap, worst, avail = walk_book(asks, L.min_shares, L.price_max)
         if vwap is None:
             self.counters["thin"] += 1
             self.state["entered"].append(key)       # count once
-            self.log(self.trade_f, {"type": "skip_thin", "ts": now_iso(), "key": key, "league": info["league"],
-                                    "question": info["market"].get("question"), "best_ask": best_ask,
-                                    "available_shares": avail, "event": ev_state})
+            self.log(self.trade_f, {"type": "skip_thin", "rule": rule, "ts": now_iso(), "key": key,
+                                    "league": info["league"], "question": info["market"].get("question"),
+                                    "best_ask": best_ask, "available_shares": avail, "event": ev_state})
             return
         rate = (info["market"].get("feeSchedule") or {}).get("rate") or L.fee_rate
         fee = taker_fee(L.min_shares, vwap, rate)
-        rec = {"type": "entry", "ts": now_iso(), "key": key, "market_id": mid, "league": info["league"],
-               "question": info["market"].get("question"), "outcome": info["outcomes"][idx],
+        rec = {"type": "entry", "rule": rule, "ts": now_iso(), "key": key, "market_id": mid, "token_idx": idx,
+               "league": info["league"], "question": info["market"].get("question"), "outcome": info["outcomes"][idx],
                "best_ask": best_ask, "vwap": vwap, "worst_price": worst, "shares": L.min_shares,
                "fee": fee, "cost": L.min_shares * vwap + fee, "available_shares": avail,
-               "event_ended_flag": ev_state["ended"], "event": ev_state}
+               "event_ended_flag": ev_state["ended"], "confirm": confirm_detail, "event": ev_state}
         self.log(self.trade_f, rec)
         self.state["entered"].append(key)
         self.state["pending"][key] = rec
         self.counters["entries"] += 1
-        print(f"[{now_iso()}] SHADOW BUY {rec['outcome']} | {rec['question'][:50]} | vwap {vwap:.3f} | ended_flag={ev_state['ended']}")
+        label = "CONFIRMED" if rule == "confirmed" else "PRICE-ONLY"
+        print(f"[{now_iso()}] SHADOW BUY ({label}) {rec['outcome']} | {(rec['question'] or '')[:50]} | vwap {vwap:.3f} | ended_flag={ev_state['ended']}")
         self.save()
 
     def settle(self):
@@ -179,13 +204,13 @@ class Shadow:
                 finals = [float(x) for x in json.loads(m["outcomePrices"])]
             except (KeyError, ValueError):
                 continue
-            idx = int(key.split(":")[1])
+            idx = rec.get("token_idx", int(key.split(":")[-1]))
             f = finals[idx]
             res = "win" if f >= 0.99 else "loss" if f <= 0.01 else "split"
             payout = {"win": 1.0, "loss": 0.0, "split": 0.5}[res] * rec["shares"]
             pnl = payout - rec["cost"]
-            self.log(self.trade_f, {"type": "settled", "ts": now_iso(), "key": key, "result": res, "pnl": pnl,
-                                    "closed_time": m.get("closedTime")})
+            self.log(self.trade_f, {"type": "settled", "ts": now_iso(), "key": key, "rule": rec.get("rule", "price_only"),
+                                    "result": res, "pnl": pnl, "closed_time": m.get("closedTime")})
             del self.state["pending"][key]
             self.counters["settled"] += 1
             print(f"[{now_iso()}] SETTLED {key}: {res} pnl {pnl:+.2f}")

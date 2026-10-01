@@ -32,29 +32,10 @@ def read_jsonl(path: Path):
     return out
 
 
-def build_shadow(shadow_dir: Path):
-    trades = read_jsonl(shadow_dir / "trades.jsonl")
-    events = read_jsonl(shadow_dir / "events.jsonl")
-    entries, settled, thin = {}, {}, 0
-    for r in trades:
-        t = r.get("type")
-        if t == "entry":
-            entries[r["key"]] = r
-        elif t == "settled":
-            settled[r["key"]] = r
-        elif t == "skip_thin":
-            thin += 1
-    rows = []
-    for key, e in entries.items():
-        s = settled.get(key)
-        rows.append({
-            "ts": e["ts"], "league": e.get("league"), "question": e.get("question"), "outcome": e.get("outcome"),
-            "vwap": e.get("vwap"), "best_ask": e.get("best_ask"), "available": e.get("available_shares"),
-            "ended_flag": e.get("event_ended_flag") is True,
-            "result": s["result"] if s else "pending", "pnl": s["pnl"] if s else None,
-            "settled_ts": s["ts"] if s else None,
-        })
-    rows.sort(key=lambda r: r["ts"])
+RULES = ("confirmed", "price_only")
+
+
+def summarize_rows(rows, thin):
     done = [r for r in rows if r["result"] != "pending"]
     kpi = {
         "entries": len(rows), "settled": len(done), "pending": len(rows) - len(done),
@@ -72,8 +53,42 @@ def build_shadow(shadow_dir: Path):
                          "losses": sum(r["result"] == "loss" for r in d),
                          "splits": sum(r["result"] == "split" for r in d),
                          "pnl": round(sum(r["pnl"] for r in d), 2)}
+    return {"kpi": kpi, "timing": timing}
+
+
+def build_shadow(shadow_dir: Path):
+    trades = read_jsonl(shadow_dir / "trades.jsonl")
+    events = read_jsonl(shadow_dir / "events.jsonl")
+    entries, settled, thin = {}, {}, {r: 0 for r in RULES}
+    for r in trades:
+        t = r.get("type")
+        if t == "entry":
+            entries[r["key"]] = r
+        elif t == "settled":
+            settled[r["key"]] = r
+        elif t == "skip_thin":
+            thin[r.get("rule", "price_only")] = thin.get(r.get("rule", "price_only"), 0) + 1
+    rows = []
+    for key, e in entries.items():
+        s = settled.get(key)
+        rows.append({
+            "rule": e.get("rule", "price_only"),
+            "ts": e["ts"], "league": e.get("league"), "question": e.get("question"), "outcome": e.get("outcome"),
+            "vwap": e.get("vwap"), "best_ask": e.get("best_ask"), "available": e.get("available_shares"),
+            "ended_flag": e.get("event_ended_flag") is True, "confirm": e.get("confirm"),
+            "result": s["result"] if s else "pending", "pnl": s["pnl"] if s else None,
+            "settled_ts": s["ts"] if s else None,
+        })
+    rows.sort(key=lambda r: r["ts"])
+    by_rule = {rule: summarize_rows([r for r in rows if r["rule"] == rule], thin.get(rule, 0)) for rule in RULES}
     ev = {}
+    confirmed_events = 0
     for r in events:
+        if r.get("type") == "confirmed":
+            confirmed_events += 1
+            continue
+        if "event_id" not in r or "state" not in r:
+            continue
         e = ev.setdefault(r["event_id"], {"first": r["ts"], "live": None, "ended": None})
         st = r.get("state", {})
         if st.get("live") and not e["live"]:
@@ -83,12 +98,11 @@ def build_shadow(shadow_dir: Path):
     durs = []
     for e in ev.values():
         if e["live"] and e["ended"]:
-            a = datetime.fromisoformat(e["live"])
-            b = datetime.fromisoformat(e["ended"])
-            durs.append((b - a).total_seconds() / 60)
+            durs.append((datetime.fromisoformat(e["ended"]) - datetime.fromisoformat(e["live"])).total_seconds() / 60)
     last = max([r["ts"] for r in trades] + [r["ts"] for r in events], default=None)
-    return {"rows": rows[-500:], "kpi": kpi, "timing": timing, "last_activity": last,
+    return {"rows": rows[-800:], "by_rule": by_rule, "last_activity": last,
             "events": {"seen": len(ev), "ended": sum(1 for e in ev.values() if e["ended"]),
+                       "confirmed": confirmed_events,
                        "median_minutes": round(statistics.median(durs), 1) if durs else None}}
 
 
@@ -128,8 +142,9 @@ def write_once(a, refresh):
     tmp = Path(a.out + ".tmp")
     tmp.write_text(html, encoding="utf-8")
     os.replace(tmp, a.out)                  # swap in one step so the browser never reads half a file
-    k = data["shadow"]["kpi"]
-    print(f"{datetime.now().strftime('%H:%M:%S')} wrote {a.out} | shadow: {k['entries']} pretend buys, {k['settled']} settled, P&L {k['pnl']:+.2f}")
+    br = data["shadow"]["by_rule"]
+    print(f"{datetime.now().strftime('%H:%M:%S')} wrote {a.out} | confirmed: {br['confirmed']['kpi']['entries']} buys, "
+          f"P&L {br['confirmed']['kpi']['pnl']:+.2f} | price-only: {br['price_only']['kpi']['entries']} buys, P&L {br['price_only']['kpi']['pnl']:+.2f}")
 
 
 TEMPLATE = r'''<!doctype html>
@@ -170,6 +185,9 @@ h2 { font-size:17px; margin:34px 0 4px; font-weight:650; }
 .sub { color:var(--ink2); font-size:14px; margin:0 0 14px; }
 .meta { color:var(--muted); font-size:13px; }
 button.toggle { background:var(--surface); color:var(--ink); border:1px solid var(--border); border-radius:8px; padding:6px 12px; font:inherit; font-size:13px; cursor:pointer; }
+.ruleBar { display:flex; gap:8px; flex-wrap:wrap; margin:10px 0 4px; }
+.ruleBar button { background:var(--surface); color:var(--ink2); border:1px solid var(--border); border-radius:999px; padding:6px 14px; font:inherit; font-size:13px; cursor:pointer; }
+.ruleBar button[aria-selected="true"] { color:var(--ink); border-color:var(--s1); box-shadow: inset 0 0 0 1px var(--s1); font-weight:600; }
 .banner { background:var(--surface); border:1px solid var(--border); border-left:4px solid var(--warn); border-radius:10px; padding:12px 14px; font-size:14px; color:var(--ink2); margin:10px 0 6px; }
 .banner b { color:var(--ink); }
 .tiles { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(150px,100%),1fr)); gap:12px; margin:14px 0; }
@@ -213,7 +231,9 @@ ul.caveats { color:var(--ink2); font-size:14px; padding-left:20px; margin:6px 0;
   <div class="banner" id="banner"></div>
 
   <h2>Shadow mode: real prices, pretend orders</h2>
-  <p class="sub">The tool watches live matches, reads the real order book and pretends to buy 5 shares. No money is involved.</p>
+  <p class="sub">The tool watches live matches, reads the real order book and pretends to buy 5 shares. No money is involved. Two strategies are recorded side by side.</p>
+  <div class="ruleBar" id="ruleBar" role="tablist" aria-label="Strategy"></div>
+  <p class="why" id="ruleWhy"></p>
   <div class="tiles" id="tiles"></div>
   <div class="grid2">
     <div class="card"><h3>Fake profit over time</h3><p class="why">Running total of pretend profit, each point is one settled pretend trade.</p><div id="pnl"></div></div>
@@ -328,12 +348,26 @@ ul.caveats { color:var(--ink2); font-size:14px; padding-left:20px; margin:6px 0;
   }
 
   // ---------- header, banner ----------
-  var S = D.shadow, K = S.kpi;
+  var S = D.shadow;
+  var RULE_INFO = { confirmed: { name: 'Confirmed result', why: 'Buys only after ESPN (football) or OpenDota (Dota 2) confirms a normal finish with this team as winner, and Polymarket has marked the match ended. This is the rule a real bot would use.' },
+                    price_only: { name: 'Price only', why: 'Buys whenever the real price is 0.96 to 0.995 and 5 shares are for sale, with no result check. Shown for comparison; riskier.' } };
+  var rule = (S.by_rule.confirmed.kpi.entries > 0) ? 'confirmed' : 'price_only';
+  var K, T2, ROWS;
+  function pickRule() { K = S.by_rule[rule].kpi; T2 = S.by_rule[rule].timing; ROWS = S.rows.filter(function (r) { return r.rule === rule; }); }
+  pickRule();
+  function drawRuleBar() {
+    $('ruleBar').innerHTML = ['confirmed', 'price_only'].map(function (r) {
+      return '<button type="button" role="tab" data-rule="' + r + '" aria-selected="' + (r === rule) + '">' + RULE_INFO[r].name + ' (' + S.by_rule[r].kpi.entries + ')</button>'; }).join('');
+    $('ruleWhy').textContent = RULE_INFO[rule].why;
+    Array.prototype.forEach.call($('ruleBar').querySelectorAll('button'), function (b) {
+      b.addEventListener('click', function () { rule = b.getAttribute('data-rule'); pickRule(); draw(); }); });
+  }
   $('meta').textContent = 'Generated ' + D.generated.replace('T', ' ').replace('+00:00', ' UTC') + (S.last_activity ? '  |  last shadow activity ' + S.last_activity.replace('T', ' ').replace('+00:00', ' UTC') : '  |  no shadow data yet');
-  $('banner').innerHTML = K.entries === 0
+  var KA = { entries: S.by_rule.confirmed.kpi.entries + S.by_rule.price_only.kpi.entries, settled: S.by_rule.confirmed.kpi.settled };
+  $('banner').innerHTML = KA.entries === 0
     ? '<b>No shadow data yet.</b> Start <code>run_shadow.bat</code> and leave it running. Charts below will fill in as matches finish.'
-    : (K.settled < 100 ? '<b>Too early to judge.</b> ' + K.settled + ' settled pretend trades so far; aim for 100 or more before drawing conclusions.'
-                       : '<b>' + K.settled + ' settled pretend trades.</b> Compare the loss count with the backtest before deciding anything.');
+    : (KA.settled < 100 ? '<b>Too early to judge.</b> ' + KA.settled + ' settled confirmed-result pretend trades so far; aim for 100 or more before drawing conclusions.'
+                        : '<b>' + KA.settled + ' settled confirmed-result pretend trades.</b> Compare the loss count with the backtest before deciding anything.');
   $('themeBtn').addEventListener('click', function () {
     var r = document.documentElement, cur = r.getAttribute('data-theme');
     var dark = cur ? cur === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -353,7 +387,7 @@ ul.caveats { color:var(--ink2); font-size:14px; padding-left:20px; margin:6px 0;
 
     // P&L line
     var host = $('pnl'); host.innerHTML = '';
-    var pts = S.rows.filter(function (r) { return r.pnl != null; }).sort(function (a, b) { return a.settled_ts < b.settled_ts ? -1 : 1; });
+    var pts = ROWS.filter(function (r) { return r.pnl != null; }).sort(function (a, b) { return a.settled_ts < b.settled_ts ? -1 : 1; });
     if (pts.length < 2) { host.innerHTML = '<div class="empty">Needs at least 2 settled pretend trades.</div>'; }
     else {
       var cum = 0, P = pts.map(function (r, i) { cum += r.pnl; return { i: i, t: new Date(r.settled_ts).getTime(), v: cum, r: r }; });
@@ -387,7 +421,7 @@ ul.caveats { color:var(--ink2); font-size:14px; padding-left:20px; margin:6px 0;
 
     // histogram of fills
     var hh = $('hist'); hh.innerHTML = '';
-    var fills = S.rows.map(function (r) { return r.vwap; }).filter(function (v) { return v != null; });
+    var fills = ROWS.map(function (r) { return r.vwap; }).filter(function (v) { return v != null; });
     if (!fills.length) { hh.innerHTML = '<div class="empty">No pretend buys yet.</div>'; }
     else {
       var edges = [0.96, 0.965, 0.97, 0.975, 0.98, 0.985, 0.99, 0.995], cats = [], cnt = [];
@@ -396,17 +430,17 @@ ul.caveats { color:var(--ink2); font-size:14px; padding-left:20px; margin:6px 0;
     }
 
     // timing table
-    var tm = $('timing'), T2 = S.timing;
+    var tm = $('timing');
     function trow(label, t) { return '<tr><td>' + label + '</td><td class="num">' + t.entries + '</td><td class="num">' + t.settled + '</td><td class="num">' + t.wins + '</td><td class="num">' + t.losses + '</td><td class="num">' + t.splits + '</td><td class="num">' + (t.settled ? money(t.pnl) : '-') + '</td></tr>'; }
     tm.innerHTML = '<table><thead><tr><th>When we pretended to buy</th><th class="num">Buys</th><th class="num">Settled</th><th class="num">Wins</th><th class="num">Losses</th><th class="num">50/50</th><th class="num">Fake profit</th></tr></thead><tbody>' +
       trow('After Polymarket marked the match ended', T2.ended) + trow('While the match was still in play', T2.in_play) + '</tbody></table>';
 
     $('evtext').textContent = S.events.seen
-      ? S.events.seen + ' matches observed, ' + S.events.ended + ' seen ending' + (S.events.median_minutes ? ', typical length about ' + S.events.median_minutes + ' minutes from live to ended' : '') + '.'
+      ? S.events.seen + ' matches observed, ' + S.events.ended + ' seen ending, ' + S.events.confirmed + ' results confirmed by an outside source' + (S.events.median_minutes ? ', typical length about ' + S.events.median_minutes + ' minutes from live to ended' : '') + '.'
       : 'No matches recorded yet.';
 
     // trades table
-    var rows = S.rows.slice(-25).reverse();
+    var rows = ROWS.slice(-25).reverse();
     var icon = { win: '✓ Win', loss: '✕ Loss', split: '½ 50/50', pending: '… Waiting' };
     $('trades').innerHTML = rows.length ? '<table><thead><tr><th>Time (UTC)</th><th>Match</th><th>Bought</th><th class="num">Fill</th><th>Ended flag</th><th>Result</th><th class="num">Fake profit</th></tr></thead><tbody>' +
       rows.map(function (r) { return '<tr><td>' + esc(r.ts.replace('T', ' ').slice(0, 16)) + '</td><td>' + esc((r.question || '').slice(0, 60)) + '</td><td>' + esc(r.outcome) + '</td><td class="num">' + (r.vwap == null ? '' : r.vwap.toFixed(3)) + '</td><td>' + (r.ended_flag ? 'ended' : 'in play') + '</td><td class="res ' + r.result + '">' + icon[r.result] + '</td><td class="num">' + (r.pnl == null ? '' : money(r.pnl)) + '</td></tr>'; }).join('') + '</tbody></table>'
@@ -446,7 +480,7 @@ ul.caveats { color:var(--ink2); font-size:14px; padding-left:20px; margin:6px 0;
       ['Wait after match ends', c.confirm_minutes + ' min'], ['Sports enabled', (c.enabled_sports || []).join(', ')], ['Bet types allowed', (c.allowed_market_types || []).join(', ')]];
     $('rules').innerHTML = items.map(function (i) { return '<div>' + esc(i[0]) + ': <b>' + esc(i[1]) + '</b></div>'; }).join('');
   }
-  function draw() { hideTip(); drawShadow(); drawBacktest(); drawRules(); }
+  function draw() { hideTip(); drawRuleBar(); drawShadow(); drawBacktest(); drawRules(); }
   draw();
   window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', draw);
 })();

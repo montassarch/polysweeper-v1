@@ -23,11 +23,11 @@ WIN_Q = re.compile(r"^Will (.+?) win on (\d{4}-\d{2}-\d{2})\?$")
 DRAW_Q = re.compile(r"^Will (.+?) vs\.? (.+?) end in a draw\?$")
 
 
-def find_match(league, kickoff_ts, teams):
+def find_match(league, kickoff_ts, teams, board=scoreboard):
     k = datetime.fromtimestamp(kickoff_ts, timezone.utc)
     seen = []
     for day in {(k - timedelta(hours=6)).date(), k.date(), (k + timedelta(hours=6)).date()}:
-        for r in scoreboard(league, datetime(day.year, day.month, day.day)):
+        for r in board(league, datetime(day.year, day.month, day.day)):
             try:
                 rk = datetime.fromisoformat(r["kickoff"].replace("Z", "+00:00"))
             except (KeyError, ValueError):

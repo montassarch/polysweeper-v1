@@ -36,6 +36,7 @@ Obsidian Git plugin) and the `[[wikilinks]]` below will work.
 - [[18-Dashboard]] — the dashboard page: what it shows and how to open it
 - [[19-Results-Check-Dota]] — Dota 2 results check with true end times
 - [[20-Results-Check-Football]] — football results check against ESPN, two traps found
+- [[21-Shadow-Mode-v2]] — shadow mode now tests the confirmed-result rule
 - [[Sources]] — every link used
 
 ## Reliability warning

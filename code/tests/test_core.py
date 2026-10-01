@@ -177,7 +177,7 @@ class DashboardTests(unittest.TestCase):
         from polysweeper.dashboard import build
         with tempfile.TemporaryDirectory() as d:
             data = build(Path(d) / "none", Path(d) / "no.json", Path(d) / "no.json")
-        self.assertEqual(data["shadow"]["kpi"]["entries"], 0)
+        self.assertEqual(data["shadow"]["by_rule"]["confirmed"]["kpi"]["entries"], 0)
         self.assertIsNone(data["backtest"])
 
     def test_counts_entries_and_results(self):
@@ -194,11 +194,13 @@ class DashboardTests(unittest.TestCase):
             ]
             (p / "trades.jsonl").write_text("\n".join(json.dumps(r) for r in rows))
             s = build_shadow(p)
-        self.assertEqual(s["kpi"]["entries"], 2)
-        self.assertEqual(s["kpi"]["settled"], 1)
-        self.assertEqual(s["kpi"]["wins"], 1)
-        self.assertEqual(s["kpi"]["thin"], 1)
-        self.assertEqual(s["timing"]["ended"]["wins"], 1)
+        k = s["by_rule"]["price_only"]["kpi"]
+        self.assertEqual(k["entries"], 2)
+        self.assertEqual(k["settled"], 1)
+        self.assertEqual(k["wins"], 1)
+        self.assertEqual(k["thin"], 1)
+        self.assertEqual(s["by_rule"]["price_only"]["timing"]["ended"]["wins"], 1)
+        self.assertEqual(s["by_rule"]["confirmed"]["kpi"]["entries"], 0)
 
 
 class OpenDotaTests(unittest.TestCase):
@@ -251,3 +253,46 @@ class FootballResultTests(unittest.TestCase):
         from polysweeper.results_espn import estimated_end
         e = estimated_end({"kickoff": "2026-09-20T13:00Z", "clock": "90'+5'"})
         self.assertEqual(e.isoformat(), "2026-09-20T14:52:00+00:00")
+
+
+class ConfirmerTests(unittest.TestCase):
+    def board(self, results):
+        return lambda league, day: results
+
+    def test_football_win_maps_to_yes_or_no(self):
+        from polysweeper.confirm import Confirmer
+        res = [{"kickoff": "2026-09-20T13:00Z", "status": "STATUS_FULL_TIME", "completed": True, "clock": "90'+5'",
+                "home": "Manchester City", "away": "Sunderland", "home_score": 5, "away_score": 3}]
+        c = Confirmer()
+        ev = {"startTime": "2026-09-20T13:00:00Z"}
+        m = {"question": "Will Manchester City FC win on 2026-09-20?", "gameStartTime": "2026-09-20 13:00:00+00"}
+        idx, _ = c.football("epl", ev, m, ["Yes", "No"], board=self.board(res))
+        self.assertEqual(idx, 0)
+        m2 = {"question": "Will Sunderland AFC win on 2026-09-20?", "gameStartTime": "2026-09-20 13:00:00+00"}
+        idx2, _ = c.football("epl", ev, m2, ["Yes", "No"], board=self.board(res))
+        self.assertEqual(idx2, 1)
+        m3 = {"question": "Will Manchester City FC vs. Sunderland AFC end in a draw?", "gameStartTime": "2026-09-20 13:00:00+00"}
+        idx3, _ = c.football("epl", ev, m3, ["Yes", "No"], board=self.board(res))
+        self.assertEqual(idx3, 1)
+
+    def test_football_extra_time_not_confirmed(self):
+        from polysweeper.confirm import Confirmer
+        res = [{"kickoff": "2026-03-19T20:00Z", "status": "STATUS_FINAL_AET", "completed": True, "clock": "120'",
+                "home": "AS Roma", "away": "Bologna", "home_score": 3, "away_score": 4}]
+        m = {"question": "Will Bologna FC 1909 win on 2026-03-19?", "gameStartTime": "2026-03-19 20:00:00+00"}
+        idx, why = Confirmer().football("uel", {}, m, ["Yes", "No"], board=self.board(res))
+        self.assertIsNone(idx)
+
+    def test_dota_series_winner(self):
+        from polysweeper.confirm import Confirmer
+        series = [{"teams": ["Team Spirit", "1win"], "winner": "Team Spirit", "start": 1790000000, "end": 1790007000}]
+        ev = {"title": "Dota 2: Team Spirit vs 1win (BO3) - BLAST", "startTime": "2026-09-21T13:33:20Z"}
+        idx, _ = Confirmer().dota(ev, ["Team Spirit", "1win"], series=series)
+        self.assertEqual(idx, 0)
+        idx2, _ = Confirmer().dota(ev, ["Team Spirit", "1win"], series=[])
+        self.assertIsNone(idx2)
+
+    def test_unknown_league_has_no_source(self):
+        from polysweeper.confirm import Confirmer
+        idx, why = Confirmer().winner_index("cs2", {}, {}, ["A", "B"])
+        self.assertIsNone(idx)

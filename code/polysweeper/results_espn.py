@@ -20,11 +20,12 @@ LEAGUES = {"epl": "eng.1", "lal": "esp.1", "bun": "ger.1", "sea": "ita.1", "fl1"
 CACHE = Path("data/results/espn")
 
 
-def scoreboard(league: str, day: datetime):
+def scoreboard(league: str, day: datetime, fresh: bool = False):
+    """fresh=True: always download and never cache (for live matches)."""
     code = LEAGUES[league]
     ymd = day.strftime("%Y%m%d")
     path = CACHE / f"{league}_{ymd}.json"
-    if path.exists():
+    if not fresh and path.exists():
         return json.loads(path.read_text())
     data = get_json(BASE.format(code=code, ymd=ymd))
     time.sleep(0.3)
@@ -43,7 +44,7 @@ def scoreboard(league: str, day: datetime):
             "clock": st.get("displayClock"), "home": home["team"]["displayName"], "away": away["team"]["displayName"],
             "home_score": int(hs) if hs not in (None, "") else None, "away_score": int(as_) if as_ not in (None, "") else None,
         })
-    if data is not None:
+    if data is not None and not fresh:
         CACHE.mkdir(parents=True, exist_ok=True)
         path.write_text(json.dumps(results))
     return results
@@ -80,9 +81,13 @@ STOP = {"fc", "cf", "afc", "sc", "ac", "as", "ss", "ssc", "us", "rc", "rcd", "cd
         "fk", "sk", "bk", "if", "club", "de", "del", "la", "le", "calcio", "1909", "1899", "1846", "1900", "1904"}
 
 
+ALIAS = {"munchen": "munich", "muenchen": "munich", "internazionale": "inter", "koln": "cologne",
+         "nurnberg": "nuremberg", "sevilla": "seville", "lisboa": "lisbon"}
+
+
 def tokens(name: str):
     n = unicodedata.normalize("NFKD", name or "").encode("ascii", "ignore").decode().lower()
-    words = re.findall(r"[a-z0-9]+", n)
+    words = [ALIAS.get(w, w) for w in re.findall(r"[a-z0-9]+", n)]
     return [w for w in words if w not in STOP] or words
 
 

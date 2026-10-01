@@ -112,3 +112,21 @@ confirmation. Needs testing; Kalshi resolution is typically within hours.
 Polymarket resolves sports fast (NBA median ~22 minutes; overall median ~41
 minutes). The buying window is short, so provider **delay** matters: measure
 how many minutes after the real end each provider reports "finished".
+
+## Oracles and verification sites (added 2026-10-01)
+
+- **UMA Optimistic Oracle** (oracle.uma.xyz): settles sports and most event
+  markets. "Propose" and "Verify" tabs show live proposals and the 2-hour
+  challenge window. Idea: watch it for disputes on markets we hold -> alert or
+  pause.
+- **Chainlink**: settles Polymarket's fast crypto up/down markets (5-minute,
+  15-minute, 4-hour) using a time-weighted average price. Not used by our
+  sports strategy.
+- **Pyth Network**: price data for traditional-finance markets. Not used by us.
+- **Official league / tournament sites**: Polymarket's `/sports` list names the
+  resolution source per league (e.g. Liquipedia for LoL/Dota 2/Valorant, HLTV
+  for CS2, premierleague.com). Sportradar data is used for MLB.
+- **Polygonscan** (blockchain explorer), **Dune** (SQL dashboards), and wallet
+  lookup tools (e.g. Polymarket Analytics, PolymarketScan): check any wallet's
+  trades on-chain, e.g. to verify the friend's track record.
+- **Other venues**: Kalshi (US-regulated, settles itself, public API), Polymarket US.

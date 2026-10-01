@@ -229,3 +229,25 @@ class OpenDotaTests(unittest.TestCase):
         h = [[100, 0.5], [200, 0.9], [300, 0.99]]
         self.assertIsNone(price_at(h, 50))
         self.assertEqual(price_at(h, 250), 0.9)
+
+
+class FootballResultTests(unittest.TestCase):
+    def test_extra_time_is_not_a_normal_result(self):
+        from polysweeper.results_espn import outcome
+        base = {"completed": True, "home_score": 3, "away_score": 4}
+        self.assertIsNone(outcome(dict(base, status="STATUS_FINAL_AET")))
+        self.assertIsNone(outcome(dict(base, status="STATUS_FINAL_PEN")))
+        self.assertEqual(outcome(dict(base, status="STATUS_FULL_TIME")), "away")
+        self.assertEqual(outcome({"completed": True, "status": "STATUS_FULL_TIME", "home_score": 1, "away_score": 1}), "draw")
+
+    def test_ambiguous_club_name_fits_both_sides(self):
+        from polysweeper.results_espn import same_club
+        # "Paris Saint-Germain FC" loosely fits both; the checker must then skip
+        self.assertTrue(same_club("Paris Saint-Germain FC", "Paris Saint-Germain"))
+        self.assertTrue(same_club("Paris Saint-Germain FC", "Paris FC"))
+        self.assertFalse(same_club("Manchester United FC", "Manchester City"))
+
+    def test_estimated_end_uses_stoppage_clock(self):
+        from polysweeper.results_espn import estimated_end
+        e = estimated_end({"kickoff": "2026-09-20T13:00Z", "clock": "90'+5'"})
+        self.assertEqual(e.isoformat(), "2026-09-20T14:52:00+00:00")

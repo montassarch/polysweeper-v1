@@ -11,7 +11,7 @@ def main():
     if not PATH.exists():
         print("no shadow data yet")
         return
-    entries, settled, thin = {}, {}, []
+    entries, settled, thin, bad = {}, {}, [], []
     for line in PATH.read_text().splitlines():
         r = json.loads(line)
         if r["type"] == "entry":
@@ -20,7 +20,10 @@ def main():
             settled[r["key"]] = r
         elif r["type"] == "skip_thin":
             thin.append(r)
-    print(f"entries: {len(entries)} | settled: {len(settled)} | skipped because the book was too thin: {len(thin)}")
+        elif r["type"] == "skip_bad_book":
+            bad.append(r)
+    print(f"entries: {len(entries)} | settled: {len(settled)} | skipped because the book was too thin: {len(thin)}"
+          f" | skipped because the book looked fake: {len(bad)}")
     groups = [("CONFIRMED RESULT rule", lambda r: r.get("rule") == "confirmed"),
               ("PRICE ONLY rule, match flagged ended", lambda r: r.get("rule", "price_only") == "price_only" and r["event_ended_flag"] is True),
               ("PRICE ONLY rule, match still in play", lambda r: r.get("rule", "price_only") == "price_only" and r["event_ended_flag"] is not True)]

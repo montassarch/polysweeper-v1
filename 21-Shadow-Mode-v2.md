@@ -47,3 +47,10 @@ first real confirmed pretend-buys will come from your PC.
 - Whether confirmed buys ever lose (they should essentially never).
 - How many minutes after Polymarket's "ended" flag ESPN/OpenDota confirm.
 - Real fill prices and how often 5 shares are not available.
+
+## Update v2.1 (2026-10-01): measurement fixes
+
+Faster (batched order books and match states), crash-proof (errors logged to
+`errors.jsonl`), records prices up to 0.999 for the friend's band on the same
+matches, and refuses junk order books. Buying rules unchanged. Details:
+[[23-Bot-Logic-Spec-and-Audit]]. **Pull and restart shadow mode to use it.**

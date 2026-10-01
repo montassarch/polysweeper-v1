@@ -26,7 +26,7 @@ import time
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-from .collector import CLOB, GAMMA, get_json, leagues, parse_ts
+from .collector import CLOB, GAMMA, get_json, leagues, parse_ts, post_json
 from .config import Limits
 from .confirm import Confirmer
 from .fees import taker_fee
@@ -34,6 +34,9 @@ from .killswitch import KillSwitch
 
 OUT = Path("data/shadow")
 WATCH_MIN_ASK = 0.90          # start recording full snapshots from this ask
+WATCH_MAX_ASK = 0.999         # record snapshots up to here (late band 0.995-0.999 is logged, not bought)
+BOOK_BATCH = 40               # order books per request
+EVENT_BATCH = 40              # match states per request
 REFRESH_SECONDS = 120         # how often to re-list live events
 POLL_SECONDS = 15             # how often to read order books
 SETTLE_SECONDS = 60           # how often to check for payouts
@@ -64,6 +67,20 @@ def walk_book(asks, shares_needed: float, max_price: float):
     return cost / got, worst, avail
 
 
+def book_problem(idx, stats):
+    """A5: a high ask only means something if the market around it is real.
+    Returns a reason to refuse, or None.
+      - nobody bids at least 0.50 for this token -> no real buyers, price is stale
+      - another outcome is ALSO offered at 0.10 or more -> both sides 'expensive', junk book"""
+    best_ask, best_bid, _, _ = stats[idx]
+    if best_bid is None or best_bid < 0.50:
+        return "no real bids on this side (best bid below 0.50)"
+    for j, (other_ask, _, _, _) in stats.items():
+        if j != idx and other_ask is not None and other_ask >= 0.10:
+            return f"other side also offered at {other_ask:.3f} (inconsistent book)"
+    return None
+
+
 class Shadow:
     def __init__(self, league_keys, limits: Limits):
         self.limits = limits
@@ -72,13 +89,14 @@ class Shadow:
         self.snap_f = (OUT / "snapshots.jsonl").open("a")
         self.trade_f = (OUT / "trades.jsonl").open("a")
         self.event_f = (OUT / "events.jsonl").open("a")
+        self.err_f = (OUT / "errors.jsonl").open("a")
         self.last_event_state = {}
         self.state_path = OUT / "state.json"
         self.state = json.loads(self.state_path.read_text()) if self.state_path.exists() else {"pending": {}, "entered": []}
         all_l = leagues()
         self.series = {k: all_l[k]["series"] for k in league_keys if k in all_l}
         self.markets = {}          # market_id -> dict(event, market, tokens)
-        self.counters = {"snapshots": 0, "entries": 0, "thin": 0, "settled": 0}
+        self.counters = {"snapshots": 0, "entries": 0, "thin": 0, "settled": 0, "errors": 0}
         self.confirmer = Confirmer()
 
     # -- bookkeeping ---------------------------------------------------
@@ -116,47 +134,113 @@ class Shadow:
         self.markets = found
 
     # -- polling -------------------------------------------------------
+    def error(self, where, exc):
+        """A2/A1: never let one bad reply stop the run; write it down and carry on."""
+        self.counters["errors"] += 1
+        try:
+            self.log(self.err_f, {"ts": now_iso(), "where": where, "error": f"{type(exc).__name__}: {exc}"})
+        except Exception:
+            pass
+
+    def refresh_states(self):
+        """A3: re-read live/ended/score for every tracked match, every round (batched)."""
+        ids = sorted({info["event"].get("id") for info in self.markets.values() if info["event"].get("id")})
+        fresh = {}
+        for i in range(0, len(ids), EVENT_BATCH):
+            chunk = ids[i:i + EVENT_BATCH]
+            for e in get_json(f"{GAMMA}/events?" + "&".join(f"id={x}" for x in chunk)) or []:
+                fresh[e.get("id")] = e
+        for info in self.markets.values():
+            e = fresh.get(info["event"].get("id"))
+            if e:
+                for k in ("live", "ended", "score", "period"):
+                    info["event"][k] = e.get(k)
+
+    def fetch_books(self):
+        """A2: read all order books in a few batched requests instead of one by one."""
+        tokens = [t for info in self.markets.values() for t in info["tokens"]]
+        books = {}
+        for i in range(0, len(tokens), BOOK_BATCH):
+            chunk = tokens[i:i + BOOK_BATCH]
+            for b in post_json(f"{CLOB}/books", [{"token_id": t} for t in chunk]) or []:
+                if isinstance(b, dict) and b.get("asset_id"):
+                    books[str(b["asset_id"])] = b
+        return books
+
     def poll(self):
-        L = self.limits
+        try:
+            self.refresh_states()
+        except Exception as exc:
+            self.error("refresh_states", exc)
+        try:
+            books = self.fetch_books()
+        except Exception as exc:
+            self.error("fetch_books", exc)
+            return
         for mid, info in list(self.markets.items()):
-            e = info["event"]
-            ev_state = {"live": e.get("live"), "ended": e.get("ended"), "score": e.get("score"), "period": e.get("period")}
-            self.note_event_state(e, info["league"], ev_state)
-            in_window = []
-            for idx, tok in enumerate(info["tokens"]):
-                book = get_json(f"{CLOB}/book?token_id={tok}")
-                if not book:
-                    continue
-                asks = book.get("asks", [])
-                bids = book.get("bids", [])
-                best_ask = min((float(a["price"]) for a in asks), default=None)
-                best_bid = max((float(b["price"]) for b in bids), default=None)
-                if best_ask is None or best_ask < WATCH_MIN_ASK or best_ask > L.price_max:
-                    continue
-                self.log(self.snap_f, {"ts": now_iso(), "market_id": mid, "league": info["league"],
-                                       "outcome": info["outcomes"][idx], "best_ask": best_ask, "best_bid": best_bid,
-                                       "asks_top5": sorted(([float(a["price"]), float(a["size"])] for a in asks))[:5],
-                                       "bids_top3": sorted(([float(b["price"]), float(b["size"])] for b in bids), reverse=True)[:3],
-                                       "event": ev_state})
-                self.counters["snapshots"] += 1
-                if L.price_min <= best_ask <= L.price_max:
-                    in_window.append((idx, best_ask, asks))
-            if not in_window:
+            try:
+                self.poll_market(mid, info, books)
+            except Exception as exc:
+                self.error(f"market {mid}", exc)
+
+    def poll_market(self, mid, info, books):
+        L = self.limits
+        e = info["event"]
+        ev_state = {"live": e.get("live"), "ended": e.get("ended"), "score": e.get("score"), "period": e.get("period")}
+        self.note_event_state(e, info["league"], ev_state)
+        stats = {}
+        for idx, tok in enumerate(info["tokens"]):
+            book = books.get(str(tok))
+            if not book:
                 continue
-            # Rule 1: price only (buy when the real ask is in range and 5 shares are for sale)
-            for idx, best_ask, asks in in_window:
-                self.maybe_enter("price_only", mid, idx, info, best_ask, asks, ev_state, None)
-            # Rule 2: confirmed result (external source says this token won, normal finish,
-            #         AND Polymarket has flagged the match as ended)
-            win_idx, why = self.confirmer.winner_index(info["league"], e, info["market"], info["outcomes"])
-            if win_idx is not None and mid not in self.state.setdefault("confirmed_logged", []):
-                self.state["confirmed_logged"].append(mid)
-                self.log(self.event_f, {"ts": now_iso(), "type": "confirmed", "event_id": e.get("id"),
-                                        "market_id": mid, "league": info["league"], "winner_idx": win_idx,
-                                        "detail": why, "polymarket_ended": ev_state["ended"]})
-            for idx, best_ask, asks in in_window:
-                if win_idx == idx and ev_state["ended"] is True:
-                    self.maybe_enter("confirmed", mid, idx, info, best_ask, asks, ev_state, why)
+            asks = book.get("asks", [])
+            bids = book.get("bids", [])
+            stats[idx] = (min((float(a["price"]) for a in asks), default=None),
+                          max((float(b["price"]) for b in bids), default=None), asks, bids)
+        in_window = []
+        watched = False
+        for idx, (best_ask, best_bid, asks, bids) in stats.items():
+            if best_ask is None or best_ask < WATCH_MIN_ASK or best_ask > WATCH_MAX_ASK:
+                continue
+            self.log(self.snap_f, {"ts": now_iso(), "market_id": mid, "league": info["league"],
+                                   "outcome": info["outcomes"][idx], "token_idx": idx,
+                                   "best_ask": best_ask, "best_bid": best_bid,
+                                   "asks_top5": sorted(([float(a["price"]), float(a["size"])] for a in asks))[:5],
+                                   "bids_top3": sorted(([float(b["price"]), float(b["size"])] for b in bids), reverse=True)[:3],
+                                   "event": ev_state})
+            self.counters["snapshots"] += 1
+            if best_ask >= L.price_min:
+                watched = True                     # A4: in buy band OR late band -> check the result
+            if L.price_min <= best_ask <= L.price_max:
+                problem = book_problem(idx, stats)
+                if problem:
+                    key = f"bad:{mid}:{idx}"
+                    if key not in self.state["entered"]:
+                        self.state["entered"].append(key)
+                        self.log(self.trade_f, {"type": "skip_bad_book", "ts": now_iso(), "key": key,
+                                                "league": info["league"], "question": info["market"].get("question"),
+                                                "outcome": info["outcomes"][idx], "best_ask": best_ask,
+                                                "reason": problem, "event": ev_state})
+                    continue
+                in_window.append((idx, best_ask, asks))
+        if not watched:
+            return
+        # Rule 1: price only (buy when the real ask is in range and 5 shares are for sale)
+        for idx, best_ask, asks in in_window:
+            self.maybe_enter("price_only", mid, idx, info, best_ask, asks, ev_state, None)
+        # Rule 2: confirmed result (external source says this token won, normal finish,
+        #         AND Polymarket has flagged the match as ended).
+        # The result is also checked when a token is only in the late band (0.995-0.999),
+        # so we can later study that band on the same matches. Buying rules are unchanged.
+        win_idx, why = self.confirmer.winner_index(info["league"], e, info["market"], info["outcomes"])
+        if win_idx is not None and mid not in self.state.setdefault("confirmed_logged", []):
+            self.state["confirmed_logged"].append(mid)
+            self.log(self.event_f, {"ts": now_iso(), "type": "confirmed", "event_id": e.get("id"),
+                                    "market_id": mid, "league": info["league"], "winner_idx": win_idx,
+                                    "detail": why, "polymarket_ended": ev_state["ended"]})
+        for idx, best_ask, asks in in_window:
+            if win_idx == idx and ev_state["ended"] is True:
+                self.maybe_enter("confirmed", mid, idx, info, best_ask, asks, ev_state, why)
 
     def note_event_state(self, e, league, ev_state):
         """Log when a match goes live / ends. Gives true start and end times."""
@@ -228,11 +312,17 @@ class Shadow:
                     break
                 t = time.time()
                 if t - last_refresh > REFRESH_SECONDS:
-                    self.refresh()
+                    try:
+                        self.refresh()
+                    except Exception as exc:
+                        self.error("refresh", exc)
                     last_refresh = t
                 self.poll()
                 if t - last_settle > SETTLE_SECONDS:
-                    self.settle()
+                    try:
+                        self.settle()
+                    except Exception as exc:
+                        self.error("settle", exc)
                     last_settle = t
                 time.sleep(POLL_SECONDS)
         except KeyboardInterrupt:

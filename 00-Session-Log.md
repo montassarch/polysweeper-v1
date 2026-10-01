@@ -53,3 +53,7 @@ Back to [[README]].
 - Reviewed the friend's investor white paper ([[22-Friend-White-Paper-Review]]).
 - Agreed test plan: test our rules first, then the friend's likely late band,
   then compare (see [[07-Open-Questions-and-Next-Steps]]).
+- Wrote the full bot logic and audit ([[23-Bot-Logic-Spec-and-Audit]]); fixed
+  A1-A5 in shadow mode (crash guard, batched reads, fresh match states, late-band
+  logging, junk-book filter). Owner connected MetaMask to UMA: wallet safety
+  notes added to [[03-Risks]].

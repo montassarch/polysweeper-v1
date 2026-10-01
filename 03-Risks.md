@@ -78,3 +78,18 @@ circumventing geoblocks can lead to close-only mode or account closure.
 - Start with tiny positions.
 - Cap exposure per market and per topic.
 - Never treat "99%" as "risk-free".
+
+## 9. Wallet safety (added 2026-10-01: owner connected MetaMask to UMA)
+
+- **Viewing UMA needs no wallet.** oracle.uma.xyz can be read without connecting.
+- Connecting is fine, but **signing** is what matters. Never sign or approve a
+  transaction you don't understand. Proposing or disputing on UMA needs a
+  **bond** (hundreds of dollars) that is lost if you are wrong.
+- Check the address bar is exactly **oracle.uma.xyz** (fake look-alike sites
+  steal wallets).
+- **Never** share the seed phrase or private key with anyone, any site, any
+  chat, or this repo.
+- Disconnect the site in MetaMask when not using it; review old token approvals
+  (e.g. revoke.cash) from time to time.
+- For the bot later: use a **separate, dedicated wallet** with only the money
+  meant for trading, never the personal wallet.

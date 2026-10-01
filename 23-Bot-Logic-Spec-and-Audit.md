@@ -35,7 +35,7 @@ If any stage says no, the bot does nothing and writes down why.
 
 ## Audit: mistakes and weak points found in the current code
 
-### A. Problems that affect the test running now (fix now: measurement only, not rule changes)
+### A. Problems that affected the running test — ALL FIXED 2026-10-01 (measurement only, no buying-rule change)
 
 | # | Where | Problem | Why it matters | Fix |
 |---|---|---|---|---|
@@ -67,6 +67,15 @@ If any stage says no, the bot does nothing and writes down why.
 4. **Alias table** for team names to raise the match rate (784 football markets
    were unmatched only because of spelling).
 5. **Dashboard: time from "ended" to buy**, and "missed because too slow" count.
+
+## Fix status (2026-10-01)
+
+- **A1 fixed:** errors are caught per market and written to `errors.jsonl`; the run keeps going.
+- **A2 fixed:** order books read in batches; tested live: 62 books in about 1 second, full round about 1.5 s (was about 30 s).
+- **A3 fixed:** match states (live, ended, score) re-read every round in one batched request (0.7 s for 31 matches).
+- **A4 fixed:** prices up to 0.999 recorded, and the result is checked for those matches too, so the friend's band can be studied on the **same matches** without buying there.
+- **A5 fixed:** junk books refused (3 real examples refused in the live check).
+- Tests: 45 automatic checks pass.
 
 ## What does not change during the current test
 

@@ -296,3 +296,72 @@ class ConfirmerTests(unittest.TestCase):
         from polysweeper.confirm import Confirmer
         idx, why = Confirmer().winner_index("cs2", {}, {}, ["A", "B"])
         self.assertIsNone(idx)
+
+
+class ShadowRobustnessTests(unittest.TestCase):
+    def make(self, tmp):
+        import polysweeper.shadow as sh
+        from polysweeper.config import Limits
+        sh.OUT = __import__("pathlib").Path(tmp)
+        sh.leagues = lambda: {"cs2": {"series": "1"}}
+        return sh, sh.Shadow(["cs2"], Limits.from_json("config.json"))
+
+    def test_bad_market_does_not_stop_the_round(self):
+        import tempfile
+        with tempfile.TemporaryDirectory() as d:
+            sh, s = self.make(d)
+            s.markets = {"m1": {"league": "cs2", "event": {"id": "e1"}, "market": {}, "tokens": ["t1"], "outcomes": ["A"]},
+                         "m2": {"league": "cs2", "event": {"id": "e2"}, "market": {}, "tokens": ["t2"], "outcomes": ["B"]}}
+            calls = []
+            def boom(mid, info, books):
+                calls.append(mid)
+                if mid == "m1":
+                    raise ValueError("bad reply")
+            s.poll_market = boom
+            s.refresh_states = lambda: None
+            s.fetch_books = lambda: {}
+            s.poll()
+            self.assertEqual(calls, ["m1", "m2"])        # m2 still processed
+            self.assertEqual(s.counters["errors"], 1)
+
+    def test_batched_books_are_keyed_by_token(self):
+        import tempfile
+        with tempfile.TemporaryDirectory() as d:
+            sh, s = self.make(d)
+            s.markets = {"m1": {"league": "cs2", "event": {"id": "e1"}, "market": {}, "tokens": ["11", "22"], "outcomes": ["A", "B"]}}
+            sh.post_json = lambda url, payload: [{"asset_id": "11", "asks": []}, {"asset_id": "22", "asks": []}]
+            books = s.fetch_books()
+            self.assertEqual(sorted(books), ["11", "22"])
+
+    def test_late_band_is_logged_but_not_bought(self):
+        import tempfile, json
+        with tempfile.TemporaryDirectory() as d:
+            sh, s = self.make(d)
+            info = {"league": "cs2", "event": {"id": "e1", "ended": True}, "market": {"question": "q"},
+                    "tokens": ["11", "22"], "outcomes": ["A", "B"]}
+            s.markets = {"m1": info}
+            s.confirmer.winner_index = lambda *a: (0, "test source")
+            books = {"11": {"asks": [{"price": "0.998", "size": "50"}], "bids": [{"price": "0.996", "size": "50"}]},
+                     "22": {"asks": [{"price": "0.01", "size": "50"}], "bids": []}}
+            s.poll_market("m1", info, books)
+            self.assertEqual(s.counters["entries"], 0)          # 0.998 is above the buy band
+            self.assertEqual(s.counters["snapshots"], 1)        # but it was recorded
+            ev = [json.loads(l) for l in open(f"{d}/events.jsonl") if l.strip()]
+            self.assertTrue(any(e.get("type") == "confirmed" for e in ev))   # and the result was checked
+
+
+class BookSanityTests(unittest.TestCase):
+    def test_both_sides_expensive_is_junk(self):
+        from polysweeper.shadow import book_problem
+        stats = {0: (0.97, 0.95, [], []), 1: (0.97, 0.95, [], [])}
+        self.assertIsNotNone(book_problem(0, stats))
+
+    def test_no_bids_is_junk(self):
+        from polysweeper.shadow import book_problem
+        stats = {0: (0.97, None, [], []), 1: (0.03, 0.02, [], [])}
+        self.assertIsNotNone(book_problem(0, stats))
+
+    def test_normal_book_is_fine(self):
+        from polysweeper.shadow import book_problem
+        stats = {0: (0.97, 0.96, [], []), 1: (0.04, 0.03, [], [])}
+        self.assertIsNone(book_problem(0, stats))

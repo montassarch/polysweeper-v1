@@ -49,6 +49,29 @@ def get_json(url: str, tries: int = 5):
     return None
 
 
+def post_json(url: str, payload, tries: int = 4):
+    """POST JSON with the same polite retry rules as get_json. Returns parsed JSON or None."""
+    delay = 2.0
+    body = json.dumps(payload).encode()
+    for attempt in range(tries):
+        try:
+            time.sleep(PAUSE)
+            req = urllib.request.Request(url, data=body, method="POST",
+                                         headers={**UA, "Content-Type": "application/json"})
+            with urllib.request.urlopen(req, timeout=40) as r:
+                return json.load(r)
+        except urllib.error.HTTPError as e:
+            if e.code == 429 or e.code >= 500:
+                time.sleep(delay)
+                delay *= 2
+                continue
+            return None
+        except (urllib.error.URLError, TimeoutError, ConnectionError, http.client.HTTPException, OSError):
+            time.sleep(delay)
+            delay *= 2
+    return None
+
+
 def leagues() -> dict:
     data = get_json(f"{GAMMA}/sports") or []
     return {x["sport"]: x for x in data}

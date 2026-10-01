@@ -37,6 +37,7 @@ Obsidian Git plugin) and the `[[wikilinks]]` below will work.
 - [[19-Results-Check-Dota]] — Dota 2 results check with true end times
 - [[20-Results-Check-Football]] — football results check against ESPN, two traps found
 - [[21-Shadow-Mode-v2]] — shadow mode now tests the confirmed-result rule
+- [[22-Friend-White-Paper-Review]] — review of the friend's investor white paper vs our approach
 - [[Sources]] — every link used
 
 ## Reliability warning

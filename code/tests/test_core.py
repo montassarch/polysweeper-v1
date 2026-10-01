@@ -168,3 +168,34 @@ class ShadowBookTests(unittest.TestCase):
         vwap, worst, avail = walk_book([{"price": "0.97", "size": "2"}, {"price": "0.999", "size": "50"}], 5, 0.995)
         self.assertIsNone(vwap)
         self.assertEqual(avail, 2)
+
+
+class DashboardTests(unittest.TestCase):
+    def test_builds_with_no_data(self):
+        import tempfile
+        from pathlib import Path
+        from polysweeper.dashboard import build
+        with tempfile.TemporaryDirectory() as d:
+            data = build(Path(d) / "none", Path(d) / "no.json", Path(d) / "no.json")
+        self.assertEqual(data["shadow"]["kpi"]["entries"], 0)
+        self.assertIsNone(data["backtest"])
+
+    def test_counts_entries_and_results(self):
+        import json, tempfile
+        from pathlib import Path
+        from polysweeper.dashboard import build_shadow
+        with tempfile.TemporaryDirectory() as d:
+            p = Path(d)
+            rows = [
+                {"type": "entry", "ts": "2026-10-01T10:00:00+00:00", "key": "a:0", "vwap": 0.97, "event_ended_flag": True},
+                {"type": "entry", "ts": "2026-10-01T11:00:00+00:00", "key": "b:0", "vwap": 0.98, "event_ended_flag": False},
+                {"type": "settled", "ts": "2026-10-01T12:00:00+00:00", "key": "a:0", "result": "win", "pnl": 0.15},
+                {"type": "skip_thin", "ts": "2026-10-01T10:00:00+00:00", "key": "c:0"},
+            ]
+            (p / "trades.jsonl").write_text("\n".join(json.dumps(r) for r in rows))
+            s = build_shadow(p)
+        self.assertEqual(s["kpi"]["entries"], 2)
+        self.assertEqual(s["kpi"]["settled"], 1)
+        self.assertEqual(s["kpi"]["wins"], 1)
+        self.assertEqual(s["kpi"]["thin"], 1)
+        self.assertEqual(s["timing"]["ended"]["wins"], 1)

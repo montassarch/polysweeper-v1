@@ -46,3 +46,13 @@ From search summaries:
 - **Not researched yet:** Tunisian rules on crypto and foreign exchange, how to
   fund a wallet with pUSD from Tunisia, and tax treatment. Check local law.
 - Sources: see [[Sources]] (Tunisia/geoblock section).
+
+## Decision: venue = Polymarket global (2026-10-01)
+
+- The owner targets **Polymarket global** (polymarket.com), not Polymarket US.
+- All code already uses the global venue: `gamma-api.polymarket.com`,
+  `clob.polymarket.com`, on-chain settlement on Polygon in pUSD.
+- Polymarket US (regulated, KYC'd, US persons) and Kalshi (US-regulated) are not
+  trading venues for us; at most a source of extra price or result information.
+- Still to confirm before real money: Tunisia on the official geoblock page,
+  current Terms of Use, and a legal way to fund a wallet from Tunisia.

@@ -199,3 +199,33 @@ class DashboardTests(unittest.TestCase):
         self.assertEqual(s["kpi"]["wins"], 1)
         self.assertEqual(s["kpi"]["thin"], 1)
         self.assertEqual(s["timing"]["ended"]["wins"], 1)
+
+
+class OpenDotaTests(unittest.TestCase):
+    def game(self, mid, sid, st, rad, dire, rwin, stype=1):
+        return {"match_id": mid, "series_id": sid, "series_type": stype, "start_time": st, "duration": 2400,
+                "radiant_name": rad, "dire_name": dire, "radiant_win": rwin, "league_name": "L"}
+
+    def test_complete_bo3_has_winner_and_end(self):
+        from polysweeper.results_opendota import build_series
+        games = [self.game(1, 9, 1000, "A", "B", True), self.game(2, 9, 4000, "B", "A", False)]
+        s = build_series(games)
+        self.assertEqual(len(s), 1)
+        self.assertEqual(s[0]["winner"], "A")
+        self.assertEqual(s[0]["end"], 4000 + 2400)
+
+    def test_incomplete_bo3_is_skipped(self):
+        from polysweeper.results_opendota import build_series
+        self.assertEqual(build_series([self.game(1, 9, 1000, "A", "B", True)]), [])
+
+    def test_team_name_matching(self):
+        from polysweeper.results_opendota import same_team
+        self.assertTrue(same_team("Team Spirit", "Spirit"))
+        self.assertTrue(same_team("Natus Vincere", "natus vincere"))
+        self.assertFalse(same_team("OG", "Liquid"))
+
+    def test_price_at_uses_last_known(self):
+        from polysweeper.dota_end_test import price_at
+        h = [[100, 0.5], [200, 0.9], [300, 0.99]]
+        self.assertIsNone(price_at(h, 50))
+        self.assertEqual(price_at(h, 250), 0.9)

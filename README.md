@@ -34,6 +34,7 @@ Obsidian Git plugin) and the `[[wikilinks]]` below will work.
 - [[16-Football-Results-and-Shadow-Mode]] — football results and the shadow mode tool
 - [[17-Run-Shadow-On-Your-PC]] — how to run shadow mode on your Windows PC
 - [[18-Dashboard]] — the dashboard page: what it shows and how to open it
+- [[19-Results-Check-Dota]] — Dota 2 results check with true end times
 - [[Sources]] — every link used
 
 ## Reliability warning

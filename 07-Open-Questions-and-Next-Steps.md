@@ -51,3 +51,16 @@ Back to [[README]]
   he buys, price range, how often he lost.
 
 See [[11-V1-Plan-Simple]].
+
+## Test plan agreed (2026-10-01)
+
+1. **Phase 1, ours first:** shadow mode v2 runs on the owner's PC with our rules
+   (confirmed result and price only, band 0.96-0.995). No code changes to the
+   rules during this phase, so the results stay comparable.
+   - Check-ins every 2-3 days (owner runs Commit-and-sync, assistant reads).
+   - Phase ends after about **2 weeks**, or earlier once there are **100+ settled
+     confirmed-result pretend trades**.
+2. **Phase 2, the friend's likely strategy:** add the late band 0.995-0.999
+   (confirmed results only) and run the same way. See [[22-Friend-White-Paper-Review]].
+3. **Compare:** pretend trades per day, real fill prices, thin-book skips, wins,
+   losses, 50/50s, fake profit per trade and per day, time until paid.

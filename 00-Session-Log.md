@@ -43,3 +43,13 @@ Back to [[README]].
   [[12-Data-Sources]]. Found: Tunisia listed accessible; 50/50 resolution
   rule for forfeits/cancellations; fee is tiny near 0.99; price history has
   no depth data.
+
+## 2026-10-01
+
+- Built dashboard (snapshot and 15-second live mode), Dota 2 results check
+  (OpenDota) and football results check (ESPN); found and fixed the extra-time
+  and wrong-team traps.
+- Shadow mode v2: confirmed-result rule alongside price only.
+- Reviewed the friend's investor white paper ([[22-Friend-White-Paper-Review]]).
+- Agreed test plan: test our rules first, then the friend's likely late band,
+  then compare (see [[07-Open-Questions-and-Next-Steps]]).

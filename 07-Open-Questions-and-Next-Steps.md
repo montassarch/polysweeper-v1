@@ -64,3 +64,17 @@ See [[11-V1-Plan-Simple]].
    (confirmed results only) and run the same way. See [[22-Friend-White-Paper-Review]].
 3. **Compare:** pretend trades per day, real fill prices, thin-book skips, wins,
    losses, 50/50s, fake profit per trade and per day, time until paid.
+
+## Capacity estimate: all sports (measured 2026-10-02)
+
+- Polymarket settled about **8,400 match-winner markets in 7 days**, of which about
+  **4,000 single-match** ones: roughly **290 matches and 570 match-winner markets per
+  day** (other sports ~320/day, football ~165/day, esports ~90/day). One day hit a
+  paging limit, so this is a slight undercount.
+- Our current coverage (9 football leagues + 4 esports) is only about 5% of that.
+- Rough sweep estimate if everything were covered, low band (0.96-0.995), confirmed
+  rule: 570 x ~30% (winner sits in band after the end) x ~70% (results source
+  available) x ~70% (real sellers, not thin/junk) = **about 50-150 sweeps a day**.
+  Late band (0.995-0.999) unknown until shadow data.
+- Money limits: at $50 (3 trades open, payouts 1-2.5 h) the bot can only use about
+  20-30 sweeps a day; 100+ a day needs roughly 10x the capital with percentage limits.

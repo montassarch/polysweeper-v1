@@ -43,6 +43,18 @@ this list is the one to follow. Owner = who does it.
 - [ ] Measure ESPN/OpenDota delay vs Polymarket "ended" flag (from shadow data) — **assistant**
 - [ ] Re-test with pessimistic fills (real asks and depth from shadow data) — **assistant**
 
+## Zero-loss ideas to build or test (see [[25-Zero-Loss-Strategy-Lab]])
+
+- [x] Test a price stop-loss on history -> does NOT work (losses jump past the stop)
+- [ ] Market veto: skip a "confirmed" winner that still trades below 0.90 after the end — **assistant**
+- [ ] UMA watcher: log proposals and disputes for watched markets — **assistant**
+- [ ] Event-based exit (sell only on a UMA proposal against us, a dispute or a source correction) — test with shadow data — **assistant**
+- [ ] Resting buy orders after confirmation (catch seller dumps, no fee) — design and test — **assistant**
+- [ ] Settlement cross-check after every payout (our result vs Polymarket's) — **assistant**
+- [ ] Duplicate-fixture check and rules-text reader — **assistant**
+- [ ] Websocket price feed for the short football window — **assistant**
+- [ ] Go-live scorecard: ~300 (low band) / ~1,500 (late band) confirmed trades with zero wrong-result losses — **both**
+
 ## Legal and money setup (owner)
 
 - [ ] Check Tunisia on Polymarket's official geoblock page — **owner**

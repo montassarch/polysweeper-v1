@@ -16,6 +16,7 @@ Obsidian Git plugin) and the `[[wikilinks]]` below will work.
 ## Map of content
 
 - [[24-Task-List]] — **master to-do list: start here**
+- [[25-Zero-Loss-Strategy-Lab]] — **living section: logic and strategies for near-zero losses**
 - [[00-Session-Log]] — what was asked and decided, in order
 - [[01-What-is-a-Sweeper]] — plain-language explanation
 - [[02-Strategy-and-Math]] — how profit is made, formulas, examples

@@ -10,8 +10,9 @@ Research notes on building a **Polymarket "sweeper" bot**. This folder is an
 Obsidian vault: open the repo folder in Obsidian (or sync it with the
 Obsidian Git plugin) and the `[[wikilinks]]` below will work.
 
-> Status: **research phase, nothing built yet.** Started 2026-09-30.
-> Author knows nothing about the topic yet, so notes start from zero.
+> Status (2026-10-02): **shadow mode v2.1 running on the owner's PC** (pretend
+> trades only, no real money). Research, backtests, results checks, dashboard and
+> logic spec done. Started 2026-09-30.
 
 ## Map of content
 

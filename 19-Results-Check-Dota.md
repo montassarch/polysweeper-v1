@@ -70,7 +70,7 @@ save it in the repo.** The code will read it from an environment variable called
 
 ## Next steps
 
-- [ ] Get a football-data.org key and store it safely.
-- [ ] Build the football results check the same way.
+- [x] ~~Get a football-data.org key and store it safely.~~ (not needed)
+- [x] Build the football results check the same way.
 - [ ] Use shadow mode's `ended` timestamps to confirm the true end times.
 - [ ] Find free result sources for CS2, LoL and Valorant.

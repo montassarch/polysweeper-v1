@@ -94,7 +94,7 @@ on-chain before trusting any of it.
 
 ## What we should change because of this
 
-- [ ] Extend shadow mode to record the **late band 0.995-0.999** for confirmed
+- [x] Extend shadow mode to record the **late band 0.995-0.999** for confirmed
       results (real asks and sizes), to measure the friend's likely strategy.
 - [ ] Add a full refusal log (every skipped candidate with its reason).
 - [ ] Widen coverage over time (more leagues and sports), each with a results

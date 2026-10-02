@@ -1,0 +1,77 @@
+---
+title: Master Task List
+tags: [polysweeper, tasks, todo]
+created: 2026-10-02
+---
+
+# Master task list
+
+Back to [[README]] · Logic and audit: [[23-Bot-Logic-Spec-and-Audit]] · Test plan: [[07-Open-Questions-and-Next-Steps]]
+
+One place for everything. Older notes keep their own checklists for context;
+this list is the one to follow. Owner = who does it.
+
+## Now: running test (Phase 1)
+
+- [ ] Pull in Obsidian and restart shadow mode (v2.1) — **owner**
+- [ ] Keep shadow mode running, PC awake and plugged in — **owner**
+- [ ] Commit-and-sync every 2-3 days and tell the assistant — **owner**
+- [ ] Read results after each sync and report — **assistant**
+- [ ] Phase 1 ends after ~2 weeks or 100+ settled confirmed pretend trades — **both**
+
+## Next: compare with the friend's band (Phase 2)
+
+- [x] Record prices up to 0.999 and check results there too (logging only)
+- [ ] Analyse the late band (0.995-0.999) on the same matches — **assistant**
+- [ ] Compare both bands: trades/day, fills, thin/junk skips, losses, profit/trade, time to payout — **assistant**
+- [ ] Decide which band(s) the real bot uses — **owner**
+
+## Before any real money (from the audit)
+
+- [ ] B1 Set the waiting time after the match per band (low band: fast; late band: can wait) — **assistant**
+- [ ] B2 Internal team IDs so different spellings count as the same team — **assistant**
+- [ ] B3 Decision model = "market + token" (Yes/No and draw markets) — **assistant**
+- [ ] B4 Second independent results source for football (OpenLigaDB for German leagues; paid option later) — **assistant**
+- [ ] B5 Refuse markets that are disputed or have a UMA proposal against us — **assistant**
+- [ ] B6 Sport-by-sport settlement rules table (football 90 min, US sports with overtime, tennis retirements) — **assistant**
+- [ ] B7 Max 1 trade per match — **assistant**
+- [ ] B8 Real order handling: fill-or-kill limit orders, never buy twice, check fills and balance — **assistant**
+- [ ] B9 Telegram bot: alerts, `/status`, `/pause`, `/kill` — **assistant** (owner creates the bot token)
+- [ ] Watchdog: auto-restart after crash, pause on anything strange — **assistant**
+- [ ] Money limits as percentages instead of fixed dollars — **assistant**
+- [ ] Full refusal log (every skipped chance with its reason) — **assistant**
+- [ ] Measure ESPN/OpenDota delay vs Polymarket "ended" flag (from shadow data) — **assistant**
+- [ ] Re-test with pessimistic fills (real asks and depth from shadow data) — **assistant**
+
+## Legal and money setup (owner)
+
+- [ ] Check Tunisia on Polymarket's official geoblock page — **owner**
+- [ ] Read Polymarket's current Terms of Use — **owner**
+- [ ] Find a legal way to fund a wallet with pUSD from Tunisia — **owner**
+- [ ] Decide on tax record-keeping — **owner**
+- [ ] Create a separate wallet for the bot (never the personal one) — **owner**
+
+## Friend's white paper
+
+- [ ] Ask the friend: turns per day (10 vs ~2), early-period losses, venue, account size, capacity at 0.998 — **owner**
+- [ ] If the friend shares the wallet address, verify the track record on-chain — **assistant**
+
+## Later: grow
+
+- [ ] Results sources for CS2, LoL, Valorant — **assistant**
+- [ ] More leagues and sports, one at a time, each with its own results source and rules — **both**
+- [ ] AI helpers: daily reporter, bug-fix agent (branch + pull request, owner approves), code reviewer, weekly analyst — **assistant**
+- [ ] Automatic tests on GitHub for every change — **assistant**
+- [ ] Watch UMA for disputes on held positions — **assistant**
+
+## Done (highlights)
+
+- [x] Research vault in Obsidian, private repo, Obsidian Git sync
+- [x] Strategy research, sports focus, friend's bot brainstorm, v1 plan
+- [x] Decision core, risk rules, kill switch, backtester (45 automatic tests)
+- [x] Real data collector; esports and football backtests
+- [x] Dota 2 results check (OpenDota) and football results check (ESPN); extra-time and wrong-team traps fixed
+- [x] Shadow mode v2.1 on owner's PC: confirmed-result and price-only rules, batched and crash-proof, junk-book filter
+- [x] Dashboard (snapshot and 15-second live mode)
+- [x] Full bot logic spec and audit
+- [x] Venue decision: Polymarket global

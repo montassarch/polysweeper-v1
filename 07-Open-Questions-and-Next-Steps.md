@@ -12,9 +12,9 @@ Back to [[README]]
 
 - [ ] What exactly does "sweeper" mean to you? (near-certain outcomes, dust
       sweeping, order-book sweeping, other?) See [[01-What-is-a-Sweeper]].
-- [ ] Which jurisdiction are you in; is trading allowed? [[06-Legal-and-Compliance]]
+- [x] Which jurisdiction are you in; is trading allowed? [[06-Legal-and-Compliance]]
 - [ ] Exact taker-fee formula near 0.95–0.99 prices. [[05-Fees-and-Costs]]
-- [ ] Real historical data: how often did "0.97+" markets resolve against the
+- [x] Real historical data: how often did "0.97+" markets resolve against the
       holder? This decides whether the strategy has positive expectancy.
 - [ ] How long do normal and disputed resolutions actually take?
 
@@ -31,11 +31,11 @@ Back to [[README]]
 
 ## Housekeeping
 
-- [ ] Make `polysweeper-v1` **private** (Settings → Danger Zone).
-- [ ] Install the Claude GitHub App on the repo so the session can push.
-- [ ] Create `Polysweep-V2` manually if still wanted (session cannot).
-- [ ] Open this folder as an Obsidian vault (or use the Obsidian Git plugin).
-- [ ] Never commit keys: add `.env` to `.gitignore` before any code exists.
+- [x] Make `polysweeper-v1` **private** (Settings → Danger Zone).
+- [x] Install the Claude GitHub App on the repo so the session can push.
+- [x] ~~Create `Polysweep-V2` manually if still wanted (session cannot).~~ (not needed)
+- [x] Open this folder as an Obsidian vault (or use the Obsidian Git plugin).
+- [x] Never commit keys: add `.env` to `.gitignore` before any code exists.
 
 ## Owner's answers (2026-09-30)
 

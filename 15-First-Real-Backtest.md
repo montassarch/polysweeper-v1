@@ -76,7 +76,7 @@ need true match-end times from a results provider to test this properly.
 
 ## Next steps
 
-- [ ] Finish football collection and run the same analysis.
-- [ ] Get true match-end times (results provider) and redo Result 2 properly.
-- [ ] Build shadow mode: record real order book at each candidate moment.
+- [x] Finish football collection and run the same analysis.
+- [x] Get true match-end times (results provider) and redo Result 2 properly.
+- [x] Build shadow mode: record real order book at each candidate moment.
 - [ ] Re-run with spread/depth assumptions (pessimistic fills).

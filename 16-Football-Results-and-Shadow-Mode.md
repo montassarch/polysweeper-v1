@@ -83,7 +83,7 @@ written when you choose.
 
 ## Next steps
 
-- [ ] Review the first shadow test run.
-- [ ] Decide where shadow mode runs long term (PC or server).
-- [ ] Add a results provider (true match end time + second source).
+- [x] Review the first shadow test run.
+- [x] Decide where shadow mode runs long term (PC or server).
+- [x] Add a results provider (true match end time + second source).
 - [ ] After 1-2 weeks of shadow data, decide on the rules and any real money.

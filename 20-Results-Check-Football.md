@@ -68,7 +68,7 @@ stoppage from ESPN's clock. Could be a few minutes off.
 
 ## Next steps
 
-- [ ] Plug ESPN (football) and OpenDota (Dota 2) into shadow mode so it tests
+- [x] Plug ESPN (football) and OpenDota (Dota 2) into shadow mode so it tests
       the real rule: buy only after the result is confirmed.
-- [ ] Add name aliases (Bayern, Inter, etc.) to raise the match rate.
+- [x] Add name aliases (Bayern, Inter, etc.) to raise the match rate.
 - [ ] Measure ESPN's delay (minutes from whistle to "full time" in the feed).

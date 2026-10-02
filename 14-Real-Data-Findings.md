@@ -70,8 +70,8 @@ Tiny sample (3 esports matches plus metadata), so treat as **leads, not proof**.
 
 ## Next steps
 
-- [ ] Build the collector: closed esports/football match events -> moneyline
+- [x] Build the collector: closed esports/football match events -> moneyline
       market, winner, price history, Polymarket score, `closedTime`.
-- [ ] Measure the gap window per match (minutes, prices).
-- [ ] Start shadow mode to record real order books (depth).
-- [ ] Get a free football-data.org key (store as an environment secret).
+- [x] Measure the gap window per match (minutes, prices).
+- [x] Start shadow mode to record real order books (depth).
+- [x] ~~Get a free football-data.org key (store as an environment secret).~~ (not needed)

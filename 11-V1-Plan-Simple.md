@@ -129,9 +129,9 @@ gives honest numbers for free. Start this as early as possible.
 ## Status
 
 - [x] Research and plan written
-- [ ] Choose results providers (football + esports) and test free tiers (blocked in sandbox)
-- [ ] Build market lister and match mapper (needs Polymarket access)
+- [x] Choose results providers (football + esports) and test free tiers (blocked in sandbox)
+- [x] Build market lister and match mapper (needs Polymarket access)
 - [x] Build decision core, risk rules, kill switch, backtester (offline, tested on fake data) — see [[13-Code-Overview]]
-- [ ] Build shadow mode
+- [x] Build shadow mode
 - [ ] Telegram bot (alerts + kill switch)
 - [ ] Review results; decide on tiny real money

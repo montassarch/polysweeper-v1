@@ -43,10 +43,10 @@ loss cost $2.00 and paused the bot, exactly as designed.
 
 ## What is NOT built yet
 
-- [ ] Downloading **real** Polymarket markets and price history
-- [ ] Downloading **real** match results (football, esports)
-- [ ] The market-to-match mapper (hardest part)
-- [ ] Shadow mode (live run with no orders, recording the order book)
+- [x] Downloading **real** Polymarket markets and price history
+- [x] Downloading **real** match results (football, esports)
+- [x] The market-to-match mapper (hardest part)
+- [x] Shadow mode (live run with no orders, recording the order book)
 - [ ] Telegram bot (alerts, `/pause`, `/kill`)
 - [ ] Real order placement (not before weeks of testing)
 

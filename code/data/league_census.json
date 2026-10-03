@@ -1,0 +1,825 @@
+{
+ "window_days": 7,
+ "generated": "2026-10-03T00:44:34+00:00",
+ "leagues": [
+  {
+   "league": "setkameua",
+   "name": "Setka Cup UA (M)",
+   "matches_per_day": 142.9,
+   "winner_markets_per_day": 142.9,
+   "resolution_source": "https://setkacup.com"
+  },
+  {
+   "league": "itf",
+   "name": "ITF",
+   "matches_per_day": 142.9,
+   "winner_markets_per_day": 142.9,
+   "resolution_source": "https://www.itftennis.com/en/tournament-calendar/"
+  },
+  {
+   "league": "setkamecz",
+   "name": "Setka Cup CZ (M)",
+   "matches_per_day": 53.3,
+   "winner_markets_per_day": 53.3,
+   "resolution_source": "https://setkacup.com"
+  },
+  {
+   "league": "cs2",
+   "name": "CS2",
+   "matches_per_day": 52.3,
+   "winner_markets_per_day": 52.3,
+   "resolution_source": "https://hltv.org"
+  },
+  {
+   "league": "atp",
+   "name": "ATP Tour",
+   "matches_per_day": 44.0,
+   "winner_markets_per_day": 44.0,
+   "resolution_source": "https://www.atptour.com/en/scores/current"
+  },
+  {
+   "league": "setkamemd",
+   "name": "Setka Cup MD (M)",
+   "matches_per_day": 39.3,
+   "winner_markets_per_day": 39.3,
+   "resolution_source": "https://setkacup.com"
+  },
+  {
+   "league": "wta",
+   "name": "WTA Tour",
+   "matches_per_day": 25.3,
+   "winner_markets_per_day": 25.3,
+   "resolution_source": "https://www.wtatennis.com/scores"
+  },
+  {
+   "league": "lol",
+   "name": "LoL",
+   "matches_per_day": 15.7,
+   "winner_markets_per_day": 15.7,
+   "resolution_source": "https://liquipedia.net/leagueoflegends/Main_Page"
+  },
+  {
+   "league": "modus",
+   "name": "MODUS Super Series",
+   "matches_per_day": 14.9,
+   "winner_markets_per_day": 14.9,
+   "resolution_source": "https://modussuperseries.com/"
+  },
+  {
+   "league": "cfb",
+   "name": "College Football",
+   "matches_per_day": 14.7,
+   "winner_markets_per_day": 14.7,
+   "resolution_source": "https://www.ncaa.com/"
+  },
+  {
+   "league": "atp-doubles",
+   "name": "ATP Doubles",
+   "matches_per_day": 14.0,
+   "winner_markets_per_day": 14.0,
+   "resolution_source": "https://www.atptour.com/en/scores/current"
+  },
+  {
+   "league": "mlb",
+   "name": "MLB",
+   "matches_per_day": 13.3,
+   "winner_markets_per_day": 13.3,
+   "resolution_source": "https://www.mlb.com/"
+  },
+  {
+   "league": "wta-doubles",
+   "name": "WTA Doubles",
+   "matches_per_day": 11.0,
+   "winner_markets_per_day": 11.0,
+   "resolution_source": "https://www.wtatennis.com/scores"
+  },
+  {
+   "league": "unl",
+   "name": "UEFA Nations League",
+   "matches_per_day": 7.7,
+   "winner_markets_per_day": 23.1,
+   "resolution_source": "https://www.uefa.com/uefanationsleague/"
+  },
+  {
+   "league": "r6siege",
+   "name": "Rainbow Six Siege",
+   "matches_per_day": 7.4,
+   "winner_markets_per_day": 7.4,
+   "resolution_source": "https://liquipedia.net/rainbowsix/Main_Page"
+  },
+  {
+   "league": "dota2",
+   "name": "Dota 2",
+   "matches_per_day": 6.3,
+   "winner_markets_per_day": 6.3,
+   "resolution_source": "https://www.liquipedia.net/dota2/Main_Page"
+  },
+  {
+   "league": "mlbb",
+   "name": "Mobile Legends: Bang Bang",
+   "matches_per_day": 6.1,
+   "winner_markets_per_day": 6.1,
+   "resolution_source": "https://liquipedia.net/mobilelegends/Main_Page"
+  },
+  {
+   "league": "hok",
+   "name": "Honor of Kings",
+   "matches_per_day": 5.7,
+   "winner_markets_per_day": 5.7,
+   "resolution_source": "https://liquipedia.net/honorofkings/Main_Page"
+  },
+  {
+   "league": "crint",
+   "name": "International",
+   "matches_per_day": 5.1,
+   "winner_markets_per_day": 5.4,
+   "resolution_source": "https://www.icc-cricket.com/"
+  },
+  {
+   "league": "conl",
+   "name": "CONCACAF Nations League",
+   "matches_per_day": 4.7,
+   "winner_markets_per_day": 14.1,
+   "resolution_source": "https://www.concacaf.com/"
+  },
+  {
+   "league": "npb",
+   "name": "NPB",
+   "matches_per_day": 4.6,
+   "winner_markets_per_day": 4.6,
+   "resolution_source": "https://npb.jp/"
+  },
+  {
+   "league": "setkawoua",
+   "name": "Setka Cup UA (W)",
+   "matches_per_day": 4.4,
+   "winner_markets_per_day": 4.4,
+   "resolution_source": "https://setkacup.com"
+  },
+  {
+   "league": "khl",
+   "name": "KHL",
+   "matches_per_day": 4.3,
+   "winner_markets_per_day": 4.3,
+   "resolution_source": "https://en.khl.ru/calendar/"
+  },
+  {
+   "league": "nhl",
+   "name": "NHL",
+   "matches_per_day": 4.1,
+   "winner_markets_per_day": 4.1,
+   "resolution_source": "https://www.nhl.com/"
+  },
+  {
+   "league": "daviscup",
+   "name": "Davis Cup",
+   "matches_per_day": 3.9,
+   "winner_markets_per_day": 3.9,
+   "resolution_source": "https://www.daviscup.com/"
+  },
+  {
+   "league": "fif",
+   "name": "FIFA Friendlies",
+   "matches_per_day": 3.7,
+   "winner_markets_per_day": 11.1,
+   "resolution_source": "https://www.fifa.com/en"
+  },
+  {
+   "league": "enl",
+   "name": "National League",
+   "matches_per_day": 3.4,
+   "winner_markets_per_day": 10.3,
+   "resolution_source": "https://www.thenationalleague.org.uk/"
+  },
+  {
+   "league": "afcq",
+   "name": "Africa Cup of Nations Qualifiers",
+   "matches_per_day": 3.3,
+   "winner_markets_per_day": 9.9,
+   "resolution_source": "https://www.cafonline.com/"
+  },
+  {
+   "league": "snhl",
+   "name": "National League",
+   "matches_per_day": 2.9,
+   "winner_markets_per_day": 2.9,
+   "resolution_source": "https://www.nationalleague.ch/"
+  },
+  {
+   "league": "cehl",
+   "name": "Czech Extraliga",
+   "matches_per_day": 2.9,
+   "winner_markets_per_day": 2.9,
+   "resolution_source": "https://www.hokej.cz/tipsport-extraliga"
+  },
+  {
+   "league": "liiga",
+   "name": "Liiga",
+   "matches_per_day": 2.7,
+   "winner_markets_per_day": 2.7,
+   "resolution_source": "https://liiga.fi/en"
+  },
+  {
+   "league": "euroleague",
+   "name": "EuroLeague",
+   "matches_per_day": 2.7,
+   "winner_markets_per_day": 2.7,
+   "resolution_source": "https://www.euroleaguebasketball.net/euroleague/"
+  },
+  {
+   "league": "argpn",
+   "name": "Primera Nacional",
+   "matches_per_day": 2.6,
+   "winner_markets_per_day": 7.7,
+   "resolution_source": "https://www.afa.com.ar/"
+  },
+  {
+   "league": "val",
+   "name": "Valorant",
+   "matches_per_day": 2.6,
+   "winner_markets_per_day": 2.6,
+   "resolution_source": "https://liquipedia.net/valorant/Main_Page"
+  },
+  {
+   "league": "shl",
+   "name": "SHL",
+   "matches_per_day": 2.4,
+   "winner_markets_per_day": 2.4,
+   "resolution_source": "https://www.eliteprospects.com/league/shl"
+  },
+  {
+   "league": "mls",
+   "name": "MLS",
+   "matches_per_day": 2.3,
+   "winner_markets_per_day": 6.9,
+   "resolution_source": "https://www.mls.com/"
+  },
+  {
+   "league": "nfl",
+   "name": "NFL",
+   "matches_per_day": 2.1,
+   "winner_markets_per_day": 2.1,
+   "resolution_source": "https://www.nfl.com/"
+  },
+  {
+   "league": "uslc",
+   "name": "USL Championship",
+   "matches_per_day": 2.0,
+   "winner_markets_per_day": 6.0,
+   "resolution_source": "https://www.uslchampionship.com/"
+  },
+  {
+   "league": "dehl",
+   "name": "DEL",
+   "matches_per_day": 2.0,
+   "winner_markets_per_day": 2.0,
+   "resolution_source": "https://www.penny-del.org/en/del/schedule-and-results.html"
+  },
+  {
+   "league": "bkbbl",
+   "name": "Basketball Bundesliga",
+   "matches_per_day": 2.0,
+   "winner_markets_per_day": 2.0,
+   "resolution_source": "https://www.easycredit-bbl.de/en/"
+  },
+  {
+   "league": "vbeuro",
+   "name": "EuroVolley",
+   "matches_per_day": 1.9,
+   "winner_markets_per_day": 1.9,
+   "resolution_source": "https://www.cev.eu/"
+  },
+  {
+   "league": "clf",
+   "name": "Club Friendlies",
+   "matches_per_day": 1.7,
+   "winner_markets_per_day": 5.1,
+   "resolution_source": "https://www.flashscore.com/"
+  },
+  {
+   "league": "kbo",
+   "name": "KBO",
+   "matches_per_day": 1.7,
+   "winner_markets_per_day": 1.7,
+   "resolution_source": "https://www.koreabaseball.com/"
+  },
+  {
+   "league": "cpbl",
+   "name": "CPBL",
+   "matches_per_day": 1.7,
+   "winner_markets_per_day": 1.7,
+   "resolution_source": "https://www.cpbl.com.tw/"
+  },
+  {
+   "league": "aflw",
+   "name": "AFL Women",
+   "matches_per_day": 1.7,
+   "winner_markets_per_day": 1.7,
+   "resolution_source": "https://www.afl.com.au/aflw"
+  },
+  {
+   "league": "es2",
+   "name": "LaLiga2",
+   "matches_per_day": 1.6,
+   "winner_markets_per_day": 4.7,
+   "resolution_source": "https://www.laliga.com/"
+  },
+  {
+   "league": "wnba",
+   "name": "WNBA",
+   "matches_per_day": 1.6,
+   "winner_markets_per_day": 1.6,
+   "resolution_source": "https://www.wnba.com/"
+  },
+  {
+   "league": "ufc",
+   "name": "UFC",
+   "matches_per_day": 1.6,
+   "winner_markets_per_day": 1.6,
+   "resolution_source": "https://www.ufc.com/"
+  },
+  {
+   "league": "ja2",
+   "name": "J2 League",
+   "matches_per_day": 1.4,
+   "winner_markets_per_day": 4.3,
+   "resolution_source": "https://www.jleague.jp/"
+  },
+  {
+   "league": "j2100",
+   "name": "J2 League",
+   "matches_per_day": 1.4,
+   "winner_markets_per_day": 4.3,
+   "resolution_source": "https://www.jleague.jp/"
+  },
+  {
+   "league": "el2",
+   "name": "League Two",
+   "matches_per_day": 1.4,
+   "winner_markets_per_day": 4.3,
+   "resolution_source": "https://www.efl.com/"
+  },
+  {
+   "league": "col1",
+   "name": "Categor\u00eda Primera A",
+   "matches_per_day": 1.4,
+   "winner_markets_per_day": 4.3,
+   "resolution_source": "https://www.laliga.com/en-GB/other-competitions/supercopa-de-espana"
+  },
+  {
+   "league": "cdr",
+   "name": "Copa del Rey",
+   "matches_per_day": 1.4,
+   "winner_markets_per_day": 4.3,
+   "resolution_source": "https://www.laliga.com/en-GB/copa-del-rey"
+  },
+  {
+   "league": "bra2",
+   "name": "Brasileir\u00e3o S\u00e9rie B",
+   "matches_per_day": 1.4,
+   "winner_markets_per_day": 4.3,
+   "resolution_source": "https://www.laliga.com/en-GB/other-competitions/supercopa-de-espana"
+  },
+  {
+   "league": "pdcdarts",
+   "name": "PDC",
+   "matches_per_day": 1.4,
+   "winner_markets_per_day": 1.4,
+   "resolution_source": "https://www.pdc.tv/"
+  },
+  {
+   "league": "bknbl",
+   "name": "NBL",
+   "matches_per_day": 1.4,
+   "winner_markets_per_day": 1.4,
+   "resolution_source": "https://www.nbl.com.au/"
+  },
+  {
+   "league": "uwcl",
+   "name": "UEFA Women's Champions League",
+   "matches_per_day": 1.3,
+   "winner_markets_per_day": 3.9,
+   "resolution_source": "https://www.uefa.com/womenschampionsleague/"
+  },
+  {
+   "league": "uru1",
+   "name": "Uruguayan Primera Divisi\u00f3n",
+   "matches_per_day": 1.3,
+   "winner_markets_per_day": 3.9,
+   "resolution_source": "https://www.auf.org.uy/"
+  },
+  {
+   "league": "mex",
+   "name": "Liga MX",
+   "matches_per_day": 1.3,
+   "winner_markets_per_day": 3.9,
+   "resolution_source": "https://www.ligamx.net/"
+  },
+  {
+   "league": "mar1",
+   "name": "Botola Pro",
+   "matches_per_day": 1.3,
+   "winner_markets_per_day": 3.9,
+   "resolution_source": "https://www.laliga.com/en-GB/other-competitions/supercopa-de-espana"
+  },
+  {
+   "league": "col2",
+   "name": "Categor\u00eda Primera B",
+   "matches_per_day": 1.3,
+   "winner_markets_per_day": 3.9,
+   "resolution_source": "https://dimayor.com.co/"
+  },
+  {
+   "league": "zuffa",
+   "name": "Zuffa",
+   "matches_per_day": 1.3,
+   "winner_markets_per_day": 1.3,
+   "resolution_source": "https://www.ufc.com/"
+  },
+  {
+   "league": "ow",
+   "name": "Overwatch",
+   "matches_per_day": 1.3,
+   "winner_markets_per_day": 1.3,
+   "resolution_source": "https://liquipedia.net/overwatch/Main_Page"
+  },
+  {
+   "league": "bkjpn",
+   "name": "B.League",
+   "matches_per_day": 1.3,
+   "winner_markets_per_day": 1.3,
+   "resolution_source": "https://www.bleague.jp/en/"
+  },
+  {
+   "league": "ned2",
+   "name": "Eerste Divisie",
+   "matches_per_day": 1.1,
+   "winner_markets_per_day": 3.4,
+   "resolution_source": "https://www.keukenkampioendivisie.nl/"
+  },
+  {
+   "league": "idn2",
+   "name": "Indonesia Liga 2",
+   "matches_per_day": 1.1,
+   "winner_markets_per_day": 3.4,
+   "resolution_source": "https://ileague.id/"
+  },
+  {
+   "league": "hblnh",
+   "name": "LNH Division 1",
+   "matches_per_day": 1.1,
+   "winner_markets_per_day": 1.1,
+   "resolution_source": "https://www.lnh.fr/"
+  },
+  {
+   "league": "dpwt",
+   "name": "DP World Tour",
+   "matches_per_day": 1.0,
+   "winner_markets_per_day": 131.7,
+   "resolution_source": "https://www.europeantour.com/"
+  },
+  {
+   "league": "wsl",
+   "name": "Women's Super League",
+   "matches_per_day": 1.0,
+   "winner_markets_per_day": 3.0,
+   "resolution_source": "https://www.wslfootball.com/"
+  },
+  {
+   "league": "usl1",
+   "name": "USL League One",
+   "matches_per_day": 1.0,
+   "winner_markets_per_day": 3.0,
+   "resolution_source": "https://www.uslleagueone.com/"
+  },
+  {
+   "league": "rutopft",
+   "name": "Top 14",
+   "matches_per_day": 1.0,
+   "winner_markets_per_day": 3.0,
+   "resolution_source": "https://www.lnr.fr/top-14"
+  },
+  {
+   "league": "bklkl",
+   "name": "LKL",
+   "matches_per_day": 1.0,
+   "winner_markets_per_day": 1.0,
+   "resolution_source": "https://lkl.lt/"
+  },
+  {
+   "league": "bkbsl",
+   "name": "Basketbol S\u00fcper Ligi",
+   "matches_per_day": 1.0,
+   "winner_markets_per_day": 1.0,
+   "resolution_source": "https://www.tbl.org.tr/"
+  },
+  {
+   "league": "lpga",
+   "name": "LPGA",
+   "matches_per_day": 0.9,
+   "winner_markets_per_day": 114.4,
+   "resolution_source": "https://www.lpga.com/"
+  },
+  {
+   "league": "hbhandbold",
+   "name": "H\u00e5ndboldligaen",
+   "matches_per_day": 0.9,
+   "winner_markets_per_day": 0.9,
+   "resolution_source": "https://tophaandbold.dk/"
+  },
+  {
+   "league": "hbeliteserien",
+   "name": "Eliteserien",
+   "matches_per_day": 0.9,
+   "winner_markets_per_day": 0.9,
+   "resolution_source": "https://www.handball.no/"
+  },
+  {
+   "league": "hbbundesliga",
+   "name": "Handball Bundesliga",
+   "matches_per_day": 0.9,
+   "winner_markets_per_day": 0.9,
+   "resolution_source": "https://www.daikin-hbl.de/"
+  },
+  {
+   "league": "hbasobal",
+   "name": "Liga ASOBAL",
+   "matches_per_day": 0.9,
+   "winner_markets_per_day": 0.9,
+   "resolution_source": "https://asobal.es/"
+  },
+  {
+   "league": "crict20plw",
+   "name": "T20 Premier League Women",
+   "matches_per_day": 0.9,
+   "winner_markets_per_day": 0.9,
+   "resolution_source": "https://www.espncricinfo.com/"
+  },
+  {
+   "league": "nwsl",
+   "name": "NWSL",
+   "matches_per_day": 0.7,
+   "winner_markets_per_day": 2.1,
+   "resolution_source": "https://www.nwslsoccer.com/"
+  },
+  {
+   "league": "gtm",
+   "name": "Liga Nacional de Guatemala",
+   "matches_per_day": 0.7,
+   "winner_markets_per_day": 2.1,
+   "resolution_source": "https://www.ligagt.org/"
+  },
+  {
+   "league": "canpl",
+   "name": "Canadian Premier League",
+   "matches_per_day": 0.7,
+   "winner_markets_per_day": 2.1,
+   "resolution_source": "https://www.cplsoccer.com/"
+  },
+  {
+   "league": "sc2",
+   "name": "StarCraft II",
+   "matches_per_day": 0.7,
+   "winner_markets_per_day": 0.7,
+   "resolution_source": "https://liquipedia.net/starcraft2/Main_Page"
+  },
+  {
+   "league": "nirl1",
+   "name": "NIFL Premiership",
+   "matches_per_day": 0.6,
+   "winner_markets_per_day": 1.7,
+   "resolution_source": "https://www.nifootballleague.com/"
+  },
+  {
+   "league": "el1",
+   "name": "League One",
+   "matches_per_day": 0.6,
+   "winner_markets_per_day": 1.7,
+   "resolution_source": "https://www.efl.com/"
+  },
+  {
+   "league": "bra3",
+   "name": "Brasileir\u00e3o S\u00e9rie C",
+   "matches_per_day": 0.6,
+   "winner_markets_per_day": 1.7,
+   "resolution_source": "https://www.cbf.com.br/"
+  },
+  {
+   "league": "hbsuperliga",
+   "name": "Superliga",
+   "matches_per_day": 0.6,
+   "winner_markets_per_day": 0.6,
+   "resolution_source": "https://orlen-superliga.pl/"
+  },
+  {
+   "league": "bkcl",
+   "name": "Basketball Champions League",
+   "matches_per_day": 0.6,
+   "winner_markets_per_day": 0.6,
+   "resolution_source": "https://www.championsleague.basketball/"
+  },
+  {
+   "league": "ruurc",
+   "name": "United Rugby Championship",
+   "matches_per_day": 0.4,
+   "winner_markets_per_day": 1.3,
+   "resolution_source": "https://www.unitedrugby.com/"
+  },
+  {
+   "league": "chl2",
+   "name": "Primera B (Chile)",
+   "matches_per_day": 0.4,
+   "winner_markets_per_day": 1.3,
+   "resolution_source": "https://www.anfp.cl/"
+  },
+  {
+   "league": "chi2",
+   "name": "China League One",
+   "matches_per_day": 0.4,
+   "winner_markets_per_day": 1.3,
+   "resolution_source": "https://www.thecfa.cn/"
+  },
+  {
+   "league": "vb2bundesliga",
+   "name": "2. Bundesliga",
+   "matches_per_day": 0.4,
+   "winner_markets_per_day": 0.4,
+   "resolution_source": "https://www.volleyball-bundesliga.de/"
+  },
+  {
+   "league": "rlnrl",
+   "name": "NRL",
+   "matches_per_day": 0.4,
+   "winner_markets_per_day": 0.4,
+   "resolution_source": "https://www.nrl.com/"
+  },
+  {
+   "league": "cfl",
+   "name": "CFL",
+   "matches_per_day": 0.4,
+   "winner_markets_per_day": 0.4,
+   "resolution_source": "https://www.cfl.ca/"
+  },
+  {
+   "league": "uwec",
+   "name": "UEFA Women's Europa Cup",
+   "matches_per_day": 0.3,
+   "winner_markets_per_day": 0.9,
+   "resolution_source": "https://www.uefa.com/womenseuropacup/"
+  },
+  {
+   "league": "u20wwc",
+   "name": "FIFA U-20 Women's World Cup",
+   "matches_per_day": 0.3,
+   "winner_markets_per_day": 0.9,
+   "resolution_source": "https://www.fifa.com/"
+  },
+  {
+   "league": "ruprem",
+   "name": "Premiership Rugby",
+   "matches_per_day": 0.3,
+   "winner_markets_per_day": 0.9,
+   "resolution_source": "https://www.premiershiprugby.com/"
+  },
+  {
+   "league": "argcopa",
+   "name": "Copa Argentina",
+   "matches_per_day": 0.3,
+   "winner_markets_per_day": 0.9,
+   "resolution_source": "https://www.copaargentina.org/"
+  },
+  {
+   "league": "rlsuper",
+   "name": "Super League",
+   "matches_per_day": 0.3,
+   "winner_markets_per_day": 0.3,
+   "resolution_source": "https://www.superleague.co.uk/"
+  },
+  {
+   "league": "cricetpl",
+   "name": "European T20 Premier League",
+   "matches_per_day": 0.3,
+   "winner_markets_per_day": 0.3,
+   "resolution_source": "https://www.espncricinfo.com/"
+  },
+  {
+   "league": "boxing",
+   "name": "Boxing",
+   "matches_per_day": 0.3,
+   "winner_markets_per_day": 0.3,
+   "resolution_source": "https://www.espn.com/boxing/"
+  },
+  {
+   "league": "scoc",
+   "name": "Scottish Cup",
+   "matches_per_day": 0.1,
+   "winner_markets_per_day": 0.4,
+   "resolution_source": "https://www.scottishfa.co.uk/"
+  },
+  {
+   "league": "ptc",
+   "name": "Ta\u00e7a de Portugal",
+   "matches_per_day": 0.1,
+   "winner_markets_per_day": 0.4,
+   "resolution_source": "https://www.ligaportugal.pt/"
+  },
+  {
+   "league": "per1",
+   "name": "Liga 1",
+   "matches_per_day": 0.1,
+   "winner_markets_per_day": 0.4,
+   "resolution_source": "https://www.laliga.com/en-GB/other-competitions/supercopa-de-espana"
+  },
+  {
+   "league": "nor2",
+   "name": "OBOS-ligaen",
+   "matches_per_day": 0.1,
+   "winner_markets_per_day": 0.4,
+   "resolution_source": "https://www.obosligaen.no/"
+  },
+  {
+   "league": "kor",
+   "name": "K League 1",
+   "matches_per_day": 0.1,
+   "winner_markets_per_day": 0.4,
+   "resolution_source": "https://www.kleague.com/"
+  },
+  {
+   "league": "irl1",
+   "name": "League of Ireland Premier Division",
+   "matches_per_day": 0.1,
+   "winner_markets_per_day": 0.4,
+   "resolution_source": "https://www.leagueofireland.ie/"
+  },
+  {
+   "league": "arg",
+   "name": "Liga Profesional de F\u00fatbol",
+   "matches_per_day": 0.1,
+   "winner_markets_per_day": 0.4,
+   "resolution_source": "https://www.afa.com.ar/"
+  },
+  {
+   "league": "pll",
+   "name": "Premier Lacrosse League",
+   "matches_per_day": 0.1,
+   "winner_markets_per_day": 0.1,
+   "resolution_source": "https://premierlacrosseleague.com"
+  },
+  {
+   "league": "hbnbi",
+   "name": "NB I",
+   "matches_per_day": 0.1,
+   "winner_markets_per_day": 0.1,
+   "resolution_source": "https://www.mksz.hu/"
+  },
+  {
+   "league": "cricodcw",
+   "name": "Metro Bank One Day Cup Women",
+   "matches_per_day": 0.1,
+   "winner_markets_per_day": 0.1,
+   "resolution_source": "https://www.espncricinfo.com/"
+  },
+  {
+   "league": "cricodcl2w",
+   "name": "One Day Cup L2 (W)",
+   "matches_per_day": 0.1,
+   "winner_markets_per_day": 0.1,
+   "resolution_source": "https://www.espncricinfo.com/"
+  },
+  {
+   "league": "cricodc",
+   "name": "One Day Cup",
+   "matches_per_day": 0.1,
+   "winner_markets_per_day": 0.1,
+   "resolution_source": "https://www.espncricinfo.com/"
+  },
+  {
+   "league": "criccpl",
+   "name": "Caribbean Premier League",
+   "matches_per_day": 0.1,
+   "winner_markets_per_day": 0.1,
+   "resolution_source": "https://www.espncricinfo.com/"
+  },
+  {
+   "league": "bkvtb",
+   "name": "VTB United League",
+   "matches_per_day": 0.1,
+   "winner_markets_per_day": 0.1,
+   "resolution_source": "https://www.vtb-league.com/en/"
+  },
+  {
+   "league": "bkfr1",
+   "name": "Betclic \u00c9lite",
+   "matches_per_day": 0.1,
+   "winner_markets_per_day": 0.1,
+   "resolution_source": "https://www.lnb.fr/"
+  },
+  {
+   "league": "afl",
+   "name": "AFL",
+   "matches_per_day": 0.1,
+   "winner_markets_per_day": 0.1,
+   "resolution_source": "https://www.afl.com.au/"
+  }
+ ]
+}

@@ -31,7 +31,7 @@ Back to [[V2-Home]]
 
 - [ ] M2: build a small script to pull public trades for finished match markets and find late-band buyers
 - [ ] M3: deep research write-up (sources, methods, competition)
-- [ ] M4: league census from Polymarket data
+- [x] M4: league census from Polymarket data (see [[V2-03-League-Census]])
 - [ ] M1: analyse late-band data from the owner's shadow logs once synced
 - [ ] M5: source census for the top leagues
 - [ ] Write a V2 strategy spec (entry band, confirmation rules, timing, sizing)

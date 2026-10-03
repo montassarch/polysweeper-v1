@@ -14,6 +14,7 @@ should be discoverable with public data and an AI assistant.
 
 - [[V2-01-White-Paper-Review]] — what the V2 investor paper claims, and what doesn't add up
 - [[V2-02-Research-Plan]] — how we will reverse-engineer it, step by step
+- [[V2-03-League-Census]] — which leagues settle the most matches per day
 
 ## What we know (from the paper, unaudited)
 

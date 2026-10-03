@@ -11,3 +11,5 @@ code/data/shadow_test.log
 code/dashboard.html
 code/data/results/
 code/data/football_check.log
+__pycache__/
+*.pyc

@@ -473,3 +473,19 @@ class EndWatchTests(unittest.TestCase):
         self.assertEqual((r["first_trigger"], r["winner_idx"], r["decided_before_ended_by_s"]), ("score_decided", 0, 60.0))
         self.assertEqual((r["ask_at_start"], r["max_shares_096_0995"], r["max_shares_0995_0999"], r["seconds_until_ask_0999"]),
                          (0.97, 40.0, 40.0, 90.0))
+
+    def test_ignores_matches_already_over_and_never_reopens(self):
+        from polysweeper.endwindow import EndWatch
+        out = []
+        w = EndWatch(out.append, say=lambda *_: None)
+        info = {"league": "cs2", "outcomes": ["A", "B"], "event": {"title": "Counter-Strike: A vs B (BO3) - X", "score": "000-000|2-0|Bo3"}}
+        st = {0: (None, 0.999, [], []), 1: (0.01, None, [{"price": "0.01", "size": "9"}], [])}
+        for t in (0, 100, 2000):
+            w.observe("late", info, {"ended": True}, st, t)        # first seen already decided
+        self.assertEqual((w.open, out), ({}, []))
+        football = {"league": "epl", "outcomes": ["Yes", "No"], "event": {"title": "X vs Y", "score": "0-0"}}
+        half = {0: (0.51, 0.50, [{"price": "0.51", "size": "9"}], []), 1: (0.51, 0.49, [], [])}
+        w.observe("void", football, {"ended": False}, half, 0)
+        w.observe("void", football, {"ended": True}, half, 10)     # cancelled, 50/50: no clear winner
+        w.close("void", "test")
+        self.assertEqual(out, [])

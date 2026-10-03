@@ -25,6 +25,8 @@ class EndWatch:
         self.write = write          # function(record) -> logs one line
         self.say = say
         self.open = {}
+        self.done = set()            # never open a second window for the same match
+        self.seen_playing = set()    # matches seen BEFORE they were decided (we saw the transition)
 
     def observe(self, mid, info, ev_state, stats, now):
         e, outs = info["event"], info["outcomes"]
@@ -33,7 +35,13 @@ class EndWatch:
         ended = ev_state.get("ended") is True
         rec = self.open.get(mid)
         if rec is None:
+            if mid in self.done:
+                return
             if decided is None and not ended:
+                self.seen_playing.add(mid)
+                return
+            if mid not in self.seen_playing:     # it was already over when we first saw it: timing unknown
+                self.done.add(mid)
                 return
             rec = self.open[mid] = {"type": "end_window", "market_id": mid, "league": info["league"],
                                     "title": e.get("title"), "outcomes": outs, "t0": now,
@@ -50,6 +58,8 @@ class EndWatch:
         idx = rec["winner_idx"]
         if idx is None and stats:                       # no usable score (e.g. football): the side buyers favour
             idx = max(stats, key=lambda i: stats[i][1] if stats[i][1] is not None else -1)
+            if (stats[idx][1] or 0) < 0.90:             # no clear winner yet (or a 50/50 cancellation): don't sample
+                idx = None
         if idx in stats and len(rec["samples"]) < MAX_SAMPLES:
             best_ask, best_bid, asks, _ = stats[idx]
             s = [t, best_ask, best_bid, ask_shares(asks, 0.96, 0.995), ask_shares(asks, 0.99501, 0.999), idx]
@@ -59,6 +69,7 @@ class EndWatch:
             self.close(mid, "15 minutes done")
 
     def close(self, mid, reason):
+        self.done.add(mid)
         rec = self.open.pop(mid, None)
         if not rec or not rec["samples"]:
             return

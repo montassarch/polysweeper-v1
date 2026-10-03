@@ -101,3 +101,5 @@ Back to [[V1-Home]].
   "dead ranges" rejected (cleared at 0.999 like sports). Lab health check found the PC still runs
   the first autopilot version (10-minute checks, no daily-folder sync, restarts on notes): owner
   must restart the autopilot once ([[28-Autopilot]]).
+- PC updates were blocked by 5 files edited on the PC (screenshot). Owner given 4 rehearsed git
+  commands; autopilot now keeps PC edits as a commit or stash and never loops ([[28-Autopilot]]).

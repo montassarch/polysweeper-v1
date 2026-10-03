@@ -93,3 +93,21 @@ login), or in the `code` folder double-click `stop_shadow.bat`, wait until the "
 autopilot" window closes (up to about 2 minutes), then double-click `autopilot.bat`. After that,
 updates to the autopilot itself are applied automatically. The score rows written so far are
 kept on the PC and will be sent with the next sync.
+
+## 2026-10-03 20:44: updates blocked by files edited on the PC (and the fix)
+
+The owner's screenshot of the autopilot window showed the real cause. Five files had been edited
+on the PC and not saved to git: `.gitignore`, `CLAUDE.md`, `00-Session-Log`, `24-Task-List` and
+`V1-Home`. Git refused to overwrite them, so every update failed and every data push was rejected.
+Since about 19:20 UTC no data reached GitHub, and shadow mode restarted every 1-10 minutes.
+
+**One-time fix (owner, 4 commands in a command window in the project folder):** put the PC's edits
+aside (`git stash`), send a copy to GitHub (branch `pc-local-changes`), pull, push. These steps
+were rehearsed first on an exact copy of the PC's state.
+
+**Permanent fix (autopilot, 2026-10-03):** files edited on the PC never block an update again:
+- Notes and other files outside `code`: kept as a commit and sent with the data.
+- Code edits: put aside (git stash), so the PC always runs GitHub's code.
+- Files in the way of an update: renamed to `.pc-copy-<time>`. Nothing is deleted.
+- If an update still fails, shadow mode keeps running and the next try is in 30 minutes (no
+  restart loop). The window and the log show the full error.

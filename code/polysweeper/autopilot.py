@@ -226,13 +226,25 @@ def apply_update(shadow, me):
     return "failed" if behind() else "ok"
 
 
+AUTOPILOT_STOP = "autopilot update"                 # what the autopilot writes in the stop file
+
+
+def owner_stop():
+    """True if the owner asked to stop (stop_shadow.bat). The autopilot's own stop file for an update
+    says AUTOPILOT_STOP; anything else is the owner's and must never be cleared by the autopilot."""
+    try:
+        return STOP.exists() and STOP.read_text(errors="ignore").strip() != AUTOPILOT_STOP
+    except OSError:
+        return STOP.exists()
+
+
 class ShadowProcess:
     def __init__(self, cmd=None):
         self.cmd = cmd or [sys.executable, "-u", "-m", "polysweeper.shadow", "--forever"]
         self.proc = None
 
     def start(self):
-        if STOP.exists():
+        if STOP.exists() and not owner_stop():
             STOP.unlink()
         log("starting shadow mode")
         self.proc = subprocess.Popen(self.cmd, cwd=str(CODE))
@@ -245,15 +257,16 @@ class ShadowProcess:
         if not self.running():
             return
         log(f"stopping shadow mode {why}")
-        STOP.parent.mkdir(parents=True, exist_ok=True)
-        STOP.write_text("autopilot update")
+        if not owner_stop():                         # never overwrite the owner's stop request
+            STOP.parent.mkdir(parents=True, exist_ok=True)
+            STOP.write_text(AUTOPILOT_STOP)
         end = time.time() + wait
         while self.running() and time.time() < end:
             time.sleep(1)
         if self.running():
             self.proc.terminate()
             self.proc.wait(30)
-        if STOP.exists():
+        if STOP.exists() and not owner_stop():
             STOP.unlink()
 
 
@@ -276,11 +289,12 @@ def main(cmd=None, max_loops=None, tick=5):
     while max_loops is None or loops < max_loops:
         loops += 1
         time.sleep(tick)
+        if owner_stop():                             # the owner used stop_shadow.bat
+            shadow.stop(why="(stop file from the owner)")
+            log("stop file found: shadow mode and autopilot stopped by the owner")
+            sync_data()
+            return 0
         if not shadow.running():
-            if STOP.exists():                       # the owner used stop_shadow.bat
-                log("stop file found: shadow mode and autopilot stopped by the owner")
-                sync_data()
-                return 0
             log(f"shadow mode exited unexpectedly; restarting in {RESTART_DELAY} s")
             time.sleep(RESTART_DELAY)
             shadow.start()

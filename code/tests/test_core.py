@@ -685,6 +685,27 @@ class AutopilotNotesOnlyTests(unittest.TestCase):
         self.assertEqual(self.ap.apply_update(FakeShadow(), "code/polysweeper/autopilot.py"), "failed")
         self.assertEqual((FakeShadow.stops, FakeShadow.starts), (1, 1))
 
+    def test_owner_stop_file_is_never_cleared_by_the_autopilot(self):
+        """2026-10-03: in a restart loop the autopilot deleted the owner's stop file, so
+        stop_shadow.bat seemed to do nothing."""
+        import sys
+        ap = self.ap
+        saved = ap.STOP
+        ap.STOP = self.pc.parent / "STOP"
+        try:
+            waiter = [sys.executable, "-c", "import os,sys,time\nwhile not os.path.exists(sys.argv[1]): time.sleep(0.05)", str(ap.STOP)]
+            sh = ap.ShadowProcess(waiter)
+            sh.start()
+            sh.stop(wait=10)                                  # an update: the autopilot's own stop file
+            self.assertFalse(ap.STOP.exists())                # ...is cleaned up
+            ap.STOP.write_text("stop\r\n")                    # the owner's stop_shadow.bat
+            self.assertTrue(ap.owner_stop())
+            sh.start()                                        # the update path starting shadow again
+            sh.stop(wait=10)
+            self.assertTrue(ap.STOP.exists() and ap.owner_stop())   # the owner's request survives
+        finally:
+            ap.STOP = saved
+
     def test_unknown_changes_count_as_code(self):
         self.assertTrue(self.ap.touches_code(None))
         self.assertFalse(self.ap.touches_code({"PolySweeper-V1/24-Task-List.md", "CLAUDE.md"}))

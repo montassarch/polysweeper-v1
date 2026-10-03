@@ -11,9 +11,15 @@ the minimum order (5 shares) by walking the REAL order book, records the average
 fill price, fees, and whether Polymarket had already flagged the match as ended.
 When the market closes, it records win/loss and the fake profit.
 
+Live feed (v2.6): Polymarket's websocket keeps order books up to date in real time. Matches near
+the end (a side bid 0.85+) get their score re-read every 2 seconds; the moment one is decided or
+ended, its book is read and the rules run at once. Every score change of every watched match,
+with the prices at that moment, goes to data/shadow/daily/<date>.jsonl.
+
 Usage (from the code/ folder):
   python -m polysweeper.shadow --leagues cs2 lol dota2 val --minutes 60
   python -m polysweeper.shadow --leagues cs2 lol epl --forever
+  add --no-live to run without the live feed (15-second polling only)
 Stop early: create the file data/shadow/STOP  (the kill switch), or press Ctrl+C.
 Nothing here can place a real order: it only READS public data.
 """
@@ -31,7 +37,8 @@ from .config import Limits
 from .confirm import Confirmer
 from .fees import taker_fee
 from .killswitch import KillSwitch
-from .scorecheck import allows as score_allows, sport_of
+from .livefeed import LiveFeed
+from .scorecheck import allows as score_allows, sport_of, winner_outcome
 from .endwindow import EndWatch
 
 OUT = Path("data/shadow")
@@ -42,6 +49,9 @@ EVENT_BATCH = 40              # match states per request
 REFRESH_SECONDS = 120         # how often to re-list live events
 POLL_SECONDS = 15             # how often to read order books
 SETTLE_SECONDS = 60           # how often to check for payouts
+FAST_SECONDS = 2              # matches near the end: re-read their state this often
+HOT_BID = 0.85                # "near the end": a side's best bid is at least this
+STATUS_FIRST, STATUS_EVERY = 300, 3600   # live feed status line: after 5 minutes, then hourly
 
 
 def now_iso():
@@ -96,7 +106,7 @@ def book_problem(idx, stats):
 
 
 class Shadow:
-    def __init__(self, league_keys, limits: Limits):
+    def __init__(self, league_keys, limits: Limits, live: bool = False):
         self.limits = limits
         self.kill = KillSwitch(str(OUT / "STOP"))
         OUT.mkdir(parents=True, exist_ok=True)
@@ -105,13 +115,22 @@ class Shadow:
         self.event_f = (OUT / "events.jsonl").open("a")
         self.err_f = (OUT / "errors.jsonl").open("a")
         self.last_event_state = {}
-        self.endwatch = EndWatch(lambda rec: self.log(self.event_f, dict(rec, ts=now_iso())))
+        self.live_on = live
+        self.live = LiveFeed(on_error=self.feed_error)
+        self.feed_errors = {"hour": None, "n": 0}
+        self.endwatch = EndWatch(lambda rec: self.log(self.event_f, dict(rec, ts=now_iso())),
+                                 live=self.live, detail=self.daily)
+        self.last_best = {}        # market_id -> {idx: (best ask, best bid)} from the last book read
+        self.score_sig = {}        # event_id -> last (score, period, live, ended) written to the daily file
+        self.titled = set()        # (date, event_id) whose title is already in that day's file (this run)
+        self.feed_check = {"checks": 0, "agree": 0}
         self.state_path = OUT / "state.json"
         self.state = json.loads(self.state_path.read_text()) if self.state_path.exists() else {"pending": {}, "entered": []}
         all_l = leagues()
         self.series = {k: all_l[k]["series"] for k in league_keys if k in all_l}
         self.markets = {}          # market_id -> dict(event, market, tokens)
-        self.counters = {"snapshots": 0, "entries": 0, "thin": 0, "settled": 0, "errors": 0}
+        self.counters = {"snapshots": 0, "entries": 0, "thin": 0, "settled": 0, "errors": 0,
+                         "fast_reads": 0, "fast_rechecks": 0, "score_rows": 0}
         self.confirmer = Confirmer()
 
     # -- bookkeeping ---------------------------------------------------
@@ -121,6 +140,22 @@ class Shadow:
     def log(self, f, rec):
         f.write(json.dumps(rec) + "\n")
         f.flush()
+
+    def daily(self, rec):
+        """One line in data/shadow/daily/<UTC date>.jsonl (a new file each day keeps files small)."""
+        d = OUT / "daily"
+        d.mkdir(parents=True, exist_ok=True)
+        with (d / f"{datetime.now(timezone.utc):%Y-%m-%d}.jsonl").open("a") as f:
+            f.write(json.dumps(rec) + "\n")
+
+    def feed_error(self, where, exc):
+        """Live feed problems: at most 5 lines per hour in errors.jsonl (it retries on its own)."""
+        hour = datetime.now(timezone.utc).strftime("%Y-%m-%d %H")
+        if self.feed_errors["hour"] != hour:
+            self.feed_errors.update(hour=hour, n=0)
+        self.feed_errors["n"] += 1
+        if self.feed_errors["n"] <= 5:
+            self.error(where, exc)
 
     # -- discovery -----------------------------------------------------
     def open_events(self, sid):
@@ -161,6 +196,7 @@ class Shadow:
                     found[m["id"]] = {"league": league, "event": e, "market": m, "tokens": toks, "outcomes": outs}
         self.markets = found
         self.endwatch.close_missing(set(found))
+        self.live.set_tokens(t for info in found.values() for t in info["tokens"])
 
     def error(self, where, exc):
         """A2/A1: never let one bad reply stop the run; write it down and carry on."""
@@ -170,23 +206,56 @@ class Shadow:
         except Exception:
             pass
 
-    def refresh_states(self):
-        """A3: re-read live/ended/score for every tracked match, every round (batched)."""
-        ids = sorted({info["event"].get("id") for info in self.markets.values() if info["event"].get("id")})
+    def refresh_states(self, event_ids=None, tries=5):
+        """A3: re-read live/ended/score for every tracked match (or only EVENT_IDS), batched.
+        Writes every score change to the daily file. Returns the ids of matches whose state changed."""
+        ids = sorted({info["event"].get("id") for info in self.markets.values() if info["event"].get("id")}
+                     if event_ids is None else event_ids)
         fresh = {}
         for i in range(0, len(ids), EVENT_BATCH):
             chunk = ids[i:i + EVENT_BATCH]
-            for e in get_json(f"{GAMMA}/events?" + "&".join(f"id={x}" for x in chunk)) or []:
+            for e in get_json(f"{GAMMA}/events?" + "&".join(f"id={x}" for x in chunk), tries=tries) or []:
                 fresh[e.get("id")] = e
         for info in self.markets.values():
             e = fresh.get(info["event"].get("id"))
             if e:
                 for k in ("live", "ended", "score", "period"):
                     info["event"][k] = e.get(k)
+        return self.log_scores(fresh)
 
-    def fetch_books(self):
-        """A2: read all order books in a few batched requests instead of one by one."""
-        tokens = [t for info in self.markets.values() for t in info["tokens"]]
+    def log_scores(self, fresh):
+        """Option 3 data: one daily-file line per score/state change, with every side's best ask and
+        bid at that moment (live feed if it has the book, else the last book read)."""
+        changed = set()
+        for eid, e in fresh.items():
+            sig = (e.get("score"), e.get("period"), e.get("live"), e.get("ended"))
+            if self.score_sig.get(eid) == sig:
+                continue
+            self.score_sig[eid] = sig
+            changed.add(eid)
+            mkts = [(mid, info) for mid, info in self.markets.items() if info["event"].get("id") == eid]
+            if not mkts:
+                continue
+            books = []
+            for mid, info in mkts:
+                for idx, tok in enumerate(info["tokens"]):
+                    top = self.live.top(tok) or self.last_best.get(mid, {}).get(idx) or (None, None)
+                    books.append([mid, idx, top[0], top[1]])
+            rec = {"type": "score", "ts": now_iso(), "t": round(time.time(), 2), "event_id": eid,
+                   "league": mkts[0][1]["league"], "score": sig[0], "period": sig[1], "live": sig[2],
+                   "ended": sig[3], "books": books}
+            day_key = (datetime.now(timezone.utc).date(), eid)
+            if day_key not in self.titled:          # names once per match per daily file, to keep lines short
+                self.titled.add(day_key)
+                rec["title"] = e.get("title")
+                rec["outcomes"] = {mid: info["outcomes"] for mid, info in mkts}
+            self.daily(rec)
+            self.counters["score_rows"] += 1
+        return changed
+
+    def fetch_books(self, mids=None):
+        """A2: read all order books (or only those of MIDS) in a few batched requests."""
+        tokens = [t for mid, info in self.markets.items() if mids is None or mid in mids for t in info["tokens"]]
         books = {}
         for i in range(0, len(tokens), BOOK_BATCH):
             chunk = tokens[i:i + BOOK_BATCH]
@@ -225,6 +294,11 @@ class Shadow:
             bids = book.get("bids", [])
             stats[idx] = (min((float(a["price"]) for a in asks), default=None),
                           max((float(b["price"]) for b in bids), default=None), asks, bids)
+            live = self.live.top(tok)
+            if live is not None:                    # does the live feed agree with the book we just read?
+                self.feed_check["checks"] += 1
+                self.feed_check["agree"] += live == stats[idx][:2]
+        self.last_best[mid] = {idx: st[:2] for idx, st in stats.items()}
         try:
             self.endwatch.observe(mid, info, ev_state, stats, time.time())
         except Exception as exc:
@@ -287,6 +361,42 @@ class Shadow:
         for idx, best_ask, asks in in_window:
             if win_idx == idx and ev_state["ended"] is True:
                 self.maybe_enter("confirmed", mid, idx, info, best_ask, asks, ev_state, why)
+
+    def fast_tick(self):
+        """Matches near the end (a side's best bid 0.85+, not ended): re-read their state now. If one was
+        just decided or ended, read its book and run the rules at once, not up to 15 seconds later."""
+        hot = {}
+        for mid, info in self.markets.items():
+            e = info["event"]
+            st = parse_ts(e.get("startTime"))
+            if e.get("ended") is True or not e.get("id") or (st and st > time.time()):
+                continue                            # over, or not started yet
+            bids = [(self.live.top(t) or self.last_best.get(mid, {}).get(i) or (None, None))[1]
+                    for i, t in enumerate(info["tokens"])]
+            if max((b for b in bids if b is not None), default=0) >= HOT_BID:
+                hot[mid] = info
+        if not hot:
+            return
+        self.counters["fast_reads"] += 1
+        changed = self.refresh_states({info["event"]["id"] for info in hot.values()}, tries=1)
+        for mid, info in hot.items():
+            e = info["event"]
+            if e["id"] not in changed:
+                continue
+            sport = sport_of(info["league"])
+            if e.get("ended") is not True and (winner_outcome(e, info["outcomes"], sport) if sport else None) is None:
+                continue
+            self.counters["fast_rechecks"] += 1
+            self.poll_market(mid, info, self.fetch_books({mid}))
+
+    def live_status(self):
+        """One line in events.jsonl: is the live feed working on this PC?"""
+        c = self.feed_check
+        self.log(self.event_f, {"type": "live_feed_status", "ts": now_iso(), "enabled": self.live_on,
+                                **self.live.status(), "book_checks": c["checks"],
+                                "book_checks_agree_pct": round(100 * c["agree"] / c["checks"], 1) if c["checks"] else None,
+                                "fast_reads": self.counters["fast_reads"], "fast_rechecks": self.counters["fast_rechecks"],
+                                "score_rows": self.counters["score_rows"]})
 
     def note_event_state(self, e, league, ev_state):
         """Log when a match goes live / ends. Gives true start and end times."""
@@ -382,8 +492,11 @@ class Shadow:
     # -- main loop -----------------------------------------------------
     def run(self, minutes: float | None):
         end = None if minutes is None else time.time() + minutes * 60
-        last_refresh = last_settle = 0.0
-        print(f"shadow mode started; leagues={list(self.series)}; stop file: {OUT/'STOP'}")
+        last_refresh = last_settle = last_poll = 0.0
+        next_status = time.time() + STATUS_FIRST
+        print(f"shadow mode started; leagues={list(self.series)}; live feed: {'on' if self.live_on else 'off'}; stop file: {OUT/'STOP'}")
+        if self.live_on:
+            self.live.start()
         try:
             while end is None or time.time() < end:
                 if self.kill.is_active():
@@ -396,18 +509,30 @@ class Shadow:
                     except Exception as exc:
                         self.error("refresh", exc)
                     last_refresh = t
-                self.poll()
+                if t - last_poll >= POLL_SECONDS:
+                    self.poll()
+                    last_poll = t
+                else:
+                    try:
+                        self.fast_tick()
+                    except Exception as exc:
+                        self.error("fast_tick", exc)
                 if t - last_settle > SETTLE_SECONDS:
                     try:
                         self.settle()
                     except Exception as exc:
                         self.error("settle", exc)
                     last_settle = t
-                time.sleep(POLL_SECONDS)
+                if t >= next_status:
+                    self.live_status()
+                    next_status = t + STATUS_EVERY
+                time.sleep(FAST_SECONDS)
         except KeyboardInterrupt:
             print("stopped by user")
         finally:
+            self.live.stop()
             self.endwatch.close_all()
+            self.live_status()
             self.save()
             print("summary:", self.counters, "| pending:", len(self.state["pending"]))
 
@@ -419,12 +544,13 @@ def main(argv=None):
     ap.add_argument("--minutes", type=float, default=None)
     ap.add_argument("--forever", action="store_true")
     ap.add_argument("--config", default="config.json")
+    ap.add_argument("--no-live", action="store_true", help="no live feed: 15-second polling only")
     a = ap.parse_args(argv)
     if not a.forever and a.minutes is None:
         ap.error("give --minutes N or --forever")
     if not a.leagues:
         a.leagues = Path("shadow_leagues.txt").read_text().split()
-    sh = Shadow(a.leagues, Limits.from_json(a.config))
+    sh = Shadow(a.leagues, Limits.from_json(a.config), live=not a.no_live)
     sh.run(None if a.forever else a.minutes)
     return 0
 

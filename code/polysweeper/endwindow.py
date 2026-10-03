@@ -6,16 +6,21 @@ how the winner's order book looks:
   - best ask and best bid
   - shares for sale at 0.96-0.995 (our V1 window) and at 0.995-0.999 (the late band)
 One summary line per match goes to events.jsonl (type "end_window"), so it is synced.
+With the live feed running, the line also gets live_* numbers (the seconds around the result,
+from every book change and trade), and the full second-by-second detail goes to the daily file.
 Pure observation: never buys anything.
 """
 from __future__ import annotations
 
 import time
 
+from .livefeed import live_summary
 from .scorecheck import sport_of, winner_outcome
 
 WINDOW_SECONDS = 15 * 60
 MAX_SAMPLES = 150
+LIVE_BEFORE = 180            # live detail starts this many seconds before the window opens
+MAX_LIVE_ROWS = 600
 
 
 def ask_shares(asks, lo, hi):
@@ -23,9 +28,12 @@ def ask_shares(asks, lo, hi):
 
 
 class EndWatch:
-    def __init__(self, write, say=print):
+    def __init__(self, write, say=print, live=None, detail=None):
         self.write = write          # function(record) -> logs one line
         self.say = say
+        self.live = live            # LiveFeed (optional)
+        self.detail = detail        # function(record) -> logs one line to the daily file
+        self.tokens = {}
         self.open = {}
         self.done = set()            # never open a second window for the same match
         self.seen_playing = set()    # matches seen BEFORE they were decided (we saw the transition)
@@ -50,6 +58,7 @@ class EndWatch:
                                     "first_trigger": "score_decided" if decided is not None else "ended_flag",
                                     "decided_at": None, "ended_at": None, "winner_idx": None,
                                     "score_at_start": ev_state.get("score"), "samples": []}
+            self.tokens[mid] = info.get("tokens")
         t = round(now - rec["t0"], 1)
         if decided is not None and rec["decided_at"] is None:
             rec["decided_at"] = t
@@ -73,14 +82,16 @@ class EndWatch:
     def close(self, mid, reason, now=None):
         self.done.add(mid)
         rec = self.open.pop(mid, None)
+        tokens = self.tokens.pop(mid, None)
         if not rec or not rec["samples"]:
             return
+        now = time.time() if now is None else now
         smp = rec["samples"]
         hit999 = next((s[0] for s in smp if s[1] is not None and s[1] >= 0.999), None)
         rec.update({
             "closed_because": reason,
             "seconds_observed": smp[-1][0],                     # time of the LAST CHANGE seen in the book
-            "seconds_watched": round((time.time() if now is None else now) - rec["t0"], 1),   # how long the window really ran
+            "seconds_watched": round(now - rec["t0"], 1),       # how long the window really ran
             "ask_at_start": smp[0][1],
             "lowest_ask_seen": min((s[1] for s in smp if s[1] is not None), default=None),
             "max_shares_096_0995": max(s[3] for s in smp),
@@ -89,10 +100,29 @@ class EndWatch:
             "decided_before_ended_by_s": (rec["ended_at"] - rec["decided_at"])
                                           if rec["ended_at"] is not None and rec["decided_at"] is not None else None,
         })
+        if self.live is not None and self.live.stats["connects"] and tokens:
+            try:
+                self.add_live(rec, tokens[smp[-1][5]], now)
+            except Exception as exc:                    # never lose the normal record over the extra detail
+                rec["live_error"] = f"{type(exc).__name__}: {exc}"[:200]
         self.write(rec)
         self.say(f"end window: {(rec['title'] or '')[:50]} | start ask {rec['ask_at_start']} | "
                  f"shares at 0.96-0.995: {rec['max_shares_096_0995']:g} | at 0.995-0.999: {rec['max_shares_0995_0999']:g} | "
                  f"ask 0.999 after {hit999}s | decided->ended {rec['decided_before_ended_by_s']}s")
+
+    def add_live(self, rec, token, now):
+        t0 = rec["t0"]
+        hist = self.live.history(token, t0 - LIVE_BEFORE, now)
+        trades = self.live.trades(token, t0 - LIVE_BEFORE, now)
+        rec.update(live_summary(hist, trades, t0, now))
+        if self.detail:
+            def near_t0(rows):                          # too many rows: keep the ones closest to t0
+                half = MAX_LIVE_ROWS // 2
+                return [r for r in rows if r[0] < t0][-half:] + [r for r in rows if r[0] >= t0][:half]
+            rel = lambda rows: [[round(r[0] - t0, 2), *r[1:]] for r in near_t0(rows)]
+            self.detail({"type": "end_window_live", "market_id": rec["market_id"], "league": rec["league"],
+                         "title": rec["title"], "winner": rec["outcomes"][rec["samples"][-1][5]], "t0": t0,
+                         "samples": rel(hist), "trades": rel(trades)})
 
     def close_missing(self, current_mids):
         for mid in [m for m in self.open if m not in current_mids]:

@@ -40,6 +40,34 @@ def main(path="data/shadow/events.jsonl"):
               f"{med([r['seconds_until_ask_0999'] for r in rs if r['seconds_until_ask_0999'] is not None]):>10} "
               f"{med([r['decided_before_ended_by_s'] for r in rs if r['decided_before_ended_by_s'] is not None]):>16}")
 
+    live_report(rows)
+
+
+def live_report(rows):
+    """Matches recorded with the live feed: what happened in the seconds around the result."""
+    lv = [r for r in rows if "live_samples" in r]
+    if not lv:
+        return
+    def med(x):
+        return "-" if not x else round(statistics.median(x), 1)
+    n = len(lv)
+    after_v1 = sum(1 for r in lv if (r["live_v1_until_s"] or -1) > 0)
+    after_late = sum(1 for r in lv if (r["live_late_until_s"] or -1) > 0)
+    traded_v1 = [r for r in lv if r["live_trades_v1_after"]]
+    traded_late = [r for r in lv if r["live_trades_late_after"]]
+    print(f"\nLive feed: {n} matches with every book change and trade (times: seconds after shadow mode saw the result)")
+    print(f"  5+ shares still for sale at 0.96-0.995 after we saw the result: {after_v1} of {n}, "
+          f"median {med([r['live_v1_seconds_after'] for r in lv if r['live_v1_seconds_after']])} s")
+    print(f"  5+ shares still for sale at 0.995-0.999 after we saw the result: {after_late} of {n}, "
+          f"median {med([r['live_late_seconds_after'] for r in lv if r['live_late_seconds_after']])} s")
+    print(f"  last moment 5+ shares were for sale at 0.96-0.995: median "
+          f"{med([r['live_v1_until_s'] for r in lv if r['live_v1_until_s'] is not None])} s (negative = gone before we saw it)")
+    print(f"  others bought at 0.96-0.995 after we saw the result: {len(traded_v1)} matches, "
+          f"{sum(r['live_trades_v1_shares_after'] for r in traded_v1):g} shares")
+    print(f"  others bought at 0.995-0.999 after we saw the result: {len(traded_late)} matches, "
+          f"{sum(r['live_trades_late_shares_after'] for r in traded_late):g} shares")
+    print(f"  winner's best bid reached 0.99: median {med([r['live_bid099_at_s'] for r in lv if r['live_bid099_at_s'] is not None])} s")
+
 
 if __name__ == "__main__":
     main()

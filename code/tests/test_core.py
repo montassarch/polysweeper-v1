@@ -585,6 +585,8 @@ class AutopilotNotesOnlyTests(unittest.TestCase):
         self.write(self.dev, "Notes/a.md", "note\n")
         g(self.dev, "add", "-A"); g(self.dev, "commit", "-qm", "init"); g(self.dev, "push", "-q", "origin", "HEAD:main")
         g(self.pc, "pull", "-q", "origin", "main")
+        for k, v in (("user.name", "t"), ("user.email", "t@t"), ("commit.gpgsign", "false")):
+            g(self.pc, "config", k, v)
         ap.REPO = self.pc
         self.write(self.pc, "code/data/shadow/trades.jsonl", "one\ntwo (written by shadow mode, not committed)\n")
 
@@ -623,7 +625,249 @@ class AutopilotNotesOnlyTests(unittest.TestCase):
         self.assertFalse(self.ap.update_without_restart())
         self.assertEqual((self.pc / "Notes/a.md").read_text(), "edited on the PC\n")      # nothing changed
 
+    def test_daily_folder_is_synced(self):
+        import subprocess
+        self.write(self.pc, "code/data/shadow/daily/2026-10-03.jsonl", '{"type": "score"}\n')
+        self.ap.sync_data()
+        out = subprocess.run(["git", "-C", str(self.pc.parent / "origin.git"), "log", "-1", "--name-only", "--format=%s", "main"],
+                             capture_output=True, text=True).stdout
+        self.assertIn("shadow data (autopilot)", out)
+        self.assertIn("code/data/shadow/daily/2026-10-03.jsonl", out)
+        self.assertIn("code/data/shadow/trades.jsonl", out)
+
     def test_unknown_changes_count_as_code(self):
         self.assertTrue(self.ap.touches_code(None))
         self.assertFalse(self.ap.touches_code({"PolySweeper-V1/24-Task-List.md", "CLAUDE.md"}))
         self.assertTrue(self.ap.touches_code({"CLAUDE.md", "code/config.json"}))
+
+
+class LiveFeedTests(unittest.TestCase):
+    """The live order-book feed (websocket) and what it remembers."""
+    def test_frames_round_trip(self):
+        from polysweeper import livefeed as lf
+        for n in (0, 5, 125, 126, 70000):
+            for mask in (True, False):
+                data = bytes(range(256)) * (n // 256) + bytes(range(n % 256))
+                raw = lf.frame(1, data, mask=mask)
+                self.assertIsNone(lf.parse(raw[:-1] if n else raw[:1]))     # incomplete: wait for more
+                fin, op, payload, used = lf.parse(raw + b"extra")
+                self.assertEqual((fin, op, payload, used), (True, 1, data, len(raw)))
+
+    def test_books_changes_trades_and_history(self):
+        import json
+        from polysweeper.livefeed import LiveFeed
+        f = LiveFeed()
+        f.handle(json.dumps([{"event_type": "book", "asset_id": "a", "bids": [{"price": "0.95", "size": "10"}],
+                              "asks": [{"price": "0.97", "size": "8"}, {"price": "0.998", "size": "50"}]},
+                             {"event_type": "book", "asset_id": "b", "buys": [{"price": "0.02", "size": "9"}],
+                              "sells": [{"price": "0.05", "size": "9"}]}]), 100.0)
+        self.assertEqual((f.top("a"), f.top("b")), ((0.97, 0.95), (0.05, 0.02)))
+        # new format: several tokens per message; size is the new total, 0 removes the level
+        f.handle(json.dumps({"event_type": "price_change", "market": "m", "price_changes": [
+            {"asset_id": "a", "price": "0.97", "size": "0", "side": "SELL"},
+            {"asset_id": "a", "price": "0.999", "size": "40", "side": "BUY"}]}), 101.0)
+        self.assertEqual(f.top("a"), (0.998, 0.999))
+        f.handle(json.dumps({"event_type": "price_change", "asset_id": "b",            # older format
+                             "changes": [{"price": "0.04", "size": "3", "side": "SELL"}]}), 102.0)
+        self.assertEqual(f.top("b"), (0.04, 0.02))
+        f.handle(json.dumps({"event_type": "last_trade_price", "asset_id": "a", "price": "0.998", "size": "6", "side": "BUY"}), 103.0)
+        f.handle(json.dumps({"event_type": "last_trade_price", "asset_id": "b", "price": "0.04", "size": "6", "side": "BUY"}), 103.0)
+        f.handle("PONG", 104.0)
+        self.assertEqual(f.history("a", 0, 200), [(100.0, 0.97, 0.95, 8.0, 50.0), (101.0, 0.998, 0.999, 0.0, 50.0)])
+        self.assertEqual(f.history("a", 100.5, 200)[0][0], 100.0)       # starts with the state at t_from
+        self.assertEqual(f.history("b", 0, 200), [])                     # not a favourite: no history kept
+        self.assertEqual(f.trades("a", 0, 200), [(103.0, 0.998, 6.0, "BUY")])
+        self.assertEqual(f.trades("b", 0, 200), [])
+
+    def test_talks_to_a_websocket_server(self):
+        """End to end against a small local server: handshake, subscription, a book, a ping,
+        and a price change split over two frames."""
+        import json, socket, struct, threading, time
+        from polysweeper import livefeed as lf
+        srv = socket.socket()
+        srv.bind(("127.0.0.1", 0))
+        srv.listen(1)
+        got = {}
+
+        def raw(fin, op, payload):
+            n = len(payload)
+            return bytes([(0x80 if fin else 0) | op]) + (bytes([n]) if n < 126 else bytes([126]) + struct.pack(">H", n)) + payload
+
+        def serve():
+            c, _ = srv.accept()
+            c.settimeout(5)
+            data = b""
+            while b"\r\n\r\n" not in data:
+                data += c.recv(4096)
+            got["request"] = data.split(b"\r\n")[0]
+            c.sendall(b"HTTP/1.1 101 Switching Protocols\r\nUpgrade: websocket\r\nConnection: Upgrade\r\n\r\n")
+            buf = bytearray()
+            def next_frame():
+                while True:
+                    f = lf.parse(buf)
+                    if f:
+                        del buf[:f[3]]
+                        return f
+                    buf.extend(c.recv(4096))
+            got["sub"] = json.loads(next_frame()[2])
+            c.sendall(lf.frame(1, json.dumps([{"event_type": "book", "asset_id": "t1", "bids": [{"price": "0.97", "size": "10"}],
+                                               "asks": [{"price": "0.98", "size": "20"}]}]).encode(), mask=False))
+            c.sendall(lf.frame(9, b"hi", mask=False))
+            change = json.dumps({"event_type": "price_change", "market": "m", "price_changes": [
+                {"asset_id": "t1", "price": "0.98", "size": "0", "side": "SELL"},
+                {"asset_id": "t1", "price": "0.99", "size": "7", "side": "SELL"}]}).encode()
+            c.sendall(raw(False, 1, change[:40]) + raw(True, 0, change[40:]))
+            while "pong" not in got:
+                fin, op, payload, _ = next_frame()
+                if op == 10:
+                    got["pong"] = payload
+            try:
+                while c.recv(4096):
+                    pass
+            except OSError:
+                pass
+            c.close()
+
+        threading.Thread(target=serve, daemon=True).start()
+        feed = lf.LiveFeed(url=f"ws://127.0.0.1:{srv.getsockname()[1]}/ws/market")
+        feed.set_tokens(["t1"])
+        feed.start()
+        end = time.time() + 5
+        while time.time() < end and (feed.top("t1") != (0.99, 0.97) or "pong" not in got):
+            time.sleep(0.05)
+        feed.stop()
+        srv.close()
+        self.assertEqual(got["request"], b"GET /ws/market HTTP/1.1")
+        self.assertEqual(got["sub"], {"assets_ids": ["t1"], "type": "market"})
+        self.assertEqual(feed.top("t1"), (0.99, 0.97))
+        self.assertEqual(got.get("pong"), b"hi")
+        st = feed.status()
+        self.assertEqual((st["connected"], st["connects"], st["tokens_with_book"]), (True, 1, 1))
+        self.assertEqual(list(feed.hist), ["t1"])                  # history kept for the watched favourite
+
+    def test_no_server_is_not_fatal(self):
+        import socket, time
+        from polysweeper.livefeed import LiveFeed
+        s = socket.socket()
+        s.bind(("127.0.0.1", 0))
+        port = s.getsockname()[1]
+        s.close()                                           # nothing listens here
+        errors = []
+        feed = LiveFeed(url=f"ws://127.0.0.1:{port}/ws/market", on_error=lambda w, e: errors.append(w))
+        feed.set_tokens(["t1"])
+        feed.start()
+        end = time.time() + 3
+        while time.time() < end and not errors:
+            time.sleep(0.05)
+        feed.stop()
+        self.assertEqual(errors[:1], ["live feed"])
+        self.assertIsNone(feed.top("t1"))
+        self.assertFalse(feed.status()["connected"])
+
+    def test_live_summary(self):
+        from polysweeper.livefeed import live_summary
+        hist = [(995.0, 0.97, 0.95, 10.0, 0.0), (1012.0, None, 0.999, 0.0, 0.0)]
+        trades = [(1005.0, 0.97, 5.0, "BUY"), (1011.0, 0.97, 4.0, "BUY"), (1013.0, 0.998, 3.0, "BUY")]
+        r = live_summary(hist, trades, 1010.0, 1910.0)
+        self.assertEqual((r["live_v1_until_s"], r["live_v1_seconds_after"], r["live_bid099_at_s"]), (2.0, 2.0, 2.0))
+        self.assertEqual((r["live_trades_v1_after"], r["live_trades_v1_shares_after"]), (1, 4.0))
+        self.assertEqual((r["live_trades_late_after"], r["live_late_until_s"]), (1, None))
+        gone = live_summary([(990.0, 0.97, 0.95, 10.0, 0.0), (1004.0, None, 0.999, 0.0, 0.0)], [], 1010.0, 1910.0)
+        self.assertEqual((gone["live_v1_until_s"], gone["live_v1_seconds_after"]), (-6.0, 0.0))  # gone before we saw it
+
+    def test_end_window_gets_live_numbers_and_detail(self):
+        import json
+        from polysweeper.endwindow import EndWatch
+        from polysweeper.livefeed import LiveFeed
+        feed = LiveFeed()
+        feed.stats["connects"] = 1
+        feed.handle(json.dumps({"event_type": "book", "asset_id": "ta", "bids": [{"price": "0.95", "size": "10"}],
+                                "asks": [{"price": "0.97", "size": "10"}]}), 995.0)
+        feed.handle(json.dumps({"event_type": "last_trade_price", "asset_id": "ta", "price": "0.97", "size": "4", "side": "BUY"}), 1011.0)
+        feed.handle(json.dumps({"event_type": "price_change", "market": "m", "price_changes": [
+            {"asset_id": "ta", "price": "0.97", "size": "0", "side": "SELL"},
+            {"asset_id": "ta", "price": "0.999", "size": "50", "side": "BUY"}]}), 1012.0)
+        out, detail = [], []
+        w = EndWatch(out.append, say=lambda *_: None, live=feed, detail=detail.append)
+        info = {"league": "cs2", "outcomes": ["A", "B"], "tokens": ["ta", "tb"],
+                "event": {"title": "Counter-Strike: A vs B (BO3) - X", "score": "000-000|1-1|Bo3"}}
+        st = {0: (0.97, 0.95, [{"price": "0.97", "size": "10"}], []), 1: (0.05, 0.03, [], [])}
+        w.observe("m", info, {"ended": False}, st, 1000)
+        info["event"]["score"] = "000-000|2-1|Bo3"
+        w.observe("m", info, {"ended": False}, st, 1010)
+        w.observe("m", info, {"ended": True}, st, 1010 + 15 * 60)
+        r = out[0]
+        self.assertEqual((r["live_v1_until_s"], r["live_trades_v1_after"], r["live_bid099_at_s"]), (2.0, 1, 2.0))
+        self.assertEqual((detail[0]["type"], detail[0]["winner"], detail[0]["samples"][0][0]), ("end_window_live", "A", -15.0))
+
+
+class ShadowLiveTests(unittest.TestCase):
+    """2-second re-checks for matches near the end, and the score log (daily file)."""
+    def make(self, tmp):
+        import pathlib
+        import polysweeper.shadow as sh
+        sh.OUT = pathlib.Path(tmp)
+        sh.leagues = lambda: {"cs2": {"series": "1"}}
+        s = sh.Shadow(["cs2"], Limits.from_json("config.json"))
+        s.confirmer.winner_index = lambda *a: (None, "no source")
+        return sh, s
+
+    def daily_rows(self, d):
+        import json, pathlib
+        return [json.loads(l) for f in sorted((pathlib.Path(d) / "daily").glob("*.jsonl")) for l in f.read_text().splitlines()]
+
+    def test_decided_match_is_checked_at_once(self):
+        import tempfile
+        with tempfile.TemporaryDirectory() as d:
+            sh, s = self.make(d)
+            ev = {"id": "e1", "title": "Counter-Strike: A vs B (BO3) - X", "score": "000-000|1-0|Bo3",
+                  "live": True, "ended": False, "startTime": "2020-01-01T00:00:00Z"}
+            info = {"league": "cs2", "event": ev, "tokens": ["ta", "tb"], "outcomes": ["A", "B"],
+                    "market": {"id": "m", "question": "A vs B"}}
+            s.markets = {"m": info}
+            book = lambda asks, bids: {"asks": [{"price": str(p), "size": "50"} for p in asks],
+                                       "bids": [{"price": str(p), "size": "50"} for p in bids]}
+            s.poll_market("m", info, {"ta": book([0.999], [0.95]), "tb": book([0.06], [0.01])})   # playing, A bid 0.95
+            calls = []
+            def gamma(url, tries=5):
+                calls.append(tries)
+                return [dict(ev, score="000-000|2-0|Bo3")]
+            sh.get_json = gamma
+            s.fetch_books = lambda mids=None: {"ta": book([], [0.999]), "tb": book([0.01], [])}
+            s.fast_tick()
+            self.assertEqual(calls, [1])                       # one quick try, no long retries
+            self.assertEqual(s.counters["fast_rechecks"], 1)
+            self.assertIn("m", s.endwatch.open)                # the end window opened right away
+            s.fast_tick()                                      # nothing new: no second re-check, no new row
+            self.assertEqual(s.counters["fast_rechecks"], 1)
+            rows = self.daily_rows(d)
+            self.assertEqual([(r["type"], r["score"]) for r in rows], [("score", "000-000|2-0|Bo3")])
+            self.assertEqual(rows[0]["books"], [["m", 0, 0.999, 0.95], ["m", 1, 0.06, 0.01]])   # prices known when the score came in
+            self.assertEqual(rows[0]["title"], ev["title"])
+
+    def test_not_started_or_not_close_is_not_rechecked(self):
+        import tempfile
+        with tempfile.TemporaryDirectory() as d:
+            sh, s = self.make(d)
+            later = {"id": "e2", "title": "X", "live": False, "ended": False, "startTime": "2099-01-01T00:00:00Z"}
+            close_call = {"id": "e3", "title": "Y", "live": True, "ended": False, "startTime": "2020-01-01T00:00:00Z"}
+            s.markets = {"m2": {"league": "cs2", "event": later, "tokens": ["a", "b"], "outcomes": ["A", "B"], "market": {}},
+                         "m3": {"league": "cs2", "event": close_call, "tokens": ["c", "d"], "outcomes": ["C", "D"], "market": {}}}
+            s.last_best = {"m2": {0: (0.95, 0.94)}, "m3": {0: (0.60, 0.58), 1: (0.42, 0.40)}}
+            sh.get_json = lambda url, tries=5: self.fail("should not be called")
+            s.fast_tick()
+
+    def test_score_rows_only_on_change(self):
+        import tempfile
+        with tempfile.TemporaryDirectory() as d:
+            sh, s = self.make(d)
+            ev = {"id": "e1", "title": "Bari: A vs B", "score": "6-3, 2-1", "period": "S2", "live": True, "ended": False}
+            s.markets = {"m": {"league": "atp", "event": dict(ev), "tokens": ["a", "b"], "outcomes": ["A", "B"], "market": {}}}
+            states = [ev, ev, dict(ev, score="6-3, 3-1")]
+            sh.get_json = lambda url, tries=5: [states.pop(0)]
+            for _ in range(3):
+                s.refresh_states()
+            rows = self.daily_rows(d)
+            self.assertEqual([r["score"] for r in rows], ["6-3, 2-1", "6-3, 3-1"])
+            self.assertIn("title", rows[0])
+            self.assertNotIn("title", rows[1])                 # names only once per event

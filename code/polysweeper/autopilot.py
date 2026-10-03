@@ -6,7 +6,8 @@
   3. Every 3 hours: commit and push the shadow data files so they can be analysed.
   4. If shadow mode crashes, restart it after 30 seconds.
 
-It only ever commits the shadow data files (trades, events, errors). Notes are left alone.
+It only ever commits the shadow data files (trades, events, errors, and the daily folder with
+score changes and live end-window detail). Notes are left alone.
 stop_shadow.bat stops shadow mode AND the autopilot. Everything is logged to data/shadow/autopilot.log.
 Nothing here can place a real order.
 
@@ -25,7 +26,8 @@ REPO = CODE.parent
 SHADOW_DIR = CODE / "data" / "shadow"
 STOP = SHADOW_DIR / "STOP"
 LOG = SHADOW_DIR / "autopilot.log"
-DATA_FILES = ["code/data/shadow/trades.jsonl", "code/data/shadow/events.jsonl", "code/data/shadow/errors.jsonl"]
+DATA_FILES = ["code/data/shadow/trades.jsonl", "code/data/shadow/events.jsonl", "code/data/shadow/errors.jsonl",
+              "code/data/shadow/daily"]           # a folder: one file per day (score changes, live detail)
 BRANCH = "main"
 CHECK_EVERY = 60                                   # check GitHub for updates every minute
 SYNC_EVERY = 3 * 60 * 60

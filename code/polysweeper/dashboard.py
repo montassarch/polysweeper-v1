@@ -114,7 +114,7 @@ def build_shadow(shadow_dir: Path):
             side, q = names.get(r["key"], (None, None))
             feed.append({"ts": r["ts"], "kind": "paid", "rule": r.get("rule"), "match": q, "side": side,
                          "result": r.get("result"), "pnl": r.get("pnl")})
-        elif t in ("skip_bad_book", "skip_thin", "skip_score_against"):
+        elif t in ("skip_bad_book", "skip_thin", "skip_score_against", "skip_second_buy"):
             feed.append({"ts": r["ts"], "kind": t, "match": r.get("question"), "side": r.get("outcome"),
                          "price": r.get("best_ask"), "reason": r.get("reason"), "available": r.get("available_shares"),
                          "score": (r.get("event") or {}).get("score")})
@@ -491,6 +491,7 @@ ul.caveats { color:var(--ink2); font-size:14px; padding-left:20px; margin:6px 0;
       }
       var why = f.kind === 'skip_bad_book' ? 'Skipped (junk order book): ' + esc(f.reason || '')
         : f.kind === 'skip_thin' ? 'Skipped (too few shares): only ' + (f.available || 0) + ' for sale in range'
+        : f.kind === 'skip_second_buy' ? 'Skipped (one buy per match): ' + esc(f.reason || '')
         : 'BLOCKED by score check: score ' + esc(f.score || '') + ' says the other side won';
       return '<div class="fd skip"><div class="fh"><b>' + why + '</b><span class="tm">' + when + '</span></div><div class="fm">' + esc(f.side || '') + ' @ ' + px(f.price) + ' · ' + m + '</div></div>';
     }).join('') : '<div class="empty">Nothing yet. Buys, skips and payouts appear here as they happen.</div>';

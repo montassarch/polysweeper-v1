@@ -2,6 +2,7 @@
 
   1. On start: pull the latest code from GitHub, then start shadow mode.
   2. Every minute: if GitHub has a newer version, stop shadow mode, pull, restart it.
+     If the update changes only notes (nothing in code/), pull it and leave shadow mode running.
   3. Every 3 hours: commit and push the shadow data files so they can be analysed.
   4. If shadow mode crashes, restart it after 30 seconds.
 
@@ -63,6 +64,39 @@ def update_available():
         return False
     ok, out = git("rev-list", "--count", f"HEAD..origin/{BRANCH}")
     return ok and out.strip().isdigit() and int(out) > 0
+
+
+def incoming_files():
+    """Files changed on GitHub that this PC does not have yet, or None if git cannot tell."""
+    ok, out = git("-c", "core.quotePath=false", "diff", "--name-only", "-z", "--no-renames", f"HEAD...origin/{BRANCH}")
+    return {f for f in out.split("\0") if f} if ok else None
+
+
+def touches_code(files):
+    """Shadow mode only needs a restart when something in code/ changed (notes need none)."""
+    return files is None or any(f.startswith("code/") for f in files)
+
+
+def pull_notes_only():
+    """Bring in an update that touches no code WITHOUT stopping shadow mode.
+    Fast-forward only: git then rewrites just the changed notes and leaves the data files that
+    shadow mode is writing alone. If anything is in the way (an unpushed data commit, a note
+    edited on this PC) git changes nothing and we return False: the caller uses the normal path."""
+    before = head()
+    ok, out = git("merge", "--ff-only", f"origin/{BRANCH}")
+    if not ok:
+        return False
+    ok, changed = git("diff", "--name-only", before, "HEAD")
+    n = len(changed.split()) if ok else "?"
+    log(f"pulled {n} changed file(s), notes only: shadow mode keeps running")
+    return True
+
+
+def update_without_restart():
+    """True when the waiting update touches no code and was pulled while shadow mode kept running.
+    False means: stop shadow mode, pull, start it again (a code update, or notes that could not be
+    pulled the safe way)."""
+    return not touches_code(incoming_files()) and pull_notes_only()
 
 
 def pull():
@@ -163,7 +197,7 @@ def main(cmd=None, max_loops=None, tick=5):
         now = time.time()
         if now - last_check >= CHECK_EVERY:
             last_check = now
-            if update_available():
+            if update_available() and not update_without_restart():
                 before = head()
                 shadow.stop()
                 sync_data()                          # may already pull the update

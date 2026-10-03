@@ -10,6 +10,8 @@ Pure observation: never buys anything.
 """
 from __future__ import annotations
 
+import time
+
 from .scorecheck import sport_of, winner_outcome
 
 WINDOW_SECONDS = 15 * 60
@@ -66,9 +68,9 @@ class EndWatch:
             if not rec["samples"] or rec["samples"][-1][1:] != s[1:]:
                 rec["samples"].append(s)
         if now - rec["t0"] >= WINDOW_SECONDS:
-            self.close(mid, "15 minutes done")
+            self.close(mid, "15 minutes done", now)
 
-    def close(self, mid, reason):
+    def close(self, mid, reason, now=None):
         self.done.add(mid)
         rec = self.open.pop(mid, None)
         if not rec or not rec["samples"]:
@@ -77,7 +79,8 @@ class EndWatch:
         hit999 = next((s[0] for s in smp if s[1] is not None and s[1] >= 0.999), None)
         rec.update({
             "closed_because": reason,
-            "seconds_observed": smp[-1][0],
+            "seconds_observed": smp[-1][0],                     # time of the LAST CHANGE seen in the book
+            "seconds_watched": round((time.time() if now is None else now) - rec["t0"], 1),   # how long the window really ran
             "ask_at_start": smp[0][1],
             "lowest_ask_seen": min((s[1] for s in smp if s[1] is not None), default=None),
             "max_shares_096_0995": max(s[3] for s in smp),

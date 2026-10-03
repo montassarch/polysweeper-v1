@@ -297,10 +297,31 @@ class Shadow:
             self.log(self.event_f, {"ts": now_iso(), "event_id": eid, "league": league,
                                     "title": e.get("title"), "state": ev_state})
 
+    def match_bought(self, rule, mid, eid):
+        """The side already bought in this match under this rule, or None.
+        A match is an event: football has three moneyline markets (home, draw, away) per match.
+        Buys made before this check existed carry no event id, so they are matched by market."""
+        side = self.state.get("matches", {}).get(f"{rule}:{eid}")
+        if side:
+            return side
+        return next((r.get("outcome") or "a side" for r in self.state["pending"].values()
+                     if r.get("rule", "price_only") == rule and r.get("market_id") == mid), None)
+
     def maybe_enter(self, rule, mid, idx, info, best_ask, asks, ev_state, confirm_detail):
         L = self.limits
         key = {"price_only": f"{mid}:{idx}", "confirmed": f"C:{mid}:{idx}", "score": f"S:{mid}:{idx}"}[rule]
         if key in self.state["entered"]:
+            return
+        eid = info["event"].get("id") or f"market {mid}"
+        first = self.match_bought(rule, mid, eid)
+        if first:                                   # B7: max 1 pretend buy per match (per rule)
+            self.state["entered"].append(key)       # count once
+            print(f"[{now_iso()}] skip (one buy per match) {info['outcomes'][idx]} @ {best_ask:.3f} | {(info['market'].get('question') or '')[:50]} | already bought {first}")
+            self.log(self.trade_f, {"type": "skip_second_buy", "rule": rule, "ts": now_iso(), "key": key,
+                                    "league": info["league"], "question": info["market"].get("question"),
+                                    "outcome": info["outcomes"][idx], "best_ask": best_ask,
+                                    "reason": f"already bought {first} in this match", "event": ev_state})
+            self.save()
             return
         vwap, worst, avail = walk_book(asks, L.min_shares, L.price_max)
         if vwap is None:
@@ -314,7 +335,7 @@ class Shadow:
         rate = (info["market"].get("feeSchedule") or {}).get("rate") or L.fee_rate
         fee = taker_fee(L.min_shares, vwap, rate)
         rec = {"type": "entry", "rule": rule, "ts": now_iso(), "key": key, "market_id": mid, "token_idx": idx,
-               "league": info["league"], "question": info["market"].get("question"), "outcome": info["outcomes"][idx],
+               "event_id": eid, "league": info["league"], "question": info["market"].get("question"), "outcome": info["outcomes"][idx],
                "best_ask": best_ask, "vwap": vwap, "worst_price": worst, "shares": L.min_shares,
                "fee": fee, "cost": L.min_shares * vwap + fee, "available_shares": avail,
                "event_ended_flag": ev_state["ended"], "confirm": confirm_detail, "event": ev_state,
@@ -324,6 +345,7 @@ class Shadow:
         rec["asks_top5"] = sorted([float(a["price"]), float(a["size"])] for a in asks)[:5]
         self.log(self.trade_f, rec)
         self.state["entered"].append(key)
+        self.state.setdefault("matches", {})[f"{rule}:{eid}"] = rec["outcome"] or "a side"
         self.state["pending"][key] = rec
         self.counters["entries"] += 1
         label = {"confirmed": "CONFIRMED", "score": "SCORE-CHECK", "price_only": "PRICE-ONLY"}[rule]

@@ -473,6 +473,7 @@ class EndWatchTests(unittest.TestCase):
         self.assertEqual((r["first_trigger"], r["winner_idx"], r["decided_before_ended_by_s"]), ("score_decided", 0, 60.0))
         self.assertEqual((r["ask_at_start"], r["max_shares_096_0995"], r["max_shares_0995_0999"], r["seconds_until_ask_0999"]),
                          (0.97, 40.0, 40.0, 90.0))
+        self.assertEqual((r["seconds_observed"], r["seconds_watched"]), (90.0, 900.0))   # last change vs real watch time
 
     def test_ignores_matches_already_over_and_never_reopens(self):
         from polysweeper.endwindow import EndWatch
@@ -489,3 +490,140 @@ class EndWatchTests(unittest.TestCase):
         w.observe("void", football, {"ended": True}, half, 10)     # cancelled, 50/50: no clear winner
         w.close("void", "test")
         self.assertEqual(out, [])
+
+
+class OneBuyPerMatchTests(unittest.TestCase):
+    """B7: at most 1 pretend buy per match and rule (shadow bought both teams in 2 CS2 matches)."""
+    def make(self, tmp):
+        import pathlib
+        import polysweeper.shadow as sh
+        sh.OUT = pathlib.Path(tmp)
+        sh.leagues = lambda: {"cs2": {"series": "1"}}
+        s = sh.Shadow(["cs2"], Limits.from_json("config.json"))
+        s.confirmer.winner_index = lambda *a: (None, "no source")
+        return s
+
+    def rows(self, d):
+        import json, pathlib
+        return [json.loads(l) for l in (pathlib.Path(d) / "trades.jsonl").read_text().splitlines()]
+
+    def test_comeback_does_not_buy_the_other_team(self):
+        import tempfile
+        book = lambda ask, bid: {"asks": [{"price": str(ask), "size": "50"}], "bids": [{"price": str(bid), "size": "50"}]}
+        with tempfile.TemporaryDirectory() as d:
+            s = self.make(d)
+            ev = {"id": "e", "title": "Counter-Strike: A vs B (BO3) - X", "score": "000-000|1-0|Bo3", "live": True, "ended": False}
+            info = {"league": "cs2", "event": ev, "tokens": ["ta", "tb"], "outcomes": ["A", "B"],
+                    "market": {"id": "m", "question": "A vs B"}}
+            s.poll_market("m", info, {"ta": book(0.96, 0.95), "tb": book(0.05, 0.03)})      # A leads 1-0
+            info["event"] = dict(ev, score="000-000|1-1|Bo3")
+            s.poll_market("m", info, {"ta": book(0.03, 0.02), "tb": book(0.98, 0.97)})      # B comes back
+            rows = self.rows(d)
+            self.assertEqual([r["outcome"] for r in rows if r["type"] == "entry"], ["A"])
+            skips = [r for r in rows if r["type"] == "skip_second_buy"]
+            self.assertEqual([(r["outcome"], r["reason"]) for r in skips], [("B", "already bought A in this match")])
+            s.poll_market("m", info, {"ta": book(0.03, 0.02), "tb": book(0.98, 0.97)})      # logged once only
+            self.assertEqual(len([r for r in self.rows(d) if r["type"] == "skip_second_buy"]), 1)
+
+    def test_football_draw_market_counts_as_same_match(self):
+        import tempfile
+        book = lambda ask, bid: {"asks": [{"price": str(ask), "size": "50"}], "bids": [{"price": str(bid), "size": "50"}]}
+        with tempfile.TemporaryDirectory() as d:
+            s = self.make(d)
+            ev = {"id": "e9", "title": "X vs Y", "score": "1-0", "live": True, "ended": False}
+            home = {"league": "cs2", "event": ev, "tokens": ["h1", "h2"], "outcomes": ["Yes", "No"], "market": {"id": "home", "question": "X win?"}}
+            draw = {"league": "cs2", "event": ev, "tokens": ["d1", "d2"], "outcomes": ["Yes", "No"], "market": {"id": "draw", "question": "Draw?"}}
+            s.poll_market("home", home, {"h1": book(0.96, 0.95), "h2": book(0.05, 0.03)})
+            s.poll_market("draw", draw, {"d2": book(0.97, 0.96), "d1": book(0.04, 0.03)})
+            self.assertEqual([r["market_id"] for r in self.rows(d) if r["type"] == "entry"], ["home"])
+
+    def test_buy_made_before_the_rule_still_counts(self):
+        import tempfile
+        book = lambda ask, bid: {"asks": [{"price": str(ask), "size": "50"}], "bids": [{"price": str(bid), "size": "50"}]}
+        with tempfile.TemporaryDirectory() as d:
+            s = self.make(d)
+            s.state["pending"]["m:0"] = {"rule": "price_only", "market_id": "m", "outcome": "A"}   # old state, no event id
+            s.state["entered"].append("m:0")
+            ev = {"id": "e", "title": "Counter-Strike: A vs B (BO3) - X", "score": "000-000|1-1|Bo3", "live": True, "ended": False}
+            info = {"league": "cs2", "event": ev, "tokens": ["ta", "tb"], "outcomes": ["A", "B"], "market": {"id": "m", "question": "A vs B"}}
+            s.poll_market("m", info, {"ta": book(0.03, 0.02), "tb": book(0.98, 0.97)})
+            self.assertEqual([r["type"] for r in self.rows(d)], ["skip_second_buy"])
+
+
+class EndWindowReportTests(unittest.TestCase):
+    def test_leaves_out_old_rows_and_repeats(self):
+        import importlib.util, pathlib
+        spec = importlib.util.spec_from_file_location("ewr", pathlib.Path(__file__).parent.parent / "end_window_report.py")
+        ewr = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(ewr)
+        rows = [{"ts": "2026-10-03T14:07:00", "market_id": "old", "winner_idx": 0},
+                {"ts": "2026-10-03T15:00:00", "market_id": "a", "winner_idx": 1},
+                {"ts": "2026-10-03T15:01:00", "market_id": "football", "winner_idx": None},   # no score: kept
+                {"ts": "2026-10-03T15:05:00", "market_id": "a", "winner_idx": 1}]
+        self.assertEqual([r["market_id"] for r in ewr.usable(rows)], ["a", "football"])
+
+
+class AutopilotNotesOnlyTests(unittest.TestCase):
+    """A notes-only update is pulled without stopping shadow mode; anything in code/ restarts it."""
+    def setUp(self):
+        import tempfile, pathlib, subprocess
+        import polysweeper.autopilot as ap
+        self.ap, self.tmp = ap, tempfile.TemporaryDirectory()
+        root = pathlib.Path(self.tmp.name)
+        self.saved = (ap.REPO, ap.SHADOW_DIR, ap.LOG)
+        ap.SHADOW_DIR, ap.LOG = root, root / "autopilot.log"
+        def g(where, *args):
+            subprocess.run(["git", "-C", str(where), "-c", "user.name=t", "-c", "user.email=t@t",
+                            "-c", "commit.gpgsign=false", *args], check=True, capture_output=True)
+        self.g = g
+        subprocess.run(["git", "init", "-q", "--bare", "-b", "main", str(root / "origin.git")], check=True)
+        for name in ("dev", "pc"):
+            subprocess.run(["git", "clone", "-q", str(root / "origin.git"), str(root / name)], check=True, capture_output=True)
+        self.dev, self.pc = root / "dev", root / "pc"
+        self.write(self.dev, "code/data/shadow/trades.jsonl", "one\n")
+        self.write(self.dev, "code/polysweeper/x.py", "x = 1\n")
+        self.write(self.dev, "Notes/a.md", "note\n")
+        g(self.dev, "add", "-A"); g(self.dev, "commit", "-qm", "init"); g(self.dev, "push", "-q", "origin", "HEAD:main")
+        g(self.pc, "pull", "-q", "origin", "main")
+        ap.REPO = self.pc
+        self.write(self.pc, "code/data/shadow/trades.jsonl", "one\ntwo (written by shadow mode, not committed)\n")
+
+    def tearDown(self):
+        self.ap.REPO, self.ap.SHADOW_DIR, self.ap.LOG = self.saved
+        self.tmp.cleanup()
+
+    def write(self, repo, rel, text):
+        p = repo / rel
+        p.parent.mkdir(parents=True, exist_ok=True)
+        p.write_text(text)
+
+    def push_from_dev(self, rel, text):
+        self.write(self.dev, rel, text)
+        self.g(self.dev, "commit", "-qam", "update"); self.g(self.dev, "push", "-q", "origin", "HEAD:main")
+
+    def test_notes_only_update_is_pulled_and_data_kept(self):
+        self.push_from_dev("Notes/a.md", "note v2\n")
+        self.assertTrue(self.ap.update_available())
+        self.assertEqual(self.ap.incoming_files(), {"Notes/a.md"})
+        self.assertTrue(self.ap.update_without_restart())
+        self.assertEqual((self.pc / "Notes/a.md").read_text(), "note v2\n")
+        self.assertIn("two", (self.pc / "code/data/shadow/trades.jsonl").read_text())   # shadow's new line untouched
+        self.assertFalse(self.ap.update_available())
+
+    def test_code_update_needs_restart(self):
+        self.push_from_dev("code/polysweeper/x.py", "x = 2\n")
+        self.assertTrue(self.ap.update_available())
+        self.assertFalse(self.ap.update_without_restart())
+        self.assertEqual((self.pc / "code/polysweeper/x.py").read_text(), "x = 1\n")      # left for the normal path
+
+    def test_local_note_edit_in_the_way_falls_back(self):
+        self.push_from_dev("Notes/a.md", "note v2\n")
+        self.write(self.pc, "Notes/a.md", "edited on the PC\n")
+        self.assertTrue(self.ap.update_available())
+        self.assertFalse(self.ap.update_without_restart())
+        self.assertEqual((self.pc / "Notes/a.md").read_text(), "edited on the PC\n")      # nothing changed
+
+    def test_unknown_changes_count_as_code(self):
+        self.assertTrue(self.ap.touches_code(None))
+        self.assertFalse(self.ap.touches_code({"PolySweeper-V1/24-Task-List.md", "CLAUDE.md"}))
+        self.assertTrue(self.ap.touches_code({"CLAUDE.md", "code/config.json"}))

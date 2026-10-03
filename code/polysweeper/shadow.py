@@ -108,20 +108,33 @@ class Shadow:
         f.flush()
 
     # -- discovery -----------------------------------------------------
+    def open_events(self, sid):
+        """All open (not closed) events of a league, page by page.
+        A6: do NOT filter on start_date: that is the LISTING date, often days before the match."""
+        evs, offset = [], 0
+        while offset < 1000:
+            page = get_json(f"{GAMMA}/events?series_id={sid}&active=true&closed=false&limit=100&offset={offset}") or []
+            evs += page
+            if len(page) < 100:
+                break
+            offset += 100
+        return evs
+
     def refresh(self):
         now = datetime.now(timezone.utc)
-        since = (now - timedelta(hours=10)).strftime("%Y-%m-%dT%H:%M:%SZ")
-        horizon = now + timedelta(minutes=45)
+        earliest = now - timedelta(hours=12)     # matches that started up to 12 h ago (long series)
+        horizon = now + timedelta(minutes=45)    # and matches starting within 45 minutes
         found = {}
         for league, sid in self.series.items():
-            evs = get_json(f"{GAMMA}/events?series_id={sid}&active=true&closed=false"
-                           f"&start_date_min={since}&order=startTime&ascending=true&limit=60") or []
-            for e in evs:
-                st = parse_ts(e.get("startTime"))
-                if st and datetime.fromtimestamp(st, timezone.utc) > horizon:
-                    continue                       # not started (or about to)
-                if e.get("ended") is None and not e.get("live"):
-                    continue                       # no live-state data for this event
+            for e in self.open_events(sid):
+                st = parse_ts(e.get("startTime"))           # the real match start time
+                if not st:
+                    continue
+                st_dt = datetime.fromtimestamp(st, timezone.utc)
+                if st_dt > horizon or st_dt < earliest:
+                    continue
+                if e.get("ended") is None and not e.get("live") and st_dt < now - timedelta(minutes=5):
+                    continue                       # started but no live-state data at all
                 for m in e.get("markets", []):
                     if m.get("sportsMarketType") != "moneyline" or not m.get("acceptingOrders"):
                         continue
@@ -133,7 +146,6 @@ class Shadow:
                     found[m["id"]] = {"league": league, "event": e, "market": m, "tokens": toks, "outcomes": outs}
         self.markets = found
 
-    # -- polling -------------------------------------------------------
     def error(self, where, exc):
         """A2/A1: never let one bad reply stop the run; write it down and carry on."""
         self.counters["errors"] += 1

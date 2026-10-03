@@ -57,3 +57,12 @@ Back to [[V1-Home]].
   A1-A5 in shadow mode (crash guard, batched reads, fresh match states, late-band
   logging, junk-book filter). Owner connected MetaMask to UMA: wallet safety
   notes added to [[03-Risks]].
+
+## 2026-10-03
+
+- Removed every mention of the other bot's author; split the vault into two
+  separate projects (V1 and V2 research).
+- First synced shadow data: 10 price-only CS2 trades (9 wins, 1 loss from a
+  stale losing-side ask before the junk filter), 0 confirmed trades.
+- Found and fixed bug A6: shadow mode searched by listing date, missing most
+  LoL, Dota 2 and CS2 matches. See [[26-First-Shadow-Results]].

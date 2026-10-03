@@ -75,6 +75,7 @@ If any stage says no, the bot does nothing and writes down why.
 - **A3 fixed:** match states (live, ended, score) re-read every round in one batched request (0.7 s for 31 matches).
 - **A4 fixed:** prices up to 0.999 recorded, and the result is checked for those matches too, so the late band can be studied on the **same matches** without buying there.
 - **A5 fixed:** junk books refused (3 real examples refused in the live check).
+- **A6 fixed (2026-10-03):** shadow mode searched by the date a match was *listed*, not *played*, so it missed most LoL, Dota 2 and CS2 matches. Now it uses the real start time. See [[26-First-Shadow-Results]].
 - Tests: 45 automatic checks pass.
 
 ## What does not change during the current test

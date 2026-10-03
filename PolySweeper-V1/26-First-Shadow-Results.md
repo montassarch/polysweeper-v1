@@ -1,0 +1,69 @@
+---
+title: First Shadow Results (Sep 30 - Oct 3)
+tags: [polysweeper, v1, shadow, results]
+created: 2026-10-03
+---
+
+# First shadow results (Sep 30 - Oct 3)
+
+Back to [[V1-Home]] · Task list: [[24-Task-List]] · Shadow mode: [[21-Shadow-Mode-v2]]
+
+These are pretend trades only. No real money was used.
+
+## What happened
+
+| | Count | Result |
+|---|---|---|
+| Price-only pretend trades settled | 10 | 9 wins, 1 loss |
+| Wins | 9 | +$0.05 to +$0.19 each, +$1.43 in total |
+| Loss | 1 | -$4.90 |
+| **Net (price only)** | | **about -$3.47** |
+| Confirmed-rule trades | 0 | see "Why zero confirmed" below |
+| Junk books skipped (A5 filter) | 7 | the filter worked as intended |
+| Crashes / errors | 0 | |
+
+All 10 trades were Counter-Strike (CS2).
+
+## The one loss: what went wrong
+
+On Sep 30 (before the junk-book filter existed) the bot "bought" the
+**losing** team in *EAC Extra vs MASONIC* (Dust2.dk Ligaen). After the match
+ended, a stale sell order was still sitting on the loser's side at a high
+price. The price-only rule saw a cheap-looking high price and took it.
+
+- That is exactly the case the junk-book filter (A5) now blocks: if the best
+  bid is below 0.50 or the other side's ask is 0.10 or more, the bot skips.
+- The confirmed rule would also have blocked it: the results check names
+  the winner, so the bot never buys the loser.
+
+**Lesson, again:** one loss wipes out about 25 wins. Price alone is not
+enough. This is why the real bot will only use the confirmed rule.
+
+## Why zero confirmed trades
+
+1. **A bug in how shadow mode found matches (fixed 2026-10-03).** It searched
+   by the date the match was *listed* on Polymarket, not the date it is
+   *played*. Many matches are listed days in advance, so they were never
+   watched. A check at 01:00 UTC on Oct 3 showed:
+
+   | League | Matches within ±36 h | Found by the old search |
+   |---|---|---|
+   | LoL | 9 | 0 |
+   | Dota 2 | 6 | 2 |
+   | CS2 | 29 | 12 |
+
+   The new search reads all open matches and keeps the ones whose real start
+   time falls between 12 hours ago and 45 minutes from now. It now finds all
+   of them (CS2 29, LoL 9, Dota 2 6, Valorant 6).
+2. **We only have results checks for football and Dota 2.** CS2 has no free
+   results source yet, so CS2 can only be tested with the price-only rule.
+   Football had few finished matches in the window.
+3. **The PC ran only about 22 of 49 hours.** It went to sleep overnight.
+
+## What to do now
+
+- Owner: pull in Obsidian, then run `stop_shadow.bat` and `run_shadow.bat`.
+- Owner: Windows Settings → System → Power → Screen and sleep → set "When
+  plugged in, put my device to sleep after" to **Never**. Keep the PC plugged in.
+- Assistant: find a free results source for CS2 (and LoL) so these
+  matches can use the confirmed rule. CS2 is the most active esport.

@@ -365,3 +365,25 @@ class BookSanityTests(unittest.TestCase):
         from polysweeper.shadow import book_problem
         stats = {0: (0.97, 0.96, [], []), 1: (0.04, 0.03, [], [])}
         self.assertIsNone(book_problem(0, stats))
+
+
+class RefreshWindowTests(unittest.TestCase):
+    def test_uses_match_start_not_listing_date(self):
+        import tempfile, json
+        from datetime import datetime, timedelta, timezone
+        import polysweeper.shadow as sh
+        from polysweeper.config import Limits
+        with tempfile.TemporaryDirectory() as d:
+            sh.OUT = __import__("pathlib").Path(d)
+            sh.leagues = lambda: {"lol": {"series": "1"}}
+            s = sh.Shadow(["lol"], Limits.from_json("config.json"))
+            now = datetime.now(timezone.utc)
+            mk = {"id": "m1", "sportsMarketType": "moneyline", "acceptingOrders": True,
+                  "clobTokenIds": json.dumps(["a", "b"]), "outcomes": json.dumps(["X", "Y"])}
+            listed_days_ago = {"id": "e1", "startDate": (now - timedelta(days=5)).isoformat(),
+                               "startTime": (now - timedelta(minutes=30)).isoformat(), "live": True, "ended": False, "markets": [mk]}
+            far_future = dict(listed_days_ago, id="e2", startTime=(now + timedelta(days=2)).isoformat(),
+                              markets=[dict(mk, id="m2")])
+            s.open_events = lambda sid: [listed_days_ago, far_future]
+            s.refresh()
+            self.assertEqual(sorted(s.markets), ["m1"])   # listed 5 days ago but playing now -> watched

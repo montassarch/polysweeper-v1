@@ -172,3 +172,16 @@ WTA x2, MLBB, Dota 2, ATP); the 34 earlier rows are noisy (see below).
 (the second chance is logged as `skip_second_buy`); the end-window rows record how long the
 watch really ran (`seconds_watched`); the report leaves out rows from before the 14:07 fix;
 and the autopilot no longer restarts shadow mode for notes-only updates ([[28-Autopilot]]).
+
+## Decision 2026-10-03 evening: next steps
+
+The owner chose from the three options above:
+- **Option 1 (faster feed): yes**, as a measurement. Built the same evening: live prices,
+  2-second checks for matches near the end, live detail in every after-match record.
+- **Option 3 (practically locked): collect data first.** Every score change is now recorded
+  with the prices at that moment; tennis rules will be tested on it.
+- **Option 2 (resting orders): dropped.** In 27 of 27 matches buyers already offered 0.99-0.999
+  right after the result, so a 0.97 order would not fill then; placed before the result, it fills
+  mostly when the seller knows something we don't.
+
+Details and how to read the new data: [[29-Live-Feed-and-Score-Log]].

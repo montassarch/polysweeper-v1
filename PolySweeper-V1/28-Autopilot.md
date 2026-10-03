@@ -20,7 +20,9 @@ Back to [[V1-Home]] · Running shadow mode by hand: [[17-Run-Shadow-On-Your-PC]]
 | Shadow mode crashes | Restarts it after 30 seconds |
 | The autopilot itself is updated | Restarts itself |
 
-It only ever commits the three shadow data files. Your notes are not touched.
+It only ever commits the shadow data: the three files (trades, events, errors) and the `daily`
+folder (score log and live detail, one file per day, see [[29-Live-Feed-and-Score-Log]]).
+Your notes are not touched.
 It places **no orders**: shadow mode only reads public prices.
 
 ## One-time setup (owner)

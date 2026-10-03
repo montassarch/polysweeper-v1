@@ -80,3 +80,8 @@ Back to [[V1-Home]].
 - Built: max 1 pretend buy per match (B7) in shadow mode; real watch time in the end-window
   study and a cleaner report; autopilot pulls notes-only updates without restarting shadow
   mode ([[28-Autopilot]]). 8 new automatic tests (62 in total).
+- Laid out the three options; owner chose option 1 (live feed) and data for option 3 (score
+  log); option 2 (resting orders) dropped. Built shadow mode v2.6: live order-book feed
+  (standard-library websocket), 2-second checks near the end, live detail in after-match records,
+  daily score log synced by the autopilot. First 2-second catch (Valorant): nothing for sale even
+  ~2 s after Polymarket's score changed. See [[29-Live-Feed-and-Score-Log]].

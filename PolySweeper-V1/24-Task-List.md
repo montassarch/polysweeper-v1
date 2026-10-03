@@ -19,6 +19,10 @@ this list is the one to follow. Owner = who does it.
 - [ ] Find a free results source for CS2 and LoL so they can use the confirmed rule — **assistant**
 - [x] Data sync is automatic every 3 hours (autopilot)
 - [ ] Read results after each sync and report — **assistant**
+- [x] Live feed + 2-second checks near the end + score log (shadow v2.6, [[29-Live-Feed-and-Score-Log]])
+- [ ] Check the first `live_feed_status` line from the PC: does the live feed connect and agree with the 15-second reads? — **assistant**
+- [ ] After 1-2 days: live end-window report (any gap after the result?) — **assistant**
+- [ ] After a few days: test tennis "practically locked" rules on the score log — **assistant**
 - [x] Shadow mode: enforce B7 (max 1 pretend buy per match and rule; second chances logged as `skip_second_buy`)
 - [x] End-window study: record real watch time (`seconds_watched`), report leaves out pre-fix rows
 - [x] Autopilot: restart shadow mode only when code changes, not for note edits ([[28-Autopilot]])
@@ -54,10 +58,10 @@ this list is the one to follow. Owner = who does it.
 - [ ] Market veto: skip a "confirmed" winner that still trades below 0.90 after the end — **assistant**
 - [ ] UMA watcher: log proposals and disputes for watched markets — **assistant**
 - [ ] Event-based exit (sell only on a UMA proposal against us, a dispute or a source correction) — test with shadow data — **assistant**
-- [ ] Resting buy orders after confirmation (catch seller dumps, no fee) — design and test — **assistant**
+- [x] Resting buy orders: dropped 2026-10-03 (after the result buyers already offer 0.99-0.999 in 27 of 27 matches; before it, fills come when we are wrong)
 - [ ] Settlement cross-check after every payout (our result vs Polymarket's) — **assistant**
 - [ ] Duplicate-fixture check and rules-text reader — **assistant**
-- [ ] Websocket price feed for the short football window — **assistant**
+- [x] Websocket price feed (built into shadow mode v2.6, measuring only)
 - [ ] Go-live scorecard: ~300 (low band) / ~1,500 (late band) confirmed trades with zero wrong-result losses — **both**
 
 ## Legal and money setup

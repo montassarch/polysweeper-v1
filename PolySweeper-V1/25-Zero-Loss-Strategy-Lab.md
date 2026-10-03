@@ -160,11 +160,11 @@ reason looks sensible.
 ## 7. Ideas backlog (newest at the bottom)
 
 1. **Market veto** (section 3.3). Easy, high value.
-2. **Resting buy orders after confirmation:** after the result is confirmed, place
-   a limit buy at 0.97-0.99 and let impatient sellers fill it (maker: no fee,
-   possible rebate). Catches the brief "seller dumps" in the late band.
-3. **Faster price feed** via Polymarket's websocket instead of 15-second polling,
-   for the short football window.
+2. ~~**Resting buy orders after confirmation**~~ — dropped 2026-10-03: in 27 of 27 matches
+   other buyers already offered 0.99-0.999 right after the result, so a 0.97-0.99 order would
+   not fill; placed before the result, it fills mostly when we are wrong ([[26-First-Shadow-Results]]).
+3. **Faster price feed** via Polymarket's websocket — built 2026-10-03 as a measurement
+   ([[29-Live-Feed-and-Score-Log]]).
 4. **UMA watcher:** log proposals and disputes for every market we watch
    (needed for the event-based exit and the UMA gate).
 5. **Capacity estimate** from recorded order-book sizes: how much money each

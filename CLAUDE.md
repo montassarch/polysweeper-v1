@@ -30,6 +30,9 @@ below $1 and hold to the $1 payout. **No real money yet: shadow mode only (prete
   `score` (Polymarket's own score says this side won + ended flag), `price_only` (comparison).
   Junk-book filter, kill switch (`data/shadow/STOP`). Leagues: `code/shadow_leagues.txt`.
 - `endwindow.py` — end-window study: winner's book for 15 min after a match is decided.
+- `livefeed.py` — live order books via Polymarket's websocket (stdlib client, background thread,
+  measuring only). Shadow v2.6 also re-checks matches near the end every 2 s and writes every
+  score change to `code/data/shadow/daily/<date>.jsonl` (note 29). `--no-live` turns the feed off.
 - `scorecheck.py` — parses Polymarket score (`000-000|2-1|Bo3`, tennis `6-3, 5-7, 6-2`).
 - `autopilot.py` — runs on the owner's Windows PC (see below).
 - `dashboard.py` — HTML dashboard with a live feed; `confirm.py`, `results_*.py` — results sources.
@@ -42,8 +45,8 @@ below $1 and hold to the $1 payout. **No real money yet: shadow mode only (prete
 - It **checks `main` on GitHub every minute**. A change inside `code/` stops shadow mode, pulls and
   restarts it, so **any code pushed to `main` goes live on the PC**. Keep `main` working; run tests
   first. Notes-only pushes are fast-forwarded without a restart (restarts cut end-window watches short).
-- It commits/pushes only `code/data/shadow/{trades,events,errors}.jsonl` (every 3 h and on each
-  code update). **Never edit those files by hand.** Always `git pull --rebase` before pushing.
+- It commits/pushes only `code/data/shadow/{trades,events,errors}.jsonl` and `code/data/shadow/daily/`
+  (every 3 h and on each code update). **Never edit those files by hand.** Always `git pull --rebase` before pushing.
 - The owner cannot debug; changes to `autopilot.py` must be safe (it restarts itself on update).
 - `.bat` files must keep CRLF (handled by `.gitattributes`).
 

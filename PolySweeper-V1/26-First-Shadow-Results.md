@@ -80,3 +80,21 @@ enough. This is why the real bot will only use the confirmed rule.
 - New: the **end-window study** (shadow mode v2.4) records, for every match, the
   winner's price and shares for sale for 15 minutes after the score shows it decided
   or the ended flag appears. Report: `python end_window_report.py`.
+
+## End-window first look (16-minute live check, 2026-10-03 14:07-14:23 UTC)
+
+5 matches were seen going from "playing" to "decided" (Valorant, HoK, CS2 x2, MLBB).
+In **all 5**, at the first check after the score showed the series won (checks are
+every 15 seconds), the winner had **no sell orders at all**: best bid already
+0.99-0.999. The score and the ended flag changed at the same moment.
+
+Meaning, if it holds on the owner's PC data: after the result is known there is
+nothing left to buy at 0.96-0.995 (and often nothing even at 0.999). The 0.999 bots
+clear the book within seconds. Our price-only pretend buys all happened before the
+end, while the match was still being played.
+
+Small sample. The owner's PC data over 1-2 days will confirm or correct it. If it
+holds, the V1 plan must change. Options to study:
+- a much faster price feed (websocket) to see whether a window of a few seconds exists;
+- resting buy orders placed just before the end (maker orders), with strict cancel rules;
+- in-play buying only when the result is mathematically locked (needs a live score feed).

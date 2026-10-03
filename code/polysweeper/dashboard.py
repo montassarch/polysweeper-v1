@@ -231,7 +231,7 @@ ul.caveats { color:var(--ink2); font-size:14px; padding-left:20px; margin:6px 0;
   <div class="banner" id="banner"></div>
 
   <h2>Shadow mode: real prices, pretend orders</h2>
-  <p class="sub">The tool watches live matches, reads the real order book and pretends to buy 5 shares. No money is involved. Two strategies are recorded side by side.</p>
+  <p class="sub">The tool watches live matches, reads the real order book and pretends to buy 5 shares. No money is involved. Three strategies are recorded side by side on the same matches.</p>
   <div class="ruleBar" id="ruleBar" role="tablist" aria-label="Strategy"></div>
   <p class="why" id="ruleWhy"></p>
   <div class="tiles" id="tiles"></div>
@@ -364,11 +364,11 @@ ul.caveats { color:var(--ink2); font-size:14px; padding-left:20px; margin:6px 0;
       b.addEventListener('click', function () { rule = b.getAttribute('data-rule'); pickRule(); draw(); }); });
   }
   $('meta').textContent = 'Generated ' + D.generated.replace('T', ' ').replace('+00:00', ' UTC') + (S.last_activity ? '  |  last shadow activity ' + S.last_activity.replace('T', ' ').replace('+00:00', ' UTC') : '  |  no shadow data yet');
-  var KA = { entries: S.by_rule.confirmed.kpi.entries + S.by_rule.score.kpi.entries + S.by_rule.price_only.kpi.entries, settled: S.by_rule.confirmed.kpi.settled };
+  var KA = { entries: S.by_rule.confirmed.kpi.entries + S.by_rule.score.kpi.entries + S.by_rule.price_only.kpi.entries, settled: S.by_rule.confirmed.kpi.settled + S.by_rule.score.kpi.settled };
   $('banner').innerHTML = KA.entries === 0
     ? '<b>No shadow data yet.</b> Start <code>run_shadow.bat</code> and leave it running. Charts below will fill in as matches finish.'
-    : (KA.settled < 100 ? '<b>Too early to judge.</b> ' + KA.settled + ' settled confirmed-result pretend trades so far; aim for 100 or more before drawing conclusions.'
-                        : '<b>' + KA.settled + ' settled confirmed-result pretend trades.</b> Compare the loss count with the backtest before deciding anything.');
+    : (KA.settled < 100 ? '<b>Too early to judge.</b> ' + KA.settled + ' settled result-checked pretend trades so far (confirmed + score check); aim for 100 or more before drawing conclusions.'
+                        : '<b>' + KA.settled + ' settled result-checked pretend trades (confirmed + score check).</b> Compare the loss count with the backtest before deciding anything.');
   $('themeBtn').addEventListener('click', function () {
     var r = document.documentElement, cur = r.getAttribute('data-theme');
     var dark = cur ? cur === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;

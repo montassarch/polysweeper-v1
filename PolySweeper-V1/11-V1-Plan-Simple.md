@@ -6,12 +6,12 @@ created: 2026-09-30
 
 # V1 plan (plain language)
 
-Back to [[V1-Home]] · Idea: [[10-Friend-Bot-Brainstorm]] · Data: [[12-Data-Sources]]
+Back to [[V1-Home]] · Idea: [[10-After-Match-Sweeper-Brainstorm]] · Data: [[12-Data-Sources]]
 · Risks: [[03-Risks]] · Legal: [[06-Legal-and-Compliance]]
 
 ## Decisions so far (from the owner)
 
-- Building our **own** logic from scratch (friend's code is not used).
+- Building our **own** logic from scratch (no outside code is used).
 - Owner does **not code**; the assistant writes code and explains it simply.
 - **Backtest with fake money, starting at $50.** Real money only later.
 - Location: **Tunisia**.

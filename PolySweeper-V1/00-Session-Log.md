@@ -37,8 +37,8 @@ Back to [[V1-Home]].
 - Pushed notes to the now-private repo; installed Obsidian Git plugin.
 - Listed 13 strategy types ([[08-Strategy-Catalog]]); focused on sports
   ([[09-Sports-Markets]]).
-- Brainstormed the friend's after-the-match sweeper
-  ([[10-Friend-Bot-Brainstorm]]).
+- Brainstormed the after-the-match sweeper
+  ([[10-After-Match-Sweeper-Brainstorm]]).
 - Owner answered setup questions; wrote [[11-V1-Plan-Simple]] and
   [[12-Data-Sources]]. Found: Tunisia listed accessible; 50/50 resolution
   rule for forfeits/cancellations; fee is tiny near 0.99; price history has
@@ -50,8 +50,8 @@ Back to [[V1-Home]].
   (OpenDota) and football results check (ESPN); found and fixed the extra-time
   and wrong-team traps.
 - Shadow mode v2: confirmed-result rule alongside price only.
-- Reviewed the friend's investor white paper (the V2 research project (folder `PolySweeper-V2-Research`)).
-- Agreed test plan: test our rules first, then the friend's likely late band,
+- Reviewed the PolySweeper V2 white paper (now in the V2 research project).
+- Agreed test plan: test our rules first, then the late band,
   then compare (see [[07-Open-Questions-and-Next-Steps]]).
 - Wrote the full bot logic and audit ([[23-Bot-Logic-Spec-and-Audit]]); fixed
   A1-A5 in shadow mode (crash guard, batched reads, fresh match states, late-band

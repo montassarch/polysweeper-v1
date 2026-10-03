@@ -39,8 +39,8 @@ Minutes between the buy moment and the market's payout time:
 | 0 to 120 min before payout (match probably over) | 444 | 2 | **0.45%** | about **+1.8 cents** |
 
 Buying **late, after the match is decided**, removed most losses. This matches
-the friend's "after the match ends" idea. It supports the plan to trade only
-after **verified** match end ([[10-Friend-Bot-Brainstorm]]).
+the "after the match ends" idea. It supports the plan to trade only
+after **verified** match end ([[10-After-Match-Sweeper-Brainstorm]]).
 
 Caveat: here "late" is measured with the payout time, which a live bot does
 not know in advance. The real bot must use verified match-end instead. We still

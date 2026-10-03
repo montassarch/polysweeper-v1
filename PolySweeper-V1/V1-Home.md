@@ -27,7 +27,7 @@ match below $1, hold until it pays $1. Code lives in the repo's `code/` folder.
 - [[07-Open-Questions-and-Next-Steps]] — what to do next
 - [[08-Strategy-Catalog]] — every strategy type found, to study one by one
 - [[09-Sports-Markets]] — sports focus: how they work and which strategies fit
-- [[10-Friend-Bot-Brainstorm]] — the after-the-match sweeper idea, architecture, kill switch
+- [[10-After-Match-Sweeper-Brainstorm]] — the after-the-match sweeper idea, architecture, kill switch
 - [[11-V1-Plan-Simple]] — the v1 plan in plain language, risk rules, backtest plan
 - [[12-Data-Sources]] — Polymarket data and sports results APIs
 - [[13-Code-Overview]] — what the code does, in plain language (code is in `code/`)

@@ -64,7 +64,7 @@ Tiny sample (3 esports matches plus metadata), so treat as **leads, not proof**.
 - The after-the-end window may be **much shorter** (minutes) than hoped, and
   competition is likely high. The realistic opportunity is the decisive
   moments of the last game/map, which raises risk (comebacks).
-- The friend's "last minute or after the end" fits this picture.
+- The "last minute or after the end" idea fits this picture.
 - Next measurement: for many closed matches, how long was the ask between
   0.96 and 0.995 and what was the profit after fees.
 

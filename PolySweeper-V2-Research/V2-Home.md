@@ -4,16 +4,15 @@ tags: [polysweeper, v2, research, index]
 created: 2026-10-03
 ---
 
-# PolySweeper V2 research — rebuilding the friend's strategy ourselves
+# PolySweeper V2 research — building a late-band sweeper
 
-Separate project from V1. Goal: **work out how the friend's "PolySweeper V2"
-works and build our own version, using only public information and our own
-research. We do not ask the friend anything.** The friend likely built it with an
-AI assistant and little prior experience, so the method should be discoverable.
+Separate project from V1. Goal: **work out how the "PolySweeper V2" approach
+works and build our own version, through deep research and testing.** The method
+should be discoverable with public data and an AI assistant.
 
 ## Notes in this project
 
-- [[V2-01-Friend-White-Paper-Review]] — what the friend's investor paper claims, and what doesn't add up
+- [[V2-01-White-Paper-Review]] — what the V2 investor paper claims, and what doesn't add up
 - [[V2-02-Research-Plan]] — how we will reverse-engineer it, step by step
 
 ## What we know (from the paper, unaudited)
@@ -27,7 +26,7 @@ AI assistant and little prior experience, so the method should be discoverable.
 
 ## Working hypothesis
 
-The friend's bot buys the confirmed winner in the **quiet period after the match
+The V2 bot most likely buys the confirmed winner in the **quiet period after the match
 ends and before Polymarket pays out**, at **0.997-0.999**, catching sellers who
 want their money now. Edge per trade is tiny; profit comes from volume and from
 near-zero result risk.

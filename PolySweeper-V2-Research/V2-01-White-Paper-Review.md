@@ -1,16 +1,16 @@
 ---
-title: V2-01 Friend's White Paper Review (Aug 2026)
-tags: [polysweeper, friend, review]
+title: V2-01 White Paper Review (Aug 2026)
+tags: [polysweeper, v2, review]
 created: 2026-10-01
 ---
 
-# Review: friend's "PolySweeper V2" investor white paper (August 2026)
+# Review: "PolySweeper V2" investor white paper (August 2026)
 
 Back to [[V2-Home]]
 
 Source: a 6-page investor briefing shared by the owner (the PDF itself is not
-stored in this repo). It describes the friend's bot from an early live period;
-the owner expects some things have changed since. All figures are the paper's own
+stored in this repo). It describes the bot from an early live period;
+some things may have changed since. All figures are the paper's own
 claims, **unaudited**, and not independently verified by us.
 
 ## What it claims
@@ -61,7 +61,7 @@ price band. The exact confirmation rules, sources and timings are kept secret.
 3. **Much wider coverage:** 68 leagues and 16 sport types vs our 13 leagues.
    Their throughput (18 settled a day) comes from breadth.
 
-## Things that don't add up (questions to ask the friend)
+## Things that don't add up (to answer by our own research)
 
 1. **Capital turns per day.** Page 1 says about 10 per day. But "42 times during
    the run" over about 20 days is about **2 per day**. The +6% return fits 2 a day
@@ -80,11 +80,11 @@ price band. The exact confirmation rules, sources and timings are kept secret.
 6. **Fees, rejected orders, and 50/50 resolutions** (forfeits, extra-time rules):
    how are they handled?
 
-## How to verify (they offer it)
+## How to verify (our own way)
 
-The paper offers the full settlement ledger, the decision log, **on-chain
-account history** and a live demo. If the friend shares the **wallet address**,
-we can check every trade ourselves from Polymarket's public data.
+Polymarket's trade data is public. We can find wallets that trade this way
+(buying confirmed winners at 0.995+ after matches end) and study their timing,
+sizes and results ourselves. See research method M2 in [[V2-02-Research-Plan]].
 
 ## Not advice
 
@@ -95,7 +95,7 @@ on-chain before trusting any of it.
 ## What we should change because of this
 
 - [x] Extend shadow mode to record the **late band 0.995-0.999** for confirmed
-      results (real asks and sizes), to measure the friend's likely strategy.
+      results (real asks and sizes), to measure this strategy.
 - [ ] Add a full refusal log (every skipped candidate with its reason).
 - [ ] Widen coverage over time (more leagues and sports), each with a results
       source.

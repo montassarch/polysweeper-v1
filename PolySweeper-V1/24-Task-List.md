@@ -70,7 +70,7 @@ Handled privately by the owner; not tracked in this vault.
 ## Done (highlights)
 
 - [x] Research vault in Obsidian, private repo, Obsidian Git sync
-- [x] Strategy research, sports focus, friend's bot brainstorm, v1 plan
+- [x] Strategy research, sports focus, after-match sweeper brainstorm, v1 plan
 - [x] Decision core, risk rules, kill switch, backtester (45 automatic tests)
 - [x] Real data collector; esports and football backtests
 - [x] Dota 2 results check (OpenDota) and football results check (ESPN); extra-time and wrong-team traps fixed

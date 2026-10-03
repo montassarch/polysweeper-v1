@@ -29,7 +29,7 @@ price** (a bit higher after fees).
 | 0.998 | 0.2 cents | 499 | 99.8% | **No** |
 
 **Target:** the loss rate must be far below `1 - price`, not just "about 1%".
-For the low band (0.96-0.99) that means well under 1%. For the friend's late
+For the low band (0.96-0.99) that means well under 1%. For the late
 band (0.998) it means under about 1 in 500, and in practice close to zero.
 
 **Two ways to win this game:**
@@ -72,7 +72,7 @@ band (0.998) it means under about 1 in 500, and in practice close to zero.
 5. **UMA gate (choice per band).**
    - *Before the proposal:* more profit, small result risk.
    - *After a matching proposal is posted:* less profit (price usually 0.995+),
-     but the result risk drops further. This is probably the friend's approach.
+     but the result risk drops further. This matches the late-band (V2) approach.
 6. **Small, spread-out bets.** One trade per match, small fixed share of the
    account per trade, caps per league and per day, so no single failure is
    big and failures are unlikely to stack.
@@ -157,7 +157,7 @@ reason looks sensible.
 1. **Market veto** (section 3.3). Easy, high value.
 2. **Resting buy orders after confirmation:** after the result is confirmed, place
    a limit buy at 0.97-0.99 and let impatient sellers fill it (maker: no fee,
-   possible rebate). Catches the brief "seller dumps" the friend probably lives on.
+   possible rebate). Catches the brief "seller dumps" in the late band.
 3. **Faster price feed** via Polymarket's websocket instead of 15-second polling,
    for the short football window.
 4. **UMA watcher:** log proposals and disputes for every market we watch

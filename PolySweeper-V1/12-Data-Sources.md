@@ -128,5 +128,5 @@ how many minutes after the real end each provider reports "finished".
   for CS2, premierleague.com). Sportradar data is used for MLB.
 - **Polygonscan** (blockchain explorer), **Dune** (SQL dashboards), and wallet
   lookup tools (e.g. Polymarket Analytics, PolymarketScan): check any wallet's
-  trades on-chain, e.g. to verify the friend's track record.
+  trades on-chain, e.g. to study other bots' track records.
 - **Other venues**: Kalshi (US-regulated, settles itself, public API), Polymarket US.

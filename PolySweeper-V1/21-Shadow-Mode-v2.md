@@ -51,6 +51,6 @@ first real confirmed pretend-buys will come from your PC.
 ## Update v2.1 (2026-10-01): measurement fixes
 
 Faster (batched order books and match states), crash-proof (errors logged to
-`errors.jsonl`), records prices up to 0.999 for the friend's band on the same
+`errors.jsonl`), records prices up to 0.999 for the late band on the same
 matches, and refuses junk order books. Buying rules unchanged. Details:
 [[23-Bot-Logic-Spec-and-Audit]]. **Pull and restart shadow mode to use it.**

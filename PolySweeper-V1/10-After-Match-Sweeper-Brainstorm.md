@@ -8,7 +8,7 @@ created: 2026-09-30
 
 Back to [[V1-Home]] · Sports background: [[09-Sports-Markets]] · Risks: [[03-Risks]]
 
-## What we were told (second-hand, from a friend who has a working bot)
+## Starting idea (second-hand description of a working bot)
 
 - Buys in the **last minute or right after a match ends**, before the market
   settles. Uses **UMA** resolution delay as the window.
@@ -77,7 +77,7 @@ limited. Expect thin edges.
   daily loss limit hit; balance drops unexpectedly.
 - Stop means: cancel open orders, stop new ones, alert you, keep holding.
 
-## GitHub workflow (like the friend's)
+## GitHub workflow
 
 - `main` = stable, runs the bot. Changes go through a **branch → test →
   pull request → merge**.

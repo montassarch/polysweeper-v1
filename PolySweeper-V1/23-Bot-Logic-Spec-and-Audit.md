@@ -6,7 +6,7 @@ created: 2026-10-01
 
 # Bot logic: specification v1 and audit of mistakes
 
-Back to [[V1-Home]] · Shadow v2: [[21-Shadow-Mode-v2]] · Friend review: the V2 research project (folder `PolySweeper-V2-Research`)
+Back to [[V1-Home]] · Shadow v2: [[21-Shadow-Mode-v2]]
 
 ## The rule in one sentence
 
@@ -42,7 +42,7 @@ If any stage says no, the bot does nothing and writes down why.
 | A1 | shadow mode | **One bad reply from the internet can crash the whole run.** There is no error guard around each market. | Your PC run could silently stop for hours. | Catch errors per market, log them, keep running. |
 | A2 | shadow mode | **Too slow.** Order books are read one by one with a pause (about 0.5 s each). With 40 matches that is about 40 s per round, not 15 s. | Football's buy window is only about 2 minutes, so many chances are missed or seen late. | Read up to many books in **one request** (tested: 4 books in 0.25 s instead of 1.84 s). |
 | A3 | shadow mode | **Polymarket's "ended" flag is refreshed only every 2 minutes.** | The confirmed rule waits for that flag, so it can be up to 2 minutes late, i.e. the whole football window. Recorded end times are also 2 minutes coarse. | Refresh the match state every round for matches that are live or just ended. |
-| A4 | shadow mode | **Prices above 0.995 are not recorded at all.** | We learn nothing about the friend's likely band (0.995-0.999) during this test. | Record snapshots up to 0.999 (logging only, no buying rule changes). |
+| A4 | shadow mode | **Prices above 0.995 are not recorded at all.** | We learn nothing about the late band (0.995-0.999) during this test. | Record snapshots up to 0.999 (logging only, no buying rule changes). |
 
 ### B. Logic mistakes to fix before any real money
 
@@ -73,7 +73,7 @@ If any stage says no, the bot does nothing and writes down why.
 - **A1 fixed:** errors are caught per market and written to `errors.jsonl`; the run keeps going.
 - **A2 fixed:** order books read in batches; tested live: 62 books in about 1 second, full round about 1.5 s (was about 30 s).
 - **A3 fixed:** match states (live, ended, score) re-read every round in one batched request (0.7 s for 31 matches).
-- **A4 fixed:** prices up to 0.999 recorded, and the result is checked for those matches too, so the friend's band can be studied on the **same matches** without buying there.
+- **A4 fixed:** prices up to 0.999 recorded, and the result is checked for those matches too, so the late band can be studied on the **same matches** without buying there.
 - **A5 fixed:** junk books refused (3 real examples refused in the live check).
 - Tests: 45 automatic checks pass.
 

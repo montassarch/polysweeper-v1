@@ -39,7 +39,7 @@ Back to [[V1-Home]]
 
 ## Owner's answers (2026-09-30)
 
-- Building own version from scratch; friend's code not used.
+- Building own version from scratch; no outside code used.
 - Does not code; needs plain-language explanations.
 - Backtest with fake $50; real money later.
 - Country: Tunisia.
@@ -47,8 +47,8 @@ Back to [[V1-Home]]
 - Risk: wants to avoid losses; risk management is a priority.
 - Uses Telegram; will pay for a data API after the backtest.
 - Goal: learn and profit; start small, improve gradually.
-- Friend questions dropped (2026-10-03): we won't ask the friend; the friend's
-  strategy is researched separately in the V2 research project.
+- Open questions are answered by our own research and testing (2026-10-03);
+  the late-band strategy is researched separately in the V2 research project.
 - Legal and funding questions: handled privately by the owner.
 
 See [[11-V1-Plan-Simple]].
@@ -61,7 +61,7 @@ See [[11-V1-Plan-Simple]].
    - Check-ins every 2-3 days (owner runs Commit-and-sync, assistant reads).
    - Phase ends after about **2 weeks**, or earlier once there are **100+ settled
      confirmed-result pretend trades**.
-2. **Phase 2, the friend's likely strategy:** add the late band 0.995-0.999
+2. **Phase 2, the late-band strategy:** add the late band 0.995-0.999
    (confirmed results only) and run the same way. See the V2 research project (folder `PolySweeper-V2-Research`).
 3. **Compare:** pretend trades per day, real fill prices, thin-book skips, wins,
    losses, 50/50s, fake profit per trade and per day, time until paid.

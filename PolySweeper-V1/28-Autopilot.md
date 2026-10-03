@@ -55,3 +55,8 @@ In a sandbox with a fake GitHub and a fake PC copy: an update pushed while it ra
 was pulled and shadow mode restarted within seconds; data was pushed; a simulated
 crash restarted shadow mode; the stop file stopped everything; an update to the
 autopilot itself made it restart.
+
+## Live test on the owner's PC (2026-10-03)
+
+A small update was pushed at about 13:33 UTC to check that the owner's autopilot
+pulls it, restarts shadow mode and pushes the shadow data back.

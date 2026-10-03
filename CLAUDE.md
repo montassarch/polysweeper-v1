@@ -85,6 +85,11 @@ below $1 and hold to the $1 payout. **No real money yet: shadow mode only (prete
 
 ## Working rules
 
+- **Plugins: project scope only.** The owner wants every plugin limited to this project. Install with
+  project scope from the repo root (`claude plugin install <name> --scope project`, or `/plugin` → "for this
+  project"), so it is recorded in `.claude/settings.json` here. Never install user-wide or enable on the
+  claude.ai account. Ask the owner before adding any plugin.
+
 - Never place real orders or handle wallet keys without the owner's explicit go-ahead.
 - Push finished work to `main` with a clear commit message; keep commits small.
 - Keep tool output short (no raw API dumps); write findings into the vault, not just chat.

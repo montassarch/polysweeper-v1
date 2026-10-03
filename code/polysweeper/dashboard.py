@@ -100,7 +100,26 @@ def build_shadow(shadow_dir: Path):
         if e["live"] and e["ended"]:
             durs.append((datetime.fromisoformat(e["ended"]) - datetime.fromisoformat(e["live"])).total_seconds() / 60)
     last = max([r["ts"] for r in trades] + [r["ts"] for r in events], default=None)
-    return {"rows": rows[-800:], "by_rule": by_rule, "last_activity": last,
+    feed = []                                        # newest-first activity, plain language
+    names = {k: (e.get("outcome"), e.get("question")) for k, e in entries.items()}
+    for r in trades[-300:]:
+        t = r.get("type")
+        if t == "entry":
+            feed.append({"ts": r["ts"], "kind": "buy", "rule": r.get("rule", "price_only"), "match": r.get("question"),
+                         "side": r.get("outcome"), "fills": r.get("fills"), "asks": r.get("asks_top5"),
+                         "vwap": r.get("vwap"), "cost": r.get("cost"), "fee": r.get("fee"), "shares": r.get("shares"),
+                         "ended": r.get("event_ended_flag"), "score": (r.get("event") or {}).get("score"),
+                         "score_check": r.get("score_check"), "confirm": r.get("confirm")})
+        elif t == "settled":
+            side, q = names.get(r["key"], (None, None))
+            feed.append({"ts": r["ts"], "kind": "paid", "rule": r.get("rule"), "match": q, "side": side,
+                         "result": r.get("result"), "pnl": r.get("pnl")})
+        elif t in ("skip_bad_book", "skip_thin", "skip_score_against"):
+            feed.append({"ts": r["ts"], "kind": t, "match": r.get("question"), "side": r.get("outcome"),
+                         "price": r.get("best_ask"), "reason": r.get("reason"), "available": r.get("available_shares"),
+                         "score": (r.get("event") or {}).get("score")})
+    feed = feed[::-1][:40]
+    return {"rows": rows[-800:], "feed": feed, "by_rule": by_rule, "last_activity": last,
             "events": {"seen": len(ev), "ended": sum(1 for e in ev.values() if e["ended"]),
                        "confirmed": confirmed_events,
                        "median_minutes": round(statistics.median(durs), 1) if durs else None}}
@@ -204,6 +223,14 @@ button.toggle { background:var(--surface); color:var(--ink); border:1px solid va
 svg { width:100%; height:auto; display:block; overflow:visible; }
 svg text { fill:var(--muted); font-size:11px; font-family:inherit; }
 .empty { color:var(--muted); font-size:14px; padding:26px 6px; text-align:center; }
+.fd { border-left:3px solid var(--s1); padding:8px 10px; margin:8px 0; background:var(--page); border-radius:6px; font-size:13px; }
+.fd.good { border-left-color:var(--good); } .fd.bad { border-left-color:var(--crit); } .fd.skip { border-left-color:var(--warn); }
+.fd .fh { display:flex; gap:8px; align-items:baseline; flex-wrap:wrap; }
+.fd .tm { margin-left:auto; color:var(--muted); font-size:12px; font-variant-numeric:tabular-nums; }
+.fd .tag { font-size:11px; border:1px solid var(--border); border-radius:10px; padding:0 7px; color:var(--ink2); }
+.fd .fm { color:var(--ink2); margin:2px 0 4px; }
+.fd .fl { font-variant-numeric:tabular-nums; overflow-wrap:anywhere; }
+.fd .fl span { display:inline-block; width:64px; color:var(--muted); }
 details { margin-top:6px; } summary { cursor:pointer; font-size:12px; color:var(--ink2); }
 table { width:100%; border-collapse:collapse; font-size:13px; margin-top:6px; min-width:460px; }
 th,td { text-align:left; padding:6px 8px; border-bottom:1px solid var(--grid); vertical-align:top; }
@@ -235,6 +262,7 @@ ul.caveats { color:var(--ink2); font-size:14px; padding-left:20px; margin:6px 0;
   <div class="ruleBar" id="ruleBar" role="tablist" aria-label="Strategy"></div>
   <p class="why" id="ruleWhy"></p>
   <div class="tiles" id="tiles"></div>
+  <div class="card" style="margin:14px 0"><h3>Live feed: what the bot just did</h3><p class="why">Newest first. For each pretend buy: why it bought, the sell orders that were on the book, and exactly which ones it took. Also every skip and every payout. Updates with the live dashboard.</p><div id="feed"></div></div>
   <div class="grid2">
     <div class="card"><h3>Fake profit over time</h3><p class="why">Running total of pretend profit, each point is one settled pretend trade.</p><div id="pnl"></div></div>
     <div class="card"><h3>Prices we would really have paid</h3><p class="why">Average fill price of each pretend buy. Higher price means a smaller profit and a bigger loss when wrong.</p><div id="hist"></div></div>
@@ -439,6 +467,33 @@ ul.caveats { color:var(--ink2); font-size:14px; padding-left:20px; margin:6px 0;
     $('evtext').textContent = S.events.seen
       ? S.events.seen + ' matches observed, ' + S.events.ended + ' seen ending, ' + S.events.confirmed + ' results confirmed by an outside source' + (S.events.median_minutes ? ', typical length about ' + S.events.median_minutes + ' minutes from live to ended' : '') + '.'
       : 'No matches recorded yet.';
+
+    // live feed
+    var RN = { confirmed: 'Confirmed result', score: 'Score check', price_only: 'Price only' };
+    function px(v) { return v == null ? '' : Number(v).toFixed(3); }
+    function usd(v) { return '$' + Math.abs(Number(v || 0)).toFixed(2); }
+    var F = S.feed || [];
+    $('feed').innerHTML = F.length ? F.map(function (f) {
+      var when = esc(f.ts.replace('T', ' ').slice(5, 19)), m = esc((f.match || '').slice(0, 70));
+      if (f.kind === 'buy') {
+        var book = (f.asks || []).map(function (a) { return a[1].toLocaleString() + ' @ ' + px(a[0]); }).join(', ');
+        var took = (f.fills || []).map(function (a) { return a[1] + ' @ ' + px(a[0]); }).join(' + ');
+        return '<div class="fd buy"><div class="fh"><b>Pretend BUY</b> ' + esc(f.side) + ' <span class="tag">' + esc(RN[f.rule] || f.rule) + '</span><span class="tm">' + when + '</span></div>' +
+          '<div class="fm">' + m + '</div>' +
+          '<div class="fl"><span>Why</span>Match ' + (f.ended ? 'ended' : 'still in play') + (f.score ? ', score ' + esc(f.score) : '') + (f.score_check ? ', score check: ' + esc(f.score_check) : '') + (f.confirm && f.rule === 'confirmed' ? ', result source: ' + esc(f.confirm) : '') + '</div>' +
+          '<div class="fl"><span>Sellers</span>' + esc(book || 'not recorded') + '</div>' +
+          '<div class="fl"><span>Took</span>' + esc(took || 'not recorded') + ' &rarr; ' + f.shares + ' shares, avg ' + (f.vwap == null ? '' : Number(f.vwap).toFixed(4)) + ', fee ' + usd(f.fee) + ', cost ' + usd(f.cost) + '</div>' +
+          '<div class="fl"><span>Outcome</span>if it wins +' + usd(f.shares - f.cost) + ' &nbsp;·&nbsp; if it loses &minus;' + usd(f.cost) + '</div></div>';
+      }
+      if (f.kind === 'paid') {
+        var word = { win: 'WON', loss: 'LOST', split: 'PAID 50/50' }[f.result] || f.result;
+        return '<div class="fd ' + (f.result === 'loss' ? 'bad' : 'good') + '"><div class="fh"><b>Paid out: ' + word + ' ' + money(f.pnl || 0) + '</b> ' + esc(f.side || '') + ' <span class="tag">' + esc(RN[f.rule] || f.rule || '') + '</span><span class="tm">' + when + '</span></div><div class="fm">' + m + '</div></div>';
+      }
+      var why = f.kind === 'skip_bad_book' ? 'Skipped (junk order book): ' + esc(f.reason || '')
+        : f.kind === 'skip_thin' ? 'Skipped (too few shares): only ' + (f.available || 0) + ' for sale in range'
+        : 'BLOCKED by score check: score ' + esc(f.score || '') + ' says the other side won';
+      return '<div class="fd skip"><div class="fh"><b>' + why + '</b><span class="tm">' + when + '</span></div><div class="fm">' + esc(f.side || '') + ' @ ' + px(f.price) + ' · ' + m + '</div></div>';
+    }).join('') : '<div class="empty">Nothing yet. Buys, skips and payouts appear here as they happen.</div>';
 
     // trades table
     var rows = ROWS.slice(-25).reverse();

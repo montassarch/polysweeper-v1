@@ -65,3 +65,20 @@ tooltips.
 
 - `code/polysweeper/dashboard.py` builds the page; `code/dashboard.bat` runs it.
 - `code/polysweeper/backtest_summary.py` builds the backtest summary file.
+
+## Live feed (added 2026-10-03)
+
+Just under the summary tiles. Newest first, it shows for every pretend buy:
+
+- **Why:** match ended or still in play, the score, the score-check verdict
+  (and the result source for the confirmed rule).
+- **Sellers:** the 5 cheapest sell orders on the book at that moment.
+- **Took:** exactly which sell orders the 5 shares came from, for example
+  "3 @ 0.970 + 2 @ 0.975 → avg 0.9720, fee $0.01, cost $4.87".
+- **Outcome:** what it wins if right and loses if wrong.
+
+It also lists every skip (junk book, too few shares, blocked by the score
+check) and every payout (won/lost and the amount). Open it with
+`dashboard_live.bat`; it refreshes every 15 seconds.
+
+The shadow window prints the same details for each buy.

@@ -68,6 +68,18 @@ def walk_book(asks, shares_needed: float, max_price: float):
     return cost / got, worst, avail
 
 
+def fill_levels(asks, shares_needed: float, max_price: float):
+    """Which sell orders a buy of `shares_needed` would take, cheapest first: [[price, shares], ...]."""
+    out, got = [], 0.0
+    for price, size in sorted((float(a["price"]), float(a["size"])) for a in asks):
+        if price > max_price or got >= shares_needed - 1e-9:
+            break
+        take = min(size, shares_needed - got)
+        out.append([price, round(take, 4)])
+        got += take
+    return out
+
+
 def book_problem(idx, stats):
     """A5: a high ask only means something if the market around it is real.
     Returns a reason to refuse, or None.
@@ -229,6 +241,7 @@ class Shadow:
                 if problem:
                     key = f"bad:{mid}:{idx}"
                     if key not in self.state["entered"]:
+                        print(f"[{now_iso()}] skip (junk book) {info['outcomes'][idx]} @ {best_ask:.3f} | {(info['market'].get('question') or '')[:50]} | {problem}")
                         self.state["entered"].append(key)
                         self.log(self.trade_f, {"type": "skip_bad_book", "ts": now_iso(), "key": key,
                                                 "league": info["league"], "question": info["market"].get("question"),
@@ -254,6 +267,7 @@ class Shadow:
                 self.maybe_enter("score", mid, idx, info, best_ask, asks, ev_state, f"score {e.get('score')}")
             elif verdict == "against" and f"against:{mid}:{idx}" not in self.state["entered"]:
                 self.state["entered"].append(f"against:{mid}:{idx}")     # a buy check 2 blocks
+                print(f"[{now_iso()}] BLOCKED by score check: {info['outcomes'][idx]} @ {best_ask:.3f} | score {e.get('score')} says the other side won")
                 self.log(self.trade_f, {"type": "skip_score_against", "ts": now_iso(), "key": f"against:{mid}:{idx}",
                                         "league": info["league"], "question": info["market"].get("question"),
                                         "outcome": info["outcomes"][idx], "best_ask": best_ask, "event": ev_state})
@@ -285,6 +299,7 @@ class Shadow:
         if vwap is None:
             self.counters["thin"] += 1
             self.state["entered"].append(key)       # count once
+            print(f"[{now_iso()}] skip (too few shares) {info['outcomes'][idx]} @ {best_ask:.3f}: only {avail:g} for sale up to {L.price_max}")
             self.log(self.trade_f, {"type": "skip_thin", "rule": rule, "ts": now_iso(), "key": key,
                                     "league": info["league"], "question": info["market"].get("question"),
                                     "best_ask": best_ask, "available_shares": avail, "event": ev_state})
@@ -298,12 +313,20 @@ class Shadow:
                "event_ended_flag": ev_state["ended"], "confirm": confirm_detail, "event": ev_state,
                # check 2 verdict on EVERY entry, so we can see which losses it would have blocked
                "score_check": score_allows(info["event"], info["outcomes"], idx, sport_of(info["league"])) if sport_of(info["league"]) else "n/a"}
+        rec["fills"] = fill_levels(asks, L.min_shares, L.price_max)
+        rec["asks_top5"] = sorted([float(a["price"]), float(a["size"])] for a in asks)[:5]
         self.log(self.trade_f, rec)
         self.state["entered"].append(key)
         self.state["pending"][key] = rec
         self.counters["entries"] += 1
         label = {"confirmed": "CONFIRMED", "score": "SCORE-CHECK", "price_only": "PRICE-ONLY"}[rule]
-        print(f"[{now_iso()}] SHADOW BUY ({label}) {rec['outcome']} | {(rec['question'] or '')[:50]} | vwap {vwap:.3f} | ended_flag={ev_state['ended']}")
+        print(f"\n[{now_iso()}] SHADOW BUY ({label}) {rec['outcome']} | {(rec['question'] or '')[:60]}")
+        print(f"    why:   match {'ENDED' if ev_state['ended'] else 'still in play'}, score {ev_state.get('score')}"
+              + (f", result source: {confirm_detail}" if rule == "confirmed" else "") + f", score check: {rec['score_check']}")
+        print("    book:  sellers " + ", ".join(f"{sz:g} @ {px:.3f}" for px, sz in rec["asks_top5"]))
+        print("    fill:  " + " + ".join(f"{sh:g} @ {px:.3f}" for px, sh in rec["fills"])
+              + f"  -> {L.min_shares:g} shares, avg {vwap:.4f}, fee ${fee:.4f}, cost ${rec['cost']:.2f}")
+        print(f"    if it wins: +${L.min_shares - rec['cost']:.2f}   if it loses: -${rec['cost']:.2f}")
         self.save()
 
     def settle(self):
@@ -324,7 +347,7 @@ class Shadow:
                                     "result": res, "pnl": pnl, "closed_time": m.get("closedTime")})
             del self.state["pending"][key]
             self.counters["settled"] += 1
-            print(f"[{now_iso()}] SETTLED {key}: {res} pnl {pnl:+.2f}")
+            print(f"[{now_iso()}] PAID OUT: {rec.get('outcome')} | {(rec.get('question') or '')[:50]} | {res.upper()} {pnl:+.2f} ({rec.get('rule', 'price_only')})")
             self.save()
 
     # -- main loop -----------------------------------------------------

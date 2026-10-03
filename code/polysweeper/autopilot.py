@@ -1,7 +1,7 @@
 """Autopilot: keeps shadow mode running and up to date on the owner's PC, with no clicks.
 
   1. On start: pull the latest code from GitHub, then start shadow mode.
-  2. Every 10 minutes: if GitHub has a newer version, stop shadow mode, pull, restart it.
+  2. Every minute: if GitHub has a newer version, stop shadow mode, pull, restart it.
   3. Every 3 hours: commit and push the shadow data files so they can be analysed.
   4. If shadow mode crashes, restart it after 30 seconds.
 
@@ -26,7 +26,7 @@ STOP = SHADOW_DIR / "STOP"
 LOG = SHADOW_DIR / "autopilot.log"
 DATA_FILES = ["code/data/shadow/trades.jsonl", "code/data/shadow/events.jsonl", "code/data/shadow/errors.jsonl"]
 BRANCH = "main"
-CHECK_EVERY = 10 * 60
+CHECK_EVERY = 60                                   # check GitHub for updates every minute
 SYNC_EVERY = 3 * 60 * 60
 RESTART_DELAY = 30
 SELF_UPDATE = 3

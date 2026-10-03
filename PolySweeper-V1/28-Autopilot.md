@@ -14,7 +14,7 @@ Back to [[V1-Home]] · Running shadow mode by hand: [[17-Run-Shadow-On-Your-PC]]
 |---|---|
 | You log in to Windows | The autopilot starts by itself (a minimised window called "PolySweeper autopilot") |
 | At start | Pulls the latest version from GitHub, then starts shadow mode |
-| Every 10 minutes | Checks GitHub. If there is an update, stops shadow mode cleanly, pulls, restarts it |
+| Every minute | Checks GitHub. If there is an update, stops shadow mode cleanly, pulls, restarts it |
 | Every 3 hours | Commits and pushes the shadow data (trades, events, errors) so the results can be read |
 | Shadow mode crashes | Restarts it after 30 seconds |
 | The autopilot itself is updated | Restarts itself |

@@ -185,3 +185,20 @@ The owner chose from the three options above:
   mostly when the seller knows something we don't.
 
 Details and how to read the new data: [[29-Live-Feed-and-Score-Log]].
+
+## Conclusion so far (2026-10-03, data to 18:52 UTC)
+
+- **Buying on price during play has no edge.** 76 paid-out pretend buys: 72 wins, 4 losses
+  (5.3%), net -$7.65. The average buy price was 0.966, which means the market itself expected
+  about 3.4 losses in 100. We lost at about that rate, a little worse. The price was fair: no
+  free money, and the fees and the 1-in-25 loss maths make it negative.
+- **After the result there is nothing to buy in our band.** 0 of 32 matches had 5+ shares at
+  0.96-0.995 once the result showed. Only 1 had shares at 0.995-0.999 (gone within 40 s). The
+  first 2-second check found an empty book 2 s after Polymarket's score changed: the bots that
+  clear it react faster than Polymarket's own score.
+- **Meaning:** V1 as planned (buy the confirmed winner after the match at 0.96-0.995) does not
+  get fills, and the safe-looking version of buying during play is just paying a fair price
+  for real risk. **No real money on V1 in its current form.**
+- **Still open:** 1-2 days of live-feed data (final check for a gap of seconds) and the tennis
+  "practically locked" test on the score log. Expect both to be hard: when a result is nearly
+  certain, the price is already 0.99+, so the profit per win is tiny.

@@ -85,3 +85,6 @@ Back to [[V1-Home]].
   (standard-library websocket), 2-second checks near the end, live detail in after-match records,
   daily score log synced by the autopilot. First 2-second catch (Valorant): nothing for sale even
   ~2 s after Polymarket's score changed. See [[29-Live-Feed-and-Score-Log]].
+- Conclusion so far (note 26): price-only buys lose at about the rate the price predicts (no
+  edge); after the result nothing at 0.96-0.995 in 32 of 32 matches. No real money on V1 as
+  planned; wait for 1-2 days of live-feed data and the tennis score-log test.

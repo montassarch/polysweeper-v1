@@ -1,0 +1,968 @@
+{
+ "markets": 1075,
+ "days_covered": 8.0,
+ "by_league": {
+  "cs2": 159,
+  "lol": 100,
+  "dota2": 55,
+  "val": 20,
+  "r6siege": 64,
+  "mlbb": 51,
+  "hok": 48,
+  "ow": 11,
+  "atp": 100,
+  "wta": 100,
+  "itf": 100,
+  "setkamemd": 100,
+  "setkawoua": 57,
+  "mlb": 57,
+  "nfl": 15,
+  "nhl": 38
+ },
+ "bands": {
+  "0.900-0.950": {
+   "buys": 36648,
+   "markets": 732,
+   "dollars": 8279416,
+   "lost_buys": 1901,
+   "lost_markets": 58,
+   "loss_rate_buys": 0.0521,
+   "loss_rate_dollars": 0.0562,
+   "break_even_loss_rate": 0.1,
+   "median_minutes_before_payout": 74.4
+  },
+  "0.950-0.960": {
+   "buys": 6855,
+   "markets": 565,
+   "dollars": 1554950,
+   "lost_buys": 142,
+   "lost_markets": 20,
+   "loss_rate_buys": 0.0207,
+   "loss_rate_dollars": 0.0083,
+   "break_even_loss_rate": 0.05,
+   "median_minutes_before_payout": 69.6
+  },
+  "0.960-0.980": {
+   "buys": 12337,
+   "markets": 635,
+   "dollars": 3335689,
+   "lost_buys": 296,
+   "lost_markets": 19,
+   "loss_rate_buys": 0.024,
+   "loss_rate_dollars": 0.0245,
+   "break_even_loss_rate": 0.04,
+   "median_minutes_before_payout": 58.0
+  },
+  "0.980-0.990": {
+   "buys": 5628,
+   "markets": 588,
+   "dollars": 1517268,
+   "lost_buys": 44,
+   "lost_markets": 8,
+   "loss_rate_buys": 0.0078,
+   "loss_rate_dollars": 0.0055,
+   "break_even_loss_rate": 0.02,
+   "median_minutes_before_payout": 52.1
+  },
+  "0.990-0.995": {
+   "buys": 6219,
+   "markets": 729,
+   "dollars": 1601098,
+   "lost_buys": 32,
+   "lost_markets": 4,
+   "loss_rate_buys": 0.0051,
+   "loss_rate_dollars": 0.0031,
+   "break_even_loss_rate": 0.01,
+   "median_minutes_before_payout": 42.8
+  },
+  "0.995-0.999": {
+   "buys": 2708,
+   "markets": 349,
+   "dollars": 1297921,
+   "lost_buys": 3,
+   "lost_markets": 2,
+   "loss_rate_buys": 0.0011,
+   "loss_rate_dollars": 0.0009,
+   "break_even_loss_rate": 0.005,
+   "median_minutes_before_payout": 37.8
+  },
+  "0.999-1.000": {
+   "buys": 43062,
+   "markets": 775,
+   "dollars": 11291229,
+   "lost_buys": 0,
+   "lost_markets": 0,
+   "loss_rate_buys": 0.0,
+   "loss_rate_dollars": 0.0,
+   "break_even_loss_rate": 0.001,
+   "median_minutes_before_payout": 30.3
+  }
+ },
+ "top_wallets_099plus": [
+  {
+   "wallet": "0x5f486fdf01685dc2fd8880d0d1fc3495858aba84",
+   "name": "owlgorithm-beta",
+   "markets": 146,
+   "buys": 860,
+   "dollars": 207903,
+   "lost_buys": 0,
+   "lost_dollars": 0,
+   "profit": 312.56,
+   "median_price": 0.999,
+   "median_minutes_before_payout": 57.8,
+   "top_leagues": {
+    "cs2": 283,
+    "lol": 249,
+    "r6siege": 245,
+    "dota2": 59
+   }
+  },
+  {
+   "wallet": "0x4ddc7068ef679dc7c34e2c22411975baa1b9e73f",
+   "name": "0x4dDC7068ef679Dc7c34e2c22411975bAa1B9E73F-1776615168970",
+   "markets": 115,
+   "buys": 220,
+   "dollars": 33049,
+   "lost_buys": 0,
+   "lost_dollars": 0,
+   "profit": 261.46,
+   "median_price": 0.99,
+   "median_minutes_before_payout": 36.1,
+   "top_leagues": {
+    "atp": 77,
+    "mlb": 50,
+    "wta": 39,
+    "nfl": 29
+   }
+  },
+  {
+   "wallet": "0x7635ed586336bc7246b39cd416ed17e4858963f6",
+   "name": "jiafanpomarke001",
+   "markets": 100,
+   "buys": 538,
+   "dollars": 282594,
+   "lost_buys": 17,
+   "lost_dollars": 3960,
+   "profit": -3542.95,
+   "median_price": 0.999,
+   "median_minutes_before_payout": 27.1,
+   "top_leagues": {
+    "dota2": 143,
+    "val": 101,
+    "lol": 99,
+    "atp": 68
+   }
+  },
+  {
+   "wallet": "0x893575c7d99542163c6b6e8a0fe5af0b6d217daa",
+   "name": "antec",
+   "markets": 97,
+   "buys": 358,
+   "dollars": 116091,
+   "lost_buys": 0,
+   "lost_dollars": 0,
+   "profit": 139.46,
+   "median_price": 0.999,
+   "median_minutes_before_payout": 57.1,
+   "top_leagues": {
+    "cs2": 145,
+    "lol": 99,
+    "mlb": 42,
+    "val": 35
+   }
+  },
+  {
+   "wallet": "0x2db098d402c3f90531380b03834791b3744c2fed",
+   "name": "InterzoneCo",
+   "markets": 96,
+   "buys": 313,
+   "dollars": 76837,
+   "lost_buys": 0,
+   "lost_dollars": 0,
+   "profit": 117.06,
+   "median_price": 0.999,
+   "median_minutes_before_payout": 55.6,
+   "top_leagues": {
+    "cs2": 105,
+    "r6siege": 75,
+    "lol": 60,
+    "dota2": 52
+   }
+  },
+  {
+   "wallet": "0xd487f513cfead22d76b6db4567c756b3cf25053e",
+   "name": "467j6yj",
+   "markets": 89,
+   "buys": 469,
+   "dollars": 97967,
+   "lost_buys": 0,
+   "lost_dollars": 0,
+   "profit": 905.89,
+   "median_price": 0.99,
+   "median_minutes_before_payout": 73.0,
+   "top_leagues": {
+    "r6siege": 211,
+    "lol": 186,
+    "cs2": 44,
+    "val": 28
+   }
+  },
+  {
+   "wallet": "0x1e9b1a67d933b29966b784a456b6b69b2d2a720c",
+   "name": "Kudri",
+   "markets": 86,
+   "buys": 454,
+   "dollars": 13498,
+   "lost_buys": 0,
+   "lost_dollars": 0,
+   "profit": 13.69,
+   "median_price": 0.999,
+   "median_minutes_before_payout": 31.2,
+   "top_leagues": {
+    "atp": 235,
+    "wta": 178,
+    "itf": 41
+   }
+  },
+  {
+   "wallet": "0xe602e997171efb499b6e1f9a2472c93f47c0c950",
+   "name": "rickjodar",
+   "markets": 86,
+   "buys": 485,
+   "dollars": 14241,
+   "lost_buys": 0,
+   "lost_dollars": 0,
+   "profit": 14.48,
+   "median_price": 0.999,
+   "median_minutes_before_payout": 31.1,
+   "top_leagues": {
+    "atp": 251,
+    "wta": 186,
+    "itf": 48
+   }
+  },
+  {
+   "wallet": "0x8f95d8ac95647f054989d50b52d2cb9abf7af829",
+   "name": "noator",
+   "markets": 85,
+   "buys": 444,
+   "dollars": 12932,
+   "lost_buys": 0,
+   "lost_dollars": 0,
+   "profit": 13.03,
+   "median_price": 0.999,
+   "median_minutes_before_payout": 31.1,
+   "top_leagues": {
+    "atp": 219,
+    "wta": 170,
+    "itf": 55
+   }
+  },
+  {
+   "wallet": "0x36a9b5278085eb543c9095a37c9a93bb7951c1d3",
+   "name": "momo-0916",
+   "markets": 84,
+   "buys": 1158,
+   "dollars": 7496,
+   "lost_buys": 0,
+   "lost_dollars": 0,
+   "profit": 17.91,
+   "median_price": 0.998,
+   "median_minutes_before_payout": 36.4,
+   "top_leagues": {
+    "mlb": 634,
+    "nhl": 231,
+    "nfl": 102,
+    "atp": 82
+   }
+  },
+  {
+   "wallet": "0xb9229acd25ce8ab05f998ad25b654cad657b1623",
+   "name": "KexShmex",
+   "markets": 84,
+   "buys": 467,
+   "dollars": 14026,
+   "lost_buys": 0,
+   "lost_dollars": 0,
+   "profit": 14.22,
+   "median_price": 0.999,
+   "median_minutes_before_payout": 30.8,
+   "top_leagues": {
+    "atp": 245,
+    "wta": 192,
+    "itf": 30
+   }
+  },
+  {
+   "wallet": "0x50b4ab8658dd8c9901c69208d275d81cdeaac879",
+   "name": "shugafa",
+   "markets": 82,
+   "buys": 113,
+   "dollars": 4974,
+   "lost_buys": 0,
+   "lost_dollars": 0,
+   "profit": 8.5,
+   "median_price": 0.999,
+   "median_minutes_before_payout": 61.2,
+   "top_leagues": {
+    "itf": 25,
+    "cs2": 19,
+    "mlbb": 19,
+    "atp": 12
+   }
+  },
+  {
+   "wallet": "0xaff6108be2e138ef1d382c7f561946f69f1b4a29",
+   "name": "FountainCleaner",
+   "markets": 81,
+   "buys": 131,
+   "dollars": 13086,
+   "lost_buys": 0,
+   "lost_dollars": 0,
+   "profit": 27.12,
+   "median_price": 0.999,
+   "median_minutes_before_payout": 49.1,
+   "top_leagues": {
+    "atp": 39,
+    "wta": 24,
+    "cs2": 22,
+    "lol": 10
+   }
+  },
+  {
+   "wallet": "0x88403d84c035e914d52475b41c6b8ce3b3920b28",
+   "name": "plym345",
+   "markets": 81,
+   "buys": 531,
+   "dollars": 26203,
+   "lost_buys": 0,
+   "lost_dollars": 0,
+   "profit": 26.67,
+   "median_price": 0.999,
+   "median_minutes_before_payout": 30.7,
+   "top_leagues": {
+    "atp": 289,
+    "wta": 221,
+    "itf": 21
+   }
+  },
+  {
+   "wallet": "0x5117a3d28ed1ecc4c484034770b82948dd8d6835",
+   "name": "geteslim",
+   "markets": 81,
+   "buys": 392,
+   "dollars": 11437,
+   "lost_buys": 0,
+   "lost_dollars": 0,
+   "profit": 11.69,
+   "median_price": 0.999,
+   "median_minutes_before_payout": 31.0,
+   "top_leagues": {
+    "atp": 235,
+    "wta": 120,
+    "itf": 37
+   }
+  },
+  {
+   "wallet": "0x1c05a0fbce8753200f9e52d4c27b1c9d1d62bc28",
+   "name": "Geek32",
+   "markets": 80,
+   "buys": 460,
+   "dollars": 13567,
+   "lost_buys": 0,
+   "lost_dollars": 0,
+   "profit": 13.92,
+   "median_price": 0.999,
+   "median_minutes_before_payout": 30.9,
+   "top_leagues": {
+    "atp": 259,
+    "wta": 175,
+    "itf": 26
+   }
+  },
+  {
+   "wallet": "0xad861b84e5f13bafe6417dc059fa12750a7ab5bd",
+   "name": "darkswanfir",
+   "markets": 80,
+   "buys": 416,
+   "dollars": 12824,
+   "lost_buys": 0,
+   "lost_dollars": 0,
+   "profit": 13.06,
+   "median_price": 0.999,
+   "median_minutes_before_payout": 30.9,
+   "top_leagues": {
+    "atp": 219,
+    "wta": 159,
+    "itf": 38
+   }
+  },
+  {
+   "wallet": "0xceb6c4051c401acefd2fb82e8a4503e83047fdd6",
+   "name": "Weerd",
+   "markets": 80,
+   "buys": 407,
+   "dollars": 12095,
+   "lost_buys": 0,
+   "lost_dollars": 0,
+   "profit": 12.33,
+   "median_price": 0.999,
+   "median_minutes_before_payout": 31.2,
+   "top_leagues": {
+    "atp": 210,
+    "wta": 141,
+    "itf": 56
+   }
+  },
+  {
+   "wallet": "0x53f57c0f09db92baa08521dd330866ee71d941ac",
+   "name": "Lustroot",
+   "markets": 80,
+   "buys": 422,
+   "dollars": 12774,
+   "lost_buys": 0,
+   "lost_dollars": 0,
+   "profit": 13.29,
+   "median_price": 0.999,
+   "median_minutes_before_payout": 31.0,
+   "top_leagues": {
+    "atp": 216,
+    "wta": 156,
+    "itf": 50
+   }
+  },
+  {
+   "wallet": "0xf489a231942e4961fe398377da6ecf3ed6f343ef",
+   "name": "Listtrue",
+   "markets": 80,
+   "buys": 449,
+   "dollars": 13661,
+   "lost_buys": 0,
+   "lost_dollars": 0,
+   "profit": 13.82,
+   "median_price": 0.999,
+   "median_minutes_before_payout": 31.1,
+   "top_leagues": {
+    "atp": 239,
+    "wta": 160,
+    "itf": 50
+   }
+  },
+  {
+   "wallet": "0x796179c199b90a1aada1773fdf7b5abb25b94b1e",
+   "name": "FreeY",
+   "markets": 79,
+   "buys": 363,
+   "dollars": 10871,
+   "lost_buys": 0,
+   "lost_dollars": 0,
+   "profit": 11.17,
+   "median_price": 0.999,
+   "median_minutes_before_payout": 31.2,
+   "top_leagues": {
+    "atp": 189,
+    "wta": 129,
+    "itf": 45
+   }
+  },
+  {
+   "wallet": "0x7270a7981cc8491b49ea9e603d35423f0abb9077",
+   "name": "Hophopj",
+   "markets": 78,
+   "buys": 419,
+   "dollars": 12417,
+   "lost_buys": 0,
+   "lost_dollars": 0,
+   "profit": 12.64,
+   "median_price": 0.999,
+   "median_minutes_before_payout": 31.0,
+   "top_leagues": {
+    "atp": 228,
+    "wta": 145,
+    "itf": 46
+   }
+  },
+  {
+   "wallet": "0xcbffa4ec28802f956f9d8423c1daa5c3eb13b2ba",
+   "name": "featrun",
+   "markets": 77,
+   "buys": 398,
+   "dollars": 12426,
+   "lost_buys": 0,
+   "lost_dollars": 0,
+   "profit": 12.71,
+   "median_price": 0.999,
+   "median_minutes_before_payout": 30.7,
+   "top_leagues": {
+    "atp": 208,
+    "wta": 163,
+    "itf": 27
+   }
+  },
+  {
+   "wallet": "0x35652e7c696287656f4f45c92f5a93dab5fb5933",
+   "name": "markizderol",
+   "markets": 77,
+   "buys": 426,
+   "dollars": 12564,
+   "lost_buys": 0,
+   "lost_dollars": 0,
+   "profit": 12.7,
+   "median_price": 0.999,
+   "median_minutes_before_payout": 31.0,
+   "top_leagues": {
+    "atp": 235,
+    "wta": 159,
+    "itf": 32
+   }
+  },
+  {
+   "wallet": "0x758dac51ba3cc9a246a79787da9df11c5f425d9e",
+   "name": "a5533",
+   "markets": 73,
+   "buys": 215,
+   "dollars": 8817,
+   "lost_buys": 0,
+   "lost_dollars": 0,
+   "profit": 61.89,
+   "median_price": 0.992,
+   "median_minutes_before_payout": 47.0,
+   "top_leagues": {
+    "dota2": 69,
+    "lol": 62,
+    "val": 49,
+    "cs2": 26
+   }
+  }
+ ],
+ "timing_096plus": {
+  "15-60 min": {
+   "buys": 42909,
+   "lost": 69,
+   "dollars": 12529709
+  },
+  "1-3 h": {
+   "buys": 15149,
+   "lost": 302,
+   "dollars": 4045317
+  },
+  "3 h+": {
+   "buys": 2784,
+   "lost": 4,
+   "dollars": 622060
+  },
+  "0-15 min": {
+   "buys": 9112,
+   "lost": 0,
+   "dollars": 1846120
+  }
+ },
+ "late_dollars_per_market_099plus": {
+  "median": 1305.3,
+  "p90": 35255,
+  "total": 14190248
+ },
+ "losses_096plus": [
+  {
+   "league": "lol",
+   "title": "LoL: The Ruddy Sack vs Kaufland Hangry Knights (BO1) - EMEA Masters Swiss Stage",
+   "bought": "The Ruddy Sack",
+   "price": 0.9618032212,
+   "size": 11890,
+   "wallet": "0xd487f513cfead22d76b6db4567c756b3cf25053e",
+   "name": "467j6yj",
+   "mins_before_close": 63.4
+  },
+  {
+   "league": "atp",
+   "title": "Japan Open Tennis Championships: Valentin Vacherot vs Stefanos Tsitsipas",
+   "bought": "Stefanos Tsitsipas",
+   "price": 0.97,
+   "size": 9210.57,
+   "wallet": "0x3193feb60a841edb0e2034c2018cbe2fbae9ed9e",
+   "name": "Ss1984",
+   "mins_before_close": 103.5
+  },
+  {
+   "league": "atp",
+   "title": "Japan Open Tennis Championships: Valentin Vacherot vs Stefanos Tsitsipas",
+   "bought": "Stefanos Tsitsipas",
+   "price": 0.971,
+   "size": 7169.93,
+   "wallet": "0x5268527977f700f9bf9b6d5cd843859e4e70135d",
+   "name": "HomeRunHazard",
+   "mins_before_close": 116.7
+  },
+  {
+   "league": "atp",
+   "title": "Japan Open Tennis Championships: Valentin Vacherot vs Stefanos Tsitsipas",
+   "bought": "Stefanos Tsitsipas",
+   "price": 0.96,
+   "size": 6867.71,
+   "wallet": "0x5268527977f700f9bf9b6d5cd843859e4e70135d",
+   "name": "HomeRunHazard",
+   "mins_before_close": 120.0
+  },
+  {
+   "league": "dota2",
+   "title": "Dota 2: LGD Gaming vs Xtreme Gaming (BO3) - BLAST Slam Group A",
+   "bought": "Xtreme Gaming",
+   "price": 0.9611199056,
+   "size": 5202.264533,
+   "wallet": "0x0e231b3fc9a53beb231616ed18754d8297061c3d",
+   "name": "XTeD123",
+   "mins_before_close": 37.0
+  },
+  {
+   "league": "lol",
+   "title": "LoL: Team Phantasma vs The Secret Club Esport (BO3) - EMEA Masters Swiss Stage",
+   "bought": "Team Phantasma",
+   "price": 0.9851664973,
+   "size": 5075.2842,
+   "wallet": "0xd3f1bae35d1ccf6ea920f56bf9ebf8717bbe7535",
+   "name": "aomendushen008",
+   "mins_before_close": 78.9
+  },
+  {
+   "league": "dota2",
+   "title": "Dota 2: 1win vs Natus Vincere (BO3) - BLAST Slam Group B",
+   "bought": "Natus Vincere",
+   "price": 0.9694,
+   "size": 5000,
+   "wallet": "0x3308f2d02d40fa571da699c62c168f859afdf04b",
+   "name": "yishiwucheng",
+   "mins_before_close": 125.5
+  },
+  {
+   "league": "atp",
+   "title": "Japan Open Tennis Championships: Valentin Vacherot vs Stefanos Tsitsipas",
+   "bought": "Stefanos Tsitsipas",
+   "price": 0.96,
+   "size": 4473.96,
+   "wallet": "0x2a69660046d7acc4ab204d7cc5ba78b0776cd2f7",
+   "name": "UpTheBlues",
+   "mins_before_close": 120.0
+  },
+  {
+   "league": "wta",
+   "title": "Jingshan: Aliona Falei vs Kristiana Sidorova",
+   "bought": "Kristiana Sidorova",
+   "price": 0.97,
+   "size": 4000,
+   "wallet": "0x9b559c039873cd794668492af33b748b6b0a1167",
+   "name": "pagliacci4",
+   "mins_before_close": 114.9
+  },
+  {
+   "league": "atp",
+   "title": "Japan Open Tennis Championships: Valentin Vacherot vs Stefanos Tsitsipas",
+   "bought": "Stefanos Tsitsipas",
+   "price": 0.97,
+   "size": 3825,
+   "wallet": "0x2a69660046d7acc4ab204d7cc5ba78b0776cd2f7",
+   "name": "UpTheBlues",
+   "mins_before_close": 114.2
+  },
+  {
+   "league": "atp",
+   "title": "Japan Open Tennis Championships: Valentin Vacherot vs Stefanos Tsitsipas",
+   "bought": "Stefanos Tsitsipas",
+   "price": 0.97,
+   "size": 2448.255667,
+   "wallet": "0x365f951dc281322d83f6fcda884c7f66a938706a",
+   "name": "efntrick",
+   "mins_before_close": 116.7
+  },
+  {
+   "league": "itf",
+   "title": "M25 Slobozia: Borys Zgola vs Radu Mihai Papoe",
+   "bought": "Radu Mihai Papoe",
+   "price": 0.9615336958,
+   "size": 2080.0103,
+   "wallet": "0x2f4beded4082ff033f1c0b7efbde9962220def55",
+   "name": "Winerius",
+   "mins_before_close": 392.9
+  },
+  {
+   "league": "dota2",
+   "title": "Dota 2: 1win vs Natus Vincere (BO3) - BLAST Slam Group B",
+   "bought": "Natus Vincere",
+   "price": 0.97,
+   "size": 2000,
+   "wallet": "0x9055a9e36aa73274e3a92dc2dbb081bb4d9e756a",
+   "name": "okalright",
+   "mins_before_close": 135.2
+  },
+  {
+   "league": "cs2",
+   "title": "Counter-Strike: Luminosity vs BIG (BO3) - Stake Ranked Episode 4 Playoffs",
+   "bought": "BIG",
+   "price": 0.99,
+   "size": 1300,
+   "wallet": "0x7635ed586336bc7246b39cd416ed17e4858963f6",
+   "name": "jiafanpomarke001",
+   "mins_before_close": 42.2
+  },
+  {
+   "league": "lol",
+   "title": "LoL: Team Phantasma vs The Secret Club Esport (BO3) - EMEA Masters Swiss Stage",
+   "bought": "Team Phantasma",
+   "price": 0.9679240863,
+   "size": 1084.795817,
+   "wallet": "0x8cea19d7890588de0f78236caad3a3112be57a2f",
+   "name": "juanda-097",
+   "mins_before_close": 84.4
+  },
+  {
+   "league": "dota2",
+   "title": "Dota 2: 1win vs Natus Vincere (BO3) - BLAST Slam Group B",
+   "bought": "Natus Vincere",
+   "price": 0.9989528894,
+   "size": 1001.048,
+   "wallet": "0x336a19edb925a959bbd7e301a26fc43e12241915",
+   "name": "lag123",
+   "mins_before_close": 118.8
+  },
+  {
+   "league": "cs2",
+   "title": "Counter-Strike: Luminosity vs BIG (BO3) - Stake Ranked Episode 4 Playoffs",
+   "bought": "BIG",
+   "price": 0.99,
+   "size": 900,
+   "wallet": "0x7635ed586336bc7246b39cd416ed17e4858963f6",
+   "name": "jiafanpomarke001",
+   "mins_before_close": 42.4
+  },
+  {
+   "league": "dota2",
+   "title": "Dota 2: 1win vs Natus Vincere (BO3) - BLAST Slam Group B",
+   "bought": "Natus Vincere",
+   "price": 0.96,
+   "size": 914.46,
+   "wallet": "0xc548cb509b2dfc09282f8037eb103a8ad7a88e4e",
+   "name": "Cwy00000",
+   "mins_before_close": 136.2
+  },
+  {
+   "league": "atp",
+   "title": "Japan Open Tennis Championships: Valentin Vacherot vs Stefanos Tsitsipas",
+   "bought": "Stefanos Tsitsipas",
+   "price": 0.977,
+   "size": 891.43,
+   "wallet": "0x3193feb60a841edb0e2034c2018cbe2fbae9ed9e",
+   "name": "Ss1984",
+   "mins_before_close": 107.7
+  },
+  {
+   "league": "dota2",
+   "title": "Dota 2: 1win vs Natus Vincere (BO3) - BLAST Slam Group B",
+   "bought": "Natus Vincere",
+   "price": 0.98,
+   "size": 653.62,
+   "wallet": "0x37461eff876736bf0363647db4b9c319c48bc193",
+   "name": "darkmarketmaker",
+   "mins_before_close": 128.8
+  },
+  {
+   "league": "wta",
+   "title": "Adana: Carole Monnet vs Cagla Buyukakcay",
+   "bought": "Carole Monnet",
+   "price": 0.97,
+   "size": 635,
+   "wallet": "0x365f951dc281322d83f6fcda884c7f66a938706a",
+   "name": "efntrick",
+   "mins_before_close": 68.8
+  },
+  {
+   "league": "atp",
+   "title": "Columbus: Bryce Nakashima vs Keegan Smith",
+   "bought": "Bryce Nakashima",
+   "price": 0.97,
+   "size": 618.5567,
+   "wallet": "0xd0c7f0d430bf1ec764a8279a75235fb5e54e4459",
+   "name": "Leo626626",
+   "mins_before_close": 46.2
+  },
+  {
+   "league": "dota2",
+   "title": "Dota 2: 1win vs Natus Vincere (BO3) - BLAST Slam Group B",
+   "bought": "Natus Vincere",
+   "price": 0.97,
+   "size": 555,
+   "wallet": "0x1943ada1083d8b3b7e4356cc179ee942ea2c1561",
+   "name": "pipipi150",
+   "mins_before_close": 131.3
+  },
+  {
+   "league": "dota2",
+   "title": "Dota 2: 1win vs Natus Vincere (BO3) - BLAST Slam Group B",
+   "bought": "Natus Vincere",
+   "price": 0.964,
+   "size": 555,
+   "wallet": "0x1943ada1083d8b3b7e4356cc179ee942ea2c1561",
+   "name": "pipipi150",
+   "mins_before_close": 116.6
+  },
+  {
+   "league": "atp",
+   "title": "Japan Open Tennis Championships: Valentin Vacherot vs Stefanos Tsitsipas",
+   "bought": "Stefanos Tsitsipas",
+   "price": 0.976,
+   "size": 545,
+   "wallet": "0x2a69660046d7acc4ab204d7cc5ba78b0776cd2f7",
+   "name": "UpTheBlues",
+   "mins_before_close": 102.7
+  },
+  {
+   "league": "dota2",
+   "title": "Dota 2: 1win vs Natus Vincere (BO3) - BLAST Slam Group B",
+   "bought": "Natus Vincere",
+   "price": 0.9897938457,
+   "size": 505.155697,
+   "wallet": "0x336a19edb925a959bbd7e301a26fc43e12241915",
+   "name": "lag123",
+   "mins_before_close": 119.1
+  },
+  {
+   "league": "atp",
+   "title": "Japan Open Tennis Championships: Valentin Vacherot vs Stefanos Tsitsipas",
+   "bought": "Stefanos Tsitsipas",
+   "price": 0.9719893049,
+   "size": 467.505142,
+   "wallet": "0x2a69660046d7acc4ab204d7cc5ba78b0776cd2f7",
+   "name": "UpTheBlues",
+   "mins_before_close": 108.6
+  },
+  {
+   "league": "lol",
+   "title": "LoL: Team Phantasma vs The Secret Club Esport (BO3) - EMEA Masters Swiss Stage",
+   "bought": "Team Phantasma",
+   "price": 0.986350169,
+   "size": 432.02,
+   "wallet": "0xbb4cc495ff9d6aae082c481e807d032705f974b2",
+   "name": "0xBB4cC495FF9d6AAe082C481e807D032705f974B2-1790437980713",
+   "mins_before_close": 78.9
+  },
+  {
+   "league": "dota2",
+   "title": "Dota 2: 1win vs Natus Vincere (BO3) - BLAST Slam Group B",
+   "bought": "Natus Vincere",
+   "price": 0.97,
+   "size": 400,
+   "wallet": "0x7635ed586336bc7246b39cd416ed17e4858963f6",
+   "name": "jiafanpomarke001",
+   "mins_before_close": 129.3
+  },
+  {
+   "league": "cs2",
+   "title": "Counter-Strike: Luminosity vs BIG (BO3) - Stake Ranked Episode 4 Playoffs",
+   "bought": "BIG",
+   "price": 0.99,
+   "size": 383,
+   "wallet": "0x79a16b3f1c8a93a1d7974dedc62a44f66079a5cf",
+   "name": "mistermaxik",
+   "mins_before_close": 42.7
+  },
+  {
+   "league": "dota2",
+   "title": "Dota 2: 1win vs Natus Vincere (BO3) - BLAST Slam Group B",
+   "bought": "Natus Vincere",
+   "price": 0.9689535058,
+   "size": 334.45,
+   "wallet": "0xf8ad84df1ada1985851739077570f994d3d9c303",
+   "name": "peet-752",
+   "mins_before_close": 135.1
+  },
+  {
+   "league": "cs2",
+   "title": "Counter-Strike: Luminosity vs BIG (BO3) - Stake Ranked Episode 4 Playoffs",
+   "bought": "BIG",
+   "price": 0.97,
+   "size": 330.47,
+   "wallet": "0xec3612760d0b053f5171789e29d501ec0f3f78bb",
+   "name": "MoneyForNothing",
+   "mins_before_close": 42.7
+  },
+  {
+   "league": "cs2",
+   "title": "Counter-Strike: Luminosity vs BIG (BO3) - Stake Ranked Episode 4 Playoffs",
+   "bought": "BIG",
+   "price": 0.99,
+   "size": 315,
+   "wallet": "0x7635ed586336bc7246b39cd416ed17e4858963f6",
+   "name": "jiafanpomarke001",
+   "mins_before_close": 42.4
+  },
+  {
+   "league": "cs2",
+   "title": "Counter-Strike: MIBR fe vs Semente do Mal (BO3) - CCT South America Series 6 Group Stage",
+   "bought": "Semente do Mal",
+   "price": 0.97,
+   "size": 318.47,
+   "wallet": "0x93004c4d67da4ced6dd6a107d23d29212fa4ca58",
+   "name": "realcaller",
+   "mins_before_close": 84.5
+  },
+  {
+   "league": "cs2",
+   "title": "Counter-Strike: Luminosity vs BIG (BO3) - Stake Ranked Episode 4 Playoffs",
+   "bought": "BIG",
+   "price": 0.99,
+   "size": 310,
+   "wallet": "0x7635ed586336bc7246b39cd416ed17e4858963f6",
+   "name": "jiafanpomarke001",
+   "mins_before_close": 42.2
+  },
+  {
+   "league": "dota2",
+   "title": "Dota 2: 1win vs Natus Vincere (BO3) - BLAST Slam Group B",
+   "bought": "Natus Vincere",
+   "price": 0.96,
+   "size": 309.375,
+   "wallet": "0xb5689f0e724d63fe6d6a68c37cccd75ab39bd8b6",
+   "name": "",
+   "mins_before_close": 137.2
+  },
+  {
+   "league": "cs2",
+   "title": "Counter-Strike: SAW vs Nice Try (BO1) - FOX Legacy Cup Group B",
+   "bought": "Nice Try",
+   "price": 0.9897917241,
+   "size": 290,
+   "wallet": "0xbbba4b915d4b5c7b15a59ff905d5c760990fac2d",
+   "name": "Resignation",
+   "mins_before_close": 152.0
+  },
+  {
+   "league": "atp",
+   "title": "Japan Open Tennis Championships: Valentin Vacherot vs Stefanos Tsitsipas",
+   "bought": "Stefanos Tsitsipas",
+   "price": 0.96,
+   "size": 286.74,
+   "wallet": "0xf1f2b3c6c5bea42a6664fe3a8395addc1ab28c8d",
+   "name": "HFT-PRO",
+   "mins_before_close": 118.5
+  },
+  {
+   "league": "cs2",
+   "title": "Counter-Strike: MIBR fe vs Semente do Mal (BO3) - CCT South America Series 6 Group Stage",
+   "bought": "Semente do Mal",
+   "price": 0.96,
+   "size": 269.6,
+   "wallet": "0x93004c4d67da4ced6dd6a107d23d29212fa4ca58",
+   "name": "realcaller",
+   "mins_before_close": 81.7
+  },
+  {
+   "league": "dota2",
+   "title": "Dota 2: 1win vs Natus Vincere (BO3) - BLAST Slam Group B",
+   "bought": "Natus Vincere",
+   "price": 0.964,
+   "size": 264,
+   "wallet": "0xb877962274938a85e9d08b83062badd330b64601",
+   "name": "21372137",
+   "mins_before_close": 120.3
+  }
+ ],
+ "n_losses_096plus": 375
+}

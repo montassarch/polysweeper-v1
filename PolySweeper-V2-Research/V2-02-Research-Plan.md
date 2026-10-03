@@ -29,7 +29,7 @@ Back to [[V2-Home]]
 
 ## Steps
 
-- [ ] M2: build a small script to pull public trades for finished match markets and find late-band buyers
+- [x] M2: public trades study, 1,075 finished matches (see [[V2-04-Public-Trades-Study]])
 - [ ] M3: deep research write-up (sources, methods, competition)
 - [x] M4: league census from Polymarket data (see [[V2-03-League-Census]])
 - [ ] M1: analyse late-band data from the owner's shadow logs once synced

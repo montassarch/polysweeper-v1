@@ -13,3 +13,4 @@ code/data/results/
 code/data/football_check.log
 __pycache__/
 *.pyc
+code/data/trades_study/raw.jsonl

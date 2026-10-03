@@ -172,3 +172,8 @@ reason looks sensible.
 6. **Loss post-mortem template** in Obsidian, filled for every loss.
 7. **Per-sport finality notes** (tennis retirement, cricket rain rules, US sports
    overtime) before adding any new sport.
+8. **Public trades evidence (2026-10-03):** across 1,075 finished matches, every
+   buy at 0.99+ that lost was made while the match was still being played
+   (a bot acting on a wrong or early signal, e.g. treating game 1 of 3 as the
+   series). Buys in the last 15 minutes before payout: 9,112, none lost. Our
+   "ended flag + full series + score check" rules target exactly this.

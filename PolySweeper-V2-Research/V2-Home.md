@@ -15,6 +15,7 @@ should be discoverable with public data and an AI assistant.
 - [[V2-01-White-Paper-Review]] — what the V2 investor paper claims, and what doesn't add up
 - [[V2-02-Research-Plan]] — how we will reverse-engineer it, step by step
 - [[V2-03-League-Census]] — which leagues settle the most matches per day
+- [[V2-04-Public-Trades-Study]] — who sweeps, how often high-price buys lose, the real edge (0.15%)
 
 ## What we know (from the paper, unaudited)
 
@@ -24,6 +25,13 @@ should be discoverable with public data and an AI assistant.
 - About **18 settled trades a day** (peak 43), median **1.87 h** until paid.
 - **17 data sources, 68 leagues, 11 traditional sports + 5 esports.**
 - One narrow price band; long-dated markets excluded; every decision logged.
+
+## Evidence so far (from public trades, 2026-10-03)
+
+- Real late-band sweepers earn about **0.15% per trade** at 0.999, matching the paper.
+- **0 losses** on 43,062 buys at 0.999+; every loss at 0.99+ was a buy made before
+  the match was really over.
+- About $1.4M/day bought at 0.999+ on these sports: crowded and automated.
 
 ## Working hypothesis
 

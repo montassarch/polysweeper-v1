@@ -35,7 +35,6 @@ this list is the one to follow. Owner = who does it.
 - [x] Cloud network set to full trust (owner, 2026-10-03): agents can read web pages; live feed tested on the real server
 - [ ] Optional: install the "Exa Deep Research" plugin for better web reading — **owner**
 - [ ] Read the daily research note; tell the lab what to focus on — **owner** (whenever useful)
-- [ ] Restart the autopilot once (PC restart, or `stop_shadow.bat` then `autopilot.bat`): the PC still runs the first autopilot version, which can't update itself, restarts on notes-only pushes and doesn't sync the daily score log ([[28-Autopilot]]) — **owner**
 - [ ] Health checks: confirm the fix (a `daily/` folder appears on main; updates picked up within ~1 minute) — **assistant (lab)**
 - [ ] Lab next: research #8 maker rebates / liquidity rewards and #10 profitable 0.99+ wallets — **assistant (lab)**
 

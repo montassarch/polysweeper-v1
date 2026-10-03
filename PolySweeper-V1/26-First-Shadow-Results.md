@@ -67,3 +67,16 @@ enough. This is why the real bot will only use the confirmed rule.
   plugged in, put my device to sleep after" to **Never**. Keep the PC plugged in.
 - Assistant: find a free results source for CS2 (and LoL) so these
   matches can use the confirmed rule. CS2 is the most active esport.
+
+## Update 2026-10-03 afternoon: first autopilot sync
+
+- 02:00-13:41 UTC: 52 price-only pretend buys, 35 paid out, **35 wins, 0 losses,
+  +$5.73**. 59 junk books skipped.
+- **0 score-check buys:** all 52 buys happened while the match was still in play.
+  Once a match is flagged ended, the price is already above 0.995 (the trades study
+  saw the same: after the end the price jumps to 0.999).
+- One Overwatch buy had the score already showing the series won while Polymarket
+  had not yet flagged it ended: a possible safe window.
+- New: the **end-window study** (shadow mode v2.4) records, for every match, the
+  winner's price and shares for sale for 15 minutes after the score shows it decided
+  or the ended flag appears. Report: `python end_window_report.py`.

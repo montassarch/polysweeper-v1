@@ -451,3 +451,25 @@ class ShadowScoreRuleTests(unittest.TestCase):
             self.assertTrue([r for r in rows if r["type"] == "skip_score_against"])
             price_only_m2 = [r for r in rows if r.get("rule") == "price_only" and r["market_id"] == "m2"]
             self.assertEqual(price_only_m2[0]["score_check"], "against")   # the old rule would have bought the loser
+
+
+class EndWatchTests(unittest.TestCase):
+    def test_records_window_after_score_decided(self):
+        from polysweeper.endwindow import EndWatch
+        out = []
+        w = EndWatch(out.append, say=lambda *_: None)
+        info = {"league": "cs2", "outcomes": ["A", "B"], "event": {"title": "Counter-Strike: A vs B (BO3) - X", "score": "000-000|1-1|Bo3"}}
+        ask = lambda p, n: {"price": str(p), "size": str(n)}
+        st = lambda a: {0: (a, 0.95, [ask(a, 40)], []), 1: (0.05, 0.01, [ask(0.05, 10)], [])}
+        w.observe("m", info, {"ended": False}, st(0.80), 1000)          # still 1-1: nothing recorded
+        self.assertEqual(w.open, {})
+        info["event"]["score"] = "000-000|2-1|Bo3"
+        w.observe("m", info, {"ended": False}, st(0.97), 1010)          # decided, A ask 0.97
+        w.observe("m", info, {"ended": True}, st(0.998), 1070)          # ended flag 60 s later
+        w.observe("m", info, {"ended": True}, st(0.999), 1100)
+        w.observe("m", info, {"ended": True}, st(0.999), 1010 + 15 * 60)
+        self.assertEqual(len(out), 1)
+        r = out[0]
+        self.assertEqual((r["first_trigger"], r["winner_idx"], r["decided_before_ended_by_s"]), ("score_decided", 0, 60.0))
+        self.assertEqual((r["ask_at_start"], r["max_shares_096_0995"], r["max_shares_0995_0999"], r["seconds_until_ask_0999"]),
+                         (0.97, 40.0, 40.0, 90.0))

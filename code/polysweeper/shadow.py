@@ -32,6 +32,7 @@ from .confirm import Confirmer
 from .fees import taker_fee
 from .killswitch import KillSwitch
 from .scorecheck import allows as score_allows, sport_of
+from .endwindow import EndWatch
 
 OUT = Path("data/shadow")
 WATCH_MIN_ASK = 0.90          # start recording full snapshots from this ask
@@ -104,6 +105,7 @@ class Shadow:
         self.event_f = (OUT / "events.jsonl").open("a")
         self.err_f = (OUT / "errors.jsonl").open("a")
         self.last_event_state = {}
+        self.endwatch = EndWatch(lambda rec: self.log(self.event_f, dict(rec, ts=now_iso())))
         self.state_path = OUT / "state.json"
         self.state = json.loads(self.state_path.read_text()) if self.state_path.exists() else {"pending": {}, "entered": []}
         all_l = leagues()
@@ -158,6 +160,7 @@ class Shadow:
                         continue
                     found[m["id"]] = {"league": league, "event": e, "market": m, "tokens": toks, "outcomes": outs}
         self.markets = found
+        self.endwatch.close_missing(set(found))
 
     def error(self, where, exc):
         """A2/A1: never let one bad reply stop the run; write it down and carry on."""
@@ -222,6 +225,10 @@ class Shadow:
             bids = book.get("bids", [])
             stats[idx] = (min((float(a["price"]) for a in asks), default=None),
                           max((float(b["price"]) for b in bids), default=None), asks, bids)
+        try:
+            self.endwatch.observe(mid, info, ev_state, stats, time.time())
+        except Exception as exc:
+            self.error(f"endwatch {mid}", exc)
         in_window = []
         watched = False
         for idx, (best_ask, best_bid, asks, bids) in stats.items():
@@ -378,6 +385,7 @@ class Shadow:
         except KeyboardInterrupt:
             print("stopped by user")
         finally:
+            self.endwatch.close_all()
             self.save()
             print("summary:", self.counters, "| pending:", len(self.state["pending"]))
 

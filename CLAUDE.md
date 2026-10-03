@@ -85,10 +85,15 @@ below $1 and hold to the $1 payout. **No real money yet: shadow mode only (prete
 
 ## Working rules
 
-- **Plugins: project scope only.** The owner wants every plugin limited to this project. Install with
-  project scope from the repo root (`claude plugin install <name> --scope project`, or `/plugin` → "for this
-  project"), so it is recorded in `.claude/settings.json` here. Never install user-wide or enable on the
-  claude.ai account. Ask the owner before adding any plugin.
+- **Plugins and skills: project scope only, installed automatically when the owner asks.** Standing
+  permission (2026-10-03): when the owner asks for plugin or skill suggestions, choose suitable ones, tell
+  the owner in one line what you are adding, and add them without asking again.
+  - Plugins: project scope only, recorded in this repo's `.claude/settings.json` (`enabledPlugins`, plus
+    `extraKnownMarketplaces` if needed), or `claude plugin install <name> --scope project` from the repo root.
+    Skills: files in `.claude/skills/<name>/` in this repo. Never install user-wide or on the claude.ai account.
+  - Only from trusted sources (Anthropic, verified partners, well-known public repos). Read every file
+    before adding it; nothing that touches money, orders, wallets or keys. Commit and push like any change.
+  - Do not add plugins or skills on your own initiative (the lab may suggest them in its notes).
 
 - Never place real orders or handle wallet keys without the owner's explicit go-ahead.
 - Push finished work to `main` with a clear commit message; keep commits small.

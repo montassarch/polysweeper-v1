@@ -14,7 +14,8 @@ Back to [[V1-Home]] · Running shadow mode by hand: [[17-Run-Shadow-On-Your-PC]]
 |---|---|
 | You log in to Windows | The autopilot starts by itself (a minimised window called "PolySweeper autopilot") |
 | At start | Pulls the latest version from GitHub, then starts shadow mode |
-| Every minute | Checks GitHub. If there is an update, stops shadow mode cleanly, pulls, restarts it |
+| Every minute | Checks GitHub. If the update changes code, it stops shadow mode cleanly, pushes the data, pulls, restarts it |
+| Every minute, notes-only update | Pulls the notes and leaves shadow mode running (no restart, no data push) |
 | Every 3 hours | Commits and pushes the shadow data (trades, events, errors) so the results can be read |
 | Shadow mode crashes | Restarts it after 30 seconds |
 | The autopilot itself is updated | Restarts itself |
@@ -48,6 +49,16 @@ and starts the autopilot now (it stops any old shadow window first).
   writes the reason in the log.
 - **A push fails** (e.g. no internet): it tries again 3 hours later.
 - **Git not found:** install "Git for Windows" (git-scm.com). Obsidian Git uses it too.
+
+## Why notes-only updates no longer restart shadow mode (2026-10-03)
+
+Every restart cuts short the 15-minute end-window watches that are running (6 of the first 9
+were cut short). Now only a change inside the `code` folder restarts shadow mode. A notes-only
+update is brought in with a "fast-forward": git rewrites only the changed notes and never touches
+the data files shadow mode is writing. If anything is in the way (a note edited on the PC, data
+not yet pushed), git changes nothing and the autopilot uses the normal stop-pull-restart path.
+Tested with a fake GitHub and PC copy (automatic tests). Data still syncs every 3 hours and on
+every code update.
 
 ## How it was tested (2026-10-03)
 

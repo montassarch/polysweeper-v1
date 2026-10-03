@@ -19,9 +19,9 @@ this list is the one to follow. Owner = who does it.
 - [ ] Find a free results source for CS2 and LoL so they can use the confirmed rule — **assistant**
 - [x] Data sync is automatic every 3 hours (autopilot)
 - [ ] Read results after each sync and report — **assistant**
-- [ ] Shadow mode: enforce B7 (max 1 pretend buy per match); it bought both teams in 2 matches — **assistant**
-- [ ] End-window study: record real watch time, and leave pre-fix rows out of the report — **assistant**
-- [ ] Autopilot: restart shadow mode only when code changes, not for note edits (restarts cut windows short) — **assistant**
+- [x] Shadow mode: enforce B7 (max 1 pretend buy per match and rule; second chances logged as `skip_second_buy`)
+- [x] End-window study: record real watch time (`seconds_watched`), report leaves out pre-fix rows
+- [x] Autopilot: restart shadow mode only when code changes, not for note edits ([[28-Autopilot]])
 - [ ] Phase 1 ends after ~2 weeks or 100+ settled confirmed pretend trades — **both**
 
 ## Next: compare with the late band (Phase 2)
@@ -39,7 +39,7 @@ this list is the one to follow. Owner = who does it.
 - [ ] B4 Second independent results source for football (OpenLigaDB for German leagues; paid option later) — **assistant**
 - [ ] B5 Refuse markets that are disputed or have a UMA proposal against us — **assistant**
 - [ ] B6 Sport-by-sport settlement rules table (football 90 min, US sports with overtime, tennis retirements) — **assistant**
-- [ ] B7 Max 1 trade per match — **assistant**
+- [ ] B7 Max 1 trade per match — **assistant** (done in shadow mode; the real bot needs it too)
 - [ ] B8 Real order handling: fill-or-kill limit orders, never buy twice, check fills and balance — **assistant**
 - [ ] B9 Telegram bot: alerts, `/status`, `/pause`, `/kill` — **assistant** (owner creates the bot token)
 - [ ] Watchdog: auto-restart after crash, pause on anything strange — **assistant**

@@ -75,3 +75,8 @@ Back to [[V1-Home]].
   1-0 in a Bo3 bought at 0.96, then the other team came back. Esports buys before the
   series is won lost 2 in 20. End window: 0 of 14 matches had anything for sale at
   0.96-0.995 after the result; one big WTA match had ~8,700 shares at 0.996-0.999, gone within 39 s.
+- 16:31 sync: a third loss today, tennis (Rybakina bought at 0.96 at 2-1 in the first set,
+  lost in three sets). Since Sep 30: 67 wins, 4 losses, -$8.42; every loss bought during play.
+- Built: max 1 pretend buy per match (B7) in shadow mode; real watch time in the end-window
+  study and a cleaner report; autopilot pulls notes-only updates without restarting shadow
+  mode ([[28-Autopilot]]). 8 new automatic tests (62 in total).

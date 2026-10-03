@@ -156,3 +156,19 @@ WTA x2, MLBB, Dota 2, ATP); the 34 earlier rows are noisy (see below).
 - `end_window_report.py` still counts rows written before the fix. Its "atp 2 (28%) with
   0.96-0.995 for sale" is one cancelled match (score 0-0, price 0.51, heading for a 50/50
   payout) counted twice. It was not a real chance.
+
+## Update 2026-10-03 16:31 UTC sync
+
+- The ENJOY loss paid out as expected (-$4.81).
+- **A third loss today, this time in tennis:** Rybakina vs Charaeva (WTA China Open). The bot
+  bought Rybakina at 0.96 when she led **2-1 in games in the first set**. She lost 6-3, 4-6, 3-6.
+  -$4.81. Tennis today: 30 wins, 1 loss.
+- Today (02:00-16:31 UTC): 64 buys, 58 wins, 3 losses, 3 waiting, net **-$4.94**.
+  Since Sep 30: 67 wins, 4 losses, net **-$8.42**. Every loss was a buy made during play.
+- End window: 16 clean matches now, still **0 with anything for sale at 0.96-0.995** after the
+  result. One (the same Rybakina match) had shares at 0.995-0.999.
+
+**Fixes made the same day:** shadow mode now makes at most 1 pretend buy per match per rule
+(the second chance is logged as `skip_second_buy`); the end-window rows record how long the
+watch really ran (`seconds_watched`); the report leaves out rows from before the 14:07 fix;
+and the autopilot no longer restarts shadow mode for notes-only updates ([[28-Autopilot]]).

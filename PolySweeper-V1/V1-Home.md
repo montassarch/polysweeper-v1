@@ -9,8 +9,8 @@ created: 2026-09-30
 Our own Polymarket sports "sweeper": buy the confirmed winner of a finished
 match below $1, hold until it pays $1. Code lives in the repo's `code/` folder.
 
-> Status (2026-10-03): **shadow mode v2.3 running on the owner's PC** (pretend
-> trades only, no real money). Research, backtests, results checks, dashboard and
+> Status (2026-10-03): **shadow mode running 24/7 on the owner's PC under the autopilot** (pretend
+> trades only, no real money). Latest: [[26-First-Shadow-Results]]. Research, backtests, results checks, dashboard and
 > logic spec done. Started 2026-09-30.
 
 ## Map of content

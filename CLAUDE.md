@@ -39,10 +39,11 @@ below $1 and hold to the $1 payout. **No real money yet: shadow mode only (prete
 ## The owner's PC (autopilot)
 
 - Shadow mode runs 24/7 on the owner's Windows PC under `autopilot.py` (started at login).
-- It **pulls `main` from GitHub every 1-10 minutes** and restarts shadow mode with the new code,
-  so **anything pushed to `main` goes live on the PC**. Keep `main` working; run tests first.
+- It **checks `main` on GitHub every minute**. A change inside `code/` stops shadow mode, pulls and
+  restarts it, so **any code pushed to `main` goes live on the PC**. Keep `main` working; run tests
+  first. Notes-only pushes are fast-forwarded without a restart (restarts cut end-window watches short).
 - It commits/pushes only `code/data/shadow/{trades,events,errors}.jsonl` (every 3 h and on each
-  update). **Never edit those files by hand.** Always `git pull --rebase` before pushing.
+  code update). **Never edit those files by hand.** Always `git pull --rebase` before pushing.
 - The owner cannot debug; changes to `autopilot.py` must be safe (it restarts itself on update).
 - `.bat` files must keep CRLF (handled by `.gitattributes`).
 
@@ -57,7 +58,8 @@ below $1 and hold to the $1 payout. **No real money yet: shadow mode only (prete
 
 ## Where things stand (2026-10-03)
 
-- Price-only pretend buys win often but all happen during play (that is how losses happen).
+- Price-only pretend buys win often but all happen during play, and that is how losses happen:
+  67 wins, 4 losses, -$8.42 by 16:31 on Oct 3 (comebacks in CS2 Bo3s and in tennis).
 - Score-check/confirmed rules made 0 buys: **within 15 s of a result the winner's book is
   empty** (0.999 bots clear it). First look, 5 matches; the PC's end-window data will confirm.
 - Public trades study: every loss at 0.99+ was a buy made before the match was really over;

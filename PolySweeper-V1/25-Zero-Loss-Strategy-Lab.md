@@ -84,6 +84,11 @@ band (0.998) it means under about 1 in 500, and in practice close to zero.
 
 ## 4. Making losses rarer: specific checks to add
 
+- **Check 2, Polymarket score check (BUILT 2026-10-03):** never buy a side
+  that Polymarket's own score shows losing. About 13,000 finished matches
+  checked, 3 wrong scores (teams swapped), 0 wrong payouts. It would have
+  blocked our only loss. Details: [[27-Score-Check]].
+
 - **Official-source check:** scrape or read the league's official result page
   that Polymarket lists (rate-limited, polite), as the second or third source.
 - **Rules-text reader:** read each market's description and refuse anything

@@ -25,6 +25,7 @@ def main():
     print(f"entries: {len(entries)} | settled: {len(settled)} | skipped because the book was too thin: {len(thin)}"
           f" | skipped because the book looked fake: {len(bad)}")
     groups = [("CONFIRMED RESULT rule", lambda r: r.get("rule") == "confirmed"),
+              ("SCORE CHECK rule (Polymarket score says this side won)", lambda r: r.get("rule") == "score"),
               ("PRICE ONLY rule, match flagged ended", lambda r: r.get("rule", "price_only") == "price_only" and r["event_ended_flag"] is True),
               ("PRICE ONLY rule, match still in play", lambda r: r.get("rule", "price_only") == "price_only" and r["event_ended_flag"] is not True)]
     for label, test in groups:

@@ -31,6 +31,7 @@ from .config import Limits
 from .confirm import Confirmer
 from .fees import taker_fee
 from .killswitch import KillSwitch
+from .scorecheck import allows as score_allows, sport_of
 
 OUT = Path("data/shadow")
 WATCH_MIN_ASK = 0.90          # start recording full snapshots from this ask
@@ -244,6 +245,18 @@ class Shadow:
         #         AND Polymarket has flagged the match as ended).
         # The result is also checked when a token is only in the late band (0.995-0.999),
         # so we can later study that band on the same matches. Buying rules are unchanged.
+        # Rule 3: score check (check 2). Polymarket's own score says this side has WON
+        #         the match, the match is flagged ended, and the book passed the junk filter.
+        sport = sport_of(info["league"])
+        for idx, best_ask, asks in in_window:
+            verdict = score_allows(e, info["outcomes"], idx, sport) if sport else "n/a"
+            if verdict == "agree" and ev_state["ended"] is True:
+                self.maybe_enter("score", mid, idx, info, best_ask, asks, ev_state, f"score {e.get('score')}")
+            elif verdict == "against" and f"against:{mid}:{idx}" not in self.state["entered"]:
+                self.state["entered"].append(f"against:{mid}:{idx}")     # a buy check 2 blocks
+                self.log(self.trade_f, {"type": "skip_score_against", "ts": now_iso(), "key": f"against:{mid}:{idx}",
+                                        "league": info["league"], "question": info["market"].get("question"),
+                                        "outcome": info["outcomes"][idx], "best_ask": best_ask, "event": ev_state})
         win_idx, why = self.confirmer.winner_index(info["league"], e, info["market"], info["outcomes"])
         if win_idx is not None and mid not in self.state.setdefault("confirmed_logged", []):
             self.state["confirmed_logged"].append(mid)
@@ -265,7 +278,7 @@ class Shadow:
 
     def maybe_enter(self, rule, mid, idx, info, best_ask, asks, ev_state, confirm_detail):
         L = self.limits
-        key = f"{mid}:{idx}" if rule == "price_only" else f"C:{mid}:{idx}"
+        key = {"price_only": f"{mid}:{idx}", "confirmed": f"C:{mid}:{idx}", "score": f"S:{mid}:{idx}"}[rule]
         if key in self.state["entered"]:
             return
         vwap, worst, avail = walk_book(asks, L.min_shares, L.price_max)
@@ -282,12 +295,14 @@ class Shadow:
                "league": info["league"], "question": info["market"].get("question"), "outcome": info["outcomes"][idx],
                "best_ask": best_ask, "vwap": vwap, "worst_price": worst, "shares": L.min_shares,
                "fee": fee, "cost": L.min_shares * vwap + fee, "available_shares": avail,
-               "event_ended_flag": ev_state["ended"], "confirm": confirm_detail, "event": ev_state}
+               "event_ended_flag": ev_state["ended"], "confirm": confirm_detail, "event": ev_state,
+               # check 2 verdict on EVERY entry, so we can see which losses it would have blocked
+               "score_check": score_allows(info["event"], info["outcomes"], idx, sport_of(info["league"])) if sport_of(info["league"]) else "n/a"}
         self.log(self.trade_f, rec)
         self.state["entered"].append(key)
         self.state["pending"][key] = rec
         self.counters["entries"] += 1
-        label = "CONFIRMED" if rule == "confirmed" else "PRICE-ONLY"
+        label = {"confirmed": "CONFIRMED", "score": "SCORE-CHECK", "price_only": "PRICE-ONLY"}[rule]
         print(f"[{now_iso()}] SHADOW BUY ({label}) {rec['outcome']} | {(rec['question'] or '')[:50]} | vwap {vwap:.3f} | ended_flag={ev_state['ended']}")
         self.save()
 

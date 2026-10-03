@@ -9,7 +9,7 @@ created: 2026-09-30
 Our own Polymarket sports "sweeper": buy the confirmed winner of a finished
 match below $1, hold until it pays $1. Code lives in the repo's `code/` folder.
 
-> Status (2026-10-03): **shadow mode v2.2 running on the owner's PC** (pretend
+> Status (2026-10-03): **shadow mode v2.3 running on the owner's PC** (pretend
 > trades only, no real money). Research, backtests, results checks, dashboard and
 > logic spec done. Started 2026-09-30.
 
@@ -41,6 +41,7 @@ match below $1, hold until it pays $1. Code lives in the repo's `code/` folder.
 - [[21-Shadow-Mode-v2]] — shadow mode now tests the confirmed-result rule
 - [[23-Bot-Logic-Spec-and-Audit]] — full bot logic and the audit of mistakes
 - [[26-First-Shadow-Results]] — first pretend-trade results and the match-finding bug
+- [[27-Score-Check]] — check 2: Polymarket's own score must agree (blocks the Sep 30 loss)
 - [[Sources]] — every link used
 
 ## Reliability warning

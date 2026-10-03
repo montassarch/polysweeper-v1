@@ -1,0 +1,175 @@
+{
+ "cs2": {
+  "counts": {
+   "not 1/0 (void or 50/50)": 96,
+   "resolved": 1404,
+   "AGREE": 1403,
+   "title order differs from outcome order": 35,
+   "score gives no verdict": 1
+  },
+  "disagree": []
+ },
+ "lol": {
+  "counts": {
+   "resolved": 1494,
+   "AGREE": 1443,
+   "title order differs from outcome order": 63,
+   "not 1/0 (void or 50/50)": 17,
+   "DISAGREE": 1,
+   "score gives no verdict": 50
+  },
+  "disagree": [
+   {
+    "title": "LoL: LOS vs LOUD (BO5) - CBLOL Playoffs",
+    "score": "000-000|2-3|Bo5",
+    "period": "5/5",
+    "outcomes": [
+     "LOS",
+     "LOUD"
+    ],
+    "prices": [
+     1.0,
+     0.0
+    ]
+   }
+  ]
+ },
+ "dota2": {
+  "counts": {
+   "resolved": 1422,
+   "AGREE": 1326,
+   "title order differs from outcome order": 118,
+   "not 1/0 (void or 50/50)": 63,
+   "score gives no verdict": 96
+  },
+  "disagree": []
+ },
+ "val": {
+  "counts": {
+   "resolved": 1498,
+   "AGREE": 1496,
+   "not 1/0 (void or 50/50)": 2,
+   "score gives no verdict": 2,
+   "title order differs from outcome order": 21
+  },
+  "disagree": []
+ },
+ "codmw": {
+  "counts": {
+   "resolved": 325,
+   "AGREE": 325,
+   "not 1/0 (void or 50/50)": 1
+  },
+  "disagree": []
+ },
+ "r6siege": {
+  "counts": {
+   "resolved": 1079,
+   "AGREE": 1057,
+   "title order differs from outcome order": 20,
+   "score gives no verdict": 22,
+   "not 1/0 (void or 50/50)": 5
+  },
+  "disagree": []
+ },
+ "ow": {
+  "counts": {
+   "resolved": 456,
+   "AGREE": 425,
+   "title order differs from outcome order": 2,
+   "score gives no verdict": 31
+  },
+  "disagree": []
+ },
+ "mlbb": {
+  "counts": {
+   "resolved": 853,
+   "AGREE": 762,
+   "DISAGREE": 1,
+   "not 1/0 (void or 50/50)": 1,
+   "title order differs from outcome order": 1,
+   "score gives no verdict": 90
+  },
+  "disagree": [
+   {
+    "title": "Mobile Legends Bang Bang: Galaxy Phoenix FE vs Galaxy Legends (BO3) - MPL Cambodia Regular Season",
+    "score": "000-000|2-0|Bo3",
+    "period": "2/3",
+    "outcomes": [
+     "Galaxy Phoenix FE",
+     "Galaxy Legends"
+    ],
+    "prices": [
+     0.0,
+     1.0
+    ]
+   }
+  ]
+ },
+ "hok": {
+  "counts": {
+   "resolved": 1055,
+   "AGREE": 1003,
+   "title order differs from outcome order": 21,
+   "DISAGREE": 1,
+   "not 1/0 (void or 50/50)": 1,
+   "score gives no verdict": 51
+  },
+  "disagree": [
+   {
+    "title": "Honor of Kings: Rogue Warriors vs Weibo Gaming (BO7)",
+    "score": "000-000|4-0|Bo7",
+    "period": "4/7",
+    "outcomes": [
+     "Rogue Warriors",
+     "Weibo Gaming"
+    ],
+    "prices": [
+     0.0,
+     1.0
+    ]
+   }
+  ]
+ },
+ "sc2": {
+  "counts": {
+   "resolved": 495,
+   "score gives no verdict": 495
+  },
+  "disagree": []
+ },
+ "pubg": {
+  "counts": {},
+  "disagree": []
+ },
+ "lol-wild-rift": {
+  "counts": {},
+  "disagree": []
+ },
+ "atp": {
+  "counts": {
+   "resolved": 1465,
+   "AGREE": 1031,
+   "not 1/0 (void or 50/50)": 35,
+   "score gives no verdict": 434
+  },
+  "disagree": []
+ },
+ "wta": {
+  "counts": {
+   "resolved": 1448,
+   "AGREE": 1415,
+   "score gives no verdict": 33,
+   "not 1/0 (void or 50/50)": 52
+  },
+  "disagree": []
+ },
+ "itf": {
+  "counts": {
+   "resolved": 1477,
+   "score gives no verdict": 1477,
+   "not 1/0 (void or 50/50)": 23
+  },
+  "disagree": []
+ }
+}

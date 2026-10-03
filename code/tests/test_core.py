@@ -387,3 +387,67 @@ class RefreshWindowTests(unittest.TestCase):
             s.open_events = lambda sid: [listed_days_ago, far_future]
             s.refresh()
             self.assertEqual(sorted(s.markets), ["m1"])   # listed 5 days ago but playing now -> watched
+
+
+class ScoreCheckTests(unittest.TestCase):
+    def test_sep30_loss_is_blocked(self):
+        from polysweeper.scorecheck import allows
+        e = {"title": "Counter-Strike: EAC Extra vs MASONIC (BO1) - Dust2.dk Ligaen Regular Season", "score": "000-000|0-1|Bo1"}
+        self.assertEqual(allows(e, ["EAC Extra", "MASONIC"], 0, "esports"), "against")
+        self.assertEqual(allows(e, ["EAC Extra", "MASONIC"], 1, "esports"), "agree")
+
+    def test_series_not_finished_is_unknown(self):
+        from polysweeper.scorecheck import allows
+        e = {"title": "LoL: A vs B (BO3) - X", "score": "000-000|1-1|Bo3"}
+        self.assertEqual(allows(e, ["A", "B"], 0, "esports"), "unknown")
+        e["score"] = "000-000|2-0|Bo5"
+        self.assertEqual(allows(e, ["A", "B"], 0, "esports"), "unknown")
+
+    def test_outcome_order_differs_from_title(self):
+        from polysweeper.scorecheck import allows
+        e = {"title": "Valorant: A vs B (BO3) - X", "score": "000-000|2-1|Bo3"}
+        self.assertEqual(allows(e, ["B", "A"], 1, "esports"), "agree")
+        self.assertEqual(allows(e, ["B", "A"], 0, "esports"), "against")
+
+    def test_names_not_matching_is_unknown(self):
+        from polysweeper.scorecheck import allows
+        e = {"title": "CS2: Team A vs B (BO3) - X", "score": "000-000|2-0|Bo3"}
+        self.assertEqual(allows(e, ["A", "B"], 0, "esports"), "unknown")
+
+    def test_tennis(self):
+        from polysweeper.scorecheck import allows, tennis_score
+        e = {"title": "Curitiba: Guido Justo vs Gonzalo Villanueva", "score": "6-2, 4-6, 7-6(7-4)"}
+        self.assertEqual(allows(e, ["Guido Justo", "Gonzalo Villanueva"], 0, "tennis"), "agree")
+        e["score"] = "6-2, 4-6, 3-2"            # third set still being played
+        self.assertEqual(allows(e, ["Guido Justo", "Gonzalo Villanueva"], 0, "tennis"), "unknown")
+        self.assertEqual(tennis_score("7-5, 7-6(9-7)"), (2, 0, 2))
+
+
+class ShadowScoreRuleTests(unittest.TestCase):
+    def test_score_rule_buys_winner_and_blocks_loser(self):
+        import tempfile, json, pathlib
+        import polysweeper.shadow as sh
+        from polysweeper.config import Limits
+        with tempfile.TemporaryDirectory() as d:
+            sh.OUT = pathlib.Path(d)
+            sh.leagues = lambda: {"cs2": {"series": "1"}}
+            s = sh.Shadow(["cs2"], Limits.from_json("config.json"))
+            s.confirmer.winner_index = lambda *a: (None, "no source")
+            ev = {"id": "e", "title": "Counter-Strike: A vs B (BO3) - X", "score": "000-000|2-0|Bo3", "live": False, "ended": True}
+            info = {"league": "cs2", "event": ev, "tokens": ["ta", "tb"], "outcomes": ["A", "B"],
+                    "market": {"id": "m", "question": "A vs B"}}
+            book = lambda ask, bid: {"asks": [{"price": str(ask), "size": "50"}], "bids": [{"price": str(bid), "size": "50"}]}
+            s.poll_market("m", info, {"ta": book(0.97, 0.95), "tb": book(0.02, 0.01)})
+            rows = [json.loads(l) for l in (pathlib.Path(d) / "trades.jsonl").read_text().splitlines()]
+            score_buys = [r for r in rows if r.get("rule") == "score"]
+            self.assertEqual([r["outcome"] for r in score_buys], ["A"])
+            self.assertEqual(score_buys[0]["score_check"], "agree")
+            # now a stale ask on the LOSER that passes the junk filter: check 2 must block it
+            ev2 = dict(ev, id="e2", score="000-000|0-2|Bo3")
+            s.poll_market("m2", dict(info, event=ev2, market={"id": "m2", "question": "A vs B"}),
+                          {"ta": book(0.97, 0.95), "tb": book(0.02, 0.01)})
+            rows = [json.loads(l) for l in (pathlib.Path(d) / "trades.jsonl").read_text().splitlines()]
+            self.assertFalse([r for r in rows if r.get("rule") == "score" and r["market_id"] == "m2"])
+            self.assertTrue([r for r in rows if r["type"] == "skip_score_against"])
+            price_only_m2 = [r for r in rows if r.get("rule") == "price_only" and r["market_id"] == "m2"]
+            self.assertEqual(price_only_m2[0]["score_check"], "against")   # the old rule would have bought the loser

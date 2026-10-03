@@ -32,7 +32,7 @@ def read_jsonl(path: Path):
     return out
 
 
-RULES = ("confirmed", "price_only")
+RULES = ("confirmed", "score", "price_only")
 
 
 def summarize_rows(rows, thin):
@@ -144,7 +144,7 @@ def write_once(a, refresh):
     os.replace(tmp, a.out)                  # swap in one step so the browser never reads half a file
     br = data["shadow"]["by_rule"]
     print(f"{datetime.now().strftime('%H:%M:%S')} wrote {a.out} | confirmed: {br['confirmed']['kpi']['entries']} buys, "
-          f"P&L {br['confirmed']['kpi']['pnl']:+.2f} | price-only: {br['price_only']['kpi']['entries']} buys, P&L {br['price_only']['kpi']['pnl']:+.2f}")
+          f"P&L {br['confirmed']['kpi']['pnl']:+.2f} | score: {br['score']['kpi']['entries']} buys, P&L {br['score']['kpi']['pnl']:+.2f} | price-only: {br['price_only']['kpi']['entries']} buys, P&L {br['price_only']['kpi']['pnl']:+.2f}")
 
 
 TEMPLATE = r'''<!doctype html>
@@ -350,20 +350,21 @@ ul.caveats { color:var(--ink2); font-size:14px; padding-left:20px; margin:6px 0;
   // ---------- header, banner ----------
   var S = D.shadow;
   var RULE_INFO = { confirmed: { name: 'Confirmed result', why: 'Buys only after ESPN (football) or OpenDota (Dota 2) confirms a normal finish with this team as winner, and Polymarket has marked the match ended. This is the rule a real bot would use.' },
+                    score: { name: 'Score check', why: 'Buys only when Polymarket marks the match ended and its own score shows this team has won the series (esports) or the match (tennis), and the order book passed the junk filter.' },
                     price_only: { name: 'Price only', why: 'Buys whenever the real price is 0.96 to 0.995 and 5 shares are for sale, with no result check. Shown for comparison; riskier.' } };
-  var rule = (S.by_rule.confirmed.kpi.entries > 0) ? 'confirmed' : 'price_only';
+  var rule = (S.by_rule.confirmed.kpi.entries > 0) ? 'confirmed' : (S.by_rule.score.kpi.entries > 0) ? 'score' : 'price_only';
   var K, T2, ROWS;
   function pickRule() { K = S.by_rule[rule].kpi; T2 = S.by_rule[rule].timing; ROWS = S.rows.filter(function (r) { return r.rule === rule; }); }
   pickRule();
   function drawRuleBar() {
-    $('ruleBar').innerHTML = ['confirmed', 'price_only'].map(function (r) {
+    $('ruleBar').innerHTML = ['confirmed', 'score', 'price_only'].map(function (r) {
       return '<button type="button" role="tab" data-rule="' + r + '" aria-selected="' + (r === rule) + '">' + RULE_INFO[r].name + ' (' + S.by_rule[r].kpi.entries + ')</button>'; }).join('');
     $('ruleWhy').textContent = RULE_INFO[rule].why;
     Array.prototype.forEach.call($('ruleBar').querySelectorAll('button'), function (b) {
       b.addEventListener('click', function () { rule = b.getAttribute('data-rule'); pickRule(); draw(); }); });
   }
   $('meta').textContent = 'Generated ' + D.generated.replace('T', ' ').replace('+00:00', ' UTC') + (S.last_activity ? '  |  last shadow activity ' + S.last_activity.replace('T', ' ').replace('+00:00', ' UTC') : '  |  no shadow data yet');
-  var KA = { entries: S.by_rule.confirmed.kpi.entries + S.by_rule.price_only.kpi.entries, settled: S.by_rule.confirmed.kpi.settled };
+  var KA = { entries: S.by_rule.confirmed.kpi.entries + S.by_rule.score.kpi.entries + S.by_rule.price_only.kpi.entries, settled: S.by_rule.confirmed.kpi.settled };
   $('banner').innerHTML = KA.entries === 0
     ? '<b>No shadow data yet.</b> Start <code>run_shadow.bat</code> and leave it running. Charts below will fill in as matches finish.'
     : (KA.settled < 100 ? '<b>Too early to judge.</b> ' + KA.settled + ' settled confirmed-result pretend trades so far; aim for 100 or more before drawing conclusions.'

@@ -66,3 +66,7 @@ Back to [[V1-Home]].
   stale losing-side ask before the junk filter), 0 confirmed trades.
 - Found and fixed bug A6: shadow mode searched by listing date, missing most
   LoL, Dota 2 and CS2 matches. See [[26-First-Shadow-Results]].
+- Explained why one loss outweighs many wins (risk ~$4.90 to earn $0.05-$0.19).
+- Built check 2 (Polymarket score check): tested on ~13,000 finished matches,
+  3 wrong scores (teams swapped), payouts always right. Added as a veto on
+  every trade and as a third shadow rule "score". See [[27-Score-Check]].

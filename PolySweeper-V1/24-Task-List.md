@@ -13,7 +13,7 @@ this list is the one to follow. Owner = who does it.
 
 ## Now: running test (Phase 1)
 
-- [ ] Pull in Obsidian and restart shadow mode (v2.2, match-finding fix) — **owner**
+- [ ] Pull in Obsidian and restart shadow mode (v2.3: match-finding fix + score check) — **owner**
 - [ ] Keep shadow mode running, PC awake and plugged in (set sleep to Never; it slept 27 of 49 h) — **owner**
 - [x] First results written up: [[26-First-Shadow-Results]]
 - [ ] Find a free results source for CS2 and LoL so they can use the confirmed rule — **assistant**
@@ -78,6 +78,7 @@ Handled privately by the owner; not tracked in this vault.
 - [x] Dota 2 results check (OpenDota) and football results check (ESPN); extra-time and wrong-team traps fixed
 - [x] Shadow mode v2.1 on owner's PC: confirmed-result and price-only rules, batched and crash-proof, junk-book filter
 - [x] Shadow mode v2.2: finds matches by real start time, not listing date (A6 fix)
+- [x] Check 2 (score check) built and tested on ~13,000 finished matches; third shadow rule "score" ([[27-Score-Check]])
 - [x] Dashboard (snapshot and 15-second live mode)
 - [x] Full bot logic spec and audit
 - [x] Venue decision: Polymarket global

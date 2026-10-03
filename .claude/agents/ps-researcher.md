@@ -26,9 +26,9 @@ matches), the 0.999 bots clear books within seconds, even 2 s after Polymarket's
    unless you bring new evidence.
 2. Research hard: many WebSearch queries per question (vary wording; search for open-source bots on
    GitHub, Polymarket docs and changelogs, developer blogs, forum/Reddit/X threads, papers on
-   prediction-market microstructure and arbitrage, UMA resolution mechanics). Use WebFetch where it
-   works (many sites are blocked in this cloud environment; Polymarket's REST APIs gamma-api,
-   clob and data-api are reachable, so check claims against real data when you can).
+   prediction-market microstructure and arbitrage, UMA resolution mechanics). Read the sources with
+   WebFetch (the cloud has full web access), and check claims against real data from Polymarket's
+   REST APIs (gamma-api, clob, data-api) when you can.
 3. Angles to consider (not a limit): structural arbitrage with zero outcome risk (YES+NO under $1
    then merge; multi-outcome "negRisk" baskets; logical constraints between related markets);
    "known in reality, not yet settled" windows in other categories (crypto up/down, weather,

@@ -93,3 +93,6 @@ Back to [[V1-Home]].
   (researcher, red team, tester, analyst, fixer), idea board with 12 starting ideas
   ([[30-Research-Hub]]), research scripts folder `lab/`, and two daily routines (full lab run
   05:17 and health check 17:43, Tunisia time).
+- Owner set the cloud network to full trust. Live feed tested against Polymarket's real
+  server: connected, 38/38 prices matched; 2-minute shadow run 99.5% agreement, 0 errors
+  ([[29-Live-Feed-and-Score-Log]]). Agents told they now have full web access.

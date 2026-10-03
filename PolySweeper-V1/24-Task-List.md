@@ -31,7 +31,7 @@ this list is the one to follow. Owner = who does it.
 ## PolySweeper Lab (automated research, from 2026-10-03)
 
 - [x] Team of agents, idea board and daily routines set up ([[30-Research-Hub]])
-- [ ] Widen the cloud environment's network access so the research agents can read web pages — **owner**
+- [x] Cloud network set to full trust (owner, 2026-10-03): agents can read web pages; live feed tested on the real server
 - [ ] Optional: install the "Exa Deep Research" plugin for better web reading — **owner**
 - [ ] Read the daily research note; tell the lab what to focus on — **owner** (whenever useful)
 

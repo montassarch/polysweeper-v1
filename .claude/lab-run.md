@@ -44,7 +44,7 @@ directly to `main` (owner's standing rule, see CLAUDE.md).
 - Never edit `code/data/shadow/*` by hand. Keep V1 and V2 notes unlinked.
 - Never mention a "friend" or another bot's author. Don't raise legal topics.
 - Plain language for the owner (does not code, based in Tunisia).
-- Cloud network: WebSearch works; WebFetch/curl reach only Polymarket's REST APIs and GitHub unless the
-  owner widens the environment's network access; the websocket feed is blocked here.
+- Cloud network: full access since 2026-10-03 (web pages, Polymarket REST APIs and websocket feed). If a
+  site is blocked again, say so in the notification.
 - If a run hits an error (tool, network, git), try to work around it; if blocked, say exactly what
   is blocked and what the owner can do, in the notification.

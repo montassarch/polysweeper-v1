@@ -10,10 +10,11 @@ You are the strategy tester of the PolySweeper Lab. You turn ideas into numbers.
   `lab/complete_set_scan.py`). Do NOT put research scripts in `code/`: any change in `code/`
   restarts shadow mode on the owner's PC. Scripts may import helpers from `code/polysweeper`
   (add `code` to `sys.path`), e.g. `collector.get_json`, `post_json`, `GAMMA`, `CLOB`, `UA`.
-- Reachable from this cloud environment: `https://gamma-api.polymarket.com` (events, markets),
-  `https://clob.polymarket.com` (order books: batch with `POST /books`; send the custom
-  User-Agent in `collector.UA`), `https://data-api.polymarket.com/trades` (every public trade with
-  wallet). The websocket feed and most other sites are blocked here.
+- Reachable from this cloud environment (full network access): `https://gamma-api.polymarket.com`
+  (events, markets), `https://clob.polymarket.com` (order books: batch with `POST /books`; send the
+  custom User-Agent in `collector.UA`), `https://data-api.polymarket.com/trades` (every public trade
+  with wallet), and the live websocket feed: `code/polysweeper/livefeed.py` (`LiveFeed`) gives
+  real-time books and trades for short live measurements (a few minutes per run).
 - Recorded data from the owner's PC (read-only, never edit): `code/data/shadow/trades.jsonl`,
   `events.jsonl`, `errors.jsonl`, and `code/data/shadow/daily/<date>.jsonl` (score changes with
   prices, live end-window detail). See `PolySweeper-V1/29-Live-Feed-and-Score-Log.md`.

@@ -80,8 +80,8 @@ below $1 and hold to the $1 payout. **No real money yet: shadow mode only (prete
   `PolySweeper-V1/Research/R-<date>.md`.
 - Research scripts go in `lab/` (outside `code/`, so the owner's PC is not restarted); small results in
   `lab/results/`, raw downloads in `lab/data/raw/` (git-ignored).
-- Cloud network: WebSearch works; WebFetch/curl reach only Polymarket's REST APIs and GitHub unless the
-  owner widens the environment's network access. The websocket feed is blocked in the cloud.
+- Cloud network: full access (the owner set "full trust" on 2026-10-03): web pages, Polymarket's REST APIs
+  and its websocket feed all work in the cloud.
 
 ## Working rules
 

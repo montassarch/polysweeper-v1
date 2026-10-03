@@ -13,6 +13,7 @@ this list is the one to follow. Owner = who does it.
 
 ## Now: running test (Phase 1)
 
+- [ ] **Restart the autopilot once** (restart the PC, or `stop_shadow.bat` then `autopilot.bat`): the PC still runs the first version ([[28-Autopilot]]) — **owner**
 - [ ] Pull in Obsidian, then double-click `setup_autopilot.bat` once ([[28-Autopilot]]) — **owner**
 - [ ] Keep shadow mode running, PC awake and plugged in (set sleep to Never; it slept 27 of 49 h) — **owner**
 - [x] First results written up: [[26-First-Shadow-Results]]

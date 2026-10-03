@@ -97,3 +97,7 @@ Back to [[V1-Home]].
   server: connected, 38/38 prices matched; 2-minute shadow run 99.5% agreement, 0 errors
   ([[29-Live-Feed-and-Score-Log]]). Agents told they now have full web access.
 - Lab first run ([[R-2026-10-03]]): PC healthy (72 tests pass, live feed OK; daily score log not yet synced). Ideas #1 complete set and #2 baskets rejected (0 gaps in thousands of markets); new idea weather dead ranges tested on 15 days of trades and live books: rejected (nothing for sale below 0.999 once sure). Next: maker rewards, profitable wallets.
+- First lab run done ([[R-2026-10-03]]): complete sets and baskets rejected (no gaps), weather
+  "dead ranges" rejected (cleared at 0.999 like sports). Lab health check found the PC still runs
+  the first autopilot version (10-minute checks, no daily-folder sync, restarts on notes): owner
+  must restart the autopilot once ([[28-Autopilot]]).

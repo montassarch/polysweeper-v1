@@ -73,3 +73,23 @@ autopilot itself made it restart.
 
 A small update was pushed at about 13:33 UTC to check that the owner's autopilot
 pulls it, restarts shadow mode and pushes the shadow data back.
+
+## 2026-10-03 evening: the PC still runs the first autopilot version (owner action needed once)
+
+Found by the lab's health check and confirmed:
+- The PC checks GitHub only every **10 minutes** (updates at 18:07, 18:47 and 19:02 were taken at
+  18:13, 18:52 and 19:12). The newer autopilot checks every minute.
+- A notes-only update at 19:02 still restarted shadow mode. The newer autopilot does not do that.
+- The new `daily` folder (score log) never reached GitHub. The newer autopilot syncs it.
+
+**Why:** the first version (13:26) had a bug. It brings in the update while sending the data, and
+then looks for its own update in a second, empty pull, so it never sees that it was updated
+itself. That bug was fixed at 13:50, but a running program cannot pick up its own fix. Shadow mode
+itself is up to date (v2.6, live feed connected on the PC, 97-98% agreement), because the
+autopilot restarts it with the new files each time.
+
+**Fix (once):** restart the autopilot. Either restart the PC (the autopilot starts by itself at
+login), or in the `code` folder double-click `stop_shadow.bat`, wait until the "PolySweeper
+autopilot" window closes (up to about 2 minutes), then double-click `autopilot.bat`. After that,
+updates to the autopilot itself are applied automatically. The score rows written so far are
+kept on the PC and will be sent with the next sync.

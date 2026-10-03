@@ -6,7 +6,7 @@ created: 2026-10-01
 
 # Shadow mode v2: testing the real rule
 
-Back to [[README]] · Football check: [[20-Results-Check-Football]] · Dota check: [[19-Results-Check-Dota]] · Dashboard: [[18-Dashboard]]
+Back to [[V1-Home]] · Football check: [[20-Results-Check-Football]] · Dota check: [[19-Results-Check-Dota]] · Dashboard: [[18-Dashboard]]
 
 Shadow mode now records **two pretend strategies side by side** for every match:
 

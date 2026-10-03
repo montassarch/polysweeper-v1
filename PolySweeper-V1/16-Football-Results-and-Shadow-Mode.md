@@ -6,7 +6,7 @@ created: 2026-09-30
 
 # Football results and shadow mode
 
-Back to [[README]] · Esports results: [[15-First-Real-Backtest]] · Code overview: [[13-Code-Overview]]
+Back to [[V1-Home]] · Esports results: [[15-First-Real-Backtest]] · Code overview: [[13-Code-Overview]]
 
 ## Football backtest (mid prices, buy when price first rises into 0.96-0.995)
 

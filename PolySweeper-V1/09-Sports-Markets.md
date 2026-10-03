@@ -6,7 +6,7 @@ created: 2026-09-30
 
 # Sports markets on Polymarket
 
-Back to [[README]] · Strategy list: [[08-Strategy-Catalog]] · Fees: [[05-Fees-and-Costs]]
+Back to [[V1-Home]] · Strategy list: [[08-Strategy-Catalog]] · Fees: [[05-Fees-and-Costs]]
 
 Sources: search summaries only (see [[Sources]]). Nothing here is verified
 against Polymarket's own docs, and the suitability ratings at the end are my

@@ -6,7 +6,7 @@ created: 2026-09-30
 
 # Sources
 
-Back to [[README]]. Gathered 2026-09-30 via web search. Direct fetches were
+Back to [[V1-Home]]. Gathered 2026-09-30 via web search. Direct fetches were
 blocked, so these were read only as search-result summaries. Many are
 secondary/promotional; verify with Polymarket's own docs.
 

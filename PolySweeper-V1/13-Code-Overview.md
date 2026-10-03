@@ -6,7 +6,7 @@ created: 2026-09-30
 
 # Code overview (plain language)
 
-Back to [[README]] · Plan: [[11-V1-Plan-Simple]] · Data: [[12-Data-Sources]]
+Back to [[V1-Home]] · Plan: [[11-V1-Plan-Simple]] · Data: [[12-Data-Sources]]
 
 Code lives in the `code/` folder of this repo. Nothing in it touches real money
 or the internet yet.

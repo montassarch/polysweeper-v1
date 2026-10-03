@@ -6,7 +6,7 @@ created: 2026-10-01
 
 # Bot logic: specification v1 and audit of mistakes
 
-Back to [[README]] · Shadow v2: [[21-Shadow-Mode-v2]] · Friend review: [[22-Friend-White-Paper-Review]]
+Back to [[V1-Home]] · Shadow v2: [[21-Shadow-Mode-v2]] · Friend review: the V2 research project (folder `PolySweeper-V2-Research`)
 
 ## The rule in one sentence
 

@@ -6,7 +6,7 @@ created: 2026-09-30
 
 # Strategy and math
 
-Back to [[README]] · See also [[03-Risks]], [[05-Fees-and-Costs]]
+Back to [[V1-Home]] · See also [[03-Risks]], [[05-Fees-and-Costs]]
 
 ## Core formulas
 

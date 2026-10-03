@@ -6,7 +6,7 @@ created: 2026-10-01
 
 # Results check: football against ESPN
 
-Back to [[README]] · Dota 2 version: [[19-Results-Check-Dota]] · Data sources: [[12-Data-Sources]]
+Back to [[V1-Home]] · Dota 2 version: [[19-Results-Check-Dota]] · Data sources: [[12-Data-Sources]]
 
 Code: `code/polysweeper/results_espn.py`, `code/polysweeper/football_check.py`.
 

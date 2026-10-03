@@ -6,7 +6,7 @@ created: 2026-09-30
 
 # What is a Polymarket sweeper?
 
-Back to [[README]] · Next: [[02-Strategy-and-Math]]
+Back to [[V1-Home]] · Next: [[02-Strategy-and-Math]]
 
 ## Polymarket in one paragraph
 

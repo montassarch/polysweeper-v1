@@ -6,7 +6,7 @@ created: 2026-09-30
 
 # Brainstorm: the "after-the-match" sweeper
 
-Back to [[README]] · Sports background: [[09-Sports-Markets]] · Risks: [[03-Risks]]
+Back to [[V1-Home]] · Sports background: [[09-Sports-Markets]] · Risks: [[03-Risks]]
 
 ## What we were told (second-hand, from a friend who has a working bot)
 

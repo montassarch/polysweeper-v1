@@ -1,12 +1,12 @@
 ---
-title: Review - Friend's PolySweeper V2 Investor White Paper (Aug 2026)
+title: V2-01 Friend's White Paper Review (Aug 2026)
 tags: [polysweeper, friend, review]
 created: 2026-10-01
 ---
 
 # Review: friend's "PolySweeper V2" investor white paper (August 2026)
 
-Back to [[README]] · Our version of the idea: [[10-Friend-Bot-Brainstorm]] · Shadow v2: [[21-Shadow-Mode-v2]]
+Back to [[V2-Home]]
 
 Source: a 6-page investor briefing shared by the owner (the PDF itself is not
 stored in this repo). It describes the friend's bot from an early live period;

@@ -6,7 +6,7 @@ created: 2026-10-02
 
 # Master task list
 
-Back to [[README]] · Logic and audit: [[23-Bot-Logic-Spec-and-Audit]] · Test plan: [[07-Open-Questions-and-Next-Steps]]
+Back to [[V1-Home]] · Logic and audit: [[23-Bot-Logic-Spec-and-Audit]] · Test plan: [[07-Open-Questions-and-Next-Steps]]
 
 One place for everything. Older notes keep their own checklists for context;
 this list is the one to follow. Owner = who does it.
@@ -19,7 +19,7 @@ this list is the one to follow. Owner = who does it.
 - [ ] Read results after each sync and report — **assistant**
 - [ ] Phase 1 ends after ~2 weeks or 100+ settled confirmed pretend trades — **both**
 
-## Next: compare with the friend's band (Phase 2)
+## Next: compare with the late band (Phase 2)
 
 - [x] Record prices up to 0.999 and check results there too (logging only)
 - [ ] Analyse the late band (0.995-0.999) on the same matches — **assistant**
@@ -55,18 +55,9 @@ this list is the one to follow. Owner = who does it.
 - [ ] Websocket price feed for the short football window — **assistant**
 - [ ] Go-live scorecard: ~300 (low band) / ~1,500 (late band) confirmed trades with zero wrong-result losses — **both**
 
-## Legal and money setup (owner)
+## Legal and money setup
 
-- [ ] Check Tunisia on Polymarket's official geoblock page — **owner**
-- [ ] Read Polymarket's current Terms of Use — **owner**
-- [ ] Find a legal way to fund a wallet with pUSD from Tunisia — **owner**
-- [ ] Decide on tax record-keeping — **owner**
-- [ ] Create a separate wallet for the bot (never the personal one) — **owner**
-
-## Friend's white paper
-
-- [ ] Ask the friend: turns per day (10 vs ~2), early-period losses, venue, account size, capacity at 0.998 — **owner**
-- [ ] If the friend shares the wallet address, verify the track record on-chain — **assistant**
+Handled privately by the owner; not tracked in this vault.
 
 ## Later: grow
 

@@ -6,7 +6,7 @@ created: 2026-09-30
 
 # Open questions and next steps
 
-Back to [[README]]
+Back to [[V1-Home]]
 
 ## Open questions
 
@@ -47,8 +47,9 @@ Back to [[README]]
 - Risk: wants to avoid losses; risk management is a priority.
 - Uses Telegram; will pay for a data API after the backtest.
 - Goal: learn and profit; start small, improve gradually.
-- Still to ask the friend (on hold): which results API, how long after the end
-  he buys, price range, how often he lost.
+- Friend questions dropped (2026-10-03): we won't ask the friend; the friend's
+  strategy is researched separately in the V2 research project.
+- Legal and funding questions: handled privately by the owner.
 
 See [[11-V1-Plan-Simple]].
 
@@ -61,7 +62,7 @@ See [[11-V1-Plan-Simple]].
    - Phase ends after about **2 weeks**, or earlier once there are **100+ settled
      confirmed-result pretend trades**.
 2. **Phase 2, the friend's likely strategy:** add the late band 0.995-0.999
-   (confirmed results only) and run the same way. See [[22-Friend-White-Paper-Review]].
+   (confirmed results only) and run the same way. See the V2 research project (folder `PolySweeper-V2-Research`).
 3. **Compare:** pretend trades per day, real fill prices, thin-book skips, wins,
    losses, 50/50s, fake profit per trade and per day, time until paid.
 

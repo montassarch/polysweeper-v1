@@ -8,4 +8,4 @@ Standard library only (Python 3.11+). No installs needed.
     python3 -m polysweeper.backtest data/sample.jsonl config.json
 
 Settings live in `config.json` (risk limits, price window, sports enabled).
-Plain-language explanation: see `../13-Code-Overview.md`.
+Plain-language explanation: see `../PolySweeper-V1/13-Code-Overview.md`.

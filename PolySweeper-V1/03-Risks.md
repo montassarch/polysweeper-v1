@@ -6,7 +6,7 @@ created: 2026-09-30
 
 # Risks
 
-Back to [[README]]
+Back to [[V1-Home]]
 
 The payoff is asymmetric: **small, frequent gains vs. rare total losses.**
 See the break-even math in [[02-Strategy-and-Math]].

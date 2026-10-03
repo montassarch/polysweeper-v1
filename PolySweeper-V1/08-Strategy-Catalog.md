@@ -6,7 +6,7 @@ created: 2026-09-30
 
 # Strategy catalog (all bot types found)
 
-Back to [[README]] · Deep dive on #1: [[01-What-is-a-Sweeper]], [[02-Strategy-and-Math]]
+Back to [[V1-Home]] · Deep dive on #1: [[01-What-is-a-Sweeper]], [[02-Strategy-and-Math]]
 
 Source: web-search summaries (see [[Sources]]). Difficulty and "beginner fit"
 ratings are my judgement, not from sources. Profit claims in sources are often

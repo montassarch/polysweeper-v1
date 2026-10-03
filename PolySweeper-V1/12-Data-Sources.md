@@ -6,7 +6,7 @@ created: 2026-09-30
 
 # Data sources
 
-Back to [[README]] · Plan: [[11-V1-Plan-Simple]]
+Back to [[V1-Home]] · Plan: [[11-V1-Plan-Simple]]
 
 From search summaries only; prices and limits change. Verify before choosing.
 

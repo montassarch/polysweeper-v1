@@ -6,7 +6,7 @@ created: 2026-09-30
 
 # Fees and costs
 
-Back to [[README]] · Affects [[02-Strategy-and-Math]]
+Back to [[V1-Home]] · Affects [[02-Strategy-and-Math]]
 
 Per search summaries (verify on Polymarket docs; fees changed during 2026):
 

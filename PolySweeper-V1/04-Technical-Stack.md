@@ -6,7 +6,7 @@ created: 2026-09-30
 
 # Technical stack
 
-Back to [[README]] · Related: [[03-Risks]]
+Back to [[V1-Home]] · Related: [[03-Risks]]
 
 All details from secondary sources; verify against
 https://docs.polymarket.com before coding.

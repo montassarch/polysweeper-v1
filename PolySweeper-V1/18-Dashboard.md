@@ -6,7 +6,7 @@ created: 2026-10-01
 
 # Dashboard
 
-Back to [[README]] · Shadow mode: [[17-Run-Shadow-On-Your-PC]] · Results so far: [[16-Football-Results-and-Shadow-Mode]]
+Back to [[V1-Home]] · Shadow mode: [[17-Run-Shadow-On-Your-PC]] · Results so far: [[16-Football-Results-and-Shadow-Mode]]
 
 A single web page that shows how shadow mode is doing, next to the historical
 backtest. It is generated on **your own PC** from your own result files, needs

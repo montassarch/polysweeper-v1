@@ -1,53 +1,11 @@
----
-title: PolySweeper Vault — Index
-tags: [polysweeper, polymarket, index]
-created: 2026-09-30
----
+# Polymarket sweeper projects (private)
 
-# PolySweeper (v1) — Research Vault
+This repo is an Obsidian vault with two separate projects. Open the repo folder
+in Obsidian; each project has its own home note.
 
-Research notes on building a **Polymarket "sweeper" bot**. This folder is an
-Obsidian vault: open the repo folder in Obsidian (or sync it with the
-Obsidian Git plugin) and the `[[wikilinks]]` below will work.
+- **PolySweeper V1** — our own sports sweeper bot. Home note:
+  `PolySweeper-V1/V1-Home.md`. Code: `code/`.
+- **PolySweeper V2 research** — working out the friend's strategy ourselves and
+  building our own version. Home note: `PolySweeper-V2-Research/V2-Home.md`.
 
-> Status (2026-10-02): **shadow mode v2.1 running on the owner's PC** (pretend
-> trades only, no real money). Research, backtests, results checks, dashboard and
-> logic spec done. Started 2026-09-30.
-
-## Map of content
-
-- [[24-Task-List]] — **master to-do list: start here**
-- [[25-Zero-Loss-Strategy-Lab]] — **living section: logic and strategies for near-zero losses**
-- [[00-Session-Log]] — what was asked and decided, in order
-- [[01-What-is-a-Sweeper]] — plain-language explanation
-- [[02-Strategy-and-Math]] — how profit is made, formulas, examples
-- [[03-Risks]] — what can go wrong (read before anything else)
-- [[04-Technical-Stack]] — APIs, SDKs, wallets, rate limits
-- [[05-Fees-and-Costs]] — Polymarket fee structure
-- [[06-Legal-and-Compliance]] — jurisdictions, terms of use
-- [[07-Open-Questions-and-Next-Steps]] — what to do next
-- [[08-Strategy-Catalog]] — every strategy type found, to study one by one
-- [[09-Sports-Markets]] — sports focus: how they work and which strategies fit
-- [[10-Friend-Bot-Brainstorm]] — the after-the-match sweeper idea, architecture, kill switch
-- [[11-V1-Plan-Simple]] — the v1 plan in plain language, risk rules, backtest plan
-- [[12-Data-Sources]] — Polymarket data and sports results APIs
-- [[13-Code-Overview]] — what the code does, in plain language (code is in `code/`)
-- [[14-Real-Data-Findings]] — first look at real Polymarket data (min order size, resolution sources, price behaviour)
-- [[15-First-Real-Backtest]] — first real results on esports: win rates, timing, honest caveats
-- [[16-Football-Results-and-Shadow-Mode]] — football results and the shadow mode tool
-- [[17-Run-Shadow-On-Your-PC]] — how to run shadow mode on your Windows PC
-- [[18-Dashboard]] — the dashboard page: what it shows and how to open it
-- [[19-Results-Check-Dota]] — Dota 2 results check with true end times
-- [[20-Results-Check-Football]] — football results check against ESPN, two traps found
-- [[21-Shadow-Mode-v2]] — shadow mode now tests the confirmed-result rule
-- [[22-Friend-White-Paper-Review]] — review of the friend's investor white paper vs our approach
-- [[23-Bot-Logic-Spec-and-Audit]] — full bot logic and the audit of mistakes
-- [[Sources]] — every link used
-
-## Reliability warning
-
-Facts in this vault come from **web-search summaries of secondary sources**
-(blogs, Medium, Substack, vendor pages). Polymarket's own docs could not be
-fetched directly in the research environment (network blocked), so nothing
-here is verified against primary docs yet. Treat numbers as leads to verify,
-not as facts. Many "make $1,000 a day" articles are promotional.
+The two projects are deliberately not linked to each other in Obsidian.

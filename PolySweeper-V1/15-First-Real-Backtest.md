@@ -6,7 +6,7 @@ created: 2026-09-30
 
 # First real backtest: esports (2026-08-20 to 2026-09-30)
 
-Back to [[README]] · Findings so far: [[14-Real-Data-Findings]] · Plan: [[11-V1-Plan-Simple]]
+Back to [[V1-Home]] · Findings so far: [[14-Real-Data-Findings]] · Plan: [[11-V1-Plan-Simple]]
 · Code: `code/polysweeper/collector.py`, `code/polysweeper/analyze.py`
 
 **Read the caveats at the bottom before trusting any number.**

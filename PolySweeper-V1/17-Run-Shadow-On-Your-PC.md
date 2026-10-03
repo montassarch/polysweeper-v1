@@ -6,7 +6,7 @@ created: 2026-09-30
 
 # Run shadow mode on your own computer (Windows)
 
-Back to [[README]] · What it is: [[16-Football-Results-and-Shadow-Mode]]
+Back to [[V1-Home]] · What it is: [[16-Football-Results-and-Shadow-Mode]]
 
 Shadow mode **places no orders**, needs **no wallet, no keys, no login**. It only
 reads public Polymarket data and writes log files. It must run for days or

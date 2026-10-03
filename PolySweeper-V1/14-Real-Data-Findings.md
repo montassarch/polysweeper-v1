@@ -6,7 +6,7 @@ created: 2026-09-30
 
 # Real data findings (first look, 2026-09-30)
 
-Back to [[README]] · Plan: [[11-V1-Plan-Simple]] · Data: [[12-Data-Sources]]
+Back to [[V1-Home]] · Plan: [[11-V1-Plan-Simple]] · Data: [[12-Data-Sources]]
 
 After the network was opened, we queried Polymarket's public APIs directly.
 Tiny sample (3 esports matches plus metadata), so treat as **leads, not proof**.

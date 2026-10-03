@@ -6,7 +6,7 @@ created: 2026-09-30
 
 # V1 plan (plain language)
 
-Back to [[README]] · Idea: [[10-Friend-Bot-Brainstorm]] · Data: [[12-Data-Sources]]
+Back to [[V1-Home]] · Idea: [[10-Friend-Bot-Brainstorm]] · Data: [[12-Data-Sources]]
 · Risks: [[03-Risks]] · Legal: [[06-Legal-and-Compliance]]
 
 ## Decisions so far (from the owner)

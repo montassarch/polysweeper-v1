@@ -6,7 +6,7 @@ created: 2026-10-01
 
 # Results check: Dota 2 with true end times
 
-Back to [[README]] · Data sources: [[12-Data-Sources]] · Earlier backtests: [[15-First-Real-Backtest]]
+Back to [[V1-Home]] · Data sources: [[12-Data-Sources]] · Earlier backtests: [[15-First-Real-Backtest]]
 
 Code: `code/polysweeper/results_opendota.py`, `code/polysweeper/dota_end_test.py`.
 OpenDota is free and needs no key. It gives each game's start time and length,

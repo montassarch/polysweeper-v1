@@ -6,7 +6,7 @@ created: 2026-10-02
 
 # Zero-Loss Strategy Lab
 
-Back to [[README]] · Logic and audit: [[23-Bot-Logic-Spec-and-Audit]] · Tasks: [[24-Task-List]] · Risks: [[03-Risks]]
+Back to [[V1-Home]] · Logic and audit: [[23-Bot-Logic-Spec-and-Audit]] · Tasks: [[24-Task-List]] · Risks: [[03-Risks]]
 
 A living section for one goal: **win almost every trade, and make the rare loss
 as small and as rare as possible.** New ideas get added at the bottom; tested

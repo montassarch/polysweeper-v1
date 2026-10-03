@@ -6,7 +6,10 @@ created: 2026-09-30
 
 # Legal and compliance
 
-Back to [[README]] · Related: [[03-Risks]]
+> **2026-10-03:** the owner handles legal, venue-access and funding questions
+> privately. The checklists below are kept for reference only.
+
+Back to [[V1-Home]] · Related: [[03-Risks]]
 
 **This is not legal advice.** Check Polymarket's current Terms of Use and
 your own local law before trading with real money.

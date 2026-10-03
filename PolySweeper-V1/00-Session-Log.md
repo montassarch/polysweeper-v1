@@ -6,7 +6,7 @@ created: 2026-09-30
 
 # Session Log
 
-Back to [[README]].
+Back to [[V1-Home]].
 
 ## 2026-09-30
 
@@ -50,7 +50,7 @@ Back to [[README]].
   (OpenDota) and football results check (ESPN); found and fixed the extra-time
   and wrong-team traps.
 - Shadow mode v2: confirmed-result rule alongside price only.
-- Reviewed the friend's investor white paper ([[22-Friend-White-Paper-Review]]).
+- Reviewed the friend's investor white paper (the V2 research project (folder `PolySweeper-V2-Research`)).
 - Agreed test plan: test our rules first, then the friend's likely late band,
   then compare (see [[07-Open-Questions-and-Next-Steps]]).
 - Wrote the full bot logic and audit ([[23-Bot-Logic-Spec-and-Audit]]); fixed

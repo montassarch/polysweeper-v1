@@ -1,0 +1,72 @@
+# CLAUDE.md — read this first
+
+Private repo `montassarch/polysweeper-v1`: an **Obsidian vault + Python code** for a
+Polymarket (global, not US) **sports "sweeper" bot**: buy the winner of a finished match
+below $1 and hold to the $1 payout. **No real money yet: shadow mode only (pretend trades).**
+
+## The owner
+
+- Does not code. Explain in plain language, short steps, no jargon. Based in Tunisia.
+- Goal: near-zero losses ("99% winning and minimise the 1%"). One loss at ~0.97 wipes out
+  ~25 wins, so safety beats volume.
+- Legal/compliance is handled privately by the owner: don't raise it.
+- Never mention or ask about a "friend" / the author of the other bot.
+
+## Layout
+
+- `PolySweeper-V1/` — our bot. Start at `V1-Home.md`; **master to-do: `24-Task-List.md`**;
+  safety ideas: `25-Zero-Loss-Strategy-Lab.md`; log of decisions: `00-Session-Log.md`.
+- `PolySweeper-V2-Research/` — separate project: rebuild the late-band (0.995-0.999) approach
+  from a white paper through our own research. Start at `V2-Home.md`.
+- **Keep V1 and V2 unlinked** (no wikilinks between the two folders).
+- `code/` — Python, standard library only. Tests: `cd code && python3 -m unittest discover -s tests`.
+- Notes use Obsidian wikilinks (`[[Note-Name]]`) and YAML front matter. Update the task list,
+  session log and home note when something changes.
+
+## Code map (`code/polysweeper/`)
+
+- `shadow.py` — shadow mode (watches live matches, reads real order books, pretend-buys 5
+  shares). Three rules side by side: `confirmed` (ESPN football / OpenDota Dota 2 result),
+  `score` (Polymarket's own score says this side won + ended flag), `price_only` (comparison).
+  Junk-book filter, kill switch (`data/shadow/STOP`). Leagues: `code/shadow_leagues.txt`.
+- `endwindow.py` — end-window study: winner's book for 15 min after a match is decided.
+- `scorecheck.py` — parses Polymarket score (`000-000|2-1|Bo3`, tennis `6-3, 5-7, 6-2`).
+- `autopilot.py` — runs on the owner's Windows PC (see below).
+- `dashboard.py` — HTML dashboard with a live feed; `confirm.py`, `results_*.py` — results sources.
+- Research scripts in `code/`: `trades_study.py` (public trades), `score_check_test.py`,
+  `end_window_report.py`. Config: `code/config.json` (strict keys: unknown keys raise).
+
+## The owner's PC (autopilot)
+
+- Shadow mode runs 24/7 on the owner's Windows PC under `autopilot.py` (started at login).
+- It **pulls `main` from GitHub every 1-10 minutes** and restarts shadow mode with the new code,
+  so **anything pushed to `main` goes live on the PC**. Keep `main` working; run tests first.
+- It commits/pushes only `code/data/shadow/{trades,events,errors}.jsonl` (every 3 h and on each
+  update). **Never edit those files by hand.** Always `git pull --rebase` before pushing.
+- The owner cannot debug; changes to `autopilot.py` must be safe (it restarts itself on update).
+- `.bat` files must keep CRLF (handled by `.gitattributes`).
+
+## Polymarket facts that bit us
+
+- Gamma `start_date` is the LISTING date; use `startTime` for the match start.
+- CLOB needs a custom User-Agent; batch books via `POST /books`.
+- Min order 5 shares; taker fee = shares x rate x p x (1-p), rate per market (0.03-0.05).
+- Football settles on 90 minutes (extra time/penalties excluded); voids pay 50/50.
+- Data API (`data-api.polymarket.com/trades`) gives every public trade with wallet.
+- Polymarket score field is wrong (teams swapped) about 1 in 4,000: use it as a veto, never alone.
+
+## Where things stand (2026-10-03)
+
+- Price-only pretend buys win often but all happen during play (that is how losses happen).
+- Score-check/confirmed rules made 0 buys: **within 15 s of a result the winner's book is
+  empty** (0.999 bots clear it). First look, 5 matches; the PC's end-window data will confirm.
+- Public trades study: every loss at 0.99+ was a buy made before the match was really over;
+  real late-band sweepers earn ~0.15% per trade at 0.999.
+- Open question: what strategy gets fills safely (faster feed, resting orders before the end,
+  or in-play only when the result is locked). See note 26 and the task list.
+
+## Working rules
+
+- Never place real orders or handle wallet keys without the owner's explicit go-ahead.
+- Push finished work to `main` with a clear commit message; keep commits small.
+- Keep tool output short (no raw API dumps); write findings into the vault, not just chat.

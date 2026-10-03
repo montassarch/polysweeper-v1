@@ -9,3 +9,5 @@ in Obsidian; each project has its own home note.
   (based on the PolySweeper V2 white paper). Home note: `PolySweeper-V2-Research/V2-Home.md`.
 
 The two projects are deliberately not linked to each other in Obsidian.
+
+For Claude sessions: `CLAUDE.md` (repo root) is the project summary to read first.

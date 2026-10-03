@@ -28,6 +28,13 @@ this list is the one to follow. Owner = who does it.
 - [x] Autopilot: restart shadow mode only when code changes, not for note edits ([[28-Autopilot]])
 - [ ] Phase 1 ends after ~2 weeks or 100+ settled confirmed pretend trades — **both**
 
+## PolySweeper Lab (automated research, from 2026-10-03)
+
+- [x] Team of agents, idea board and daily routines set up ([[30-Research-Hub]])
+- [ ] Widen the cloud environment's network access so the research agents can read web pages — **owner**
+- [ ] Optional: install the "Exa Deep Research" plugin for better web reading — **owner**
+- [ ] Read the daily research note; tell the lab what to focus on — **owner** (whenever useful)
+
 ## Next: compare with the late band (Phase 2)
 
 - [x] Record prices up to 0.999 and check results there too (logging only)

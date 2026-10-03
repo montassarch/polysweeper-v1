@@ -88,3 +88,8 @@ Back to [[V1-Home]].
 - Conclusion so far (note 26): price-only buys lose at about the rate the price predicts (no
   edge); after the result nothing at 0.96-0.995 in 32 of 32 matches. No real money on V1 as
   planned; wait for 1-2 days of live-feed data and the tennis score-log test.
+- Owner asked for automated daily research with a team of agents, aiming at "scraps" ($0.01+
+  per trade, 40-50 trades a day, zero losses). Set up the PolySweeper Lab: five agents
+  (researcher, red team, tester, analyst, fixer), idea board with 12 starting ideas
+  ([[30-Research-Hub]]), research scripts folder `lab/`, and two daily routines (full lab run
+  05:17 and health check 17:43, Tunisia time).

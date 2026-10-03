@@ -70,3 +70,8 @@ Back to [[V1-Home]].
 - Built check 2 (Polymarket score check): tested on ~13,000 finished matches,
   3 wrong scores (teams swapped), payouts always right. Added as a veto on
   every trade and as a third shadow rule "score". See [[27-Score-Check]].
+- Read the 15:11 sync ([[26-First-Shadow-Results]]): price only, 55 wins and 2 losses
+  since start, with a third loss already certain. Both new losses: CS2 team leading
+  1-0 in a Bo3 bought at 0.96, then the other team came back. Esports buys before the
+  series is won lost 2 in 20. End window: 0 of 14 matches had anything for sale at
+  0.96-0.995 after the result; one big WTA match had ~8,700 shares at 0.996-0.999, gone within 39 s.

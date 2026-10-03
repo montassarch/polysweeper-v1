@@ -98,3 +98,61 @@ holds, the V1 plan must change. Options to study:
 - a much faster price feed (websocket) to see whether a window of a few seconds exists;
 - resting buy orders placed just before the end (maker orders), with strict cancel rules;
 - in-play buying only when the result is mathematically locked (needs a live score feed).
+
+## Update 2026-10-03 15:11 UTC sync
+
+The PC ran without a break all day (no gap longer than 45 minutes since 01:00 UTC). 0 errors.
+
+**Price-only rule** (the only rule that has bought anything):
+
+| | Since start (Sep 30) | Today (02:00-15:11 UTC) |
+|---|---|---|
+| Pretend buys | 70 | 60 |
+| Paid out | 57: 55 wins, 2 losses | 47: 46 wins, 1 loss |
+| Net so far | -$0.80 | +$2.68 |
+| Waiting for payout | 13 | 13 |
+
+A **second loss is already certain** but not yet paid out: Leo Team vs ENJOY (CS2).
+Counting it, today is about **-$2.13** and the total about **-$5.61**.
+
+**Both new losses look the same.** In a CS2 best-of-3, one team led 1-0 in maps and
+was priced at 0.96. The bot bought that team, and the other team came back to win 2-1:
+- Esport Academy Copenhagen vs Wildcard (FOX Legacy Cup): bought at 0.96 at 1-0, lost -$4.81.
+- Leo Team vs ENJOY (CCT Europe): bought ENJOY at 0.96 at 1-0, ENJOY lost 2-1 (-$4.81 when it pays out).
+
+In both matches the bot then also bought the *other* team at 1-1 (0.98 and 0.99).
+That breaks B7 "max 1 trade per match", which shadow mode does not enforce yet.
+
+Today's buys, grouped by the state of the match at the moment of buying:
+
+| Match state when bought | Paid out | Losses |
+|---|---|---|
+| Esports, series not yet won (e.g. 1-0 in a Bo3) | 20 | **2 (10%)** |
+| Tennis, during play | 25 | 0 |
+| Series already won (score shows it) | 1 | 0 |
+
+At 0.96 a single loss costs about 30 average wins (+$0.16 each). Losing 1 trade in 10
+is far worse than the ~1 in 25 needed just to break even. **Buying an esports series
+before it is won is not safe**, which is what notes 25 and 26 predicted.
+
+**End-window study** (the key question: is there anything left to buy *after* the
+result is known?). It counts only the 9 matches recorded after the 14:07 fix (CS2 x4,
+WTA x2, MLBB, Dota 2, ATP); the 34 earlier rows are noisy (see below).
+- **8 of 9:** at the first check after the result, the winner had **no sell orders at
+  all**, with the best bid at 0.99-0.999.
+- **1 of 9** (Rybakina vs Charaeva, WTA China Open, a big match): about 8,700 shares were
+  for sale at 0.996-0.999 at the first check. About 4,200 were left at 17 s (best ask 0.998),
+  and none by 39 s.
+  Nothing at 0.96-0.995.
+- In every case the score and the "ended" flag changed at the same moment.
+- Together with the first look: **0 of 14 matches had anything for sale at 0.96-0.995
+  after the result.** The late band (0.995-0.999) sometimes has shares on big matches.
+
+**Data quality notes:**
+- 6 of the 9 windows were cut short because shadow mode restarted. The autopilot restarts
+  it after **every** push to `main`, even a note edit. Fewer pushes make for cleaner data.
+- `seconds_observed` shows 0 when the book never changes (it measures to the last
+  *change*, not to the end of the watch), so it cannot tell how long a window lasted.
+- `end_window_report.py` still counts rows written before the fix. Its "atp 2 (28%) with
+  0.96-0.995 for sale" is one cancelled match (score 0-0, price 0.51, heading for a 50/50
+  payout) counted twice. It was not a real chance.

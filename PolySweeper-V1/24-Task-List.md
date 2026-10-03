@@ -19,6 +19,9 @@ this list is the one to follow. Owner = who does it.
 - [ ] Find a free results source for CS2 and LoL so they can use the confirmed rule — **assistant**
 - [x] Data sync is automatic every 3 hours (autopilot)
 - [ ] Read results after each sync and report — **assistant**
+- [ ] Shadow mode: enforce B7 (max 1 pretend buy per match); it bought both teams in 2 matches — **assistant**
+- [ ] End-window study: record real watch time, and leave pre-fix rows out of the report — **assistant**
+- [ ] Autopilot: restart shadow mode only when code changes, not for note edits (restarts cut windows short) — **assistant**
 - [ ] Phase 1 ends after ~2 weeks or 100+ settled confirmed pretend trades — **both**
 
 ## Next: compare with the late band (Phase 2)

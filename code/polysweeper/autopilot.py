@@ -164,9 +164,12 @@ def main(cmd=None, max_loops=None, tick=5):
         if now - last_check >= CHECK_EVERY:
             last_check = now
             if update_available():
+                before = head()
                 shadow.stop()
-                sync_data()                          # also pulls
-                changed = pull()
+                sync_data()                          # may already pull the update
+                pull()
+                ok, out = git("diff", "--name-only", before, "HEAD")
+                changed = set(out.split()) if ok else set()
                 if me in changed:
                     log("autopilot itself was updated; restarting it")
                     return SELF_UPDATE

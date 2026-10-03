@@ -34,6 +34,8 @@ this list is the one to follow. Owner = who does it.
 - [x] Cloud network set to full trust (owner, 2026-10-03): agents can read web pages; live feed tested on the real server
 - [ ] Optional: install the "Exa Deep Research" plugin for better web reading — **owner**
 - [ ] Read the daily research note; tell the lab what to focus on — **owner** (whenever useful)
+- [ ] Daily score log (`code/data/shadow/daily/`) not reaching GitHub and a restart after a notes-only push: check the 22:12 sync; if still missing, owner closes and reopens `autopilot.bat` (see [[R-2026-10-03]]) — **assistant**, then **owner**
+- [ ] Lab next: research #8 maker rebates / liquidity rewards and #10 profitable 0.99+ wallets — **assistant (lab)**
 
 ## Next: compare with the late band (Phase 2)
 

@@ -96,3 +96,4 @@ Back to [[V1-Home]].
 - Owner set the cloud network to full trust. Live feed tested against Polymarket's real
   server: connected, 38/38 prices matched; 2-minute shadow run 99.5% agreement, 0 errors
   ([[29-Live-Feed-and-Score-Log]]). Agents told they now have full web access.
+- Lab first run ([[R-2026-10-03]]): PC healthy (72 tests pass, live feed OK; daily score log not yet synced). Ideas #1 complete set and #2 baskets rejected (0 gaps in thousands of markets); new idea weather dead ranges tested on 15 days of trades and live books: rejected (nothing for sale below 0.999 once sure). Next: maker rewards, profitable wallets.

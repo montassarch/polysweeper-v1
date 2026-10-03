@@ -46,18 +46,19 @@ The lab updates this table every day.
 
 | # | Idea | Why it could be near zero-loss | Main risk | Status |
 |---|---|---|---|---|
-| 1 | **Complete set**: buy YES and NO of the same market when together they cost under $1, then merge them into $1 at once | Payout does not depend on the result; merging returns $1 immediately | One side fills and the other does not; rare and contested by bots | new (2026-10-03) |
-| 2 | **Multi-outcome basket**: in a market with many options (e.g. tournament winner), buy every YES when they add up to under $1 (or the NO equivalent) | Exactly one option wins, so the basket always pays $1 | Missing or "other" outcomes, voids, many legs to fill | new (2026-10-03) |
+| 1 | **Complete set**: buy YES and NO of the same market when together they cost under $1, then merge them into $1 at once | Payout does not depend on the result; merging returns $1 immediately | One side fills and the other does not; rare and contested by bots | rejected (2026-10-03): impossible by design, one shared book; 0 of 6,935 markets under $1 ([[R-2026-10-03]]) |
+| 2 | **Multi-outcome basket**: in a market with many options (e.g. tournament winner), buy every YES when they add up to under $1 (or the NO equivalent) | Exactly one option wins, so the basket always pays $1 | Missing or "other" outcomes, voids, many legs to fill | rejected (2026-10-03): 0 of 990 near-term events under $1 after fees; hidden "Other" slots; one-leg fills ([[R-2026-10-03]]) |
 | 3 | **Logical gaps between related markets** (e.g. "team wins series" vs "wins 2-0" + "wins 2-1"; match vs map markets) | Prices that break logic can be hedged so every result pays | Different rules or timing between the markets | new (2026-10-03) |
-| 4 | **Known but not settled, outside sports**: crypto up/down (result known from the public price at the close), weather, economic releases, elections | Same idea as V1 but maybe less crowded than sports | Source used for settlement differs from ours; still crowded | new (2026-10-03) |
+| 4 | **Known but not settled, outside sports**: crypto up/down (result known from the public price at the close), weather, economic releases, elections | Same idea as V1 but maybe less crowded than sports | Source used for settlement differs from ours; still crowded | researching (2026-10-03): weather part tested and rejected (see #13); crypto, economic releases still open |
 | 5 | **UMA waiting period**: after a result is proposed, there are about 2 hours before it is final; buy winners at 0.995-0.999 during that time | Result already proposed publicly; only a dispute can change it | Disputes; small profit; capital locked 2 h | new (2026-10-03) |
 | 6 | **Late band with faster information** (0.995-0.999 right after the result) | Result known | 1 of 32 matches had shares; bots faster than Polymarket's score | testing (live feed on PC, note 29) |
 | 7 | **Tennis "practically locked"** during play (e.g. a set up and 5-1) | Comebacks from there are very rare | Rare comebacks, retirements; price already near 0.99 | testing (score log on PC, note 29) |
-| 8 | **Liquidity rewards / maker rebates**: get paid by Polymarket for resting orders | Income from rewards, not from guessing results | Getting filled at a bad moment; program rules change | new (2026-10-03) |
+| 8 | **Liquidity rewards / maker rebates**: get paid by Polymarket for resting orders | Income from rewards, not from guessing results | Getting filled at a bad moment; program rules change | new (2026-10-03); next deepening question (sports rebateRate 0.15) |
 | 9 | **Holding rewards** on some long markets | Yield for holding | Program details; capital locked for long | new (2026-10-03) |
 | 10 | **Learn from profitable sweeper wallets** (Data API: who buys at 0.99+, when, how big, which markets) | Shows where safe flow really is and how fast it must be | Copying the timing may need their speed | new (2026-10-03) |
 | 11 | **Markets made certain by another result** (e.g. a map market after the series is already won; "to qualify" after a decisive match) | Outcome fixed by rules once the other result is in | Rule text (not played = void 50/50?) | new (2026-10-03) |
 | 12 | **Faster or earlier result sources** (official league feeds, sportsbook data, stream delays) | Know the result before the 0.999 bots | Cost, reliability, still too slow from a home PC | new (2026-10-03) |
+| 13 | **Weather dead ranges**: buy NO on a temperature range the station has already passed | Daily high can only go up, so a passed range is certain to lose | "No data → lowest range wins" rule; revisions; nothing for sale | rejected (2026-10-03): passed ranges have no NO sellers below 0.999 (166 of 166 checked); ~$7.50/day taken by others after 17:00 ([[R-2026-10-03]]) |
 | — | Resting buy orders before the end (option 2) | — | Fills mostly when we are wrong | rejected (2026-10-03) |
 | — | Buying on price during play (price-only rule) | — | Loss rate matches the price: no edge | rejected (2026-10-03) |
 
@@ -65,7 +66,7 @@ The lab updates this table every day.
 
 Folder `Research/`, one note per day: `R-<date>`. Newest first:
 
-- (the first note will appear after the first lab run)
+- [[R-2026-10-03]] — first run: complete set and baskets rejected; weather dead ranges tested and rejected; PC healthy
 
 ## Where to change what the lab does
 

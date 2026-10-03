@@ -384,13 +384,16 @@ class Shadow:
 
 def main(argv=None):
     ap = argparse.ArgumentParser()
-    ap.add_argument("--leagues", nargs="+", required=True)
+    ap.add_argument("--leagues", nargs="+", default=None,
+                    help="league keys; default: the list in shadow_leagues.txt")
     ap.add_argument("--minutes", type=float, default=None)
     ap.add_argument("--forever", action="store_true")
     ap.add_argument("--config", default="config.json")
     a = ap.parse_args(argv)
     if not a.forever and a.minutes is None:
         ap.error("give --minutes N or --forever")
+    if not a.leagues:
+        a.leagues = Path("shadow_leagues.txt").read_text().split()
     sh = Shadow(a.leagues, Limits.from_json(a.config))
     sh.run(None if a.forever else a.minutes)
     return 0

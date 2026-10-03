@@ -42,6 +42,7 @@ match below $1, hold until it pays $1. Code lives in the repo's `code/` folder.
 - [[23-Bot-Logic-Spec-and-Audit]] — full bot logic and the audit of mistakes
 - [[26-First-Shadow-Results]] — first pretend-trade results and the match-finding bug
 - [[27-Score-Check]] — check 2: Polymarket's own score must agree (blocks the Sep 30 loss)
+- [[28-Autopilot]] — hands-free shadow mode: starts at login, auto-updates, auto-syncs data
 - [[Sources]] — every link used
 
 ## Reliability warning

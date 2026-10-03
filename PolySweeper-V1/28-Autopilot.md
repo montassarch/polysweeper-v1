@@ -1,0 +1,57 @@
+---
+title: Autopilot (hands-free shadow mode)
+tags: [polysweeper, v1, shadow, autopilot]
+created: 2026-10-03
+---
+
+# Autopilot: shadow mode with no clicks
+
+Back to [[V1-Home]] · Running shadow mode by hand: [[17-Run-Shadow-On-Your-PC]]
+
+## What it does
+
+| When | What happens |
+|---|---|
+| You log in to Windows | The autopilot starts by itself (a minimised window called "PolySweeper autopilot") |
+| At start | Pulls the latest version from GitHub, then starts shadow mode |
+| Every 10 minutes | Checks GitHub. If there is an update, stops shadow mode cleanly, pulls, restarts it |
+| Every 3 hours | Commits and pushes the shadow data (trades, events, errors) so the results can be read |
+| Shadow mode crashes | Restarts it after 30 seconds |
+| The autopilot itself is updated | Restarts itself |
+
+It only ever commits the three shadow data files. Your notes are not touched.
+It places **no orders**: shadow mode only reads public prices.
+
+## One-time setup (owner)
+
+1. In Obsidian: **Pull**.
+2. In the `code` folder, double-click **`setup_autopilot.bat`**.
+
+Setup does three things: adds the autopilot to Windows startup (your user
+only, no admin needed), sets sleep and hibernate to **Never while plugged in**,
+and starts the autopilot now (it stops any old shadow window first).
+
+## Day to day
+
+- Keep the PC **on and plugged in**. That is all.
+- Watch: double-click `dashboard_live.bat` whenever you like.
+- **Don't** also start `run_shadow.bat` while the autopilot runs (that would run
+  shadow mode twice).
+- Pause: `stop_shadow.bat` stops shadow mode and the autopilot until the next login
+  (or double-click `autopilot.bat` to start again).
+- Turn it off for good: `remove_autopilot.bat`.
+- Log: `code/data/shadow/autopilot.log` (what it did and when; any pull/push problem).
+
+## If something goes wrong
+
+- **A pull fails** (e.g. a file conflict): it keeps running the current version and
+  writes the reason in the log.
+- **A push fails** (e.g. no internet): it tries again 3 hours later.
+- **Git not found:** install "Git for Windows" (git-scm.com). Obsidian Git uses it too.
+
+## How it was tested (2026-10-03)
+
+In a sandbox with a fake GitHub and a fake PC copy: an update pushed while it ran
+was pulled and shadow mode restarted within seconds; data was pushed; a simulated
+crash restarted shadow mode; the stop file stopped everything; an update to the
+autopilot itself made it restart.

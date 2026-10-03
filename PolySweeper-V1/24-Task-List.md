@@ -13,11 +13,11 @@ this list is the one to follow. Owner = who does it.
 
 ## Now: running test (Phase 1)
 
-- [ ] Pull in Obsidian and restart shadow mode (v2.3: match-finding fix + score check) — **owner**
+- [ ] Pull in Obsidian, then double-click `setup_autopilot.bat` once ([[28-Autopilot]]) — **owner**
 - [ ] Keep shadow mode running, PC awake and plugged in (set sleep to Never; it slept 27 of 49 h) — **owner**
 - [x] First results written up: [[26-First-Shadow-Results]]
 - [ ] Find a free results source for CS2 and LoL so they can use the confirmed rule — **assistant**
-- [ ] Commit-and-sync every 2-3 days and tell the assistant — **owner**
+- [x] Data sync is automatic every 3 hours (autopilot)
 - [ ] Read results after each sync and report — **assistant**
 - [ ] Phase 1 ends after ~2 weeks or 100+ settled confirmed pretend trades — **both**
 

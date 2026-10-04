@@ -89,7 +89,7 @@ Handled privately by the owner; not tracked in this vault.
 - [ ] Results sources for CS2, LoL, Valorant — **assistant**
 - [ ] More leagues and sports, one at a time, each with its own results source and rules — **both**
 - [ ] AI helpers: daily reporter, bug-fix agent (branch + pull request, owner approves), code reviewer, weekly analyst — **assistant**
-- [ ] Automatic tests on GitHub for every change — **assistant**
+- [x] (2026-10-04) Automatic tests on GitHub for every code change (`.github/workflows/tests.yml`; warning only, the PC still pulls main)
 - [ ] Watch UMA for disputes on held positions — **assistant**
 
 ## Done (highlights)

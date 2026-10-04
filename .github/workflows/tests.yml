@@ -1,0 +1,30 @@
+# Runs the bot's automatic tests on GitHub whenever the code changes.
+# Warning only: the owner's PC still pulls main on its own; a red X here means "check before it goes wrong".
+name: tests
+
+on:
+  push:
+    paths:
+      - "code/**"
+      - "!code/data/**"          # the autopilot's data syncs are not code changes
+      - ".github/workflows/tests.yml"
+  pull_request:
+    paths:
+      - "code/**"
+      - "!code/data/**"
+  workflow_dispatch:
+
+jobs:
+  unittest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: code
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"     # same as the owner's PC
+      - name: Run tests (standard library only, nothing to install)
+        run: python -m unittest discover -s tests -v

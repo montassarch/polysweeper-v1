@@ -27,6 +27,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import sys
 import time
 from datetime import datetime, timedelta, timezone
@@ -52,6 +53,7 @@ SETTLE_SECONDS = 60           # how often to check for payouts
 FAST_SECONDS = 2              # matches near the end: re-read their state this often
 HOT_BID = 0.85                # "near the end": a side's best bid is at least this
 STATUS_FIRST, STATUS_EVERY = 300, 3600   # live feed status line: after 5 minutes, then hourly
+LIVE_FILE = "live.json"       # snapshot for the desktop app, rewritten every loop (not synced to GitHub)
 
 
 def now_iso():
@@ -124,6 +126,7 @@ class Shadow:
         self.score_sig = {}        # event_id -> last (score, period, live, ended) written to the daily file
         self.titled = set()        # (date, event_id) whose title is already in that day's file (this run)
         self.feed_check = {"checks": 0, "agree": 0}
+        self.started_at = now_iso()
         self.state_path = OUT / "state.json"
         self.state = json.loads(self.state_path.read_text()) if self.state_path.exists() else {"pending": {}, "entered": []}
         all_l = leagues()
@@ -389,6 +392,44 @@ class Shadow:
             self.counters["fast_rechecks"] += 1
             self.poll_market(mid, info, self.fetch_books({mid}))
 
+    def write_live(self):
+        """data/shadow/live.json: what shadow mode sees right now, for the desktop app (PolySweeper.exe).
+        Rewritten every loop (about every 2 seconds). Never allowed to disturb shadow mode."""
+        try:
+            now = time.time()
+            rows = []
+            for mid, info in self.markets.items():
+                e = info["event"]
+                prices = []
+                for i, tok in enumerate(info["tokens"]):
+                    top = self.live.top(tok)
+                    src = "live" if top is not None else "book"
+                    top = top or self.last_best.get(mid, {}).get(i) or (None, None)
+                    prices.append([top[0], top[1], src])
+                bids = [p[1] for p in prices if p[1] is not None]
+                st = parse_ts(e.get("startTime"))
+                rows.append({"mid": mid, "league": info["league"], "title": e.get("title") or info["market"].get("question"),
+                             "question": info["market"].get("question"), "outcomes": info["outcomes"], "prices": prices,
+                             "score": e.get("score"), "period": e.get("period"), "live": e.get("live"),
+                             "ended": e.get("ended"), "start": st,
+                             "hot": bool(e.get("ended") is not True and not (st and st > now)
+                                         and bids and max(bids) >= HOT_BID),
+                             "window": mid in self.endwatch.open})
+            rows.sort(key=lambda r: (not r["hot"], not r["live"], r["start"] or 0))
+            pending = [{k: r.get(k) for k in ("key", "rule", "ts", "market_id", "token_idx", "league", "question",
+                                              "outcome", "vwap", "cost", "shares")}
+                       for r in self.state["pending"].values()]
+            c = self.feed_check
+            snap = {"ts": now_iso(), "t": round(now, 2), "version": "2.7", "started": self.started_at,
+                    "live_on": self.live_on, "live_feed": self.live.status(),
+                    "agree_pct": round(100 * c["agree"] / c["checks"], 1) if c["checks"] else None,
+                    "counters": self.counters, "markets": rows, "pending": pending}
+            tmp = OUT / (LIVE_FILE + ".tmp")
+            tmp.write_text(json.dumps(snap))
+            os.replace(tmp, OUT / LIVE_FILE)
+        except Exception:                           # e.g. the app is reading the file at this moment (Windows)
+            self.counters["live_file_skips"] = self.counters.get("live_file_skips", 0) + 1
+
     def live_status(self):
         """One line in events.jsonl: is the live feed working on this PC?"""
         c = self.feed_check
@@ -526,6 +567,7 @@ class Shadow:
                 if t >= next_status:
                     self.live_status()
                     next_status = t + STATUS_EVERY
+                self.write_live()
                 time.sleep(FAST_SECONDS)
         except KeyboardInterrupt:
             print("stopped by user")

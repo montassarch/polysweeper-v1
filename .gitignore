@@ -16,3 +16,8 @@ __pycache__/
 code/data/trades_study/raw.jsonl
 code/data/shadow/autopilot.log
 lab/data/raw/
+code/data/shadow/live.json
+code/data/shadow/live.json.tmp
+app/bin/
+app/build/
+app/selftest/

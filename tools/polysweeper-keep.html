@@ -1,0 +1,243 @@
+<title>PolySweeper Keep</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap">
+<style>
+/* Layout: a stone dungeon seen from above. Hero banner, then a 3x2 grid of rooms (one per agent + the owner's gate), then the quest log and tonight's schedule. Single dark look on purpose (torch-lit keep). */
+:root{
+  --stone:#15131d; --wall:#221f2e; --brick:#2e2a3d; --edge:#3d3852;
+  --parch:#eadfc4; --dim:#a59cba; --torch:#f2a541; --moss:#74c47a; --blood:#e8645a; --mana:#7aa9ff; --void:#0d0b13;
+  --pixel:"Press Start 2P", "Courier New", monospace;
+  --body:"VT323", "Courier New", monospace;
+  color-scheme:dark;
+}
+html,body{background:var(--stone)}
+body{color:var(--parch);font-family:var(--body);font-size:21px;line-height:1.25;padding-inline:16px;padding-block:20px 48px;
+  background-image:linear-gradient(var(--wall) 2px,transparent 2px),linear-gradient(90deg,var(--wall) 2px,transparent 2px);
+  background-size:48px 24px;background-color:var(--stone)}
+.wrap{max-width:1040px;margin:0 auto;display:grid;gap:22px}
+h1,h2,h3{font-family:var(--pixel);font-weight:400;margin:0;text-wrap:balance;letter-spacing:.02em}
+h1{font-size:clamp(18px,4.2vw,30px);color:var(--torch);text-shadow:3px 3px 0 var(--void)}
+h2{font-size:13px;color:var(--torch);margin-bottom:12px}
+h3{font-size:11px;line-height:1.5}
+p{margin:0}
+.sub{color:var(--dim);margin-top:8px}
+.panel{background:var(--wall);border:4px solid var(--edge);box-shadow:6px 6px 0 var(--void);padding:16px;min-width:0}
+header{display:flex;flex-wrap:wrap;gap:12px 24px;align-items:end;justify-content:space-between}
+.stamp{font-family:var(--pixel);font-size:9px;color:var(--dim);line-height:1.8}
+.clock{color:var(--parch)}
+
+/* hero */
+.hero{display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:center}
+.hero canvas{width:120px;height:120px;image-rendering:pixelated;background:var(--brick);border:4px solid var(--edge)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;min-width:0}
+.stat b{display:block;font-family:var(--pixel);font-size:15px;font-variant-numeric:tabular-nums;margin-top:6px}
+.stat span{color:var(--dim)}
+.bar{height:14px;background:var(--void);border:2px solid var(--edge);margin-top:8px}
+.bar i{display:block;height:100%;background:var(--moss)}
+.good{color:var(--moss)} .bad{color:var(--blood)} .gold{color:var(--torch)} .mana{color:var(--mana)}
+
+/* rooms */
+.map{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+@media (max-width:820px){.map{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:540px){.map{grid-template-columns:1fr} .hero{grid-template-columns:1fr} .hero canvas{justify-self:center}}
+.room{background:var(--brick);border:4px solid var(--edge);box-shadow:5px 5px 0 var(--void);padding:14px;display:grid;grid-template-rows:auto auto 1fr auto;gap:10px;min-width:0;position:relative}
+.room .top{display:flex;gap:12px;align-items:center}
+.room canvas{width:72px;height:72px;image-rendering:pixelated;flex:none;background:var(--wall);border:3px solid var(--edge)}
+.room .where{color:var(--dim);font-size:18px}
+.pill{font-family:var(--pixel);font-size:8px;padding:5px 7px;border:2px solid currentColor;display:inline-block;justify-self:start;line-height:1.4}
+.pill.awake{color:var(--moss)} .pill.asleep{color:var(--dim)} .pill.oncall{color:var(--mana)} .pill.wait{color:var(--torch)}
+.deed{color:var(--parch)}
+.next{color:var(--dim);font-size:18px;border-top:2px dashed var(--edge);padding-top:8px}
+.zzz{position:absolute;top:10px;left:70px;font-family:var(--pixel);font-size:9px;color:var(--mana)}
+@media (prefers-reduced-motion:no-preference){
+  .zzz{animation:float 2.4s steps(4) infinite}
+  @keyframes float{0%{transform:translate(0,4px);opacity:.3}100%{transform:translate(8px,-10px);opacity:1}}
+  .awake-glow{animation:glow 1.2s steps(2) infinite}
+  @keyframes glow{50%{box-shadow:5px 5px 0 var(--void),0 0 0 3px var(--moss)}}
+}
+
+/* quests */
+.cols{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,2fr);gap:22px}
+@media (max-width:820px){.cols{grid-template-columns:1fr}}
+.quests{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.quests li{display:grid;grid-template-columns:28px minmax(0,1fr);gap:10px;align-items:start;padding:8px 10px;background:var(--brick);border-left:5px solid var(--edge)}
+.quests li.done{border-left-color:var(--blood)} .quests li.live{border-left-color:var(--moss)} .quests li.lead{border-left-color:var(--torch)} .quests li.park{border-left-color:var(--mana)} .quests li.todo{border-left-color:var(--edge)}
+.qi{font-family:var(--pixel);font-size:11px;padding-top:3px}
+.quests small{display:block;color:var(--dim);font-size:18px}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;color:var(--dim);font-size:18px;margin-bottom:10px}
+.timeline{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.timeline li{display:grid;grid-template-columns:76px minmax(0,1fr);gap:10px}
+.timeline time{font-family:var(--pixel);font-size:10px;color:var(--torch);padding-top:4px;font-variant-numeric:tabular-nums}
+.timeline li.past{opacity:.5}
+.timeline li.soon time{color:var(--moss)}
+footer{color:var(--dim);font-size:18px;text-align:center}
+:focus-visible{outline:3px solid var(--torch);outline-offset:2px}
+</style>
+
+<div class="wrap">
+  <header>
+    <div>
+      <h1>PolySweeper Keep</h1>
+      <p class="sub">Your research team and your bot, as a dungeon crew. Pretend trades only: no real money.</p>
+    </div>
+    <div class="stamp">Data as of 4 Oct, 14:30 Tunis<br>Now in Tunis: <span class="clock" id="clock">--:--</span></div>
+  </header>
+
+  <section class="panel hero" aria-label="The bot">
+    <canvas id="hero" width="16" height="16" aria-hidden="true"></canvas>
+    <div style="min-width:0">
+      <h3>The Sweeper <span class="pill awake" style="margin-left:8px">ON QUEST</span></h3>
+      <p class="sub">Shadow mode on your laptop, watching 24 leagues. New today: baseball, NFL, college football, hockey.</p>
+      <div class="stats" style="margin-top:12px">
+        <div class="stat"><span>Today</span><b class="good">33 W / 0 L</b><span class="gold">+$5.48 pretend</span></div>
+        <div class="stat"><span>Since Sep 30</span><b>123 W / 4 L</b><span class="gold">+$0.93 pretend</span></div>
+        <div class="stat"><span>Waiting for payout</span><b class="mana">9 buys</b><span>5 shares each</span></div>
+        <div class="stat"><span>Live feed health</span><b class="good">98%</b><div class="bar" aria-hidden="true"><i style="width:98%"></i></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section aria-label="The crew">
+    <h2>The crew</h2>
+    <div class="map" id="map"></div>
+  </section>
+
+  <div class="cols">
+    <section class="panel" aria-label="Quest log">
+      <h2>Quest log (idea board)</h2>
+      <div class="legend"><span class="good">● testing</span><span class="gold">● lead</span><span class="mana">● parked</span><span class="bad">● failed</span><span>● not started</span></div>
+      <ul class="quests" id="quests"></ul>
+    </section>
+    <section class="panel" aria-label="Schedule">
+      <h2>Tonight and tomorrow</h2>
+      <ul class="timeline" id="timeline"></ul>
+    </section>
+  </div>
+
+  <footer>Built from the PolySweeper project notes. Ask Claude "update the Keep" to refresh the numbers.</footer>
+</div>
+
+<script>
+// ---------- pixel sprites (16x16 for the hero, 12x12 for the crew) ----------
+const PAL = {".":null,"k":"#0d0b13","s":"#f1c79b","h":"#6b4a2b","r":"#e8645a","g":"#74c47a","b":"#7aa9ff","y":"#f2a541","w":"#eadfc4","p":"#9d6bd6","m":"#8a8f9e","d":"#3d3852","o":"#c9772f"};
+function draw(id, rows){
+  const c = typeof id === "string" ? document.getElementById(id) : id;
+  c.width = rows[0].length; c.height = rows.length;
+  const x = c.getContext("2d");
+  rows.forEach((row,j)=>[...row].forEach((ch,i)=>{ if(PAL[ch]){ x.fillStyle = PAL[ch]; x.fillRect(i,j,1,1); } }));
+}
+const HERO = [
+"................",
+"......kkkk......",
+".....kyyyyk.....",
+"....kyyyyyyk....",
+"....kkssssk.....",
+"....ksksksk.....",
+"....kssssk......",
+"...kbbbbbbk..y..",
+"..kbbwbbwbbk.y..",
+"..kbbbbbbbbkkyk.",
+"..ksbbbbbbsk.o..",
+"...kbbbbbbk..o..",
+"...kbbkkbbk..o..",
+"...kmmk.kmmk.o..",
+"...kkk...kkk....",
+"................"];
+const SPR = {
+  researcher:["....kkkk....","...kppppk...","..kppppppk..","...kssssk...","...kskskk...","...kssssk...","..kppwwppk..",".kppwkkwppk.",".kspwwwwpsk.","..kppppppk..","..kpk..kpk..","..kk....kk.."],
+  redteam:   ["...kkkkk....","..kmmmmmk...","..kmkmmkmk..","..kmmmmmmk..","...kssssk...","..krrrrrrk..",".krrmrrmrrk.",".ksrrrrrrsk.","..krrrrrrk..","..kmk..kmk..","..kmk..kmk..","..kk....kk.."],
+  tester:    ["....kkkk....","...kwwwwk...","...kssssk...","...ksksk....","...kssssk.g.","..kwwwwwwkg.",".kwwwwwwwkgk",".kswwwwwskgk","..kwwwwwwkk.","..kwk..kwk..","..kwk..kwk..","..kk....kk.."],
+  analyst:   ["....kkkk....","...kbbbbk...","..kbbbbbbk..","...kssssk...","...kskskk...","...kssssk...","..kbbbbbbk..",".kbbyyyybbk.",".ksbyyyybsk.","..kbbbbbbk..","..kbk..kbk..","..kk....kk.."],
+  fixer:     ["............","...kkkkkk...","..khhhhhhk..","...kssssk...","...kskskk...","...kssssk.m.","..koooooomm.",".koooooookm.",".ksoooooosk.","..koooooook..","..kok..kok..","..kk....kk.."],
+  owner:     ["....kkkk....","...kyyyyk...","..kykyykyk..","...kssssk...","...kskskk...","...kssssk...","..kggggggk..",".kggyggyggk.",".ksggggggsk.","..kggggggk..","..kgk..kgk..","..kk....kk.."]
+};
+
+// ---------- the crew (status follows the real Tunis schedule) ----------
+const CREW = [
+  {id:"researcher", name:"The Researcher", where:"Library of Markets", role:"Finds new money-making ideas on the web, GitHub and Polymarket data.",
+   deed:"Morning run: found \"locked lines\" (2,270 of 2,270 settled as the math said).", runs:[[5,17,90]]},
+  {id:"redteam", name:"The Red Knight", where:"Proving Arena", role:"Attacks every idea: how could it lose money?",
+   deed:"Knocked out crypto \"locked by math\" and parked our own win-chance model.", runs:[[5,17,90]]},
+  {id:"tester", name:"The Alchemist", where:"Testing Lab", role:"Proves ideas on real Polymarket data.",
+   deed:"Tonight: live watcher on NFL and baseball \"locked lines\".", runs:[[5,17,90],[17,50,45],[21,0,45]]},
+  {id:"analyst", name:"The Seer", where:"Scrying Tower", role:"Reads your laptop's pretend trades every morning and evening.",
+   deed:"Morning: 78 tests pass, data arrives every 3 hours, no new losses.", runs:[[5,17,60],[17,43,30]]},
+  {id:"fixer", name:"The Smith", where:"Forge", role:"Health checks and bug fixes, only when something breaks.",
+   deed:"Nothing to fix today. Called only if the Seer finds a problem.", runs:[], oncall:true},
+  {id:"owner", name:"You, the Keeper", where:"Gatehouse", role:"Decides what the crew does and when real money starts.",
+   deed:"Today: approved US sports and the Today report. Both are live.", runs:[], owner:true}
+];
+
+function tunisNow(){
+  const parts = new Intl.DateTimeFormat("en-GB",{timeZone:"Africa/Tunis",hour:"2-digit",minute:"2-digit",hour12:false}).formatToParts(new Date());
+  const h = +parts.find(p=>p.type==="hour").value % 24, m = +parts.find(p=>p.type==="minute").value;
+  return {h, m, mins:h*60+m, text:`${String(h).padStart(2,"0")}:${String(m).padStart(2,"0")}`};
+}
+const fmt = mins => `${String(Math.floor(mins/60)%24).padStart(2,"0")}:${String(mins%60).padStart(2,"0")}`;
+
+function status(a, now){
+  if(a.owner) return {cls:"wait", label:"NO DECISION WAITING", next:"Next: read tomorrow's results."};
+  if(a.oncall) return {cls:"oncall", label:"ON CALL", next:"Wakes only for a real problem."};
+  for(const [h,m,len] of a.runs){ const s=h*60+m; if(now>=s && now<s+len) return {cls:"awake", label:"WORKING", next:`On shift until about ${fmt(s+len)}.`}; }
+  const starts = a.runs.map(([h,m])=>h*60+m).sort((x,y)=>x-y);
+  const nxt = starts.find(s=>s>now) ?? starts[0] + 1440;
+  const wait = nxt - now, hh = Math.floor(wait/60), mm = wait%60;
+  return {cls:"asleep", label:"ASLEEP", next:`Next shift ${fmt(nxt)} (in ${hh ? hh+" h " : ""}${mm} min).`};
+}
+
+function render(){
+  const now = tunisNow();
+  document.getElementById("clock").textContent = now.text;
+  const map = document.getElementById("map");
+  map.replaceChildren(...CREW.map(a=>{
+    const st = status(a, now.mins);
+    const el = document.createElement("article");
+    el.className = "room" + (st.cls==="awake" ? " awake-glow" : "");
+    el.innerHTML = `<div class="top"><canvas aria-hidden="true"></canvas><div style="min-width:0"><h3>${a.name}</h3><div class="where">${a.where}</div></div></div>
+      <span class="pill ${st.cls}">${st.label}</span><p class="deed">${a.deed}<br><span style="color:var(--dim)">${a.role}</span></p><p class="next">${st.next}</p>`;
+    if(st.cls==="asleep"){ const z=document.createElement("span"); z.className="zzz"; z.textContent="z z"; z.setAttribute("aria-hidden","true"); el.appendChild(z); }
+    draw(el.querySelector("canvas"), SPR[a.id]);
+    return el;
+  }));
+  // timeline
+  const events = [
+    [17*60+43,"Evening health check: the Seer checks your laptop and runs the tests."],
+    [17*60+50,"NFL games: the Alchemist watches \"locked lines\" live."],
+    [21*60,"Late NFL and baseball: second live watch."],
+    [24*60+5*60+17,"Tomorrow: full research run with the whole crew."],
+    [24*60+5*60+40,"Tomorrow: first US-sports results from your laptop."]
+  ];
+  document.getElementById("timeline").replaceChildren(...events.map(([t,txt])=>{
+    const li=document.createElement("li");
+    const past = t < now.mins, soon = !past && t-now.mins <= 60;
+    li.className = past ? "past" : soon ? "soon" : "";
+    li.innerHTML = `<time>${t>=1440 ? "Tmrw "+fmt(t-1440) : fmt(t)}</time><span>${txt}</span>`;
+    return li;
+  }));
+}
+
+const QUESTS = [
+  ["live","⚔","Locked lines (#17)","Side markets made certain by the score. Math held 2,270 of 2,270 times. Can we get filled below 0.99? Live watch tonight."],
+  ["live","⚔","US sports end of game (#14)","Your laptop started watching baseball, NFL, college football and hockey today."],
+  ["lead","★","Profitable wallets (#10)","0 losses in 3,856 buys made after the end. Best wallet: US sports at 0.99, 3 losses in 1,344."],
+  ["live","⚔","Late band 0.995-0.999 (#6)","Live feed on your laptop measures what sells after the result."],
+  ["live","⚔","Tennis practically won (#7)","Score log collecting; test in a few days."],
+  ["park","‖","Own win-chance model (#15)","Even a 4-run lead in the 9th loses 1 in 300-1,000. Not safe enough."],
+  ["done","✕","Crypto locked by math (#16)","Never truly certain."],
+  ["done","✕","Weather dead ranges (#13)","Cleared at 0.999 at once."],
+  ["done","✕","Buy YES + NO under $1 (#1)","Impossible: one shared order book."],
+  ["done","✕","Buy every option under $1 (#2)","No gaps after fees."],
+  ["done","✕","Waiting buy orders before the end","They fill when you are wrong."],
+  ["done","✕","Buying on price during play","Loses as often as the price says: no edge."],
+  ["todo","?","Not started yet","Logical gaps (#3), economic releases (#4), maker rewards (#8), holding rewards (#9), faster results (#12)."]
+];
+document.getElementById("quests").replaceChildren(...QUESTS.map(([cls,icon,name,txt])=>{
+  const li=document.createElement("li"); li.className=cls;
+  li.innerHTML=`<span class="qi" aria-hidden="true">${icon}</span><div><span>${name}</span><small>${txt}</small></div>`;
+  return li;
+}));
+
+draw("hero", HERO);
+render();
+setInterval(render, 30000);
+</script>

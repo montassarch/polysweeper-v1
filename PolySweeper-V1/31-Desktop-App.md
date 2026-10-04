@@ -52,5 +52,16 @@ order and never changes a file.
   app found the project folder, loaded the screens and passed its self-check.
 - Automatic tests: the data side of the app (new lines arriving, Windows line endings, files being
   replaced), shadow mode's live file, and the autopilot installing and updating the app.
-- The Windows build and its self-test: see the latest run in GitHub Actions and `BUILD.txt` /
-  `screen.png` on the `app-build` branch.
+- **On Windows (GitHub's Windows 11 build machine, 2026-10-04 15:40 UTC):** all tests passed on Windows,
+  the exe was built (12 MB), shadow mode ran 90 seconds with the live feed, and the exe's self-check
+  passed: bot running, live prices connected (46 books, 99% matching), 23 matches, 142 trades with
+  their detail, 5 open. A screenshot of the app on Windows was checked (`screen.png` on the
+  `app-build` branch). The first Windows run found that the tests' temporary folders could not be
+  deleted on Windows (open files); fixed.
+- **The app's first catch:** its activity feed showed two real bot problems on the PC that day
+  ("refresh: JSONDecodeError", an ~11 MB reply cut off). Downloads now retry a cut-off reply.
+
+## Small screens
+
+On screens smaller than about 1440 x 900 the app opens maximised. Some columns are then narrow: drag
+the divider between "Watched matches" and "Activity", or widen a column by dragging its header edge.

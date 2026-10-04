@@ -122,3 +122,4 @@ Back to [[V1-Home]].
   running, live prices 97% matching) and a Windows screenshot was checked. The app's activity feed
   showed two real bot problems today ("refresh: JSONDecodeError", an ~11 MB events reply cut off,
   since US sports were added): downloads now retry a cut-off reply.
+- Live NFL locked-lines test (8 games, 26 markets): winner's side never for sale (154/154 snapshots), buyers already at 0.99+. Idea #17 rejected ([[R-2026-10-04]]).

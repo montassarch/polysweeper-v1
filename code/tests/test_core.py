@@ -562,6 +562,17 @@ class EndWindowReportTests(unittest.TestCase):
                 {"ts": "2026-10-03T15:05:00", "market_id": "a", "winner_idx": 1}]
         self.assertEqual([r["market_id"] for r in ewr.usable(rows)], ["a", "football"])
 
+    def test_keeps_the_longest_watch_of_a_match(self):
+        import importlib.util, pathlib
+        spec = importlib.util.spec_from_file_location("ewr", pathlib.Path(__file__).parent.parent / "end_window_report.py")
+        ewr = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(ewr)
+        rows = [{"ts": "2026-10-03T20:02:55", "market_id": "spirit", "seconds_watched": 32.0, "shares": 2},
+                {"ts": "2026-10-03T20:05:00", "market_id": "b", "seconds_observed": 900, "shares": 7},
+                {"ts": "2026-10-03T20:12:58", "market_id": "spirit", "seconds_watched": 532.9, "shares": 40918},
+                {"ts": "2026-10-03T20:20:00", "market_id": "spirit", "seconds_watched": 10.0, "shares": 1}]
+        self.assertEqual([(r["market_id"], r["shares"]) for r in ewr.usable(rows)], [("spirit", 40918), ("b", 7)])
+
 
 class AutopilotNotesOnlyTests(unittest.TestCase):
     """A notes-only update is pulled without stopping shadow mode; anything in code/ restarts it."""

@@ -8,15 +8,22 @@ from pathlib import Path
 STUDY_START = "2026-10-03T14:12"
 
 
+def watched(r):
+    """Seconds the match was watched after the result (older rows only have seconds_observed)."""
+    return r.get("seconds_watched") or r.get("seconds_observed") or 0
+
+
 def usable(rows):
-    """Rows from the fixed version, one per match (the first one)."""
-    seen, out = set(), []
+    """Rows from the fixed version, one per match: the longest watch (a restart can cut the first
+    watch short and the match is then watched again; ties keep the first row)."""
+    best = {}
     for r in rows:
-        if r.get("ts", "") < STUDY_START or r["market_id"] in seen:
+        if r.get("ts", "") < STUDY_START:
             continue
-        seen.add(r["market_id"])
-        out.append(r)
-    return out
+        m = r["market_id"]
+        if m not in best or watched(r) > watched(best[m]):
+            best[m] = r
+    return list(best.values())
 
 
 def main(path="data/shadow/events.jsonl"):

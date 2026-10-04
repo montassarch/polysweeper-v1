@@ -14,3 +14,6 @@ Shadow mode (pretend trades on live matches, no orders) runs 24/7 on the owner's
 autopilot: `python -m polysweeper.shadow --forever` (add `--no-live` to turn off the live feed).
 Its data is in `data/shadow/` (trades, events, errors, and `daily/` with score changes and live
 end-window detail). Notes: `../PolySweeper-V1/28-Autopilot.md` and `29-Live-Feed-and-Score-Log.md`.
+
+If the PC ever cannot update (files edited on the PC), the autopilot keeps those edits aside and still
+updates; see `../PolySweeper-V1/28-Autopilot.md`.

@@ -264,3 +264,4 @@
 {"type": "settled", "ts": "2026-10-03T21:10:38+00:00", "key": "5239722:1", "rule": "price_only", "result": "win", "pnl": 0.19040000000000035, "closed_time": "2026-10-03 21:07:14+00"}
 {"type": "settled", "ts": "2026-10-03T21:39:01+00:00", "key": "5223017:0", "rule": "price_only", "result": "win", "pnl": 0.19040000000000035, "closed_time": "2026-10-03 21:34:43+00"}
 {"type": "settled", "ts": "2026-10-03T21:54:05+00:00", "key": "5241686:0", "rule": "price_only", "result": "win", "pnl": 0.19040000000000035, "closed_time": "2026-10-03 21:48:13+00"}
+{"type": "settled", "ts": "2026-10-04T00:32:24+00:00", "key": "5233149:1", "rule": "price_only", "result": "win", "pnl": 0.04752500000000026, "closed_time": "2026-10-03 22:47:16+00"}

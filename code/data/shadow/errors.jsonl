@@ -1,1 +1,4 @@
 {"ts": "2026-10-04T01:33:08+00:00", "where": "live feed", "error": "ConnectionError: feed closed by the server"}
+{"ts": "2026-10-04T07:04:25+00:00", "where": "live feed", "error": "ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host"}
+{"ts": "2026-10-04T07:04:30+00:00", "where": "live feed", "error": "gaierror: [Errno 11001] getaddrinfo failed"}
+{"ts": "2026-10-04T07:04:51+00:00", "where": "live feed", "error": "gaierror: [Errno 11001] getaddrinfo failed"}

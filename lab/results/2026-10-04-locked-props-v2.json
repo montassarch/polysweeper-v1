@@ -1,0 +1,154 @@
+{
+ "MLB 2026-09-20..10-03": {
+  "locked_markets": 1278,
+  "settled_as_predicted": 1278,
+  "against_arithmetic": [],
+  "unresolved": 0,
+  "safe_how": {
+   "next_pitch": 1270,
+   "game_end+120": 8
+  },
+  "median_safe_minus_lock_s": 30.92899990081787,
+  "seconds_delay_values": [
+   "0"
+  ],
+  "taker_ask_le0.99_safe+0s": {
+   "markets_ge5sh": 14,
+   "shares": 8900,
+   "usd": 8764,
+   "edge_usd": 129.18,
+   "edge_usd_per_day": 9.23,
+   "shares_below_090": 0
+  },
+  "taker_ask_le0.99_safe+30s": {
+   "markets_ge5sh": 6,
+   "shares": 1444,
+   "usd": 1430,
+   "edge_usd": 13.73,
+   "edge_usd_per_day": 0.98,
+   "shares_below_090": 0
+  },
+  "taker_ask_le0.99_safe+120s": {
+   "markets_ge5sh": 2,
+   "shares": 15,
+   "usd": 15,
+   "edge_usd": 0.14,
+   "edge_usd_per_day": 0.01,
+   "shares_below_090": 0
+  },
+  "taker_ask_le0.985_safe+0s": {
+   "markets_ge5sh": 2,
+   "shares": 3705,
+   "usd": 3622,
+   "edge_usd": 78.82,
+   "edge_usd_per_day": 5.63,
+   "shares_below_090": 0
+  },
+  "taker_ask_le0.985_safe+30s": {
+   "markets_ge5sh": 0,
+   "shares": 0,
+   "usd": 0,
+   "edge_usd": 0,
+   "edge_usd_per_day": 0.0,
+   "shares_below_090": 0
+  },
+  "taker_ask_le0.985_safe+120s": {
+   "markets_ge5sh": 0,
+   "shares": 0,
+   "usd": 0,
+   "edge_usd": 0,
+   "edge_usd_per_day": 0.0,
+   "shares_below_090": 0
+  },
+  "resting_bid_fills_0.90-0.99_safe+0s": {
+   "markets": 38,
+   "shares": 35425
+  },
+  "resting_bid_fills_0.90-0.99_safe+120s": {
+   "markets": 3,
+   "shares": 24773
+  },
+  "median_s_safe_to_close": 1131,
+  "games": 120,
+  "matched_games": 109,
+  "skipped_doubleheaders": 8,
+  "no_event": 2,
+  "score_reversals": []
+ },
+ "NFL 2026-09-17..10-03": {
+  "locked_markets": 992,
+  "settled_as_predicted": 992,
+  "against_arithmetic": [],
+  "unresolved": 0,
+  "safe_how": {
+   "no_next_play+900": 7,
+   "next_play": 985
+  },
+  "median_safe_minus_lock_s": 220.0,
+  "seconds_delay_values": [
+   "1"
+  ],
+  "taker_ask_le0.99_safe+0s": {
+   "markets_ge5sh": 6,
+   "shares": 36,
+   "usd": 36,
+   "edge_usd": 0.36,
+   "edge_usd_per_day": 0.02,
+   "shares_below_090": 0
+  },
+  "taker_ask_le0.99_safe+30s": {
+   "markets_ge5sh": 6,
+   "shares": 36,
+   "usd": 36,
+   "edge_usd": 0.36,
+   "edge_usd_per_day": 0.02,
+   "shares_below_090": 0
+  },
+  "taker_ask_le0.99_safe+120s": {
+   "markets_ge5sh": 6,
+   "shares": 36,
+   "usd": 36,
+   "edge_usd": 0.36,
+   "edge_usd_per_day": 0.02,
+   "shares_below_090": 0
+  },
+  "taker_ask_le0.985_safe+0s": {
+   "markets_ge5sh": 0,
+   "shares": 0,
+   "usd": 0,
+   "edge_usd": 0,
+   "edge_usd_per_day": 0.0,
+   "shares_below_090": 0
+  },
+  "taker_ask_le0.985_safe+30s": {
+   "markets_ge5sh": 0,
+   "shares": 0,
+   "usd": 0,
+   "edge_usd": 0,
+   "edge_usd_per_day": 0.0,
+   "shares_below_090": 0
+  },
+  "taker_ask_le0.985_safe+120s": {
+   "markets_ge5sh": 0,
+   "shares": 0,
+   "usd": 0,
+   "edge_usd": 0,
+   "edge_usd_per_day": 0.0,
+   "shares_below_090": 0
+  },
+  "resting_bid_fills_0.90-0.99_safe+0s": {
+   "markets": 16,
+   "shares": 962
+  },
+  "resting_bid_fills_0.90-0.99_safe+120s": {
+   "markets": 11,
+   "shares": 439
+  },
+  "median_s_safe_to_close": 2432,
+  "games": 33,
+  "matched_games": 32,
+  "skipped_doubleheaders": 0,
+  "no_event": 0,
+  "score_reversals": []
+ }
+}

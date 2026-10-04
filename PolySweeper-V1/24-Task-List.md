@@ -43,6 +43,7 @@ this list is the one to follow. Owner = who does it.
 - [ ] Add US sports (MLB, NFL, college football, NHL) to shadow mode: change in `code/`, restarts the PC — **owner OK**, then **assistant**
 - [ ] Rebuild the game situation at each buy of the best US-sports wallet: which situations never lose? — **assistant (lab)**
 - [ ] Lab next: #8 maker rebates / liquidity rewards; more US-sports wallets at 0.98-0.995 — **assistant (lab)**
+- [ ] Tonight: run `lab/locked_watch.py` during NFL (~16:50 and ~20:00 UTC) and MLB postseason; write results into [[R-2026-10-04]] — **assistant (lab)**
 
 ## Next: compare with the late band (Phase 2)
 

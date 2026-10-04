@@ -39,6 +39,15 @@ Role files: `.claude/agents/ps-*.md` in the repo.
 
 The owner gets a short summary on their phone after each run.
 
+## Owner's focus for the next runs (set 2026-10-04)
+
+The lab reads this first and puts these ahead of its own picks. Ideas that need **no speed race** come first.
+
+1. **#10 Profitable wallets:** find the wallets that make money buying at 0.99+ (Data API trades), and measure when they buy (seconds after the result? during play?), how much, in which markets, and whether any ever lost.
+2. **#5 UMA waiting period:** after a result is proposed, are winners still for sale at 0.995-0.998 during the ~2 hours before it is final? How many shares, and how often was a proposal disputed or overturned?
+3. **#11 Markets made certain by another result** (e.g. a map market after the series is already won): do they stay cheap, and what do the rules say about matches not played?
+4. Still one brand-new out-of-the-box angle per run.
+
 ## Idea board
 
 Status: **new** → **researching** → **testing** → **promising** / **rejected**.

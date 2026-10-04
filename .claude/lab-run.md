@@ -12,7 +12,9 @@ directly to `main` (owner's standing rule, see CLAUDE.md).
    them with the Agent tool by that subagent_type; if unavailable, use a general-purpose agent with the
    agent file's full text at the top of its prompt. The owner asked for this team.
 2. **Team:** (a) ps-fixer + ps-analyst in parallel; (b) ps-researcher with today's UTC date, a short
-   idea-board summary and the analyst's key numbers: 2-4 questions, at least one brand-new
+   idea-board summary, the **"Owner's focus" list in the Research Hub (goes ahead of the lab's own picks)**,
+   and the analyst's key numbers; researcher and tester load the `polymarket-data` skill
+   (`.claude/skills/polymarket-data/SKILL.md`) before touching Polymarket's APIs: 2-4 questions, at least one brand-new
    out-of-the-box angle and one deepening the most promising idea, no repeats without new evidence;
    (c) ps-red-team on new/upgraded ideas; (d) ps-tester on the 1-2 best ideas measurable today with
    Polymarket's public APIs (scripts in `lab/`, never `code/`). Build on earlier days.

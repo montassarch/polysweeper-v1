@@ -75,6 +75,7 @@ below $1 and hold to the $1 payout. **No real money yet: shadow mode only (prete
 - Daily routines (claude.ai/code Routines): **full lab run 05:17 Tunisia time** and **health check
   17:43**. Both send a message to the permanent session "PolySweeper Lab (daily research team)",
   which follows `.claude/lab-run.md` (the run procedure; edit it to change what the lab does).
+- Project skills: `.claude/skills/` — `polymarket-data` (APIs and traps), `shadow-data` (reading results), `safe-deploy` (pushing to main).
 - Agents: `.claude/agents/ps-researcher.md` (most important), `ps-red-team`, `ps-tester`, `ps-analyst`,
   `ps-fixer`. Shared memory: idea board `PolySweeper-V1/30-Research-Hub.md`, daily notes
   `PolySweeper-V1/Research/R-<date>.md`.

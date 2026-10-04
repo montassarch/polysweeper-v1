@@ -75,7 +75,7 @@ summary::after{content:"+";font-family:var(--mono)} details[open] summary::after
   <div class="top">
     <div class="box">
       <h1>PolySweeper Keep</h1>
-      <div class="tag">Night City · pretend trades only · data 4 Oct 14:30 · Tunis <span id="clock">--:--</span></div>
+      <div class="tag">Night City · pretend trades only · data 4 Oct 14:30 · Tunis <span id="clock">--:--</span> · <span id="phase">night</span></div>
     </div>
     <div class="box stats" aria-label="Bot results">
       <div><span>Today</span><b class="c-lime">33W · 0L</b></div>
@@ -113,7 +113,7 @@ summary::after{content:"+";font-family:var(--mono)} details[open] summary::after
 const CREW = [
   {id:"sweeper", name:"The Sweeper", where:"Central Spire · your laptop", color:0x29f0ff, h:58, pos:[0,0],
    plain:"The bot itself. It watches live matches and makes pretend buys with real prices, so we learn what works without risking money.",
-   deed:"Today 33 wins, 0 losses (+$5.48 pretend). 9 buys waiting for payout. New today: baseball, NFL, college football, hockey.",
+   deed:"Today 33 wins, 0 losses (+$5.48 pretend). 9 buys waiting for payout. New today: baseball, NFL, college football, hockey. Green sparks over the tower = today's pretend wins, red = losses.",
    always:true, why:"It never sleeps: it runs on your laptop day and night, as long as the laptop is on."},
   {id:"researcher", name:"The Researcher", where:"Archive Tower", color:0xff2bd6, h:40, pos:[-26,-16],
    plain:"Looks for new ways to make small, safe profits: reads the web, other people's bots on GitHub and Polymarket's own data.",
@@ -240,18 +240,12 @@ renderHud(); setInterval(()=>{ renderHud(); updateStatus(); }, 30000);
   scene.fog = new THREE.FogExp2(0x120a2a, 0.0085);
   const camera = new THREE.PerspectiveCamera(48, 1, 0.5, 900);
 
-  // sky dome: deep violet with a magenta city glow on the horizon
-  (function(){
-    const c = document.createElement("canvas"); c.width = 16; c.height = 512; const x = c.getContext("2d");
-    const g = x.createLinearGradient(0,0,0,512);
-    g.addColorStop(0,"#020108"); g.addColorStop(.42,"#0d0624"); g.addColorStop(.5,"#3a0f4d"); g.addColorStop(.53,"#5a1458"); g.addColorStop(.6,"#120a2a"); g.addColorStop(1,"#05030c");
-    x.fillStyle = g; x.fillRect(0,0,16,512);
-    const tex = new THREE.CanvasTexture(c); tex.encoding = THREE.sRGBEncoding;
-    const sky = new THREE.Mesh(new THREE.SphereGeometry(600, 32, 32), new THREE.MeshBasicMaterial({map:tex, side:THREE.BackSide, fog:false, depthWrite:false}));
-    scene.add(sky);
-  })();
+  // sky dome, repainted from the Tunis clock (night, dawn, day, dusk)
+  const skyC = document.createElement("canvas"); skyC.width = 16; skyC.height = 512;
+  const skyTex = new THREE.CanvasTexture(skyC); skyTex.encoding = THREE.sRGBEncoding;
+  scene.add(new THREE.Mesh(new THREE.SphereGeometry(600, 32, 32), new THREE.MeshBasicMaterial({map:skyTex, side:THREE.BackSide, fog:false, depthWrite:false})));
 
-  scene.add(new THREE.HemisphereLight(0x6a5cff, 0x10061c, 0.45));
+  const hemi = new THREE.HemisphereLight(0x6a5cff, 0x10061c, 0.45); scene.add(hemi);
   const moon = new THREE.DirectionalLight(0x9db4ff, 0.28); moon.position.set(-60,120,40); scene.add(moon);
 
   // wet mirror street (desktop) under a translucent asphalt layer
@@ -426,12 +420,145 @@ renderHud(); setInterval(()=>{ renderHud(); updateStatus(); }, 30000);
   scene.add(rain);
 
   // post-processing: bloom + FXAA (falls back to plain rendering if the add-ons did not load)
-  let composer = null, fxaa = null;
+  let composer = null, fxaa = null, bloom = null;
   if(THREE.EffectComposer && THREE.UnrealBloomPass){
     composer = new THREE.EffectComposer(renderer);
     composer.addPass(new THREE.RenderPass(scene, camera));
-    composer.addPass(new THREE.UnrealBloomPass(new THREE.Vector2(innerWidth, innerHeight), small ? .9 : 1.15, .55, .62));
+    bloom = new THREE.UnrealBloomPass(new THREE.Vector2(innerWidth, innerHeight), small ? .9 : 1.15, .55, .62); composer.addPass(bloom);
     if(THREE.FXAAShader){ fxaa = new THREE.ShaderPass(THREE.FXAAShader); composer.addPass(fxaa); }
+  }
+
+  // ---------- 2. day/night sky that follows Tunis time ----------
+  const SKY = {
+    night:{c:["#020108","#0d0624","#3a0f4d","#5a1458","#120a2a"], fog:0x120a2a, dens:.0085, hemi:.45, exp:1.05, bloom:1.15, win:1},
+    dawn: {c:["#1a1240","#4a2a6e","#ff7a59","#ffb38a","#2a1a3a"], fog:0x3a2240, dens:.0075, hemi:.75, exp:1.0,  bloom:.95,  win:.8},
+    day:  {c:["#4b5a78","#7d88a3","#c9b8c8","#d9cbd2","#3a3a4e"], fog:0x6a6a82, dens:.0060, hemi:1.15,exp:.95,  bloom:.55,  win:.45},
+    dusk: {c:["#140a30","#3b1660","#ff3d81","#ff9a4d","#1d0f30"], fog:0x2a1238, dens:.0080, hemi:.6,  exp:1.0,  bloom:1.0,  win:.9}
+  };
+  const SKY_KEYS = [[0,"night"],[300,"night"],[345,"dawn"],[450,"day"],[1020,"day"],[1110,"dusk"],[1230,"night"],[1440,"night"]];
+  let winFactor = 1;
+  function skyAt(now){
+    let i = 0; while(i < SKY_KEYS.length-2 && now >= SKY_KEYS[i+1][0]) i++;
+    const [t0,k0] = SKY_KEYS[i], [t1,k1] = SKY_KEYS[i+1], f = t1>t0 ? Math.min(1, Math.max(0,(now-t0)/(t1-t0))) : 0;
+    return {A:SKY[k0], B:SKY[k1], f, name: f<.5 ? k0 : k1};
+  }
+  const mix = (a,b,f)=> a + (b-a)*f;
+  function applySky(now){
+    const {A,B,f,name} = skyAt(now), x = skyC.getContext("2d"), g = x.createLinearGradient(0,0,0,512);
+    const col = i => new THREE.Color(A.c[i]).lerp(new THREE.Color(B.c[i]), f).getStyle();
+    g.addColorStop(0,col(0)); g.addColorStop(.42,col(1)); g.addColorStop(.5,col(2)); g.addColorStop(.53,col(3)); g.addColorStop(.6,col(4)); g.addColorStop(1,"#05030c");
+    x.fillStyle = g; x.fillRect(0,0,16,512); skyTex.needsUpdate = true;
+    scene.fog.color.set(A.fog).lerp(new THREE.Color(B.fog), f); scene.fog.density = mix(A.dens,B.dens,f);
+    hemi.intensity = mix(A.hemi,B.hemi,f); renderer.toneMappingExposure = mix(A.exp,B.exp,f);
+    if(bloom) bloom.strength = (small ? .8 : 1) * mix(A.bloom,B.bloom,f);
+    winFactor = mix(A.win,B.win,f);
+    const ph = document.getElementById("phase"); if(ph) ph.textContent = name;
+  }
+  const baseUpdate = updateStatus;
+  updateStatus = function(){ baseUpdate(); applySky(tunisMins()); towers.forEach(t=>{ if(t.st && t.st.key!=="off") t.g.userData.meshes.forEach(m=> m.material.emissiveIntensity = winFactor); }); };
+  updateStatus();
+
+  // ---------- 3a. data pulses between working towers and the bot ----------
+  const hubTop = towers[0].g.userData.top;
+  const pulseGeo = new THREE.SphereGeometry(.38, 12, 12);
+  const links = towers.slice(1).filter(t=>!t.a.owner).map(t=>{
+    const a = new THREE.Vector3(t.g.position.x, t.g.userData.top + 2, t.g.position.z), b = new THREE.Vector3(0, hubTop + 3, 0);
+    const mid = a.clone().add(b).multiplyScalar(.5); mid.y += 16;
+    const curve = new THREE.QuadraticBezierCurve3(a, mid, b);
+    const line = new THREE.Line(new THREE.BufferGeometry().setFromPoints(curve.getPoints(48)),
+      new THREE.LineBasicMaterial({color:t.a.color, transparent:true, opacity:.06, blending:THREE.AdditiveBlending, depthWrite:false}));
+    scene.add(line);
+    const dots = Array.from({length:6}, (_,i)=>{ const m = new THREE.Mesh(pulseGeo, new THREE.MeshBasicMaterial({color:t.a.color})); m.visible = false; scene.add(m); return {m, off:i/6}; });
+    return {t, curve, line, dots, reverse: t.a.id === "analyst"};   // the Seer reads from the bot
+  });
+  const stream = Array.from({length:16}, (_,i)=>{ const m = new THREE.Mesh(pulseGeo, new THREE.MeshBasicMaterial({color:0x29f0ff})); scene.add(m); return {m, off:i/16}; });
+
+  // ---------- 3b. sparks for today's pretend wins (green) and losses (red) ----------
+  const TODAY = {wins:33, losses:0};
+  const MAXP = 900, pPos = new Float32Array(MAXP*3), pCol = new Float32Array(MAXP*3), pVel = new Float32Array(MAXP*3), pLife = new Float32Array(MAXP), pBase = new Float32Array(MAXP*3);
+  for(let i=0;i<MAXP;i++) pPos[i*3+1] = -999;
+  const pGeo = new THREE.BufferGeometry();
+  pGeo.setAttribute("position", new THREE.BufferAttribute(pPos,3)); pGeo.setAttribute("color", new THREE.BufferAttribute(pCol,3));
+  const dotTex = (()=>{ const c=document.createElement("canvas"); c.width=c.height=64; const x=c.getContext("2d"); const g=x.createRadialGradient(32,32,0,32,32,32);
+    g.addColorStop(0,"rgba(255,255,255,1)"); g.addColorStop(.3,"rgba(255,255,255,.8)"); g.addColorStop(1,"rgba(255,255,255,0)"); x.fillStyle=g; x.fillRect(0,0,64,64); return new THREE.CanvasTexture(c); })();
+  scene.add(new THREE.Points(pGeo, new THREE.PointsMaterial({size:1.6, map:dotTex, vertexColors:true, transparent:true, blending:THREE.AdditiveBlending, depthWrite:false})));
+  let pNext = 0;
+  function burst(color){
+    const c = new THREE.Color(color), ox = (Math.random()-.5)*14, oy = hubTop + 14 + Math.random()*16, oz = (Math.random()-.5)*14;
+    for(let n=0;n<22;n++){
+      const i = pNext; pNext = (pNext+1) % MAXP;
+      const th = Math.random()*Math.PI*2, ph = Math.acos(2*Math.random()-1), sp = 6 + Math.random()*6;
+      pPos.set([ox,oy,oz], i*3); pVel.set([Math.sin(ph)*Math.cos(th)*sp, Math.cos(ph)*sp + 3, Math.sin(ph)*Math.sin(th)*sp], i*3);
+      pBase.set([c.r,c.g,c.b], i*3); pLife[i] = 1.6 + Math.random()*.6;
+    }
+  }
+  let sparkTimers = [];
+  function celebrate(){
+    if(reduce) return;
+    sparkTimers.forEach(clearTimeout);
+    const list = [...Array(TODAY.wins).fill(0x7dff6b), ...Array(TODAY.losses).fill(0xff4d6d)];
+    sparkTimers = list.map((col,i)=> setTimeout(()=> burst(col), 300 + i*260));
+  }
+  setTimeout(celebrate, 1500);
+
+  // ---------- 4. hologram of the agent above its tower in close-up ----------
+  const ICON = {
+    sweeper(x){ x.strokeRect(-70,-50,140,110); x.beginPath(); x.arc(-32,0,16,0,7); x.arc(32,0,16,0,7); x.fill(); x.beginPath(); x.moveTo(0,-50); x.lineTo(0,-90); x.stroke(); x.beginPath(); x.arc(0,-98,10,0,7); x.fill(); x.beginPath(); x.moveTo(-36,36); x.lineTo(36,36); x.stroke(); },
+    researcher(x){ x.beginPath(); x.arc(-15,-15,58,0,7); x.stroke(); x.beginPath(); x.moveTo(27,27); x.lineTo(85,85); x.lineWidth=26; x.stroke(); },
+    redteam(x){ x.beginPath(); x.moveTo(0,-95); x.lineTo(80,-60); x.lineTo(70,20); x.quadraticCurveTo(50,70,0,98); x.quadraticCurveTo(-50,70,-70,20); x.lineTo(-80,-60); x.closePath(); x.stroke(); x.beginPath(); x.moveTo(0,-60); x.lineTo(0,60); x.moveTo(-40,-10); x.lineTo(40,-10); x.stroke(); },
+    tester(x){ x.beginPath(); x.moveTo(-22,-95); x.lineTo(-22,-25); x.lineTo(-80,80); x.lineTo(80,80); x.lineTo(22,-25); x.lineTo(22,-95); x.stroke(); x.beginPath(); x.moveTo(-58,40); x.lineTo(58,40); x.lineTo(80,80); x.lineTo(-80,80); x.closePath(); x.fill(); x.beginPath(); x.moveTo(-36,-95); x.lineTo(36,-95); x.stroke(); },
+    analyst(x){ x.beginPath(); x.moveTo(-100,0); x.quadraticCurveTo(0,-90,100,0); x.quadraticCurveTo(0,90,-100,0); x.stroke(); x.beginPath(); x.arc(0,0,32,0,7); x.fill(); },
+    fixer(x){ x.save(); x.rotate(-.7); x.fillRect(-14,-20,28,120); x.strokeRect(-60,-80,120,56); x.restore(); },
+    owner(x){ x.beginPath(); x.moveTo(-90,60); x.lineTo(-90,-40); x.lineTo(-45,10); x.lineTo(0,-70); x.lineTo(45,10); x.lineTo(90,-40); x.lineTo(90,60); x.closePath(); x.stroke(); x.fillRect(-90,70,180,22); }
+  };
+  function holoTexture(a){
+    const c = document.createElement("canvas"); c.width = c.height = 512; const x = c.getContext("2d"), hex = hexOf(a.color);
+    x.translate(256,230); x.strokeStyle = hex; x.fillStyle = hex; x.lineWidth = 14; x.lineJoin = "round"; x.lineCap = "round";
+    x.shadowColor = hex; x.shadowBlur = 28;
+    x.beginPath(); x.arc(0,0,175,0,7); x.globalAlpha=.5; x.lineWidth=6; x.stroke(); x.globalAlpha=1; x.lineWidth=14;
+    ICON[a.id](x);
+    x.setTransform(1,0,0,1,0,0); x.shadowBlur = 16; x.font = "700 46px 'Chakra Petch', sans-serif"; x.textAlign = "center";
+    x.fillText(a.name.replace(/^The /,"").toUpperCase(), 256, 480);
+    x.shadowBlur = 0; x.globalCompositeOperation = "destination-out";
+    for(let y=0;y<512;y+=6){ x.fillStyle = "rgba(0,0,0,.35)"; x.fillRect(0,y,512,2); }   // scanlines
+    const t = new THREE.CanvasTexture(c); t.encoding = THREE.sRGBEncoding; t.anisotropy = ANISO; return t;
+  }
+  towers.forEach(tw=>{
+    const top = tw.g.userData.top;
+    tw.holo = new THREE.Sprite(new THREE.SpriteMaterial({map:holoTexture(tw.a), transparent:true, opacity:0, blending:THREE.AdditiveBlending, depthWrite:false}));
+    tw.holo.scale.set(15,15,1); tw.holo.position.y = top + 28; tw.g.add(tw.holo);
+    tw.holoBeam = new THREE.Mesh(new THREE.CylinderGeometry(.6, 4, 12, 24, 1, true),
+      new THREE.MeshBasicMaterial({color:tw.a.color, transparent:true, opacity:0, blending:THREE.AdditiveBlending, depthWrite:false, side:THREE.DoubleSide}));
+    tw.holoBeam.position.y = top + 19; tw.g.add(tw.holoBeam);
+  });
+  if(document.fonts && document.fonts.ready) document.fonts.ready.then(()=> towers.forEach(tw=>{ tw.holo.material.map = holoTexture(tw.a); tw.holo.material.needsUpdate = true; }));
+
+  function animateAlive(dt, t){
+    links.forEach(L=>{
+      const on = L.t.st && L.t.st.key === "on";
+      L.line.material.opacity += ((on ? .45 : .05) - L.line.material.opacity) * Math.min(1, dt*3);
+      L.dots.forEach(d=>{ d.m.visible = on && !reduce; if(!d.m.visible) return;
+        let u = (t*.22 + d.off) % 1; if(L.reverse) u = 1-u; d.m.position.copy(L.curve.getPoint(u)); d.m.scale.setScalar(.7 + Math.sin(u*Math.PI)*.8); });
+    });
+    stream.forEach(s=>{ if(reduce){ s.m.visible=false; return; } const u = (t*.18 + s.off) % 1, ang = u*Math.PI*6 + s.off*20;
+      s.m.position.set(Math.cos(ang)*2.2, hubTop + 10 + u*55, Math.sin(ang)*2.2); s.m.scale.setScalar(1 - u*.8); });
+    for(let i=0;i<MAXP;i++){
+      if(pLife[i] <= 0) continue;
+      pLife[i] -= dt; const k = i*3;
+      if(pLife[i] <= 0){ pPos[k+1] = -999; continue; }
+      pVel[k+1] -= 9*dt; pPos[k] += pVel[k]*dt; pPos[k+1] += pVel[k+1]*dt; pPos[k+2] += pVel[k+2]*dt;
+      const f = Math.min(1, pLife[i]); pCol[k] = pBase[k]*f; pCol[k+1] = pBase[k+1]*f; pCol[k+2] = pBase[k+2]*f;
+    }
+    pGeo.attributes.position.needsUpdate = true; pGeo.attributes.color.needsUpdate = true;
+    towers.forEach(tw=>{
+      const want = selected === tw.a.id ? 1 : 0, m = tw.holo.material;
+      m.opacity += (want - m.opacity) * Math.min(1, dt*4);
+      const flicker = Math.random() < .03 ? .5 : 1;
+      tw.holo.material.opacity = Math.max(0, m.opacity) ; tw.holo.visible = m.opacity > .01;
+      tw.holoBeam.material.opacity = m.opacity * .18 * flicker; tw.holoBeam.visible = tw.holo.visible;
+      tw.holo.position.y = tw.g.userData.top + 28 + Math.sin(t*1.5)*.8;
+      tw.holo.material.rotation = Math.sin(t*.7)*.05;
+    });
   }
 
   // camera: drag to orbit, scroll/pinch to zoom, click a tower (or a button) to fly to it
@@ -459,7 +586,7 @@ renderHud(); setInterval(()=>{ renderHud(); updateStatus(); }, 30000);
   }
   function flyTo(id){
     const tw = towers.find(t=>t.a.id===id); if(!tw) return;
-    selected = id; showCard(); markNav(); stopAuto();
+    selected = id; showCard(); markNav(); stopAuto(); if(id === "sweeper") celebrate();
     const top = tw.g.userData.top;
     goalT.set(tw.g.position.x, top*.55, tw.g.position.z); goalR = Math.max(38, top*1.25); phi = Math.min(phi, 1.25); idleLater();
   }
@@ -493,6 +620,7 @@ renderHud(); setInterval(()=>{ renderHud(); updateStatus(); }, 30000);
       for(let i=0;i<drops;i++){ const k=i*6; let y=p[k+1]-dt*70; if(y<0) y+=110; p[k+1]=y; p[k+4]=y-1.8; }
       rain.geometry.attributes.position.needsUpdate = true;
     }
+    animateAlive(dt, t);
     composer ? composer.render() : renderer.render(scene, camera);
     requestAnimationFrame(frame);
   }

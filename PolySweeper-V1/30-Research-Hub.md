@@ -64,10 +64,11 @@ The lab updates this table every day.
 | 7 | **Tennis "practically locked"** during play (e.g. a set up and 5-1) | Comebacks from there are very rare | Rare comebacks, retirements; price already near 0.99 | testing (score log on PC, note 29) |
 | 8 | **Liquidity rewards / maker rebates**: get paid by Polymarket for resting orders | Income from rewards, not from guessing results | Getting filled at a bad moment; program rules change | new (2026-10-03); next deepening question (sports rebateRate 0.15) |
 | 9 | **Holding rewards** on some long markets | Yield for holding | Program details; capital locked for long | new (2026-10-03) |
-| 10 | **Learn from profitable sweeper wallets** (Data API: who buys at 0.99+, when, how big, which markets) | Shows where safe flow really is and how fast it must be | Copying the timing may need their speed | new (2026-10-03) |
+| 10 | **Learn from profitable sweeper wallets** (Data API: who buys at 0.99+, when, how big, which markets) | Shows where safe flow really is and how fast it must be | Copying the timing may need their speed | **promising lead** (2026-10-04): every timed loss came before the end (0 of 3,856 after); best wallet buys US sports at 0.99 with 0.22% losses ([[R-2026-10-04-wallets]]) |
 | 11 | **Markets made certain by another result** (e.g. a map market after the series is already won; "to qualify" after a decisive match) | Outcome fixed by rules once the other result is in | Rule text (not played = void 50/50?) | new (2026-10-03) |
 | 12 | **Faster or earlier result sources** (official league feeds, sportsbook data, stream delays) | Know the result before the 0.999 bots | Cost, reliability, still too slow from a home PC | new (2026-10-03) |
 | 13 | **Weather dead ranges**: buy NO on a temperature range the station has already passed | Daily high can only go up, so a passed range is certain to lose | "No data → lowest range wins" rule; revisions; nothing for sale | rejected (2026-10-03): passed ranges have no NO sellers below 0.999 (166 of 166 checked); ~$7.50/day taken by others after 17:00 ([[R-2026-10-03]]) |
+| 14 | **US sports near or after the end at 0.99** (MLB, NFL, college football, NHL) | Slower, less crowded finishes; 0.99 still bought just after the end; one wallet 3 losses in 1,344 | Rare comebacks if bought during play; rain/overtime/postponement rules; shadow mode does not watch these leagues yet | new (2026-10-04) ([[R-2026-10-04-wallets]]) |
 | — | Resting buy orders before the end (option 2) | — | Fills mostly when we are wrong | rejected (2026-10-03) |
 | — | Buying on price during play (price-only rule) | — | Loss rate matches the price: no edge | rejected (2026-10-03) |
 
@@ -75,6 +76,7 @@ The lab updates this table every day.
 
 Folder `Research/`, one note per day: `R-<date>`. Newest first:
 
+- [[R-2026-10-04-wallets]] — early run (owner asked): profitable wallets; 0 losses after the end in 3,856 buys; US sports lead (idea #14)
 - [[R-2026-10-03]] — first run: complete set and baskets rejected; weather dead ranges tested and rejected; PC healthy
 
 ## Where to change what the lab does

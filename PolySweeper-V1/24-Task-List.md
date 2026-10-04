@@ -39,7 +39,10 @@ this list is the one to follow. Owner = who does it.
 - [ ] Optional: install the "Exa Deep Research" plugin for better web reading — **owner**
 - [ ] Read the daily research note; tell the lab what to focus on — **owner** (whenever useful)
 - [x] Fix confirmed 2026-10-04 00:35: `daily/` folder on main, a code update was picked up and synced within 30 s
-- [ ] Lab next: research #8 maker rebates / liquidity rewards and #10 profitable 0.99+ wallets — **assistant (lab)**
+- [x] (2026-10-04) #10 profitable wallets, first pass ([[R-2026-10-04-wallets]])
+- [ ] Add US sports (MLB, NFL, college football, NHL) to shadow mode: change in `code/`, restarts the PC — **owner OK**, then **assistant**
+- [ ] Rebuild the game situation at each buy of the best US-sports wallet: which situations never lose? — **assistant (lab)**
+- [ ] Lab next: #8 maker rebates / liquidity rewards; more US-sports wallets at 0.98-0.995 — **assistant (lab)**
 
 ## Next: compare with the late band (Phase 2)
 

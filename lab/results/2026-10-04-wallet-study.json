@@ -1,0 +1,1096 @@
+[
+ {
+  "label": "0x4dDC7068",
+  "wallet": "0x4ddc7068ef679dc7c34e2c22411975baa1b9e73f",
+  "buys": 1351,
+  "settled_buys": 1344,
+  "open_or_unknown": 7,
+  "dollars": 154550.56,
+  "profit": 1304.27,
+  "lost_buys": 3,
+  "lost_dollars": 199.6,
+  "void_buys": 0,
+  "first_trade": "2026-09-20T18:15",
+  "last_trade": "2026-10-04T02:11",
+  "market_types": {
+   "moneyline": 740,
+   "totals": 260,
+   "spreads": 217,
+   "nrfi": 29,
+   "child_moneyline": 29
+  },
+  "series": {
+   "mlb": 297,
+   "nfl-2026": 268,
+   "soccer-unl": 191,
+   "cfb-2026": 173,
+   "atp": 148,
+   "wta": 104
+  },
+  "timing": {
+   "during play (5+ min before the end)": {
+    "buys": 763,
+    "dollars": 84899,
+    "shares": 85707,
+    "lost": 2,
+    "median_price": 0.99
+   },
+   "last 5 min before the end": {
+    "buys": 442,
+    "dollars": 41720,
+    "shares": 42150,
+    "lost": 1,
+    "median_price": 0.99
+   },
+   "0-60 s after the end": {
+    "buys": 28,
+    "dollars": 3170,
+    "shares": 3194,
+    "lost": 0,
+    "median_price": 0.99
+   },
+   "1-5 min after": {
+    "buys": 4,
+    "dollars": 510,
+    "shares": 515,
+    "lost": 0,
+    "median_price": 0.9945
+   },
+   "5-30 min after": {
+    "buys": 1,
+    "dollars": 100,
+    "shares": 100,
+    "lost": 0,
+    "median_price": 0.999
+   }
+  },
+  "price_by_band": {
+   "0.99-0.995": 1019,
+   "0.999+": 100,
+   "0.98-0.99": 129,
+   "0.95-0.98": 53,
+   "0.995-0.999": 43
+  },
+  "losses": [
+   {
+    "title": "Montana State vs. Idaho",
+    "price": 0.99,
+    "size": 27.02,
+    "sec_vs_end": -748
+   },
+   {
+    "title": "Spread: San Diego Padres (-2.5)",
+    "price": 0.99,
+    "size": 78.64,
+    "sec_vs_end": -269
+   },
+   {
+    "title": "Colts vs. Chiefs: O/U 57.5",
+    "price": 0.95,
+    "size": 100.0,
+    "sec_vs_end": -1202
+   }
+  ],
+  "median_mins_before_payout": 38.5
+ },
+ {
+  "label": "467j6yj",
+  "wallet": "0xd487f513cfead22d76b6db4567c756b3cf25053e",
+  "buys": 5037,
+  "settled_buys": 5037,
+  "open_or_unknown": 0,
+  "dollars": 2517201.45,
+  "profit": -15433.99,
+  "lost_buys": 52,
+  "lost_dollars": 52105.13,
+  "void_buys": 0,
+  "first_trade": "2026-09-08T19:09",
+  "last_trade": "2026-10-03T23:42",
+  "market_types": {
+   "child_moneyline": 2768,
+   "moneyline": 2243,
+   "map_handicap": 17,
+   "totals": 8,
+   "round_handicap_game_2": 1
+  },
+  "series": {
+   "counter-strike": 2849,
+   "league-of-legends": 1458,
+   "rainbow-six-siege": 553,
+   "valorant": 177
+  },
+  "timing": {},
+  "price_by_band": {
+   "0.98-0.99": 627,
+   "0.95-0.98": 594,
+   "0.99-0.995": 3609,
+   "0.995-0.999": 67,
+   "0.999+": 140
+  },
+  "losses": [
+   {
+    "title": "Map Handicap: MEIA NOITE (-1.5) vs METANOIA WOLVES (+1.5)",
+    "price": 0.98,
+    "size": 20.0,
+    "sec_vs_end": null
+   },
+   {
+    "title": "Counter-Strike: MASONIC vs ENJOY (BO3) - CCT Europe Series #10 Group Stage",
+    "price": 0.99,
+    "size": 790.4,
+    "sec_vs_end": null
+   },
+   {
+    "title": "Counter-Strike: MASONIC vs ENJOY (BO3) - CCT Europe Series #10 Group Stage",
+    "price": 0.99,
+    "size": 528.0,
+    "sec_vs_end": null
+   },
+   {
+    "title": "Counter-Strike: MASONIC vs ENJOY (BO3) - CCT Europe Series #10 Group Stage",
+    "price": 0.99,
+    "size": 50.0,
+    "sec_vs_end": null
+   },
+   {
+    "title": "Counter-Strike: MASONIC vs ENJOY (BO3) - CCT Europe Series #10 Group Stage",
+    "price": 0.99,
+    "size": 168.0,
+    "sec_vs_end": null
+   },
+   {
+    "title": "Counter-Strike: MASONIC vs ENJOY (BO3) - CCT Europe Series #10 Group Stage",
+    "price": 0.9890775352,
+    "size": 157.09,
+    "sec_vs_end": null
+   },
+   {
+    "title": "Counter-Strike: MASONIC vs ENJOY - Map 2 Winner",
+    "price": 0.95,
+    "size": 51.47,
+    "sec_vs_end": null
+   },
+   {
+    "title": "Counter-Strike: MASONIC vs ENJOY - Map 2 Winner",
+    "price": 0.95,
+    "size": 34.0,
+    "sec_vs_end": null
+   },
+   {
+    "title": "Counter-Strike: MASONIC vs ENJOY - Map 2 Winner",
+    "price": 0.95,
+    "size": 49.6,
+    "sec_vs_end": null
+   },
+   {
+    "title": "Counter-Strike: MASONIC vs ENJOY - Map 2 Winner",
+    "price": 0.95,
+    "size": 151.0,
+    "sec_vs_end": null
+   },
+   {
+    "title": "Counter-Strike: MASONIC vs ENJOY - Map 2 Winner",
+    "price": 0.95,
+    "size": 102.4,
+    "sec_vs_end": null
+   },
+   {
+    "title": "Counter-Strike: MASONIC vs ENJOY - Map 2 Winner",
+    "price": 0.95,
+    "size": 20.4,
+    "sec_vs_end": null
+   },
+   {
+    "title": "Counter-Strike: MASONIC vs ENJOY - Map 2 Winner",
+    "price": 0.95,
+    "size": 655.2,
+    "sec_vs_end": null
+   },
+   {
+    "title": "LoL: The Ruddy Sack vs Kaufland Hangry Knights (BO1) - EMEA Masters Swiss Stage",
+    "price": 0.9618032212,
+    "size": 11890.0,
+    "sec_vs_end": null
+   },
+   {
+    "title": "Counter-Strike: Mindfreak vs Orgless - Map 1 Winner",
+    "price": 0.99,
+    "size": 262.71,
+    "sec_vs_end": null
+   }
+  ],
+  "median_mins_before_payout": 74.8
+ },
+ {
+  "label": "a5533",
+  "wallet": "0x758dac51ba3cc9a246a79787da9df11c5f425d9e",
+  "buys": 371,
+  "settled_buys": 101,
+  "open_or_unknown": 270,
+  "dollars": 2602.97,
+  "profit": 90.28,
+  "lost_buys": 0,
+  "lost_dollars": 0.0,
+  "void_buys": 0,
+  "first_trade": "2026-10-03T22:51",
+  "last_trade": "2026-10-04T02:09",
+  "market_types": {
+   "null": 85,
+   "moneyline": 11,
+   "ufc_method_of_victory": 5
+  },
+  "series": {
+   "btc-up-or-down-15m": 40,
+   "eth-up-or-down-15m": 13,
+   "ufc": 10,
+   "eth-up-or-down-hourly": 8,
+   "league-of-legends": 6,
+   "xrp-up-or-down-15m": 5
+  },
+  "timing": {
+   "during play (5+ min before the end)": {
+    "buys": 8,
+    "dollars": 279,
+    "shares": 289,
+    "lost": 0,
+    "median_price": 0.96
+   },
+   "last 5 min before the end": {
+    "buys": 2,
+    "dollars": 94,
+    "shares": 98,
+    "lost": 0,
+    "median_price": 0.9775
+   }
+  },
+  "price_by_band": {
+   "0.95-0.98": 69,
+   "0.99-0.995": 20,
+   "0.98-0.99": 11,
+   "0.995-0.999": 1
+  },
+  "losses": [],
+  "median_mins_before_payout": 4.2
+ },
+ {
+  "label": "owlgorithm-beta",
+  "wallet": "0x5f486fdf01685dc2fd8880d0d1fc3495858aba84",
+  "buys": 5944,
+  "settled_buys": 5944,
+  "open_or_unknown": 0,
+  "dollars": 1255434.53,
+  "profit": 1716.62,
+  "lost_buys": 0,
+  "lost_dollars": 0.0,
+  "void_buys": 12,
+  "first_trade": "2026-09-19T20:31",
+  "last_trade": "2026-10-04T01:32",
+  "market_types": {
+   "child_moneyline": 2965,
+   "moneyline": 2401,
+   "totals": 513,
+   "map_handicap": 65
+  },
+  "series": {
+   "counter-strike": 3958,
+   "league-of-legends": 997,
+   "dota-2": 413,
+   "rainbow-six-siege": 393,
+   "valorant": 174,
+   "mobile-legends-bang-bang": 6
+  },
+  "timing": {},
+  "price_by_band": {
+   "0.999+": 5507,
+   "0.995-0.999": 99,
+   "0.99-0.995": 279,
+   "0.98-0.99": 49,
+   "0.95-0.98": 10
+  },
+  "losses": [],
+  "median_mins_before_payout": 64.45
+ },
+ {
+  "label": "antec",
+  "wallet": "0x893575c7d99542163c6b6e8a0fe5af0b6d217daa",
+  "buys": 345,
+  "settled_buys": 321,
+  "open_or_unknown": 24,
+  "dollars": 76317.66,
+  "profit": 178.81,
+  "lost_buys": 0,
+  "lost_dollars": 0.0,
+  "void_buys": 0,
+  "first_trade": "2026-10-03T17:21",
+  "last_trade": "2026-10-04T02:09",
+  "market_types": {
+   "moneyline": 162,
+   "totals": 103,
+   "child_moneyline": 30,
+   "spreads": 25,
+   "map_handicap": 1
+  },
+  "series": {
+   "soccer-unl": 76,
+   "counter-strike": 74,
+   "cfb-2026": 21,
+   "brazil-serie-b": 15,
+   "league-of-legends": 15,
+   "brazil-serie-a": 14
+  },
+  "timing": {
+   "during play (5+ min before the end)": {
+    "buys": 46,
+    "dollars": 14122,
+    "shares": 14136,
+    "lost": 0,
+    "median_price": 0.999
+   },
+   "last 5 min before the end": {
+    "buys": 40,
+    "dollars": 6704,
+    "shares": 6711,
+    "lost": 0,
+    "median_price": 0.999
+   },
+   "0-60 s after the end": {
+    "buys": 17,
+    "dollars": 5142,
+    "shares": 5147,
+    "lost": 0,
+    "median_price": 0.999
+   },
+   "1-5 min after": {
+    "buys": 32,
+    "dollars": 5572,
+    "shares": 5578,
+    "lost": 0,
+    "median_price": 0.999
+   },
+   "5-30 min after": {
+    "buys": 27,
+    "dollars": 5570,
+    "shares": 5575,
+    "lost": 0,
+    "median_price": 0.999
+   },
+   "30+ min after": {
+    "buys": 22,
+    "dollars": 4715,
+    "shares": 4720,
+    "lost": 0,
+    "median_price": 0.999
+   }
+  },
+  "price_by_band": {
+   "0.999+": 306,
+   "0.995-0.999": 3,
+   "0.95-0.98": 4,
+   "0.99-0.995": 8
+  },
+  "losses": [],
+  "median_mins_before_payout": 113.1333
+ },
+ {
+  "label": "InterzoneCo",
+  "wallet": "0x2db098d402c3f90531380b03834791b3744c2fed",
+  "buys": 5946,
+  "settled_buys": 5946,
+  "open_or_unknown": 0,
+  "dollars": 1239717.53,
+  "profit": -914.38,
+  "lost_buys": 9,
+  "lost_dollars": 2582.02,
+  "void_buys": 4,
+  "first_trade": "2026-08-25T11:57",
+  "last_trade": "2026-10-04T01:09",
+  "market_types": {
+   "child_moneyline": 2804,
+   "moneyline": 2477,
+   "totals": 561,
+   "map_handicap": 104
+  },
+  "series": {
+   "counter-strike": 3798,
+   "league-of-legends": 930,
+   "dota-2": 556,
+   "rainbow-six-siege": 329,
+   "valorant": 274,
+   "mobile-legends-bang-bang": 32
+  },
+  "timing": {},
+  "price_by_band": {
+   "0.999+": 5238,
+   "0.95-0.98": 36,
+   "0.995-0.999": 156,
+   "0.98-0.99": 95,
+   "0.99-0.995": 421
+  },
+  "losses": [
+   {
+    "title": "Honor of Kings: ONE Team vs Hong Kong Attitude - Game 1 Winner",
+    "price": 0.9800999901,
+    "size": 10.101,
+    "sec_vs_end": null
+   },
+   {
+    "title": "Honor of Kings: ONE Team vs Hong Kong Attitude - Game 1 Winner",
+    "price": 0.999,
+    "size": 333.32,
+    "sec_vs_end": null
+   },
+   {
+    "title": "Honor of Kings: ONE Team vs Hong Kong Attitude - Game 1 Winner",
+    "price": 0.99,
+    "size": 200.0,
+    "sec_vs_end": null
+   },
+   {
+    "title": "Counter-Strike: JUMBO TEAM vs mskLANERS - Map 2 Winner",
+    "price": 0.99,
+    "size": 5.0,
+    "sec_vs_end": null
+   },
+   {
+    "title": "Counter-Strike: JUMBO TEAM vs mskLANERS - Map 2 Winner",
+    "price": 0.99,
+    "size": 5.0,
+    "sec_vs_end": null
+   },
+   {
+    "title": "Counter-Strike: JUMBO TEAM vs mskLANERS - Map 2 Winner",
+    "price": 0.999,
+    "size": 1000.0,
+    "sec_vs_end": null
+   },
+   {
+    "title": "Games Total: O/U 2.5",
+    "price": 0.999,
+    "size": 73.0,
+    "sec_vs_end": null
+   },
+   {
+    "title": "Counter-Strike: JUMBO TEAM vs mskLANERS - Map 2 Winner",
+    "price": 0.99,
+    "size": 70.61,
+    "sec_vs_end": null
+   },
+   {
+    "title": "Counter-Strike: Falcons Force vs Esport BERG - Map 1 Winner",
+    "price": 0.99,
+    "size": 898.39,
+    "sec_vs_end": null
+   }
+  ],
+  "median_mins_before_payout": 75.0917
+ },
+ {
+  "label": "momo-0916",
+  "wallet": "0x36a9b5278085eb543c9095a37c9a93bb7951c1d3",
+  "buys": 5980,
+  "settled_buys": 5855,
+  "open_or_unknown": 125,
+  "dollars": 38476.96,
+  "profit": -71.9,
+  "lost_buys": 26,
+  "lost_dollars": 168.81,
+  "void_buys": 0,
+  "first_trade": "2026-09-24T17:08",
+  "last_trade": "2026-10-04T02:12",
+  "market_types": {
+   "moneyline": 5838,
+   "child_moneyline": 11,
+   "f1_race_podium": 6
+  },
+  "series": {
+   "cfb-2026": 1539,
+   "soccer-unl": 795,
+   "mlb": 790,
+   "international-cricket": 374,
+   "fifa-friendly": 265,
+   "atp": 257
+  },
+  "timing": {
+   "during play (5+ min before the end)": {
+    "buys": 4297,
+    "dollars": 27824,
+    "shares": 27893,
+    "lost": 24,
+    "median_price": 0.998
+   },
+   "last 5 min before the end": {
+    "buys": 653,
+    "dollars": 4197,
+    "shares": 4205,
+    "lost": 2,
+    "median_price": 0.999
+   },
+   "0-60 s after the end": {
+    "buys": 2,
+    "dollars": 14,
+    "shares": 14,
+    "lost": 0,
+    "median_price": 0.999
+   },
+   "1-5 min after": {
+    "buys": 11,
+    "dollars": 71,
+    "shares": 71,
+    "lost": 0,
+    "median_price": 0.999
+   },
+   "5-30 min after": {
+    "buys": 10,
+    "dollars": 65,
+    "shares": 65,
+    "lost": 0,
+    "median_price": 0.999
+   },
+   "30+ min after": {
+    "buys": 41,
+    "dollars": 261,
+    "shares": 261,
+    "lost": 0,
+    "median_price": 0.999
+   }
+  },
+  "price_by_band": {
+   "0.999+": 2508,
+   "0.995-0.999": 3071,
+   "0.99-0.995": 269,
+   "0.95-0.98": 4,
+   "0.98-0.99": 3
+  },
+  "losses": [
+   {
+    "title": "Montana State vs. Idaho",
+    "price": 0.997,
+    "size": 6.25,
+    "sec_vs_end": -249
+   },
+   {
+    "title": "Montana State vs. Idaho",
+    "price": 0.997,
+    "size": 6.34,
+    "sec_vs_end": -253
+   },
+   {
+    "title": "Montana State vs. Idaho",
+    "price": 0.997,
+    "size": 6.38,
+    "sec_vs_end": -718
+   },
+   {
+    "title": "Montana State vs. Idaho",
+    "price": 0.997,
+    "size": 6.52,
+    "sec_vs_end": -723
+   },
+   {
+    "title": "Montana State vs. Idaho",
+    "price": 0.997,
+    "size": 6.55,
+    "sec_vs_end": -727
+   },
+   {
+    "title": "Montana State vs. Idaho",
+    "price": 0.997,
+    "size": 6.99,
+    "sec_vs_end": -730
+   },
+   {
+    "title": "Montana State vs. Idaho",
+    "price": 0.997,
+    "size": 6.06,
+    "sec_vs_end": -736
+   },
+   {
+    "title": "Montana State vs. Idaho",
+    "price": 0.997,
+    "size": 6.38,
+    "sec_vs_end": -739
+   },
+   {
+    "title": "Montana State vs. Idaho",
+    "price": 0.997,
+    "size": 6.32,
+    "sec_vs_end": -744
+   },
+   {
+    "title": "Montana State vs. Idaho",
+    "price": 0.997,
+    "size": 6.37,
+    "sec_vs_end": -748
+   },
+   {
+    "title": "Montana State vs. Idaho",
+    "price": 0.997,
+    "size": 6.97,
+    "sec_vs_end": -753
+   },
+   {
+    "title": "Montana State vs. Idaho",
+    "price": 0.997,
+    "size": 6.24,
+    "sec_vs_end": -757
+   },
+   {
+    "title": "Montana State vs. Idaho",
+    "price": 0.997,
+    "size": 6.24,
+    "sec_vs_end": -762
+   },
+   {
+    "title": "Ankara: Deniz Dilek vs Anastasia Gasanova",
+    "price": 0.9977238806,
+    "size": 6.7,
+    "sec_vs_end": -2049
+   },
+   {
+    "title": "Ankara: Deniz Dilek vs Anastasia Gasanova",
+    "price": 0.99,
+    "size": 6.6,
+    "sec_vs_end": -2436
+   }
+  ],
+  "median_mins_before_payout": 76.8833
+ },
+ {
+  "label": "FountainCleaner",
+  "wallet": "0xaff6108be2e138ef1d382c7f561946f69f1b4a29",
+  "buys": 6000,
+  "settled_buys": 5983,
+  "open_or_unknown": 17,
+  "dollars": 385457.97,
+  "profit": -165.67,
+  "lost_buys": 17,
+  "lost_dollars": 1022.71,
+  "void_buys": 3,
+  "first_trade": "2026-09-08T12:25",
+  "last_trade": "2026-10-03T17:22",
+  "market_types": {
+   "moneyline": 2276,
+   "totals": 941,
+   "child_moneyline": 544,
+   "soccer_exact_score": 419,
+   "first_half_totals": 332
+  },
+  "series": {
+   "itf": 881,
+   "counter-strike": 660,
+   "atp": 362,
+   "league-of-legends": 252,
+   "dota-2": 176,
+   "wta": 166
+  },
+  "timing": {
+   "during play (5+ min before the end)": {
+    "buys": 926,
+    "dollars": 44657,
+    "shares": 44795,
+    "lost": 3,
+    "median_price": 0.999
+   },
+   "last 5 min before the end": {
+    "buys": 290,
+    "dollars": 19274,
+    "shares": 19334,
+    "lost": 2,
+    "median_price": 0.999
+   },
+   "0-60 s after the end": {
+    "buys": 79,
+    "dollars": 5476,
+    "shares": 5487,
+    "lost": 0,
+    "median_price": 0.999
+   },
+   "1-5 min after": {
+    "buys": 174,
+    "dollars": 18486,
+    "shares": 18515,
+    "lost": 0,
+    "median_price": 0.999
+   },
+   "5-30 min after": {
+    "buys": 578,
+    "dollars": 51381,
+    "shares": 51493,
+    "lost": 0,
+    "median_price": 0.999
+   },
+   "30+ min after": {
+    "buys": 660,
+    "dollars": 58048,
+    "shares": 58188,
+    "lost": 0,
+    "median_price": 0.999
+   }
+  },
+  "price_by_band": {
+   "0.999+": 4344,
+   "0.99-0.995": 1461,
+   "0.995-0.999": 178
+  },
+  "losses": [
+   {
+    "title": "Golden State Valkyries vs. Dallas Wings: 2H Moneyline",
+    "price": 0.99,
+    "size": 40.0,
+    "sec_vs_end": -19
+   },
+   {
+    "title": "2H Spread: Golden State Valkyries (-1.5)",
+    "price": 0.99,
+    "size": 40.0,
+    "sec_vs_end": -39
+   },
+   {
+    "title": "Set 1 Winner: Ha Eum Lee vs Yanan Hou",
+    "price": 0.99,
+    "size": 40.0,
+    "sec_vs_end": null
+   },
+   {
+    "title": "W35 Wagga Wagga: Nana Onozawa vs Alana Subasic",
+    "price": 0.993,
+    "size": 40.0,
+    "sec_vs_end": null
+   },
+   {
+    "title": "W15 Nashville, TN: Amanda Carolina Nava Elkin vs Beatriz Guerra",
+    "price": 0.991,
+    "size": 48.0,
+    "sec_vs_end": null
+   },
+   {
+    "title": "San Diego 2: Tristan Boyer vs Timo Legout",
+    "price": 0.992,
+    "size": 40.0,
+    "sec_vs_end": -5735
+   },
+   {
+    "title": "Genoa 2: Dimitris Sakellaridis vs Lorenzo Berto",
+    "price": 0.999,
+    "size": 62.0,
+    "sec_vs_end": null
+   },
+   {
+    "title": "M15 Telavi: Giovanni Boi vs Egor Khotchenkov",
+    "price": 0.99,
+    "size": 40.0,
+    "sec_vs_end": null
+   },
+   {
+    "title": "Set 1 Winner: Eva Marie Desvignes vs Kyoka Okamura",
+    "price": 0.99,
+    "size": 40.0,
+    "sec_vs_end": -2964
+   },
+   {
+    "title": "Counter-Strike: JUMBO TEAM vs mskLANERS - Map 2 Winner",
+    "price": 0.999,
+    "size": 40.0,
+    "sec_vs_end": null
+   },
+   {
+    "title": "Southend United FC vs. Tamworth FC: O/U 10.5 Total Corners",
+    "price": 0.999,
+    "size": 40.0,
+    "sec_vs_end": null
+   },
+   {
+    "title": "Southend United FC vs. Tamworth FC: Southend United FC O/U 4.5 Corners",
+    "price": 0.999,
+    "size": 40.0,
+    "sec_vs_end": null
+   },
+   {
+    "title": "Southend United FC vs. Tamworth FC: Southend United FC O/U 3.5 Corners",
+    "price": 0.999,
+    "size": 40.0,
+    "sec_vs_end": null
+   },
+   {
+    "title": "Southend United FC vs. Tamworth FC: Southend United FC O/U 5.5 Corners",
+    "price": 0.999,
+    "size": 40.0,
+    "sec_vs_end": null
+   },
+   {
+    "title": "Will Racing Club de Lens win on 2026-09-10?",
+    "price": 0.99,
+    "size": 40.0,
+    "sec_vs_end": -555
+   }
+  ],
+  "median_mins_before_payout": 92.45
+ },
+ {
+  "label": "Kudri",
+  "wallet": "0x1e9b1a67d933b29966b784a456b6b69b2d2a720c",
+  "buys": 2421,
+  "settled_buys": 2421,
+  "open_or_unknown": 0,
+  "dollars": 56695.43,
+  "profit": -20.01,
+  "lost_buys": 4,
+  "lost_dollars": 79.47,
+  "void_buys": 0,
+  "first_trade": "2026-09-21T18:38",
+  "last_trade": "2026-10-03T19:55",
+  "market_types": {
+   "moneyline": 2421
+  },
+  "series": {
+   "atp": 1203,
+   "itf": 648,
+   "wta": 536,
+   "atp-doubles": 29,
+   "wta-doubles": 5
+  },
+  "timing": {
+   "during play (5+ min before the end)": {
+    "buys": 10,
+    "dollars": 279,
+    "shares": 280,
+    "lost": 4,
+    "median_price": 0.999
+   },
+   "last 5 min before the end": {
+    "buys": 831,
+    "dollars": 20687,
+    "shares": 20709,
+    "lost": 0,
+    "median_price": 0.999
+   },
+   "0-60 s after the end": {
+    "buys": 324,
+    "dollars": 8273,
+    "shares": 8281,
+    "lost": 0,
+    "median_price": 0.999
+   },
+   "1-5 min after": {
+    "buys": 287,
+    "dollars": 6860,
+    "shares": 6866,
+    "lost": 0,
+    "median_price": 0.999
+   },
+   "5-30 min after": {
+    "buys": 191,
+    "dollars": 4203,
+    "shares": 4207,
+    "lost": 0,
+    "median_price": 0.999
+   }
+  },
+  "price_by_band": {
+   "0.999+": 2360,
+   "0.995-0.999": 42,
+   "0.98-0.99": 5,
+   "0.99-0.995": 14
+  },
+  "losses": [
+   {
+    "title": "Laver Cup: Alexander Zverev vs Alex de Minaur",
+    "price": 0.999,
+    "size": 10.0,
+    "sec_vs_end": -670
+   },
+   {
+    "title": "Laver Cup: Alexander Zverev vs Alex de Minaur",
+    "price": 0.999,
+    "size": 25.0,
+    "sec_vs_end": -676
+   },
+   {
+    "title": "Laver Cup: Alexander Zverev vs Alex de Minaur",
+    "price": 0.989,
+    "size": 40.0,
+    "sec_vs_end": -676
+   },
+   {
+    "title": "Laver Cup: Alexander Zverev vs Alex de Minaur",
+    "price": 0.989,
+    "size": 5.0,
+    "sec_vs_end": -676
+   }
+  ],
+  "median_mins_before_payout": 31.25
+ },
+ {
+  "label": "jiafanpomarke001",
+  "wallet": "0x7635ed586336bc7246b39cd416ed17e4858963f6",
+  "buys": 5411,
+  "settled_buys": 5411,
+  "open_or_unknown": 0,
+  "dollars": 2730897.39,
+  "profit": -5493.72,
+  "lost_buys": 24,
+  "lost_dollars": 9405.0,
+  "void_buys": 2,
+  "first_trade": "2026-09-05T20:41",
+  "last_trade": "2026-10-03T22:55",
+  "market_types": {
+   "moneyline": 2668,
+   "child_moneyline": 1115,
+   "totals": 795,
+   "first_half_totals": 347,
+   "spreads": 149
+  },
+  "series": {
+   "league-of-legends": 1207,
+   "dota-2": 714,
+   "soccer-unl": 468,
+   "atp": 367,
+   "counter-strike": 366,
+   "premier-league-2025": 363
+  },
+  "timing": {
+   "during play (5+ min before the end)": {
+    "buys": 1178,
+    "dollars": 802896,
+    "shares": 803944,
+    "lost": 0,
+    "median_price": 0.999
+   },
+   "last 5 min before the end": {
+    "buys": 358,
+    "dollars": 236235,
+    "shares": 236472,
+    "lost": 0,
+    "median_price": 0.999
+   },
+   "0-60 s after the end": {
+    "buys": 149,
+    "dollars": 101497,
+    "shares": 101599,
+    "lost": 0,
+    "median_price": 0.999
+   },
+   "1-5 min after": {
+    "buys": 311,
+    "dollars": 146982,
+    "shares": 147129,
+    "lost": 0,
+    "median_price": 0.999
+   },
+   "5-30 min after": {
+    "buys": 684,
+    "dollars": 270365,
+    "shares": 270783,
+    "lost": 0,
+    "median_price": 0.999
+   },
+   "30+ min after": {
+    "buys": 224,
+    "dollars": 53299,
+    "shares": 53355,
+    "lost": 0,
+    "median_price": 0.999
+   }
+  },
+  "price_by_band": {
+   "0.999+": 5131,
+   "0.99-0.995": 83,
+   "0.995-0.999": 85,
+   "0.95-0.98": 81,
+   "0.98-0.99": 31
+  },
+  "losses": [
+   {
+    "title": "Counter-Strike: Luminosity vs BIG (BO3) - Stake Ranked Episode 4 Playoffs",
+    "price": 0.99,
+    "size": 25.0,
+    "sec_vs_end": null
+   },
+   {
+    "title": "Counter-Strike: Luminosity vs BIG (BO3) - Stake Ranked Episode 4 Playoffs",
+    "price": 0.99,
+    "size": 140.04,
+    "sec_vs_end": null
+   },
+   {
+    "title": "Counter-Strike: Luminosity vs BIG (BO3) - Stake Ranked Episode 4 Playoffs",
+    "price": 0.99,
+    "size": 25.0,
+    "sec_vs_end": null
+   },
+   {
+    "title": "Counter-Strike: Luminosity vs BIG (BO3) - Stake Ranked Episode 4 Playoffs",
+    "price": 0.99,
+    "size": 1300.0,
+    "sec_vs_end": null
+   },
+   {
+    "title": "Counter-Strike: Luminosity vs BIG (BO3) - Stake Ranked Episode 4 Playoffs",
+    "price": 0.99,
+    "size": 25.0,
+    "sec_vs_end": null
+   },
+   {
+    "title": "Counter-Strike: Luminosity vs BIG (BO3) - Stake Ranked Episode 4 Playoffs",
+    "price": 0.99,
+    "size": 310.0,
+    "sec_vs_end": null
+   },
+   {
+    "title": "Counter-Strike: Luminosity vs BIG (BO3) - Stake Ranked Episode 4 Playoffs",
+    "price": 0.99,
+    "size": 250.0,
+    "sec_vs_end": null
+   },
+   {
+    "title": "Counter-Strike: Luminosity vs BIG (BO3) - Stake Ranked Episode 4 Playoffs",
+    "price": 0.99,
+    "size": 84.0,
+    "sec_vs_end": null
+   },
+   {
+    "title": "Counter-Strike: Luminosity vs BIG (BO3) - Stake Ranked Episode 4 Playoffs",
+    "price": 0.99,
+    "size": 10.31,
+    "sec_vs_end": null
+   },
+   {
+    "title": "Counter-Strike: Luminosity vs BIG (BO3) - Stake Ranked Episode 4 Playoffs",
+    "price": 0.99,
+    "size": 100.0,
+    "sec_vs_end": null
+   },
+   {
+    "title": "Counter-Strike: Luminosity vs BIG (BO3) - Stake Ranked Episode 4 Playoffs",
+    "price": 0.99,
+    "size": 315.0,
+    "sec_vs_end": null
+   },
+   {
+    "title": "Counter-Strike: Luminosity vs BIG (BO3) - Stake Ranked Episode 4 Playoffs",
+    "price": 0.99,
+    "size": 230.0,
+    "sec_vs_end": null
+   },
+   {
+    "title": "Counter-Strike: Luminosity vs BIG (BO3) - Stake Ranked Episode 4 Playoffs",
+    "price": 0.99,
+    "size": 900.0,
+    "sec_vs_end": null
+   },
+   {
+    "title": "Counter-Strike: Luminosity vs BIG (BO3) - Stake Ranked Episode 4 Playoffs",
+    "price": 0.99,
+    "size": 225.0,
+    "sec_vs_end": null
+   },
+   {
+    "title": "Counter-Strike: Luminosity vs BIG (BO3) - Stake Ranked Episode 4 Playoffs",
+    "price": 0.99,
+    "size": 12.28,
+    "sec_vs_end": null
+   }
+  ],
+  "median_mins_before_payout": 56.6167
+ }
+]

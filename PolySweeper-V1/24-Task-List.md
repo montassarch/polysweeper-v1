@@ -13,7 +13,8 @@ this list is the one to follow. Owner = who does it.
 
 ## Now: running test (Phase 1)
 
-- [ ] **Restart the autopilot once** (restart the PC, or `stop_shadow.bat` then `autopilot.bat`): the PC still runs the first version ([[28-Autopilot]]) — **owner**
+- [x] (done 2026-10-04 00:31: one-time git fix, PC now runs the new autopilot) **Restart the autopilot once** (restart the PC, or `stop_shadow.bat` then `autopilot.bat`): the PC still runs the first version ([[28-Autopilot]]) — **owner**
+- [ ] Old PC copies of `.claude`, `lab` and `30-Research-Hub.md` are in `pc-backup` on the PC and can be deleted; PC edits saved on branch `pc-local-changes` — **owner** (optional)
 - [ ] Pull in Obsidian, then double-click `setup_autopilot.bat` once ([[28-Autopilot]]) — **owner**
 - [ ] Keep shadow mode running, PC awake and plugged in (set sleep to Never; it slept 27 of 49 h) — **owner**
 - [x] First results written up: [[26-First-Shadow-Results]]
@@ -35,7 +36,7 @@ this list is the one to follow. Owner = who does it.
 - [x] Cloud network set to full trust (owner, 2026-10-03): agents can read web pages; live feed tested on the real server
 - [ ] Optional: install the "Exa Deep Research" plugin for better web reading — **owner**
 - [ ] Read the daily research note; tell the lab what to focus on — **owner** (whenever useful)
-- [ ] Health checks: confirm the fix (a `daily/` folder appears on main; updates picked up within ~1 minute) — **assistant (lab)**
+- [x] Fix confirmed 2026-10-04 00:35: `daily/` folder on main, a code update was picked up and synced within 30 s
 - [ ] Lab next: research #8 maker rebates / liquidity rewards and #10 profitable 0.99+ wallets — **assistant (lab)**
 
 ## Next: compare with the late band (Phase 2)

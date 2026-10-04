@@ -103,3 +103,7 @@ Back to [[V1-Home]].
   must restart the autopilot once ([[28-Autopilot]]).
 - PC updates were blocked by 5 files edited on the PC (screenshot). Owner given 4 rehearsed git
   commands; autopilot now keeps PC edits as a commit or stash and never loops ([[28-Autopilot]]).
+
+## 2026-10-04
+
+- PC unblocked (00:31 UTC): owner ran the one-time git fix (PC edits stashed and saved on branch `pc-local-changes`, old untracked copies moved to `pc-backup`, merged and pushed). Data from 19:12-22:14 Oct 3 and the score log arrived; the new autopilot picked up a test code push and synced within 30 s ([[28-Autopilot]]). Data gap 22:14-00:31 (shadow mode was in a restart loop, then the PC was restarted).

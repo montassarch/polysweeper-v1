@@ -40,7 +40,7 @@ this list is the one to follow. Owner = who does it.
 - [ ] Read the daily research note; tell the lab what to focus on — **owner** (whenever useful)
 - [x] Fix confirmed 2026-10-04 00:35: `daily/` folder on main, a code update was picked up and synced within 30 s
 - [x] (2026-10-04) #10 profitable wallets, first pass ([[R-2026-10-04-wallets]])
-- [ ] Add US sports (MLB, NFL, college football, NHL) to shadow mode: change in `code/`, restarts the PC — **owner OK**, then **assistant**
+- [x] (2026-10-04 12:33 UTC) US sports (MLB, NFL, college football, NHL) added to shadow mode; PC restarted fine
 - [ ] Rebuild the game situation at each buy of the best US-sports wallet: which situations never lose? — **assistant (lab)**
 - [ ] Lab next: #8 maker rebates / liquidity rewards; more US-sports wallets at 0.98-0.995 — **assistant (lab)**
 - [ ] Tonight: run `lab/locked_watch.py` during NFL (~16:50 and ~20:00 UTC) and MLB postseason; write results into [[R-2026-10-04]] — **assistant (lab)**

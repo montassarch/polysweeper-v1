@@ -16,7 +16,8 @@ body{color:var(--text);font-family:var(--hud);overflow:hidden}
 #scene:active{cursor:grabbing}
 .vignette{position:fixed;inset:0;pointer-events:none;background:radial-gradient(ellipse at 50% 45%,transparent 55%,rgba(0,0,0,.55) 100%)}
 .hud{position:fixed;inset:0;pointer-events:none;padding:calc(env(safe-area-inset-top,0px) + 14px) 16px calc(env(safe-area-inset-bottom,0px) + 14px);display:grid;grid-template-rows:auto 1fr auto;gap:12px}
-.hud > *{pointer-events:auto;min-width:0}
+.hud > *{min-width:0}
+.hud .box,.hud .nav button{pointer-events:auto}  /* only the panels catch clicks; the rest goes to the city */
 .box{background:var(--glass);border:1px solid var(--line);backdrop-filter:blur(10px) saturate(1.3);-webkit-backdrop-filter:blur(10px) saturate(1.3);padding:12px 14px;clip-path:polygon(0 0,calc(100% - 12px) 0,100% 12px,100% 100%,12px 100%,0 calc(100% - 12px));box-shadow:inset 0 0 0 1px rgba(41,240,255,.06)}
 .top{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;align-items:start}
 h1{margin:0;font-size:clamp(20px,4vw,30px);font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--cyan);text-shadow:0 0 14px rgba(41,240,255,.7),2px 0 0 var(--pink)}
@@ -31,7 +32,12 @@ h1{margin:0;font-size:clamp(20px,4vw,30px);font-weight:700;letter-spacing:.06em;
 .pill{display:inline-block;margin:8px 0 6px;font-family:var(--mono);font-size:12px;padding:3px 8px;border:1px solid currentColor;letter-spacing:.1em}
 #card p{margin:4px 0;font-size:15px;line-height:1.4}
 #card .next{color:var(--dim);font-family:var(--mono);font-size:13px}
-.hint{font-family:var(--mono);font-size:12px;color:var(--dim);text-align:center;align-self:end;padding-bottom:6px}
+.nav{display:grid;gap:8px;justify-items:center;align-self:end}
+.nav .row{display:flex;flex-wrap:wrap;gap:6px;justify-content:center}
+.nav button{font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--text);background:var(--glass);border:1px solid var(--line);padding:7px 10px;cursor:pointer;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.nav button:hover{border-color:var(--cyan)}
+.nav button[aria-pressed="true"]{border-color:currentColor;box-shadow:0 0 12px currentColor}
+.nav .hint{font-family:var(--mono);font-size:12px;color:var(--dim);text-align:center}
 details{max-height:min(52vh,420px);overflow:auto}
 summary{cursor:pointer;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--pink);list-style:none;display:flex;justify-content:space-between}
 summary::after{content:"+";font-family:var(--mono)} details[open] summary::after{content:"–"}
@@ -46,7 +52,8 @@ summary::after{content:"+";font-family:var(--mono)} details[open] summary::after
 :focus-visible{outline:2px solid var(--cyan);outline-offset:2px}
 @media (max-width:900px){
   .bottom{grid-template-columns:1fr}
-  .hint{display:none}
+  .nav .hint{display:none}
+  .nav{order:-1}
   .stats{grid-template-columns:repeat(2,auto)}
   details{max-height:34vh}
 }
@@ -73,7 +80,7 @@ summary::after{content:"+";font-family:var(--mono)} details[open] summary::after
   <div></div>
   <div class="bottom">
     <div class="box" id="card" aria-live="polite"></div>
-    <div class="hint">Drag to turn · scroll to zoom · tap a tower</div>
+    <div class="nav"><div class="row" id="nav" aria-label="Fly to a tower"></div><div class="hint">Drag to turn · scroll or pinch to zoom · click a tower to fly to it</div></div>
     <div class="box">
       <details id="log">
         <summary>Quest log &amp; schedule</summary>
@@ -384,20 +391,42 @@ renderHud(); setInterval(()=>{ renderHud(); updateStatus(); }, 30000);
     if(THREE.FXAAShader){ fxaa = new THREE.ShaderPass(THREE.FXAAShader); composer.addPass(fxaa); }
   }
 
-  // camera orbit (drag) + zoom + tap to select
-  let theta = .75, phi = 1.12, radius = small ? 135 : 112, auto = !reduce, dragging = false, moved = 0, lx=0, ly=0;
-  const target = new THREE.Vector3(0, 20, 0);
-  canvas.addEventListener("pointerdown", e=>{ dragging=true; moved=0; lx=e.clientX; ly=e.clientY; canvas.setPointerCapture(e.pointerId); });
-  canvas.addEventListener("pointermove", e=>{ if(!dragging) return; const dx=e.clientX-lx, dy=e.clientY-ly; moved+=Math.abs(dx)+Math.abs(dy);
-    theta -= dx*.006; phi = Math.min(1.45, Math.max(.45, phi - dy*.004)); lx=e.clientX; ly=e.clientY; auto=false; });
-  canvas.addEventListener("pointerup", e=>{ dragging=false; if(moved<6) pick(e); setTimeout(()=>{ if(!dragging && !reduce) auto=true; }, 7000); });
-  canvas.addEventListener("wheel", e=>{ e.preventDefault(); radius = Math.min(220, Math.max(50, radius + e.deltaY*.08)); }, {passive:false});
+  // camera: drag to orbit, scroll/pinch to zoom, click a tower (or a button) to fly to it
+  let theta = .75, phi = 1.12, radius = small ? 135 : 112, auto = !reduce, moved = 0;
+  const HOME = {t:new THREE.Vector3(0, 20, 0), r: small ? 135 : 112};
+  const target = HOME.t.clone(), goalT = HOME.t.clone(); let goalR = radius, idleTimer = null;
+  const pts = new Map(); let pinch0 = 0, r0 = radius;
+  function stopAuto(){ auto = false; clearTimeout(idleTimer); }
+  function idleLater(){ clearTimeout(idleTimer); if(!reduce) idleTimer = setTimeout(()=>{ if(!pts.size) auto = true; }, 15000); }
+  canvas.addEventListener("pointerdown", e=>{ pts.set(e.pointerId,{x:e.clientX,y:e.clientY}); canvas.setPointerCapture(e.pointerId); moved=0; stopAuto();
+    if(pts.size===2){ const [p1,p2]=[...pts.values()]; pinch0 = Math.hypot(p1.x-p2.x,p1.y-p2.y); r0 = goalR; } });
+  canvas.addEventListener("pointermove", e=>{ const p = pts.get(e.pointerId); if(!p) return;
+    const dx=e.clientX-p.x, dy=e.clientY-p.y; p.x=e.clientX; p.y=e.clientY; moved+=Math.abs(dx)+Math.abs(dy);
+    if(pts.size===2){ const [p1,p2]=[...pts.values()]; const d=Math.hypot(p1.x-p2.x,p1.y-p2.y); if(pinch0) goalR = Math.min(240, Math.max(25, r0*pinch0/d)); return; }
+    theta -= dx*.006; phi = Math.min(1.5, Math.max(.3, phi - dy*.004)); });
+  function up(e){ const wasTap = pts.size===1 && moved<6; pts.delete(e.pointerId); if(pts.size<2) pinch0 = 0; if(wasTap) pick(e); idleLater(); }
+  canvas.addEventListener("pointerup", up); canvas.addEventListener("pointercancel", up);
+  canvas.addEventListener("wheel", e=>{ e.preventDefault(); stopAuto(); goalR = Math.min(240, Math.max(25, goalR * (1 + e.deltaY*.0012))); idleLater(); }, {passive:false});
+  canvas.addEventListener("dblclick", ()=> flyHome());
   const ray = new THREE.Raycaster(), mv = new THREE.Vector2();
   function pick(e){
     const r = canvas.getBoundingClientRect(); mv.set(((e.clientX-r.left)/r.width)*2-1, -((e.clientY-r.top)/r.height)*2+1);
     ray.setFromCamera(mv, camera); const hit = ray.intersectObjects(pickables)[0];
-    if(hit){ selected = hit.object.userData.id; showCard(); }
+    if(hit) flyTo(hit.object.userData.id);
   }
+  function flyTo(id){
+    const tw = towers.find(t=>t.a.id===id); if(!tw) return;
+    selected = id; showCard(); markNav(); stopAuto();
+    const top = tw.g.userData.top;
+    goalT.set(tw.g.position.x, top*.55, tw.g.position.z); goalR = Math.max(38, top*1.25); phi = Math.min(phi, 1.25); idleLater();
+  }
+  function flyHome(){ selected = "sweeper"; showCard(); markNav(); goalT.copy(HOME.t); goalR = HOME.r; phi = 1.12; if(!reduce) auto = true; }
+  const nav = document.getElementById("nav");
+  nav.innerHTML = `<button type="button" data-id="home" style="color:var(--text)">Overview</button>` +
+    CREW.map(a=>`<button type="button" data-id="${a.id}" style="color:${hexOf(a.color)}">${a.name.replace(/^The /,"").replace("You, the Keeper","You")}</button>`).join("");
+  nav.addEventListener("click", e=>{ const b = e.target.closest("button"); if(!b) return; b.dataset.id==="home" ? flyHome() : flyTo(b.dataset.id); });
+  function markNav(){ nav.querySelectorAll("button").forEach(b=> b.setAttribute("aria-pressed", String(b.dataset.id===selected && selected!=="home"))); }
+  addEventListener("keydown", e=>{ if(e.key==="Escape") flyHome(); });
 
   function resize(){
     const w=innerWidth, h=innerHeight; renderer.setSize(w,h,false); camera.aspect=w/h; camera.updateProjectionMatrix();
@@ -409,6 +438,7 @@ renderHud(); setInterval(()=>{ renderHud(); updateStatus(); }, 30000);
   function frame(){
     const dt = Math.min(clock.getDelta(), .05), t = clock.elapsedTime;
     if(auto) theta += dt*.045;
+    const k = 1 - Math.pow(.02, dt); target.lerp(goalT, k); radius += (goalR - radius)*k;
     camera.position.set(target.x + radius*Math.sin(phi)*Math.cos(theta), target.y + radius*Math.cos(phi), target.z + radius*Math.sin(phi)*Math.sin(theta));
     camera.lookAt(target);
     if(!reduce){

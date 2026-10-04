@@ -1,0 +1,110 @@
+{
+ "MLB 2026-09-20..10-03": {
+  "locked_markets": 1358,
+  "settled_as_predicted": 1340,
+  "mismatches_note": "all MLB mismatches = doubleheaders/slug-date errors matched to the wrong game",
+  "median_secs_lock_to_close": 1222,
+  "after_0s_0.90-0.99": {
+   "mk_taker": 85,
+   "sh_taker": 46707,
+   "mk_bid": 66,
+   "sh_bid": 77215
+  },
+  "after_10s_0.90-0.99": {
+   "mk_taker": 29,
+   "sh_taker": 28038,
+   "mk_bid": 62,
+   "sh_bid": 76113
+  },
+  "after_30s_0.90-0.99": {
+   "mk_taker": 21,
+   "sh_taker": 9861,
+   "mk_bid": 52,
+   "sh_bid": 75352
+  },
+  "after_60s_0.90-0.99": {
+   "mk_taker": 12,
+   "sh_taker": 3844,
+   "mk_bid": 41,
+   "sh_bid": 73952
+  },
+  "after_120s_0.90-0.99": {
+   "mk_taker": 6,
+   "sh_taker": 2685,
+   "mk_bid": 13,
+   "sh_bid": 60299
+  },
+  "after_300s_0.90-0.99": {
+   "mk_taker": 2,
+   "sh_taker": 649,
+   "mk_bid": 4,
+   "sh_bid": 34469
+  },
+  "after_10s_0.991-0.998": {
+   "mk_taker": 4,
+   "sh_taker": 1903,
+   "mk_bid": 19,
+   "sh_bid": 2843
+  },
+  "after_120s_0.991-0.998": {
+   "mk_taker": 3,
+   "sh_taker": 659,
+   "mk_bid": 14,
+   "sh_bid": 2241
+  }
+ },
+ "NFL 2026-09-17..10-03": {
+  "locked_markets": 838,
+  "settled_as_predicted": 838,
+  "mismatches_note": "",
+  "median_secs_lock_to_close": 2719,
+  "after_0s_0.90-0.99": {
+   "mk_taker": 74,
+   "sh_taker": 56416,
+   "mk_bid": 27,
+   "sh_bid": 4620
+  },
+  "after_10s_0.90-0.99": {
+   "mk_taker": 66,
+   "sh_taker": 45357,
+   "mk_bid": 26,
+   "sh_bid": 4558
+  },
+  "after_30s_0.90-0.99": {
+   "mk_taker": 32,
+   "sh_taker": 9515,
+   "mk_bid": 23,
+   "sh_bid": 2963
+  },
+  "after_60s_0.90-0.99": {
+   "mk_taker": 23,
+   "sh_taker": 6543,
+   "mk_bid": 16,
+   "sh_bid": 1410
+  },
+  "after_120s_0.90-0.99": {
+   "mk_taker": 15,
+   "sh_taker": 4154,
+   "mk_bid": 11,
+   "sh_bid": 795
+  },
+  "after_300s_0.90-0.99": {
+   "mk_taker": 8,
+   "sh_taker": 178,
+   "mk_bid": 7,
+   "sh_bid": 448
+  },
+  "after_10s_0.991-0.998": {
+   "mk_taker": 9,
+   "sh_taker": 335,
+   "mk_bid": 6,
+   "sh_bid": 509
+  },
+  "after_120s_0.991-0.998": {
+   "mk_taker": 1,
+   "sh_taker": 176,
+   "mk_bid": 5,
+   "sh_bid": 298
+  }
+ }
+}

@@ -1,0 +1,73 @@
+{
+ "markets": 150,
+ "proxy_agrees": 143,
+ "before_end": {
+  "1-10s | flip needs 0.03-0.1% | 0.95-0.99": {
+   "buys": 128,
+   "lost": 0,
+   "shares": 7651,
+   "pnl": 98.7
+  },
+  "1-10s | flip needs <0.03% (or behind) | 0.95-0.99": {
+   "buys": 87,
+   "lost": 0,
+   "shares": 3071,
+   "pnl": 40.3
+  },
+  "11-30s | flip needs 0.03-0.1% | 0.95-0.99": {
+   "buys": 435,
+   "lost": 0,
+   "shares": 19530,
+   "pnl": 251.0
+  },
+  "11-30s | flip needs 0.03-0.1% | >0.998": {
+   "buys": 8,
+   "lost": 0,
+   "shares": 32,
+   "pnl": 0.0
+  },
+  "11-30s | flip needs <0.03% (or behind) | 0.95-0.99": {
+   "buys": 1565,
+   "lost": 3,
+   "shares": 63318,
+   "pnl": 877.7
+  },
+  "31-60s | flip needs 0.03-0.1% | 0.95-0.99": {
+   "buys": 691,
+   "lost": 0,
+   "shares": 36494,
+   "pnl": 506.3
+  },
+  "31-60s | flip needs 0.03-0.1% | 0.99-0.998": {
+   "buys": 35,
+   "lost": 0,
+   "shares": 3163,
+   "pnl": 6.8
+  },
+  "31-60s | flip needs 0.03-0.1% | >0.998": {
+   "buys": 43,
+   "lost": 0,
+   "shares": 1544,
+   "pnl": 1.5
+  },
+  "31-60s | flip needs <0.03% (or behind) | 0.95-0.99": {
+   "buys": 5737,
+   "lost": 271,
+   "shares": 186809,
+   "pnl": -4004.7
+  },
+  "31-60s | flip needs <0.03% (or behind) | 0.99-0.998": {
+   "buys": 1,
+   "lost": 0,
+   "shares": 15,
+   "pnl": 0.0
+  },
+  "31-60s | flip needs <0.03% (or behind) | >0.998": {
+   "buys": 2,
+   "lost": 0,
+   "shares": 20,
+   "pnl": 0.0
+  }
+ },
+ "after_end": {}
+}

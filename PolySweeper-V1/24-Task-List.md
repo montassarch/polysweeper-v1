@@ -36,7 +36,7 @@ this list is the one to follow. Owner = who does it.
 
 - [x] Team of agents, idea board and daily routines set up ([[30-Research-Hub]])
 - [x] Cloud network set to full trust (owner, 2026-10-03): agents can read web pages; live feed tested on the real server
-- [ ] Optional: install the "Exa Deep Research" plugin for better web reading — **owner**
+- [x] (2026-10-04) Exa connected on claude.ai (works in new chats and the PC chat; free credit only, never add a card)
 - [ ] Read the daily research note; tell the lab what to focus on — **owner** (whenever useful)
 - [x] Fix confirmed 2026-10-04 00:35: `daily/` folder on main, a code update was picked up and synced within 30 s
 - [x] (2026-10-04) #10 profitable wallets, first pass ([[R-2026-10-04-wallets]])

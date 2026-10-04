@@ -107,3 +107,4 @@ Back to [[V1-Home]].
 ## 2026-10-04
 
 - PC unblocked (00:31 UTC): owner ran the one-time git fix (PC edits stashed and saved on branch `pc-local-changes`, old untracked copies moved to `pc-backup`, merged and pushed). Data from 19:12-22:14 Oct 3 and the score log arrived; the new autopilot picked up a test code push and synced within 30 s ([[28-Autopilot]]). Data gap 22:14-00:31 (shadow mode was in a restart loop, then the PC was restarted).
+- Read the 00:34 sync: live feed on the PC connected, 0 errors, 36/36 checks agree. Price only since 16:31 Oct 3: 24 wins, 0 losses, +$3.90 (since start: 92 wins, 4 losses, about -$4.51). Confirmed/score rules: still 0 buys. First 8 matches watched with the live feed: no trades at 0.96-0.995 after the result, but late-band trades (0.995-0.999) in all 8, ~87,700 shares in total. Points toward the late band (Phase 2).

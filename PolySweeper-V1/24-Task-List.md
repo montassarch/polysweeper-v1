@@ -22,7 +22,8 @@ this list is the one to follow. Owner = who does it.
 - [x] Data sync is automatic every 3 hours (autopilot)
 - [ ] Read results after each sync and report — **assistant**
 - [x] Live feed + 2-second checks near the end + score log (shadow v2.6, [[29-Live-Feed-and-Score-Log]])
-- [ ] Check the first `live_feed_status` line from the PC: does the live feed connect and agree with the 15-second reads? — **assistant**
+- [x] (2026-10-04) Live feed on the PC: connected, 0 errors, 36/36 checks agree with the 15-second reads
+- [ ] First live end-window look (8 matches): 0 trades at 0.96-0.995 after the result, but all 8 had late-band trades (0.995-0.999, ~87,700 shares). Confirm over 1-2 days — **assistant**
 - [ ] After 1-2 days: live end-window report (any gap after the result?) — **assistant**
 - [ ] After a few days: test tennis "practically locked" rules on the score log — **assistant**
 - [x] Shadow mode: enforce B7 (max 1 pretend buy per match and rule; second chances logged as `skip_second_buy`)

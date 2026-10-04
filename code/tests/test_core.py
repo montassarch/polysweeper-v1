@@ -306,6 +306,32 @@ class ShadowRobustnessTests(unittest.TestCase):
         sh.leagues = lambda: {"cs2": {"series": "1"}}
         return sh, sh.Shadow(["cs2"], Limits.from_json("config.json"))
 
+    def test_fill_check_second_look_and_public_trades(self):
+        import tempfile, json
+        with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as d:
+            sh, s = self.make(d)
+            self.addCleanup(setattr, sh, "post_json", sh.post_json)
+            self.addCleanup(setattr, sh, "get_json", sh.get_json)
+            t0 = 1000.0
+            s.followups = [{"key": "k1", "rule": "score", "token": "t1", "t0": t0, "cond": "c1", "worst": 0.99, "shares": 5},
+                           {"key": "k2", "rule": "score", "token": "t2", "t0": t0, "cond": "c2", "worst": 0.99, "shares": 5}]
+            books = {"t1": [{"price": "0.99", "size": "7"}], "t2": [{"price": "0.995", "size": "50"}]}
+            sh.post_json = lambda url, payload, tries=4: [{"asks": books[payload[0]["token_id"]]}]
+            trades = {"c1": [], "c2": [{"asset": "t2", "side": "BUY", "price": 0.99, "size": 9, "timestamp": 1003},
+                                     {"asset": "t2", "side": "BUY", "price": 0.99, "size": 4, "timestamp": 900}]}
+            sh.get_json = lambda url, tries=5: trades[url.split("market=")[1].split("&")[0]]
+            s.check_fills(t0 + 3)
+            self.assertEqual(len(s.followups), 2)      # trades not looked at yet
+            s.check_fills(t0 + 11)
+            self.assertEqual(s.followups, [])
+            s.trade_f.flush()
+            rows = [json.loads(l) for l in open(s.trade_f.name) if '"fill_check"' in l]
+            v = {r["key"]: r for r in rows}
+            self.assertEqual(v["k1"]["verdict"], "likely filled")
+            self.assertEqual(v["k2"]["verdict"], "taken by others")
+            self.assertEqual(v["k2"]["others_bought_shares"], 9)
+            s.close()
+
     def test_bad_market_does_not_stop_the_round(self):
         import tempfile
         with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as d:
@@ -613,7 +639,9 @@ class AutopilotNotesOnlyTests(unittest.TestCase):
 
     def push_from_dev(self, rel, text):
         self.write(self.dev, rel, text)
-        self.g(self.dev, "commit", "-qam", "update"); self.g(self.dev, "push", "-q", "origin", "HEAD:main")
+        self.g(self.dev, "commit", "-qam", "update")
+        self.g(self.dev, "pull", "-q", "--rebase", "origin", "main")      # the PC may have pushed data meanwhile
+        self.g(self.dev, "push", "-q", "origin", "HEAD:main")
 
     def test_notes_only_update_is_pulled_and_data_kept(self):
         self.push_from_dev("Notes/a.md", "note v2\n")
@@ -754,6 +782,62 @@ class AutopilotNotesOnlyTests(unittest.TestCase):
     def branches(self):
         import subprocess
         return subprocess.run(["git", "-C", str(self.dev), "branch"], capture_output=True, text=True).stdout
+
+    def test_bad_update_goes_back_on_purpose(self):
+        """Go-back test: a version that stops shadow mode from writing live.json is undone by itself."""
+        import sys, time
+        ap = self.ap
+        saved = (ap.LIVE, ap.GOOD, ap.HOLD, ap.STOP, ap.VERIFY_SECONDS)
+        d = self.pc.parent
+        ap.LIVE, ap.GOOD, ap.HOLD, ap.STOP, ap.VERIFY_SECONDS = d / "live.json", d / "good", d / "hold", d / "STOP", 1.5
+        ok_file = self.pc / "code" / "fake_ok.txt"
+        script = ("import os,sys,time\n"
+                  "ok, live, stop = sys.argv[1:4]\n"
+                  "if not os.path.exists(ok): sys.exit(1)\n"            # the 'bad version': crashes at start
+                  "while not os.path.exists(stop):\n"
+                  "    open(live, 'w').write('{}'); time.sleep(0.2)\n")
+        sh = ap.ShadowProcess([sys.executable, "-c", script, str(ok_file), str(ap.LIVE), str(ap.STOP)])
+        try:
+            self.write(self.dev, "code/fake_ok.txt", "ok\n")
+            self.g(self.dev, "add", "-A")
+            self.push_from_dev("code/fake_ok.txt", "ok\n")
+            ap.update_available(); ap.pull()
+            sh.start()
+            v = ap.Verifier()
+            v.start(time.time())
+            time.sleep(1.8)
+            self.assertEqual(v.tick(sh, time.time()), "good")
+            good = ap.head()
+            self.assertEqual(ap._read(ap.GOOD), good)
+            # the bad update: removes the file the stand-in needs
+            self.g(self.dev, "rm", "-q", "code/fake_ok.txt"); self.g(self.dev, "commit", "-qm", "bad")
+            self.g(self.dev, "pull", "-q", "--rebase", "origin", "main")
+            self.g(self.dev, "push", "-q", "origin", "HEAD:main")
+            self.assertTrue(ap.update_available())
+            self.assertEqual(ap.apply_update(sh, "code/polysweeper/autopilot.py"), "ok")
+            v.start(time.time())
+            time.sleep(1.8)
+            self.assertEqual(v.tick(sh, time.time()), "went back")
+            self.assertTrue(ok_file.exists())                         # code is back to the good version
+            self.assertTrue(ap.held())
+            self.assertIn("two", (self.pc / "code/data/shadow/trades.jsonl").read_text())   # data kept
+            time.sleep(1.8)
+            self.assertEqual(v.tick(sh, time.time()), "good")         # and shadow mode runs again
+            self.assertEqual(ap._read(ap.GOOD), good)                 # the bad version is never marked good
+            self.push_from_dev("Notes/a.md", "note during hold\n")
+            ap.update_available()
+            self.assertFalse(ap.code_change_since_hold())             # notes only: keep holding
+            self.write(self.dev, "code/fake_ok.txt", "fixed\n")        # a real fix arrives
+            self.g(self.dev, "add", "-A")
+            self.push_from_dev("code/fake_ok.txt", "fixed\n")
+            ap.update_available()
+            self.assertTrue(ap.code_change_since_hold())
+            ap.leave_hold()
+            self.assertFalse(ap.held())
+            self.assertIn("code/fake_ok.txt", ap.pull())
+        finally:
+            sh.stop(wait=5)
+            ap.LIVE, ap.GOOD, ap.HOLD, ap.STOP, ap.VERIFY_SECONDS = saved
 
     def test_unknown_changes_count_as_code(self):
         self.assertTrue(self.ap.touches_code(None))

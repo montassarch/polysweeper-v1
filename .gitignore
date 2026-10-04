@@ -21,3 +21,5 @@ code/data/shadow/live.json.tmp
 app/bin/
 app/build/
 app/selftest/
+code/data/shadow/good_commit
+code/data/shadow/hold_commit

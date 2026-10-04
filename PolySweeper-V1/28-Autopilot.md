@@ -111,3 +111,13 @@ were rehearsed first on an exact copy of the PC's state.
 - Files in the way of an update: renamed to `.pc-copy-<time>`. Nothing is deleted.
 - If an update still fails, shadow mode keeps running and the next try is in 30 minutes (no
   restart loop). The window and the log show the full error.
+
+## Automatic go-back after a bad update (2026-10-04)
+
+- After every code update, the autopilot watches `code/data/shadow/live.json` (rewritten every ~2 s).
+- If it is fresh within 3 minutes, the new code is marked as "last working" (`good_commit`).
+- If not, it puts back the last working code (data files are kept), restarts shadow mode, writes
+  **WENT BACK** in the autopilot log and remembers the bad version (`hold_commit`).
+- While held, notes-only updates do not undo the go-back; the next update that changes code ends
+  the hold and is checked the same way.
+- Tested on purpose with a deliberately broken update (automatic test `test_bad_update_goes_back_on_purpose`).

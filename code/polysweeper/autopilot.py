@@ -38,6 +38,10 @@ APP_BRANCH = "app-build"                           # PolySweeper.exe, built on G
 APP_EXE = REPO / "app" / "bin" / "PolySweeper.exe" # app/bin is git-ignored
 APP_EVERY = 60 * 60                                # look for a new desktop app every hour
 SYNC_EVERY = 3 * 60 * 60
+VERIFY_SECONDS = 180                               # after a code update: shadow mode must keep writing live.json
+LIVE = SHADOW_DIR / "live.json"
+GOOD = SHADOW_DIR / "good_commit"                  # last version seen running well (git-ignored)
+HOLD = SHADOW_DIR / "hold_commit"                  # a bad update we went back from (git-ignored)
 RESTART_DELAY = 30
 SELF_UPDATE = 3
 
@@ -210,9 +214,89 @@ def sync_data():
     if not ok:
         log(f"commit FAILED ({out[:300]})")
         return
-    pull()
+    if not held():                                   # while holding back a bad update, do not pull it in again
+        pull()
     ok, out = git("push", "origin", f"HEAD:{BRANCH}")
     log("shadow data pushed to GitHub" if ok else f"push FAILED, will retry next time ({out[:300]})")
+
+
+def _read(p):
+    try:
+        return p.read_text().strip()
+    except OSError:
+        return ""
+
+
+def held():
+    return bool(_read(HOLD))
+
+
+def shadow_healthy(since):
+    """Shadow mode is really working: live.json was rewritten after `since` and in the last 30 s."""
+    try:
+        m = LIVE.stat().st_mtime
+    except OSError:
+        return False
+    return m >= since and time.time() - m < 30
+
+
+def code_change_since_hold():
+    """While holding back a bad update: has GitHub got a newer change in code/ (a fix)?"""
+    ok, out = git("diff", "--name-only", _read(HOLD), f"origin/{BRANCH}")
+    return ok and any(f.startswith("code/") and not f.startswith("code/data/") for f in out.split())
+
+
+def go_back(shadow, good):
+    """The update broke shadow mode: put the code back to the last good version (the data files are
+    not touched), start shadow mode again and hold this update until a newer code fix arrives."""
+    bad = head()
+    shadow.stop(why="(the new version is not working: going back)")
+    sync_data()
+    ok, out = git("checkout", good, "--", "code", ":(exclude)code/data")
+    if not ok:
+        log(f"could NOT go back to {good[:7]} ({_gist(out)}); starting the new version again")
+        shadow.start()
+        return False
+    HOLD.write_text(bad)
+    log(f"WENT BACK: version {bad[:7]} did not keep shadow mode running; now running {good[:7]} again. "
+        f"Updates are paused until a newer code fix is on GitHub.")
+    shadow.start()
+    return True
+
+
+def leave_hold():
+    """A newer code fix arrived: drop the going-back copy so the normal update can bring the fix in."""
+    git("checkout", "HEAD", "--", "code", ":(exclude)code/data")
+    HOLD.unlink()
+    log("a newer code fix is on GitHub: leaving the held-back state")
+
+
+class Verifier:
+    """After a start or a code update: is shadow mode really running? Remember the version if yes,
+    go back to the last good version if not."""
+
+    def __init__(self):
+        self.due = None
+
+    def start(self, now):
+        self.since, self.due = now, now + VERIFY_SECONDS
+
+    def tick(self, shadow, now):
+        if self.due is None or now < self.due:
+            return None
+        self.due = None
+        if shadow_healthy(self.since):
+            if not held() and _read(GOOD) != head():     # while held, HEAD is the bad version: never mark it
+                GOOD.write_text(head())
+                log(f"version {head()[:7]} checked: shadow mode is running well")
+            return "good"
+        good = _read(GOOD)
+        if good and good != head() and not held():
+            if go_back(shadow, good):
+                self.start(now)
+                return "went back"
+        log("shadow mode is not writing its live file and there is no earlier good version to go back to")
+        return "bad"
 
 
 def install_app():
@@ -338,6 +422,8 @@ def main(cmd=None, max_loops=None, tick=5):
     shadow.start()
     install_app()
     last_check = last_sync = last_app = time.time()
+    verifier = Verifier()
+    verifier.start(last_check)
     retry_at = 0.0
     loops = 0
     while max_loops is None or loops < max_loops:
@@ -355,10 +441,18 @@ def main(cmd=None, max_loops=None, tick=5):
         now = time.time()
         if now - last_check >= CHECK_EVERY and now >= retry_at:
             last_check = now
-            if update_available() and not update_without_restart():
+            new = update_available()
+            if new and held():
+                if code_change_since_hold():
+                    leave_hold()                     # a fix arrived: update normally below
+                else:
+                    new = False                      # holding back a bad update; nothing new in code/ yet
+            if new and not update_without_restart():
                 result = apply_update(shadow, me)
                 if result == "self":
                     return SELF_UPDATE
+                if result == "ok":
+                    verifier.start(now)
                 if result == "failed":               # don't restart shadow mode every minute for nothing
                     retry_at = now + RETRY_AFTER_FAIL
                     log(f"the update could not be brought in; shadow mode keeps running; "
@@ -366,6 +460,7 @@ def main(cmd=None, max_loops=None, tick=5):
         if now - last_sync >= SYNC_EVERY:
             last_sync = now
             sync_data()
+        verifier.tick(shadow, time.time())
         if now - last_app >= APP_EVERY:
             last_app = now
             install_app()

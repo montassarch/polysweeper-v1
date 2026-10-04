@@ -47,7 +47,7 @@ this list is the one to follow. Owner = who does it.
 - [ ] Lab next: #8 maker rebates / liquidity rewards; more US-sports wallets at 0.98-0.995 — **assistant (lab)**
 - [ ] Lab next run: verify the Overwatch / Honor of Kings books with shares at 0.96-0.995 after the result (real winner's book? reliable result signal?) — **assistant (lab)**
 - [x] Live locked-lines watcher on NFL (2026-10-04): nothing for sale on the winner; idea #17 rejected
-- [ ] **Morning of 2026-10-05 (owner OK given):** fix `report_shadow.bat` crash on team names with hidden characters (UnicodeEncodeError, cp1252 console): in `shadow_report.py` `main()` add `sys.stdout.reconfigure(encoding="utf-8", errors="replace")`, run tests, push (restarts shadow mode once) — **lab fixer (05:17 run)**
+- [x] (done 2026-10-04 by V1 session, no need for the lab) **Morning of 2026-10-05 (owner OK given):** fix `report_shadow.bat` crash on team names with hidden characters (UnicodeEncodeError, cp1252 console): in `shadow_report.py` `main()` add `sys.stdout.reconfigure(encoding="utf-8", errors="replace")`, run tests, push (restarts shadow mode once) — **lab fixer (05:17 run)**
 
 ## Next: compare with the late band (Phase 2)
 
@@ -59,9 +59,9 @@ this list is the one to follow. Owner = who does it.
 ## Before any real money (from the audit)
 
 - [ ] **Ready for real money checklist** written: [[32-Go-Live-Checklist]] (15 boxes, all must be ticked for one rule). Review and adjust the numbers — **owner**
-- [ ] **Automatic go-back after a bad update:** after a code update the autopilot checks shadow mode is really running (live.json keeps updating for 3 minutes); if not, it returns to the last working commit, restarts and logs it. Test it once on purpose. Change `autopilot.py` very carefully — **V1 session**
+- [x] (done 2026-10-04, see [[28-Autopilot]]) **Automatic go-back after a bad update:** after a code update the autopilot checks shadow mode is really running (live.json keeps updating for 3 minutes); if not, it returns to the last working commit, restarts and logs it. Test it once on purpose. Change `autopilot.py` very carefully — **V1 session**
 - [ ] **Phone alerts:** a push notification when there is no new PC data for 4 hours, errors pile up, or any pretend loss happens (free method only; ask the owner before anything paid) — **V1 session**
-- [ ] **Second-look check + public-trades check** on every pretend buy (fill rate for the checklist); ship together with the report fix so the PC restarts only once — **V1 session**
+- [x] (done 2026-10-04: `fill_check` lines in trades.jsonl) **Second-look check + public-trades check** on every pretend buy (fill rate for the checklist); ship together with the report fix so the PC restarts only once — **V1 session**
 - [ ] Emergency stop from the phone (before real money) — **V1 session**
 
 - [ ] B1 Set the waiting time after the match per band (low band: fast; late band: can wait) — **assistant**

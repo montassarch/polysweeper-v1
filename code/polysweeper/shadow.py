@@ -127,6 +127,7 @@ class Shadow:
         self.titled = set()        # (date, event_id) whose title is already in that day's file (this run)
         self.feed_check = {"checks": 0, "agree": 0}
         self.started_at = now_iso()
+        self.followups = []        # fill checks waiting: second look after ~2 s, public trades after ~10 s
         self.state_path = OUT / "state.json"
         self.state = json.loads(self.state_path.read_text()) if self.state_path.exists() else {"pending": {}, "entered": []}
         all_l = leagues()
@@ -400,6 +401,42 @@ class Shadow:
             self.counters["fast_rechecks"] += 1
             self.poll_market(mid, info, self.fetch_books({mid}))
 
+    def check_fills(self, now=None):
+        """Would a real order have filled? For every pretend buy: a second look at the book ~2 s later
+        (are the shares still there at our price?) and, ~10 s later, the public trades (did someone
+        else buy them first?). One "fill_check" line per buy in trades.jsonl."""
+        now = time.time() if now is None else now
+        for f in list(self.followups):
+            try:
+                if "second" not in f and now >= f["t0"] + 2:
+                    book = (post_json(f"{CLOB}/books", [{"token_id": f["token"]}], tries=1) or [{}])[0]
+                    f["second"] = round(sum(float(a["size"]) for a in book.get("asks", [])
+                                            if float(a["price"]) <= f["worst"] + 1e-9), 2)
+                if "others" not in f and now >= f["t0"] + 10:
+                    trades = get_json(f"https://data-api.polymarket.com/trades?market={f['cond']}&limit=100",
+                                      tries=1) if f.get("cond") else None
+                    took = [t for t in trades or [] if str(t.get("asset")) == f["token"] and t.get("side") == "BUY"
+                            and float(t.get("price") or 1) <= f["worst"] + 1e-9
+                            and f["t0"] - 3 <= float(t.get("timestamp") or 0) <= f["t0"] + 10]
+                    f["others"] = (round(sum(float(t.get("size") or 0) for t in took), 2), len(took),
+                                   trades is not None)
+            except Exception as exc:
+                f.setdefault("problems", 0)
+                f["problems"] += 1
+                if f["problems"] >= 3:
+                    self.followups.remove(f)
+                    self.error("fill check", exc)
+                continue
+            if "second" in f and "others" in f:
+                still = f["second"] >= f["shares"]
+                shares, n, known = f["others"]
+                verdict = "likely filled" if still else "taken by others" if n else "gone"
+                self.log(self.trade_f, {"type": "fill_check", "ts": now_iso(), "key": f["key"], "rule": f["rule"],
+                                        "second_look_shares": f["second"], "still_there": still,
+                                        "others_bought_shares": shares, "others_trades": n,
+                                        "trades_checked": known, "verdict": verdict})
+                self.followups.remove(f)
+
     def write_live(self):
         """data/shadow/live.json: what shadow mode sees right now, for the desktop app (PolySweeper.exe).
         Rewritten every loop (about every 2 seconds). Never allowed to disturb shadow mode."""
@@ -503,6 +540,8 @@ class Shadow:
         rec["fills"] = fill_levels(asks, L.min_shares, L.price_max)
         rec["asks_top5"] = sorted([float(a["price"]), float(a["size"])] for a in asks)[:5]
         self.log(self.trade_f, rec)
+        self.followups.append({"key": key, "rule": rule, "token": str(info["tokens"][idx]), "t0": time.time(),
+                               "cond": info["market"].get("conditionId"), "worst": worst, "shares": L.min_shares})
         self.state["entered"].append(key)
         self.state.setdefault("matches", {})[f"{rule}:{eid}"] = rec["outcome"] or "a side"
         self.state["pending"][key] = rec
@@ -575,6 +614,10 @@ class Shadow:
                 if t >= next_status:
                     self.live_status()
                     next_status = t + STATUS_EVERY
+                try:
+                    self.check_fills()
+                except Exception as exc:
+                    self.error("check_fills", exc)
                 self.write_live()
                 time.sleep(FAST_SECONDS)
         except KeyboardInterrupt:

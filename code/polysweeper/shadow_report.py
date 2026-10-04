@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import json
+import sys
 from datetime import date, datetime
 from pathlib import Path
 
@@ -57,6 +58,10 @@ def live_feed_line(events_path: Path = EVENTS_PATH) -> str:
 
 
 def main():
+    try:                                         # team names with unusual characters crashed the Windows console
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    except (AttributeError, ValueError):
+        pass
     if not PATH.exists():
         print("no shadow data yet")
         return

@@ -117,3 +117,8 @@ Back to [[V1-Home]].
   fills, every trade with its detail, running total chart, after-match study, system/autopilot.
   Shadow mode now writes live.json every ~2 s for it. Built and self-tested on Windows by GitHub
   Actions; the autopilot installs it and makes a desktop shortcut ([[31-Desktop-App]]).
+- PolySweeper.exe built on GitHub's Windows machine: all tests passed on Windows (after making the
+  tests' temporary folders Windows-safe), the app's self-test passed with real live data (bot
+  running, live prices 97% matching) and a Windows screenshot was checked. The app's activity feed
+  showed two real bot problems today ("refresh: JSONDecodeError", an ~11 MB events reply cut off,
+  since US sports were added): downloads now retry a cut-off reply.

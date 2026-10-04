@@ -1017,3 +1017,21 @@ class ShadowReportTodayTests(unittest.TestCase):
         from datetime import date
         from polysweeper.shadow_report import today_lines
         self.assertIn("  no pretend buy paid out today yet", today_lines([], date(2026, 10, 4)))
+
+
+class CutOffReplyTests(unittest.TestCase):
+    def test_a_cut_off_reply_is_fetched_again(self):
+        """2026-10-04: an 11 MB events page arrived cut off (JSONDecodeError) and refresh failed."""
+        import io
+        import polysweeper.collector as col
+        replies = [b'[{"id": "1", "title": "unterminated', b'[{"id": "1"}]']
+        class Reply(io.BytesIO):
+            def __enter__(self): return self
+            def __exit__(self, *a): return False
+        saved = (col.urllib.request.urlopen, col.time.sleep)
+        col.urllib.request.urlopen = lambda req, timeout=40: Reply(replies.pop(0))
+        col.time.sleep = lambda s: None
+        try:
+            self.assertEqual(col.get_json("https://example.invalid/events"), [{"id": "1"}])
+        finally:
+            col.urllib.request.urlopen, col.time.sleep = saved

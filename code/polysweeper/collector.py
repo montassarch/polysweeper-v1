@@ -43,7 +43,8 @@ def get_json(url: str, tries: int = 5):
             if e.code == 404:
                 return None
             raise
-        except (urllib.error.URLError, TimeoutError, ConnectionError, http.client.HTTPException, OSError):
+        except (urllib.error.URLError, TimeoutError, ConnectionError, http.client.HTTPException, OSError,
+                ValueError):                         # ValueError: a reply cut off mid-way (bad JSON); try again
             time.sleep(delay)
             delay *= 2
     return None
@@ -66,7 +67,8 @@ def post_json(url: str, payload, tries: int = 4):
                 delay *= 2
                 continue
             return None
-        except (urllib.error.URLError, TimeoutError, ConnectionError, http.client.HTTPException, OSError):
+        except (urllib.error.URLError, TimeoutError, ConnectionError, http.client.HTTPException, OSError,
+                ValueError):
             time.sleep(delay)
             delay *= 2
     return None

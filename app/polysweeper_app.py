@@ -339,8 +339,14 @@ class App:
         self.drawn = {"version": -1, "feed": 0, "equity": None}
         self.root = root = tk.Tk()
         root.title("PolySweeper — shadow mode (pretend trades, no real money)")
-        root.geometry("1400x880")
-        root.minsize(1060, 680)
+        sw, sh = root.winfo_screenwidth(), root.winfo_screenheight()
+        root.geometry(f"{min(1400, sw - 40)}x{min(880, sh - 80)}")
+        root.minsize(min(1060, sw - 40), min(640, sh - 80))
+        if sw < 1440 or sh < 900:                    # small screen: use all of it
+            try:
+                root.state("zoomed")                 # Windows
+            except Exception:
+                pass
         root.configure(bg=C["bg"])
         try:
             if getattr(sys, "frozen", False):

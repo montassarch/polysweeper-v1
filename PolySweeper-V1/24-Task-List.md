@@ -58,6 +58,12 @@ this list is the one to follow. Owner = who does it.
 
 ## Before any real money (from the audit)
 
+- [ ] **Ready for real money checklist** written: [[32-Go-Live-Checklist]] (15 boxes, all must be ticked for one rule). Review and adjust the numbers — **owner**
+- [ ] **Automatic go-back after a bad update:** after a code update the autopilot checks shadow mode is really running (live.json keeps updating for 3 minutes); if not, it returns to the last working commit, restarts and logs it. Test it once on purpose. Change `autopilot.py` very carefully — **V1 session**
+- [ ] **Phone alerts:** a push notification when there is no new PC data for 4 hours, errors pile up, or any pretend loss happens (free method only; ask the owner before anything paid) — **V1 session**
+- [ ] **Second-look check + public-trades check** on every pretend buy (fill rate for the checklist); ship together with the report fix so the PC restarts only once — **V1 session**
+- [ ] Emergency stop from the phone (before real money) — **V1 session**
+
 - [ ] B1 Set the waiting time after the match per band (low band: fast; late band: can wait) — **assistant**
 - [ ] B2 Internal team IDs so different spellings count as the same team — **assistant**
 - [ ] B3 Decision model = "market + token" (Yes/No and draw markets) — **assistant**

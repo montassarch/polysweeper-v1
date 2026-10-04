@@ -144,6 +144,14 @@ class Shadow:
         f.write(json.dumps(rec) + "\n")
         f.flush()
 
+    def close(self):
+        """Close the data files (on Windows an open file cannot be deleted or replaced)."""
+        for f in (self.snap_f, self.trade_f, self.event_f, self.err_f):
+            try:
+                f.close()
+            except OSError:
+                pass
+
     def daily(self, rec):
         """One line in data/shadow/daily/<UTC date>.jsonl (a new file each day keeps files small)."""
         d = OUT / "daily"
@@ -576,6 +584,7 @@ class Shadow:
             self.endwatch.close_all()
             self.live_status()
             self.save()
+            self.close()
             print("summary:", self.counters, "| pending:", len(self.state["pending"]))
 
 

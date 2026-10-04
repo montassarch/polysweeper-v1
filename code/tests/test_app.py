@@ -18,7 +18,7 @@ def write(path, rows, end="\n"):
 
 class TailTests(unittest.TestCase):
     def test_only_complete_new_lines_and_restart_on_shrink(self):
-        with tempfile.TemporaryDirectory() as d:
+        with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as d:
             p = Path(d) / "x.jsonl"
             write(p, [{"a": 1}])
             p.open("a").write('{"a": 2')                      # half-written line
@@ -60,7 +60,7 @@ class StoreTests(unittest.TestCase):
         return sh
 
     def test_numbers(self):
-        with tempfile.TemporaryDirectory() as d:
+        with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as d:
             self.make(d)
             st = pa.Store(d)
             self.assertTrue(st.refresh())
@@ -84,7 +84,7 @@ class StoreTests(unittest.TestCase):
             self.assertFalse(st.refresh())                                               # nothing new
 
     def test_new_lines_arrive_live(self):
-        with tempfile.TemporaryDirectory() as d:
+        with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as d:
             sh = self.make(d)
             st = pa.Store(d)
             st.refresh()
@@ -101,7 +101,7 @@ class ShadowLiveFileTests(unittest.TestCase):
     def test_live_file_is_written_and_readable_by_the_app(self):
         import polysweeper.shadow as sh
         from polysweeper.config import Limits
-        with tempfile.TemporaryDirectory() as d:
+        with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as d:
             sh.OUT = Path(d) / "code" / "data" / "shadow"
             sh.OUT.mkdir(parents=True)
             sh.leagues = lambda: {"cs2": {"series": "1"}}

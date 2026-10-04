@@ -175,7 +175,7 @@ class DashboardTests(unittest.TestCase):
         import tempfile
         from pathlib import Path
         from polysweeper.dashboard import build
-        with tempfile.TemporaryDirectory() as d:
+        with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as d:
             data = build(Path(d) / "none", Path(d) / "no.json", Path(d) / "no.json")
         self.assertEqual(data["shadow"]["by_rule"]["confirmed"]["kpi"]["entries"], 0)
         self.assertIsNone(data["backtest"])
@@ -184,7 +184,7 @@ class DashboardTests(unittest.TestCase):
         import json, tempfile
         from pathlib import Path
         from polysweeper.dashboard import build_shadow
-        with tempfile.TemporaryDirectory() as d:
+        with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as d:
             p = Path(d)
             rows = [
                 {"type": "entry", "ts": "2026-10-01T10:00:00+00:00", "key": "a:0", "vwap": 0.97, "event_ended_flag": True},
@@ -308,7 +308,7 @@ class ShadowRobustnessTests(unittest.TestCase):
 
     def test_bad_market_does_not_stop_the_round(self):
         import tempfile
-        with tempfile.TemporaryDirectory() as d:
+        with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as d:
             sh, s = self.make(d)
             s.markets = {"m1": {"league": "cs2", "event": {"id": "e1"}, "market": {}, "tokens": ["t1"], "outcomes": ["A"]},
                          "m2": {"league": "cs2", "event": {"id": "e2"}, "market": {}, "tokens": ["t2"], "outcomes": ["B"]}}
@@ -326,7 +326,7 @@ class ShadowRobustnessTests(unittest.TestCase):
 
     def test_batched_books_are_keyed_by_token(self):
         import tempfile
-        with tempfile.TemporaryDirectory() as d:
+        with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as d:
             sh, s = self.make(d)
             s.markets = {"m1": {"league": "cs2", "event": {"id": "e1"}, "market": {}, "tokens": ["11", "22"], "outcomes": ["A", "B"]}}
             sh.post_json = lambda url, payload: [{"asset_id": "11", "asks": []}, {"asset_id": "22", "asks": []}]
@@ -335,7 +335,7 @@ class ShadowRobustnessTests(unittest.TestCase):
 
     def test_late_band_is_logged_but_not_bought(self):
         import tempfile, json
-        with tempfile.TemporaryDirectory() as d:
+        with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as d:
             sh, s = self.make(d)
             info = {"league": "cs2", "event": {"id": "e1", "ended": True}, "market": {"question": "q"},
                     "tokens": ["11", "22"], "outcomes": ["A", "B"]}
@@ -373,7 +373,7 @@ class RefreshWindowTests(unittest.TestCase):
         from datetime import datetime, timedelta, timezone
         import polysweeper.shadow as sh
         from polysweeper.config import Limits
-        with tempfile.TemporaryDirectory() as d:
+        with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as d:
             sh.OUT = __import__("pathlib").Path(d)
             sh.leagues = lambda: {"lol": {"series": "1"}}
             s = sh.Shadow(["lol"], Limits.from_json("config.json"))
@@ -428,7 +428,7 @@ class ShadowScoreRuleTests(unittest.TestCase):
         import tempfile, json, pathlib
         import polysweeper.shadow as sh
         from polysweeper.config import Limits
-        with tempfile.TemporaryDirectory() as d:
+        with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as d:
             sh.OUT = pathlib.Path(d)
             sh.leagues = lambda: {"cs2": {"series": "1"}}
             s = sh.Shadow(["cs2"], Limits.from_json("config.json"))
@@ -510,7 +510,7 @@ class OneBuyPerMatchTests(unittest.TestCase):
     def test_comeback_does_not_buy_the_other_team(self):
         import tempfile
         book = lambda ask, bid: {"asks": [{"price": str(ask), "size": "50"}], "bids": [{"price": str(bid), "size": "50"}]}
-        with tempfile.TemporaryDirectory() as d:
+        with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as d:
             s = self.make(d)
             ev = {"id": "e", "title": "Counter-Strike: A vs B (BO3) - X", "score": "000-000|1-0|Bo3", "live": True, "ended": False}
             info = {"league": "cs2", "event": ev, "tokens": ["ta", "tb"], "outcomes": ["A", "B"],
@@ -528,7 +528,7 @@ class OneBuyPerMatchTests(unittest.TestCase):
     def test_football_draw_market_counts_as_same_match(self):
         import tempfile
         book = lambda ask, bid: {"asks": [{"price": str(ask), "size": "50"}], "bids": [{"price": str(bid), "size": "50"}]}
-        with tempfile.TemporaryDirectory() as d:
+        with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as d:
             s = self.make(d)
             ev = {"id": "e9", "title": "X vs Y", "score": "1-0", "live": True, "ended": False}
             home = {"league": "cs2", "event": ev, "tokens": ["h1", "h2"], "outcomes": ["Yes", "No"], "market": {"id": "home", "question": "X win?"}}
@@ -540,7 +540,7 @@ class OneBuyPerMatchTests(unittest.TestCase):
     def test_buy_made_before_the_rule_still_counts(self):
         import tempfile
         book = lambda ask, bid: {"asks": [{"price": str(ask), "size": "50"}], "bids": [{"price": str(bid), "size": "50"}]}
-        with tempfile.TemporaryDirectory() as d:
+        with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as d:
             s = self.make(d)
             s.state["pending"]["m:0"] = {"rule": "price_only", "market_id": "m", "outcome": "A"}   # old state, no event id
             s.state["entered"].append("m:0")
@@ -579,7 +579,7 @@ class AutopilotNotesOnlyTests(unittest.TestCase):
     def setUp(self):
         import tempfile, pathlib, subprocess
         import polysweeper.autopilot as ap
-        self.ap, self.tmp = ap, tempfile.TemporaryDirectory()
+        self.ap, self.tmp = ap, tempfile.TemporaryDirectory(ignore_cleanup_errors=True)
         root = pathlib.Path(self.tmp.name)
         self.saved = (ap.REPO, ap.SHADOW_DIR, ap.LOG)
         ap.SHADOW_DIR, ap.LOG = root, root / "autopilot.log"
@@ -938,7 +938,7 @@ class ShadowLiveTests(unittest.TestCase):
 
     def test_decided_match_is_checked_at_once(self):
         import tempfile
-        with tempfile.TemporaryDirectory() as d:
+        with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as d:
             sh, s = self.make(d)
             ev = {"id": "e1", "title": "Counter-Strike: A vs B (BO3) - X", "score": "000-000|1-0|Bo3",
                   "live": True, "ended": False, "startTime": "2020-01-01T00:00:00Z"}
@@ -967,7 +967,7 @@ class ShadowLiveTests(unittest.TestCase):
 
     def test_not_started_or_not_close_is_not_rechecked(self):
         import tempfile
-        with tempfile.TemporaryDirectory() as d:
+        with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as d:
             sh, s = self.make(d)
             later = {"id": "e2", "title": "X", "live": False, "ended": False, "startTime": "2099-01-01T00:00:00Z"}
             close_call = {"id": "e3", "title": "Y", "live": True, "ended": False, "startTime": "2020-01-01T00:00:00Z"}
@@ -979,7 +979,7 @@ class ShadowLiveTests(unittest.TestCase):
 
     def test_score_rows_only_on_change(self):
         import tempfile
-        with tempfile.TemporaryDirectory() as d:
+        with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as d:
             sh, s = self.make(d)
             ev = {"id": "e1", "title": "Bari: A vs B", "score": "6-3, 2-1", "period": "S2", "live": True, "ended": False}
             s.markets = {"m": {"league": "atp", "event": dict(ev), "tokens": ["a", "b"], "outcomes": ["A", "B"], "market": {}}}

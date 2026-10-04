@@ -594,6 +594,7 @@ class AutopilotNotesOnlyTests(unittest.TestCase):
         self.write(self.dev, "code/data/shadow/trades.jsonl", "one\n")
         self.write(self.dev, "code/polysweeper/x.py", "x = 1\n")
         self.write(self.dev, "Notes/a.md", "note\n")
+        self.write(self.dev, ".gitignore", "app/bin/\n")
         g(self.dev, "add", "-A"); g(self.dev, "commit", "-qm", "init"); g(self.dev, "push", "-q", "origin", "HEAD:main")
         g(self.pc, "pull", "-q", "origin", "main")
         for k, v in (("user.name", "t"), ("user.email", "t@t"), ("commit.gpgsign", "false")):
@@ -716,6 +717,43 @@ class AutopilotNotesOnlyTests(unittest.TestCase):
             self.assertTrue(ap.STOP.exists() and ap.owner_stop())   # the owner's request survives
         finally:
             ap.STOP = saved
+
+    def test_desktop_app_is_installed_and_updated_from_the_build_branch(self):
+        import os
+        ap = self.ap
+        saved = ap.APP_EXE
+        ap.APP_EXE = self.pc / "app" / "bin" / "PolySweeper.exe"
+        try:
+            ap.install_app()                                          # no build branch yet: nothing, no error
+            self.assertFalse(ap.APP_EXE.exists())
+            def publish(content):
+                self.g(self.dev, "checkout", "-q", "--orphan", "app-build-tmp")
+                self.g(self.dev, "rm", "-rfq", ".")
+                (self.dev / "PolySweeper.exe").write_bytes(content)
+                self.g(self.dev, "add", "PolySweeper.exe")
+                self.g(self.dev, "commit", "-qm", "build")
+                self.g(self.dev, "push", "-qf", "origin", "HEAD:app-build")
+                self.g(self.dev, "checkout", "-qf", "main" if "main" in self.branches() else "master")
+                self.g(self.dev, "branch", "-qD", "app-build-tmp")
+            v1, v2 = os.urandom(1_200_000), os.urandom(1_300_000)
+            publish(v1)
+            ap.install_app()
+            self.assertEqual(ap.APP_EXE.read_bytes(), v1)
+            mtime = ap.APP_EXE.stat().st_mtime_ns
+            ap.install_app()                                          # same build: not rewritten
+            self.assertEqual(ap.APP_EXE.stat().st_mtime_ns, mtime)
+            publish(v2)
+            ap.install_app()
+            self.assertEqual(ap.APP_EXE.read_bytes(), v2)
+            import subprocess
+            status = subprocess.run(["git", "-C", str(self.pc), "status", "--porcelain"], capture_output=True, text=True).stdout
+            self.assertNotIn("app/bin", status)                       # git ignores the installed app
+        finally:
+            ap.APP_EXE = saved
+
+    def branches(self):
+        import subprocess
+        return subprocess.run(["git", "-C", str(self.dev), "branch"], capture_output=True, text=True).stdout
 
     def test_unknown_changes_count_as_code(self):
         self.assertTrue(self.ap.touches_code(None))

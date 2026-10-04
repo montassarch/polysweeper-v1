@@ -17,6 +17,7 @@ Exit code 3 means "I updated myself, start me again" (autopilot.bat does that).
 """
 from __future__ import annotations
 
+import os
 import subprocess
 import sys
 import time
@@ -33,6 +34,9 @@ DATA_FILES = ["code/data/shadow/trades.jsonl", "code/data/shadow/events.jsonl", 
 BRANCH = "main"
 CHECK_EVERY = 60                                   # check GitHub for updates every minute
 RETRY_AFTER_FAIL = 30 * 60                         # an update that cannot be brought in: try again in 30 min
+APP_BRANCH = "app-build"                           # PolySweeper.exe, built on GitHub (.github/workflows/build-app.yml)
+APP_EXE = REPO / "app" / "bin" / "PolySweeper.exe" # app/bin is git-ignored
+APP_EVERY = 60 * 60                                # look for a new desktop app every hour
 SYNC_EVERY = 3 * 60 * 60
 RESTART_DELAY = 30
 SELF_UPDATE = 3
@@ -211,6 +215,55 @@ def sync_data():
     log("shadow data pushed to GitHub" if ok else f"push FAILED, will retry next time ({out[:300]})")
 
 
+def install_app():
+    """Keep the desktop app (app/bin/PolySweeper.exe) up to date from the app-build branch and put a
+    PolySweeper shortcut on the desktop once. Best effort: problems are logged and tried again in an
+    hour; shadow mode is never affected."""
+    try:
+        ok, _ = git("fetch", "origin", f"+refs/heads/{APP_BRANCH}:refs/remotes/origin/{APP_BRANCH}")
+        ok, blob = git("rev-parse", f"origin/{APP_BRANCH}:PolySweeper.exe") if ok else (False, "")
+        if not ok:
+            return                                   # not built yet
+        stamp = APP_EXE.with_name("PolySweeper.version")
+        if not (APP_EXE.exists() and stamp.exists() and stamp.read_text().strip() == blob):
+            r = subprocess.run(["git", "-C", str(REPO), "cat-file", "blob", blob], capture_output=True, timeout=300)
+            if r.returncode != 0 or len(r.stdout) < 1_000_000:
+                log("could not read the desktop app from GitHub; will try again in an hour")
+                return
+            APP_EXE.parent.mkdir(parents=True, exist_ok=True)
+            tmp = APP_EXE.with_name("PolySweeper.download")
+            tmp.write_bytes(r.stdout)
+            try:
+                os.replace(tmp, APP_EXE)
+            except OSError:                          # the app is open right now
+                log("a new desktop app is ready; it is installed after the app is closed (next try in an hour)")
+                return
+            stamp.write_text(blob)
+            log("desktop app installed: app/bin/PolySweeper.exe")
+        make_shortcut()
+    except Exception as e:                           # never let the app disturb the autopilot
+        log(f"could not install the desktop app ({e})")
+
+
+def make_shortcut():
+    """A 'PolySweeper' icon on the Windows desktop, made once (not again if the owner deletes it)."""
+    marker = APP_EXE.with_name("shortcut.done")
+    if os.name != "nt" or marker.exists() or not APP_EXE.exists():
+        return
+    q = lambda p: str(p).replace("'", "''")
+    ps = ("$d=[Environment]::GetFolderPath('Desktop'); "
+          "$s=(New-Object -ComObject WScript.Shell).CreateShortcut((Join-Path $d 'PolySweeper.lnk')); "
+          f"$s.TargetPath='{q(APP_EXE)}'; $s.WorkingDirectory='{q(APP_EXE.parent)}'; "
+          "$s.Description='PolySweeper live dashboard (pretend trades, no real money)'; $s.Save()")
+    r = subprocess.run(["powershell", "-NoProfile", "-NonInteractive", "-Command", ps],
+                       capture_output=True, text=True, timeout=60)
+    if r.returncode == 0:
+        marker.write_text("ok")
+        log("desktop shortcut 'PolySweeper' created")
+    else:
+        log(f"could not create the desktop shortcut ({(r.stderr or r.stdout)[-200:]})")
+
+
 def apply_update(shadow, me):
     """Stop shadow mode, send the data, pull, start it again. Returns "self" (the autopilot itself was
     updated: restart it), "ok", or "failed" (still behind GitHub: try again later)."""
@@ -283,7 +336,8 @@ def main(cmd=None, max_loops=None, tick=5):
         return SELF_UPDATE
     shadow = ShadowProcess(cmd)
     shadow.start()
-    last_check = last_sync = time.time()
+    install_app()
+    last_check = last_sync = last_app = time.time()
     retry_at = 0.0
     loops = 0
     while max_loops is None or loops < max_loops:
@@ -312,6 +366,9 @@ def main(cmd=None, max_loops=None, tick=5):
         if now - last_sync >= SYNC_EVERY:
             last_sync = now
             sync_data()
+        if now - last_app >= APP_EVERY:
+            last_app = now
+            install_app()
     shadow.stop(why="(test run finished)")
     return 0
 

@@ -21,7 +21,7 @@ this list is the one to follow. Owner = who does it.
 - [ ] Find a free results source for CS2 and LoL so they can use the confirmed rule — **assistant**
 - [x] Data sync is automatic every 3 hours (autopilot)
 - [ ] Read results after each sync and report — **assistant**
-- [ ] Send the "Today" results report to main (saved on branch `today-report`, waiting for the owner's OK; reminder set for 10:00 Tunisia, Oct 4) — **owner**
+- [x] (2026-10-04) "Today" results report live (double-click `code/report_shadow.bat`)
 - [x] Live feed + 2-second checks near the end + score log (shadow v2.6, [[29-Live-Feed-and-Score-Log]])
 - [x] (2026-10-04) Live feed on the PC: connected, 0 errors, 36/36 checks agree with the 15-second reads
 - [ ] First live end-window look (8 matches): 0 trades at 0.96-0.995 after the result, but all 8 had late-band trades (0.995-0.999, ~87,700 shares). Confirm over 1-2 days — **assistant**

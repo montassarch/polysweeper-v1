@@ -38,7 +38,7 @@ APP_BRANCH = "app-build"                           # PolySweeper.exe, built on G
 APP_EXE = REPO / "app" / "bin" / "PolySweeper.exe" # app/bin is git-ignored
 APP_EVERY = 60 * 60                                # look for a new desktop app every hour
 SYNC_EVERY = 3 * 60 * 60
-VERIFY_SECONDS = 180                               # after a code update: shadow mode must keep writing live.json
+VERIFY_SECONDS = 600                               # after a code update: shadow mode must stay up and write live.json
 LIVE = SHADOW_DIR / "live.json"
 GOOD = SHADOW_DIR / "good_commit"                  # last version seen running well (git-ignored)
 HOLD = SHADOW_DIR / "hold_commit"                  # a bad update we went back from (git-ignored)
@@ -231,13 +231,15 @@ def held():
     return bool(_read(HOLD))
 
 
-def shadow_healthy(since):
-    """Shadow mode is really working: live.json was rewritten after `since` and in the last 30 s."""
+def shadow_healthy(since, shadow=None):
+    """Shadow mode is really working: still running, and live.json was rewritten after `since` (one
+    pass of its main loop can take a few minutes when many matches are listed, so no freshness limit)."""
+    if shadow is not None and not shadow.running():
+        return False
     try:
-        m = LIVE.stat().st_mtime
+        return LIVE.stat().st_mtime >= since
     except OSError:
         return False
-    return m >= since and time.time() - m < 30
 
 
 def code_change_since_hold():
@@ -285,7 +287,7 @@ class Verifier:
         if self.due is None or now < self.due:
             return None
         self.due = None
-        if shadow_healthy(self.since):
+        if shadow_healthy(self.since, shadow):
             if not held() and _read(GOOD) != head():     # while held, HEAD is the bad version: never mark it
                 GOOD.write_text(head())
                 log(f"version {head()[:7]} checked: shadow mode is running well")
@@ -309,6 +311,10 @@ def install_app():
         if not ok:
             return                                   # not built yet
         stamp = APP_EXE.with_name("PolySweeper.version")
+        if APP_EXE.exists() and not (stamp.exists() and stamp.read_text().strip() == blob):
+            ok, have = git("hash-object", str(APP_EXE))   # installed by hand: same file, just no stamp yet
+            if ok and have.strip() == blob:
+                stamp.write_text(blob)
         if not (APP_EXE.exists() and stamp.exists() and stamp.read_text().strip() == blob):
             r = subprocess.run(["git", "-C", str(REPO), "cat-file", "blob", blob], capture_output=True, timeout=300)
             if r.returncode != 0 or len(r.stdout) < 1_000_000:

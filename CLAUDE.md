@@ -76,6 +76,7 @@ below $1 and hold to the $1 payout. **No real money yet: shadow mode only (prete
   17:43**. Both send a message to the permanent session "PolySweeper Lab (daily research team)",
   which follows `.claude/lab-run.md` (the run procedure; edit it to change what the lab does).
 - Project skills: `.claude/skills/` — `polymarket-data` (APIs and traps), `shadow-data` (reading results), `safe-deploy` (pushing to main).
+- Plugin `watch@claude-video` (project scope, reviewed 2026-10-04): watch a video link (yt-dlp + ffmpeg frames + captions). **Free mode only**: engine local, speech fallback none, detail efficient (`~/.config/watch/.env`, no keys). Never add a Gemini/Groq/OpenAI key without the owner's OK.
 - Agents: `.claude/agents/ps-researcher.md` (most important), `ps-red-team`, `ps-tester`, `ps-analyst`,
   `ps-fixer`. Shared memory: idea board `PolySweeper-V1/30-Research-Hub.md`, daily notes
   `PolySweeper-V1/Research/R-<date>.md`.

@@ -11,7 +11,7 @@ directly to `main` (owner's standing rule, see CLAUDE.md).
    Agents are in `.claude/agents/` (ps-fixer, ps-analyst, ps-researcher, ps-red-team, ps-tester): spawn
    them with the Agent tool by that subagent_type; if unavailable, use a general-purpose agent with the
    agent file's full text at the top of its prompt. The owner asked for this team.
-2. **Team:** (a) ps-fixer + ps-analyst in parallel; (b) ps-researcher with today's UTC date, a short
+2. **Team** (see "Keep usage low"): (a) ps-analyst (+ ps-fixer only if needed); (b) ps-researcher with today's UTC date, a short
    idea-board summary, the **"Owner's focus" list in the Research Hub (goes ahead of the lab's own picks)**,
    and the analyst's key numbers; researcher and tester load the `polymarket-data` skill
    (`.claude/skills/polymarket-data/SKILL.md`) before touching Polymarket's APIs: 2-4 questions, at least one brand-new
@@ -32,13 +32,24 @@ directly to `main` (owner's standing rule, see CLAUDE.md).
 
 ## Health check
 
-1. `git pull --rebase origin main`. Spawn ps-fixer and ps-analyst in parallel.
+1. `git pull --rebase origin main`. Spawn ps-analyst (ask it to run the tests too); ps-fixer only for a real problem.
 2. Append a section "Evening health check" to today's `PolySweeper-V1/Research/R-YYYY-MM-DD.md`
    (create the note with only that section if the morning run did not happen): PC data freshness,
    new trades/losses, live feed status, errors, anything fixed.
 3. Commit and push as above (fixes only under ps-fixer's rules).
 4. PushNotification **only if the owner should know**: PC data older than 4 hours, a new loss, new
    error types, a fix pushed, or the live feed failing. Otherwise end quietly with a one-line summary.
+
+## Keep usage low (owner, 2026-10-04: "use less, but stay productive")
+
+The lab runs on the owner's Claude plan; a full run used ~$8-10 of usage and once hit the 5-hour limit.
+- **Morning:** ps-analyst always. ps-fixer only if the analyst or a quick `git log`/`errors.jsonl` look
+  shows a problem (tests failing, new error type, PC data older than 4 h, restart loop) or a bug to fix.
+- **Researcher:** 2-3 questions, reuse earlier results in `lab/`, no re-downloading what is already there.
+- **Red team:** only new or upgraded ideas; skip when there are none. **Tester:** one idea per run.
+- **Evening health check:** ps-analyst only (it runs the tests too); ps-fixer only for a real problem.
+- Prompts to agents: short, point to files instead of pasting; ask for reports under ~40 lines.
+- Lead: don't read big files yourself; write the daily note compactly.
 
 ## Rules for every run
 

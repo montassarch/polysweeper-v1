@@ -31,6 +31,25 @@ Read-only. Never place orders, never touch wallets or keys. Standard-library Pyt
 - Old listings can still say "active": trade only markets with a live book.
 - Results are final only after UMA's challenge window; `umaResolutionStatus` shows proposed / disputed / resolved.
 
+## Other free sources (no key, no payment; check each site's terms and be polite)
+
+| Need | Source | Notes |
+|---|---|---|
+| Baseball history, play by play | Retrosheet (retrosheet.org) | Build win-probability tables (inning, outs, runs ahead) for idea #15 |
+| NFL history with win probability | nflverse (github.com/nflverse, nflverse-data releases) | Play-by-play files already include win probability |
+| Live baseball | MLB Stats API (statsapi.mlb.com) | Live game feed: inning, outs, score |
+| Live hockey | NHL API (api-web.nhle.com) | Live games and history |
+| Live football, college football, basketball | ESPN site API (already in `code/polysweeper/results_espn.py`) | |
+| Baseball win-probability charts | FanGraphs, Baseball Savant | Cross-check our model |
+| Polymarket on-chain dashboards | Dune Analytics (public dashboards) | Big wallets, volumes |
+| Any wallet's transactions | Polygonscan | Follow profitable wallets |
+| UMA proposals and disputes | UMA Oracle site (oracle.uma.xyz) | Idea #5 waiting period |
+| Tennis results | Public ATP/WTA match datasets on GitHub | |
+| Esports | OpenDota (already used), Liquipedia API (follow its rate rules) | |
+| Crypto prices (idea #16) | Binance public market-data API | No key needed for prices |
+
+Anything that costs money (paid API tiers, credits beyond a free tier): ask the owner first (CLAUDE.md rule).
+
 ## House rules for scripts
 
 - Research scripts go in `lab/` (not `code/`: a push to `code/` restarts the owner's PC). Small results in

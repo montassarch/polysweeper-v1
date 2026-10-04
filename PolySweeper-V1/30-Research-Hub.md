@@ -43,10 +43,11 @@ The owner gets a short summary on their phone after each run.
 
 The lab reads this first and puts these ahead of its own picks. Ideas that need **no speed race** come first.
 
-1. **#10 Profitable wallets:** find the wallets that make money buying at 0.99+ (Data API trades), and measure when they buy (seconds after the result? during play?), how much, in which markets, and whether any ever lost.
-2. **#5 UMA waiting period:** after a result is proposed, are winners still for sale at 0.995-0.998 during the ~2 hours before it is final? How many shares, and how often was a proposal disputed or overturned?
-3. **#11 Markets made certain by another result** (e.g. a map market after the series is already won): do they stay cheap, and what do the rules say about matches not played?
-4. Still one brand-new out-of-the-box angle per run.
+1. **#15 Our own win probability for US sports** (builds on #10 and #14, [[R-2026-10-04-wallets]]): find public win-probability data or tables (baseball by inning, runs ahead, outs; American football by score gap and time left; hockey by goals ahead and time left). Rebuild the game situation at each 0.99 buy of the best US-sports wallet (0x4dDC7068...). Which situations never lose, and is the price there below the true chance? Buy only when our chance clearly beats the price plus fee plus a margin.
+2. **#16 Crypto "Up or Down" markets locked by math:** they settle on a 60-second average price (Chainlink), automatically about 53 s after the window, with no UMA dispute. In the final seconds most of the average is already fixed: how often is the result mathematically certain before the end, is anything still for sale below 0.999 then, and how fast do bots clear it? Measure on public data and live books.
+3. **#5 UMA waiting period:** after a result is proposed, are winners still for sale at 0.995-0.998 during the ~2 hours before it is final? How many shares, and how often was a proposal disputed or overturned?
+4. **#11 Markets made certain by another result** (e.g. a map market after the series is already won): do they stay cheap, and what do the rules say about matches not played?
+5. Still one brand-new out-of-the-box angle per run.
 
 ## Idea board
 
@@ -69,6 +70,8 @@ The lab updates this table every day.
 | 12 | **Faster or earlier result sources** (official league feeds, sportsbook data, stream delays) | Know the result before the 0.999 bots | Cost, reliability, still too slow from a home PC | new (2026-10-03) |
 | 13 | **Weather dead ranges**: buy NO on a temperature range the station has already passed | Daily high can only go up, so a passed range is certain to lose | "No data → lowest range wins" rule; revisions; nothing for sale | rejected (2026-10-03): passed ranges have no NO sellers below 0.999 (166 of 166 checked); ~$7.50/day taken by others after 17:00 ([[R-2026-10-03]]) |
 | 14 | **US sports near or after the end at 0.99** (MLB, NFL, college football, NHL) | Slower, less crowded finishes; 0.99 still bought just after the end; one wallet 3 losses in 1,344 | Rare comebacks if bought during play; rain/overtime/postponement rules; shadow mode does not watch these leagues yet | new (2026-10-04) ([[R-2026-10-04-wallets]]) |
+| 15 | **Own win-probability model** (US sports first): buy only when our calculated chance clearly beats the price | Edge is measured, not hoped for; picks only situations that history says never lose | Model wrong in rare situations; rules (rain, overtime); small sample | new (2026-10-04), idea from a report on crypto 5-minute markets ("estimate the true chance yourself") |
+| 16 | **Crypto Up/Down locked by math**: last seconds of the 60-second settlement average | Most of the average is already fixed; automatic settlement in ~53 s, no disputes | Big price jumps; bots at 0.999 within milliseconds; home PC too slow | new (2026-10-04) |
 | — | Resting buy orders before the end (option 2) | — | Fills mostly when we are wrong | rejected (2026-10-03) |
 | — | Buying on price during play (price-only rule) | — | Loss rate matches the price: no edge | rejected (2026-10-03) |
 

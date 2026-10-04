@@ -32,6 +32,12 @@ h1{margin:0;font-size:clamp(20px,4vw,30px);font-weight:700;letter-spacing:.06em;
 .pill{display:inline-block;margin:8px 0 6px;font-family:var(--mono);font-size:12px;padding:3px 8px;border:1px solid currentColor;letter-spacing:.1em}
 #card p{margin:4px 0;font-size:15px;line-height:1.4}
 #card .next{color:var(--dim);font-family:var(--mono);font-size:13px}
+#card{max-height:min(60vh,520px);overflow:auto}
+#card .lbl{margin:10px 0 2px;font-family:var(--mono);font-size:11px;color:var(--cyan);letter-spacing:.1em;text-transform:uppercase}
+.sched{list-style:none;margin:2px 0 0;padding:0;display:grid;gap:3px;font-size:14px}
+.sched li{display:grid;grid-template-columns:96px minmax(0,1fr);gap:8px}
+.sched time{font-family:var(--mono);color:var(--amber);font-variant-numeric:tabular-nums}
+.sched li.now time,.sched li.now span{color:var(--lime)} .sched li.past{opacity:.5}
 .nav{display:grid;gap:8px;justify-items:center;align-self:end}
 .nav .row{display:flex;flex-wrap:wrap;gap:6px;justify-content:center}
 .nav button{font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--text);background:var(--glass);border:1px solid var(--line);padding:7px 10px;cursor:pointer;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
@@ -51,6 +57,7 @@ summary::after{content:"+";font-family:var(--mono)} details[open] summary::after
 .t time{font-family:var(--mono);color:var(--amber)} .t li.past{opacity:.45} .t li.soon time{color:var(--lime)}
 :focus-visible{outline:2px solid var(--cyan);outline-offset:2px}
 @media (max-width:900px){
+  #card{max-height:38vh}
   .bottom{grid-template-columns:1fr}
   .nav .hint{display:none}
   .nav{order:-1}
@@ -105,26 +112,37 @@ summary::after{content:"+";font-family:var(--mono)} details[open] summary::after
 // ---------------- data (snapshot from the project notes) ----------------
 const CREW = [
   {id:"sweeper", name:"The Sweeper", where:"Central Spire · your laptop", color:0x29f0ff, h:58, pos:[0,0],
-   role:"Shadow mode: watches 24 leagues and makes pretend buys with real prices.",
-   deed:"Today 33 wins, 0 losses (+$5.48 pretend). 9 buys waiting for payout. New: baseball, NFL, college football, hockey.", always:true},
+   plain:"The bot itself. It watches live matches and makes pretend buys with real prices, so we learn what works without risking money.",
+   deed:"Today 33 wins, 0 losses (+$5.48 pretend). 9 buys waiting for payout. New today: baseball, NFL, college football, hockey.",
+   always:true, why:"It never sleeps: it runs on your laptop day and night, as long as the laptop is on."},
   {id:"researcher", name:"The Researcher", where:"Archive Tower", color:0xff2bd6, h:40, pos:[-26,-16],
-   role:"Finds new money-making ideas on the web, GitHub and Polymarket data.",
-   deed:"Found \"locked lines\": 2,270 of 2,270 settled exactly as the math said.", runs:[[5,17,90]]},
+   plain:"Looks for new ways to make small, safe profits: reads the web, other people's bots on GitHub and Polymarket's own data.",
+   deed:"Found \"locked lines\": 2,270 of 2,270 settled exactly as the math said.",
+   shifts:[[5,17,90,"Morning research run"]],
+   why:"Resting. The crew works in one big morning shift to save your Claude plan (a full run uses about $8-10 of it)."},
   {id:"redteam", name:"The Red Knight", where:"Arena Block", color:0xff4d6d, h:32, pos:[26,-16],
-   role:"Attacks every idea: how could it lose money?",
-   deed:"Knocked out crypto \"locked by math\". Parked our own win-chance model.", runs:[[5,17,90]]},
+   plain:"The bodyguard of your money. Attacks every new idea and asks: how could this lose money?",
+   deed:"Knocked out crypto \"locked by math\". Parked our own win-chance model.",
+   shifts:[[5,17,90,"Morning run (only if there is a new idea to attack)"]],
+   why:"Resting. It only works in the morning run, and only when the Researcher brings a new or upgraded idea."},
   {id:"tester", name:"The Alchemist", where:"Lab Stack", color:0x7dff6b, h:35, pos:[-28,17],
-   role:"Proves ideas on real Polymarket data.",
-   deed:"Tonight: live watch of NFL and baseball \"locked lines\".", runs:[[5,17,90],[17,50,45],[21,0,45]]},
+   plain:"Proves or kills ideas with real Polymarket numbers, using small test programs.",
+   deed:"Tonight: live watch of NFL and baseball \"locked lines\".",
+   shifts:[[5,17,90,"Morning run: tests one idea"],[17,50,45,"Tonight only: NFL locked-lines watch"],[21,0,45,"Tonight only: late NFL + baseball watch"]],
+   why:"Resting between tests. Tonight it has two extra live watches during US games."},
   {id:"analyst", name:"The Seer", where:"Signal Tower", color:0xffb627, h:44, pos:[28,17],
-   role:"Reads your laptop's pretend trades morning and evening.",
-   deed:"Morning: 78 tests pass, data every 3 hours, no new losses.", runs:[[5,17,60],[17,43,30]]},
+   plain:"Reads your laptop's pretend trades and checks everything is healthy: results, live feed, tests, errors.",
+   deed:"Morning: 78 tests pass, data every 3 hours, no new losses.",
+   shifts:[[5,17,60,"Morning results check"],[17,43,30,"Evening health check"]],
+   why:"Resting between its two daily checks (morning and evening)."},
   {id:"fixer", name:"The Smith", where:"Forge Works", color:0x9b7bff, h:26, pos:[0,-32],
-   role:"Health checks and bug fixes, only when something breaks.",
-   deed:"Nothing to fix today.", oncall:true},
+   plain:"The repair worker. Fixes bugs safely when something breaks.",
+   deed:"Nothing to fix today.",
+   oncall:true, why:"On call, not on a schedule: it is woken only when the Seer finds a real problem (failing tests, a crash, or laptop data older than 4 hours). No problem today, so it stays idle."},
   {id:"owner", name:"You, the Keeper", where:"Gate Plaza", color:0xf2f0ff, h:24, pos:[0,32],
-   role:"Decides what the crew does and when real money starts.",
-   deed:"Today: approved US sports and the Today report. Both are live.", owner:true}
+   plain:"The boss. You decide what the crew researches and when real money may start. Nothing risky happens without your yes.",
+   deed:"Today: approved US sports and the Today report. Both are live.",
+   owner:true, why:"No decision is waiting for you right now."}
 ];
 const QUESTS = [
   ["Testing", [["live","Locked lines (#17)","Math held 2,270/2,270. Can we get filled below 0.99? Live watch tonight."],
@@ -147,23 +165,48 @@ function tunisMins(){
 }
 const fmt = m => `${String(Math.floor(m/60)%24).padStart(2,"0")}:${String(m%60).padStart(2,"0")}`;
 function status(a, now){
-  if(a.always) return {key:"on", label:"ONLINE 24/7", css:"c-lime", next:"Running on your laptop right now."};
-  if(a.owner) return {key:"on", label:"NO DECISION WAITING", css:"c-amber", next:"Next: read tomorrow's results."};
-  if(a.oncall) return {key:"call", label:"ON CALL", css:"c-cyan", next:"Wakes only for a real problem."};
-  for(const [h,m,len] of a.runs){ const s=h*60+m; if(now>=s && now<s+len) return {key:"on", label:"WORKING", css:"c-lime", next:`On shift until about ${fmt(s+len)}.`}; }
-  const starts = a.runs.map(([h,m])=>h*60+m).sort((x,y)=>x-y);
+  if(a.always) return {key:"on", label:"ONLINE 24/7", css:"c-lime", now:"Working right now on your laptop."};
+  if(a.owner) return {key:"on", label:"NO DECISION WAITING", css:"c-amber", now:a.why};
+  if(a.oncall) return {key:"call", label:"ON CALL", css:"c-cyan", now:a.why};
+  for(const [h,m,len] of a.shifts){ const s=h*60+m; if(now>=s && now<s+len) return {key:"on", label:"WORKING", css:"c-lime", now:`Working now, until about ${fmt(s+len)}.`}; }
+  const starts = a.shifts.map(([h,m])=>h*60+m).sort((x,y)=>x-y);
   const nxt = starts.find(s=>s>now) ?? starts[0]+1440, w = nxt-now;
-  return {key:"off", label:"OFFLINE", css:"c-dim", next:`Next shift ${fmt(nxt)} (in ${Math.floor(w/60) ? Math.floor(w/60)+" h " : ""}${w%60} min).`};
+  return {key:"off", label:"OFFLINE", css:"c-dim", now:`${a.why} Back at ${fmt(nxt)} (in ${Math.floor(w/60) ? Math.floor(w/60)+" h " : ""}${w%60} min).`};
+}
+function scheduleHtml(a, now){
+  if(a.always) return `<li class="now"><time>00:00–24:00</time><span>Always on (pretend trades, live prices)</span></li>`;
+  if(a.oncall) return `<li><time>any time</time><span>Only when the Seer reports a problem</span></li>`;
+  if(a.owner) return `<li><time>any time</time><span>When you message Claude</span></li>`;
+  return a.shifts.map(([h,m,len,label])=>{ const s=h*60+m, e=s+len;
+    const cls = now>=s && now<e ? "now" : now>=e ? "past" : "";
+    const tag = cls==="now" ? " · now" : cls==="past" ? " · done" : "";
+    return `<li class="${cls}"><time>${fmt(s)}–${fmt(e)}</time><span>${label}${tag}</span></li>`; }).join("") +
+    `<li class="past"><time>other hours</time><span>Resting</span></li>`;
 }
 const hexOf = c => "#"+c.toString(16).padStart(6,"0");
 
 // ---------------- HUD ----------------
-let selected = "sweeper", updateStatus = ()=>{};
+let selected = "home", updateStatus = ()=>{};
 function showCard(){
-  const a = CREW.find(c=>c.id===selected), st = status(a, tunisMins()), hex = hexOf(a.color);
-  document.getElementById("card").innerHTML =
+  const now = tunisMins(), card = document.getElementById("card");
+  if(selected === "home"){
+    const rows = CREW.map(a=>({a, st:status(a, now)}));
+    const working = rows.filter(r=>r.st.key==="on").map(r=>r.a.name.replace(/^The /,"")).join(", ") || "nobody";
+    const nextEv = EVENTS.find(([t])=>t>now);
+    card.innerHTML = `<h2 style="color:var(--cyan)">Overview</h2><div class="where">Night City · the whole crew</div>
+      <p class="lbl">What this is</p><p>Your project as a city: each tower is one helper. The tall cyan tower is the bot; the others are the research team, which works in short shifts.</p>
+      <p class="lbl">Right now</p><p><span class="c-lime">Working:</span> ${working}.</p>
+      <p class="next">${nextEv ? `Next: ${nextEv[1]} at ${nextEv[0]>=1440 ? "tomorrow "+fmt(nextEv[0]-1440) : fmt(nextEv[0])}.` : ""} Click a tower or a button below for details.</p>`;
+    return;
+  }
+  const a = CREW.find(c=>c.id===selected), st = status(a, now), hex = hexOf(a.color);
+  card.innerHTML =
     `<h2 style="color:${hex};text-shadow:0 0 10px ${hex}99">${a.name}</h2><div class="where">${a.where}</div>
-     <span class="pill ${st.css}">${st.label}</span><p>${a.deed}</p><p class="c-dim">${a.role}</p><p class="next">${st.next}</p>`;
+     <span class="pill ${st.css}">${st.label}</span>
+     <p class="lbl">What I do</p><p>${a.plain}</p>
+     <p class="lbl">Right now</p><p>${st.now}</p>
+     <p class="lbl">Daily schedule (Tunis time)</p><ul class="sched">${scheduleHtml(a, now)}</ul>
+     <p class="lbl">Latest</p><p class="c-dim">${a.deed}</p>`;
 }
 function renderHud(){
   const now = tunisMins();
@@ -420,12 +463,13 @@ renderHud(); setInterval(()=>{ renderHud(); updateStatus(); }, 30000);
     const top = tw.g.userData.top;
     goalT.set(tw.g.position.x, top*.55, tw.g.position.z); goalR = Math.max(38, top*1.25); phi = Math.min(phi, 1.25); idleLater();
   }
-  function flyHome(){ selected = "sweeper"; showCard(); markNav(); goalT.copy(HOME.t); goalR = HOME.r; phi = 1.12; if(!reduce) auto = true; }
+  function flyHome(){ selected = "home"; showCard(); markNav(); goalT.copy(HOME.t); goalR = HOME.r; phi = 1.12; if(!reduce) auto = true; }
   const nav = document.getElementById("nav");
   nav.innerHTML = `<button type="button" data-id="home" style="color:var(--text)">Overview</button>` +
     CREW.map(a=>`<button type="button" data-id="${a.id}" style="color:${hexOf(a.color)}">${a.name.replace(/^The /,"").replace("You, the Keeper","You")}</button>`).join("");
   nav.addEventListener("click", e=>{ const b = e.target.closest("button"); if(!b) return; b.dataset.id==="home" ? flyHome() : flyTo(b.dataset.id); });
-  function markNav(){ nav.querySelectorAll("button").forEach(b=> b.setAttribute("aria-pressed", String(b.dataset.id===selected && selected!=="home"))); }
+  function markNav(){ nav.querySelectorAll("button").forEach(b=> b.setAttribute("aria-pressed", String(b.dataset.id===selected))); }
+  markNav();
   addEventListener("keydown", e=>{ if(e.key==="Escape") flyHome(); });
 
   function resize(){

@@ -942,3 +942,29 @@ class ShadowLiveTests(unittest.TestCase):
             self.assertEqual([r["score"] for r in rows], ["6-3, 2-1", "6-3, 3-1"])
             self.assertIn("title", rows[0])
             self.assertNotIn("title", rows[1])                 # names only once per event
+
+
+class ShadowReportTodayTests(unittest.TestCase):
+    def test_today_counts_payouts_per_rule_and_open_buys(self):
+        from datetime import date
+        from polysweeper.shadow_report import today_lines
+        # noon UTC is the same calendar day in any time zone from UTC-11 to UTC+11
+        rows = [
+            {"type": "entry", "rule": "price_only", "key": "1:0", "vwap": 0.97, "outcome": "A", "question": "A vs B"},
+            {"type": "settled", "rule": "price_only", "key": "1:0", "ts": "2026-10-04T12:00:00+00:00", "result": "win", "pnl": 0.15},
+            {"type": "entry", "rule": "score", "key": "1:0", "vwap": 0.99, "outcome": "A", "question": "A vs B"},
+            {"type": "settled", "rule": "score", "key": "1:0", "ts": "2026-10-04T12:00:00+00:00", "result": "loss", "pnl": -4.95},
+            {"type": "entry", "rule": "price_only", "key": "2:1", "vwap": 0.96, "outcome": "D", "question": "C vs D"},
+            {"type": "entry", "rule": "price_only", "key": "3:0", "vwap": 0.98, "outcome": "E", "question": "E vs F"},
+            {"type": "settled", "rule": "price_only", "key": "3:0", "ts": "2026-10-02T12:00:00+00:00", "result": "win", "pnl": 0.10},
+        ]
+        text = "\n".join(today_lines(rows, date(2026, 10, 4)))
+        self.assertIn("price_only: paid out 1 (win 1, loss 0), fake P&L $+0.15", text)
+        self.assertIn("score: paid out 1 (win 0, loss 1), fake P&L $-4.95", text)   # same key, other rule: kept apart
+        self.assertIn("still waiting for payout: 1", text)
+        self.assertIn("D at 0.960", text)
+
+    def test_today_with_nothing_paid_out(self):
+        from datetime import date
+        from polysweeper.shadow_report import today_lines
+        self.assertIn("  no pretend buy paid out today yet", today_lines([], date(2026, 10, 4)))

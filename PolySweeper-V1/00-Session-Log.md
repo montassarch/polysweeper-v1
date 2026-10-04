@@ -123,3 +123,4 @@ Back to [[V1-Home]].
   showed two real bot problems today ("refresh: JSONDecodeError", an ~11 MB events reply cut off,
   since US sports were added): downloads now retry a cut-off reply.
 - Live NFL locked-lines test (8 games, 26 markets): winner's side never for sale (154/154 snapshots), buyers already at 0.99+. Idea #17 rejected ([[R-2026-10-04]]).
+- Results check 20:57 Tunisia time (read on the PC, live copy): today price-only 55 wins, 0 losses, +$8.71, 13 still waiting (many US sports). Since the start 145 wins, 4 losses, about +$4.15. Safe rules (confirmed/score) still 0 buys. Shadow mode running, live feed connected (two short disconnects 19:37/19:40 UTC, reconnected), agreement with normal reads down to 88% (was ~99%). Found: `report_shadow.bat` crashes on team names with hidden characters (e.g. "Movistar KOI"); fix is one line in `code/` (needs a shadow restart).

@@ -75,6 +75,16 @@ below $1 and hold to the $1 payout. **No real money yet: shadow mode only (prete
 - Open question: what strategy gets fills safely (faster feed, resting orders before the end,
   or in-play only when the result is locked). See note 26 and the task list.
 
+## Sessions (owner's setup, 2026-10-04)
+
+- **PolySweeper V1** (cloud session in the Claude desktop app) = the **main/core session** for the bot.
+- **CLI on the owner's laptop** (`polysweeper-work`, reachable by Remote Control from the phone) = where the
+  owner prompts and talks; it also controls the laptop (live data, shadow mode, autopilot). It forwards
+  bot work and decisions to PolySweeper V1 by message (cloud sessions cannot message back: read their
+  results from `main`).
+- **PolySweeper Lab** = automated daily research (below). Every session shares one memory: this repo
+  (CLAUDE.md, task list, session log). Always `git pull --rebase` first and write results there.
+
 ## PolySweeper Lab (automated research team)
 
 - Daily routines (claude.ai/code Routines): **full lab run 05:17 Tunisia time** and **health check

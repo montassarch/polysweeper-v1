@@ -97,5 +97,6 @@ below $1 and hold to the $1 payout. **No real money yet: shadow mode only (prete
   - Do not add plugins or skills on your own initiative (the lab may suggest them in its notes).
 
 - Never place real orders or handle wallet keys without the owner's explicit go-ahead.
+- **Nothing that costs money without asking first** (owner, 2026-10-04): paid APIs or credits (e.g. Exa beyond its free tier), subscriptions, servers, paid data or plugins. Check the price, tell the owner plainly what is free and what could be charged, and wait for a yes. Never add a card or buy credits.
 - Push finished work to `main` with a clear commit message; keep commits small.
 - Keep tool output short (no raw API dumps); write findings into the vault, not just chat.

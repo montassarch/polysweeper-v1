@@ -112,3 +112,8 @@ Back to [[V1-Home]].
 - Owner's money plan: start with **$50** once a strategy is proven in shadow mode, and reinvest every profit (compounding). Goal: about 10% a month. At $50: max ~10 open trades of 5 shares at 0.99 ($0.05 profit each); one loss at 0.99 costs ~$4.95 (10% of the bankroll); the 0.999 band is too thin to matter ($0.005 per trade). Keep deposit costs low (a fixed $3 fee would be 6%).
 - Lab daily run ([[R-2026-10-04]]): new idea #17 locked lines (side markets certain mid-game): 2,270 of 2,270 settled as arithmetic said, but after a safe guard almost nothing left at 0.99 (taking killed; resting 0.99 buys get a live test tonight). Crypto Up/Down rejected, own win model parked. Fixed end-window report undercount (90k late-band shares, not 49k). Lab made leaner to save Claude usage.
 - Built **PolySweeper Keep**, a game-style page of the crew and the bot (private link: https://claude.ai/artifact/EnAdyhZwUpvU3M2R3Q1k8G; source `tools/polysweeper-keep.html`). Numbers are a snapshot: ask Claude to "update the Keep" (publish to that URL).
+- Owner asked for a real desktop app (app.exe) showing everything live. Built PolySweeper.exe
+  (tkinter, read-only): live matches with live prices, open pretend trades, activity feed with
+  fills, every trade with its detail, running total chart, after-match study, system/autopilot.
+  Shadow mode now writes live.json every ~2 s for it. Built and self-tested on Windows by GitHub
+  Actions; the autopilot installs it and makes a desktop shortcut ([[31-Desktop-App]]).

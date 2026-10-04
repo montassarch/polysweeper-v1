@@ -36,6 +36,11 @@ below $1 and hold to the $1 payout. **No real money yet: shadow mode only (prete
 - `scorecheck.py` — parses Polymarket score (`000-000|2-1|Bo3`, tennis `6-3, 5-7, 6-2`).
 - `autopilot.py` — runs on the owner's Windows PC (see below).
 - `dashboard.py` — HTML dashboard with a live feed; `confirm.py`, `results_*.py` — results sources.
+- **Desktop app** (`app/`, outside `code/`): `PolySweeper.exe` = `app/launcher.py` built by GitHub Actions
+  (`.github/workflows/build-app.yml`, Windows, PyInstaller) and published to branch `app-build`; the autopilot
+  installs it into `app/bin/` (git-ignored) and makes a desktop shortcut. The exe loads the screens from
+  `app/polysweeper_app.py` (tkinter, read-only) at start; shadow mode feeds it via `code/data/shadow/live.json`
+  (rewritten every ~2 s, not synced). Note 31. App tests: `code/tests/test_app.py`.
 - Research scripts in `code/`: `trades_study.py` (public trades), `score_check_test.py`,
   `end_window_report.py`. Config: `code/config.json` (strict keys: unknown keys raise).
 

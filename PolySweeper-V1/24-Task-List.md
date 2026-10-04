@@ -13,6 +13,8 @@ this list is the one to follow. Owner = who does it.
 
 ## Now: running test (Phase 1)
 
+- [x] Desktop app PolySweeper.exe: live view of shadow mode, built and tested on Windows by GitHub, installed by the autopilot ([[31-Desktop-App]])
+- [ ] Open the PolySweeper icon on the desktop; the first time click "More info" then "Run anyway" — **owner**
 - [x] (done 2026-10-04 00:31: one-time git fix, PC now runs the new autopilot) **Restart the autopilot once** (restart the PC, or `stop_shadow.bat` then `autopilot.bat`): the PC still runs the first version ([[28-Autopilot]]) — **owner**
 - [ ] Old PC copies of `.claude`, `lab` and `30-Research-Hub.md` are in `pc-backup` on the PC and can be deleted; PC edits saved on branch `pc-local-changes` — **owner** (optional)
 - [ ] Pull in Obsidian, then double-click `setup_autopilot.bat` once ([[28-Autopilot]]) — **owner**

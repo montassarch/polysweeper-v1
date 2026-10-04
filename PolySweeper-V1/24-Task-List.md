@@ -16,7 +16,7 @@ this list is the one to follow. Owner = who does it.
 - [x] (done 2026-10-04 00:31: one-time git fix, PC now runs the new autopilot) **Restart the autopilot once** (restart the PC, or `stop_shadow.bat` then `autopilot.bat`): the PC still runs the first version ([[28-Autopilot]]) — **owner**
 - [ ] Old PC copies of `.claude`, `lab` and `30-Research-Hub.md` are in `pc-backup` on the PC and can be deleted; PC edits saved on branch `pc-local-changes` — **owner** (optional)
 - [ ] Pull in Obsidian, then double-click `setup_autopilot.bat` once ([[28-Autopilot]]) — **owner**
-- [ ] Keep shadow mode running, PC awake and plugged in (set sleep to Never; it slept 27 of 49 h) — **owner**
+- [x] (checked 2026-10-04: sleep is Never on power and battery, PC plugged in) Keep shadow mode running, PC awake and plugged in — **owner**
 - [x] First results written up: [[26-First-Shadow-Results]]
 - [ ] Find a free results source for CS2 and LoL so they can use the confirmed rule — **assistant**
 - [x] Data sync is automatic every 3 hours (autopilot)

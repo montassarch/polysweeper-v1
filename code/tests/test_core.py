@@ -635,6 +635,77 @@ class AutopilotNotesOnlyTests(unittest.TestCase):
         self.assertIn("code/data/shadow/daily/2026-10-03.jsonl", out)
         self.assertIn("code/data/shadow/trades.jsonl", out)
 
+    def test_pc_note_edits_no_longer_block_updates(self):
+        """What happened on 2026-10-03: notes edited on the PC (not committed) blocked every pull."""
+        import subprocess
+        self.write(self.pc, "Notes/a.md", "edited on the PC\n")             # local, not committed
+        self.write(self.dev, "Notes/a.md", "note v2 from GitHub\n")
+        self.push_from_dev("code/polysweeper/x.py", "x = 2\n")             # plus a code update
+        self.assertTrue(self.ap.update_available())
+        changed = self.ap.pull()
+        self.assertIn("code/polysweeper/x.py", changed)
+        self.assertEqual((self.pc / "code/polysweeper/x.py").read_text(), "x = 2\n")
+        self.assertFalse(self.ap.behind())
+        log = subprocess.run(["git", "-C", str(self.pc), "log", "--format=%s"], capture_output=True, text=True).stdout
+        self.assertIn("Edits made on the PC (kept by autopilot)", log)     # the PC's edit is kept in history
+        self.assertIn("two", (self.pc / "code/data/shadow/trades.jsonl").read_text())   # shadow data untouched
+
+    def test_pc_code_edits_are_put_aside(self):
+        import subprocess
+        self.write(self.pc, "code/polysweeper/x.py", "x = 99  # edited on the PC\n")
+        self.push_from_dev("Notes/a.md", "note v2\n")
+        self.ap.update_available()
+        self.ap.pull()
+        self.assertEqual((self.pc / "code/polysweeper/x.py").read_text(), "x = 1\n")   # runs GitHub's code
+        stash = subprocess.run(["git", "-C", str(self.pc), "stash", "list"], capture_output=True, text=True).stdout
+        self.assertIn("code edits made on the PC", stash)
+
+    def test_file_in_the_way_is_renamed_not_deleted(self):
+        self.write(self.dev, "Notes/new.md", "from GitHub\n")
+        self.g(self.dev, "add", "-A")
+        self.push_from_dev("code/polysweeper/x.py", "x = 3\n")
+        self.write(self.pc, "Notes/new.md", "an untracked file in the way\n")
+        self.assertTrue(self.ap.update_available())
+        self.assertIn("Notes/new.md", self.ap.pull())
+        self.assertEqual((self.pc / "Notes/new.md").read_text(), "from GitHub\n")
+        copies = list((self.pc / "Notes").glob("new.md.pc-copy-*"))
+        self.assertEqual([c.read_text() for c in copies], ["an untracked file in the way\n"])
+
+    def test_failed_update_is_reported_not_looped(self):
+        """If an update still cannot come in (here: GitHub unreachable after the check), apply_update
+        says so and shadow mode is running again; the loop then waits 30 minutes before trying again."""
+        import shutil
+        self.push_from_dev("code/polysweeper/x.py", "x = 3\n")
+        class FakeShadow:
+            starts = stops = 0
+            def stop(self): FakeShadow.stops += 1
+            def start(self): FakeShadow.starts += 1
+        self.assertTrue(self.ap.update_available())
+        shutil.move(str(self.pc.parent / "origin.git"), str(self.pc.parent / "gone.git"))
+        self.assertEqual(self.ap.apply_update(FakeShadow(), "code/polysweeper/autopilot.py"), "failed")
+        self.assertEqual((FakeShadow.stops, FakeShadow.starts), (1, 1))
+
+    def test_owner_stop_file_is_never_cleared_by_the_autopilot(self):
+        """2026-10-03: in a restart loop the autopilot deleted the owner's stop file, so
+        stop_shadow.bat seemed to do nothing."""
+        import sys
+        ap = self.ap
+        saved = ap.STOP
+        ap.STOP = self.pc.parent / "STOP"
+        try:
+            waiter = [sys.executable, "-c", "import os,sys,time\nwhile not os.path.exists(sys.argv[1]): time.sleep(0.05)", str(ap.STOP)]
+            sh = ap.ShadowProcess(waiter)
+            sh.start()
+            sh.stop(wait=10)                                  # an update: the autopilot's own stop file
+            self.assertFalse(ap.STOP.exists())                # ...is cleaned up
+            ap.STOP.write_text("stop\r\n")                    # the owner's stop_shadow.bat
+            self.assertTrue(ap.owner_stop())
+            sh.start()                                        # the update path starting shadow again
+            sh.stop(wait=10)
+            self.assertTrue(ap.STOP.exists() and ap.owner_stop())   # the owner's request survives
+        finally:
+            ap.STOP = saved
+
     def test_unknown_changes_count_as_code(self):
         self.assertTrue(self.ap.touches_code(None))
         self.assertFalse(self.ap.touches_code({"PolySweeper-V1/24-Task-List.md", "CLAUDE.md"}))

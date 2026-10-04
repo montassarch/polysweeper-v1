@@ -44,6 +44,7 @@ match below $1, hold until it pays $1. Code lives in the repo's `code/` folder.
 - [[27-Score-Check]] — check 2: Polymarket's own score must agree (blocks the Sep 30 loss)
 - [[28-Autopilot]] — hands-free shadow mode: starts at login, auto-updates, auto-syncs data
 - [[29-Live-Feed-and-Score-Log]] — live prices, 2-second checks near the end, every score change recorded
+- [[30-Research-Hub]] — **the automated research team (PolySweeper Lab): idea board and daily notes**
 - [[Sources]] — every link used
 
 ## Reliability warning

@@ -13,6 +13,7 @@ this list is the one to follow. Owner = who does it.
 
 ## Now: running test (Phase 1)
 
+- [ ] **Restart the autopilot once** (restart the PC, or `stop_shadow.bat` then `autopilot.bat`): the PC still runs the first version ([[28-Autopilot]]) — **owner**
 - [ ] Pull in Obsidian, then double-click `setup_autopilot.bat` once ([[28-Autopilot]]) — **owner**
 - [ ] Keep shadow mode running, PC awake and plugged in (set sleep to Never; it slept 27 of 49 h) — **owner**
 - [x] First results written up: [[26-First-Shadow-Results]]
@@ -27,6 +28,15 @@ this list is the one to follow. Owner = who does it.
 - [x] End-window study: record real watch time (`seconds_watched`), report leaves out pre-fix rows
 - [x] Autopilot: restart shadow mode only when code changes, not for note edits ([[28-Autopilot]])
 - [ ] Phase 1 ends after ~2 weeks or 100+ settled confirmed pretend trades — **both**
+
+## PolySweeper Lab (automated research, from 2026-10-03)
+
+- [x] Team of agents, idea board and daily routines set up ([[30-Research-Hub]])
+- [x] Cloud network set to full trust (owner, 2026-10-03): agents can read web pages; live feed tested on the real server
+- [ ] Optional: install the "Exa Deep Research" plugin for better web reading — **owner**
+- [ ] Read the daily research note; tell the lab what to focus on — **owner** (whenever useful)
+- [ ] Health checks: confirm the fix (a `daily/` folder appears on main; updates picked up within ~1 minute) — **assistant (lab)**
+- [ ] Lab next: research #8 maker rebates / liquidity rewards and #10 profitable 0.99+ wallets — **assistant (lab)**
 
 ## Next: compare with the late band (Phase 2)
 

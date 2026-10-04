@@ -88,3 +88,18 @@ Back to [[V1-Home]].
 - Conclusion so far (note 26): price-only buys lose at about the rate the price predicts (no
   edge); after the result nothing at 0.96-0.995 in 32 of 32 matches. No real money on V1 as
   planned; wait for 1-2 days of live-feed data and the tennis score-log test.
+- Owner asked for automated daily research with a team of agents, aiming at "scraps" ($0.01+
+  per trade, 40-50 trades a day, zero losses). Set up the PolySweeper Lab: five agents
+  (researcher, red team, tester, analyst, fixer), idea board with 12 starting ideas
+  ([[30-Research-Hub]]), research scripts folder `lab/`, and two daily routines (full lab run
+  05:17 and health check 17:43, Tunisia time).
+- Owner set the cloud network to full trust. Live feed tested against Polymarket's real
+  server: connected, 38/38 prices matched; 2-minute shadow run 99.5% agreement, 0 errors
+  ([[29-Live-Feed-and-Score-Log]]). Agents told they now have full web access.
+- Lab first run ([[R-2026-10-03]]): PC healthy (72 tests pass, live feed OK; daily score log not yet synced). Ideas #1 complete set and #2 baskets rejected (0 gaps in thousands of markets); new idea weather dead ranges tested on 15 days of trades and live books: rejected (nothing for sale below 0.999 once sure). Next: maker rewards, profitable wallets.
+- First lab run done ([[R-2026-10-03]]): complete sets and baskets rejected (no gaps), weather
+  "dead ranges" rejected (cleared at 0.999 like sports). Lab health check found the PC still runs
+  the first autopilot version (10-minute checks, no daily-folder sync, restarts on notes): owner
+  must restart the autopilot once ([[28-Autopilot]]).
+- PC updates were blocked by 5 files edited on the PC (screenshot). Owner given 4 rehearsed git
+  commands; autopilot now keeps PC edits as a commit or stash and never loops ([[28-Autopilot]]).

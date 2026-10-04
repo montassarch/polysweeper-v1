@@ -50,8 +50,11 @@ lines per hour. To run without it: `python -m polysweeper.shadow --forever --no-
   2 seconds after Polymarket's score showed it, read the book at once, and found **no sell
   orders at all** (best bid 0.999). Even this fast, nothing was left. The bots that clear the
   book seem to act on something faster than Polymarket's own score.
-- **Not yet tested:** the live feed against Polymarket's real server (only possible on the
-  owner's PC). The first status line in the next data sync will show whether it works.
+- **Tested against Polymarket's real server (2026-10-03, after the owner gave the cloud full
+  network access):** connected first time, 361 messages in 25 s, 58 of 60 markets with a live book,
+  live best prices matched a normal book read in 38 of 38 markets. A 2-minute shadow run with the
+  feed: 26,239 messages, 28 of 28 markets with a book, 99.5% agreement over 196 checks, 0 errors.
+  The owner's PC will show the same in its first `live_feed_status` line.
 
 ## What to look at after 1-2 days
 

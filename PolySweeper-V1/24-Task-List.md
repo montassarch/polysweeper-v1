@@ -44,8 +44,8 @@ this list is the one to follow. Owner = who does it.
 - [x] (2026-10-04) #10 profitable wallets, first pass ([[R-2026-10-04-wallets]])
 - [x] (2026-10-04 12:33 UTC) US sports (MLB, NFL, college football, NHL) added to shadow mode; PC restarted fine
 - [ ] Rebuild the game situation at each buy of the best US-sports wallet: which situations never lose? — **assistant (lab)**
-- [ ] Lab next: #8 maker rebates / liquidity rewards; more US-sports wallets at 0.98-0.995 — **assistant (lab)**
-- [ ] Lab next run: verify the Overwatch / Honor of Kings books with shares at 0.96-0.995 after the result (real winner's book? reliable result signal?) — **assistant (lab)**
+- [ ] Lab next: #18 paid UMA proposer: whitelist path, then a 3-day shadow proposer log (no wallet) — **assistant (lab)**
+- [x] Overwatch post-result asks verified (2026-10-05): Bo3/BO5 score artefact; scorecheck fixed
 - [x] Live locked-lines watcher on NFL (2026-10-04): nothing for sale on the winner; idea #17 rejected
 - [x] (done 2026-10-04 by V1 session, no need for the lab) **Morning of 2026-10-05 (owner OK given):** fix `report_shadow.bat` crash on team names with hidden characters (UnicodeEncodeError, cp1252 console): in `shadow_report.py` `main()` add `sys.stdout.reconfigure(encoding="utf-8", errors="replace")`, run tests, push (restarts shadow mode once) — **lab fixer (05:17 run)**
 

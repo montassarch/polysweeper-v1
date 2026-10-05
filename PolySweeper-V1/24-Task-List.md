@@ -78,6 +78,12 @@ owner plainly and propose a new date; never lower the bar to make a rule pass.
 - [x] Cloud network set to full trust (owner, 2026-10-03): agents can read web pages; live feed tested on the real server
 - [x] (2026-10-04) Exa connected on claude.ai (works in new chats and the PC chat; free credit only, never add a card)
 - [ ] Read the daily research note; tell the lab what to focus on — **owner** (whenever useful)
+- [x] (2026-10-05, owner) New idea agent `ps-ideas` (effort max, skill `idea-methods`): 15+ ideas a day, top 3-5, one pick for research
+- [x] (2026-10-05, owner) Research agent refocused: deep dives on data, news and trends, effort max
+- [x] (2026-10-05, owner) One agent per routine, spread over the day (Tunisia): 01:00 analyst, 05:00 ideas, 09:00 research, 13:00 red team, 17:00 tester + phone summary, 21:00 health check; old 05:17 / 17:43 routines off
+- [ ] Check the first full day of the split schedule (6 Oct): did every step run and hand over through the note? — **assistant**
+- [ ] After ~1 week: is usage OK with two agents on max? If the limit is hit, lower ideas or research to "high" — **assistant + owner**
+- [ ] Decide: add the free Sports WebSocket as a second, faster score source (after the final lag result) — **owner, then V1**
 - [x] Fix confirmed 2026-10-04 00:35: `daily/` folder on main, a code update was picked up and synced within 30 s
 - [x] (2026-10-04) #10 profitable wallets, first pass ([[R-2026-10-04-wallets]])
 - [x] (2026-10-04 12:33 UTC) US sports (MLB, NFL, college football, NHL) added to shadow mode; PC restarted fine

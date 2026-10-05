@@ -88,9 +88,10 @@ below $1 and hold to the $1 payout. **No real money yet: shadow mode only (prete
 
 ## PolySweeper Lab (automated research team)
 
-- Daily routines (claude.ai/code Routines): **full lab run 05:17 Tunisia time** and **health check
-  17:43**. Both send a message to the permanent session "PolySweeper Lab (daily research team)",
-  which follows `.claude/lab-run.md` (the run procedure; edit it to change what the lab does).
+- Daily routines (claude.ai/code Routines), **one agent per run, each a fresh session** (owner 2026-10-05, to spread usage),
+  Tunisia time: 01:00 analyst, 05:00 ideas, 09:00 research, 13:00 red team, 17:00 tester + phone summary,
+  21:00 health check. Each follows its step in `.claude/lab-run.md` ("Split schedule") and hands over via today's
+  research note.
 - Project skills: `.claude/skills/` — `polymarket-data` (APIs and traps), `shadow-data` (reading results), `safe-deploy` (pushing to main), `idea-methods` (brainstorming methods for ps-ideas).
 - Plugins (project scope): `context7` (code library docs) and `frontend-design` (page design), both Anthropic official, moved here from user scope 2026-10-04.
 - Plugin `watch@claude-video` (project scope, reviewed 2026-10-04): watch a video link (yt-dlp + ffmpeg frames + captions). **Free mode only**: engine local, speech fallback none, detail efficient (`~/.config/watch/.env`, no keys). Never add a Gemini/Groq/OpenAI key without the owner's OK.

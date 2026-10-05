@@ -1,10 +1,42 @@
 # PolySweeper Lab — run procedure (read by the lab session every run)
 
-The lab session ("PolySweeper Lab (daily research team)") gets two messages a day from routines:
-the **full lab run** (05:17 Tunisia time) and the **health check** (17:43). Push finished work
-directly to `main` (owner's standing rule, see CLAUDE.md).
+Since 2026-10-05 (owner: "different time, different schedule, so usage is spread") the lab runs as
+**six separate routines, one agent each**, every one a fresh cloud session. Each run reads only its own
+step below plus today's note, where the earlier steps left their results. Times are Tunisia time.
 
-## Full lab run
+## Split schedule (one agent per run)
+
+**Every step:** `git pull --rebase origin main`; read the "Rules for every run" section below and your
+step only (don't read whole big files). Today's note = `PolySweeper-V1/Research/R-YYYY-MM-DD.md` (UTC date;
+if missing, create it with YAML front matter: title, tags [polysweeper, research, daily], created, and a link
+back to [[30-Research-Hub]]). Spawn the named agent with the Agent tool (subagent_type = its name; if
+unavailable, a general-purpose agent with the agent file's full text at the top of its prompt). Give it a
+short prompt that points to files, not pasted text. Write **your step's section** into today's note, then
+commit, `git pull --rebase origin main`, push (retry after 2, 4, 8, 16 s). If an earlier step's section is
+missing (that run failed), work with what exists and say so in one line. Never touch `code/` except
+ps-fixer under its rules.
+
+1. **01:00 Analyst:** ps-analyst (+ ps-fixer only for a real problem: tests failing, new error type, PC data
+   older than 4 h, restart loop). Sections "System health" and "Shadow results". No notification unless
+   something is broken.
+2. **05:00 Ideas:** ps-ideas (effort max). Section "New ideas": raw list (one line each, kept or kill reason),
+   top 3-5 cards, and a line `Pick for research: <idea>`. Add the top cards to the idea board in
+   `30-Research-Hub.md` with status "new".
+3. **09:00 Research:** ps-researcher (effort max) with today's UTC date, the "Road to 1 Nov" priorities below,
+   the hub's "Owner's focus" list, the analyst's key numbers and the ideas pick from today's note; load the
+   `polymarket-data` skill. Sections "Road to 1 Nov" (2-4 lines, put at the top of the note), "News and
+   trends", "Research". Update the idea board (status, one line why, date).
+4. **13:00 Red team:** ps-red-team on the new or upgraded ideas in today's note only. If there are none, write
+   "Red team: nothing new today" and stop (don't spawn the agent). Section "Red team".
+5. **17:00 Tester:** ps-tester on the one best idea measurable today with public APIs (scripts in `lab/`).
+   Sections "Tests and numbers" and "Decisions and next steps". Then finish the day's note: "Summary for the
+   owner" (5 short plain lines) at the top, the hub's daily-notes list (newest first), one line in
+   `00-Session-Log.md`, real new tasks in `24-Task-List.md`. PushNotification (status "proactive") with a 4-6
+   line plain summary of the whole day (bot results, best new idea, research and test findings, problems,
+   what's next).
+6. **21:00 Health check:** follow "Health check" below.
+
+## Full lab run (old all-in-one run; only when the owner asks for one)
 
 1. **Setup:** `git pull --rebase origin main`. Read `CLAUDE.md`, `PolySweeper-V1/30-Research-Hub.md`,
    the 2 newest notes in `PolySweeper-V1/Research/`, the last 30 lines of `PolySweeper-V1/00-Session-Log.md`.

@@ -40,6 +40,19 @@ directly to `main` (owner's standing rule, see CLAUDE.md).
 4. PushNotification **only if the owner should know**: PC data older than 4 hours, a new loss, new
    error types, a fix pushed, or the live feed failing. Otherwise end quietly with a one-line summary.
 
+## Road to 1 November (owner decision 2026-10-05: real money starts 1 Nov 2026 with $20)
+
+Plan: `PolySweeper-V1/24-Task-List.md`, section "Road to real money". Until then the lab's priorities are,
+ahead of everything else (including the hub's "Owner's focus" list):
+1. **Best-wallet copy study, US sports after the end (#10/#14):** which sports, how many seconds after the
+   end, what sizes, and how many fills a day we could really get at about 0.99.
+2. **Flashscore lag test (#20):** how many seconds before Polymarket's score / the sports websocket does a
+   free score site show the result?
+3. **From mid-October:** red-team the one chosen rule and its whole buy path (data source → decision →
+   order → settlement).
+Every daily note starts with a section **"Road to 1 Nov"** (2-4 lines: where each priority stands), before the
+summary for the owner.
+
 ## Keep usage low (owner, 2026-10-04: "use less, but stay productive")
 
 The lab runs on the owner's Claude plan; a full run used ~$8-10 of usage and once hit the 5-hour limit.

@@ -39,6 +39,10 @@ Role files: `.claude/agents/ps-*.md` in the repo.
 
 The owner gets a short summary on their phone after each run.
 
+## Road to 1 November (owner, 2026-10-05): goes first
+
+Real money starts **1 Nov 2026 with $20** (plan: [[24-Task-List]], "Road to real money"). Lab priorities until then: (1) best-wallet copy study for US sports after the end (#10/#14): sports, seconds after the end, sizes, fills/day at ~0.99; (2) Flashscore lag test (#20); (3) from mid-October, red-team the chosen rule and its whole buy path.
+
 ## Owner's focus for the next runs (set 2026-10-05)
 
 The lab reads this first and puts these ahead of its own picks. Ideas that need **no speed race** come first.

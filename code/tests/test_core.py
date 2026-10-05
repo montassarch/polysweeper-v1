@@ -1182,3 +1182,27 @@ class CutOffReplyTests(unittest.TestCase):
             self.assertEqual(col.get_json("https://example.invalid/events"), [{"id": "1"}])
         finally:
             col.urllib.request.urlopen, col.time.sleep = saved
+
+
+class USSportsScoreTests(unittest.TestCase):
+    def test_us_score_only_counts_when_ended(self):
+        from polysweeper.scorecheck import allows, sport_of
+        self.assertEqual(sport_of("nfl"), "us")
+        e = {"title": "Rams vs. Eagles", "score": "30-13", "ended": True}
+        self.assertEqual(allows(e, ["Rams", "Eagles"], 0, "us"), "agree")
+        self.assertEqual(allows(e, ["Rams", "Eagles"], 1, "us"), "against")
+        self.assertEqual(allows(dict(e, ended=False), ["Rams", "Eagles"], 0, "us"), "unknown")   # still playing
+        self.assertEqual(allows(dict(e, score="13-13"), ["Rams", "Eagles"], 0, "us"), "unknown")  # tie
+        self.assertEqual(allows(dict(e, title="Split Squad: Rams (A) vs. Eagles (H)"), ["Rams", "Eagles"], 0, "us"), "unknown")
+
+    def test_mlb_big_lead(self):
+        from polysweeper.scorecheck import mlb_big_lead, mlb_innings_done
+        self.assertEqual([mlb_innings_done(p) for p in ("End 8th", "Top 9th", "Bot 9th", "Mid 8th", "FT", None)],
+                         [8, 8, 8.5, 7.5, None, None])
+        e = {"title": "Padres vs. Brewers", "score": "2-9", "period": "Top 9th"}
+        outs = ["San Diego Padres", "Brewers"]
+        self.assertTrue(mlb_big_lead(e, ["Padres", "Brewers"], 1))
+        self.assertFalse(mlb_big_lead(e, ["Padres", "Brewers"], 0))
+        self.assertFalse(mlb_big_lead(dict(e, period="Bot 8th"), ["Padres", "Brewers"], 1))   # 8th not finished
+        self.assertFalse(mlb_big_lead(dict(e, score="3-9"), ["Padres", "Brewers"], 1))        # lead 6
+        self.assertFalse(mlb_big_lead(e, outs, 1) and mlb_big_lead(e, outs, 0))               # names must match

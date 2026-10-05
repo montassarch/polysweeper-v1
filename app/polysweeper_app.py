@@ -24,7 +24,8 @@ from pathlib import Path
 APP_VERSION = "1.0"
 STUDY_START = "2026-10-03T14:12"        # after-match rows before this came from an older version
 BUY_BAND = (0.96, 0.995)
-RULE_NAMES = {"price_only": "Price only", "score": "Score check", "confirmed": "Confirmed result"}
+RULE_NAMES = {"price_only": "Price only", "score": "Score check", "confirmed": "Confirmed result",
+              "mlb_lead7": "MLB lead 7+"}
 SKIP_NAMES = {"skip_bad_book": "junk order book", "skip_thin": "too few shares",
               "skip_score_against": "score says the other side won", "skip_second_buy": "one buy per match"}
 FEED_MAX = 400

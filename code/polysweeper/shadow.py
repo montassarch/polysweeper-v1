@@ -40,7 +40,7 @@ from .confirm import Confirmer
 from .fees import taker_fee
 from .killswitch import KillSwitch
 from .livefeed import LiveFeed
-from .scorecheck import allows as score_allows, sport_of, winner_outcome
+from .scorecheck import allows as score_allows, mlb_big_lead, sport_of, winner_outcome
 from .endwindow import EndWatch
 
 OUT = Path("data/shadow")
@@ -398,6 +398,14 @@ class Shadow:
         #         SCORE_STABLE_S seconds, and the book passed the junk filter.
         sport = sport_of(info["league"])
         stable = self.score_stable_for(e)
+        # Rule 4 (MLB only): a lead of 7+ runs after 8 full innings, game still on, score unchanged
+        #         for SCORE_STABLE_S seconds (Research Hub focus #1). Shadow only, like the others.
+        same_score_s = time.time() - self.score_since.get(e.get("id"), (None, time.time()))[1]
+        if info["league"] == "mlb" and ev_state["ended"] is not True and same_score_s >= SCORE_STABLE_S:
+            for idx, best_ask, asks in in_window:
+                if mlb_big_lead(e, info["outcomes"], idx):
+                    self.maybe_enter("mlb_lead7", mid, idx, info, best_ask, asks, ev_state,
+                                     f"score {e.get('score')} {e.get('period')}")
         for idx, best_ask, asks in in_window:
             verdict = score_allows(e, info["outcomes"], idx, sport) if sport else "n/a"
             if verdict == "agree" and ev_state["ended"] is True and stable >= SCORE_STABLE_S:
@@ -549,7 +557,8 @@ class Shadow:
 
     def maybe_enter(self, rule, mid, idx, info, best_ask, asks, ev_state, confirm_detail):
         L = self.limits
-        key = {"price_only": f"{mid}:{idx}", "confirmed": f"C:{mid}:{idx}", "score": f"S:{mid}:{idx}"}[rule]
+        key = {"price_only": f"{mid}:{idx}", "confirmed": f"C:{mid}:{idx}", "score": f"S:{mid}:{idx}",
+               "mlb_lead7": f"M:{mid}:{idx}"}[rule]
         if key in self.state["entered"]:
             return
         eid = info["event"].get("id") or f"market {mid}"
@@ -590,7 +599,8 @@ class Shadow:
         self.state.setdefault("matches", {})[f"{rule}:{eid}"] = rec["outcome"] or "a side"
         self.state["pending"][key] = rec
         self.counters["entries"] += 1
-        label = {"confirmed": "CONFIRMED", "score": "SCORE-CHECK", "price_only": "PRICE-ONLY"}[rule]
+        label = {"confirmed": "CONFIRMED", "score": "SCORE-CHECK", "price_only": "PRICE-ONLY",
+                 "mlb_lead7": "MLB-LEAD-7"}[rule]
         print(f"\n[{now_iso()}] SHADOW BUY ({label}) {rec['outcome']} | {(rec['question'] or '')[:60]}")
         print(f"    why:   match {'ENDED' if ev_state['ended'] else 'still in play'}, score {ev_state.get('score')}"
               + (f", result source: {confirm_detail}" if rule == "confirmed" else "") + f", score check: {rec['score_check']}")

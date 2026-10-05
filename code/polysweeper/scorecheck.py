@@ -3,16 +3,39 @@
 Polymarket event data carries a 'score' field:
   esports  '000-000|2-1|Bo3'   -> maps won by team 1 and team 2, best of 3
   tennis   '6-3, 5-7, 6-2'     -> games per set, player 1 first
+  US       '30-13'             -> points/runs/goals (mlb, nfl, cfb, nhl, nba); checked on 883 settled
+                                  games (2026-10-05): the higher number was the winner every time
 Team 1 / team 2 follow the order of the event title ("A vs B").
 """
 import re
 
 ESPORTS = {"cs2", "lol", "dota2", "val", "codmw", "r6siege", "ow", "mlbb", "hok", "sc2", "pubg", "lol-wild-rift"}
 TENNIS = {"atp", "wta", "itf"}
+US = {"mlb", "nfl", "cfb", "nhl", "nba"}
 
 
 def sport_of(league):
-    return "esports" if league in ESPORTS else "tennis" if league in TENNIS else None
+    return ("esports" if league in ESPORTS else "tennis" if league in TENNIS
+            else "us" if league in US else None)
+
+
+def us_score(score):
+    """'30-13' -> (30, 13) or None."""
+    m = re.fullmatch(r"\s*(\d+)\s*-\s*(\d+)\s*", score or "")
+    return (int(m.group(1)), int(m.group(2))) if m else None
+
+
+MLB_INNING = re.compile(r"(Top|Mid|Bot|End) (\d+)(?:st|nd|rd|th)")
+
+
+def mlb_innings_done(period):
+    """Full innings completed per the period text: 'End 8th' -> 8, 'Top 9th' -> 8, 'Bot 9th' -> 8.5
+    (the home side is batting in the 9th, top half done), None if unknown."""
+    m = MLB_INNING.fullmatch((period or "").strip())
+    if not m:
+        return None
+    half, n = m.group(1), int(m.group(2))
+    return {"Top": n - 1, "Mid": n - 0.5, "Bot": n - 0.5, "End": n}[half]
 
 TIEBREAK = re.compile(r"\(.*?\)")
 
@@ -80,6 +103,11 @@ def score_winner(event, sport):
         need = 2          # best of 3; best-of-5 needs 3 and a 2-x lead is not final
         if a + b >= 4 or max(a, b) > 3:
             need = 3
+    elif sport == "us":
+        r = us_score(score)
+        if not r or event.get("ended") is not True or r[0] == r[1]:
+            return None               # a US score only says who WON once the game is flagged ended
+        return 0 if r[0] > r[1] else 1
     else:
         return None
     if a >= need and a > b: return 0
@@ -96,6 +124,21 @@ def winner_outcome(event, outcomes, sport):
     name = teams[w].lower()
     hits = [i for i, o in enumerate(outcomes) if o.strip().lower() == name]
     return hits[0] if len(hits) == 1 else None
+
+
+def mlb_big_lead(event, outcomes, idx, lead=7, innings=8):
+    """MLB rule: outcome idx leads by LEAD+ runs with at least INNINGS full innings played
+    (game still on). True / False."""
+    r, done = us_score(event.get("score")), mlb_innings_done(event.get("period"))
+    teams = title_teams(event.get("title", ""))
+    if not r or done is None or done < innings or not teams:
+        return False
+    a, b = r
+    if abs(a - b) < lead:
+        return False
+    name = teams[0 if a > b else 1].lower()
+    hits = [i for i, o in enumerate(outcomes) if o.strip().lower() == name]
+    return hits == [idx]
 
 
 def allows(event, outcomes, idx, sport):

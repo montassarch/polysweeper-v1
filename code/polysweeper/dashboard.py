@@ -32,7 +32,7 @@ def read_jsonl(path: Path):
     return out
 
 
-RULES = ("confirmed", "score", "price_only")
+RULES = ("confirmed", "score", "mlb_lead7", "price_only")
 
 
 def summarize_rows(rows, thin):

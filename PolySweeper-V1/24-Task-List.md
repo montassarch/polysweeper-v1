@@ -19,9 +19,9 @@ The gate is still [[32-Go-Live-Checklist]] (now set to $20). If no rule passes b
 owner plainly and propose a new date; never lower the bar to make a rule pass.
 
 **Week 1 (6-12 Oct): find the rule that gets real fills safely**
-- [ ] Add US sports to shadow mode (MLB postseason, NFL, NHL, college football; NBA from ~21 Oct) with an
+- [x] (2026-10-05: score rule now covers MLB/NFL/CFB/NHL after the end; NBA when its season starts) Add US sports to shadow mode (MLB postseason, NFL, NHL, college football; NBA from ~21 Oct) with an
   "after the end" rule at ~0.99 (Research Hub #14). Strongest lead. — **V1 session**
-- [ ] MLB "lead 7+ after 8 innings" shadow rule (Research Hub focus #1). — **V1 session**
+- [x] (2026-10-05: rule `mlb_lead7` in shadow mode) MLB "lead 7+ after 8 innings" shadow rule (Research Hub focus #1). — **V1 session**
 - [ ] Best-wallet copy study: which sports, how many seconds after the end, what size (#10, #14). — **lab**
 - [ ] Finish the Sports WebSocket lag result; Flashscore lag test (#20). — **assistant / lab**
 - [ ] Phone alerts (free ntfy app): needs the owner's yes and the app on the phone. — **owner + V1**

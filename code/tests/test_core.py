@@ -1205,4 +1205,4 @@ class USSportsScoreTests(unittest.TestCase):
         self.assertFalse(mlb_big_lead(e, ["Padres", "Brewers"], 0))
         self.assertFalse(mlb_big_lead(dict(e, period="Bot 8th"), ["Padres", "Brewers"], 1))   # 8th not finished
         self.assertFalse(mlb_big_lead(dict(e, score="3-9"), ["Padres", "Brewers"], 1))        # lead 6
-        self.assertFalse(mlb_big_lead(e, outs, 1) and mlb_big_lead(e, outs, 0))               # names must match
+        self.assertFalse(mlb_big_lead(dict(e, score="9-2"), outs, 0))                       # "Padres" != "San Diego Padres"

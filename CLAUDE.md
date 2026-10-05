@@ -89,8 +89,8 @@ below $1 and hold to the $1 payout. **No real money yet: shadow mode only (prete
 ## PolySweeper Lab (automated research team)
 
 - Daily routines (claude.ai/code Routines), **one agent per run, each a fresh session** (owner 2026-10-05, to spread usage),
-  Tunisia time: 01:00 analyst, 05:00 ideas, 09:00 research, 13:00 red team, 17:00 tester + phone summary,
-  21:00 health check. Each follows its step in `.claude/lab-run.md` ("Split schedule") and hands over via today's
+  Tunisia time: 01:00 analyst, 05:00 ideas, 09:00 research, 13:00 red team (odd days), 17:00 tester + phone summary,
+  21:00 health check (even days). Each follows its step in `.claude/lab-run.md` ("Split schedule") and hands over via today's
   research note.
 - Project skills: `.claude/skills/` — `polymarket-data` (APIs and traps), `shadow-data` (reading results), `safe-deploy` (pushing to main), `idea-methods` (brainstorming methods for ps-ideas).
 - Plugins (project scope): `context7` (code library docs) and `frontend-design` (page design), both Anthropic official, moved here from user scope 2026-10-04.

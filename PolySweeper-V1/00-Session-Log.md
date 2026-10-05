@@ -153,3 +153,4 @@ Back to [[V1-Home]].
 - 2026-10-05 21:20 Tunisia, laptop session: owner confirmed the ntfy test alert arrived on the phone. PC restarted on the alerts update; version 0dca874 checked, shadow running well, no go-back.
 - 2026-10-05 evening, laptop session: **owner: report notifications stay as usual but simple, facts only, no advice and no tasks.** `.claude/lab-run.md` updated (17:00 daily summary, 21:00 health check).
 - 2026-10-06, laptop session: **owner changed their mind: keep agent effort as before** (ideas/researcher max, red team high, 15+ ideas). The lowering commit 30b5e4b was reverted.
+- 2026-10-06, laptop session: **owner: save usage without lowering effort.** Routines changed: red team 13:00 only on odd days (checks today's + yesterday's ideas), health check 21:00 only on even days. Effort stays max/high.

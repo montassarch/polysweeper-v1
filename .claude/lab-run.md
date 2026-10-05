@@ -26,7 +26,7 @@ ps-fixer under its rules.
    the hub's "Owner's focus" list, the analyst's key numbers and the ideas pick from today's note; load the
    `polymarket-data` skill. Sections "Road to 1 Nov" (2-4 lines, put at the top of the note), "News and
    trends", "Research". Update the idea board (status, one line why, date).
-4. **13:00 Red team:** ps-red-team on the new or upgraded ideas in today's note only. If there are none, write
+4. **13:00 Red team (odd days only, owner 2026-10-06 to save usage):** ps-red-team on the new or upgraded ideas in today's and yesterday's notes. If there are none, write
    "Red team: nothing new today" and stop (don't spawn the agent). Section "Red team".
 5. **17:00 Tester:** ps-tester on the one best idea measurable today with public APIs (scripts in `lab/`).
    Sections "Tests and numbers" and "Decisions and next steps". Then finish the day's note: "Summary for the
@@ -35,7 +35,7 @@ ps-fixer under its rules.
    report. **Owner (2026-10-05): keep it simple, only the report, no advice and no tasks.** 3-5 short plain
    lines of facts: bot results (wins, losses, pretend profit), best new idea in one line, what research and
    the test found, anything broken. No "you should", no to-dos, no next steps.
-6. **21:00 Health check:** follow "Health check" below.
+6. **21:00 Health check (even days only, owner 2026-10-06 to save usage; the PC's phone alerts cover the other days):** follow "Health check" below.
 
 ## Full lab run (old all-in-one run; only when the owner asks for one)
 

@@ -19,10 +19,10 @@ ps-fixer under its rules.
 1. **01:00 Analyst:** ps-analyst (+ ps-fixer only for a real problem: tests failing, new error type, PC data
    older than 4 h, restart loop). Sections "System health" and "Shadow results". No notification unless
    something is broken.
-2. **05:00 Ideas:** ps-ideas (effort high). Section "New ideas": raw list (one line each, kept or kill reason),
+2. **05:00 Ideas:** ps-ideas (effort max). Section "New ideas": raw list (one line each, kept or kill reason),
    top 3-5 cards, and a line `Pick for research: <idea>`. Add the top cards to the idea board in
    `30-Research-Hub.md` with status "new".
-3. **09:00 Research:** ps-researcher (effort high) with today's UTC date, the "Road to 1 Nov" priorities below,
+3. **09:00 Research:** ps-researcher (effort max) with today's UTC date, the "Road to 1 Nov" priorities below,
    the hub's "Owner's focus" list, the analyst's key numbers and the ideas pick from today's note; load the
    `polymarket-data` skill. Sections "Road to 1 Nov" (2-4 lines, put at the top of the note), "News and
    trends", "Research". Update the idea board (status, one line why, date).
@@ -45,7 +45,7 @@ ps-fixer under its rules.
    them with the Agent tool by that subagent_type; if unavailable, use a general-purpose agent with the
    agent file's full text at the top of its prompt. The owner asked for this team.
 2. **Team** (see "Keep usage low"): (a) ps-analyst (+ ps-fixer only if needed); (a2) **ps-ideas** (effort max, owner 2026-10-05:
-   "I need ideas"): 10+ raw ideas, top 3-5 cards, one pick for the researcher; put its top cards and the
+   "I need ideas"): 15+ raw ideas, top 3-5 cards, one pick for the researcher; put its top cards and the
    raw list (one line each) in the daily note under "New ideas"; (b) ps-researcher (effort max, owner 2026-10-05: deep dives on data, news and trends), given ps-ideas' pick to check in depth, with today's UTC date, a short
    idea-board summary, the **"Owner's focus" list in the Research Hub (goes ahead of the lab's own picks)**,
    and the analyst's key numbers; researcher and tester load the `polymarket-data` skill

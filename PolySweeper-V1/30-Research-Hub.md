@@ -39,15 +39,14 @@ Role files: `.claude/agents/ps-*.md` in the repo.
 
 The owner gets a short summary on their phone after each run.
 
-## Owner's focus for the next runs (set 2026-10-04)
+## Owner's focus for the next runs (set 2026-10-05)
 
 The lab reads this first and puts these ahead of its own picks. Ideas that need **no speed race** come first.
 
-1. **#15 Our own win probability for US sports** (builds on #10 and #14, [[R-2026-10-04-wallets]]): find public win-probability data or tables (baseball by inning, runs ahead, outs; American football by score gap and time left; hockey by goals ahead and time left). Rebuild the game situation at each 0.99 buy of the best US-sports wallet (0x4dDC7068...). Which situations never lose, and is the price there below the true chance? Buy only when our chance clearly beats the price plus fee plus a margin.
-2. **#16 Crypto "Up or Down" markets locked by math:** they settle on a 60-second average price (Chainlink), automatically about 53 s after the window, with no UMA dispute. In the final seconds most of the average is already fixed: how often is the result mathematically certain before the end, is anything still for sale below 0.999 then, and how fast do bots clear it? Measure on public data and live books.
-3. **#5 UMA waiting period:** after a result is proposed, are winners still for sale at 0.995-0.998 during the ~2 hours before it is final? How many shares, and how often was a proposal disputed or overturned?
-4. **#11 Markets made certain by another result** (e.g. a map market after the series is already won): do they stay cheap, and what do the rules say about matches not played?
-5. Still one brand-new out-of-the-box angle per run.
+1. **"Almost certain" moments (new, owner 2026-10-05):** the safe rules made 0 buys because the 0.96-0.995 band empties ~74 s before Polymarket's score says "ended" and ~40 s before the free Sports WebSocket does (R-2026-10-05). Fast bots buy at match point / last round. Using the PC's score log (`code/data/shadow/daily/`, both books at every score change), end windows and the 7 losses, find per sport the in-play situations (tennis: sets and games ahead, serving; CS2/Valorant/LoL: maps and rounds ahead; US sports: lead and time left) where (a) shares were still for sale in our band and (b) the leader never lost, with enough cases to bound the loss rate. Pass bar: loss rate clearly below the ~1 in 30 that breaks even at 0.97 (aim for 1 in 1,000+), checked on public history too (#15 found baseball 9th-inning leads of 4+ still lose ~1 in 300-1,000). Report the rule, the count, and how many shares/day it would buy. Red team it before any shadow rule.
+2. **#11 Markets made certain by another result** (e.g. a map market after the series is already won): do they stay cheap, and what do the rules say about matches not played?
+3. **#18 Paid UMA proposer:** whitelist path, then the 3-day shadow proposer log.
+4. Still one brand-new out-of-the-box angle per run.
 
 ## Idea board
 

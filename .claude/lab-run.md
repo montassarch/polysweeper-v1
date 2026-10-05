@@ -31,9 +31,10 @@ ps-fixer under its rules.
 5. **17:00 Tester:** ps-tester on the one best idea measurable today with public APIs (scripts in `lab/`).
    Sections "Tests and numbers" and "Decisions and next steps". Then finish the day's note: "Summary for the
    owner" (5 short plain lines) at the top, the hub's daily-notes list (newest first), one line in
-   `00-Session-Log.md`, real new tasks in `24-Task-List.md`. PushNotification (status "proactive") with a 4-6
-   line plain summary of the whole day (bot results, best new idea, research and test findings, problems,
-   what's next).
+   `00-Session-Log.md`, real new tasks in `24-Task-List.md`. PushNotification (status "proactive") with the day's
+   report. **Owner (2026-10-05): keep it simple, only the report, no advice and no tasks.** 3-5 short plain
+   lines of facts: bot results (wins, losses, pretend profit), best new idea in one line, what research and
+   the test found, anything broken. No "you should", no to-dos, no next steps.
 6. **21:00 Health check:** follow "Health check" below.
 
 ## Full lab run (old all-in-one run; only when the owner asks for one)
@@ -61,8 +62,8 @@ ps-fixer under its rules.
 4. **Save:** commit, `git pull --rebase origin main`, push to `main`. Notes, `lab/`, `.claude/` do not
    restart the owner's PC; `code/` does: code changes only via ps-fixer's rules (tests + 2-minute
    scratch run + ps-reviewer verdict SHIP), at most one code push per run. Retry failed pushes after 2, 4, 8, 16 s.
-5. **Finish:** PushNotification (status "proactive") with a 4-6 line plain summary (what was checked,
-   best new idea and evidence, problems found/fixed, what's next); end the turn with the same text.
+5. **Finish:** PushNotification (status "proactive") with a simple 3-5 line report of facts only (no advice,
+   no tasks); end the turn with the same text.
 
 ## Health check
 
@@ -71,7 +72,7 @@ ps-fixer under its rules.
    (create the note with only that section if the morning run did not happen): PC data freshness,
    new trades/losses, live feed status, errors, anything fixed.
 3. Commit and push as above (fixes only under ps-fixer's rules).
-4. PushNotification **only if the owner should know**: PC data older than 4 hours, a new loss, new
+4. PushNotification (simple report, facts only, no advice or tasks) **only if the owner should know**: PC data older than 4 hours, a new loss, new
    error types, a fix pushed, or the live feed failing. Otherwise end quietly with a one-line summary.
 5. **Phone alert if the PC went quiet** (the PC cannot alert about itself when it is off): if the newest
    commit touching `code/data/shadow/` on main is more than 4 hours old, send one ntfy alert (topic =

@@ -105,7 +105,7 @@ owner plainly and propose a new date; never lower the bar to make a rule pass.
 
 - [ ] **Ready for real money checklist** written: [[32-Go-Live-Checklist]] (15 boxes, all must be ticked for one rule). Review and adjust the numbers — **owner**
 - [x] (done 2026-10-04, see [[28-Autopilot]]) **Automatic go-back after a bad update:** after a code update the autopilot checks shadow mode is really running (live.json keeps updating for 3 minutes); if not, it returns to the last working commit, restarts and logs it. Test it once on purpose. Change `autopilot.py` very carefully — **V1 session**
-- [ ] **Phone alerts:** a push notification when there is no new PC data for 4 hours, errors pile up, or any pretend loss happens (free method only; ask the owner before anything paid) — **V1 session**
+- [x] (2026-10-05, ntfy, test received by the owner) **Phone alerts:** a push notification when there is no new PC data for 4 hours, errors pile up, or any pretend loss happens (free method only; ask the owner before anything paid) — **V1 session**
 - [x] (done 2026-10-04: `fill_check` lines in trades.jsonl) **Second-look check + public-trades check** on every pretend buy (fill rate for the checklist); ship together with the report fix so the PC restarts only once — **V1 session**
 - [ ] Emergency stop from the phone (before real money) — **V1 session**
 

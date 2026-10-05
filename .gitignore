@@ -23,3 +23,7 @@ app/build/
 app/selftest/
 code/data/shadow/good_commit
 code/data/shadow/hold_commit
+
+# laptop-only Claude settings and automatic handover copies
+.claude/settings.local.json
+.claude/handover/

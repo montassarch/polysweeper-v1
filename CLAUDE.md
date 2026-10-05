@@ -82,6 +82,7 @@ below $1 and hold to the $1 payout. **No real money yet: shadow mode only (prete
   owner prompts and talks; it also controls the laptop (live data, shadow mode, autopilot). It forwards
   bot work and decisions to PolySweeper V1 by message (cloud sessions cannot message back: read their
   results from `main`).
+- **Laptop CLI handover is automatic** (2026-10-05): the owner clears this session often and may forget to say "save this". Write every owner decision, task, idea and open question to the vault (task list, session log, Research Hub) when it is made, not at the end. A SessionEnd hook copies the owner's messages to `.claude/handover/last-session.md` (local only) and a SessionStart hook shows it to the next session, which files anything missing (`.claude/hooks/handover.py`, hooks in `.claude/settings.local.json`).
 - **PolySweeper Lab** = automated daily research (below). Every session shares one memory: this repo
   (CLAUDE.md, task list, session log). Always `git pull --rebase` first and write results there.
 

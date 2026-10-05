@@ -1,0 +1,138 @@
+{
+ "disputed": [
+  {
+   "q": "Will Trump meet with Sam Altman in September 2026?",
+   "vol": 0,
+   "n": 0,
+   "max_loser_px_7d": null,
+   "statuses": 3
+  },
+  {
+   "q": "Will Trump meet with Dario Amodei in September 2026?",
+   "vol": 0,
+   "n": 0,
+   "max_loser_px_7d": null,
+   "statuses": 5
+  },
+  {
+   "q": "Will Trump meet with Javier Milei in September 2026?",
+   "vol": 171176,
+   "n": 814,
+   "max_loser_px_7d": 0.79,
+   "statuses": 18
+  },
+  {
+   "q": "Will Candidate A be the MA-04 Democratic nominee?",
+   "vol": 0,
+   "n": 0,
+   "max_loser_px_7d": null,
+   "statuses": 3
+  },
+  {
+   "q": "Will Candidate B be the MA-04 Democratic nominee?",
+   "vol": 0,
+   "n": 0,
+   "max_loser_px_7d": null,
+   "statuses": 3
+  },
+  {
+   "q": "Will Candidate C be the MA-04 Democratic nominee?",
+   "vol": 0,
+   "n": 0,
+   "max_loser_px_7d": null,
+   "statuses": 3
+  },
+  {
+   "q": "Will Candidate D be the MA-04 Democratic nominee?",
+   "vol": 0,
+   "n": 0,
+   "max_loser_px_7d": null,
+   "statuses": 3
+  },
+  {
+   "q": "Will Candidate E be the MA-04 Democratic nominee?",
+   "vol": 0,
+   "n": 0,
+   "max_loser_px_7d": null,
+   "statuses": 3
+  },
+  {
+   "q": "Will another candidate be the MA-04 Democratic nominee?",
+   "vol": 0,
+   "n": 0,
+   "max_loser_px_7d": null,
+   "statuses": 3
+  },
+  {
+   "q": "Will Netanyahu use a visual aid during his UNGA speech?",
+   "vol": 119818,
+   "n": 556,
+   "max_loser_px_7d": 0.968,
+   "statuses": 6
+  },
+  {
+   "q": "Will another app be #2 Free App in the US Apple App Store on September",
+   "vol": 0,
+   "n": 0,
+   "max_loser_px_7d": null,
+   "statuses": 16
+  },
+  {
+   "q": "Israeli forces enter Tyre by September 30?",
+   "vol": 2152,
+   "n": 17,
+   "max_loser_px_7d": 0.009,
+   "statuses": 6
+  },
+  {
+   "q": "Israeli forces enter Beirut by September 30?",
+   "vol": 839,
+   "n": 15,
+   "max_loser_px_7d": 0.006,
+   "statuses": 6
+  },
+  {
+   "q": "Will WTI Crude Oil (WTI) hit (LOW) $90 in September?",
+   "vol": 24647,
+   "n": 120,
+   "max_loser_px_7d": 0.51,
+   "statuses": 18
+  },
+  {
+   "q": "Will Anduril have the highest private market valuation on September 30",
+   "vol": 1646,
+   "n": 5,
+   "max_loser_px_7d": 0.004,
+   "statuses": 6
+  },
+  {
+   "q": "Will Anna Wintour attend Proenza Schouler?",
+   "vol": 1003,
+   "n": 9,
+   "max_loser_px_7d": 0.999,
+   "statuses": 6
+  },
+  {
+   "q": "Will another show be the top US Netflix show this week?",
+   "vol": 0,
+   "n": 0,
+   "max_loser_px_7d": null,
+   "statuses": 3
+  },
+  {
+   "q": "Will another show be the top global Netflix show this week?",
+   "vol": 0,
+   "n": 0,
+   "max_loser_px_7d": null,
+   "statuses": 3
+  }
+ ],
+ "band_side": {
+  "taker_sells_winner(bid_got_filled)": 66,
+  "taker_buys_winner(ask_was_there)": 101
+ },
+ "band_side_shares": {
+  "taker_sells_winner(bid_got_filled)": 19669,
+  "taker_buys_winner(ask_was_there)": 55386
+ }
+}

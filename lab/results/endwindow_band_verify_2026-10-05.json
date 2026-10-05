@@ -1,0 +1,13 @@
+{"date":"2026-10-05","question":"Are the 0.96-0.995 asks seen after the result in end_window watches real?",
+ "watches_by_sport":{"esports":[131,5],"tennis":[39,2],"nfl":[13,0],"nhl":[2,0],"mlb":[1,0]},
+ "note_counts":"[watches, watches with >=5 shares at 0.96-0.995]",
+ "cases":[
+  {"mid":"5255790","game":"ow","score_at_t0":"2-1|Bo3 (title BO5)","watched":"O2 Blast","eventual_winner":"O2 Blast","real_end":"3-1 ended flag t0+1152s (07:35:11Z), flapped 2-1/3-1 5x in 2 min; 0.999 trade t0+1369s","window_closed":"t0+916s","verdict":"mid-match (map 4), false"},
+  {"mid":"5254943","game":"ow","score_at_t0":"1-2|Bo3 (title BO5)","watched":"SHENGSHI","eventual_winner":"OU Gaming 3-2","verdict":"watched the LOSER, false; a score-rule buy at 0.65 would have lost"},
+  {"mid":"5254950","game":"ow","score_at_t0":"2-0|Bo3 (title BO5)","watched":"HUNENG","eventual_winner":"HUNENG","bid_during_window":0.37,"verdict":"mid-match, false; one 12-share buy at 0.97 at t0+784s, during play"},
+  {"mid":"5254957","game":"ow","score_at_t0":"2-1|Bo3 (title BO5)","watched":"Weibo","eventual_winner":"Weibo","real_end":"3-1 ended t0+1171s","window_closed":"t0+902s","verdict":"mid-match, false; 170-share buy at 0.98 at t0+1073s, during play"},
+  {"mid":"5254772","game":"hok","score_at_t0":"3-2|Bo5 ended","watched":"FULL SENSE","eventual_winner":"FULL SENSE","asks":"63 sh at 0.90 (0-1.4s), 0.95, then 0.99 until t0+14.8s, then gone","trades_in_band_after":0,"verdict":"REAL but tiny, pulled not filled"},
+  {"mid":"5253569","game":"r6siege","watched":"Kingzone","eventual_winner":"Kingzone","asks":"6 sh at 0.994 for ~1 s at t0+129s, taken by a 0.996 sweep","verdict":"real, 1 s"},
+  {"mid":"5208488","game":"atp","verdict":"void, resolved 50/50; book 0.50/0.51, not a winner signal (2 records)"}],
+ "bug":"Polymarket score says Bo3 on all 4 Overwatch BO5 events (period 4/3, 5/3); scorecheck.score_winner uses the score's Bo -> calls 2-1 a win. No score/confirmed entries were affected yet.",
+ "verdict":"artefact; genuine post-result asks in band: 2 of 186 watches, 69 shares total in 2 days, lasting 1-13 s, 0 filled by real buyers after result. Kill."}

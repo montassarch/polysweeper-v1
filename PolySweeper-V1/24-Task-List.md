@@ -11,6 +11,35 @@ Back to [[V1-Home]] · Logic and audit: [[23-Bot-Logic-Spec-and-Audit]] · Test 
 One place for everything. Older notes keep their own checklists for context;
 this list is the one to follow. Owner = who does it.
 
+## Road to real money: 1 November 2026, $20 (owner decision 2026-10-05)
+
+Owner: "by 1 November I start with $20. Until the end of October the project must be well studied,
+well built, the logic there, bugs fixed, and above all no losses on trades bought after the end."
+The gate is still [[32-Go-Live-Checklist]] (now set to $20). If no rule passes by 31 Oct, tell the
+owner plainly and propose a new date; never lower the bar to make a rule pass.
+
+**Week 1 (6-12 Oct): find the rule that gets real fills safely**
+- [ ] Add US sports to shadow mode (MLB postseason, NFL, NHL, college football; NBA from ~21 Oct) with an
+  "after the end" rule at ~0.99 (Research Hub #14). Strongest lead. — **V1 session**
+- [ ] MLB "lead 7+ after 8 innings" shadow rule (Research Hub focus #1). — **V1 session**
+- [ ] Best-wallet copy study: which sports, how many seconds after the end, what size (#10, #14). — **lab**
+- [ ] Finish the Sports WebSocket lag result; Flashscore lag test (#20). — **assistant / lab**
+- [ ] Phone alerts (free ntfy app): needs the owner's yes and the app on the phone. — **owner + V1**
+
+**By 17 Oct: choose the ONE rule to trade** (it needs 14 days of shadow mode before 1 Nov). — **both**
+
+**Weeks 2-3 (13-26 Oct): make it solid**
+- [ ] Full bug hunt on the chosen rule: red team + reviewer audit of the whole buy path. — **lab + V1**
+- [ ] Test the automatic go-back once on purpose; emergency stop from the phone. — **V1**
+- [ ] 7 days in a row with no crash and no data gap over 1 hour. — **PC (watch)**
+- [ ] Build the real-order part switched OFF (dry run: builds the order, never sends it). No wallet
+  keys until the owner says so. — **V1**
+- [ ] Check the cost of depositing and withdrawing $20. — **assistant**
+
+**27-31 Oct: final check**
+- [ ] Go through [[32-Go-Live-Checklist]] box by box with the owner. — **both**
+- [ ] Owner creates the wallet and deposits $20; owner says **"go"**. — **owner**
+
 ## Now: running test (Phase 1)
 
 - [x] Desktop app PolySweeper.exe: live view of shadow mode, built and tested on Windows by GitHub, installed by the autopilot ([[31-Desktop-App]])

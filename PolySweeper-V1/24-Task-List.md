@@ -30,6 +30,7 @@ this list is the one to follow. Owner = who does it.
 - [x] (2026-10-05, [[R-2026-10-05]]) After 1-2 days: live end-window report: no gap after the result; market reacts ~1.5-2.5 min before Polymarket's score
 - [ ] Save price and side of each after-result trade in end-window records (logging only) — **V1 session**
 - [ ] Per sport: find a free result source and measure its lag vs Polymarket's score (score log); need ~2 min faster — **assistant (lab)**
+- [ ] (started 2026-10-05 13:18 Tunisia, laptop) Polymarket Sports WebSocket lag test: `lab/sports_ws_record.py` records 6 h, `lab/sports_ws_lag.py` compares with end windows — **assistant**
 - [ ] After a few days: test tennis "practically locked" rules on the score log — **assistant**
 - [x] Shadow mode: enforce B7 (max 1 pretend buy per match and rule; second chances logged as `skip_second_buy`)
 - [x] End-window study: record real watch time (`seconds_watched`), report leaves out pre-fix rows

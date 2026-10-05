@@ -136,3 +136,9 @@ Back to [[V1-Home]].
 - 2026-10-05 16:20 Tunisia, laptop session: Polymarket's free Sports WebSocket reports results ~34 s before the `score` field we poll, but our buy band is gone ~74 s before; in 14 of 14 matches it was empty by the time the feed said finished ([[R-2026-10-05]]).
 - V1 session (2026-10-05): end-window records now save each trade after the result (first 50: seconds after, price, size, side), the total count and shares by price (live_trades_after, live_trades_after_n, live_trades_after_by_price). Logging only. Reviewed: SHIP.
 - Lab "almost certain moments" study (owner focus #1, [[R-2026-10-05]]): in-play states that still have asks at 0.96-0.995 lose about as often as priced (tennis 1/6-1/70, CS2 map point 1/47, NFL 17+ entering Q4 1/65). Only MLB lead 7+ after 8 innings survives on history (0 in 5,408) but is rarely for sale (~3 of 81 games). Candidate shadow rule for V1 (owner's OK).
+- 2026-10-05 ~17:40 Tunisia, laptop session handover:
+  - Running on the laptop until ~19:18 Tunisia: `lab/sports_ws_record.py` (hidden, ~25 MB). After it ends: `py -3 lab/sports_ws_lag.py`, write final numbers in [[R-2026-10-05]], then ask the owner whether to add the free Sports WebSocket to the bot as a faster second score source (owner: decide after the final result).
+  - V1 pushed 0a2f215 (after-result trade prices in end windows); PC restarted 16:17 UTC fine. Read the new `live_trades_after*` fields in tomorrow's report.
+  - Waiting for the owner: phone alerts via the free ntfy app (V1 proposal; needs a yes and the app installed).
+  - Lab asked (message + Research Hub owner focus): #1 "almost certain" in-play moments, #2 Flashscore lag test (#20); #19 ML veto parked.
+  - Memory: the laptop had 0.4 GB free; Opera and the dashboard were closed on the owner's OK (now ~2.4 GB free). The owner works in Chrome: never suggest closing it. The bot itself uses ~0.4 GB; no weekday pause.

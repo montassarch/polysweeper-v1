@@ -332,6 +332,21 @@ class ShadowRobustnessTests(unittest.TestCase):
             self.assertEqual(v["k2"]["others_bought_shares"], 9)
             s.close()
 
+    def test_market_list_in_background(self):
+        import tempfile, json
+        with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as d:
+            sh, s = self.make(d)
+            s.list_markets = lambda: {"m1": {"league": "cs2", "event": {"id": "e1"}, "market": {}, "tokens": ["t1"], "outcomes": ["A"]}}
+            s.refresh_in_background(); s._listing.join(5); s.apply_ready()
+            self.assertEqual(list(s.markets), ["m1"])
+            def boom(): raise ValueError("cut off")
+            s.list_markets = boom
+            s.refresh_in_background(); s._listing.join(5); s.apply_ready()
+            self.assertEqual(list(s.markets), ["m1"])          # old list kept
+            s.err_f.flush()
+            self.assertIn("cut off", open(s.err_f.name).read())
+            s.close()
+
     def test_bad_market_does_not_stop_the_round(self):
         import tempfile
         with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as d:

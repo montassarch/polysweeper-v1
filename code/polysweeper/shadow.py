@@ -29,6 +29,7 @@ import argparse
 import json
 import os
 import sys
+import threading
 import time
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -128,6 +129,7 @@ class Shadow:
         self.feed_check = {"checks": 0, "agree": 0}
         self.started_at = now_iso()
         self.followups = []        # fill checks waiting: second look after ~2 s, public trades after ~10 s
+        self._listing = self._listed = self._listed_error = None
         self.state_path = OUT / "state.json"
         self.state = json.loads(self.state_path.read_text()) if self.state_path.exists() else {"pending": {}, "entered": []}
         all_l = leagues()
@@ -183,6 +185,30 @@ class Shadow:
         return evs
 
     def refresh(self):
+        self.apply_markets(self.list_markets())
+
+    def refresh_in_background(self):
+        """The market list download can take a minute or more on a home connection (many leagues):
+        do it in a background thread so price checks keep running; apply_ready() swaps the list in."""
+        if self._listing is not None and self._listing.is_alive():
+            return
+        def work():
+            try:
+                self._listed = self.list_markets()
+            except Exception as exc:
+                self._listed_error = exc
+        self._listing = threading.Thread(target=work, daemon=True, name="market-list")
+        self._listing.start()
+
+    def apply_ready(self):
+        if self._listed_error is not None:
+            exc, self._listed_error = self._listed_error, None
+            self.error("refresh", exc)
+        if self._listed is not None:
+            found, self._listed = self._listed, None
+            self.apply_markets(found)
+
+    def list_markets(self):
         now = datetime.now(timezone.utc)
         earliest = now - timedelta(hours=12)     # matches that started up to 12 h ago (long series)
         horizon = now + timedelta(minutes=45)    # and matches starting within 45 minutes
@@ -206,6 +232,9 @@ class Shadow:
                     except (KeyError, ValueError):
                         continue
                     found[m["id"]] = {"league": league, "event": e, "market": m, "tokens": toks, "outcomes": outs}
+        return found
+
+    def apply_markets(self, found):
         self.markets = found
         self.endwatch.close_missing(set(found))
         self.live.set_tokens(t for info in found.values() for t in info["tokens"])
@@ -591,11 +620,15 @@ class Shadow:
                     print("kill switch (STOP file) found; stopping")
                     break
                 t = time.time()
+                self.apply_ready()
                 if t - last_refresh > REFRESH_SECONDS:
-                    try:
-                        self.refresh()
-                    except Exception as exc:
-                        self.error("refresh", exc)
+                    if last_refresh == 0.0:          # first list: wait for it, nothing to watch without it
+                        try:
+                            self.refresh()
+                        except Exception as exc:
+                            self.error("refresh", exc)
+                    else:
+                        self.refresh_in_background()
                     last_refresh = t
                 if t - last_poll >= POLL_SECONDS:
                     self.poll()

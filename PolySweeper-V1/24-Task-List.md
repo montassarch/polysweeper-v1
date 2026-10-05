@@ -26,7 +26,7 @@ owner plainly and propose a new date; never lower the bar to make a rule pass.
 - [ ] Small: HTML dashboard tabs don't list `mlb_lead7` yet (reviewer note). — **V1 session**
 - [ ] Best-wallet copy study: which sports, how many seconds after the end, what size (#10, #14). — **lab**
 - [ ] Finish the Sports WebSocket lag result; Flashscore lag test (#20). — **assistant / lab**
-- [ ] Phone alerts (free ntfy app). **Owner said yes 2026-10-05**, installing ntfy (Philipp Heckel, free, iPhone). Topic: `polysweeper-4463a025f72df6b3` (keep private; server ntfy.sh). Owner subscribes in the app; V1 builds the sender (stdlib HTTP POST to https://ntfy.sh/<topic>, alerts: no PC data 4 h, errors piling up, any pretend loss, crash/restart loop) and sends one test message. — **owner (subscribe) + V1 (build)**
+- [x] (2026-10-05, ntfy topic in code/config.json) Phone alerts (free ntfy app). **Owner said yes 2026-10-05**, installing ntfy (Philipp Heckel, free, iPhone). Topic: `polysweeper-4463a025f72df6b3` (keep private; server ntfy.sh). Owner subscribes in the app; V1 builds the sender (stdlib HTTP POST to https://ntfy.sh/<topic>, alerts: no PC data 4 h, errors piling up, any pretend loss, crash/restart loop) and sends one test message. — **owner (subscribe) + V1 (build)**
 
 **By 17 Oct: choose the ONE rule to trade** (it needs 14 days of shadow mode before 1 Nov). — **both**
 

@@ -40,6 +40,10 @@ owner plainly and propose a new date; never lower the bar to make a rule pass.
 - [ ] Go through [[32-Go-Live-Checklist]] box by box with the owner. — **both**
 - [ ] Owner creates the wallet and deposits $20; owner says **"go"**. — **owner**
 
+**After 1 Nov (owner plan 2026-10-05):** once the $20 test is proven, the owner adds $100-200 a month for a year.
+- [ ] Before each top-up: monthly report (wins, losses, profit, fill sizes) and check that bigger orders still fill at our price. — **assistant**
+- [ ] Write the size rules: max per trade as a % of the total, max open trades, and the ceiling where shares for sale run out. — **V1 + lab**
+
 ## Now: running test (Phase 1)
 
 - [x] Desktop app PolySweeper.exe: live view of shadow mode, built and tested on Windows by GitHub, installed by the autopilot ([[31-Desktop-App]])

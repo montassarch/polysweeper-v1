@@ -13,11 +13,11 @@ directly to `main` (owner's standing rule, see CLAUDE.md).
    agent file's full text at the top of its prompt. The owner asked for this team.
 2. **Team** (see "Keep usage low"): (a) ps-analyst (+ ps-fixer only if needed); (a2) **ps-ideas** (effort max, owner 2026-10-05:
    "I need ideas"): 15+ raw ideas, top 3-5 cards, one pick for the researcher; put its top cards and the
-   raw list (one line each) in the daily note under "New ideas"; (b) ps-researcher, given ps-ideas' pick as its out-of-the-box question, with today's UTC date, a short
+   raw list (one line each) in the daily note under "New ideas"; (b) ps-researcher (effort max, owner 2026-10-05: deep dives on data, news and trends), given ps-ideas' pick to check in depth, with today's UTC date, a short
    idea-board summary, the **"Owner's focus" list in the Research Hub (goes ahead of the lab's own picks)**,
    and the analyst's key numbers; researcher and tester load the `polymarket-data` skill
-   (`.claude/skills/polymarket-data/SKILL.md`) before touching Polymarket's APIs: 2-4 questions, at least one brand-new
-   out-of-the-box angle and one deepening the most promising idea, no repeats without new evidence;
+   (`.claude/skills/polymarket-data/SKILL.md`) before touching Polymarket's APIs: 1-3 deep questions plus a news scan,
+   no repeats without new evidence; the daily note gets a "News and trends" section;
    (c) ps-red-team on new/upgraded ideas; (d) ps-tester on the 1-2 best ideas measurable today with
    Polymarket's public APIs (scripts in `lab/`, never `code/`). Build on earlier days.
 3. **Write up:** `PolySweeper-V1/Research/R-YYYY-MM-DD.md` (UTC date; YAML front matter: title, tags
@@ -61,7 +61,7 @@ The lab runs on the owner's Claude plan; a full run used ~$8-10 of usage and onc
 - **Morning:** ps-analyst always. ps-fixer only if the analyst or a quick `git log`/`errors.jsonl` look
   shows a problem (tests failing, new error type, PC data older than 4 h, restart loop) or a bug to fix.
 - **Ideas:** every full run (owner asked; effort max). Not in the evening health check.
-- **Researcher:** 2-3 questions, reuse earlier results in `lab/`, no re-downloading what is already there.
+- **Researcher:** 1-3 deep questions + news scan (effort max), reuse earlier results in `lab/`, no re-downloading what is already there.
 - **Red team:** only new or upgraded ideas; skip when there are none. **Tester:** one idea per run.
 - **Evening health check:** ps-analyst only (it runs the tests too); ps-fixer only for a real problem.
 - Prompts to agents: short, point to files instead of pasting; ask for reports under ~40 lines.

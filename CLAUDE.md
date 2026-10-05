@@ -95,7 +95,7 @@ below $1 and hold to the $1 payout. **No real money yet: shadow mode only (prete
 - Plugins (project scope): `context7` (code library docs) and `frontend-design` (page design), both Anthropic official, moved here from user scope 2026-10-04.
 - Plugin `watch@claude-video` (project scope, reviewed 2026-10-04): watch a video link (yt-dlp + ffmpeg frames + captions). **Free mode only**: engine local, speech fallback none, detail efficient (`~/.config/watch/.env`, no keys). Never add a Gemini/Groq/OpenAI key without the owner's OK.
 - Agents (each has a fixed `effort` in its front matter to save usage: analyst low, fixer/tester medium,
-  researcher/red-team high): `.claude/agents/ps-researcher.md` (most important), **`ps-ideas`** (effort max, owner 2026-10-05: brainstorms 15+ ideas each full run, skill `idea-methods`), `ps-red-team`, `ps-tester`, `ps-analyst`,
+  researcher/ideas max, red-team high): `.claude/agents/ps-researcher.md` (most important; deep dives on data, news, trends), **`ps-ideas`** (effort max, owner 2026-10-05: brainstorms 15+ ideas each full run, skill `idea-methods`), `ps-red-team`, `ps-tester`, `ps-analyst`,
   `ps-fixer`, and **`ps-reviewer`** (effort high): independent review of every `code/` change before
   it is pushed to main (step 6 of the `safe-deploy` skill; every session uses it). Shared memory: idea board `PolySweeper-V1/30-Research-Hub.md`, daily notes
   `PolySweeper-V1/Research/R-<date>.md`.

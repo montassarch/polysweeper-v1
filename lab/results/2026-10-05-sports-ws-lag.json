@@ -1,0 +1,236 @@
+{
+ "summary": {
+  "ws_final": {
+   "n": 18,
+   "median_s": -35.05,
+   "min_s": -1220.9,
+   "max_s": -3.0
+  },
+  "ws_ended": {
+   "n": 18,
+   "median_s": -33.5,
+   "min_s": -170.8,
+   "max_s": -3.0
+  },
+  "v1_gone": {
+   "n": 15,
+   "median_s": -74.04,
+   "min_s": -168.3,
+   "max_s": 914.23
+  },
+  "bid99": {
+   "n": 18,
+   "median_s": -104.775,
+   "min_s": -874.79,
+   "max_s": -15.41
+  }
+ },
+ "rows": [
+  {
+   "league": "atp",
+   "title": "Shanghai Rolex Masters, Qualification: Alex Bolt vs Lloyd Harris",
+   "trigger": "score_decided",
+   "game_id": 6380079,
+   "final_score": "5-7, 4-6",
+   "ws_final": -37.6,
+   "ws_ended": -37.6,
+   "v1_gone": -104.11,
+   "bid99": -159.15
+  },
+  {
+   "league": "cs2",
+   "title": "Counter-Strike: Esport Academy Copenhagen vs Lavked (BO3) - CCT Europe",
+   "trigger": "score_decided",
+   "game_id": "1700499",
+   "final_score": "000-000|2-0|Bo3",
+   "ws_final": -34.9,
+   "ws_ended": -34.9,
+   "v1_gone": null,
+   "bid99": -203.11
+  },
+  {
+   "league": "wta",
+   "title": "Samsun: Polina Iatcenko vs Suzan Lamens",
+   "trigger": "score_decided",
+   "game_id": 6380740,
+   "final_score": "6-3, 6-1",
+   "ws_final": -5.3,
+   "ws_ended": -5.3,
+   "v1_gone": -159.09,
+   "bid99": -169.99
+  },
+  {
+   "league": "atp",
+   "title": "Shanghai Rolex Masters, Qualification: Jie Cui vs Aleksandar Vukic",
+   "trigger": "score_decided",
+   "game_id": 6380081,
+   "final_score": "6-4, 6-7(3-7), 6-7(5-7)",
+   "ws_final": -42.6,
+   "ws_ended": -42.6,
+   "v1_gone": -59.29,
+   "bid99": -59.29
+  },
+  {
+   "league": "wta",
+   "title": "Samsun: Lucia Bronzetti vs Fiona Crawley",
+   "trigger": "score_decided",
+   "game_id": 6380733,
+   "final_score": "2-6, 4-6",
+   "ws_final": -65.1,
+   "ws_ended": -65.1,
+   "v1_gone": -88.8,
+   "bid99": -88.8
+  },
+  {
+   "league": "atp",
+   "title": "Shanghai Rolex Masters, Qualification: Kimmer Coppejans vs Nishesh Bas",
+   "trigger": "score_decided",
+   "game_id": 6380085,
+   "final_score": "7-6(10-8), 6-3",
+   "ws_final": -127.7,
+   "ws_ended": -127.7,
+   "v1_gone": -168.3,
+   "bid99": -168.3
+  },
+  {
+   "league": "cs2",
+   "title": "Counter-Strike: Legacy vs 1WIN (BO3) - ESL Pro League Group Stage",
+   "trigger": "score_decided",
+   "game_id": "1711386",
+   "final_score": "000-000|0-2|Bo3",
+   "ws_final": -8.5,
+   "ws_ended": -8.5,
+   "v1_gone": -81.41,
+   "bid99": -81.4
+  },
+  {
+   "league": "atp",
+   "title": "Braga: Duje Ajdukovic vs Filip Jianu",
+   "trigger": "score_decided",
+   "game_id": 6379934,
+   "final_score": "6-2, 6-2",
+   "ws_final": -16.8,
+   "ws_ended": -16.8,
+   "v1_gone": -74.04,
+   "bid99": -73.99
+  },
+  {
+   "league": "dota2",
+   "title": "Dota 2: Yellow Submarine vs CyberHero (BO3) - PARI Universe Closed Qua",
+   "trigger": "score_decided",
+   "game_id": "1727835",
+   "final_score": "000-000|2-0|Bo3",
+   "ws_final": -69.3,
+   "ws_ended": -69.3,
+   "v1_gone": -120.75,
+   "bid99": -120.75
+  },
+  {
+   "league": "atp",
+   "title": "Shanghai Rolex Masters, Qualification: Mattia Bellucci vs Elias Ymer",
+   "trigger": "score_decided",
+   "game_id": 6380070,
+   "final_score": "4-6, 7-5, 7-6(7-3)",
+   "ws_final": -9.2,
+   "ws_ended": -9.2,
+   "v1_gone": -43.63,
+   "bid99": -43.63
+  },
+  {
+   "league": "cs2",
+   "title": "Counter-Strike: 9z vs Natus Vincere (BO3) - ESL Pro League Group Stage",
+   "trigger": "score_decided",
+   "game_id": "1711390",
+   "final_score": "000-000|0-2|Bo3",
+   "ws_final": -5.2,
+   "ws_ended": -5.2,
+   "v1_gone": -87.67,
+   "bid99": -180.22
+  },
+  {
+   "league": "atp",
+   "title": "China Open: Novak Djokovic vs Daniil Medvedev",
+   "trigger": "ended_flag",
+   "game_id": 6380888,
+   "final_score": "7-5, 5-3",
+   "ws_final": -1220.9,
+   "ws_ended": -7.9,
+   "v1_gone": null,
+   "bid99": -874.79
+  },
+  {
+   "league": "atp",
+   "title": "Villena: Daniel Rincon vs Alejo Sanchez Quilez",
+   "trigger": "score_decided",
+   "game_id": 6379926,
+   "final_score": "6-2, 6-4",
+   "ws_final": -3.0,
+   "ws_ended": -3.0,
+   "v1_gone": -15.41,
+   "bid99": -15.41
+  },
+  {
+   "league": "atp",
+   "title": "Shanghai Rolex Masters, Qualification: Coleman Wong vs Cruz Hewitt",
+   "trigger": "score_decided",
+   "game_id": 6380078,
+   "final_score": "6-4, 6-1",
+   "ws_final": -35.2,
+   "ws_ended": -35.2,
+   "v1_gone": null,
+   "bid99": -301.0
+  },
+  {
+   "league": "atp",
+   "title": "Villena: Maxi Carrascosa vs Borna Gojo",
+   "trigger": "ended_flag",
+   "game_id": null,
+   "v1_gone": 914.23,
+   "bid99": null
+  },
+  {
+   "league": "wta",
+   "title": "Samsun: Dominika Salkova vs Himeno Sakatsume",
+   "trigger": "score_decided",
+   "game_id": 6380738,
+   "final_score": "1-6, 4-6",
+   "ws_final": -170.8,
+   "ws_ended": -170.8,
+   "v1_gone": null,
+   "bid99": -204.02
+  },
+  {
+   "league": "atp",
+   "title": "Braga: Zsombor Piros vs Tristan Boyer",
+   "trigger": "score_decided",
+   "game_id": 6379929,
+   "final_score": "6-2, 5-7, 6-4",
+   "ws_final": -24.4,
+   "ws_ended": -24.4,
+   "v1_gone": -61.23,
+   "bid99": -61.23
+  },
+  {
+   "league": "atp",
+   "title": "Braga: Goncalo Marques vs Nikolas Sanchez Izquierdo",
+   "trigger": "score_decided",
+   "game_id": 6379932,
+   "final_score": "3-6, 4-6",
+   "ws_final": -32.1,
+   "ws_ended": -32.1,
+   "v1_gone": -66.03,
+   "bid99": -63.76
+  },
+  {
+   "league": "hok",
+   "title": "Honor of Kings: Wolves vs EDward Gaming (BO5) - King Pro League Grand ",
+   "trigger": "score_decided",
+   "game_id": "1707238",
+   "final_score": "000-000|3-1|Bo5",
+   "ws_final": -55.8,
+   "ws_ended": -55.8,
+   "v1_gone": -58.44,
+   "bid99": -58.44
+  }
+ ]
+}

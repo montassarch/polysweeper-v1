@@ -38,8 +38,11 @@ def load_ws():
 def game_id(market_id, cache={}):
     if market_id not in cache:
         try:
-            ev = get(f"https://gamma-api.polymarket.com/markets/{market_id}")["events"][0]["id"]
-            cache[market_id] = get(f"https://gamma-api.polymarket.com/events/{ev}").get("gameId")
+            m = get(f"https://gamma-api.polymarket.com/markets/{market_id}")
+            gid = m.get("gameId")                    # markets carry it directly; events only sometimes listed
+            if gid is None and m.get("events"):
+                gid = get(f"https://gamma-api.polymarket.com/events/{m['events'][0]['id']}").get("gameId")
+            cache[market_id] = gid
         except Exception:
             cache[market_id] = None
     return cache[market_id]
@@ -59,6 +62,14 @@ def main():
             continue
         gid = game_id(d["market_id"])
         msgs = games.get(int(gid)) if gid else None
+        if not msgs:                                 # tennis markets carry no gameId: match both names in the title
+            title = (d.get("title") or "").lower()
+            for g, ms in games.items():
+                m0 = ms[-1][1]
+                if (m0.get("homeTeam") and m0.get("awayTeam") and m0["homeTeam"].lower() in title
+                        and m0["awayTeam"].lower() in title and abs(ms[-1][0] - d["t0"]) < 3600):
+                    gid, msgs = g, ms
+                    break
         row = {"league": d["league"], "title": (d.get("title") or "")[:70], "trigger": d["first_trigger"], "game_id": gid}
         if msgs:
             final = msgs[-1][1].get("score")

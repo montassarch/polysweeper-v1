@@ -27,7 +27,9 @@ this list is the one to follow. Owner = who does it.
 - [x] Live feed + 2-second checks near the end + score log (shadow v2.6, [[29-Live-Feed-and-Score-Log]])
 - [x] (2026-10-04) Live feed on the PC: connected, 0 errors, 36/36 checks agree with the 15-second reads
 - [ ] First live end-window look (8 matches): 0 trades at 0.96-0.995 after the result, but all 8 had late-band trades (0.995-0.999, ~87,700 shares). Confirm over 1-2 days — **assistant**
-- [ ] After 1-2 days: live end-window report (any gap after the result?) — **assistant**
+- [x] (2026-10-05, [[R-2026-10-05]]) After 1-2 days: live end-window report: no gap after the result; market reacts ~1.5-2.5 min before Polymarket's score
+- [ ] Save price and side of each after-result trade in end-window records (logging only) — **V1 session**
+- [ ] Per sport: find a free result source and measure its lag vs Polymarket's score (score log); need ~2 min faster — **assistant (lab)**
 - [ ] After a few days: test tennis "practically locked" rules on the score log — **assistant**
 - [x] Shadow mode: enforce B7 (max 1 pretend buy per match and rule; second chances logged as `skip_second_buy`)
 - [x] End-window study: record real watch time (`seconds_watched`), report leaves out pre-fix rows

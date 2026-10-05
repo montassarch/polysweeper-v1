@@ -1,0 +1,26 @@
+{
+ "counts": {
+  "atp | matches": 6101,
+  "atp | retired": 196,
+  "atp | retiring player a set up AND >=3 games ahead in current set": 1,
+  "atp | retiring player ahead on sets-or-level and ahead in current set": 6,
+  "atp | retiring player was a set up": 24,
+  "wta | matches": 3610,
+  "wta | retired": 116,
+  "wta | retiring player ahead on sets-or-level and ahead in current set": 5,
+  "wta | retiring player was a set up": 12
+ },
+ "examples": [
+  [
+   "Boss Open",
+   [
+    6.0,
+    3.0
+   ],
+   [
+    4.0,
+    0.0
+   ]
+  ]
+ ]
+}

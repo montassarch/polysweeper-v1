@@ -1,0 +1,325 @@
+{
+"games": 42548,
+"states": {
+"after 6 full innings, away leads by 1": {
+"n": 4872,
+"lost": 1428
+},
+"after 6 full innings, away leads by 2": {
+"n": 3856,
+"lost": 649
+},
+"after 6 full innings, away leads by 3": {
+"n": 2731,
+"lost": 236
+},
+"after 6 full innings, away leads by 4": {
+"n": 2019,
+"lost": 97
+},
+"after 6 full innings, away leads by 5": {
+"n": 1340,
+"lost": 29
+},
+"after 6 full innings, away leads by 6": {
+"n": 912,
+"lost": 17
+},
+"after 6 full innings, away leads by 7": {
+"n": 531,
+"lost": 4
+},
+"after 6 full innings, away leads by 8": {
+"n": 908,
+"lost": 2
+},
+"after 6 full innings, home leads by 1": {
+"n": 5163,
+"lost": 1385
+},
+"after 6 full innings, home leads by 2": {
+"n": 4221,
+"lost": 601
+},
+"after 6 full innings, home leads by 3": {
+"n": 3216,
+"lost": 249
+},
+"after 6 full innings, home leads by 4": {
+"n": 2375,
+"lost": 118
+},
+"after 6 full innings, home leads by 5": {
+"n": 1718,
+"lost": 30
+},
+"after 6 full innings, home leads by 6": {
+"n": 1188,
+"lost": 17
+},
+"after 6 full innings, home leads by 7": {
+"n": 766,
+"lost": 1
+},
+"after 6 full innings, home leads by 8": {
+"n": 1289,
+"lost": 3
+},
+"after 6 full innings, leader by 1": {
+"n": 10035,
+"lost": 2813
+},
+"after 6 full innings, leader by 2": {
+"n": 8077,
+"lost": 1250
+},
+"after 6 full innings, leader by 3": {
+"n": 5947,
+"lost": 485
+},
+"after 6 full innings, leader by 4": {
+"n": 4394,
+"lost": 215
+},
+"after 6 full innings, leader by 5": {
+"n": 3058,
+"lost": 59
+},
+"after 6 full innings, leader by 6": {
+"n": 2100,
+"lost": 34
+},
+"after 6 full innings, leader by 7": {
+"n": 1297,
+"lost": 5
+},
+"after 6 full innings, leader by 8": {
+"n": 2197,
+"lost": 5
+},
+"after 7 full innings, away leads by 1": {
+"n": 4482,
+"lost": 1058
+},
+"after 7 full innings, away leads by 2": {
+"n": 3707,
+"lost": 444
+},
+"after 7 full innings, away leads by 3": {
+"n": 2823,
+"lost": 143
+},
+"after 7 full innings, away leads by 4": {
+"n": 2150,
+"lost": 58
+},
+"after 7 full innings, away leads by 5": {
+"n": 1518,
+"lost": 29
+},
+"after 7 full innings, away leads by 6": {
+"n": 990,
+"lost": 11
+},
+"after 7 full innings, away leads by 7": {
+"n": 721,
+"lost": 1
+},
+"after 7 full innings, away leads by 8": {
+"n": 1151,
+"lost": 1
+},
+"after 7 full innings, home leads by 1": {
+"n": 4661,
+"lost": 992
+},
+"after 7 full innings, home leads by 2": {
+"n": 3967,
+"lost": 416
+},
+"after 7 full innings, home leads by 3": {
+"n": 3154,
+"lost": 143
+},
+"after 7 full innings, home leads by 4": {
+"n": 2547,
+"lost": 63
+},
+"after 7 full innings, home leads by 5": {
+"n": 1878,
+"lost": 18
+},
+"after 7 full innings, home leads by 6": {
+"n": 1392,
+"lost": 7
+},
+"after 7 full innings, home leads by 7": {
+"n": 923,
+"lost": 1
+},
+"after 7 full innings, home leads by 8": {
+"n": 1697,
+"lost": 0
+},
+"after 7 full innings, leader by 1": {
+"n": 9143,
+"lost": 2050
+},
+"after 7 full innings, leader by 2": {
+"n": 7674,
+"lost": 860
+},
+"after 7 full innings, leader by 3": {
+"n": 5977,
+"lost": 286
+},
+"after 7 full innings, leader by 4": {
+"n": 4697,
+"lost": 121
+},
+"after 7 full innings, leader by 5": {
+"n": 3396,
+"lost": 47
+},
+"after 7 full innings, leader by 6": {
+"n": 2382,
+"lost": 18
+},
+"after 7 full innings, leader by 7": {
+"n": 1644,
+"lost": 2
+},
+"after 7 full innings, leader by 8": {
+"n": 2848,
+"lost": 1
+},
+"after 8 full innings, away leads by 1": {
+"n": 4055,
+"lost": 584
+},
+"after 8 full innings, away leads by 2": {
+"n": 3563,
+"lost": 220
+},
+"after 8 full innings, away leads by 3": {
+"n": 2761,
+"lost": 64
+},
+"after 8 full innings, away leads by 4": {
+"n": 2274,
+"lost": 19
+},
+"after 8 full innings, away leads by 5": {
+"n": 1631,
+"lost": 10
+},
+"after 8 full innings, away leads by 6": {
+"n": 1133,
+"lost": 6
+},
+"after 8 full innings, away leads by 7": {
+"n": 782,
+"lost": 0
+},
+"after 8 full innings, away leads by 8": {
+"n": 1483,
+"lost": 0
+},
+"after 8 full innings, home leads by 1": {
+"n": 4248,
+"lost": 548
+},
+"after 8 full innings, home leads by 2": {
+"n": 3855,
+"lost": 212
+},
+"after 8 full innings, home leads by 3": {
+"n": 3132,
+"lost": 68
+},
+"after 8 full innings, home leads by 4": {
+"n": 2657,
+"lost": 17
+},
+"after 8 full innings, home leads by 5": {
+"n": 2017,
+"lost": 7
+},
+"after 8 full innings, home leads by 6": {
+"n": 1534,
+"lost": 4
+},
+"after 8 full innings, home leads by 7": {
+"n": 986,
+"lost": 0
+},
+"after 8 full innings, home leads by 8": {
+"n": 2157,
+"lost": 0
+},
+"after 8 full innings, leader by 1": {
+"n": 8303,
+"lost": 1132
+},
+"after 8 full innings, leader by 2": {
+"n": 7418,
+"lost": 432
+},
+"after 8 full innings, leader by 3": {
+"n": 5893,
+"lost": 132
+},
+"after 8 full innings, leader by 4": {
+"n": 4931,
+"lost": 36
+},
+"after 8 full innings, leader by 5": {
+"n": 3648,
+"lost": 17
+},
+"after 8 full innings, leader by 6": {
+"n": 2667,
+"lost": 10
+},
+"after 8 full innings, leader by 7": {
+"n": 1768,
+"lost": 0
+},
+"after 8 full innings, leader by 8": {
+"n": 3640,
+"lost": 0
+},
+"away leads by 1 entering bottom 9": {
+"n": 4063,
+"lost": 703
+},
+"away leads by 2 entering bottom 9": {
+"n": 3523,
+"lost": 265
+},
+"away leads by 3 entering bottom 9": {
+"n": 2896,
+"lost": 83
+},
+"away leads by 4 entering bottom 9": {
+"n": 2533,
+"lost": 31
+},
+"away leads by 5 entering bottom 9": {
+"n": 1898,
+"lost": 9
+},
+"away leads by 6 entering bottom 9": {
+"n": 1379,
+"lost": 10
+},
+"away leads by 7 entering bottom 9": {
+"n": 1030,
+"lost": 0
+},
+"away leads by 8 entering bottom 9": {
+"n": 2058,
+"lost": 0
+}
+}
+}

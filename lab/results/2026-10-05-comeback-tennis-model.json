@@ -1,0 +1,64 @@
+{
+ "ATP-like p=0.64, trailer serve +0.0": {
+  "1-0 sets, 4-2 set 2, A serves": 0.06454,
+  "1-0 sets, 5-2 set 2, A serves": 0.00713,
+  "1-0 sets, 5-3 set 2, A serves": 0.03807,
+  "1-0 sets, 5-3 set 2, B serves": 0.03807,
+  "1-0 sets, 5-1 set 2, B serves": 0.0058,
+  "1-0 sets, 5-0 set 2, A serves": 0.00109,
+  "1-0 sets, 5-4 set 2, A serves": 0.04685,
+  "1-1 sets, 5-1 set 3, B serves": 0.01159,
+  "1-1 sets, 5-2 set 3, A serves": 0.01427,
+  "1-1 sets, 5-3 set 3, A serves": 0.07614
+ },
+ "ATP-like p=0.64, trailer serve +0.03": {
+  "1-0 sets, 4-2 set 2, A serves": 0.09391,
+  "1-0 sets, 5-2 set 2, A serves": 0.01012,
+  "1-0 sets, 5-3 set 2, A serves": 0.054,
+  "1-0 sets, 5-3 set 2, B serves": 0.054,
+  "1-0 sets, 5-1 set 2, B serves": 0.00871,
+  "1-0 sets, 5-0 set 2, A serves": 0.00163,
+  "1-0 sets, 5-4 set 2, A serves": 0.06272,
+  "1-1 sets, 5-1 set 3, B serves": 0.01459,
+  "1-1 sets, 5-2 set 3, A serves": 0.01695,
+  "1-1 sets, 5-3 set 3, A serves": 0.09045
+ },
+ "ATP-like p=0.64, Bo5": {
+  "2-0 sets, 5-2 set 3, A serves": 0.003567,
+  "2-0 sets, 5-3 set 3, B serves": 0.019034,
+  "2-1 sets, 5-2 set 4, A serves": 0.007133,
+  "2-2 sets, 5-2 set 5, A serves": 0.014267,
+  "2-0 sets, 3-1 set 3, A serves": 0.041919
+ },
+ "WTA-like p=0.56, trailer serve +0.0": {
+  "1-0 sets, 4-2 set 2, A serves": 0.08813,
+  "1-0 sets, 5-2 set 2, A serves": 0.02017,
+  "1-0 sets, 5-3 set 2, A serves": 0.05711,
+  "1-0 sets, 5-3 set 2, B serves": 0.05711,
+  "1-0 sets, 5-1 set 2, B serves": 0.01305,
+  "1-0 sets, 5-0 set 2, A serves": 0.00461,
+  "1-0 sets, 5-4 set 2, A serves": 0.0883,
+  "1-1 sets, 5-1 set 3, B serves": 0.02609,
+  "1-1 sets, 5-2 set 3, A serves": 0.04034,
+  "1-1 sets, 5-3 set 3, A serves": 0.11422
+ },
+ "WTA-like p=0.56, trailer serve +0.03": {
+  "1-0 sets, 4-2 set 2, A serves": 0.13466,
+  "1-0 sets, 5-2 set 2, A serves": 0.03018,
+  "1-0 sets, 5-3 set 2, A serves": 0.08545,
+  "1-0 sets, 5-3 set 2, B serves": 0.08545,
+  "1-0 sets, 5-1 set 2, B serves": 0.02156,
+  "1-0 sets, 5-0 set 2, A serves": 0.00762,
+  "1-0 sets, 5-4 set 2, A serves": 0.11959,
+  "1-1 sets, 5-1 set 3, B serves": 0.03571,
+  "1-1 sets, 5-2 set 3, A serves": 0.04998,
+  "1-1 sets, 5-3 set 3, A serves": 0.14152
+ },
+ "WTA-like p=0.56, Bo5": {
+  "2-0 sets, 5-2 set 3, A serves": 0.010085,
+  "2-0 sets, 5-3 set 3, B serves": 0.028556,
+  "2-1 sets, 5-2 set 4, A serves": 0.020171,
+  "2-2 sets, 5-2 set 5, A serves": 0.040341,
+  "2-0 sets, 3-1 set 3, A serves": 0.053978
+ }
+}

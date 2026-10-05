@@ -1,0 +1,1959 @@
+{
+"league": "nfl",
+"states": {
+"lead>=14 reached in Q1": {
+"n": 298,
+"lost_or_tied": 44
+},
+"lead>=14 reached in Q2": {
+"n": 1020,
+"lost_or_tied": 112
+},
+"lead>=14 reached in Q3": {
+"n": 1185,
+"lost_or_tied": 64
+},
+"lead>=14 reached in Q4": {
+"n": 1421,
+"lost_or_tied": 23
+},
+"lead>=17 reached in Q1": {
+"n": 59,
+"lost_or_tied": 6
+},
+"lead>=17 reached in Q2": {
+"n": 637,
+"lost_or_tied": 54
+},
+"lead>=17 reached in Q3": {
+"n": 830,
+"lost_or_tied": 23
+},
+"lead>=17 reached in Q4": {
+"n": 1072,
+"lost_or_tied": 3
+},
+"lead>=21 reached in Q1": {
+"n": 26,
+"lost_or_tied": 1
+},
+"lead>=21 reached in Q2": {
+"n": 288,
+"lost_or_tied": 14
+},
+"lead>=21 reached in Q3": {
+"n": 491,
+"lost_or_tied": 7
+},
+"lead>=21 reached in Q4": {
+"n": 671,
+"lost_or_tied": 0
+},
+"lead>=24 reached in Q1": {
+"n": 3,
+"lost_or_tied": 0
+},
+"lead>=24 reached in Q2": {
+"n": 158,
+"lost_or_tied": 5
+},
+"lead>=24 reached in Q3": {
+"n": 332,
+"lost_or_tied": 2
+},
+"lead>=24 reached in Q4": {
+"n": 471,
+"lost_or_tied": 0
+},
+"lead>=28 reached in Q1": {
+"n": 2,
+"lost_or_tied": 0
+},
+"lead>=28 reached in Q2": {
+"n": 66,
+"lost_or_tied": 1
+},
+"lead>=28 reached in Q3": {
+"n": 177,
+"lost_or_tied": 1
+},
+"lead>=28 reached in Q4": {
+"n": 280,
+"lost_or_tied": 0
+}
+},
+"losses": [
+[
+"400554223",
+"lead>=17 reached in Q2",
+{
+"home": [
+"PHI",
+34
+],
+"away": [
+"JAX",
+17
+]
+},
+17,
+34
+],
+[
+"400554287",
+"lead>=17 reached in Q2",
+{
+"home": [
+"GB",
+31
+],
+"away": [
+"NYJ",
+24
+]
+},
+24,
+31
+],
+[
+"400554314",
+"lead>=17 reached in Q2",
+{
+"home": [
+"SF",
+20
+],
+"away": [
+"CHI",
+28
+]
+},
+28,
+20
+],
+[
+"400554199",
+"lead>=17 reached in Q2",
+{
+"home": [
+"STL",
+31
+],
+"away": [
+"DAL",
+34
+]
+},
+34,
+31
+],
+[
+"400554199",
+"lead>=21 reached in Q2",
+{
+"home": [
+"STL",
+31
+],
+"away": [
+"DAL",
+34
+]
+},
+34,
+31
+],
+[
+"400554204",
+"lead>=17 reached in Q2",
+{
+"home": [
+"TEN",
+28
+],
+"away": [
+"CLE",
+29
+]
+},
+29,
+28
+],
+[
+"400554204",
+"lead>=21 reached in Q2",
+{
+"home": [
+"TEN",
+28
+],
+"away": [
+"CLE",
+29
+]
+},
+29,
+28
+],
+[
+"400554204",
+"lead>=24 reached in Q2",
+{
+"home": [
+"TEN",
+28
+],
+"away": [
+"CLE",
+29
+]
+},
+29,
+28
+],
+[
+"400554224",
+"lead>=17 reached in Q2",
+{
+"home": [
+"ATL",
+21
+],
+"away": [
+"DET",
+22
+]
+},
+22,
+21
+],
+[
+"400554224",
+"lead>=21 reached in Q2",
+{
+"home": [
+"ATL",
+21
+],
+"away": [
+"DET",
+22
+]
+},
+22,
+21
+],
+[
+"400554224",
+"lead>=17 reached in Q3",
+{
+"home": [
+"ATL",
+21
+],
+"away": [
+"DET",
+22
+]
+},
+22,
+21
+],
+[
+"400554327",
+"lead>=17 reached in Q2",
+{
+"home": [
+"JAX",
+25
+],
+"away": [
+"NYG",
+24
+]
+},
+24,
+25
+],
+[
+"400554327",
+"lead>=21 reached in Q2",
+{
+"home": [
+"JAX",
+25
+],
+"away": [
+"NYG",
+24
+]
+},
+24,
+25
+],
+[
+"400554361",
+"lead>=17 reached in Q2",
+{
+"home": [
+"SF",
+35
+],
+"away": [
+"SD",
+38
+]
+},
+38,
+35
+],
+[
+"400554361",
+"lead>=21 reached in Q2",
+{
+"home": [
+"SF",
+35
+],
+"away": [
+"SD",
+38
+]
+},
+38,
+35
+],
+[
+"400791558",
+"lead>=17 reached in Q2",
+{
+"home": [
+"SD",
+33
+],
+"away": [
+"DET",
+28
+]
+},
+28,
+33
+],
+[
+"400791492",
+"lead>=17 reached in Q3",
+{
+"home": [
+"CIN",
+27
+],
+"away": [
+"SEA",
+24
+]
+},
+24,
+27
+],
+[
+"400791511",
+"lead>=17 reached in Q2",
+{
+"home": [
+"WSH",
+31
+],
+"away": [
+"TB",
+30
+]
+},
+30,
+31
+],
+[
+"400791511",
+"lead>=21 reached in Q2",
+{
+"home": [
+"WSH",
+31
+],
+"away": [
+"TB",
+30
+]
+},
+30,
+31
+],
+[
+"400791511",
+"lead>=24 reached in Q2",
+{
+"home": [
+"WSH",
+31
+],
+"away": [
+"TB",
+30
+]
+},
+30,
+31
+],
+[
+"400791568",
+"lead>=17 reached in Q1",
+{
+"home": [
+"DET",
+23
+],
+"away": [
+"GB",
+27
+]
+},
+27,
+23
+],
+[
+"400791568",
+"lead>=17 reached in Q3",
+{
+"home": [
+"DET",
+23
+],
+"away": [
+"GB",
+27
+]
+},
+27,
+23
+],
+[
+"400791723",
+"lead>=17 reached in Q2",
+{
+"home": [
+"PIT",
+34
+],
+"away": [
+"DEN",
+27
+]
+},
+27,
+34
+],
+[
+"400874570",
+"lead>=17 reached in Q2",
+{
+"home": [
+"KC",
+33
+],
+"away": [
+"SD",
+27
+]
+},
+27,
+33
+],
+[
+"400874570",
+"lead>=17 reached in Q3",
+{
+"home": [
+"KC",
+33
+],
+"away": [
+"SD",
+27
+]
+},
+27,
+33
+],
+[
+"400874570",
+"lead>=21 reached in Q3",
+{
+"home": [
+"KC",
+33
+],
+"away": [
+"SD",
+27
+]
+},
+27,
+33
+],
+[
+"400874570",
+"lead>=17 reached in Q4",
+{
+"home": [
+"KC",
+33
+],
+"away": [
+"SD",
+27
+]
+},
+27,
+33
+],
+[
+"400874512",
+"lead>=17 reached in Q1",
+{
+"home": [
+"CLE",
+20
+],
+"away": [
+"BAL",
+25
+]
+},
+25,
+20
+],
+[
+"400874505",
+"lead>=17 reached in Q2",
+{
+"home": [
+"ATL",
+30
+],
+"away": [
+"SD",
+33
+]
+},
+33,
+30
+],
+[
+"400874580",
+"lead>=17 reached in Q2",
+{
+"home": [
+"CAR",
+17
+],
+"away": [
+"KC",
+20
+]
+},
+20,
+17
+],
+[
+"400874639",
+"lead>=17 reached in Q2",
+{
+"home": [
+"IND",
+24
+],
+"away": [
+"JAX",
+20
+]
+},
+20,
+24
+],
+[
+"400927752",
+"lead>=17 reached in Q2",
+{
+"home": [
+"ATL",
+28
+],
+"away": [
+"NE",
+34
+]
+},
+34,
+28
+],
+[
+"400927752",
+"lead>=21 reached in Q2",
+{
+"home": [
+"ATL",
+28
+],
+"away": [
+"NE",
+34
+]
+},
+34,
+28
+],
+[
+"400927752",
+"lead>=17 reached in Q3",
+{
+"home": [
+"ATL",
+28
+],
+"away": [
+"NE",
+34
+]
+},
+34,
+28
+],
+[
+"400927752",
+"lead>=21 reached in Q3",
+{
+"home": [
+"ATL",
+28
+],
+"away": [
+"NE",
+34
+]
+},
+34,
+28
+],
+[
+"400927752",
+"lead>=24 reached in Q3",
+{
+"home": [
+"ATL",
+28
+],
+"away": [
+"NE",
+34
+]
+},
+34,
+28
+],
+[
+"400951697",
+"lead>=17 reached in Q2",
+{
+"home": [
+"ATL",
+17
+],
+"away": [
+"MIA",
+20
+]
+},
+20,
+17
+],
+[
+"400951754",
+"lead>=17 reached in Q2",
+{
+"home": [
+"CIN",
+20
+],
+"away": [
+"PIT",
+23
+]
+},
+23,
+20
+],
+[
+"400999175",
+"lead>=17 reached in Q2",
+{
+"home": [
+"KC",
+21
+],
+"away": [
+"TEN",
+22
+]
+},
+22,
+21
+],
+[
+"400999088",
+"lead>=17 reached in Q2",
+{
+"home": [
+"AFC",
+24
+],
+"away": [
+"NFC",
+23
+]
+},
+23,
+24
+],
+[
+"401030726",
+"lead>=17 reached in Q2",
+{
+"home": [
+"GB",
+24
+],
+"away": [
+"CHI",
+23
+]
+},
+23,
+24
+],
+[
+"401030726",
+"lead>=17 reached in Q3",
+{
+"home": [
+"GB",
+24
+],
+"away": [
+"CHI",
+23
+]
+},
+23,
+24
+],
+[
+"401030785",
+"lead>=17 reached in Q3",
+{
+"home": [
+"CIN",
+27
+],
+"away": [
+"MIA",
+17
+]
+},
+17,
+27
+],
+[
+"401030807",
+"lead>=17 reached in Q3",
+{
+"home": [
+"PHI",
+17
+],
+"away": [
+"CAR",
+21
+]
+},
+21,
+17
+],
+[
+"401030820",
+"lead>=17 reached in Q2",
+{
+"home": [
+"TB",
+32
+],
+"away": [
+"ATL",
+34
+]
+},
+34,
+32
+],
+[
+"401127968",
+"lead>=17 reached in Q2",
+{
+"home": [
+"PHI",
+32
+],
+"away": [
+"WSH",
+27
+]
+},
+27,
+32
+],
+[
+"401127999",
+"lead>=17 reached in Q2",
+{
+"home": [
+"ARI",
+27
+],
+"away": [
+"DET",
+27
+]
+},
+27,
+27
+],
+[
+"401127999",
+"lead>=17 reached in Q4",
+{
+"home": [
+"ARI",
+27
+],
+"away": [
+"DET",
+27
+]
+},
+27,
+27
+],
+[
+"401127966",
+"lead>=17 reached in Q2",
+{
+"home": [
+"TB",
+31
+],
+"away": [
+"NYG",
+32
+]
+},
+32,
+31
+],
+[
+"401128081",
+"lead>=17 reached in Q2",
+{
+"home": [
+"MIN",
+27
+],
+"away": [
+"DEN",
+23
+]
+},
+23,
+27
+],
+[
+"401131043",
+"lead>=17 reached in Q1",
+{
+"home": [
+"KC",
+51
+],
+"away": [
+"HOU",
+31
+]
+},
+31,
+51
+],
+[
+"401131043",
+"lead>=21 reached in Q1",
+{
+"home": [
+"KC",
+51
+],
+"away": [
+"HOU",
+31
+]
+},
+31,
+51
+],
+[
+"401131043",
+"lead>=17 reached in Q2",
+{
+"home": [
+"KC",
+51
+],
+"away": [
+"HOU",
+31
+]
+},
+31,
+51
+],
+[
+"401131043",
+"lead>=21 reached in Q2",
+{
+"home": [
+"KC",
+51
+],
+"away": [
+"HOU",
+31
+]
+},
+31,
+51
+],
+[
+"401131043",
+"lead>=24 reached in Q2",
+{
+"home": [
+"KC",
+51
+],
+"away": [
+"HOU",
+31
+]
+},
+31,
+51
+],
+[
+"401220282",
+"lead>=17 reached in Q3",
+{
+"home": [
+"DET",
+23
+],
+"away": [
+"CHI",
+27
+]
+},
+27,
+23
+],
+[
+"401220268",
+"lead>=17 reached in Q2",
+{
+"home": [
+"WSH",
+27
+],
+"away": [
+"PHI",
+17
+]
+},
+17,
+27
+],
+[
+"401220249",
+"lead>=17 reached in Q1",
+{
+"home": [
+"DAL",
+40
+],
+"away": [
+"ATL",
+39
+]
+},
+39,
+40
+],
+[
+"401220249",
+"lead>=17 reached in Q2",
+{
+"home": [
+"DAL",
+40
+],
+"away": [
+"ATL",
+39
+]
+},
+39,
+40
+],
+[
+"401220334",
+"lead>=17 reached in Q2",
+{
+"home": [
+"TB",
+38
+],
+"away": [
+"LAC",
+31
+]
+},
+31,
+38
+],
+[
+"401220326",
+"lead>=17 reached in Q2",
+{
+"home": [
+"NO",
+30
+],
+"away": [
+"LAC",
+27
+]
+},
+27,
+30
+],
+[
+"401220190",
+"lead>=17 reached in Q2",
+{
+"home": [
+"IND",
+31
+],
+"away": [
+"CIN",
+27
+]
+},
+27,
+31
+],
+[
+"401220190",
+"lead>=21 reached in Q2",
+{
+"home": [
+"IND",
+31
+],
+"away": [
+"CIN",
+27
+]
+},
+27,
+31
+],
+[
+"401220212",
+"lead>=17 reached in Q3",
+{
+"home": [
+"DEN",
+31
+],
+"away": [
+"LAC",
+30
+]
+},
+30,
+31
+],
+[
+"401220212",
+"lead>=21 reached in Q3",
+{
+"home": [
+"DEN",
+31
+],
+"away": [
+"LAC",
+30
+]
+},
+30,
+31
+],
+[
+"401220308",
+"lead>=17 reached in Q2",
+{
+"home": [
+"ATL",
+27
+],
+"away": [
+"TB",
+31
+]
+},
+31,
+27
+],
+[
+"401220308",
+"lead>=17 reached in Q3",
+{
+"home": [
+"ATL",
+27
+],
+"away": [
+"TB",
+31
+]
+},
+31,
+27
+],
+[
+"401220174",
+"lead>=17 reached in Q3",
+{
+"home": [
+"PIT",
+28
+],
+"away": [
+"IND",
+24
+]
+},
+24,
+28
+],
+[
+"401326409",
+"lead>=17 reached in Q3",
+{
+"home": [
+"BAL",
+31
+],
+"away": [
+"IND",
+25
+]
+},
+25,
+31
+],
+[
+"401326599",
+"lead>=17 reached in Q2",
+{
+"home": [
+"LAR",
+24
+],
+"away": [
+"SF",
+27
+]
+},
+27,
+24
+],
+[
+"401326635",
+"lead>=17 reached in Q2",
+{
+"home": [
+"KC",
+24
+],
+"away": [
+"CIN",
+27
+]
+},
+27,
+24
+],
+[
+"401437637",
+"lead>=17 reached in Q3",
+{
+"home": [
+"HOU",
+20
+],
+"away": [
+"IND",
+20
+]
+},
+20,
+20
+],
+[
+"401437633",
+"lead>=17 reached in Q2",
+{
+"home": [
+"BAL",
+38
+],
+"away": [
+"MIA",
+42
+]
+},
+42,
+38
+],
+[
+"401437633",
+"lead>=21 reached in Q2",
+{
+"home": [
+"BAL",
+38
+],
+"away": [
+"MIA",
+42
+]
+},
+42,
+38
+],
+[
+"401437633",
+"lead>=17 reached in Q3",
+{
+"home": [
+"BAL",
+38
+],
+"away": [
+"MIA",
+42
+]
+},
+42,
+38
+],
+[
+"401437633",
+"lead>=21 reached in Q3",
+{
+"home": [
+"BAL",
+38
+],
+"away": [
+"MIA",
+42
+]
+},
+42,
+38
+],
+[
+"401437642",
+"lead>=17 reached in Q2",
+{
+"home": [
+"LV",
+23
+],
+"away": [
+"ARI",
+29
+]
+},
+29,
+23
+],
+[
+"401437750",
+"lead>=17 reached in Q2",
+{
+"home": [
+"BAL",
+20
+],
+"away": [
+"BUF",
+23
+]
+},
+23,
+20
+],
+[
+"401437776",
+"lead>=17 reached in Q2",
+{
+"home": [
+"KC",
+30
+],
+"away": [
+"LV",
+29
+]
+},
+29,
+30
+],
+[
+"401437824",
+"lead>=17 reached in Q2",
+{
+"home": [
+"JAX",
+27
+],
+"away": [
+"LV",
+20
+]
+},
+20,
+27
+],
+[
+"401437833",
+"lead>=17 reached in Q3",
+{
+"home": [
+"BUF",
+30
+],
+"away": [
+"MIN",
+33
+]
+},
+33,
+30
+],
+[
+"401437904",
+"lead>=17 reached in Q1",
+{
+"home": [
+"MIN",
+39
+],
+"away": [
+"IND",
+36
+]
+},
+36,
+39
+],
+[
+"401437904",
+"lead>=17 reached in Q2",
+{
+"home": [
+"MIN",
+39
+],
+"away": [
+"IND",
+36
+]
+},
+36,
+39
+],
+[
+"401437904",
+"lead>=21 reached in Q2",
+{
+"home": [
+"MIN",
+39
+],
+"away": [
+"IND",
+36
+]
+},
+36,
+39
+],
+[
+"401437904",
+"lead>=24 reached in Q2",
+{
+"home": [
+"MIN",
+39
+],
+"away": [
+"IND",
+36
+]
+},
+36,
+39
+],
+[
+"401437904",
+"lead>=28 reached in Q2",
+{
+"home": [
+"MIN",
+39
+],
+"away": [
+"IND",
+36
+]
+},
+36,
+39
+],
+[
+"401437904",
+"lead>=17 reached in Q3",
+{
+"home": [
+"MIN",
+39
+],
+"away": [
+"IND",
+36
+]
+},
+36,
+39
+],
+[
+"401437904",
+"lead>=21 reached in Q3",
+{
+"home": [
+"MIN",
+39
+],
+"away": [
+"IND",
+36
+]
+},
+36,
+39
+],
+[
+"401437904",
+"lead>=24 reached in Q3",
+{
+"home": [
+"MIN",
+39
+],
+"away": [
+"IND",
+36
+]
+},
+36,
+39
+],
+[
+"401437904",
+"lead>=28 reached in Q3",
+{
+"home": [
+"MIN",
+39
+],
+"away": [
+"IND",
+36
+]
+},
+36,
+39
+],
+[
+"401437910",
+"lead>=17 reached in Q3",
+{
+"home": [
+"JAX",
+40
+],
+"away": [
+"DAL",
+34
+]
+},
+34,
+40
+],
+[
+"401437914",
+"lead>=17 reached in Q2",
+{
+"home": [
+"TB",
+23
+],
+"away": [
+"CIN",
+34
+]
+},
+34,
+23
+],
+[
+"401437998",
+"lead>=17 reached in Q1",
+{
+"home": [
+"JAX",
+31
+],
+"away": [
+"LAC",
+30
+]
+},
+30,
+31
+],
+[
+"401437998",
+"lead>=17 reached in Q2",
+{
+"home": [
+"JAX",
+31
+],
+"away": [
+"LAC",
+30
+]
+},
+30,
+31
+],
+[
+"401437998",
+"lead>=21 reached in Q2",
+{
+"home": [
+"JAX",
+31
+],
+"away": [
+"LAC",
+30
+]
+},
+30,
+31
+],
+[
+"401437998",
+"lead>=24 reached in Q2",
+{
+"home": [
+"JAX",
+31
+],
+"away": [
+"LAC",
+30
+]
+},
+30,
+31
+],
+[
+"401547421",
+"lead>=17 reached in Q2",
+{
+"home": [
+"ARI",
+28
+],
+"away": [
+"NYG",
+31
+]
+},
+31,
+28
+],
+[
+"401547421",
+"lead>=17 reached in Q3",
+{
+"home": [
+"ARI",
+28
+],
+"away": [
+"NYG",
+31
+]
+},
+31,
+28
+],
+[
+"401547421",
+"lead>=21 reached in Q3",
+{
+"home": [
+"ARI",
+28
+],
+"away": [
+"NYG",
+31
+]
+},
+31,
+28
+],
+[
+"401547416",
+"lead>=17 reached in Q2",
+{
+"home": [
+"DEN",
+33
+],
+"away": [
+"WSH",
+35
+]
+},
+35,
+33
+],
+[
+"401547434",
+"lead>=17 reached in Q2",
+{
+"home": [
+"GB",
+18
+],
+"away": [
+"NO",
+17
+]
+},
+17,
+18
+],
+[
+"401547444",
+"lead>=17 reached in Q3",
+{
+"home": [
+"CHI",
+28
+],
+"away": [
+"DEN",
+31
+]
+},
+31,
+28
+],
+[
+"401547444",
+"lead>=21 reached in Q3",
+{
+"home": [
+"CHI",
+28
+],
+"away": [
+"DEN",
+31
+]
+},
+31,
+28
+],
+[
+"401547380",
+"lead>=17 reached in Q2",
+{
+"home": [
+"SF",
+34
+],
+"away": [
+"DET",
+31
+]
+},
+31,
+34
+],
+[
+"401671719",
+"lead>=17 reached in Q2",
+{
+"home": [
+"CHI",
+24
+],
+"away": [
+"TEN",
+17
+]
+},
+17,
+24
+],
+[
+"401772839",
+"lead>=17 reached in Q3",
+{
+"home": [
+"PHI",
+33
+],
+"away": [
+"LAR",
+26
+]
+},
+26,
+33
+],
+[
+"401772852",
+"lead>=17 reached in Q2",
+{
+"home": [
+"CAR",
+27
+],
+"away": [
+"MIA",
+24
+]
+},
+24,
+27
+],
+[
+"401772747",
+"lead>=17 reached in Q2",
+{
+"home": [
+"ARI",
+21
+],
+"away": [
+"TEN",
+22
+]
+},
+22,
+21
+],
+[
+"401772757",
+"lead>=17 reached in Q3",
+{
+"home": [
+"DEN",
+33
+],
+"away": [
+"NYG",
+32
+]
+},
+32,
+33
+],
+[
+"401772757",
+"lead>=17 reached in Q4",
+{
+"home": [
+"DEN",
+33
+],
+"away": [
+"NYG",
+32
+]
+},
+32,
+33
+],
+[
+"401772770",
+"lead>=17 reached in Q2",
+{
+"home": [
+"HOU",
+36
+],
+"away": [
+"JAX",
+29
+]
+},
+29,
+36
+],
+[
+"401772770",
+"lead>=17 reached in Q3",
+{
+"home": [
+"HOU",
+36
+],
+"away": [
+"JAX",
+29
+]
+},
+29,
+36
+],
+[
+"401772890",
+"lead>=17 reached in Q2",
+{
+"home": [
+"DAL",
+24
+],
+"away": [
+"PHI",
+21
+]
+},
+21,
+24
+],
+[
+"401772890",
+"lead>=21 reached in Q2",
+{
+"home": [
+"DAL",
+24
+],
+"away": [
+"PHI",
+21
+]
+},
+21,
+24
+],
+[
+"401772795",
+"lead>=17 reached in Q2",
+{
+"home": [
+"NE",
+31
+],
+"away": [
+"BUF",
+35
+]
+},
+35,
+31
+],
+[
+"401772795",
+"lead>=21 reached in Q2",
+{
+"home": [
+"NE",
+31
+],
+"away": [
+"BUF",
+35
+]
+},
+35,
+31
+],
+[
+"401772981",
+"lead>=17 reached in Q2",
+{
+"home": [
+"CHI",
+31
+],
+"away": [
+"GB",
+27
+]
+},
+27,
+31
+]
+]
+}

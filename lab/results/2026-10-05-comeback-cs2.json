@@ -1,0 +1,2200 @@
+{
+"maps": 30899,
+"matches_used": 13658,
+"states": {
+"Bo1 | 10+ rounds, lead 4+": {
+"n": 778,
+"lost": 36
+},
+"Bo1 | 10+ rounds, lead 4+ | tier ?": {
+"n": 3,
+"lost": 0
+},
+"Bo1 | 10+ rounds, lead 4+ | tier a": {
+"n": 52,
+"lost": 4
+},
+"Bo1 | 10+ rounds, lead 4+ | tier b": {
+"n": 147,
+"lost": 8
+},
+"Bo1 | 10+ rounds, lead 4+ | tier c": {
+"n": 494,
+"lost": 23
+},
+"Bo1 | 10+ rounds, lead 4+ | tier s": {
+"n": 82,
+"lost": 1
+},
+"Bo1 | 10+ rounds, lead 6+": {
+"n": 564,
+"lost": 18
+},
+"Bo1 | 10+ rounds, lead 6+ | tier ?": {
+"n": 3,
+"lost": 0
+},
+"Bo1 | 10+ rounds, lead 6+ | tier a": {
+"n": 33,
+"lost": 2
+},
+"Bo1 | 10+ rounds, lead 6+ | tier b": {
+"n": 101,
+"lost": 4
+},
+"Bo1 | 10+ rounds, lead 6+ | tier c": {
+"n": 368,
+"lost": 12
+},
+"Bo1 | 10+ rounds, lead 6+ | tier s": {
+"n": 59,
+"lost": 0
+},
+"Bo1 | 10+ rounds, lead 8+": {
+"n": 348,
+"lost": 3
+},
+"Bo1 | 10+ rounds, lead 8+ | tier ?": {
+"n": 2,
+"lost": 0
+},
+"Bo1 | 10+ rounds, lead 8+ | tier a": {
+"n": 17,
+"lost": 0
+},
+"Bo1 | 10+ rounds, lead 8+ | tier b": {
+"n": 71,
+"lost": 0
+},
+"Bo1 | 10+ rounds, lead 8+ | tier c": {
+"n": 229,
+"lost": 3
+},
+"Bo1 | 10+ rounds, lead 8+ | tier s": {
+"n": 29,
+"lost": 0
+},
+"Bo1 | map point (12+) ahead, regulation": {
+"n": 962,
+"lost": 53
+},
+"Bo1 | map point (12+) ahead, regulation | tier ?": {
+"n": 3,
+"lost": 0
+},
+"Bo1 | map point (12+) ahead, regulation | tier a": {
+"n": 66,
+"lost": 4
+},
+"Bo1 | map point (12+) ahead, regulation | tier b": {
+"n": 190,
+"lost": 11
+},
+"Bo1 | map point (12+) ahead, regulation | tier c": {
+"n": 587,
+"lost": 34
+},
+"Bo1 | map point (12+) ahead, regulation | tier s": {
+"n": 116,
+"lost": 4
+},
+"Bo1 | map point 12-0": {
+"n": 15,
+"lost": 0
+},
+"Bo1 | map point 12-0 | tier b": {
+"n": 2,
+"lost": 0
+},
+"Bo1 | map point 12-0 | tier c": {
+"n": 11,
+"lost": 0
+},
+"Bo1 | map point 12-0 | tier s": {
+"n": 2,
+"lost": 0
+},
+"Bo1 | map point 12-1": {
+"n": 42,
+"lost": 0
+},
+"Bo1 | map point 12-1 | tier ?": {
+"n": 1,
+"lost": 0
+},
+"Bo1 | map point 12-1 | tier a": {
+"n": 1,
+"lost": 0
+},
+"Bo1 | map point 12-1 | tier b": {
+"n": 6,
+"lost": 0
+},
+"Bo1 | map point 12-1 | tier c": {
+"n": 27,
+"lost": 0
+},
+"Bo1 | map point 12-1 | tier s": {
+"n": 7,
+"lost": 0
+},
+"Bo1 | map point 12-10": {
+"n": 188,
+"lost": 34
+},
+"Bo1 | map point 12-10 | tier a": {
+"n": 10,
+"lost": 2
+},
+"Bo1 | map point 12-10 | tier b": {
+"n": 39,
+"lost": 8
+},
+"Bo1 | map point 12-10 | tier c": {
+"n": 111,
+"lost": 23
+},
+"Bo1 | map point 12-10 | tier s": {
+"n": 28,
+"lost": 1
+},
+"Bo1 | map point 12-11": {
+"n": 183,
+"lost": 52
+},
+"Bo1 | map point 12-11 | tier a": {
+"n": 14,
+"lost": 4
+},
+"Bo1 | map point 12-11 | tier b": {
+"n": 43,
+"lost": 11
+},
+"Bo1 | map point 12-11 | tier c": {
+"n": 107,
+"lost": 33
+},
+"Bo1 | map point 12-11 | tier s": {
+"n": 19,
+"lost": 4
+},
+"Bo1 | map point 12-2": {
+"n": 78,
+"lost": 0
+},
+"Bo1 | map point 12-2 | tier a": {
+"n": 5,
+"lost": 0
+},
+"Bo1 | map point 12-2 | tier b": {
+"n": 15,
+"lost": 0
+},
+"Bo1 | map point 12-2 | tier c": {
+"n": 48,
+"lost": 0
+},
+"Bo1 | map point 12-2 | tier s": {
+"n": 10,
+"lost": 0
+},
+"Bo1 | map point 12-3": {
+"n": 103,
+"lost": 1
+},
+"Bo1 | map point 12-3 | tier ?": {
+"n": 1,
+"lost": 0
+},
+"Bo1 | map point 12-3 | tier a": {
+"n": 4,
+"lost": 0
+},
+"Bo1 | map point 12-3 | tier b": {
+"n": 28,
+"lost": 0
+},
+"Bo1 | map point 12-3 | tier c": {
+"n": 61,
+"lost": 1
+},
+"Bo1 | map point 12-3 | tier s": {
+"n": 9,
+"lost": 0
+},
+"Bo1 | map point 12-4": {
+"n": 126,
+"lost": 2
+},
+"Bo1 | map point 12-4 | tier a": {
+"n": 6,
+"lost": 0
+},
+"Bo1 | map point 12-4 | tier b": {
+"n": 22,
+"lost": 0
+},
+"Bo1 | map point 12-4 | tier c": {
+"n": 89,
+"lost": 2
+},
+"Bo1 | map point 12-4 | tier s": {
+"n": 9,
+"lost": 0
+},
+"Bo1 | map point 12-5": {
+"n": 152,
+"lost": 4
+},
+"Bo1 | map point 12-5 | tier ?": {
+"n": 1,
+"lost": 0
+},
+"Bo1 | map point 12-5 | tier a": {
+"n": 8,
+"lost": 0
+},
+"Bo1 | map point 12-5 | tier b": {
+"n": 15,
+"lost": 0
+},
+"Bo1 | map point 12-5 | tier c": {
+"n": 107,
+"lost": 4
+},
+"Bo1 | map point 12-5 | tier s": {
+"n": 21,
+"lost": 0
+},
+"Bo1 | map point 12-6": {
+"n": 171,
+"lost": 5
+},
+"Bo1 | map point 12-6 | tier a": {
+"n": 13,
+"lost": 0
+},
+"Bo1 | map point 12-6 | tier b": {
+"n": 25,
+"lost": 0
+},
+"Bo1 | map point 12-6 | tier c": {
+"n": 106,
+"lost": 5
+},
+"Bo1 | map point 12-6 | tier s": {
+"n": 27,
+"lost": 0
+},
+"Bo1 | map point 12-7": {
+"n": 179,
+"lost": 9
+},
+"Bo1 | map point 12-7 | tier a": {
+"n": 10,
+"lost": 0
+},
+"Bo1 | map point 12-7 | tier b": {
+"n": 34,
+"lost": 1
+},
+"Bo1 | map point 12-7 | tier c": {
+"n": 115,
+"lost": 8
+},
+"Bo1 | map point 12-7 | tier s": {
+"n": 20,
+"lost": 0
+},
+"Bo1 | map point 12-8": {
+"n": 180,
+"lost": 15
+},
+"Bo1 | map point 12-8 | tier a": {
+"n": 14,
+"lost": 0
+},
+"Bo1 | map point 12-8 | tier b": {
+"n": 41,
+"lost": 3
+},
+"Bo1 | map point 12-8 | tier c": {
+"n": 103,
+"lost": 12
+},
+"Bo1 | map point 12-8 | tier s": {
+"n": 22,
+"lost": 0
+},
+"Bo1 | map point 12-9": {
+"n": 182,
+"lost": 21
+},
+"Bo1 | map point 12-9 | tier a": {
+"n": 12,
+"lost": 1
+},
+"Bo1 | map point 12-9 | tier b": {
+"n": 44,
+"lost": 4
+},
+"Bo1 | map point 12-9 | tier c": {
+"n": 102,
+"lost": 16
+},
+"Bo1 | map point 12-9 | tier s": {
+"n": 24,
+"lost": 0
+},
+"Bo1 | map point, trailer <= 5 rounds": {
+"n": 396,
+"lost": 4
+},
+"Bo1 | map point, trailer <= 5 rounds | tier ?": {
+"n": 3,
+"lost": 0
+},
+"Bo1 | map point, trailer <= 5 rounds | tier a": {
+"n": 21,
+"lost": 0
+},
+"Bo1 | map point, trailer <= 5 rounds | tier b": {
+"n": 68,
+"lost": 0
+},
+"Bo1 | map point, trailer <= 5 rounds | tier c": {
+"n": 265,
+"lost": 4
+},
+"Bo1 | map point, trailer <= 5 rounds | tier s": {
+"n": 39,
+"lost": 0
+},
+"Bo1 | map point, trailer <= 7 rounds": {
+"n": 602,
+"lost": 9
+},
+"Bo1 | map point, trailer <= 7 rounds | tier ?": {
+"n": 3,
+"lost": 0
+},
+"Bo1 | map point, trailer <= 7 rounds | tier a": {
+"n": 35,
+"lost": 0
+},
+"Bo1 | map point, trailer <= 7 rounds | tier b": {
+"n": 107,
+"lost": 1
+},
+"Bo1 | map point, trailer <= 7 rounds | tier c": {
+"n": 395,
+"lost": 8
+},
+"Bo1 | map point, trailer <= 7 rounds | tier s": {
+"n": 62,
+"lost": 0
+},
+"Bo1 | map point, trailer <= 9 rounds": {
+"n": 787,
+"lost": 21
+},
+"Bo1 | map point, trailer <= 9 rounds | tier ?": {
+"n": 3,
+"lost": 0
+},
+"Bo1 | map point, trailer <= 9 rounds | tier a": {
+"n": 51,
+"lost": 1
+},
+"Bo1 | map point, trailer <= 9 rounds | tier b": {
+"n": 152,
+"lost": 4
+},
+"Bo1 | map point, trailer <= 9 rounds | tier c": {
+"n": 495,
+"lost": 16
+},
+"Bo1 | map point, trailer <= 9 rounds | tier s": {
+"n": 86,
+"lost": 0
+},
+"Bo3 0-0, map 1 | 10+ rounds, lead 4+": {
+"n": 6787,
+"lost": 1565
+},
+"Bo3 0-0, map 1 | 10+ rounds, lead 4+ | tier ?": {
+"n": 8,
+"lost": 2
+},
+"Bo3 0-0, map 1 | 10+ rounds, lead 4+ | tier a": {
+"n": 238,
+"lost": 69
+},
+"Bo3 0-0, map 1 | 10+ rounds, lead 4+ | tier b": {
+"n": 3069,
+"lost": 679
+},
+"Bo3 0-0, map 1 | 10+ rounds, lead 4+ | tier c": {
+"n": 2960,
+"lost": 696
+},
+"Bo3 0-0, map 1 | 10+ rounds, lead 4+ | tier s": {
+"n": 512,
+"lost": 119
+},
+"Bo3 0-0, map 1 | 10+ rounds, lead 6+": {
+"n": 4575,
+"lost": 896
+},
+"Bo3 0-0, map 1 | 10+ rounds, lead 6+ | tier ?": {
+"n": 4,
+"lost": 1
+},
+"Bo3 0-0, map 1 | 10+ rounds, lead 6+ | tier a": {
+"n": 162,
+"lost": 43
+},
+"Bo3 0-0, map 1 | 10+ rounds, lead 6+ | tier b": {
+"n": 2055,
+"lost": 392
+},
+"Bo3 0-0, map 1 | 10+ rounds, lead 6+ | tier c": {
+"n": 2003,
+"lost": 393
+},
+"Bo3 0-0, map 1 | 10+ rounds, lead 6+ | tier s": {
+"n": 351,
+"lost": 67
+},
+"Bo3 0-0, map 1 | 10+ rounds, lead 8+": {
+"n": 2630,
+"lost": 457
+},
+"Bo3 0-0, map 1 | 10+ rounds, lead 8+ | tier ?": {
+"n": 3,
+"lost": 1
+},
+"Bo3 0-0, map 1 | 10+ rounds, lead 8+ | tier a": {
+"n": 84,
+"lost": 24
+},
+"Bo3 0-0, map 1 | 10+ rounds, lead 8+ | tier b": {
+"n": 1196,
+"lost": 207
+},
+"Bo3 0-0, map 1 | 10+ rounds, lead 8+ | tier c": {
+"n": 1153,
+"lost": 186
+},
+"Bo3 0-0, map 1 | 10+ rounds, lead 8+ | tier s": {
+"n": 194,
+"lost": 39
+},
+"Bo3 0-0, map 1 | map point (12+) ahead, regulation": {
+"n": 8763,
+"lost": 2036
+},
+"Bo3 0-0, map 1 | map point (12+) ahead, regulation | tier ?": {
+"n": 15,
+"lost": 1
+},
+"Bo3 0-0, map 1 | map point (12+) ahead, regulation | tier a": {
+"n": 334,
+"lost": 88
+},
+"Bo3 0-0, map 1 | map point (12+) ahead, regulation | tier b": {
+"n": 3939,
+"lost": 886
+},
+"Bo3 0-0, map 1 | map point (12+) ahead, regulation | tier c": {
+"n": 3833,
+"lost": 908
+},
+"Bo3 0-0, map 1 | map point (12+) ahead, regulation | tier s": {
+"n": 642,
+"lost": 153
+},
+"Bo3 0-0, map 1 | map point 12-0": {
+"n": 107,
+"lost": 7
+},
+"Bo3 0-0, map 1 | map point 12-0 | tier a": {
+"n": 3,
+"lost": 1
+},
+"Bo3 0-0, map 1 | map point 12-0 | tier b": {
+"n": 53,
+"lost": 3
+},
+"Bo3 0-0, map 1 | map point 12-0 | tier c": {
+"n": 47,
+"lost": 3
+},
+"Bo3 0-0, map 1 | map point 12-0 | tier s": {
+"n": 4,
+"lost": 0
+},
+"Bo3 0-0, map 1 | map point 12-1": {
+"n": 266,
+"lost": 25
+},
+"Bo3 0-0, map 1 | map point 12-1 | tier a": {
+"n": 7,
+"lost": 1
+},
+"Bo3 0-0, map 1 | map point 12-1 | tier b": {
+"n": 126,
+"lost": 10
+},
+"Bo3 0-0, map 1 | map point 12-1 | tier c": {
+"n": 114,
+"lost": 14
+},
+"Bo3 0-0, map 1 | map point 12-1 | tier s": {
+"n": 19,
+"lost": 0
+},
+"Bo3 0-0, map 1 | map point 12-10": {
+"n": 1936,
+"lost": 615
+},
+"Bo3 0-0, map 1 | map point 12-10 | tier ?": {
+"n": 5,
+"lost": 0
+},
+"Bo3 0-0, map 1 | map point 12-10 | tier a": {
+"n": 91,
+"lost": 30
+},
+"Bo3 0-0, map 1 | map point 12-10 | tier b": {
+"n": 867,
+"lost": 270
+},
+"Bo3 0-0, map 1 | map point 12-10 | tier c": {
+"n": 845,
+"lost": 264
+},
+"Bo3 0-0, map 1 | map point 12-10 | tier s": {
+"n": 128,
+"lost": 51
+},
+"Bo3 0-0, map 1 | map point 12-11": {
+"n": 2041,
+"lost": 750
+},
+"Bo3 0-0, map 1 | map point 12-11 | tier ?": {
+"n": 5,
+"lost": 0
+},
+"Bo3 0-0, map 1 | map point 12-11 | tier a": {
+"n": 93,
+"lost": 29
+},
+"Bo3 0-0, map 1 | map point 12-11 | tier b": {
+"n": 879,
+"lost": 327
+},
+"Bo3 0-0, map 1 | map point 12-11 | tier c": {
+"n": 900,
+"lost": 336
+},
+"Bo3 0-0, map 1 | map point 12-11 | tier s": {
+"n": 164,
+"lost": 58
+},
+"Bo3 0-0, map 1 | map point 12-2": {
+"n": 529,
+"lost": 86
+},
+"Bo3 0-0, map 1 | map point 12-2 | tier ?": {
+"n": 1,
+"lost": 0
+},
+"Bo3 0-0, map 1 | map point 12-2 | tier a": {
+"n": 17,
+"lost": 6
+},
+"Bo3 0-0, map 1 | map point 12-2 | tier b": {
+"n": 247,
+"lost": 46
+},
+"Bo3 0-0, map 1 | map point 12-2 | tier c": {
+"n": 229,
+"lost": 30
+},
+"Bo3 0-0, map 1 | map point 12-2 | tier s": {
+"n": 35,
+"lost": 4
+},
+"Bo3 0-0, map 1 | map point 12-3": {
+"n": 790,
+"lost": 129
+},
+"Bo3 0-0, map 1 | map point 12-3 | tier ?": {
+"n": 2,
+"lost": 0
+},
+"Bo3 0-0, map 1 | map point 12-3 | tier a": {
+"n": 25,
+"lost": 7
+},
+"Bo3 0-0, map 1 | map point 12-3 | tier b": {
+"n": 343,
+"lost": 61
+},
+"Bo3 0-0, map 1 | map point 12-3 | tier c": {
+"n": 348,
+"lost": 50
+},
+"Bo3 0-0, map 1 | map point 12-3 | tier s": {
+"n": 72,
+"lost": 11
+},
+"Bo3 0-0, map 1 | map point 12-4": {
+"n": 1075,
+"lost": 185
+},
+"Bo3 0-0, map 1 | map point 12-4 | tier ?": {
+"n": 2,
+"lost": 0
+},
+"Bo3 0-0, map 1 | map point 12-4 | tier a": {
+"n": 33,
+"lost": 10
+},
+"Bo3 0-0, map 1 | map point 12-4 | tier b": {
+"n": 489,
+"lost": 81
+},
+"Bo3 0-0, map 1 | map point 12-4 | tier c": {
+"n": 462,
+"lost": 74
+},
+"Bo3 0-0, map 1 | map point 12-4 | tier s": {
+"n": 89,
+"lost": 20
+},
+"Bo3 0-0, map 1 | map point 12-5": {
+"n": 1309,
+"lost": 243
+},
+"Bo3 0-0, map 1 | map point 12-5 | tier ?": {
+"n": 2,
+"lost": 0
+},
+"Bo3 0-0, map 1 | map point 12-5 | tier a": {
+"n": 51,
+"lost": 11
+},
+"Bo3 0-0, map 1 | map point 12-5 | tier b": {
+"n": 581,
+"lost": 109
+},
+"Bo3 0-0, map 1 | map point 12-5 | tier c": {
+"n": 557,
+"lost": 104
+},
+"Bo3 0-0, map 1 | map point 12-5 | tier s": {
+"n": 118,
+"lost": 19
+},
+"Bo3 0-0, map 1 | map point 12-6": {
+"n": 1479,
+"lost": 301
+},
+"Bo3 0-0, map 1 | map point 12-6 | tier ?": {
+"n": 1,
+"lost": 0
+},
+"Bo3 0-0, map 1 | map point 12-6 | tier a": {
+"n": 60,
+"lost": 17
+},
+"Bo3 0-0, map 1 | map point 12-6 | tier b": {
+"n": 649,
+"lost": 131
+},
+"Bo3 0-0, map 1 | map point 12-6 | tier c": {
+"n": 661,
+"lost": 134
+},
+"Bo3 0-0, map 1 | map point 12-6 | tier s": {
+"n": 108,
+"lost": 19
+},
+"Bo3 0-0, map 1 | map point 12-7": {
+"n": 1641,
+"lost": 380
+},
+"Bo3 0-0, map 1 | map point 12-7 | tier a": {
+"n": 54,
+"lost": 14
+},
+"Bo3 0-0, map 1 | map point 12-7 | tier b": {
+"n": 732,
+"lost": 158
+},
+"Bo3 0-0, map 1 | map point 12-7 | tier c": {
+"n": 724,
+"lost": 174
+},
+"Bo3 0-0, map 1 | map point 12-7 | tier s": {
+"n": 131,
+"lost": 34
+},
+"Bo3 0-0, map 1 | map point 12-8": {
+"n": 1726,
+"lost": 457
+},
+"Bo3 0-0, map 1 | map point 12-8 | tier ?": {
+"n": 2,
+"lost": 0
+},
+"Bo3 0-0, map 1 | map point 12-8 | tier a": {
+"n": 55,
+"lost": 21
+},
+"Bo3 0-0, map 1 | map point 12-8 | tier b": {
+"n": 782,
+"lost": 190
+},
+"Bo3 0-0, map 1 | map point 12-8 | tier c": {
+"n": 760,
+"lost": 209
+},
+"Bo3 0-0, map 1 | map point 12-8 | tier s": {
+"n": 127,
+"lost": 37
+},
+"Bo3 0-0, map 1 | map point 12-9": {
+"n": 1904,
+"lost": 540
+},
+"Bo3 0-0, map 1 | map point 12-9 | tier ?": {
+"n": 3,
+"lost": 1
+},
+"Bo3 0-0, map 1 | map point 12-9 | tier a": {
+"n": 78,
+"lost": 28
+},
+"Bo3 0-0, map 1 | map point 12-9 | tier b": {
+"n": 853,
+"lost": 223
+},
+"Bo3 0-0, map 1 | map point 12-9 | tier c": {
+"n": 849,
+"lost": 244
+},
+"Bo3 0-0, map 1 | map point 12-9 | tier s": {
+"n": 121,
+"lost": 44
+},
+"Bo3 0-0, map 1 | map point, trailer <= 5 rounds": {
+"n": 2919,
+"lost": 477
+},
+"Bo3 0-0, map 1 | map point, trailer <= 5 rounds | tier ?": {
+"n": 3,
+"lost": 0
+},
+"Bo3 0-0, map 1 | map point, trailer <= 5 rounds | tier a": {
+"n": 92,
+"lost": 20
+},
+"Bo3 0-0, map 1 | map point, trailer <= 5 rounds | tier b": {
+"n": 1314,
+"lost": 208
+},
+"Bo3 0-0, map 1 | map point, trailer <= 5 rounds | tier c": {
+"n": 1274,
+"lost": 211
+},
+"Bo3 0-0, map 1 | map point, trailer <= 5 rounds | tier s": {
+"n": 236,
+"lost": 38
+},
+"Bo3 0-0, map 1 | map point, trailer <= 7 rounds": {
+"n": 4799,
+"lost": 886
+},
+"Bo3 0-0, map 1 | map point, trailer <= 7 rounds | tier ?": {
+"n": 3,
+"lost": 0
+},
+"Bo3 0-0, map 1 | map point, trailer <= 7 rounds | tier a": {
+"n": 159,
+"lost": 37
+},
+"Bo3 0-0, map 1 | map point, trailer <= 7 rounds | tier b": {
+"n": 2162,
+"lost": 384
+},
+"Bo3 0-0, map 1 | map point, trailer <= 7 rounds | tier c": {
+"n": 2104,
+"lost": 398
+},
+"Bo3 0-0, map 1 | map point, trailer <= 7 rounds | tier s": {
+"n": 371,
+"lost": 67
+},
+"Bo3 0-0, map 1 | map point, trailer <= 9 rounds": {
+"n": 6763,
+"lost": 1380
+},
+"Bo3 0-0, map 1 | map point, trailer <= 9 rounds | tier ?": {
+"n": 8,
+"lost": 1
+},
+"Bo3 0-0, map 1 | map point, trailer <= 9 rounds | tier a": {
+"n": 238,
+"lost": 63
+},
+"Bo3 0-0, map 1 | map point, trailer <= 9 rounds | tier b": {
+"n": 3042,
+"lost": 584
+},
+"Bo3 0-0, map 1 | map point, trailer <= 9 rounds | tier c": {
+"n": 2977,
+"lost": 627
+},
+"Bo3 0-0, map 1 | map point, trailer <= 9 rounds | tier s": {
+"n": 498,
+"lost": 105
+},
+"Bo3 1-0, map 2 | 10+ rounds, lead 4+": {
+"n": 4114,
+"lost": 111
+},
+"Bo3 1-0, map 2 | 10+ rounds, lead 4+ | tier ?": {
+"n": 9,
+"lost": 1
+},
+"Bo3 1-0, map 2 | 10+ rounds, lead 4+ | tier a": {
+"n": 137,
+"lost": 5
+},
+"Bo3 1-0, map 2 | 10+ rounds, lead 4+ | tier b": {
+"n": 1880,
+"lost": 45
+},
+"Bo3 1-0, map 2 | 10+ rounds, lead 4+ | tier c": {
+"n": 1814,
+"lost": 51
+},
+"Bo3 1-0, map 2 | 10+ rounds, lead 4+ | tier s": {
+"n": 274,
+"lost": 9
+},
+"Bo3 1-0, map 2 | 10+ rounds, lead 6+": {
+"n": 2846,
+"lost": 41
+},
+"Bo3 1-0, map 2 | 10+ rounds, lead 6+ | tier ?": {
+"n": 5,
+"lost": 1
+},
+"Bo3 1-0, map 2 | 10+ rounds, lead 6+ | tier a": {
+"n": 97,
+"lost": 2
+},
+"Bo3 1-0, map 2 | 10+ rounds, lead 6+ | tier b": {
+"n": 1293,
+"lost": 14
+},
+"Bo3 1-0, map 2 | 10+ rounds, lead 6+ | tier c": {
+"n": 1268,
+"lost": 21
+},
+"Bo3 1-0, map 2 | 10+ rounds, lead 6+ | tier s": {
+"n": 183,
+"lost": 3
+},
+"Bo3 1-0, map 2 | 10+ rounds, lead 8+": {
+"n": 1659,
+"lost": 15
+},
+"Bo3 1-0, map 2 | 10+ rounds, lead 8+ | tier ?": {
+"n": 3,
+"lost": 1
+},
+"Bo3 1-0, map 2 | 10+ rounds, lead 8+ | tier a": {
+"n": 54,
+"lost": 0
+},
+"Bo3 1-0, map 2 | 10+ rounds, lead 8+ | tier b": {
+"n": 737,
+"lost": 3
+},
+"Bo3 1-0, map 2 | 10+ rounds, lead 8+ | tier c": {
+"n": 771,
+"lost": 11
+},
+"Bo3 1-0, map 2 | 10+ rounds, lead 8+ | tier s": {
+"n": 94,
+"lost": 0
+},
+"Bo3 1-0, map 2 | map point (12+) ahead, regulation": {
+"n": 5225,
+"lost": 111
+},
+"Bo3 1-0, map 2 | map point (12+) ahead, regulation | tier ?": {
+"n": 8,
+"lost": 1
+},
+"Bo3 1-0, map 2 | map point (12+) ahead, regulation | tier a": {
+"n": 190,
+"lost": 10
+},
+"Bo3 1-0, map 2 | map point (12+) ahead, regulation | tier b": {
+"n": 2357,
+"lost": 45
+},
+"Bo3 1-0, map 2 | map point (12+) ahead, regulation | tier c": {
+"n": 2301,
+"lost": 46
+},
+"Bo3 1-0, map 2 | map point (12+) ahead, regulation | tier s": {
+"n": 369,
+"lost": 9
+},
+"Bo3 1-0, map 2 | map point 12-0": {
+"n": 68,
+"lost": 0
+},
+"Bo3 1-0, map 2 | map point 12-0 | tier ?": {
+"n": 1,
+"lost": 0
+},
+"Bo3 1-0, map 2 | map point 12-0 | tier a": {
+"n": 1,
+"lost": 0
+},
+"Bo3 1-0, map 2 | map point 12-0 | tier b": {
+"n": 39,
+"lost": 0
+},
+"Bo3 1-0, map 2 | map point 12-0 | tier c": {
+"n": 26,
+"lost": 0
+},
+"Bo3 1-0, map 2 | map point 12-0 | tier s": {
+"n": 1,
+"lost": 0
+},
+"Bo3 1-0, map 2 | map point 12-1": {
+"n": 193,
+"lost": 0
+},
+"Bo3 1-0, map 2 | map point 12-1 | tier ?": {
+"n": 2,
+"lost": 0
+},
+"Bo3 1-0, map 2 | map point 12-1 | tier a": {
+"n": 7,
+"lost": 0
+},
+"Bo3 1-0, map 2 | map point 12-1 | tier b": {
+"n": 102,
+"lost": 0
+},
+"Bo3 1-0, map 2 | map point 12-1 | tier c": {
+"n": 75,
+"lost": 0
+},
+"Bo3 1-0, map 2 | map point 12-1 | tier s": {
+"n": 7,
+"lost": 0
+},
+"Bo3 1-0, map 2 | map point 12-10": {
+"n": 1042,
+"lost": 60
+},
+"Bo3 1-0, map 2 | map point 12-10 | tier ?": {
+"n": 3,
+"lost": 0
+},
+"Bo3 1-0, map 2 | map point 12-10 | tier a": {
+"n": 35,
+"lost": 3
+},
+"Bo3 1-0, map 2 | map point 12-10 | tier b": {
+"n": 476,
+"lost": 24
+},
+"Bo3 1-0, map 2 | map point 12-10 | tier c": {
+"n": 438,
+"lost": 26
+},
+"Bo3 1-0, map 2 | map point 12-10 | tier s": {
+"n": 90,
+"lost": 7
+},
+"Bo3 1-0, map 2 | map point 12-11": {
+"n": 1098,
+"lost": 111
+},
+"Bo3 1-0, map 2 | map point 12-11 | tier ?": {
+"n": 3,
+"lost": 1
+},
+"Bo3 1-0, map 2 | map point 12-11 | tier a": {
+"n": 46,
+"lost": 10
+},
+"Bo3 1-0, map 2 | map point 12-11 | tier b": {
+"n": 504,
+"lost": 45
+},
+"Bo3 1-0, map 2 | map point 12-11 | tier c": {
+"n": 449,
+"lost": 46
+},
+"Bo3 1-0, map 2 | map point 12-11 | tier s": {
+"n": 96,
+"lost": 9
+},
+"Bo3 1-0, map 2 | map point 12-2": {
+"n": 348,
+"lost": 0
+},
+"Bo3 1-0, map 2 | map point 12-2 | tier ?": {
+"n": 1,
+"lost": 0
+},
+"Bo3 1-0, map 2 | map point 12-2 | tier a": {
+"n": 13,
+"lost": 0
+},
+"Bo3 1-0, map 2 | map point 12-2 | tier b": {
+"n": 169,
+"lost": 0
+},
+"Bo3 1-0, map 2 | map point 12-2 | tier c": {
+"n": 154,
+"lost": 0
+},
+"Bo3 1-0, map 2 | map point 12-2 | tier s": {
+"n": 11,
+"lost": 0
+},
+"Bo3 1-0, map 2 | map point 12-3": {
+"n": 493,
+"lost": 0
+},
+"Bo3 1-0, map 2 | map point 12-3 | tier ?": {
+"n": 1,
+"lost": 0
+},
+"Bo3 1-0, map 2 | map point 12-3 | tier a": {
+"n": 15,
+"lost": 0
+},
+"Bo3 1-0, map 2 | map point 12-3 | tier b": {
+"n": 204,
+"lost": 0
+},
+"Bo3 1-0, map 2 | map point 12-3 | tier c": {
+"n": 245,
+"lost": 0
+},
+"Bo3 1-0, map 2 | map point 12-3 | tier s": {
+"n": 28,
+"lost": 0
+},
+"Bo3 1-0, map 2 | map point 12-4": {
+"n": 655,
+"lost": 2
+},
+"Bo3 1-0, map 2 | map point 12-4 | tier ?": {
+"n": 1,
+"lost": 0
+},
+"Bo3 1-0, map 2 | map point 12-4 | tier a": {
+"n": 22,
+"lost": 0
+},
+"Bo3 1-0, map 2 | map point 12-4 | tier b": {
+"n": 261,
+"lost": 2
+},
+"Bo3 1-0, map 2 | map point 12-4 | tier c": {
+"n": 328,
+"lost": 0
+},
+"Bo3 1-0, map 2 | map point 12-4 | tier s": {
+"n": 43,
+"lost": 0
+},
+"Bo3 1-0, map 2 | map point 12-5": {
+"n": 768,
+"lost": 3
+},
+"Bo3 1-0, map 2 | map point 12-5 | tier a": {
+"n": 30,
+"lost": 0
+},
+"Bo3 1-0, map 2 | map point 12-5 | tier b": {
+"n": 335,
+"lost": 2
+},
+"Bo3 1-0, map 2 | map point 12-5 | tier c": {
+"n": 345,
+"lost": 0
+},
+"Bo3 1-0, map 2 | map point 12-5 | tier s": {
+"n": 58,
+"lost": 1
+},
+"Bo3 1-0, map 2 | map point 12-6": {
+"n": 890,
+"lost": 6
+},
+"Bo3 1-0, map 2 | map point 12-6 | tier ?": {
+"n": 2,
+"lost": 0
+},
+"Bo3 1-0, map 2 | map point 12-6 | tier a": {
+"n": 30,
+"lost": 0
+},
+"Bo3 1-0, map 2 | map point 12-6 | tier b": {
+"n": 389,
+"lost": 5
+},
+"Bo3 1-0, map 2 | map point 12-6 | tier c": {
+"n": 404,
+"lost": 0
+},
+"Bo3 1-0, map 2 | map point 12-6 | tier s": {
+"n": 65,
+"lost": 1
+},
+"Bo3 1-0, map 2 | map point 12-7": {
+"n": 963,
+"lost": 11
+},
+"Bo3 1-0, map 2 | map point 12-7 | tier ?": {
+"n": 2,
+"lost": 0
+},
+"Bo3 1-0, map 2 | map point 12-7 | tier a": {
+"n": 32,
+"lost": 1
+},
+"Bo3 1-0, map 2 | map point 12-7 | tier b": {
+"n": 461,
+"lost": 6
+},
+"Bo3 1-0, map 2 | map point 12-7 | tier c": {
+"n": 400,
+"lost": 3
+},
+"Bo3 1-0, map 2 | map point 12-7 | tier s": {
+"n": 68,
+"lost": 1
+},
+"Bo3 1-0, map 2 | map point 12-8": {
+"n": 1045,
+"lost": 22
+},
+"Bo3 1-0, map 2 | map point 12-8 | tier ?": {
+"n": 1,
+"lost": 0
+},
+"Bo3 1-0, map 2 | map point 12-8 | tier a": {
+"n": 36,
+"lost": 1
+},
+"Bo3 1-0, map 2 | map point 12-8 | tier b": {
+"n": 499,
+"lost": 10
+},
+"Bo3 1-0, map 2 | map point 12-8 | tier c": {
+"n": 434,
+"lost": 9
+},
+"Bo3 1-0, map 2 | map point 12-8 | tier s": {
+"n": 75,
+"lost": 2
+},
+"Bo3 1-0, map 2 | map point 12-9": {
+"n": 1058,
+"lost": 42
+},
+"Bo3 1-0, map 2 | map point 12-9 | tier ?": {
+"n": 1,
+"lost": 0
+},
+"Bo3 1-0, map 2 | map point 12-9 | tier a": {
+"n": 43,
+"lost": 3
+},
+"Bo3 1-0, map 2 | map point 12-9 | tier b": {
+"n": 491,
+"lost": 19
+},
+"Bo3 1-0, map 2 | map point 12-9 | tier c": {
+"n": 451,
+"lost": 17
+},
+"Bo3 1-0, map 2 | map point 12-9 | tier s": {
+"n": 72,
+"lost": 3
+},
+"Bo3 1-0, map 2 | map point, trailer <= 5 rounds": {
+"n": 1881,
+"lost": 3
+},
+"Bo3 1-0, map 2 | map point, trailer <= 5 rounds | tier ?": {
+"n": 2,
+"lost": 0
+},
+"Bo3 1-0, map 2 | map point, trailer <= 5 rounds | tier a": {
+"n": 61,
+"lost": 0
+},
+"Bo3 1-0, map 2 | map point, trailer <= 5 rounds | tier b": {
+"n": 836,
+"lost": 2
+},
+"Bo3 1-0, map 2 | map point, trailer <= 5 rounds | tier c": {
+"n": 866,
+"lost": 0
+},
+"Bo3 1-0, map 2 | map point, trailer <= 5 rounds | tier s": {
+"n": 116,
+"lost": 1
+},
+"Bo3 1-0, map 2 | map point, trailer <= 7 rounds": {
+"n": 2975,
+"lost": 11
+},
+"Bo3 1-0, map 2 | map point, trailer <= 7 rounds | tier ?": {
+"n": 5,
+"lost": 0
+},
+"Bo3 1-0, map 2 | map point, trailer <= 7 rounds | tier a": {
+"n": 97,
+"lost": 1
+},
+"Bo3 1-0, map 2 | map point, trailer <= 7 rounds | tier b": {
+"n": 1355,
+"lost": 6
+},
+"Bo3 1-0, map 2 | map point, trailer <= 7 rounds | tier c": {
+"n": 1330,
+"lost": 3
+},
+"Bo3 1-0, map 2 | map point, trailer <= 7 rounds | tier s": {
+"n": 188,
+"lost": 1
+},
+"Bo3 1-0, map 2 | map point, trailer <= 9 rounds": {
+"n": 4127,
+"lost": 42
+},
+"Bo3 1-0, map 2 | map point, trailer <= 9 rounds | tier ?": {
+"n": 5,
+"lost": 0
+},
+"Bo3 1-0, map 2 | map point, trailer <= 9 rounds | tier a": {
+"n": 144,
+"lost": 3
+},
+"Bo3 1-0, map 2 | map point, trailer <= 9 rounds | tier b": {
+"n": 1876,
+"lost": 19
+},
+"Bo3 1-0, map 2 | map point, trailer <= 9 rounds | tier c": {
+"n": 1836,
+"lost": 17
+},
+"Bo3 1-0, map 2 | map point, trailer <= 9 rounds | tier s": {
+"n": 266,
+"lost": 3
+},
+"Bo3 1-1, map 3 | 10+ rounds, lead 4+": {
+"n": 2610,
+"lost": 169
+},
+"Bo3 1-1, map 3 | 10+ rounds, lead 4+ | tier ?": {
+"n": 4,
+"lost": 0
+},
+"Bo3 1-1, map 3 | 10+ rounds, lead 4+ | tier a": {
+"n": 117,
+"lost": 8
+},
+"Bo3 1-1, map 3 | 10+ rounds, lead 4+ | tier b": {
+"n": 1178,
+"lost": 67
+},
+"Bo3 1-1, map 3 | 10+ rounds, lead 4+ | tier c": {
+"n": 1121,
+"lost": 76
+},
+"Bo3 1-1, map 3 | 10+ rounds, lead 4+ | tier s": {
+"n": 190,
+"lost": 18
+},
+"Bo3 1-1, map 3 | 10+ rounds, lead 6+": {
+"n": 1744,
+"lost": 64
+},
+"Bo3 1-1, map 3 | 10+ rounds, lead 6+ | tier ?": {
+"n": 4,
+"lost": 0
+},
+"Bo3 1-1, map 3 | 10+ rounds, lead 6+ | tier a": {
+"n": 81,
+"lost": 2
+},
+"Bo3 1-1, map 3 | 10+ rounds, lead 6+ | tier b": {
+"n": 776,
+"lost": 21
+},
+"Bo3 1-1, map 3 | 10+ rounds, lead 6+ | tier c": {
+"n": 755,
+"lost": 33
+},
+"Bo3 1-1, map 3 | 10+ rounds, lead 6+ | tier s": {
+"n": 128,
+"lost": 8
+},
+"Bo3 1-1, map 3 | 10+ rounds, lead 8+": {
+"n": 957,
+"lost": 23
+},
+"Bo3 1-1, map 3 | 10+ rounds, lead 8+ | tier ?": {
+"n": 2,
+"lost": 0
+},
+"Bo3 1-1, map 3 | 10+ rounds, lead 8+ | tier a": {
+"n": 41,
+"lost": 0
+},
+"Bo3 1-1, map 3 | 10+ rounds, lead 8+ | tier b": {
+"n": 416,
+"lost": 10
+},
+"Bo3 1-1, map 3 | 10+ rounds, lead 8+ | tier c": {
+"n": 417,
+"lost": 10
+},
+"Bo3 1-1, map 3 | 10+ rounds, lead 8+ | tier s": {
+"n": 81,
+"lost": 3
+},
+"Bo3 1-1, map 3 | map point (12+) ahead, regulation": {
+"n": 3467,
+"lost": 215
+},
+"Bo3 1-1, map 3 | map point (12+) ahead, regulation | tier ?": {
+"n": 7,
+"lost": 1
+},
+"Bo3 1-1, map 3 | map point (12+) ahead, regulation | tier a": {
+"n": 160,
+"lost": 12
+},
+"Bo3 1-1, map 3 | map point (12+) ahead, regulation | tier b": {
+"n": 1539,
+"lost": 90
+},
+"Bo3 1-1, map 3 | map point (12+) ahead, regulation | tier c": {
+"n": 1495,
+"lost": 91
+},
+"Bo3 1-1, map 3 | map point (12+) ahead, regulation | tier s": {
+"n": 266,
+"lost": 21
+},
+"Bo3 1-1, map 3 | map point 12-0": {
+"n": 22,
+"lost": 1
+},
+"Bo3 1-1, map 3 | map point 12-0 | tier a": {
+"n": 3,
+"lost": 0
+},
+"Bo3 1-1, map 3 | map point 12-0 | tier b": {
+"n": 11,
+"lost": 0
+},
+"Bo3 1-1, map 3 | map point 12-0 | tier c": {
+"n": 7,
+"lost": 0
+},
+"Bo3 1-1, map 3 | map point 12-0 | tier s": {
+"n": 1,
+"lost": 1
+},
+"Bo3 1-1, map 3 | map point 12-1": {
+"n": 75,
+"lost": 1
+},
+"Bo3 1-1, map 3 | map point 12-1 | tier a": {
+"n": 3,
+"lost": 0
+},
+"Bo3 1-1, map 3 | map point 12-1 | tier b": {
+"n": 38,
+"lost": 0
+},
+"Bo3 1-1, map 3 | map point 12-1 | tier c": {
+"n": 26,
+"lost": 0
+},
+"Bo3 1-1, map 3 | map point 12-1 | tier s": {
+"n": 8,
+"lost": 1
+},
+"Bo3 1-1, map 3 | map point 12-10": {
+"n": 835,
+"lost": 123
+},
+"Bo3 1-1, map 3 | map point 12-10 | tier ?": {
+"n": 1,
+"lost": 1
+},
+"Bo3 1-1, map 3 | map point 12-10 | tier a": {
+"n": 36,
+"lost": 7
+},
+"Bo3 1-1, map 3 | map point 12-10 | tier b": {
+"n": 367,
+"lost": 54
+},
+"Bo3 1-1, map 3 | map point 12-10 | tier c": {
+"n": 361,
+"lost": 49
+},
+"Bo3 1-1, map 3 | map point 12-10 | tier s": {
+"n": 70,
+"lost": 12
+},
+"Bo3 1-1, map 3 | map point 12-11": {
+"n": 851,
+"lost": 215
+},
+"Bo3 1-1, map 3 | map point 12-11 | tier ?": {
+"n": 2,
+"lost": 1
+},
+"Bo3 1-1, map 3 | map point 12-11 | tier a": {
+"n": 40,
+"lost": 12
+},
+"Bo3 1-1, map 3 | map point 12-11 | tier b": {
+"n": 357,
+"lost": 90
+},
+"Bo3 1-1, map 3 | map point 12-11 | tier c": {
+"n": 377,
+"lost": 91
+},
+"Bo3 1-1, map 3 | map point 12-11 | tier s": {
+"n": 75,
+"lost": 21
+},
+"Bo3 1-1, map 3 | map point 12-2": {
+"n": 177,
+"lost": 2
+},
+"Bo3 1-1, map 3 | map point 12-2 | tier ?": {
+"n": 1,
+"lost": 0
+},
+"Bo3 1-1, map 3 | map point 12-2 | tier a": {
+"n": 9,
+"lost": 0
+},
+"Bo3 1-1, map 3 | map point 12-2 | tier b": {
+"n": 75,
+"lost": 1
+},
+"Bo3 1-1, map 3 | map point 12-2 | tier c": {
+"n": 79,
+"lost": 0
+},
+"Bo3 1-1, map 3 | map point 12-2 | tier s": {
+"n": 13,
+"lost": 1
+},
+"Bo3 1-1, map 3 | map point 12-3": {
+"n": 298,
+"lost": 2
+},
+"Bo3 1-1, map 3 | map point 12-3 | tier ?": {
+"n": 1,
+"lost": 0
+},
+"Bo3 1-1, map 3 | map point 12-3 | tier a": {
+"n": 18,
+"lost": 0
+},
+"Bo3 1-1, map 3 | map point 12-3 | tier b": {
+"n": 120,
+"lost": 1
+},
+"Bo3 1-1, map 3 | map point 12-3 | tier c": {
+"n": 127,
+"lost": 0
+},
+"Bo3 1-1, map 3 | map point 12-3 | tier s": {
+"n": 32,
+"lost": 1
+},
+"Bo3 1-1, map 3 | map point 12-4": {
+"n": 406,
+"lost": 2
+},
+"Bo3 1-1, map 3 | map point 12-4 | tier ?": {
+"n": 2,
+"lost": 0
+},
+"Bo3 1-1, map 3 | map point 12-4 | tier a": {
+"n": 17,
+"lost": 0
+},
+"Bo3 1-1, map 3 | map point 12-4 | tier b": {
+"n": 179,
+"lost": 1
+},
+"Bo3 1-1, map 3 | map point 12-4 | tier c": {
+"n": 174,
+"lost": 0
+},
+"Bo3 1-1, map 3 | map point 12-4 | tier s": {
+"n": 34,
+"lost": 1
+},
+"Bo3 1-1, map 3 | map point 12-5": {
+"n": 491,
+"lost": 4
+},
+"Bo3 1-1, map 3 | map point 12-5 | tier ?": {
+"n": 2,
+"lost": 0
+},
+"Bo3 1-1, map 3 | map point 12-5 | tier a": {
+"n": 26,
+"lost": 0
+},
+"Bo3 1-1, map 3 | map point 12-5 | tier b": {
+"n": 231,
+"lost": 2
+},
+"Bo3 1-1, map 3 | map point 12-5 | tier c": {
+"n": 200,
+"lost": 1
+},
+"Bo3 1-1, map 3 | map point 12-5 | tier s": {
+"n": 32,
+"lost": 1
+},
+"Bo3 1-1, map 3 | map point 12-6": {
+"n": 596,
+"lost": 11
+},
+"Bo3 1-1, map 3 | map point 12-6 | tier ?": {
+"n": 3,
+"lost": 0
+},
+"Bo3 1-1, map 3 | map point 12-6 | tier a": {
+"n": 27,
+"lost": 0
+},
+"Bo3 1-1, map 3 | map point 12-6 | tier b": {
+"n": 282,
+"lost": 6
+},
+"Bo3 1-1, map 3 | map point 12-6 | tier c": {
+"n": 238,
+"lost": 4
+},
+"Bo3 1-1, map 3 | map point 12-6 | tier s": {
+"n": 46,
+"lost": 1
+},
+"Bo3 1-1, map 3 | map point 12-7": {
+"n": 691,
+"lost": 21
+},
+"Bo3 1-1, map 3 | map point 12-7 | tier ?": {
+"n": 2,
+"lost": 0
+},
+"Bo3 1-1, map 3 | map point 12-7 | tier a": {
+"n": 38,
+"lost": 1
+},
+"Bo3 1-1, map 3 | map point 12-7 | tier b": {
+"n": 303,
+"lost": 10
+},
+"Bo3 1-1, map 3 | map point 12-7 | tier c": {
+"n": 297,
+"lost": 9
+},
+"Bo3 1-1, map 3 | map point 12-7 | tier s": {
+"n": 51,
+"lost": 1
+},
+"Bo3 1-1, map 3 | map point 12-8": {
+"n": 746,
+"lost": 38
+},
+"Bo3 1-1, map 3 | map point 12-8 | tier ?": {
+"n": 1,
+"lost": 0
+},
+"Bo3 1-1, map 3 | map point 12-8 | tier a": {
+"n": 38,
+"lost": 2
+},
+"Bo3 1-1, map 3 | map point 12-8 | tier b": {
+"n": 352,
+"lost": 20
+},
+"Bo3 1-1, map 3 | map point 12-8 | tier c": {
+"n": 299,
+"lost": 14
+},
+"Bo3 1-1, map 3 | map point 12-8 | tier s": {
+"n": 56,
+"lost": 2
+},
+"Bo3 1-1, map 3 | map point 12-9": {
+"n": 779,
+"lost": 70
+},
+"Bo3 1-1, map 3 | map point 12-9 | tier ?": {
+"n": 2,
+"lost": 0
+},
+"Bo3 1-1, map 3 | map point 12-9 | tier a": {
+"n": 48,
+"lost": 4
+},
+"Bo3 1-1, map 3 | map point 12-9 | tier b": {
+"n": 335,
+"lost": 35
+},
+"Bo3 1-1, map 3 | map point 12-9 | tier c": {
+"n": 337,
+"lost": 25
+},
+"Bo3 1-1, map 3 | map point 12-9 | tier s": {
+"n": 57,
+"lost": 6
+},
+"Bo3 1-1, map 3 | map point, trailer <= 5 rounds": {
+"n": 1037,
+"lost": 4
+},
+"Bo3 1-1, map 3 | map point, trailer <= 5 rounds | tier ?": {
+"n": 2,
+"lost": 0
+},
+"Bo3 1-1, map 3 | map point, trailer <= 5 rounds | tier a": {
+"n": 49,
+"lost": 0
+},
+"Bo3 1-1, map 3 | map point, trailer <= 5 rounds | tier b": {
+"n": 473,
+"lost": 2
+},
+"Bo3 1-1, map 3 | map point, trailer <= 5 rounds | tier c": {
+"n": 436,
+"lost": 1
+},
+"Bo3 1-1, map 3 | map point, trailer <= 5 rounds | tier s": {
+"n": 77,
+"lost": 1
+},
+"Bo3 1-1, map 3 | map point, trailer <= 7 rounds": {
+"n": 1796,
+"lost": 21
+},
+"Bo3 1-1, map 3 | map point, trailer <= 7 rounds | tier ?": {
+"n": 3,
+"lost": 0
+},
+"Bo3 1-1, map 3 | map point, trailer <= 7 rounds | tier a": {
+"n": 87,
+"lost": 1
+},
+"Bo3 1-1, map 3 | map point, trailer <= 7 rounds | tier b": {
+"n": 805,
+"lost": 10
+},
+"Bo3 1-1, map 3 | map point, trailer <= 7 rounds | tier c": {
+"n": 767,
+"lost": 9
+},
+"Bo3 1-1, map 3 | map point, trailer <= 7 rounds | tier s": {
+"n": 134,
+"lost": 1
+},
+"Bo3 1-1, map 3 | map point, trailer <= 9 rounds": {
+"n": 2619,
+"lost": 70
+},
+"Bo3 1-1, map 3 | map point, trailer <= 9 rounds | tier ?": {
+"n": 5,
+"lost": 0
+},
+"Bo3 1-1, map 3 | map point, trailer <= 9 rounds | tier a": {
+"n": 129,
+"lost": 4
+},
+"Bo3 1-1, map 3 | map point, trailer <= 9 rounds | tier b": {
+"n": 1169,
+"lost": 35
+},
+"Bo3 1-1, map 3 | map point, trailer <= 9 rounds | tier c": {
+"n": 1124,
+"lost": 25
+},
+"Bo3 1-1, map 3 | map point, trailer <= 9 rounds | tier s": {
+"n": 192,
+"lost": 6
+}
+},
+"loss_examples": {
+"Bo3 0-0, map 1 | map point 12-8": [
+106329,
+106344,
+118334
+],
+"Bo3 0-0, map 1 | map point (12+) ahead, regulation": [
+106329,
+106328,
+106425
+],
+"Bo3 0-0, map 1 | 10+ rounds, lead 4+": [
+106329,
+106425,
+106381
+],
+"Bo3 0-0, map 1 | map point, trailer <= 9 rounds": [
+106329,
+106425,
+106422
+],
+"Bo3 0-0, map 1 | map point 12-11": [
+106328,
+106431,
+130209
+],
+"Bo3 0-0, map 1 | 10+ rounds, lead 6+": [
+106425,
+106381,
+106429
+],
+"Bo3 0-0, map 1 | map point 12-4": [
+106425,
+130448,
+126820
+],
+"Bo3 0-0, map 1 | 10+ rounds, lead 8+": [
+106425,
+106381,
+117498
+],
+"Bo3 0-0, map 1 | map point, trailer <= 5 rounds": [
+106425,
+117498,
+130448
+],
+"Bo3 0-0, map 1 | map point, trailer <= 7 rounds": [
+106425,
+106381,
+117498
+],
+"Bo3 0-0, map 1 | map point 12-9": [
+106422,
+106423,
+118338
+],
+"Bo3 0-0, map 1 | map point 12-10": [
+106422,
+116886,
+130308
+],
+"Bo3 0-0, map 1 | map point 12-6": [
+106381,
+118334,
+102197
+],
+"Bo3 1-1, map 3 | map point 12-10": [
+106343,
+130382,
+130208
+],
+"Bo3 1-1, map 3 | map point (12+) ahead, regulation": [
+106343,
+130382,
+130208
+],
+"Bo3 1-1, map 3 | map point 12-11": [
+106343,
+130382,
+130208
+],
+"Bo3 0-0, map 1 | map point 12-5": [
+117498,
+114480,
+113951
+],
+"Bo3 0-0, map 1 | map point 12-7": [
+118334,
+130382,
+102197
+],
+"Bo3 1-1, map 3 | 10+ rounds, lead 4+": [
+118334,
+130448,
+130382
+],
+"Bo3 1-1, map 3 | 10+ rounds, lead 6+": [
+130448,
+130382,
+102442
+],
+"Bo1 | 10+ rounds, lead 4+": [
+129864,
+102433,
+118186
+],
+"Bo1 | map point 12-8": [
+129864,
+102433,
+125569
+],
+"Bo1 | map point (12+) ahead, regulation": [
+129864,
+102433,
+117483
+],
+"Bo1 | map point, trailer <= 9 rounds": [
+129864,
+102433,
+131023
+],
+"Bo1 | map point 12-9": [
+129864,
+102433,
+131023
+],
+"Bo1 | map point 12-10": [
+129864,
+102433,
+117483
+],
+"Bo1 | map point 12-11": [
+129864,
+102433,
+117483
+],
+"Bo3 1-0, map 2 | 10+ rounds, lead 4+": [
+130948,
+109777,
+127491
+],
+"Bo3 1-1, map 3 | 10+ rounds, lead 8+": [
+130382,
+102442,
+104987
+],
+"Bo3 1-1, map 3 | map point 12-9": [
+130382,
+109855,
+114814
+],
+"Bo3 1-1, map 3 | map point, trailer <= 9 rounds": [
+130382,
+109855,
+114814
+],
+"Bo3 0-0, map 1 | map point 12-3": [
+102440,
+114480,
+127492
+],
+"Bo1 | 10+ rounds, lead 6+": [
+102433,
+125567,
+104196
+],
+"Bo1 | 10+ rounds, lead 8+": [
+102433,
+130975,
+105125
+],
+"Bo1 | map point 12-6": [
+102433,
+117874,
+121203
+],
+"Bo1 | map point, trailer <= 7 rounds": [
+102433,
+104186,
+117874
+],
+"Bo1 | map point 12-7": [
+102433,
+104186,
+117874
+],
+"Bo3 1-0, map 2 | map point 12-11": [
+109848,
+127491,
+128133
+],
+"Bo3 1-0, map 2 | map point (12+) ahead, regulation": [
+109848,
+127491,
+128133
+],
+"Bo3 0-0, map 1 | map point 12-2": [
+114480,
+114815,
+113437
+],
+"Bo3 1-0, map 2 | map point 12-7": [
+127491,
+104580,
+113804
+],
+"Bo3 1-0, map 2 | map point, trailer <= 7 rounds": [
+127491,
+104580,
+113804
+],
+"Bo3 1-0, map 2 | map point, trailer <= 9 rounds": [
+127491,
+104580,
+121939
+],
+"Bo3 1-0, map 2 | map point 12-8": [
+127491,
+104580,
+121939
+],
+"Bo3 1-0, map 2 | map point 12-9": [
+127491,
+104580,
+121939
+],
+"Bo3 1-0, map 2 | map point 12-10": [
+127491,
+128133,
+117078
+],
+"Bo3 0-0, map 1 | map point 12-1": [
+116233,
+117777,
+129464
+],
+"Bo3 1-0, map 2 | 10+ rounds, lead 6+": [
+117192,
+116911,
+104580
+],
+"Bo3 1-1, map 3 | map point 12-8": [
+117181,
+102545,
+121957
+],
+"Bo3 1-0, map 2 | 10+ rounds, lead 8+": [
+104580,
+109350,
+110446
+],
+"Bo3 1-0, map 2 | map point 12-6": [
+113804,
+102587,
+111232
+],
+"Bo1 | map point 12-5": [
+117874,
+121203,
+130975
+],
+"Bo1 | map point, trailer <= 5 rounds": [
+117874,
+121203,
+130975
+],
+"Bo3 1-1, map 3 | map point 12-7": [
+102545,
+121957,
+120983
+],
+"Bo3 1-1, map 3 | map point, trailer <= 7 rounds": [
+102545,
+121957,
+120983
+],
+"Bo3 1-1, map 3 | map point 12-5": [
+121957,
+103729,
+121441
+],
+"Bo3 1-1, map 3 | map point, trailer <= 5 rounds": [
+121957,
+103729,
+121441
+],
+"Bo3 1-1, map 3 | map point 12-6": [
+121957,
+120983,
+103729
+],
+"Bo3 1-0, map 2 | map point 12-4": [
+102587,
+114019
+],
+"Bo3 1-0, map 2 | map point, trailer <= 5 rounds": [
+102587,
+108270,
+114019
+],
+"Bo3 1-0, map 2 | map point 12-5": [
+102587,
+108270,
+114019
+],
+"Bo3 0-0, map 1 | map point 12-0": [
+123180,
+116252,
+119794
+],
+"Bo3 1-1, map 3 | map point 12-2": [
+103729,
+121441
+],
+"Bo3 1-1, map 3 | map point 12-3": [
+103729,
+121441
+],
+"Bo3 1-1, map 3 | map point 12-4": [
+103729,
+121441
+],
+"Bo3 1-1, map 3 | map point 12-0": [
+121441
+],
+"Bo3 1-1, map 3 | map point 12-1": [
+121441
+],
+"Bo1 | map point 12-3": [
+130975
+],
+"Bo1 | map point 12-4": [
+130975,
+105125
+]
+},
+"map_level": {
+"12-0": {
+"n": 245,
+"lost": 2
+},
+"12-1": {
+"n": 667,
+"lost": 2
+},
+"12-2": {
+"n": 1309,
+"lost": 5
+},
+"12-3": {
+"n": 1997,
+"lost": 13
+},
+"12-4": {
+"n": 2710,
+"lost": 27
+},
+"12-5": {
+"n": 3315,
+"lost": 46
+},
+"12-6": {
+"n": 3855,
+"lost": 88
+},
+"12-7": {
+"n": 4328,
+"lost": 160
+},
+"12-8": {
+"n": 4660,
+"lost": 280
+},
+"12-9": {
+"n": 4964,
+"lost": 471
+},
+"12-10": {
+"n": 5058,
+"lost": 752
+},
+"12-11": {
+"n": 5341,
+"lost": 1340
+},
+"first map point with trailer <= 0": {
+"n": 245,
+"lost": 2
+},
+"first map point with trailer <= 1": {
+"n": 809,
+"lost": 2
+},
+"first map point with trailer <= 2": {
+"n": 1900,
+"lost": 5
+},
+"first map point with trailer <= 3": {
+"n": 3408,
+"lost": 13
+},
+"first map point with trailer <= 4": {
+"n": 5272,
+"lost": 27
+},
+"first map point with trailer <= 5": {
+"n": 7411,
+"lost": 46
+},
+"first map point with trailer <= 6": {
+"n": 9749,
+"lost": 88
+},
+"first map point with trailer <= 7": {
+"n": 12264,
+"lost": 160
+},
+"first map point with trailer <= 8": {
+"n": 14854,
+"lost": 280
+},
+"first map point with trailer <= 9": {
+"n": 17474,
+"lost": 472
+},
+"first map point with trailer <= 10": {
+"n": 20037,
+"lost": 754
+},
+"first map point with trailer <= 11": {
+"n": 22712,
+"lost": 1343
+}
+}
+}

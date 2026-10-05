@@ -1,0 +1,3037 @@
+[
+{
+"pk": 822781,
+"slug": "mlb-stl-tor-2026-08-01",
+"lead": 4,
+"won": true,
+"window_min": 6.0,
+"shares_by_band": {
+"0.991-0.999": 112,
+"0.98-0.99": 20
+},
+"n_trades": 4
+},
+{
+"pk": 823594,
+"slug": "mlb-mia-nym-2026-08-01",
+"lead": 4,
+"won": true,
+"window_min": 12.1,
+"shares_by_band": {
+"0.991-0.999": 2908
+},
+"n_trades": 16
+},
+{
+"pk": 824808,
+"slug": "mlb-phi-bal-2026-08-01",
+"lead": 5,
+"won": true,
+"window_min": 16.6,
+"shares_by_band": {
+"0.991-0.999": 3264
+},
+"n_trades": 3
+},
+{
+"pk": 824890,
+"slug": "mlb-wsh-atl-2026-08-01",
+"lead": 5,
+"won": true,
+"window_min": 7.6,
+"shares_by_band": {
+"0.991-0.999": 5020
+},
+"n_trades": 5
+},
+{
+"pk": 824326,
+"slug": "mlb-kc-col-2026-08-01",
+"lead": 8,
+"won": true,
+"window_min": 11.3,
+"shares_by_band": {},
+"n_trades": 0
+},
+{
+"pk": 824404,
+"slug": "mlb-az-cle-2026-08-02",
+"err": "noevent"
+},
+{
+"pk": 824483,
+"slug": "mlb-pit-cin-2026-08-02",
+"lead": 8,
+"won": true,
+"window_min": 6.6,
+"shares_by_band": {},
+"n_trades": 0
+},
+{
+"pk": 822943,
+"slug": "mlb-cws-tb-2026-08-02",
+"lead": 5,
+"won": true,
+"window_min": 22.0,
+"shares_by_band": {
+"0.991-0.999": 3541,
+"0.98-0.99": 26
+},
+"n_trades": 12
+},
+{
+"pk": 824163,
+"slug": "mlb-tex-hou-2026-08-02",
+"lead": 4,
+"won": true,
+"window_min": 5.5,
+"shares_by_band": {
+"0.991-0.999": 100,
+"0.98-0.99": 42
+},
+"n_trades": 6
+},
+{
+"pk": 824323,
+"slug": "mlb-kc-col-2026-08-02",
+"lead": 7,
+"won": true,
+"window_min": 10.6,
+"shares_by_band": {
+"0.991-0.999": 425
+},
+"n_trades": 2
+},
+{
+"pk": 824971,
+"slug": "mlb-det-ath-2026-08-02",
+"err": "noevent"
+},
+{
+"pk": 823919,
+"slug": "mlb-bos-lad-2026-08-02",
+"lead": 4,
+"won": true,
+"window_min": 18.6,
+"shares_by_band": {
+"0.991-0.999": 5860,
+"0.98-0.99": 4692
+},
+"n_trades": 34
+},
+{
+"pk": 823520,
+"slug": "mlb-stl-nyy-2026-08-03",
+"lead": 6,
+"won": true,
+"window_min": 11.6,
+"shares_by_band": {
+"0.991-0.999": 26043
+},
+"n_trades": 6
+},
+{
+"pk": 824647,
+"slug": "mlb-lad-chc-2026-08-03",
+"lead": 5,
+"won": true,
+"window_min": 8.2,
+"shares_by_band": {
+"0.991-0.999": 103
+},
+"n_trades": 5
+},
+{
+"pk": 822867,
+"slug": "mlb-sf-tex-2026-08-03",
+"lead": 4,
+"won": true,
+"window_min": 29.4,
+"shares_by_band": {
+"0.991-0.999": 604,
+"0.98-0.99": 3380,
+"0.96-0.98": 18
+},
+"n_trades": 27
+},
+{
+"pk": 824324,
+"slug": "mlb-tb-col-2026-08-03",
+"lead": 6,
+"won": true,
+"window_min": 24.0,
+"shares_by_band": {
+"0.991-0.999": 6207,
+"0.98-0.99": 866,
+"0.96-0.98": 110
+},
+"n_trades": 24
+},
+{
+"pk": 825095,
+"slug": "mlb-sd-az-2026-08-03",
+"err": "noevent"
+},
+{
+"pk": 824403,
+"slug": "mlb-nym-cle-2026-08-04",
+"lead": 4,
+"won": true,
+"window_min": 15.5,
+"shares_by_band": {
+"0.991-0.999": 5134,
+"0.98-0.99": 745
+},
+"n_trades": 11
+},
+{
+"pk": 823432,
+"slug": "mlb-wsh-phi-2026-08-04",
+"lead": 5,
+"won": true,
+"window_min": 9.8,
+"shares_by_band": {
+"0.991-0.999": 11262
+},
+"n_trades": 8
+},
+{
+"pk": 824731,
+"slug": "mlb-cws-bos-2026-08-04",
+"lead": 12,
+"won": true,
+"window_min": 4.8,
+"shares_by_band": {},
+"n_trades": 0
+},
+{
+"pk": 824888,
+"slug": "mlb-mia-atl-2026-08-04",
+"lead": 4,
+"won": true,
+"window_min": 11.9,
+"shares_by_band": {
+"0.96-0.98": 65,
+"<0.96": 1869,
+"0.98-0.99": 85,
+"0.991-0.999": 20
+},
+"n_trades": 67
+},
+{
+"pk": 824084,
+"slug": "mlb-min-kc-2026-08-04",
+"lead": 6,
+"won": true,
+"window_min": 7.1,
+"shares_by_band": {
+"0.991-0.999": 870
+},
+"n_trades": 3
+},
+{
+"pk": 824645,
+"slug": "mlb-lad-chc-2026-08-04",
+"lead": 4,
+"won": true,
+"window_min": 7.3,
+"shares_by_band": {
+"0.991-0.999": 3404,
+"0.98-0.99": 3571
+},
+"n_trades": 17
+},
+{
+"pk": 824161,
+"slug": "mlb-tor-hou-2026-08-04",
+"lead": 5,
+"won": true,
+"window_min": 8.2,
+"shares_by_band": {
+"0.991-0.999": 7904
+},
+"n_trades": 6
+},
+{
+"pk": 825054,
+"slug": "mlb-sd-az-2026-08-04",
+"err": "noevent"
+},
+{
+"pk": 823108,
+"slug": "mlb-det-sea-2026-08-04",
+"lead": 4,
+"won": true,
+"window_min": 29.8,
+"shares_by_band": {
+"0.991-0.999": 3656,
+"0.98-0.99": 1472,
+"0.96-0.98": 586
+},
+"n_trades": 19
+},
+{
+"pk": 822866,
+"slug": "mlb-sf-tex-2026-08-05",
+"lead": 6,
+"won": true,
+"window_min": 6.4,
+"shares_by_band": {
+"0.991-0.999": 1699
+},
+"n_trades": 4
+},
+{
+"pk": 824322,
+"slug": "mlb-tb-col-2026-08-05",
+"lead": 4,
+"won": true,
+"window_min": 12.8,
+"shares_by_band": {
+"0.991-0.999": 20495,
+"0.98-0.99": 2065
+},
+"n_trades": 17
+},
+{
+"pk": 824728,
+"slug": "mlb-cws-bos-2026-08-05",
+"lead": 4,
+"won": true,
+"window_min": 11.7,
+"shares_by_band": {
+"0.991-0.999": 5955,
+"0.98-0.99": 7381
+},
+"n_trades": 31
+},
+{
+"pk": 825052,
+"slug": "mlb-sd-az-2026-08-05",
+"err": "noevent"
+},
+{
+"pk": 824401,
+"slug": "mlb-nym-cle-2026-08-06",
+"lead": 8,
+"won": true,
+"window_min": 13.5,
+"shares_by_band": {},
+"n_trades": 0
+},
+{
+"pk": 823105,
+"slug": "mlb-det-sea-2026-08-06",
+"lead": 8,
+"won": true,
+"window_min": 16.4,
+"shares_by_band": {
+"0.991-0.999": 7914
+},
+"n_trades": 2
+},
+{
+"pk": 823430,
+"slug": "mlb-wsh-phi-2026-08-06",
+"lead": 4,
+"won": true,
+"window_min": 8.4,
+"shares_by_band": {
+"0.991-0.999": 1557
+},
+"n_trades": 6
+},
+{
+"pk": 824885,
+"slug": "mlb-mia-atl-2026-08-06",
+"lead": 9,
+"won": true,
+"window_min": 7.6,
+"shares_by_band": {
+"0.991-0.999": 1016
+},
+"n_trades": 2
+},
+{
+"pk": 825053,
+"slug": "mlb-sd-az-2026-08-06",
+"err": "noevent"
+},
+{
+"pk": 823349,
+"slug": "mlb-nym-pit-2026-08-07",
+"lead": 4,
+"won": true,
+"window_min": 21.4,
+"shares_by_band": {
+"0.96-0.98": 5180,
+"0.991-0.999": 1101,
+"0.98-0.99": 1031
+},
+"n_trades": 19
+},
+{
+"pk": 824727,
+"slug": "mlb-ath-bos-2026-08-07",
+"err": "noevent"
+},
+{
+"pk": 824566,
+"slug": "mlb-cle-cws-2026-08-07",
+"lead": 6,
+"won": true,
+"window_min": 18.9,
+"shares_by_band": {
+"0.991-0.999": 8020
+},
+"n_trades": 7
+},
+{
+"pk": 824726,
+"slug": "mlb-ath-bos-2026-08-08",
+"err": "noevent"
+},
+{
+"pk": 823834,
+"slug": "mlb-laa-mia-2026-08-08",
+"lead": 7,
+"won": true,
+"window_min": 8.6,
+"shares_by_band": {
+"0.991-0.999": 2990
+},
+"n_trades": 3
+},
+{
+"pk": 823348,
+"slug": "mlb-nym-pit-2026-08-08",
+"lead": 9,
+"won": true,
+"window_min": 7.1,
+"shares_by_band": {},
+"n_trades": 0
+},
+{
+"pk": 822701,
+"slug": "mlb-cin-wsh-2026-08-08",
+"lead": 6,
+"won": true,
+"window_min": 7.2,
+"shares_by_band": {
+"0.991-0.999": 5201
+},
+"n_trades": 8
+},
+{
+"pk": 823188,
+"slug": "mlb-det-sf-2026-08-08",
+"lead": 7,
+"won": true,
+"window_min": 23.8,
+"shares_by_band": {
+"0.991-0.999": 4009
+},
+"n_trades": 8
+},
+{
+"pk": 822864,
+"slug": "mlb-bal-tex-2026-08-08",
+"lead": 4,
+"won": true,
+"window_min": 5.9,
+"shares_by_band": {
+"0.991-0.999": 1385,
+"0.98-0.99": 1695
+},
+"n_trades": 12
+},
+{
+"pk": 822700,
+"slug": "mlb-cin-wsh-2026-08-09",
+"lead": 6,
+"won": true,
+"window_min": 6.7,
+"shares_by_band": {},
+"n_trades": 0
+},
+{
+"pk": 823345,
+"slug": "mlb-nym-pit-2026-08-09",
+"lead": 10,
+"won": true,
+"window_min": 10.8,
+"shares_by_band": {},
+"n_trades": 0
+},
+{
+"pk": 823835,
+"slug": "mlb-laa-mia-2026-08-09",
+"lead": 10,
+"won": true,
+"window_min": 7.3,
+"shares_by_band": {},
+"n_trades": 0
+},
+{
+"pk": 824078,
+"slug": "mlb-chc-kc-2026-08-09",
+"lead": 8,
+"won": true,
+"window_min": 10.3,
+"shares_by_band": {},
+"n_trades": 0
+},
+{
+"pk": 822862,
+"slug": "mlb-bal-tex-2026-08-09",
+"lead": 6,
+"won": true,
+"window_min": 23.4,
+"shares_by_band": {
+"0.991-0.999": 5718
+},
+"n_trades": 5
+},
+{
+"pk": 823268,
+"slug": "mlb-hou-sd-2026-08-09",
+"lead": 5,
+"won": true,
+"window_min": 7.1,
+"shares_by_band": {
+"0.991-0.999": 13846
+},
+"n_trades": 13
+},
+{
+"pk": 823675,
+"slug": "mlb-bal-min-2026-08-10",
+"lead": 6,
+"won": true,
+"window_min": 14.1,
+"shares_by_band": {
+"0.991-0.999": 3184,
+"0.98-0.99": 76
+},
+"n_trades": 12
+},
+{
+"pk": 825048,
+"slug": "mlb-col-az-2026-08-10",
+"err": "noevent"
+},
+{
+"pk": 824969,
+"slug": "mlb-tb-ath-2026-08-10",
+"err": "noevent"
+},
+{
+"pk": 824886,
+"slug": "mlb-nym-atl-2026-08-11",
+"lead": 4,
+"won": true,
+"window_min": 6.0,
+"shares_by_band": {
+"0.991-0.999": 867
+},
+"n_trades": 5
+},
+{
+"pk": 824970,
+"slug": "mlb-tb-ath-2026-08-11",
+"err": "noevent"
+},
+{
+"pk": 823264,
+"slug": "mlb-mil-sd-2026-08-11",
+"lead": 10,
+"won": true,
+"window_min": 9.9,
+"shares_by_band": {},
+"n_trades": 0
+},
+{
+"pk": 823017,
+"slug": "mlb-phi-stl-2026-08-12",
+"lead": 6,
+"won": true,
+"window_min": 7.7,
+"shares_by_band": {
+"0.991-0.999": 6951
+},
+"n_trades": 5
+},
+{
+"pk": 824967,
+"slug": "mlb-tb-ath-2026-08-12",
+"err": "noevent"
+},
+{
+"pk": 823833,
+"slug": "mlb-pit-mia-2026-08-12",
+"lead": 6,
+"won": true,
+"window_min": 10.4,
+"shares_by_band": {
+"0.991-0.999": 6
+},
+"n_trades": 1
+},
+{
+"pk": 822698,
+"slug": "mlb-chc-wsh-2026-08-12",
+"lead": 7,
+"won": true,
+"window_min": 22.1,
+"shares_by_band": {
+"0.991-0.999": 3760
+},
+"n_trades": 12
+},
+{
+"pk": 823511,
+"slug": "mlb-sea-nyy-2026-08-12",
+"lead": 5,
+"won": true,
+"window_min": 9.8,
+"shares_by_band": {
+"0.991-0.999": 628
+},
+"n_trades": 10
+},
+{
+"pk": 822779,
+"slug": "mlb-bos-tor-2026-08-12",
+"lead": 5,
+"won": true,
+"window_min": 14.2,
+"shares_by_band": {
+"0.991-0.999": 2838,
+"0.98-0.99": 513,
+"0.96-0.98": 7348,
+"<0.96": 3396
+},
+"n_trades": 44
+},
+{
+"pk": 824883,
+"slug": "mlb-nym-atl-2026-08-12",
+"lead": 4,
+"won": true,
+"window_min": 10.3,
+"shares_by_band": {
+"0.98-0.99": 606,
+"0.96-0.98": 20,
+"<0.96": 1866,
+"0.991-0.999": 179
+},
+"n_trades": 37
+},
+{
+"pk": 824562,
+"slug": "mlb-cin-cws-2026-08-12",
+"lead": 5,
+"won": true,
+"window_min": 8.3,
+"shares_by_band": {
+"0.991-0.999": 4060
+},
+"n_trades": 6
+},
+{
+"pk": 823829,
+"slug": "mlb-pit-mia-2026-08-13",
+"lead": 8,
+"won": true,
+"window_min": 15.8,
+"shares_by_band": {},
+"n_trades": 0
+},
+{
+"pk": 822776,
+"slug": "mlb-bos-tor-2026-08-13",
+"lead": 5,
+"won": true,
+"window_min": 24.4,
+"shares_by_band": {
+"0.991-0.999": 2828,
+"0.98-0.99": 4818
+},
+"n_trades": 20
+},
+{
+"pk": 822696,
+"slug": "mlb-chc-wsh-2026-08-13",
+"lead": 7,
+"won": true,
+"window_min": 7.0,
+"shares_by_band": {
+"0.991-0.999": 4339
+},
+"n_trades": 2
+},
+{
+"pk": 823669,
+"slug": "mlb-phi-min-2026-08-13",
+"lead": 6,
+"won": true,
+"window_min": 15.1,
+"shares_by_band": {
+"0.991-0.999": 5059
+},
+"n_trades": 5
+},
+{
+"pk": 823995,
+"slug": "mlb-tex-laa-2026-08-13",
+"lead": 7,
+"won": true,
+"window_min": 5.9,
+"shares_by_band": {
+"0.991-0.999": 6225
+},
+"n_trades": 1
+},
+{
+"pk": 823346,
+"slug": "mlb-bos-pit-2026-08-14",
+"lead": 5,
+"won": true,
+"window_min": 15.7,
+"shares_by_band": {
+"0.991-0.999": 8894
+},
+"n_trades": 9
+},
+{
+"pk": 824237,
+"slug": "mlb-cws-det-2026-08-14",
+"lead": 4,
+"won": true,
+"window_min": 16.7,
+"shares_by_band": {
+"0.991-0.999": 2127,
+"0.98-0.99": 2621
+},
+"n_trades": 22
+},
+{
+"pk": 822942,
+"slug": "mlb-bal-tb-2026-08-14",
+"lead": 4,
+"won": true,
+"window_min": 25.4,
+"shares_by_band": {
+"<0.96": 21615,
+"0.96-0.98": 1385,
+"0.98-0.99": 648
+},
+"n_trades": 159
+},
+{
+"pk": 824968,
+"slug": "mlb-tex-ath-2026-08-14",
+"err": "noevent"
+},
+{
+"pk": 824644,
+"slug": "mlb-stl-chc-2026-08-15",
+"lead": 4,
+"won": true,
+"window_min": 16.4,
+"shares_by_band": {
+"0.991-0.999": 1708,
+"0.98-0.99": 1317,
+"0.96-0.98": 194
+},
+"n_trades": 19
+},
+{
+"pk": 823184,
+"slug": "mlb-col-sf-2026-08-15",
+"lead": 6,
+"won": true,
+"window_min": 6.5,
+"shares_by_band": {},
+"n_trades": 0
+},
+{
+"pk": 824400,
+"slug": "mlb-sd-cle-2026-08-15",
+"lead": 5,
+"won": true,
+"window_min": 5.7,
+"shares_by_band": {
+"0.991-0.999": 24
+},
+"n_trades": 1
+},
+{
+"pk": 823671,
+"slug": "mlb-phi-min-2026-08-15",
+"lead": 7,
+"won": true,
+"window_min": 18.9,
+"shares_by_band": {
+"0.991-0.999": 3
+},
+"n_trades": 1
+},
+{
+"pk": 824884,
+"slug": "mlb-az-atl-2026-08-15",
+"err": "noevent"
+},
+{
+"pk": 822940,
+"slug": "mlb-bal-tb-2026-08-16",
+"lead": 8,
+"won": true,
+"window_min": 13.5,
+"shares_by_band": {
+"0.991-0.999": 100
+},
+"n_trades": 2
+},
+{
+"pk": 823344,
+"slug": "mlb-bos-pit-2026-08-16",
+"lead": 5,
+"won": true,
+"window_min": 5.6,
+"shares_by_band": {
+"0.991-0.999": 1035
+},
+"n_trades": 3
+},
+{
+"pk": 824397,
+"slug": "mlb-sd-cle-2026-08-16",
+"lead": 4,
+"won": true,
+"window_min": 18.7,
+"shares_by_band": {
+"0.991-0.999": 1748
+},
+"n_trades": 3
+},
+{
+"pk": 824642,
+"slug": "mlb-stl-chc-2026-08-16",
+"lead": 8,
+"won": true,
+"window_min": 19.5,
+"shares_by_band": {
+"0.991-0.999": 21
+},
+"n_trades": 2
+},
+{
+"pk": 823182,
+"slug": "mlb-col-sf-2026-08-16",
+"lead": 6,
+"won": true,
+"window_min": 14.7,
+"shares_by_band": {
+"0.991-0.999": 3860
+},
+"n_trades": 10
+},
+{
+"pk": 824725,
+"slug": "mlb-az-bos-2026-08-17",
+"err": "noevent"
+},
+{
+"pk": 824077,
+"slug": "mlb-ath-kc-2026-08-17",
+"err": "noevent"
+},
+{
+"pk": 824320,
+"slug": "mlb-lad-col-2026-08-17",
+"lead": 9,
+"won": true,
+"window_min": 19.7,
+"shares_by_band": {},
+"n_trades": 0
+},
+{
+"pk": 824398,
+"slug": "mlb-sf-cle-2026-08-18",
+"lead": 7,
+"won": true,
+"window_min": 9.8,
+"shares_by_band": {},
+"n_trades": 0
+},
+{
+"pk": 822938,
+"slug": "mlb-tor-tb-2026-08-18",
+"lead": 5,
+"won": true,
+"window_min": 14.8,
+"shares_by_band": {
+"0.991-0.999": 577,
+"0.98-0.99": 303
+},
+"n_trades": 8
+},
+{
+"pk": 824723,
+"slug": "mlb-az-bos-2026-08-18",
+"err": "noevent"
+},
+{
+"pk": 823749,
+"slug": "mlb-sea-mil-2026-08-18",
+"lead": 22,
+"won": true,
+"window_min": 5.7,
+"shares_by_band": {},
+"n_trades": 0
+},
+{
+"pk": 822859,
+"slug": "mlb-wsh-tex-2026-08-18",
+"lead": 5,
+"won": true,
+"window_min": 11.5,
+"shares_by_band": {
+"0.991-0.999": 354
+},
+"n_trades": 2
+},
+{
+"pk": 824076,
+"slug": "mlb-ath-kc-2026-08-19",
+"err": "noevent"
+},
+{
+"pk": 822860,
+"slug": "mlb-wsh-tex-2026-08-19",
+"lead": 6,
+"won": true,
+"window_min": 18.6,
+"shares_by_band": {
+"0.991-0.999": 1282
+},
+"n_trades": 4
+},
+{
+"pk": 822934,
+"slug": "mlb-tor-tb-2026-08-20",
+"lead": 4,
+"won": true,
+"window_min": 16.9,
+"shares_by_band": {
+"0.991-0.999": 57,
+"0.98-0.99": 696
+},
+"n_trades": 6
+},
+{
+"pk": 824074,
+"slug": "mlb-ath-kc-2026-08-20",
+"err": "noevent"
+},
+{
+"pk": 824802,
+"slug": "mlb-nyy-bal-2026-08-20",
+"lead": 5,
+"won": true,
+"window_min": 13.3,
+"shares_by_band": {
+"0.991-0.999": 33290
+},
+"n_trades": 10
+},
+{
+"pk": 824153,
+"slug": "mlb-laa-hou-2026-08-20",
+"lead": 14,
+"won": true,
+"window_min": 15.9,
+"shares_by_band": {},
+"n_trades": 0
+},
+{
+"pk": 824152,
+"slug": "mlb-ath-hou-2026-08-21",
+"err": "noevent"
+},
+{
+"pk": 824317,
+"slug": "mlb-cle-col-2026-08-21",
+"lead": 7,
+"won": true,
+"window_min": 18.2,
+"shares_by_band": {
+"0.991-0.999": 110
+},
+"n_trades": 2
+},
+{
+"pk": 825045,
+"slug": "mlb-cin-az-2026-08-21",
+"err": "noevent"
+},
+{
+"pk": 823262,
+"slug": "mlb-min-sd-2026-08-21",
+"lead": 4,
+"won": true,
+"window_min": 8.7,
+"shares_by_band": {},
+"n_trades": 0
+},
+{
+"pk": 823422,
+"slug": "mlb-stl-phi-2026-08-22",
+"lead": 10,
+"won": true,
+"window_min": 7.6,
+"shares_by_band": {},
+"n_trades": 0
+},
+{
+"pk": 825044,
+"slug": "mlb-cin-az-2026-08-22",
+"err": "noevent"
+},
+{
+"pk": 823421,
+"slug": "mlb-stl-phi-2026-08-23",
+"lead": 4,
+"won": false,
+"window_min": 27.7,
+"shares_by_band": {
+"<0.96": 4589,
+"0.991-0.999": 945,
+"0.98-0.99": 8525,
+"0.96-0.98": 1116
+},
+"n_trades": 109
+},
+{
+"pk": 823507,
+"slug": "mlb-tor-nyy-2026-08-23",
+"lead": 5,
+"won": true,
+"window_min": 7.0,
+"shares_by_band": {
+"0.991-0.999": 3643
+},
+"n_trades": 3
+},
+{
+"pk": 823827,
+"slug": "mlb-wsh-mia-2026-08-23",
+"lead": 4,
+"won": true,
+"window_min": 10.4,
+"shares_by_band": {
+"0.991-0.999": 959,
+"0.96-0.98": 1745,
+"<0.96": 7550,
+"0.98-0.99": 1314
+},
+"n_trades": 19
+},
+{
+"pk": 824071,
+"slug": "mlb-det-kc-2026-08-23",
+"lead": 4,
+"won": true,
+"window_min": 7.5,
+"shares_by_band": {
+"0.991-0.999": 340,
+"0.98-0.99": 2691
+},
+"n_trades": 9
+},
+{
+"pk": 824315,
+"slug": "mlb-cle-col-2026-08-23",
+"lead": 5,
+"won": true,
+"window_min": 13.0,
+"shares_by_band": {
+"0.991-0.999": 1831
+},
+"n_trades": 4
+},
+{
+"pk": 823909,
+"slug": "mlb-pit-lad-2026-08-23",
+"lead": 4,
+"won": true,
+"window_min": 14.4,
+"shares_by_band": {
+"0.991-0.999": 5080,
+"0.98-0.99": 4223
+},
+"n_trades": 11
+},
+{
+"pk": 823099,
+"slug": "mlb-chc-sea-2026-08-23",
+"lead": 14,
+"won": true,
+"window_min": 13.3,
+"shares_by_band": {},
+"n_trades": 0
+},
+{
+"pk": 823258,
+"slug": "mlb-min-sd-2026-08-23",
+"lead": 7,
+"won": true,
+"window_min": 12.1,
+"shares_by_band": {
+"0.991-0.999": 9
+},
+"n_trades": 1
+},
+{
+"pk": 822695,
+"slug": "mlb-col-wsh-2026-08-24",
+"lead": 10,
+"won": true,
+"window_min": 6.9,
+"shares_by_band": {},
+"n_trades": 0
+},
+{
+"pk": 824557,
+"slug": "mlb-tex-cws-2026-08-24",
+"lead": 7,
+"won": true,
+"window_min": 17.8,
+"shares_by_band": {
+"0.991-0.999": 169
+},
+"n_trades": 5
+},
+{
+"pk": 825041,
+"slug": "mlb-chc-az-2026-08-24",
+"err": "noevent"
+},
+{
+"pk": 824964,
+"slug": "mlb-min-ath-2026-08-24",
+"err": "noevent"
+},
+{
+"pk": 823097,
+"slug": "mlb-phi-sea-2026-08-24",
+"lead": 7,
+"won": true,
+"window_min": 5.5,
+"shares_by_band": {
+"0.991-0.999": 1819
+},
+"n_trades": 3
+},
+{
+"pk": 823183,
+"slug": "mlb-cin-sf-2026-08-24",
+"lead": 5,
+"won": true,
+"window_min": 12.3,
+"shares_by_band": {
+"0.991-0.999": 1612
+},
+"n_trades": 2
+},
+{
+"pk": 824556,
+"slug": "mlb-tex-cws-2026-08-25",
+"lead": 4,
+"won": true,
+"window_min": 14.1,
+"shares_by_band": {
+"0.96-0.98": 150,
+"0.98-0.99": 1853,
+"0.991-0.999": 549
+},
+"n_trades": 21
+},
+{
+"pk": 823016,
+"slug": "mlb-bal-stl-2026-08-25",
+"lead": 12,
+"won": true,
+"window_min": 8.7,
+"shares_by_band": {},
+"n_trades": 0
+},
+{
+"pk": 823180,
+"slug": "mlb-cin-sf-2026-08-26",
+"lead": 6,
+"won": false,
+"window_min": 36.1,
+"shares_by_band": {
+"<0.96": 21472,
+"0.96-0.98": 9907,
+"0.98-0.99": 510,
+"0.991-0.999": 3
+},
+"n_trades": 248
+},
+{
+"pk": 823096,
+"slug": "mlb-phi-sea-2026-08-26",
+"lead": 6,
+"won": true,
+"window_min": 18.2,
+"shares_by_band": {
+"0.991-0.999": 10625
+},
+"n_trades": 3
+},
+{
+"pk": 823825,
+"slug": "mlb-bos-mia-2026-08-26",
+"lead": 4,
+"won": true,
+"window_min": 6.3,
+"shares_by_band": {
+"0.991-0.999": 49,
+"0.98-0.99": 1546,
+"0.96-0.98": 378,
+"<0.96": 10
+},
+"n_trades": 20
+},
+{
+"pk": 822692,
+"slug": "mlb-col-wsh-2026-08-26",
+"lead": 12,
+"won": true,
+"window_min": 10.8,
+"shares_by_band": {},
+"n_trades": 0
+},
+{
+"pk": 823506,
+"slug": "mlb-hou-nyy-2026-08-26",
+"lead": 6,
+"won": true,
+"window_min": 5.8,
+"shares_by_band": {
+"0.991-0.999": 5953
+},
+"n_trades": 3
+},
+{
+"pk": 823584,
+"slug": "mlb-mil-nym-2026-08-26",
+"lead": 7,
+"won": true,
+"window_min": 12.5,
+"shares_by_band": {
+"0.991-0.999": 2404
+},
+"n_trades": 5
+},
+{
+"pk": 824555,
+"slug": "mlb-tex-cws-2026-08-26",
+"lead": 6,
+"won": true,
+"window_min": 5.3,
+"shares_by_band": {
+"0.991-0.999": 55
+},
+"n_trades": 2
+},
+{
+"pk": 822694,
+"slug": "mlb-col-wsh-2026-08-27",
+"lead": 6,
+"won": true,
+"window_min": 12.4,
+"shares_by_band": {
+"0.991-0.999": 4905
+},
+"n_trades": 8
+},
+{
+"pk": 823503,
+"slug": "mlb-hou-nyy-2026-08-27",
+"lead": 4,
+"won": true,
+"window_min": 16.2,
+"shares_by_band": {
+"0.991-0.999": 329,
+"0.98-0.99": 1860
+},
+"n_trades": 15
+},
+{
+"pk": 822771,
+"slug": "mlb-kc-tor-2026-08-27",
+"lead": 9,
+"won": true,
+"window_min": 11.8,
+"shares_by_band": {},
+"n_trades": 0
+},
+{
+"pk": 823581,
+"slug": "mlb-mil-nym-2026-08-27",
+"lead": 6,
+"won": true,
+"window_min": 19.2,
+"shares_by_band": {
+"0.991-0.999": 14977
+},
+"n_trades": 11
+},
+{
+"pk": 823179,
+"slug": "mlb-az-sf-2026-08-27",
+"err": "noevent"
+},
+{
+"pk": 822691,
+"slug": "mlb-mia-wsh-2026-08-28",
+"lead": 7,
+"won": true,
+"window_min": 6.3,
+"shares_by_band": {},
+"n_trades": 0
+},
+{
+"pk": 822935,
+"slug": "mlb-sd-tb-2026-08-28",
+"lead": 5,
+"won": true,
+"window_min": 5.4,
+"shares_by_band": {
+"0.991-0.999": 4425
+},
+"n_trades": 8
+},
+{
+"pk": 822769,
+"slug": "mlb-sea-tor-2026-08-28",
+"lead": 7,
+"won": true,
+"window_min": 6.9,
+"shares_by_band": {
+"0.991-0.999": 2096
+},
+"n_trades": 2
+},
+{
+"pk": 823744,
+"slug": "mlb-tex-mil-2026-08-28",
+"lead": 5,
+"won": true,
+"window_min": 6.8,
+"shares_by_band": {
+"0.991-0.999": 178
+},
+"n_trades": 5
+},
+{
+"pk": 823178,
+"slug": "mlb-az-sf-2026-08-28",
+"err": "noevent"
+},
+{
+"pk": 823501,
+"slug": "mlb-bos-nyy-2026-08-29",
+"lead": 7,
+"won": true,
+"window_min": 6.2,
+"shares_by_band": {
+"0.991-0.999": 1696
+},
+"n_trades": 3
+},
+{
+"pk": 824637,
+"slug": "mlb-cin-chc-2026-08-29",
+"lead": 12,
+"won": true,
+"window_min": 6.0,
+"shares_by_band": {},
+"n_trades": 0
+},
+{
+"pk": 823177,
+"slug": "mlb-az-sf-2026-08-29",
+"err": "noevent"
+},
+{
+"pk": 823176,
+"slug": "mlb-az-sf-2026-08-29",
+"err": "noevent"
+},
+{
+"pk": 824392,
+"slug": "mlb-kc-cle-2026-08-29",
+"lead": 6,
+"won": true,
+"window_min": 16.5,
+"shares_by_band": {
+"0.991-0.999": 4655
+},
+"n_trades": 6
+},
+{
+"pk": 823582,
+"slug": "mlb-hou-nym-2026-08-29",
+"lead": 4,
+"won": true,
+"window_min": 7.6,
+"shares_by_band": {
+"0.991-0.999": 356,
+"0.98-0.99": 619,
+"0.96-0.98": 103
+},
+"n_trades": 12
+},
+{
+"pk": 823502,
+"slug": "mlb-bos-nyy-2026-08-30",
+"lead": 15,
+"won": true,
+"window_min": 4.7,
+"shares_by_band": {},
+"n_trades": 0
+},
+{
+"pk": 822766,
+"slug": "mlb-sea-tor-2026-08-30",
+"lead": 7,
+"won": true,
+"window_min": 5.8,
+"shares_by_band": {
+"0.991-0.999": 13725
+},
+"n_trades": 1
+},
+{
+"pk": 824393,
+"slug": "mlb-kc-cle-2026-08-30",
+"lead": 10,
+"won": true,
+"window_min": 8.9,
+"shares_by_band": {},
+"n_trades": 0
+},
+{
+"pk": 824232,
+"slug": "mlb-lad-det-2026-08-30",
+"lead": 5,
+"won": true,
+"window_min": 11.4,
+"shares_by_band": {
+"0.991-0.999": 2563
+},
+"n_trades": 2
+},
+{
+"pk": 823662,
+"slug": "mlb-cws-min-2026-08-30",
+"lead": 5,
+"won": true,
+"window_min": 16.3,
+"shares_by_band": {
+"0.98-0.99": 1225,
+"0.991-0.999": 230
+},
+"n_trades": 11
+},
+{
+"pk": 824473,
+"slug": "mlb-sd-cin-2026-08-31",
+"lead": 5,
+"won": true,
+"window_min": 19.0,
+"shares_by_band": {
+"0.991-0.999": 604
+},
+"n_trades": 8
+},
+{
+"pk": 823663,
+"slug": "mlb-det-min-2026-08-31",
+"lead": 10,
+"won": true,
+"window_min": 9.6,
+"shares_by_band": {},
+"n_trades": 0
+},
+{
+"pk": 824635,
+"slug": "mlb-mil-chc-2026-08-31",
+"lead": 14,
+"won": true,
+"window_min": 4.7,
+"shares_by_band": {},
+"n_trades": 0
+},
+{
+"pk": 822855,
+"slug": "mlb-ath-tex-2026-08-31",
+"err": "noevent"
+},
+{
+"pk": 823982,
+"slug": "mlb-nyy-laa-2026-08-31",
+"lead": 9,
+"won": true,
+"window_min": 8.8,
+"shares_by_band": {},
+"n_trades": 0
+},
+{
+"pk": 822929,
+"slug": "mlb-nym-tb-2026-09-01",
+"lead": 4,
+"won": true,
+"window_min": 6.8,
+"shares_by_band": {
+"0.991-0.999": 6525,
+"0.98-0.99": 24
+},
+"n_trades": 7
+},
+{
+"pk": 824391,
+"slug": "mlb-tor-cle-2026-09-01",
+"lead": 5,
+"won": true,
+"window_min": 9.4,
+"shares_by_band": {
+"0.991-0.999": 2500,
+"0.98-0.99": 30
+},
+"n_trades": 3
+},
+{
+"pk": 824716,
+"slug": "mlb-sea-bos-2026-09-01",
+"lead": 5,
+"won": true,
+"window_min": 18.4,
+"shares_by_band": {},
+"n_trades": 0
+},
+{
+"pk": 822687,
+"slug": "mlb-atl-wsh-2026-09-01",
+"lead": 4,
+"won": true,
+"window_min": 5.5,
+"shares_by_band": {
+"0.991-0.999": 10,
+"0.98-0.99": 326,
+"0.96-0.98": 224
+},
+"n_trades": 11
+},
+{
+"pk": 823661,
+"slug": "mlb-det-min-2026-09-01",
+"lead": 13,
+"won": true,
+"window_min": 6.2,
+"shares_by_band": {},
+"n_trades": 0
+},
+{
+"pk": 824070,
+"slug": "mlb-mia-kc-2026-09-01",
+"lead": 4,
+"won": true,
+"window_min": 15.3,
+"shares_by_band": {},
+"n_trades": 0
+},
+{
+"pk": 824633,
+"slug": "mlb-mil-chc-2026-09-01",
+"lead": 5,
+"won": true,
+"window_min": 18.9,
+"shares_by_band": {},
+"n_trades": 0
+},
+{
+"pk": 822854,
+"slug": "mlb-ath-tex-2026-09-01",
+"err": "noevent"
+},
+{
+"pk": 824148,
+"slug": "mlb-cws-hou-2026-09-01",
+"lead": 4,
+"won": true,
+"window_min": 18.2,
+"shares_by_band": {},
+"n_trades": 0
+},
+{
+"pk": 825038,
+"slug": "mlb-phi-az-2026-09-01",
+"err": "noevent"
+},
+{
+"pk": 823908,
+"slug": "mlb-stl-lad-2026-09-01",
+"lead": 8,
+"won": true,
+"window_min": 18.8,
+"shares_by_band": {
+"0.98-0.99": 295,
+"0.96-0.98": 57,
+"0.991-0.999": 5,
+"<0.96": 35333
+},
+"n_trades": 20
+},
+{
+"pk": 824470,
+"slug": "mlb-sd-cin-2026-09-02",
+"lead": 4,
+"won": true,
+"window_min": 7.9,
+"shares_by_band": {
+"0.991-0.999": 4300,
+"0.98-0.99": 633
+},
+"n_trades": 7
+},
+{
+"pk": 822686,
+"slug": "mlb-atl-wsh-2026-09-02",
+"lead": 8,
+"won": true,
+"window_min": 12.0,
+"shares_by_band": {},
+"n_trades": 0
+},
+{
+"pk": 822851,
+"slug": "mlb-ath-tex-2026-09-02",
+"err": "noevent"
+},
+{
+"pk": 824717,
+"slug": "mlb-sea-bos-2026-09-02",
+"lead": 5,
+"won": true,
+"window_min": 10.6,
+"shares_by_band": {
+"0.991-0.999": 2327,
+"0.98-0.99": 90
+},
+"n_trades": 11
+},
+{
+"pk": 822931,
+"slug": "mlb-nym-tb-2026-09-02",
+"lead": 6,
+"won": true,
+"window_min": 15.7,
+"shares_by_band": {
+"0.991-0.999": 5751
+},
+"n_trades": 2
+},
+{
+"pk": 824390,
+"slug": "mlb-tor-cle-2026-09-02",
+"lead": 10,
+"won": true,
+"window_min": 19.5,
+"shares_by_band": {},
+"n_trades": 0
+},
+{
+"pk": 824144,
+"slug": "mlb-cws-hou-2026-09-03",
+"lead": 4,
+"won": true,
+"window_min": 7.5,
+"shares_by_band": {},
+"n_trades": 0
+},
+{
+"pk": 824069,
+"slug": "mlb-mia-kc-2026-09-03",
+"lead": 4,
+"won": true,
+"window_min": 8.6,
+"shares_by_band": {
+"0.991-0.999": 2509,
+"0.98-0.99": 224
+},
+"n_trades": 6
+},
+{
+"pk": 822853,
+"slug": "mlb-tb-tex-2026-09-03",
+"lead": 6,
+"won": true,
+"window_min": 12.1,
+"shares_by_band": {
+"0.991-0.999": 2113
+},
+"n_trades": 1
+},
+{
+"pk": 823579,
+"slug": "mlb-sf-nym-2026-09-04",
+"lead": 4,
+"won": true,
+"window_min": 6.3,
+"shares_by_band": {
+"0.991-0.999": 2841,
+"0.98-0.99": 641
+},
+"n_trades": 4
+},
+{
+"pk": 823824,
+"slug": "mlb-chc-mia-2026-09-04",
+"lead": 4,
+"won": true,
+"window_min": 13.9,
+"shares_by_band": {
+"0.991-0.999": 1706,
+"0.98-0.99": 99
+},
+"n_trades": 9
+},
+{
+"pk": 824554,
+"slug": "mlb-min-cws-2026-09-04",
+"lead": 4,
+"won": true,
+"window_min": 10.2,
+"shares_by_band": {
+"0.96-0.98": 12029,
+"0.98-0.99": 121,
+"<0.96": 1728
+},
+"n_trades": 30
+},
+{
+"pk": 824067,
+"slug": "mlb-tor-kc-2026-09-04",
+"lead": 7,
+"won": true,
+"window_min": 14.7,
+"shares_by_band": {
+"0.991-0.999": 21
+},
+"n_trades": 1
+},
+{
+"pk": 823905,
+"slug": "mlb-wsh-lad-2026-09-04",
+"lead": 5,
+"won": true,
+"window_min": 16.6,
+"shares_by_band": {
+"0.96-0.98": 9930,
+"0.98-0.99": 263,
+"<0.96": 2687,
+"0.991-0.999": 212
+},
+"n_trades": 67
+},
+{
+"pk": 823577,
+"slug": "mlb-sf-nym-2026-09-05",
+"lead": 5,
+"won": true,
+"window_min": 19.7,
+"shares_by_band": {
+"0.991-0.999": 2040,
+"0.98-0.99": 243
+},
+"n_trades": 10
+},
+{
+"pk": 824389,
+"slug": "mlb-det-cle-2026-09-05",
+"lead": 6,
+"won": true,
+"window_min": 11.7,
+"shares_by_band": {
+"0.991-0.999": 6170
+},
+"n_trades": 4
+},
+{
+"pk": 823335,
+"slug": "mlb-laa-pit-2026-09-05",
+"lead": 5,
+"won": true,
+"window_min": 21.2,
+"shares_by_band": {
+"0.98-0.99": 371,
+"0.96-0.98": 113,
+"0.991-0.999": 347
+},
+"n_trades": 13
+},
+{
+"pk": 824795,
+"slug": "mlb-bos-bal-2026-09-05",
+"lead": 5,
+"won": true,
+"window_min": 16.6,
+"shares_by_band": {
+"0.991-0.999": 4846,
+"0.98-0.99": 213
+},
+"n_trades": 8
+},
+{
+"pk": 823257,
+"slug": "mlb-nyy-sd-2026-09-05",
+"lead": 4,
+"won": true,
+"window_min": 18.3,
+"shares_by_band": {
+"0.991-0.999": 5686,
+"0.98-0.99": 2372,
+"0.96-0.98": 2
+},
+"n_trades": 18
+},
+{
+"pk": 824310,
+"slug": "mlb-stl-col-2026-09-05",
+"lead": 5,
+"won": true,
+"window_min": 16.2,
+"shares_by_band": {
+"0.991-0.999": 373,
+"0.96-0.98": 221,
+"<0.96": 345,
+"0.98-0.99": 204
+},
+"n_trades": 14
+},
+{
+"pk": 823094,
+"slug": "mlb-ath-sea-2026-09-05",
+"err": "noevent"
+},
+{
+"pk": 824469,
+"slug": "mlb-mil-cin-2026-09-06",
+"lead": 5,
+"won": true,
+"window_min": 15.9,
+"shares_by_band": {
+"0.991-0.999": 7290,
+"0.96-0.98": 3267,
+"<0.96": 59,
+"0.98-0.99": 202
+},
+"n_trades": 12
+},
+{
+"pk": 823822,
+"slug": "mlb-chc-mia-2026-09-06",
+"lead": 7,
+"won": true,
+"window_min": 11.9,
+"shares_by_band": {
+"0.98-0.99": 3460,
+"0.991-0.999": 1748
+},
+"n_trades": 21
+},
+{
+"pk": 824065,
+"slug": "mlb-tor-kc-2026-09-06",
+"lead": 5,
+"won": true,
+"window_min": 8.6,
+"shares_by_band": {
+"0.98-0.99": 237,
+"0.96-0.98": 257
+},
+"n_trades": 6
+},
+{
+"pk": 824309,
+"slug": "mlb-stl-col-2026-09-06",
+"lead": 4,
+"won": true,
+"window_min": 25.4,
+"shares_by_band": {
+"<0.96": 2286,
+"0.96-0.98": 278,
+"0.98-0.99": 1897,
+"0.991-0.999": 305
+},
+"n_trades": 39
+},
+{
+"pk": 824552,
+"slug": "mlb-min-cws-2026-09-06",
+"lead": 9,
+"won": true,
+"window_min": 9.3,
+"shares_by_band": {},
+"n_trades": 0
+},
+{
+"pk": 823820,
+"slug": "mlb-nym-mia-2026-09-07",
+"lead": 5,
+"won": true,
+"window_min": 18.9,
+"shares_by_band": {
+"0.991-0.999": 4968,
+"0.98-0.99": 1794
+},
+"n_trades": 16
+},
+{
+"pk": 824793,
+"slug": "mlb-cle-bal-2026-09-07",
+"lead": 5,
+"won": true,
+"window_min": 15.0,
+"shares_by_band": {
+"0.991-0.999": 4699,
+"0.98-0.99": 214,
+"0.96-0.98": 5581,
+"<0.96": 7387
+},
+"n_trades": 32
+},
+{
+"pk": 824792,
+"slug": "mlb-cle-bal-2026-09-08",
+"lead": 4,
+"won": true,
+"window_min": 20.3,
+"shares_by_band": {
+"0.96-0.98": 141,
+"<0.96": 1571,
+"0.991-0.999": 200,
+"0.98-0.99": 1056
+},
+"n_trades": 27
+},
+{
+"pk": 823500,
+"slug": "mlb-col-nyy-2026-09-08",
+"lead": 4,
+"won": true,
+"window_min": 14.1,
+"shares_by_band": {
+"0.991-0.999": 4199,
+"0.98-0.99": 932
+},
+"n_trades": 10
+},
+{
+"pk": 824875,
+"slug": "mlb-tb-atl-2026-09-08",
+"lead": 5,
+"won": true,
+"window_min": 12.9,
+"shares_by_band": {
+"0.991-0.999": 4467,
+"0.98-0.99": 1079
+},
+"n_trades": 13
+},
+{
+"pk": 824551,
+"slug": "mlb-pit-cws-2026-09-08",
+"lead": 6,
+"won": true,
+"window_min": 17.6,
+"shares_by_band": {
+"0.991-0.999": 1085
+},
+"n_trades": 4
+},
+{
+"pk": 823092,
+"slug": "mlb-tex-sea-2026-09-08",
+"lead": 6,
+"won": true,
+"window_min": 19.5,
+"shares_by_band": {
+"0.991-0.999": 8296,
+"0.98-0.99": 15
+},
+"n_trades": 4
+},
+{
+"pk": 824226,
+"slug": "mlb-min-det-2026-09-09",
+"lead": 5,
+"won": true,
+"window_min": 10.6,
+"shares_by_band": {
+"0.991-0.999": 2049
+},
+"n_trades": 2
+},
+{
+"pk": 823251,
+"slug": "mlb-wsh-sd-2026-09-09",
+"lead": 7,
+"won": true,
+"window_min": 6.8,
+"shares_by_band": {
+"0.991-0.999": 1581
+},
+"n_trades": 3
+},
+{
+"pk": 824791,
+"slug": "mlb-cle-bal-2026-09-09",
+"lead": 4,
+"won": true,
+"window_min": 11.6,
+"shares_by_band": {
+"0.991-0.999": 1548,
+"0.96-0.98": 916,
+"0.98-0.99": 162
+},
+"n_trades": 12
+},
+{
+"pk": 823416,
+"slug": "mlb-hou-phi-2026-09-09",
+"lead": 4,
+"won": true,
+"window_min": 7.5,
+"shares_by_band": {
+"0.991-0.999": 1987,
+"0.98-0.99": 1876
+},
+"n_trades": 17
+},
+{
+"pk": 823818,
+"slug": "mlb-nym-mia-2026-09-09",
+"lead": 4,
+"won": true,
+"window_min": 25.4,
+"shares_by_band": {
+"0.96-0.98": 1764,
+"<0.96": 18090,
+"0.98-0.99": 1007
+},
+"n_trades": 80
+},
+{
+"pk": 823497,
+"slug": "mlb-col-nyy-2026-09-09",
+"lead": 5,
+"won": true,
+"window_min": 7.6,
+"shares_by_band": {
+"0.991-0.999": 1020
+},
+"n_trades": 2
+},
+{
+"pk": 824871,
+"slug": "mlb-tb-atl-2026-09-09",
+"lead": 5,
+"won": true,
+"window_min": 12.8,
+"shares_by_band": {
+"0.991-0.999": 5250,
+"0.98-0.99": 1176
+},
+"n_trades": 10
+},
+{
+"pk": 823739,
+"slug": "mlb-chc-mil-2026-09-09",
+"lead": 7,
+"won": true,
+"window_min": 25.9,
+"shares_by_band": {
+"0.991-0.999": 5087,
+"0.96-0.98": 3414,
+"0.98-0.99": 596
+},
+"n_trades": 43
+},
+{
+"pk": 823900,
+"slug": "mlb-cin-lad-2026-09-09",
+"lead": 13,
+"won": true,
+"window_min": 6.2,
+"shares_by_band": {},
+"n_trades": 0
+},
+{
+"pk": 823499,
+"slug": "mlb-col-nyy-2026-09-10",
+"lead": 7,
+"won": true,
+"window_min": 13.3,
+"shares_by_band": {
+"0.991-0.999": 657
+},
+"n_trades": 6
+},
+{
+"pk": 824631,
+"slug": "mlb-pit-chc-2026-09-11",
+"lead": 10,
+"won": true,
+"window_min": 5.4,
+"shares_by_band": {},
+"n_trades": 0
+},
+{
+"pk": 824227,
+"slug": "mlb-col-det-2026-09-11",
+"lead": 5,
+"won": true,
+"window_min": 14.6,
+"shares_by_band": {
+"0.991-0.999": 3830,
+"0.98-0.99": 207
+},
+"n_trades": 8
+},
+{
+"pk": 822767,
+"slug": "mlb-bal-tor-2026-09-11",
+"lead": 5,
+"won": true,
+"window_min": 28.8,
+"shares_by_band": {
+"0.96-0.98": 2112,
+"<0.96": 5532,
+"0.991-0.999": 7354
+},
+"n_trades": 26
+},
+{
+"pk": 823817,
+"slug": "mlb-lad-mia-2026-09-11",
+"lead": 4,
+"won": true,
+"window_min": 20.7,
+"shares_by_band": {
+"0.991-0.999": 4001
+},
+"n_trades": 4
+},
+{
+"pk": 823736,
+"slug": "mlb-cin-mil-2026-09-11",
+"lead": 20,
+"won": true,
+"window_min": 4.6,
+"shares_by_band": {},
+"n_trades": 0
+},
+{
+"pk": 823012,
+"slug": "mlb-cws-stl-2026-09-11",
+"lead": 4,
+"won": true,
+"window_min": 6.2,
+"shares_by_band": {
+"0.991-0.999": 200,
+"0.98-0.99": 665
+},
+"n_trades": 15
+},
+{
+"pk": 825036,
+"slug": "mlb-tex-az-2026-09-11",
+"err": "noevent"
+},
+{
+"pk": 824224,
+"slug": "mlb-col-det-2026-09-12",
+"lead": 4,
+"won": true,
+"window_min": 11.2,
+"shares_by_band": {
+"0.991-0.999": 5896,
+"0.98-0.99": 25,
+"0.96-0.98": 639
+},
+"n_trades": 6
+},
+{
+"pk": 823496,
+"slug": "mlb-nym-nyy-2026-09-12",
+"lead": 9,
+"won": true,
+"window_min": 15.3,
+"shares_by_band": {
+"0.991-0.999": 4186
+},
+"n_trades": 2
+},
+{
+"pk": 822768,
+"slug": "mlb-bal-tor-2026-09-12",
+"lead": 4,
+"won": true,
+"window_min": 7.7,
+"shares_by_band": {
+"0.991-0.999": 1502,
+"0.98-0.99": 551
+},
+"n_trades": 6
+},
+{
+"pk": 824712,
+"slug": "mlb-kc-bos-2026-09-12",
+"lead": 4,
+"won": true,
+"window_min": 10.0,
+"shares_by_band": {
+"0.98-0.99": 202,
+"0.96-0.98": 5302
+},
+"n_trades": 15
+},
+{
+"pk": 823737,
+"slug": "mlb-cin-mil-2026-09-12",
+"lead": 4,
+"won": true,
+"window_min": 11.9,
+"shares_by_band": {
+"0.991-0.999": 162,
+"0.98-0.99": 282
+},
+"n_trades": 5
+},
+{
+"pk": 824870,
+"slug": "mlb-phi-atl-2026-09-12",
+"lead": 10,
+"won": true,
+"window_min": 4.0,
+"shares_by_band": {
+"0.991-0.999": 7389
+},
+"n_trades": 2
+},
+{
+"pk": 825035,
+"slug": "mlb-tex-az-2026-09-12",
+"err": "noevent"
+},
+{
+"pk": 824955,
+"slug": "mlb-sea-ath-2026-09-12",
+"err": "noevent"
+},
+{
+"pk": 824225,
+"slug": "mlb-col-det-2026-09-13",
+"lead": 7,
+"won": true,
+"window_min": 7.6,
+"shares_by_band": {
+"0.991-0.999": 14456,
+"0.98-0.99": 1029
+},
+"n_trades": 4
+},
+{
+"pk": 824869,
+"slug": "mlb-phi-atl-2026-09-13",
+"lead": 7,
+"won": true,
+"window_min": 19.1,
+"shares_by_band": {
+"0.991-0.999": 1786
+},
+"n_trades": 1
+},
+{
+"pk": 822764,
+"slug": "mlb-bal-tor-2026-09-13",
+"lead": 7,
+"won": true,
+"window_min": 7.6,
+"shares_by_band": {
+"0.98-0.99": 190
+},
+"n_trades": 5
+},
+{
+"pk": 822928,
+"slug": "mlb-hou-tb-2026-09-13",
+"lead": 10,
+"won": true,
+"window_min": 5.5,
+"shares_by_band": {},
+"n_trades": 0
+},
+{
+"pk": 823658,
+"slug": "mlb-cle-min-2026-09-13",
+"lead": 4,
+"won": true,
+"window_min": 26.9,
+"shares_by_band": {
+"0.991-0.999": 1074,
+"0.98-0.99": 68
+},
+"n_trades": 7
+},
+{
+"pk": 824465,
+"slug": "mlb-lad-cin-2026-09-14",
+"lead": 4,
+"won": true,
+"window_min": 20.5,
+"shares_by_band": {
+"0.991-0.999": 5149
+},
+"n_trades": 5
+},
+{
+"pk": 824386,
+"slug": "mlb-cws-cle-2026-09-14",
+"lead": 5,
+"won": true,
+"window_min": 24.1,
+"shares_by_band": {
+"0.991-0.999": 3910,
+"0.98-0.99": 70
+},
+"n_trades": 12
+},
+{
+"pk": 824629,
+"slug": "mlb-atl-chc-2026-09-14",
+"lead": 4,
+"won": true,
+"window_min": 12.4,
+"shares_by_band": {
+"0.96-0.98": 7862,
+"<0.96": 11164,
+"0.98-0.99": 420
+},
+"n_trades": 33
+},
+{
+"pk": 823656,
+"slug": "mlb-nyy-min-2026-09-14",
+"lead": 4,
+"won": true,
+"window_min": 16.8,
+"shares_by_band": {
+"0.991-0.999": 2062,
+"0.98-0.99": 4336
+},
+"n_trades": 21
+},
+{
+"pk": 824466,
+"slug": "mlb-lad-cin-2026-09-15",
+"lead": 4,
+"won": true,
+"window_min": 19.8,
+"shares_by_band": {
+"0.991-0.999": 2787,
+"0.98-0.99": 1450,
+"0.96-0.98": 630,
+"<0.96": 1
+},
+"n_trades": 17
+},
+{
+"pk": 823333,
+"slug": "mlb-mil-pit-2026-09-15",
+"lead": 4,
+"won": true,
+"window_min": 19.5,
+"shares_by_band": {
+"0.991-0.999": 5929,
+"0.96-0.98": 7134,
+"0.98-0.99": 601,
+"<0.96": 651
+},
+"n_trades": 35
+},
+{
+"pk": 822762,
+"slug": "mlb-det-tor-2026-09-15",
+"lead": 7,
+"won": true,
+"window_min": 18.1,
+"shares_by_band": {
+"0.991-0.999": 4880
+},
+"n_trades": 3
+},
+{
+"pk": 823654,
+"slug": "mlb-nyy-min-2026-09-15",
+"lead": 6,
+"won": true,
+"window_min": 19.3,
+"shares_by_band": {
+"0.991-0.999": 1517
+},
+"n_trades": 1
+},
+{
+"pk": 823007,
+"slug": "mlb-sf-stl-2026-09-15",
+"lead": 6,
+"won": true,
+"window_min": 21.6,
+"shares_by_band": {
+"0.991-0.999": 1369
+},
+"n_trades": 4
+},
+{
+"pk": 824307,
+"slug": "mlb-sd-col-2026-09-15",
+"lead": 6,
+"won": true,
+"window_min": 5.1,
+"shares_by_band": {
+"0.991-0.999": 25,
+"0.98-0.99": 22
+},
+"n_trades": 3
+},
+{
+"pk": 822763,
+"slug": "mlb-det-tor-2026-09-16",
+"lead": 4,
+"won": true,
+"window_min": 12.5,
+"shares_by_band": {
+"0.98-0.99": 687,
+"0.96-0.98": 551,
+"<0.96": 687,
+"0.991-0.999": 20
+},
+"n_trades": 30
+},
+{
+"pk": 824467,
+"slug": "mlb-lad-cin-2026-09-16",
+"lead": 4,
+"won": true,
+"window_min": 11.2,
+"shares_by_band": {
+"0.991-0.999": 205,
+"0.96-0.98": 3389,
+"0.98-0.99": 859,
+"<0.96": 9670
+},
+"n_trades": 66
+},
+{
+"pk": 823576,
+"slug": "mlb-bal-nym-2026-09-16",
+"lead": 5,
+"won": true,
+"window_min": 24.0,
+"shares_by_band": {
+"0.991-0.999": 10691
+},
+"n_trades": 7
+},
+{
+"pk": 824626,
+"slug": "mlb-atl-chc-2026-09-16",
+"lead": 6,
+"won": true,
+"window_min": 20.9,
+"shares_by_band": {
+"0.991-0.999": 226,
+"0.98-0.99": 1550,
+"0.96-0.98": 18216
+},
+"n_trades": 22
+},
+{
+"pk": 822846,
+"slug": "mlb-bos-tex-2026-09-16",
+"lead": 4,
+"won": true,
+"window_min": 5.8,
+"shares_by_band": {
+"0.991-0.999": 1096,
+"0.98-0.99": 222
+},
+"n_trades": 5
+},
+{
+"pk": 824140,
+"slug": "mlb-kc-hou-2026-09-16",
+"lead": 4,
+"won": true,
+"window_min": 20.9,
+"shares_by_band": {
+"0.991-0.999": 3074,
+"0.98-0.99": 6861
+},
+"n_trades": 17
+},
+{
+"pk": 824306,
+"slug": "mlb-sd-col-2026-09-16",
+"lead": 6,
+"won": true,
+"window_min": 20.5,
+"shares_by_band": {
+"0.991-0.999": 32660
+},
+"n_trades": 6
+},
+{
+"pk": 823979,
+"slug": "mlb-sea-laa-2026-09-16",
+"lead": 5,
+"won": true,
+"window_min": 14.9,
+"shares_by_band": {
+"0.991-0.999": 1543
+},
+"n_trades": 6
+},
+{
+"pk": 824464,
+"slug": "mlb-lad-cin-2026-09-17",
+"lead": 6,
+"won": true,
+"window_min": 14.8,
+"shares_by_band": {
+"0.991-0.999": 4779
+},
+"n_trades": 2
+},
+{
+"pk": 822924,
+"slug": "mlb-ath-tb-2026-09-17",
+"err": "noevent"
+},
+{
+"pk": 824305,
+"slug": "mlb-sd-col-2026-09-17",
+"lead": 7,
+"won": true,
+"window_min": 12.6,
+"shares_by_band": {
+"0.991-0.999": 13264
+},
+"n_trades": 8
+},
+{
+"pk": 824141,
+"slug": "mlb-kc-hou-2026-09-17",
+"lead": 4,
+"won": true,
+"window_min": 7.6,
+"shares_by_band": {
+"0.991-0.999": 1801
+},
+"n_trades": 1
+},
+{
+"pk": 822847,
+"slug": "mlb-tor-tex-2026-09-18",
+"lead": 6,
+"won": true,
+"window_min": 6.7,
+"shares_by_band": {
+"0.991-0.999": 5344
+},
+"n_trades": 5
+},
+{
+"pk": 823005,
+"slug": "mlb-wsh-stl-2026-09-18",
+"lead": 8,
+"won": true,
+"window_min": 13.1,
+"shares_by_band": {},
+"n_trades": 0
+},
+{
+"pk": 823252,
+"slug": "mlb-mia-sd-2026-09-18",
+"lead": 6,
+"won": true,
+"window_min": 7.0,
+"shares_by_band": {
+"0.991-0.999": 120
+},
+"n_trades": 9
+},
+{
+"pk": 825032,
+"slug": "mlb-nyy-az-2026-09-18",
+"err": "noevent"
+},
+{
+"pk": 823898,
+"slug": "mlb-sf-lad-2026-09-18",
+"lead": 6,
+"won": true,
+"window_min": 9.0,
+"shares_by_band": {
+"0.991-0.999": 9929
+},
+"n_trades": 1
+},
+{
+"pk": 823571,
+"slug": "mlb-phi-nym-2026-09-19",
+"lead": 7,
+"won": true,
+"window_min": 9.7,
+"shares_by_band": {
+"0.991-0.999": 10730
+},
+"n_trades": 5
+},
+{
+"pk": 824380,
+"slug": "mlb-ath-cle-2026-09-19",
+"err": "noevent"
+},
+{
+"pk": 822843,
+"slug": "mlb-tor-tex-2026-09-19",
+"lead": 4,
+"won": true,
+"window_min": 5.8,
+"shares_by_band": {
+"0.98-0.99": 323
+},
+"n_trades": 3
+},
+{
+"pk": 823899,
+"slug": "mlb-sf-lad-2026-09-19",
+"lead": 6,
+"won": true,
+"window_min": 8.1,
+"shares_by_band": {
+"0.991-0.999": 5824
+},
+"n_trades": 1
+},
+{
+"pk": 823570,
+"slug": "mlb-phi-nym-2026-09-20",
+"lead": 5,
+"won": true,
+"window_min": 18.7,
+"shares_by_band": {
+"0.991-0.999": 60
+},
+"n_trades": 2
+},
+{
+"pk": 824462,
+"slug": "mlb-chc-cin-2026-09-20",
+"lead": 8,
+"won": true,
+"window_min": 13.9,
+"shares_by_band": {
+"0.991-0.999": 477
+},
+"n_trades": 2
+},
+{
+"pk": 822922,
+"slug": "mlb-bos-tb-2026-09-20",
+"lead": 5,
+"won": true,
+"window_min": 11.9,
+"shares_by_band": {
+"0.991-0.999": 4206
+},
+"n_trades": 1
+},
+{
+"pk": 824546,
+"slug": "mlb-det-cws-2026-09-20",
+"lead": 7,
+"won": true,
+"window_min": 6.3,
+"shares_by_band": {
+"0.991-0.999": 2161
+},
+"n_trades": 2
+},
+{
+"pk": 822844,
+"slug": "mlb-tor-tex-2026-09-20",
+"lead": 5,
+"won": true,
+"window_min": 14.6,
+"shares_by_band": {
+"0.991-0.999": 90
+},
+"n_trades": 4
+},
+{
+"pk": 823975,
+"slug": "mlb-min-laa-2026-09-20",
+"lead": 8,
+"won": true,
+"window_min": 14.0,
+"shares_by_band": {},
+"n_trades": 0
+},
+{
+"pk": 823247,
+"slug": "mlb-mia-sd-2026-09-20",
+"lead": 4,
+"won": true,
+"window_min": 5.2,
+"shares_by_band": {
+"0.991-0.999": 4878,
+"0.98-0.99": 1877
+},
+"n_trades": 7
+},
+{
+"pk": 825028,
+"slug": "mlb-nyy-az-2026-09-20",
+"err": "noevent"
+},
+{
+"pk": 824221,
+"slug": "mlb-wsh-det-2026-09-21",
+"lead": 7,
+"won": true,
+"window_min": 6.6,
+"shares_by_band": {},
+"n_trades": 0
+},
+{
+"pk": 824867,
+"slug": "mlb-cin-atl-2026-09-22",
+"lead": 4,
+"won": true,
+"window_min": 15.9,
+"shares_by_band": {
+"0.98-0.99": 2121,
+"0.991-0.999": 76,
+"0.96-0.98": 513
+},
+"n_trades": 36
+},
+{
+"pk": 824061,
+"slug": "mlb-cws-kc-2026-09-22",
+"lead": 7,
+"won": true,
+"window_min": 17.1,
+"shares_by_band": {
+"0.98-0.99": 1956,
+"0.991-0.999": 1227
+},
+"n_trades": 11
+},
+{
+"pk": 824302,
+"slug": "mlb-az-col-2026-09-22",
+"err": "noevent"
+},
+{
+"pk": 823089,
+"slug": "mlb-hou-sea-2026-09-22",
+"lead": 7,
+"won": true,
+"window_min": 13.3,
+"shares_by_band": {
+"0.991-0.999": 1050
+},
+"n_trades": 1
+},
+{
+"pk": 823897,
+"slug": "mlb-sd-lad-2026-09-22",
+"lead": 7,
+"won": true,
+"window_min": 6.2,
+"shares_by_band": {},
+"n_trades": 0
+},
+{
+"pk": 824784,
+"slug": "mlb-tor-bal-2026-09-23",
+"lead": 4,
+"won": true,
+"window_min": 10.0,
+"shares_by_band": {
+"0.991-0.999": 748,
+"0.98-0.99": 229
+},
+"n_trades": 55
+},
+{
+"pk": 823327,
+"slug": "mlb-stl-pit-2026-09-23",
+"lead": 4,
+"won": true,
+"window_min": 16.9,
+"shares_by_band": {
+"0.991-0.999": 3284,
+"0.96-0.98": 3077,
+"0.98-0.99": 1656
+},
+"n_trades": 33
+},
+{
+"pk": 823492,
+"slug": "mlb-tb-nyy-2026-09-23",
+"lead": 7,
+"won": true,
+"window_min": 7.8,
+"shares_by_band": {
+"0.991-0.999": 1825
+},
+"n_trades": 4
+},
+{
+"pk": 824951,
+"slug": "mlb-laa-ath-2026-09-23",
+"err": "noevent"
+},
+{
+"pk": 824059,
+"slug": "mlb-cws-kc-2026-09-24",
+"lead": 8,
+"won": true,
+"window_min": 17.8,
+"shares_by_band": {},
+"n_trades": 0
+},
+{
+"pk": 824298,
+"slug": "mlb-az-col-2026-09-24",
+"err": "noevent"
+},
+{
+"pk": 823491,
+"slug": "mlb-bal-nyy-2026-09-25",
+"lead": 9,
+"won": true,
+"window_min": 26.5,
+"shares_by_band": {
+"0.991-0.999": 37886
+},
+"n_trades": 86
+},
+{
+"pk": 823489,
+"slug": "mlb-bal-nyy-2026-09-25",
+"lead": 5,
+"won": true,
+"window_min": 17.6,
+"shares_by_band": {},
+"n_trades": 0
+},
+{
+"pk": 824544,
+"slug": "mlb-col-cws-2026-09-25",
+"lead": 5,
+"won": true,
+"window_min": 7.1,
+"shares_by_band": {
+"0.991-0.999": 3993
+},
+"n_trades": 22
+},
+{
+"pk": 823735,
+"slug": "mlb-stl-mil-2026-09-25",
+"lead": 4,
+"won": true,
+"window_min": 8.3,
+"shares_by_band": {
+"0.991-0.999": 112,
+"0.98-0.99": 178
+},
+"n_trades": 10
+},
+{
+"pk": 823652,
+"slug": "mlb-tex-min-2026-09-25",
+"lead": 8,
+"won": true,
+"window_min": 6.9,
+"shares_by_band": {
+"0.991-0.999": 1000
+},
+"n_trades": 1
+},
+{
+"pk": 823248,
+"slug": "mlb-az-sd-2026-09-25",
+"err": "noevent"
+},
+{
+"pk": 823085,
+"slug": "mlb-laa-sea-2026-09-25",
+"lead": 4,
+"won": true,
+"window_min": 23.5,
+"shares_by_band": {
+"0.991-0.999": 13668,
+"0.98-0.99": 1847,
+"0.96-0.98": 437
+},
+"n_trades": 26
+},
+{
+"pk": 822678,
+"slug": "mlb-nym-wsh-2026-09-26",
+"lead": 4,
+"won": true,
+"window_min": 22.2,
+"shares_by_band": {
+"0.991-0.999": 2751
+},
+"n_trades": 4
+},
+{
+"pk": 822759,
+"slug": "mlb-cin-tor-2026-09-26",
+"lead": 4,
+"won": true,
+"window_min": 10.8,
+"shares_by_band": {
+"0.991-0.999": 1070,
+"0.98-0.99": 269
+},
+"n_trades": 8
+},
+{
+"pk": 823653,
+"slug": "mlb-tex-min-2026-09-26",
+"lead": 4,
+"won": true,
+"window_min": 14.6,
+"shares_by_band": {
+"0.991-0.999": 8887,
+"0.98-0.99": 30
+},
+"n_trades": 5
+},
+{
+"pk": 823407,
+"slug": "mlb-tb-phi-2026-09-26",
+"lead": 9,
+"won": true,
+"window_min": 21.0,
+"shares_by_band": {
+"0.991-0.999": 3821
+},
+"n_trades": 2
+},
+{
+"pk": 823245,
+"slug": "mlb-az-sd-2026-09-26",
+"err": "noevent"
+},
+{
+"pk": 824949,
+"slug": "mlb-hou-ath-2026-09-26",
+"err": "noevent"
+},
+{
+"pk": 823083,
+"slug": "mlb-laa-sea-2026-09-26",
+"lead": 4,
+"won": true,
+"window_min": 7.5,
+"shares_by_band": {
+"0.991-0.999": 1283
+},
+"n_trades": 18
+},
+{
+"pk": 823408,
+"slug": "mlb-tb-phi-2026-09-27",
+"lead": 4,
+"won": true,
+"window_min": 8.6,
+"shares_by_band": {
+"0.991-0.999": 251
+},
+"n_trades": 19
+},
+{
+"pk": 824948,
+"slug": "mlb-hou-ath-2026-09-27",
+"err": "noevent"
+},
+{
+"pk": 822761,
+"slug": "mlb-cin-tor-2026-09-27",
+"lead": 4,
+"won": true,
+"window_min": 10.5,
+"shares_by_band": {
+"0.991-0.999": 50,
+"0.98-0.99": 455
+},
+"n_trades": 10
+},
+{
+"pk": 823246,
+"slug": "mlb-az-sd-2026-09-27",
+"err": "noevent"
+},
+{
+"pk": 823084,
+"slug": "mlb-laa-sea-2026-09-27",
+"lead": 4,
+"won": true,
+"window_min": 6.5,
+"shares_by_band": {
+"0.991-0.999": 5615,
+"0.98-0.99": 112
+},
+"n_trades": 11
+},
+{
+"pk": 823650,
+"slug": "mlb-tex-min-2026-09-27",
+"lead": 4,
+"won": true,
+"window_min": 8.9,
+"shares_by_band": {
+"0.96-0.98": 1040,
+"0.991-0.999": 32
+},
+"n_trades": 11
+}
+]

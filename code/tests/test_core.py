@@ -444,6 +444,24 @@ class ScoreCheckTests(unittest.TestCase):
         e["score"] = "000-000|2-0|Bo5"
         self.assertEqual(allows(e, ["A", "B"], 0, "esports"), "unknown")
 
+    def test_series_length_title_vs_score(self):
+        from polysweeper.scorecheck import allows, score_winner
+        ow = "Overwatch: OU Gaming vs SHENGSHI (BO5) - OCS China Stage 3 Group Stage"
+        for sc in ("000-000|1-2|Bo3", "000-000|2-1|Bo3", "000-000|2-0|Bo3", "000-000|3-1|Bo3"):
+            e = {"title": ow, "score": sc}               # score Bo3 vs title BO5: unknown, never a winner
+            self.assertIsNone(score_winner(e, "esports"))
+            self.assertEqual(allows(e, ["OU Gaming", "SHENGSHI"], 1, "esports"), "unknown")
+            self.assertEqual(allows(e, ["OU Gaming", "SHENGSHI"], 0, "esports"), "unknown")
+        e = {"title": ow, "score": "000-000|3-1|Bo5"}    # both say best of 5
+        self.assertEqual(allows(e, ["OU Gaming", "SHENGSHI"], 0, "esports"), "agree")
+        self.assertEqual(allows(e, ["OU Gaming", "SHENGSHI"], 1, "esports"), "against")
+        e["score"] = "000-000|2-1|Bo5"
+        self.assertEqual(allows(e, ["OU Gaming", "SHENGSHI"], 0, "esports"), "unknown")
+        e = {"title": "A vs B", "score": "000-000|2-1|Bo3"}   # no BO in the title: score's Bo is used
+        self.assertEqual(score_winner(e, "esports"), 0)
+        e = {"title": "LoL: A vs B (BO3) - X", "score": "000-000|0-2|Bo3"}   # agreeing BO3
+        self.assertEqual(score_winner(e, "esports"), 1)
+
     def test_outcome_order_differs_from_title(self):
         from polysweeper.scorecheck import allows
         e = {"title": "Valorant: A vs B (BO3) - X", "score": "000-000|2-1|Bo3"}
@@ -478,6 +496,8 @@ class ShadowScoreRuleTests(unittest.TestCase):
             info = {"league": "cs2", "event": ev, "tokens": ["ta", "tb"], "outcomes": ["A", "B"],
                     "market": {"id": "m", "question": "A vs B"}}
             book = lambda ask, bid: {"asks": [{"price": str(ask), "size": "50"}], "bids": [{"price": str(bid), "size": "50"}]}
+            import time as _t
+            s.score_since["e"] = ((ev["score"], True), _t.time() - sh.SCORE_STABLE_S - 1)   # stable 61 s
             s.poll_market("m", info, {"ta": book(0.97, 0.95), "tb": book(0.02, 0.01)})
             rows = [json.loads(l) for l in (pathlib.Path(d) / "trades.jsonl").read_text().splitlines()]
             score_buys = [r for r in rows if r.get("rule") == "score"]
@@ -492,6 +512,32 @@ class ShadowScoreRuleTests(unittest.TestCase):
             self.assertTrue([r for r in rows if r["type"] == "skip_score_against"])
             price_only_m2 = [r for r in rows if r.get("rule") == "price_only" and r["market_id"] == "m2"]
             self.assertEqual(price_only_m2[0]["score_check"], "against")   # the old rule would have bought the loser
+
+
+    def test_score_rule_waits_for_stable_ended_score(self):
+        import tempfile, json, pathlib
+        import polysweeper.shadow as sh
+        from polysweeper.config import Limits
+        with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as d:
+            sh.OUT = pathlib.Path(d)
+            sh.leagues = lambda: {"cs2": {"series": "1"}}
+            s = sh.Shadow(["cs2"], Limits.from_json("config.json"))
+            ev = {"id": "e", "title": "Counter-Strike: A vs B (BO3) - X", "score": "000-000|2-0|Bo3", "ended": True}
+            self.assertEqual(s.score_stable_for(ev, 1000), 0)
+            self.assertEqual(s.score_stable_for(ev, 1059), 59)
+            self.assertEqual(s.score_stable_for(dict(ev, ended=False), 1060), 0)   # flag flipped: clock restarts
+            self.assertEqual(s.score_stable_for(ev, 1070), 0)
+            self.assertEqual(s.score_stable_for(dict(ev, score="000-000|2-1|Bo3"), 1080), 0)   # score changed
+            self.assertEqual(s.score_stable_for(dict(ev, score="000-000|2-1|Bo3"), 1140), 60)
+            # first sight of an ended score: no score-rule buy yet
+            s.confirmer.winner_index = lambda *a: (None, "no source")
+            info = {"league": "cs2", "event": dict(ev, id="e9"), "tokens": ["ta", "tb"], "outcomes": ["A", "B"],
+                    "market": {"id": "m", "question": "A vs B"}}
+            book = lambda ask, bid: {"asks": [{"price": str(ask), "size": "50"}], "bids": [{"price": str(bid), "size": "50"}]}
+            s.poll_market("m", info, {"ta": book(0.97, 0.95), "tb": book(0.02, 0.01)})
+            p = pathlib.Path(d) / "trades.jsonl"
+            rows = [json.loads(l) for l in p.read_text().splitlines()] if p.exists() else []
+            self.assertFalse([r for r in rows if r.get("rule") == "score"])
 
 
 class EndWatchTests(unittest.TestCase):

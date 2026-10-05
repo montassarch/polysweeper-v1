@@ -31,6 +31,18 @@ def esports_score(score):
     return tuple(int(x) for x in m.groups()) if m else None
 
 
+TITLE_BO = re.compile(r"\bBO(\d+)\b", re.I)
+
+
+def series_length(event, score_bo):
+    """Best-of N for an esports series: the score's BoN and the title's (BOn) must agree.
+    Overwatch scores say Bo3 while the title says (BO5): disagreement -> None (unknown)."""
+    title_bo = {int(x) for x in TITLE_BO.findall(event.get("title") or "")}
+    if len(title_bo) > 1 or (title_bo and score_bo not in title_bo):
+        return None
+    return score_bo
+
+
 def tennis_score(score):
     """-> (sets1, sets2, sets_played) or None. Unfinished last set is not counted."""
     if not score or "|" in score:
@@ -56,6 +68,9 @@ def score_winner(event, sport):
         if not r:
             return None
         a, b, bo = r
+        bo = series_length(event, bo)
+        if not bo:
+            return None
         need = bo // 2 + 1
     elif sport == "tennis":
         r = tennis_score(score)

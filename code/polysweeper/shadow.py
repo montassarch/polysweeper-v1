@@ -53,6 +53,7 @@ POLL_SECONDS = 15             # how often to read order books
 SETTLE_SECONDS = 60           # how often to check for payouts
 FAST_SECONDS = 2              # matches near the end: re-read their state this often
 HOT_BID = 0.85                # "near the end": a side's best bid is at least this
+SCORE_STABLE_S = 60           # score rule: the ended flag and score must be unchanged this long
 STATUS_FIRST, STATUS_EVERY = 300, 3600   # live feed status line: after 5 minutes, then hourly
 LIVE_FILE = "live.json"       # snapshot for the desktop app, rewritten every loop (not synced to GitHub)
 
@@ -125,6 +126,7 @@ class Shadow:
                                  live=self.live, detail=self.daily)
         self.last_best = {}        # market_id -> {idx: (best ask, best bid)} from the last book read
         self.score_sig = {}        # event_id -> last (score, period, live, ended) written to the daily file
+        self.score_since = {}      # event_id -> ((score, ended), first seen at): score rule needs it stable
         self.titled = set()        # (date, event_id) whose title is already in that day's file (this run)
         self.feed_check = {"checks": 0, "agree": 0}
         self.started_at = now_iso()
@@ -264,11 +266,22 @@ class Shadow:
                     info["event"][k] = e.get(k)
         return self.log_scores(fresh)
 
+    def score_stable_for(self, e, now=None):
+        """Seconds the match has been flagged ended with this same score (0 if not ended). Any change of
+        score or of the ended flag restarts the clock (Overwatch flipped 2-1/3-1 and ended on/off)."""
+        now = time.time() if now is None else now
+        key = (e.get("score"), e.get("ended"))
+        rec = self.score_since.get(e.get("id"))
+        if rec is None or rec[0] != key:
+            rec = self.score_since[e.get("id")] = (key, now)
+        return now - rec[1] if e.get("ended") is True else 0
+
     def log_scores(self, fresh):
         """Option 3 data: one daily-file line per score/state change, with every side's best ask and
         bid at that moment (live feed if it has the book, else the last book read)."""
         changed = set()
         for eid, e in fresh.items():
+            self.score_stable_for(e)
             sig = (e.get("score"), e.get("period"), e.get("live"), e.get("ended"))
             if self.score_sig.get(eid) == sig:
                 continue
@@ -381,11 +394,13 @@ class Shadow:
         # The result is also checked when a token is only in the late band (0.995-0.999),
         # so we can later study that band on the same matches. Buying rules are unchanged.
         # Rule 3: score check (check 2). Polymarket's own score says this side has WON
-        #         the match, the match is flagged ended, and the book passed the junk filter.
+        #         the match, the match is flagged ended, score and ended flag unchanged for
+        #         SCORE_STABLE_S seconds, and the book passed the junk filter.
         sport = sport_of(info["league"])
+        stable = self.score_stable_for(e)
         for idx, best_ask, asks in in_window:
             verdict = score_allows(e, info["outcomes"], idx, sport) if sport else "n/a"
-            if verdict == "agree" and ev_state["ended"] is True:
+            if verdict == "agree" and ev_state["ended"] is True and stable >= SCORE_STABLE_S:
                 self.maybe_enter("score", mid, idx, info, best_ask, asks, ev_state, f"score {e.get('score')}")
             elif verdict == "against" and f"against:{mid}:{idx}" not in self.state["entered"]:
                 self.state["entered"].append(f"against:{mid}:{idx}")     # a buy check 2 blocks

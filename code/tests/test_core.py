@@ -1037,6 +1037,8 @@ class LiveFeedTests(unittest.TestCase):
         self.assertEqual((r["live_v1_until_s"], r["live_v1_seconds_after"], r["live_bid099_at_s"]), (2.0, 2.0, 2.0))
         self.assertEqual((r["live_trades_v1_after"], r["live_trades_v1_shares_after"]), (1, 4.0))
         self.assertEqual((r["live_trades_late_after"], r["live_late_until_s"]), (1, None))
+        self.assertEqual(r["live_trades_after"], [[1.0, 0.97, 4.0, "BUY"], [3.0, 0.998, 3.0, "BUY"]])
+        self.assertEqual(r["live_trades_after_by_price"], {"0.97": 4.0, "0.998": 3.0})
         gone = live_summary([(990.0, 0.97, 0.95, 10.0, 0.0), (1004.0, None, 0.999, 0.0, 0.0)], [], 1010.0, 1910.0)
         self.assertEqual((gone["live_v1_until_s"], gone["live_v1_seconds_after"]), (-6.0, 0.0))  # gone before we saw it
 

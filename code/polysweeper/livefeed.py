@@ -362,6 +362,13 @@ def live_summary(hist, trades, t0, end, min_shares=5):
         return round(total, 1)
 
     after = [t for t in trades if t[0] >= t0]
+
+    def by_price(rows):
+        out = {}
+        for t in rows:
+            k = f"{t[1]:g}"
+            out[k] = round(out.get(k, 0) + t[2], 2)
+        return out
     in_band = lambda lo, hi: [t for t in after if lo <= t[1] <= hi]
     bid099 = next((r[0] for r in hist if r[2] is not None and r[2] >= 0.99), None)
     return {"live_samples": len(hist),
@@ -371,4 +378,7 @@ def live_summary(hist, trades, t0, end, min_shares=5):
             "live_trades_v1_after": len(in_band(*V1)),
             "live_trades_v1_shares_after": round(sum(t[2] for t in in_band(*V1)), 2),
             "live_trades_late_after": len(in_band(*LATE)),
-            "live_trades_late_shares_after": round(sum(t[2] for t in in_band(*LATE)), 2)}
+            "live_trades_late_shares_after": round(sum(t[2] for t in in_band(*LATE)), 2),
+            # each trade after t0 (first 50): seconds after t0, price, size, side; and shares by price
+            "live_trades_after": [[round(t[0] - t0, 2), t[1], t[2], t[3] if len(t) > 3 else None] for t in after[:50]],
+            "live_trades_after_n": len(after), "live_trades_after_by_price": by_price(after)}

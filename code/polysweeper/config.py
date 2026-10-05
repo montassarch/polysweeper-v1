@@ -31,6 +31,7 @@ class Limits:
     # scope
     enabled_sports: tuple = ("football", "esports")
     allowed_market_types: tuple = ("moneyline",)
+    ntfy_topic: str = ""                # phone alerts (free ntfy app); empty = off
 
     @classmethod
     def from_json(cls, path) -> "Limits":

@@ -27,3 +27,4 @@ code/data/shadow/hold_commit
 # laptop-only Claude settings and automatic handover copies
 .claude/settings.local.json
 .claude/handover/
+code/data/shadow/alerts_state.json

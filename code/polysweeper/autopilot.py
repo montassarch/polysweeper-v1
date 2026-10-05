@@ -43,7 +43,18 @@ LIVE = SHADOW_DIR / "live.json"
 GOOD = SHADOW_DIR / "good_commit"                  # last version seen running well (git-ignored)
 HOLD = SHADOW_DIR / "hold_commit"                  # a bad update we went back from (git-ignored)
 RESTART_DELAY = 30
+STALE_ALERT = 15 * 60                              # phone alert if live.json is older than this
 SELF_UPDATE = 3
+
+
+def alert(kind, message, priority="high"):
+    """Phone alert through polysweeper/alerts.py (free ntfy app). Never raises."""
+    try:
+        sys.path.insert(0, str(CODE))
+        from polysweeper import alerts
+        alerts.send(kind, message, title="PolySweeper autopilot", priority=priority)
+    except Exception:
+        pass
 
 
 def log(msg):
@@ -432,6 +443,7 @@ def main(cmd=None, max_loops=None, tick=5):
     verifier.start(last_check)
     retry_at = 0.0
     loops = 0
+    crashes = []
     while max_loops is None or loops < max_loops:
         loops += 1
         time.sleep(tick)
@@ -442,6 +454,9 @@ def main(cmd=None, max_loops=None, tick=5):
             return 0
         if not shadow.running():
             log(f"shadow mode exited unexpectedly; restarting in {RESTART_DELAY} s")
+            crashes = [t for t in crashes if time.time() - t < 3600] + [time.time()]
+            if len(crashes) >= 3:
+                alert("crashloop", f"Shadow mode crashed {len(crashes)} times in the last hour; the autopilot keeps restarting it.")
             time.sleep(RESTART_DELAY)
             shadow.start()
         now = time.time()
@@ -466,7 +481,14 @@ def main(cmd=None, max_loops=None, tick=5):
         if now - last_sync >= SYNC_EVERY:
             last_sync = now
             sync_data()
-        verifier.tick(shadow, time.time())
+        if verifier.tick(shadow, time.time()) == "went back":
+            alert("wentback", "A code update did not run well; the autopilot went back to the last working version.")
+        try:
+            stale = time.time() - LIVE.stat().st_mtime
+        except OSError:
+            stale = 0
+        if stale > STALE_ALERT and shadow.running():
+            alert("stale", f"Shadow mode is running but has not updated for {int(stale // 60)} minutes.")
         if now - last_app >= APP_EVERY:
             last_app = now
             install_app()

@@ -1,3 +1,4 @@
+import os; os.environ["POLYSWEEPER_NO_ALERTS"] = "1"   # tests must never send phone alerts
 """Desktop app (app/polysweeper_app.py): the data side, tested without a screen."""
 import json
 import sys

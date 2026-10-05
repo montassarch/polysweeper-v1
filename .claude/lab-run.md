@@ -73,6 +73,10 @@ ps-fixer under its rules.
 3. Commit and push as above (fixes only under ps-fixer's rules).
 4. PushNotification **only if the owner should know**: PC data older than 4 hours, a new loss, new
    error types, a fix pushed, or the live feed failing. Otherwise end quietly with a one-line summary.
+5. **Phone alert if the PC went quiet** (the PC cannot alert about itself when it is off): if the newest
+   commit touching `code/data/shadow/` on main is more than 4 hours old, send one ntfy alert (topic =
+   `ntfy_topic` in `code/config.json`), at both the morning run and the health check:
+   `curl -s -H "Title: PolySweeper" -H "Priority: high" -d "No new data from the PC for N hours. Is it on?" https://ntfy.sh/<topic>`
 
 ## Road to 1 November (owner decision 2026-10-05: real money starts 1 Nov 2026 with $20)
 

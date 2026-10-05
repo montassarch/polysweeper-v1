@@ -25,6 +25,8 @@ jobs:
   build:
     runs-on: windows-latest
     timeout-minutes: 30
+    env:
+      POLYSWEEPER_NO_ALERTS: "1"     # the build machine must never send phone alerts
     steps:
       - uses: actions/checkout@v4
 

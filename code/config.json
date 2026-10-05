@@ -22,5 +22,6 @@
   ],
   "allowed_market_types": [
     "moneyline"
-  ]
+  ],
+  "ntfy_topic": "polysweeper-4463a025f72df6b3"
 }

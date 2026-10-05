@@ -40,6 +40,7 @@ from .confirm import Confirmer
 from .fees import taker_fee
 from .killswitch import KillSwitch
 from .livefeed import LiveFeed
+from . import alerts
 from .scorecheck import allows as score_allows, mlb_big_lead, sport_of, winner_outcome
 from .endwindow import EndWatch
 
@@ -244,6 +245,18 @@ class Shadow:
     def error(self, where, exc):
         """A2/A1: never let one bad reply stop the run; write it down and carry on."""
         self.counters["errors"] += 1
+        try:
+            now = time.time()
+            self.err_times = [t for t in getattr(self, "err_times", []) if now - t < 3600] + [now]
+            name = type(exc).__name__
+            if name not in self.__dict__.setdefault("err_kinds", set()):
+                self.err_kinds.add(name)
+                alerts.send(f"newerr:{where}:{name}", f"New kind of problem in shadow mode: {where}: {name}: {str(exc)[:120]}")
+            if len(self.err_times) >= 20:
+                alerts.send("errors", f"Problems piling up in shadow mode: {len(self.err_times)} in the last hour "
+                            f"(latest: {where}: {name})", priority="high")
+        except Exception:
+            pass
         try:
             self.log(self.err_f, {"ts": now_iso(), "where": where, "error": f"{type(exc).__name__}: {exc}"})
         except Exception:
@@ -628,6 +641,10 @@ class Shadow:
                                     "result": res, "pnl": pnl, "closed_time": m.get("closedTime")})
             del self.state["pending"][key]
             self.counters["settled"] += 1
+            if res == "loss":
+                alerts.send(f"loss:{key}", f"Pretend LOSS {pnl:+.2f}: {rec.get('outcome')} | "
+                            f"{(rec.get('question') or '')[:60]} (rule {rec.get('rule', 'price_only')})",
+                            title="PolySweeper: pretend loss", priority="high")
             print(f"[{now_iso()}] PAID OUT: {rec.get('outcome')} | {(rec.get('question') or '')[:50]} | {res.upper()} {pnl:+.2f} ({rec.get('rule', 'price_only')})")
             self.save()
 

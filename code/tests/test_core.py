@@ -1,3 +1,4 @@
+import os; os.environ["POLYSWEEPER_NO_ALERTS"] = "1"   # tests must never send phone alerts
 import unittest
 from datetime import datetime, timedelta, timezone
 
@@ -1206,3 +1207,28 @@ class USSportsScoreTests(unittest.TestCase):
         self.assertFalse(mlb_big_lead(dict(e, period="Bot 8th"), ["Padres", "Brewers"], 1))   # 8th not finished
         self.assertFalse(mlb_big_lead(dict(e, score="3-9"), ["Padres", "Brewers"], 1))        # lead 6
         self.assertFalse(mlb_big_lead(dict(e, score="9-2"), outs, 0))                       # "Padres" != "San Diego Padres"
+
+
+class AlertTests(unittest.TestCase):
+    def test_rate_limit_and_never_raises(self):
+        import tempfile, pathlib, os
+        from polysweeper import alerts
+        saved = (alerts.STATE, alerts.topic)
+        with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as d:
+            try:
+                alerts.STATE, alerts.topic = pathlib.Path(d) / "s.json", lambda: "t"
+                sent = []
+                post = lambda *a: sent.append(a)
+                self.assertTrue(alerts.send("loss", "x", now=1000, post=post))
+                self.assertFalse(alerts.send("loss", "y", now=2000, post=post))      # within the hour
+                self.assertTrue(alerts.send("other", "z", now=2000, post=post))
+                self.assertTrue(alerts.send("loss", "w", now=5000, post=post))
+                self.assertEqual(len(sent), 3)
+                def boom(*a): raise OSError("no network")
+                self.assertFalse(alerts.send("net", "v", now=9000, post=boom))
+            finally:
+                alerts.STATE, alerts.topic = saved
+
+    def test_tests_never_alert(self):
+        from polysweeper import alerts
+        self.assertEqual(alerts.topic(), "")

@@ -95,7 +95,8 @@ below $1 and hold to the $1 payout. **No real money yet: shadow mode only (prete
 - Plugin `watch@claude-video` (project scope, reviewed 2026-10-04): watch a video link (yt-dlp + ffmpeg frames + captions). **Free mode only**: engine local, speech fallback none, detail efficient (`~/.config/watch/.env`, no keys). Never add a Gemini/Groq/OpenAI key without the owner's OK.
 - Agents (each has a fixed `effort` in its front matter to save usage: analyst low, fixer/tester medium,
   researcher/red-team high): `.claude/agents/ps-researcher.md` (most important), `ps-red-team`, `ps-tester`, `ps-analyst`,
-  `ps-fixer`. Shared memory: idea board `PolySweeper-V1/30-Research-Hub.md`, daily notes
+  `ps-fixer`, and **`ps-reviewer`** (effort high): independent review of every `code/` change before
+  it is pushed to main (step 6 of the `safe-deploy` skill; every session uses it). Shared memory: idea board `PolySweeper-V1/30-Research-Hub.md`, daily notes
   `PolySweeper-V1/Research/R-<date>.md`.
 - Research scripts go in `lab/` (outside `code/`, so the owner's PC is not restarted); small results in
   `lab/results/`, raw downloads in `lab/data/raw/` (git-ignored).

@@ -28,6 +28,12 @@ Never touch `code/data/shadow/` (trades, events, errors, daily): the autopilot o
 3. For shadow or livefeed changes: a 2-minute scratch run (`--no-live` if the feed is not involved) with 0 errors.
 4. Standard library only; `code/config.json` keys are strict (an unknown key raises at start).
 5. Re-read the diff: what would crash shadow mode at start?
+6. **Independent review (required for every `code/` push):** spawn the `ps-reviewer` agent
+   (`.claude/agents/ps-reviewer.md`; if agents are unavailable, a general-purpose agent with that file's
+   text at the top) with the diff and its purpose. Push only on **SHIP**; fix and re-review on
+   **SHIP AFTER FIXES**; stop on **DO NOT SHIP**. Mention the verdict in the commit message
+   (`Reviewed: SHIP`). Exception: an urgent one-line fix of something already broken may be reviewed
+   right after the push.
 
 ## 3. Waiting for the owner's OK
 

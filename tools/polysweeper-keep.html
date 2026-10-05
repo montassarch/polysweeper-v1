@@ -75,13 +75,13 @@ summary::after{content:"+";font-family:var(--mono)} details[open] summary::after
   <div class="top">
     <div class="box">
       <h1>PolySweeper Keep</h1>
-      <div class="tag">Night City · pretend trades only · data 4 Oct 14:30 · Tunis <span id="clock">--:--</span> · <span id="phase">night</span></div>
+      <div class="tag">Night City · pretend trades only · data 5 Oct 01:00 · Tunis <span id="clock">--:--</span> · <span id="phase">night</span></div>
     </div>
     <div class="box stats" aria-label="Bot results">
-      <div><span>Today</span><b class="c-lime">33W · 0L</b></div>
-      <div><span>Today P&amp;L</span><b class="c-amber">+$5.48</b></div>
-      <div><span>Since Sep 30</span><b>123W · 4L</b></div>
-      <div><span>Feed</span><b class="c-cyan">98% sync</b></div>
+      <div><span>4 Oct</span><b class="c-lime">68W · 1L</b></div>
+      <div><span>4 Oct P&amp;L</span><b class="c-amber">+$5.85</b></div>
+      <div><span>Since Sep 30</span><b>161W · 5L</b></div>
+      <div><span>Feed</span><b class="c-cyan">100% sync</b></div>
     </div>
   </div>
   <div></div>
@@ -113,7 +113,7 @@ summary::after{content:"+";font-family:var(--mono)} details[open] summary::after
 const CREW = [
   {id:"sweeper", name:"The Sweeper", where:"Central Spire · your laptop", color:0x29f0ff, h:58, pos:[0,0],
    plain:"The bot itself. It watches live matches and makes pretend buys with real prices, so we learn what works without risking money.",
-   deed:"Today 33 wins, 0 losses (+$5.48 pretend). 9 buys waiting for payout. New today: baseball, NFL, college football, hockey. Green sparks over the tower = today's pretend wins, red = losses.",
+   deed:"4 Oct: 68 wins, 1 loss (+$5.85 pretend) (NFL Rams vs Eagles, bought at 0.97 during play: a comeback). New tonight: it goes back on its own after a bad update, and checks after every pretend buy whether a real order would have got the shares. Green sparks = wins, red = losses.",
    always:true, why:"It never sleeps: it runs on your laptop day and night, as long as the laptop is on."},
   {id:"researcher", name:"The Researcher", where:"Archive Tower", color:0xff2bd6, h:40, pos:[-26,-16],
    plain:"Looks for new ways to make small, safe profits: reads the web, other people's bots on GitHub and Polymarket's own data.",
@@ -137,26 +137,29 @@ const CREW = [
    why:"Resting between its two daily checks (morning and evening)."},
   {id:"fixer", name:"The Smith", where:"Forge Works", color:0x9b7bff, h:26, pos:[0,-32],
    plain:"The repair worker. Fixes bugs safely when something breaks.",
-   deed:"Nothing to fix today.",
+   deed:"Tonight: fixed the Today report crash (team names with hidden characters).",
    oncall:true, why:"On call, not on a schedule: it is woken only when the Seer finds a real problem (failing tests, a crash, or laptop data older than 4 hours). No problem today, so it stays idle."},
   {id:"owner", name:"You, the Keeper", where:"Gate Plaza", color:0xf2f0ff, h:24, pos:[0,32],
    plain:"The boss. You decide what the crew researches and when real money may start. Nothing risky happens without your yes.",
-   deed:"Today: approved US sports and the Today report. Both are live.",
-   owner:true, why:"No decision is waiting for you right now."}
+   deed:"Tonight: approved the code reviewer, the go-live checklist (0 of 15 ticked) and lower effort for simple agents.",
+   owner:true, why:"No decision is waiting for you right now."},
+  {id:"reviewer", name:"The Warden", where:"Gatehouse", color:0x00ffa3, h:30, pos:[-38,0],
+   plain:"Guards the gate to your laptop. Every code change is checked by it before it goes live, so a bad change cannot stop the bot.",
+   deed:"New tonight. Its first job: the next code change (faster main loop).",
+   oncall:true, callText:"Before every code change goes to your laptop", why:"On call, not on a schedule: it wakes up whenever any session (V1, the Lab or your laptop) is about to send a code change to your laptop."}
 ];
 const QUESTS = [
-  ["Testing", [["live","Locked lines (#17)","Math held 2,270/2,270. Can we get filled below 0.99? Live watch tonight."],
-               ["live","US sports end of game (#14)","Laptop started watching today."],
+  ["Testing", [["live","US sports end of game (#14)","Laptop started watching today."],
                ["live","Late band 0.995-0.999 (#6)","Live feed measures what sells after the result."],
                ["live","Tennis practically won (#7)","Score log collecting."]]],
   ["Leads", [["lead","Profitable wallets (#10)","0 losses in 3,856 buys after the end. Best: US sports at 0.99."]]],
   ["Parked", [["park","Own win-chance model (#15)","Even a 4-run 9th-inning lead loses 1 in 300-1,000."]]],
-  ["Failed", [["done","Crypto locked by math (#16)","Never truly certain."],["done","Weather dead ranges (#13)","Cleared at 0.999 at once."],
+  ["Failed", [["done","Locked lines (#17)","Math held, but the winner's side was never for sale (154/154)."],["done","Crypto locked by math (#16)","Never truly certain."],["done","Weather dead ranges (#13)","Cleared at 0.999 at once."],
               ["done","YES + NO under $1 (#1)","Impossible: one shared book."],["done","Every option under $1 (#2)","No gaps after fees."],
               ["done","Waiting buy orders","Fill when you are wrong."],["done","Buying on price during play","No edge."]]],
   ["Not started", [["","Gaps, economic releases, maker & holding rewards, faster results","#3 #4 #8 #9 #12"]]]
 ];
-const EVENTS = [[17*60+43,"Health check (the Seer)"],[17*60+50,"NFL: locked-lines watch"],[21*60,"Late NFL + baseball watch"],[1440+5*60+17,"Full research run"],[1440+5*60+40,"First US-sports results"]];
+const EVENTS = [[5*60+17,"Full research run"],[17*60+43,"Health check (the Seer)"]];
 
 // ---------------- time & status ----------------
 function tunisMins(){
@@ -175,7 +178,7 @@ function status(a, now){
 }
 function scheduleHtml(a, now){
   if(a.always) return `<li class="now"><time>00:00–24:00</time><span>Always on (pretend trades, live prices)</span></li>`;
-  if(a.oncall) return `<li><time>any time</time><span>Only when the Seer reports a problem</span></li>`;
+  if(a.oncall) return `<li><time>any time</time><span>${a.callText || "Only when the Seer reports a problem"}</span></li>`;
   if(a.owner) return `<li><time>any time</time><span>When you message Claude</span></li>`;
   return a.shifts.map(([h,m,len,label])=>{ const s=h*60+m, e=s+len;
     const cls = now>=s && now<e ? "now" : now>=e ? "past" : "";
@@ -474,7 +477,7 @@ renderHud(); setInterval(()=>{ renderHud(); updateStatus(); }, 30000);
   const stream = Array.from({length:16}, (_,i)=>{ const m = new THREE.Mesh(pulseGeo, new THREE.MeshBasicMaterial({color:0x29f0ff})); scene.add(m); return {m, off:i/16}; });
 
   // ---------- 3b. sparks for today's pretend wins (green) and losses (red) ----------
-  const TODAY = {wins:33, losses:0};
+  const TODAY = {wins:68, losses:1};
   const MAXP = 900, pPos = new Float32Array(MAXP*3), pCol = new Float32Array(MAXP*3), pVel = new Float32Array(MAXP*3), pLife = new Float32Array(MAXP), pBase = new Float32Array(MAXP*3);
   for(let i=0;i<MAXP;i++) pPos[i*3+1] = -999;
   const pGeo = new THREE.BufferGeometry();
@@ -509,6 +512,7 @@ renderHud(); setInterval(()=>{ renderHud(); updateStatus(); }, 30000);
     tester(x){ x.beginPath(); x.moveTo(-22,-95); x.lineTo(-22,-25); x.lineTo(-80,80); x.lineTo(80,80); x.lineTo(22,-25); x.lineTo(22,-95); x.stroke(); x.beginPath(); x.moveTo(-58,40); x.lineTo(58,40); x.lineTo(80,80); x.lineTo(-80,80); x.closePath(); x.fill(); x.beginPath(); x.moveTo(-36,-95); x.lineTo(36,-95); x.stroke(); },
     analyst(x){ x.beginPath(); x.moveTo(-100,0); x.quadraticCurveTo(0,-90,100,0); x.quadraticCurveTo(0,90,-100,0); x.stroke(); x.beginPath(); x.arc(0,0,32,0,7); x.fill(); },
     fixer(x){ x.save(); x.rotate(-.7); x.fillRect(-14,-20,28,120); x.strokeRect(-60,-80,120,56); x.restore(); },
+    reviewer(x){ x.strokeRect(-70,-30,140,110); x.beginPath(); x.arc(0,-30,50,Math.PI,0); x.stroke(); x.beginPath(); x.moveTo(-36,25); x.lineTo(-8,52); x.lineTo(42,0); x.stroke(); },
     owner(x){ x.beginPath(); x.moveTo(-90,60); x.lineTo(-90,-40); x.lineTo(-45,10); x.lineTo(0,-70); x.lineTo(45,10); x.lineTo(90,-40); x.lineTo(90,60); x.closePath(); x.stroke(); x.fillRect(-90,70,180,22); }
   };
   function holoTexture(a){

@@ -26,7 +26,7 @@ directly to `main` (owner's standing rule, see CLAUDE.md).
    `24-Task-List.md`.
 4. **Save:** commit, `git pull --rebase origin main`, push to `main`. Notes, `lab/`, `.claude/` do not
    restart the owner's PC; `code/` does: code changes only via ps-fixer's rules (tests + 2-minute
-   scratch run), at most one code push per run. Retry failed pushes after 2, 4, 8, 16 s.
+   scratch run + ps-reviewer verdict SHIP), at most one code push per run. Retry failed pushes after 2, 4, 8, 16 s.
 5. **Finish:** PushNotification (status "proactive") with a 4-6 line plain summary (what was checked,
    best new idea and evidence, problems found/fixed, what's next); end the turn with the same text.
 

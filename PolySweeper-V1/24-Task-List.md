@@ -47,6 +47,7 @@ this list is the one to follow. Owner = who does it.
 - [x] (2026-10-04) #10 profitable wallets, first pass ([[R-2026-10-04-wallets]])
 - [x] (2026-10-04 12:33 UTC) US sports (MLB, NFL, college football, NHL) added to shadow mode; PC restarted fine
 - [ ] Rebuild the game situation at each buy of the best US-sports wallet: which situations never lose? — **assistant (lab)**
+- [ ] Decide: add shadow-only MLB rule "lead 7+ after 8 innings" (Stats API live feed, lead ≥7 + runners on base, no buy if price <0.98, game-ID match) — **owner, then V1**
 - [ ] Lab next: #18 paid UMA proposer: whitelist path, then a 3-day shadow proposer log (no wallet) — **assistant (lab)**
 - [x] Overwatch post-result asks verified (2026-10-05): Bo3/BO5 score artefact; scorecheck fixed
 - [x] Live locked-lines watcher on NFL (2026-10-04): nothing for sale on the winner; idea #17 rejected

@@ -35,11 +35,11 @@ def send(kind, message, title="PolySweeper", priority="default", every=EVERY, no
             state = {}
         if kind in state and now - state[kind] < every:
             return False
-        (post or _post)(t, message, title, priority)
-        state[kind] = now
+        state[kind] = now                  # recorded BEFORE sending: a failed send is not retried for an hour
         state = {k: v for k, v in state.items() if now - v < 7 * 86400}
         STATE.parent.mkdir(parents=True, exist_ok=True)
         STATE.write_text(json.dumps(state))
+        (post or _post)(t, message, title, priority)
         return True
     except Exception:
         return False

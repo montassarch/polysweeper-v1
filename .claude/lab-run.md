@@ -113,3 +113,5 @@ The lab runs on the owner's Claude plan; a full run used ~$8-10 of usage and onc
   site is blocked again, say so in the notification.
 - If a run hits an error (tool, network, git), try to work around it; if blocked, say exactly what
   is blocked and what the owner can do, in the notification.
+
+- **Phone alerts:** any shadow or autopilot run outside the owner's PC (cloud, lab, scratch runs) must set `POLYSWEEPER_NO_ALERTS=1`, or it alerts the owner's phone.

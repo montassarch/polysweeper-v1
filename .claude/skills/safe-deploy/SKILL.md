@@ -56,3 +56,5 @@ Note the branch in `PolySweeper-V1/24-Task-List.md` so it is not forgotten.
 - Within ~2 minutes check that shadow mode came back (PC: a python process running `polysweeper.shadow`;
   cloud: the next autopilot data commit and no new lines in `errors.jsonl`).
 - `.bat` files keep CRLF (`.gitattributes` handles it). Never place real orders or touch keys.
+
+- **Phone alerts:** any shadow or autopilot run outside the owner's PC (cloud, lab, scratch runs) must set `POLYSWEEPER_NO_ALERTS=1`, or it alerts the owner's phone.

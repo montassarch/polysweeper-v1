@@ -18,6 +18,8 @@ jobs:
   unittest:
     runs-on: ubuntu-latest
     timeout-minutes: 15
+    env:
+      POLYSWEEPER_NO_ALERTS: "1"     # never send phone alerts from GitHub
     defaults:
       run:
         working-directory: code

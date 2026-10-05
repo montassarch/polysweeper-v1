@@ -128,6 +128,7 @@ def build_shadow(shadow_dir: Path):
 def build(shadow_dir, summary_path, config_path):
     summary = json.loads(Path(summary_path).read_text()) if Path(summary_path).exists() else None
     config = json.loads(Path(config_path).read_text()) if Path(config_path).exists() else {}
+    config.pop("ntfy_topic", None)              # never put the alert channel in a page that could be shared
     return {"generated": datetime.now(timezone.utc).isoformat(timespec="seconds"),
             "shadow": build_shadow(Path(shadow_dir)), "backtest": summary, "config": config}
 

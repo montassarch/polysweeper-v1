@@ -1226,6 +1226,7 @@ class AlertTests(unittest.TestCase):
                 self.assertEqual(len(sent), 3)
                 def boom(*a): raise OSError("no network")
                 self.assertFalse(alerts.send("net", "v", now=9000, post=boom))
+                self.assertFalse(alerts.send("net", "v", now=9100, post=post))       # failed send not retried at once
             finally:
                 alerts.STATE, alerts.topic = saved
 

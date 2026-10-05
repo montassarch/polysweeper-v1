@@ -50,7 +50,8 @@ SELF_UPDATE = 3
 def alert(kind, message, priority="high"):
     """Phone alert through polysweeper/alerts.py (free ntfy app). Never raises."""
     try:
-        sys.path.insert(0, str(CODE))
+        if str(CODE) not in sys.path:
+            sys.path.insert(0, str(CODE))
         from polysweeper import alerts
         alerts.send(kind, message, title="PolySweeper autopilot", priority=priority)
     except Exception:
@@ -401,6 +402,7 @@ class ShadowProcess:
         if STOP.exists() and not owner_stop():
             STOP.unlink()
         log("starting shadow mode")
+        self.started = time.time()
         self.proc = subprocess.Popen(self.cmd, cwd=str(CODE))
 
     def running(self):
@@ -444,6 +446,7 @@ def main(cmd=None, max_loops=None, tick=5):
     retry_at = 0.0
     loops = 0
     crashes = []
+    awake_since = last_tick = time.time()
     while max_loops is None or loops < max_loops:
         loops += 1
         time.sleep(tick)
@@ -483,8 +486,11 @@ def main(cmd=None, max_loops=None, tick=5):
             sync_data()
         if verifier.tick(shadow, time.time()) == "went back":
             alert("wentback", "A code update did not run well; the autopilot went back to the last working version.")
+        if time.time() - last_tick > 60:            # the PC was asleep: give shadow mode time to catch up
+            awake_since = time.time()
+        last_tick = time.time()
         try:
-            stale = time.time() - LIVE.stat().st_mtime
+            stale = time.time() - max(LIVE.stat().st_mtime, getattr(shadow, "started", 0), awake_since)
         except OSError:
             stale = 0
         if stale > STALE_ALERT and shadow.running():

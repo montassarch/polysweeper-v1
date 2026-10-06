@@ -159,3 +159,4 @@ Back to [[V1-Home]].
 - 2026-10-06 12:05 Tunisia, laptop session: **owner said yes** to (1) score check 'against' blocks price_only buys (sent to V1 by message) and (2) the official-end recorder: running on the laptop for 18 h, read-only (2 MLB playoff games + NHL).
 - V1 session (2026-10-06): price-only now skips a side when Polymarket's score says the OTHER side won ("against"; logged as skip_score_against). "unknown" still buys. Would have saved loss #1. Note: price-only results from today are not like-for-like with older ones. Reviewed: SHIP.
 - 2026-10-06 12:45 Tunisia, laptop session: owner got a phone alert for a live-feed drop (server closed the feed at 12:42, reconnected in seconds; fired because the alert memory resets on restart). **Owner: no alerts for harmless feed drops, only if down 5+ min.** Sent to V1.
+- 2026-10-06, laptop session: **owner: any link that needs a browser is opened only in Opera GX on the PC.** Added to CLAUDE.md working rules.

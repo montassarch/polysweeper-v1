@@ -117,6 +117,8 @@ below $1 and hold to the $1 payout. **No real money yet: shadow mode only (prete
     before adding it; nothing that touches money, orders, wallets or keys. Commit and push like any change.
   - Do not add plugins or skills on your own initiative (the lab may suggest them in its notes).
 
+- **Browser: Opera GX only** (owner, 2026-10-06). Any link or page that needs a browser on the owner's PC is opened in
+  Opera GX (`%LOCALAPPDATA%\Programs\Opera GX\opera.exe <url>`), never Chrome, Edge or the default browser.
 - Never place real orders or handle wallet keys without the owner's explicit go-ahead.
 - **Nothing that costs money without asking first** (owner, 2026-10-04): paid APIs or credits (e.g. Exa beyond its free tier), subscriptions, servers, paid data or plugins. Check the price, tell the owner plainly what is free and what could be charged, and wait for a yes. Never add a card or buy credits.
 - Push finished work to `main` with a clear commit message; keep commits small.

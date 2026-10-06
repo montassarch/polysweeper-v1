@@ -67,6 +67,7 @@ owner plainly and propose a new date; never lower the bar to make a rule pass.
 - [ ] Per sport: find a free result source and measure its lag vs Polymarket's score (score log); need ~2 min faster — **assistant (lab)**
 - [ ] (started 2026-10-05 13:18 Tunisia, laptop) Polymarket Sports WebSocket lag test: `lab/sports_ws_record.py` records 6 h, `lab/sports_ws_lag.py` compares with end windows — **assistant**
 - [ ] After a few days: test tennis "practically locked" rules on the score log — **assistant**
+- [ ] (owner 2026-10-06) **Fix the in-play losses:** 8 price_only losses by Oct 6 (CS2 3, tennis 4, NFL 1), all comebacks or a wrong "ended" flag. Shadow keeps running unchanged meanwhile. Find a "locked" check (per sport) that blocks all 8 and keeps as many wins as possible; test on recorded data, then propose to V1 — **assistant (laptop)**
 - [x] Shadow mode: enforce B7 (max 1 pretend buy per match and rule; second chances logged as `skip_second_buy`)
 - [x] End-window study: record real watch time (`seconds_watched`), report leaves out pre-fix rows
 - [x] Autopilot: restart shadow mode only when code changes, not for note edits ([[28-Autopilot]])

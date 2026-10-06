@@ -1,0 +1,366 @@
+{
+ "summary": {
+  "ridings_found": 21,
+  "ridings_with_price_winner_ge_0.97": 15,
+  "price_leader_equals_wikipedia_winner": "21/21 (incl. 6 below 0.97 and 1 at 0.79; Wikipedia candidate table marks winners; Elections Quebec site unreachable)",
+  "inband_fills_total": 63,
+  "inband_shares_total": 2830,
+  "inband_shares_after_price_decided": 2442,
+  "ridings_with_ge50_shares_after_decided": 9,
+  "ridings_with_ge100": 9,
+  "decided_min_after_close_median": 100,
+  "decided_min_range": [
+   40,
+   258
+  ],
+  "real_losing_inband_buys": 0,
+  "note": "2 'losing' buys in Levis and 1 in Hochelaga are NO tokens of runners-up whose NO price is under 0.97 provisionally; the officially winning candidate was the market leader, so those NO buys won.",
+  "uma_status": "only ~0 of 21 ridings UMA-resolved yet at 16:10 UTC Oct 6 (still tradable), so resolution not tested, only the price leader vs official result"
+ },
+ "per_riding": [
+  {
+   "slug": "drummond-bois-francs-quebec-national-assembly-election-winner",
+   "markets": 30,
+   "resolved_yes_winners": [
+    "Charles Page"
+   ],
+   "trades": 343,
+   "final_yes_prices": [
+    0.9995,
+    0.0005
+   ],
+   "decided_min_after_close": 169,
+   "inband_win_fills": 8,
+   "inband_win_shares": 270,
+   "inband_loss_fills": 0,
+   "inband_loss_shares": 0,
+   "shares_after_decided": 185,
+   "losing_buys": []
+  },
+  {
+   "slug": "laurier-dorion-quebec-national-assembly-election-winner",
+   "markets": 32,
+   "resolved_yes_winners": [],
+   "trades": 352
+  },
+  {
+   "slug": "richmond-quebec-national-assembly-election-winner",
+   "markets": 32,
+   "resolved_yes_winners": [
+    "Bernard S\u00e9vigny"
+   ],
+   "trades": 446,
+   "final_yes_prices": [
+    0.995,
+    0.005
+   ],
+   "decided_min_after_close": 163,
+   "inband_win_fills": 5,
+   "inband_win_shares": 239,
+   "inband_loss_fills": 0,
+   "inband_loss_shares": 0,
+   "shares_after_decided": 191,
+   "losing_buys": []
+  },
+  {
+   "slug": "charlesbourg-quebec-national-assembly-election-winner",
+   "markets": 32,
+   "resolved_yes_winners": [],
+   "trades": 535
+  },
+  {
+   "slug": "saint-francois-quebec-national-assembly-election-winner",
+   "markets": 31,
+   "resolved_yes_winners": [
+    "Sylvie Tanguay"
+   ],
+   "trades": 495,
+   "final_yes_prices": [
+    0.995,
+    0.005
+   ],
+   "decided_min_after_close": 100,
+   "inband_win_fills": 6,
+   "inband_win_shares": 401,
+   "inband_loss_fills": 0,
+   "inband_loss_shares": 0,
+   "shares_after_decided": 401,
+   "losing_buys": []
+  },
+  {
+   "slug": "montarville-quebec-national-assembly-election-winner",
+   "markets": 31,
+   "resolved_yes_winners": [
+    "Mathieu Lavoie"
+   ],
+   "trades": 251,
+   "final_yes_prices": [
+    0.985,
+    0.015
+   ],
+   "decided_min_after_close": 125,
+   "inband_win_fills": 2,
+   "inband_win_shares": 18,
+   "inband_loss_fills": 0,
+   "inband_loss_shares": 0,
+   "shares_after_decided": 0,
+   "losing_buys": []
+  },
+  {
+   "slug": "laviolette-saint-maurice-quebec-national-assembly-election-winner",
+   "markets": 31,
+   "resolved_yes_winners": [
+    "\u00c9lodie Murphy-Gauthier"
+   ],
+   "trades": 301,
+   "final_yes_prices": [
+    0.9785,
+    0.0215
+   ],
+   "decided_min_after_close": 98,
+   "inband_win_fills": 12,
+   "inband_win_shares": 321,
+   "inband_loss_fills": 0,
+   "inband_loss_shares": 0,
+   "shares_after_decided": 157,
+   "losing_buys": []
+  },
+  {
+   "slug": "maskinonge-quebec-national-assembly-election-winner",
+   "markets": 32,
+   "resolved_yes_winners": [
+    "Isabelle Blais"
+   ],
+   "trades": 359,
+   "final_yes_prices": [
+    0.9855,
+    0.0145
+   ],
+   "decided_min_after_close": 258,
+   "inband_win_fills": 1,
+   "inband_win_shares": 5,
+   "inband_loss_fills": 0,
+   "inband_loss_shares": 0,
+   "shares_after_decided": 5,
+   "losing_buys": []
+  },
+  {
+   "slug": "jean-lesage-quebec-national-assembly-election-winner",
+   "markets": 32,
+   "resolved_yes_winners": [
+    "Sol Zanetti"
+   ],
+   "trades": 391,
+   "final_yes_prices": [
+    1.0,
+    0.0
+   ],
+   "decided_min_after_close": 40,
+   "inband_win_fills": 9,
+   "inband_win_shares": 304,
+   "inband_loss_fills": 0,
+   "inband_loss_shares": 0,
+   "shares_after_decided": 304,
+   "losing_buys": []
+  },
+  {
+   "slug": "louis-hebert-quebec-national-assembly-election-winner",
+   "markets": 32,
+   "resolved_yes_winners": [
+    "Marcos Archambault"
+   ],
+   "trades": 448,
+   "final_yes_prices": [
+    0.991,
+    0.009
+   ],
+   "decided_min_after_close": 116,
+   "inband_win_fills": 4,
+   "inband_win_shares": 319,
+   "inband_loss_fills": 0,
+   "inband_loss_shares": 0,
+   "shares_after_decided": 319,
+   "losing_buys": []
+  },
+  {
+   "slug": "levis-quebec-national-assembly-election-winner",
+   "markets": 32,
+   "resolved_yes_winners": [
+    "Karine Laflamme"
+   ],
+   "trades": 301,
+   "final_yes_prices": [
+    0.9845,
+    0.0155
+   ],
+   "decided_min_after_close": 60,
+   "inband_win_fills": 2,
+   "inband_win_shares": 115,
+   "inband_loss_fills": 2,
+   "inband_loss_shares": 39,
+   "shares_after_decided": 115,
+   "losing_buys": [
+    [
+     "Yanick Godbout",
+     1,
+     0.99,
+     4.0,
+     86
+    ],
+    [
+     "Yanick Godbout",
+     1,
+     0.9871428571,
+     35.0,
+     86
+    ]
+   ]
+  },
+  {
+   "slug": "la-prairie-quebec-national-assembly-election-winner",
+   "markets": 31,
+   "resolved_yes_winners": [
+    "Sonia Ziad\u00e9"
+   ],
+   "trades": 223,
+   "final_yes_prices": [
+    0.9935,
+    0.0065
+   ],
+   "decided_min_after_close": 128,
+   "inband_win_fills": 5,
+   "inband_win_shares": 566,
+   "inband_loss_fills": 0,
+   "inband_loss_shares": 0,
+   "shares_after_decided": 554,
+   "losing_buys": []
+  },
+  {
+   "slug": "rosemont-quebec-national-assembly-election-winner",
+   "markets": 32,
+   "resolved_yes_winners": [],
+   "trades": 449
+  },
+  {
+   "slug": "vanier-les-rivieres-quebec-national-assembly-election-winner",
+   "markets": 31,
+   "resolved_yes_winners": [],
+   "trades": 568
+  },
+  {
+   "slug": "hochelaga-maisonneuve-quebec-national-assembly-election-winner",
+   "markets": 32,
+   "resolved_yes_winners": [
+    "Alexandre Leduc"
+   ],
+   "trades": 466,
+   "final_yes_prices": [
+    0.9945,
+    0.0055
+   ],
+   "decided_min_after_close": null,
+   "inband_win_fills": 0,
+   "inband_win_shares": 0,
+   "inband_loss_fills": 1,
+   "inband_loss_shares": 70,
+   "shares_after_decided": 0,
+   "losing_buys": [
+    [
+     "Maude Brossard-Sabourin",
+     1,
+     0.99,
+     70.15,
+     135
+    ]
+   ]
+  },
+  {
+   "slug": "saint-henri-sainte-anne-quebec-national-assembly-election-winner",
+   "markets": 30,
+   "resolved_yes_winners": [],
+   "trades": 320
+  },
+  {
+   "slug": "cote-du-sud-quebec-national-assembly-election-winner",
+   "markets": 31,
+   "resolved_yes_winners": [],
+   "trades": 267
+  },
+  {
+   "slug": "nicolet-becancour-quebec-national-assembly-election-winner",
+   "markets": 31,
+   "resolved_yes_winners": [
+    "Guillaume Langlois"
+   ],
+   "trades": 270,
+   "final_yes_prices": [
+    0.985,
+    0.015
+   ],
+   "decided_min_after_close": 85,
+   "inband_win_fills": 2,
+   "inband_win_shares": 68,
+   "inband_loss_fills": 0,
+   "inband_loss_shares": 0,
+   "shares_after_decided": 23,
+   "losing_buys": []
+  },
+  {
+   "slug": "groulx-quebec-national-assembly-election-winner",
+   "markets": 31,
+   "resolved_yes_winners": [
+    "Marie-Claude Sarrazin"
+   ],
+   "trades": 229,
+   "final_yes_prices": [
+    0.975,
+    0.025
+   ],
+   "decided_min_after_close": 86,
+   "inband_win_fills": 5,
+   "inband_win_shares": 179,
+   "inband_loss_fills": 0,
+   "inband_loss_shares": 0,
+   "shares_after_decided": 179,
+   "losing_buys": []
+  },
+  {
+   "slug": "taschereau-quebec-national-assembly-election-winner",
+   "markets": 31,
+   "resolved_yes_winners": [
+    "\u00c9tienne Grandmont"
+   ],
+   "trades": 305,
+   "final_yes_prices": [
+    0.995,
+    0.005
+   ],
+   "decided_min_after_close": 57,
+   "inband_win_fills": 2,
+   "inband_win_shares": 25,
+   "inband_loss_fills": 0,
+   "inband_loss_shares": 0,
+   "shares_after_decided": 9,
+   "losing_buys": []
+  },
+  {
+   "slug": "beauharnois-quebec-national-assembly-election-winner",
+   "markets": 31,
+   "resolved_yes_winners": [
+    "Alexandre Daneau"
+   ],
+   "trades": 196,
+   "final_yes_prices": [
+    0.9935,
+    0.0065
+   ],
+   "decided_min_after_close": null,
+   "inband_win_fills": 0,
+   "inband_win_shares": 0,
+   "inband_loss_fills": 0,
+   "inband_loss_shares": 0,
+   "shares_after_decided": 0,
+   "losing_buys": []
+  }
+ ]
+}

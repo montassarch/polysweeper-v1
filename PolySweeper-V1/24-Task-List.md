@@ -81,6 +81,7 @@ owner plainly and propose a new date; never lower the bar to make a rule pass.
 - [x] Team of agents, idea board and daily routines set up ([[30-Research-Hub]])
 - [x] Cloud network set to full trust (owner, 2026-10-03): agents can read web pages; live feed tested on the real server
 - [x] (2026-10-04) Exa connected on claude.ai (works in new chats and the PC chat; free credit only, never add a card)
+- [ ] Run `lab/official_end_recorder.py` on the laptop (MLB+NHL, ~6 h, read-only; pass bar 5+ shares at <=0.995 at "Final" in 30%+ of games) — **owner/laptop session** (2026-10-06)
 - [ ] Read the daily research note; tell the lab what to focus on — **owner** (whenever useful)
 - [x] (2026-10-05, owner) New idea agent `ps-ideas` (effort max, skill `idea-methods`): 15+ ideas a day, top 3-5, one pick for research
 - [x] (2026-10-05, owner) Research agent refocused: deep dives on data, news and trends, effort max

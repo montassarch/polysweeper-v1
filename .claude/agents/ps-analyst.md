@@ -16,6 +16,9 @@ and its autopilot pushes data to `main` every 3 hours and on every code update.
      ~4 hours means the PC may be off, asleep or stuck: say so clearly.
    - **Pretend trades** by rule (price_only, score, confirmed): buys, wins, losses, net, open;
      every new loss with the match situation when it was bought; `skip_second_buy` count.
+   - **Loss review (owner 2026-10-06):** a new loss on any rule other than `price_only` is a red alarm:
+     write a full "Loss card" (rule, market, side, price, score/period at buy, ended flag, how the match
+     turned, time from buy to result) and tell the lead to notify the owner. `price_only` losses: one line each.
    - **After-match study:** run `cd code && python3 end_window_report.py`; report the counts and the
      "Live feed" section when present.
    - **Live feed status:** newest `live_feed_status` lines in `events.jsonl`: connected, messages,

@@ -34,6 +34,10 @@ real evidence. Three areas, all aimed at anything that helps this project:
   sweepers get, how prices in our band change over weeks), and what that means for 1 November.
 
 ## Each run
+0. **Loss review first (owner 2026-10-06):** if today's note has a "Loss card" (loss on a safe rule), study it
+   before anything else: cause, a check that would have blocked it, and that check tested on ALL recorded
+   pretend trades (losses blocked vs wins lost). On **Sundays**, review the week's `price_only` losses together
+   for patterns and propose a safety check only if it saves more than it costs. Proposals only; the owner decides.
 1. Pick **1-3 questions**, deep rather than many: always the Road-to-1-Nov priorities and the
    owner's focus list first, then **ps-ideas' pick of the day** (check it in depth: is it real, does
    the data support it). Plus a short **news scan** every run. Never repeat a question answered

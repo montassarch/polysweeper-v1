@@ -19,6 +19,11 @@ ps-fixer under its rules.
 1. **01:00 Analyst:** ps-analyst (+ ps-fixer only for a real problem: tests failing, new error type, PC data
    older than 4 h, restart loop). Sections "System health" and "Shadow results". No notification unless
    something is broken.
+   **Loss review (owner 2026-10-06), new settled losses since the last run:**
+   - Loss on a **safe rule** (any rule except `price_only`: confirmed, score, mlb_lead7, later official_end):
+     **red alarm.** Write a section "Loss card" (rule, market, side, price, score/period at buy, ended flag, how
+     the match turned, time from buy to result) and send the owner a push notification ("loss on safe rule X").
+   - Loss on `price_only`: one line per loss under "Shadow results" (sport, side, price, score at buy). No card.
 2. **05:00 Ideas (Monday and Thursday only, owner 2026-10-06: ideas pile up faster than they can be tested):** ps-ideas (effort max). Section "New ideas": raw list (one line each, kept or kill reason),
    top 3-5 cards, and a line `Pick for research: <idea>`. Add the top cards to the idea board in
    `30-Research-Hub.md` with status "new".
@@ -27,6 +32,12 @@ ps-fixer under its rules.
    promising untested idea on the hub's idea board, status "new" or "promising"); load the
    `polymarket-data` skill. Sections "Road to 1 Nov" (2-4 lines, put at the top of the note), "News and
    trends", "Research". Update the idea board (status, one line why, date). Side task: the hub's "MCP servers" item (small, after the main work).
+   **Loss review comes first (owner 2026-10-06):** if today's note has a "Loss card" (safe-rule loss), that is
+   the top priority before anything else: find the cause, propose a fix (a check that would have blocked it),
+   test the fix on ALL recorded pretend trades (losses blocked vs wins lost), section "Loss review". **Sundays:**
+   weekly review of the week's `price_only` losses together: look for patterns (sport, score state, price,
+   time left) and propose a safety check only if it blocks losses without costing more in wins. Fixes are
+   proposals only: nothing changes in the bot without the owner's yes. Rejected fixes go to `33-Rejected-Ideas.md`.
 4. **13:00 Red team (odd days only, owner 2026-10-06 to save usage):** ps-red-team on the new or upgraded ideas in today's and yesterday's notes. If there are none, write
    "Red team: nothing new today" and stop (don't spawn the agent). Section "Red team".
 5. **17:00 Tester:** ps-tester on the one best idea measurable today with public APIs (scripts in `lab/`).

@@ -348,6 +348,30 @@ class ShadowRobustnessTests(unittest.TestCase):
             self.assertIn("cut off", open(s.err_f.name).read())
             s.close()
 
+    def test_feed_alerts(self):
+        import tempfile
+        with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as d:
+            sh, s = self.make(d)
+            sent = []
+            self.addCleanup(setattr, sh.alerts, "send", sh.alerts.send)
+            sh.alerts.send = lambda kind, msg, **k: sent.append(kind)
+            s.error("live feed", ConnectionError("feed closed by the server"))
+            self.assertEqual(sent, [])                         # a feed drop is not a "new kind" alert
+            s.error("refresh", ValueError("x"))
+            self.assertEqual(sent, ["newerr:refresh:ValueError"])
+            s.live_on, s.live.connected = True, False
+            s.live.set_tokens([])
+            s.check_feed(1000); s.check_feed(2000)
+            self.assertEqual(sent[1:], [])                     # no matches to watch: the feed idles, no alert
+            s.live.set_tokens(["t1"])
+            s.check_feed(1000); s.check_feed(1200)
+            self.assertEqual(sent[1:], [])                     # down 200 s: no alert yet
+            s.check_feed(1301)
+            self.assertEqual(sent[1:], ["feed_down"])
+            s.live.connected = True; s.check_feed(1400)
+            self.assertIsNone(s.feed_down_since)
+            s.close()
+
     def test_bad_market_does_not_stop_the_round(self):
         import tempfile
         with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as d:

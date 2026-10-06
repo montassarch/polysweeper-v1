@@ -49,6 +49,7 @@ WATCH_MIN_ASK = 0.90          # start recording full snapshots from this ask
 WATCH_MAX_ASK = 0.999         # record snapshots up to here (late band 0.995-0.999 is logged, not bought)
 BOOK_BATCH = 40               # order books per request
 EVENT_BATCH = 40              # match states per request
+FEED_DOWN_ALERT = 300         # phone alert if the live feed stays down this long
 REFRESH_SECONDS = 120         # how often to re-list live events
 POLL_SECONDS = 15             # how often to read order books
 SETTLE_SECONDS = 60           # how often to check for payouts
@@ -246,15 +247,8 @@ class Shadow:
         """A2/A1: never let one bad reply stop the run; write it down and carry on."""
         self.counters["errors"] += 1
         try:
-            now = time.time()
-            self.err_times = [t for t in getattr(self, "err_times", []) if now - t < 3600] + [now]
-            name = type(exc).__name__
-            if name not in self.__dict__.setdefault("err_kinds", set()):
-                self.err_kinds.add(name)
-                alerts.send(f"newerr:{where}:{name}", f"New kind of problem in shadow mode: {where}: {name}: {str(exc)[:120]}")
-            if len(self.err_times) >= 20:
-                alerts.send("errors", f"Problems piling up in shadow mode: {len(self.err_times)} in the last hour "
-                            f"(latest: {where}: {name})", priority="high")
+            if where != "live feed":               # feed drops reconnect by themselves: check_feed() alerts instead
+                self.error_alerts(where, exc)
         except Exception:
             pass
         try:
@@ -507,6 +501,29 @@ class Shadow:
                                         "trades_checked": known, "verdict": verdict})
                 self.followups.remove(f)
 
+    def error_alerts(self, where, exc):
+        now = time.time()
+        self.err_times = [t for t in getattr(self, "err_times", []) if now - t < 3600] + [now]
+        name = type(exc).__name__
+        if name not in self.__dict__.setdefault("err_kinds", set()):
+            self.err_kinds.add(name)
+            alerts.send(f"newerr:{where}:{name}", f"New kind of problem in shadow mode: {where}: {name}: {str(exc)[:120]}")
+        if len(self.err_times) >= 20:
+            alerts.send("errors", f"Problems piling up in shadow mode: {len(self.err_times)} in the last hour "
+                        f"(latest: {where}: {name})", priority="high")
+
+    def check_feed(self, now=None):
+        """Phone alert when the live feed has been disconnected for FEED_DOWN_ALERT seconds in a row."""
+        now = time.time() if now is None else now
+        if not self.live_on or self.live.connected or not self.live.wanted:   # nothing to watch: feed idles
+            self.feed_down_since = None
+            return
+        if getattr(self, "feed_down_since", None) is None:
+            self.feed_down_since = now
+        elif now - self.feed_down_since >= FEED_DOWN_ALERT:
+            alerts.send("feed_down", f"The live price feed has been disconnected for "
+                        f"{int((now - self.feed_down_since) // 60)} minutes.", priority="high")
+
     def write_live(self):
         """data/shadow/live.json: what shadow mode sees right now, for the desktop app (PolySweeper.exe).
         Rewritten every loop (about every 2 seconds). Never allowed to disturb shadow mode."""
@@ -698,6 +715,10 @@ class Shadow:
                     self.check_fills()
                 except Exception as exc:
                     self.error("check_fills", exc)
+                try:
+                    self.check_feed()
+                except Exception:
+                    pass
                 self.write_live()
                 time.sleep(FAST_SECONDS)
         except KeyboardInterrupt:

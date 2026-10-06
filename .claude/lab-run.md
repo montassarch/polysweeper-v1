@@ -19,11 +19,12 @@ ps-fixer under its rules.
 1. **01:00 Analyst:** ps-analyst (+ ps-fixer only for a real problem: tests failing, new error type, PC data
    older than 4 h, restart loop). Sections "System health" and "Shadow results". No notification unless
    something is broken.
-2. **05:00 Ideas:** ps-ideas (effort max). Section "New ideas": raw list (one line each, kept or kill reason),
+2. **05:00 Ideas (Monday and Thursday only, owner 2026-10-06: ideas pile up faster than they can be tested):** ps-ideas (effort max). Section "New ideas": raw list (one line each, kept or kill reason),
    top 3-5 cards, and a line `Pick for research: <idea>`. Add the top cards to the idea board in
    `30-Research-Hub.md` with status "new".
 3. **09:00 Research:** ps-researcher (effort max) with today's UTC date, the "Road to 1 Nov" priorities below,
-   the hub's "Owner's focus" list, the analyst's key numbers and the ideas pick from today's note; load the
+   the hub's "Owner's focus" list, the analyst's key numbers and the ideas pick from today's note (on days with no ideas run: the most
+   promising untested idea on the hub's idea board, status "new" or "promising"); load the
    `polymarket-data` skill. Sections "Road to 1 Nov" (2-4 lines, put at the top of the note), "News and
    trends", "Research". Update the idea board (status, one line why, date). Side task: the hub's "MCP servers" item (small, after the main work).
 4. **13:00 Red team (odd days only, owner 2026-10-06 to save usage):** ps-red-team on the new or upgraded ideas in today's and yesterday's notes. If there are none, write

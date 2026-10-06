@@ -53,6 +53,16 @@ The lab reads this first and puts these ahead of its own picks. Ideas that need 
 4. **#18 Paid UMA proposer:** whitelist path, then the 3-day shadow proposer log.
 5. Still one brand-new out-of-the-box angle per run.
 
+**Side task (owner 2026-10-06, keep aside, small; do it once in the next research run, then re-check monthly):
+MCP servers that would really help PolySweeper.** Search GitHub (and the official MCP registry / Anthropic's
+lists) for MCP servers useful here: faster live sports results, sports data, Polymarket/prediction-market *read-only*
+data, market news, data analysis. Only list ones that are **popular and trusted**: high GitHub stars (aim 1,000+; say
+the number), many users, updated in the last 3 months, a known owner (official company, Anthropic, or well-known
+developer), open code. **Reject** anything that places orders, holds wallet keys or private keys, needs a paid plan
+(note any price), or looks new/unknown/scammy. Write a short table in the day's note (name, link, stars, last update,
+owner, what it gives us, free or paid, verdict) and one line on the idea board. **Research only: never install;**
+the owner decides.
+
 ## Idea board
 
 Status: **new** → **researching** → **testing** → **promising** / **rejected**.

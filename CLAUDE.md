@@ -107,6 +107,11 @@ below $1 and hold to the $1 payout. **No real money yet: shadow mode only (prete
 
 ## Working rules
 
+- **Be the inventor (owner, 2026-10-06):** don't wait for the owner to bring ideas. Every session looks for weak
+  spots (losses, single-source signals, slow data, untested assumptions), tries every known method, invents new ones,
+  and starts safe research (lab/, read-only, free) on its own. Still ask before real money, anything paid, or changing
+  how the bot buys.
+
 - **Plugins and skills: project scope only, installed automatically when the owner asks.** Standing
   permission (2026-10-03): when the owner asks for plugin or skill suggestions, choose suitable ones, tell
   the owner in one line what you are adding, and add them without asking again.

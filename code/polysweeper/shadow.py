@@ -399,8 +399,13 @@ class Shadow:
                 in_window.append((idx, best_ask, asks))
         if not watched:
             return
-        # Rule 1: price only (buy when the real ask is in range and 5 shares are for sale)
+        # Rule 1: price only (buy when the real ask is in range and 5 shares are for sale), except when
+        #         Polymarket's own score says the OTHER side won (owner 2026-10-06: loss #1 was such a buy).
+        #         "unknown" still buys, so this stays the comparison rule.
+        sport_pre = sport_of(info["league"])
         for idx, best_ask, asks in in_window:
+            if sport_pre and score_allows(e, info["outcomes"], idx, sport_pre) == "against":
+                continue                           # logged once as skip_score_against below
             self.maybe_enter("price_only", mid, idx, info, best_ask, asks, ev_state, None)
         # Rule 2: confirmed result (external source says this token won, normal finish,
         #         AND Polymarket has flagged the match as ended).

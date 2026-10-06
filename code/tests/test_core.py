@@ -512,7 +512,7 @@ class ShadowScoreRuleTests(unittest.TestCase):
             self.assertFalse([r for r in rows if r.get("rule") == "score" and r["market_id"] == "m2"])
             self.assertTrue([r for r in rows if r["type"] == "skip_score_against"])
             price_only_m2 = [r for r in rows if r.get("rule") == "price_only" and r["market_id"] == "m2"]
-            self.assertEqual(price_only_m2[0]["score_check"], "against")   # the old rule would have bought the loser
+            self.assertEqual(price_only_m2, [])   # owner 2026-10-06: price-only no longer buys the side the score says lost
 
 
     def test_score_rule_waits_for_stable_ended_score(self):

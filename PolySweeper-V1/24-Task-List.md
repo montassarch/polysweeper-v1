@@ -48,6 +48,14 @@ owner plainly and propose a new date; never lower the bar to make a rule pass.
 
 ## Now: running test (Phase 1)
 
+**Speed plan (laptop session 2026-10-06; owner: "your project, make it work", full permission; goal 100% win rate, never below 98.5%):**
+- [ ] **Tennis end race** running on the laptop until ~2026-10-07 13:30 Tunisia (`lab/tennis_end_race.py`, output `lab/data/raw/tennis_end_race/` is LOCAL ONLY, git-ignored): next laptop session reads it and reports: ESPN "final" vs Polymarket "ended" (seconds), winner agreement, shares left at 0.96-0.995 at the ESPN moment. Write the result into today's research note so the lab sees it.
+- [ ] If ESPN is clearly faster and shares are left: propose a shadow rule "confirmed tennis" (ESPN final + Polymarket score agrees), owner decides.
+- [ ] CS2 second result source: research focus #5 in [[30-Research-Hub]].
+- [ ] Two sources must agree for any real-money buy (Polymarket score + outside source).
+- [ ] Waiting orders before the end, and less-watched leagues where books stay non-empty longer: measure with end-window data.
+- [ ] If every free feed is too slow: tell the owner plainly (pay for a pro feed vs very few trades).
+
 - [x] Desktop app PolySweeper.exe: live view of shadow mode, built and tested on Windows by GitHub, installed by the autopilot ([[31-Desktop-App]])
 - [ ] Open the PolySweeper icon on the desktop; the first time click "More info" then "Run anyway" — **owner**
 - [x] (done 2026-10-04 00:31: one-time git fix, PC now runs the new autopilot) **Restart the autopilot once** (restart the PC, or `stop_shadow.bat` then `autopilot.bat`): the PC still runs the first version ([[28-Autopilot]]) — **owner**

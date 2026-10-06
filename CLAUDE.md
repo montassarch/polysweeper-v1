@@ -112,15 +112,17 @@ below $1 and hold to the $1 payout. **No real money yet: shadow mode only (prete
   and starts safe research (lab/, read-only, free) on its own. Still ask before real money, anything paid, or changing
   how the bot buys.
 
-- **Plugins and skills: project scope only, installed automatically when the owner asks.** Standing
-  permission (2026-10-03): when the owner asks for plugin or skill suggestions, choose suitable ones, tell
-  the owner in one line what you are adding, and add them without asking again.
+- **Plugins, skills, connectors, MCP servers, tools: install on your own initiative** (owner, 2026-10-06,
+  full permission; replaces the 2026-10-03 "when the owner asks" rule). Research anything that helps the
+  project and install it without waiting for a yes; tell the owner in one line what you added and why.
+  The safety rules below still apply: free only (no paid plan, credits, card or API key that can be charged),
+  trusted sources, read files first, nothing that touches money, orders, wallets or private keys.
   - Plugins: project scope only, recorded in this repo's `.claude/settings.json` (`enabledPlugins`, plus
     `extraKnownMarketplaces` if needed), or `claude plugin install <name> --scope project` from the repo root.
     Skills: files in `.claude/skills/<name>/` in this repo. Never install user-wide or on the claude.ai account.
   - Only from trusted sources (Anthropic, verified partners, well-known public repos). Read every file
     before adding it; nothing that touches money, orders, wallets or keys. Commit and push like any change.
-  - Do not add plugins or skills on your own initiative (the lab may suggest them in its notes).
+  - Prefer project scope; anything that only works user-wide or as a claude.ai connector is allowed under the same rules.
 
 - **Browser: Opera GX only** (owner, 2026-10-06). Any link or page that needs a browser on the owner's PC is opened in
   Opera GX (`%LOCALAPPDATA%\Programs\Opera GX\opera.exe <url>`), never Chrome, Edge or the default browser.

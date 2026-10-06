@@ -154,3 +154,4 @@ Back to [[V1-Home]].
 - 2026-10-05 evening, laptop session: **owner: report notifications stay as usual but simple, facts only, no advice and no tasks.** `.claude/lab-run.md` updated (17:00 daily summary, 21:00 health check).
 - 2026-10-06, laptop session: **owner changed their mind: keep agent effort as before** (ideas/researcher max, red team high, 15+ ideas). The lowering commit 30b5e4b was reverted.
 - 2026-10-06, laptop session: **owner: save usage without lowering effort.** Routines changed: red team 13:00 only on odd days (checks today's + yesterday's ideas), health check 21:00 only on even days. Effort stays max/high.
+- 2026-10-06, laptop session: **owner: side research task for ps-researcher: find MCP servers on GitHub that would help a lot,** only very popular/trusted ones (high stars, known owner), reject anything touching orders/wallets or paid; research only, no install. Added to [[30-Research-Hub]] owner's focus.

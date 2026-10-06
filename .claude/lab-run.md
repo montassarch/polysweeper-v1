@@ -25,7 +25,7 @@ ps-fixer under its rules.
 3. **09:00 Research:** ps-researcher (effort max) with today's UTC date, the "Road to 1 Nov" priorities below,
    the hub's "Owner's focus" list, the analyst's key numbers and the ideas pick from today's note; load the
    `polymarket-data` skill. Sections "Road to 1 Nov" (2-4 lines, put at the top of the note), "News and
-   trends", "Research". Update the idea board (status, one line why, date).
+   trends", "Research". Update the idea board (status, one line why, date). Side task: the hub's "MCP servers" item (small, after the main work).
 4. **13:00 Red team (odd days only, owner 2026-10-06 to save usage):** ps-red-team on the new or upgraded ideas in today's and yesterday's notes. If there are none, write
    "Red team: nothing new today" and stop (don't spawn the agent). Section "Red team".
 5. **17:00 Tester:** ps-tester on the one best idea measurable today with public APIs (scripts in `lab/`).

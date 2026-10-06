@@ -66,7 +66,7 @@ the owner decides.
 ## Idea board
 
 Status: **new** → **researching** → **testing** → **promising** / **rejected**.
-The lab updates this table every day.
+The lab updates this table every day. Every rejected or parked idea also goes into [[33-Rejected-Ideas]].
 
 | # | Idea | Why it could be near zero-loss | Main risk | Status |
 |---|---|---|---|---|

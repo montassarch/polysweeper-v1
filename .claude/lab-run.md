@@ -109,6 +109,9 @@ The lab runs on the owner's Claude plan; a full run used ~$8-10 of usage and onc
 
 - Never place orders, never touch wallets or keys. Research and pretend trades only.
 - Never edit `code/data/shadow/*` by hand. Keep V1 and V2 notes unlinked.
+- **Rejected ideas list** (owner 2026-10-06): whenever your step says no to an idea (ps-ideas raw-list kills,
+  researcher, red team or tester rejects, or parks it), add one plain row to `PolySweeper-V1/33-Rejected-Ideas.md`
+  (date, idea, who, why, note link). Don't delete rows; if an idea comes back, say so in its row.
 - Never mention a "friend" or another bot's author. Don't raise legal topics.
 - Plain language for the owner (does not code, based in Tunisia).
 - Cloud network: full access since 2026-10-03 (web pages, Polymarket REST APIs and websocket feed). If a

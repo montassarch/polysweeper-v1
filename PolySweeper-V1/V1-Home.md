@@ -45,6 +45,7 @@ match below $1, hold until it pays $1. Code lives in the repo's `code/` folder.
 - [[28-Autopilot]] — hands-free shadow mode: starts at login, auto-updates, auto-syncs data
 - [[29-Live-Feed-and-Score-Log]] — live prices, 2-second checks near the end, every score change recorded
 - [[30-Research-Hub]] — **the automated research team (PolySweeper Lab): idea board and daily notes**
+- [[33-Rejected-Ideas]] — every idea the lab said no to, and why (side list, owner asks to see it)
 - [[31-Desktop-App]] — **PolySweeper.exe: the live desktop app (desktop icon)**
 - [[32-Go-Live-Checklist]] — **ready for real money checklist (15 boxes)**
 - [[Sources]] — every link used

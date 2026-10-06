@@ -70,6 +70,7 @@ owner plainly and propose a new date; never lower the bar to make a rule pass.
 - [ ] (owner 2026-10-06) **Fix the in-play losses:** 8 price_only losses by Oct 6 (CS2 3, tennis 4, NFL 1), all comebacks or a wrong "ended" flag. Shadow keeps running unchanged meanwhile. Find a "locked" check (per sport) that blocks all 8 and keeps as many wins as possible; test on recorded data, then propose to V1 — **assistant (laptop)**
   - [x] (done 2026-10-06) (owner yes 2026-10-06) Score check "against" blocks price_only buys (would have saved loss #1); sent to V1 by message — **V1 session**
   - [ ] (started 2026-10-06 12:05 Tunisia, laptop, 18 h, read-only) `lab/official_end_recorder.py`: shares left at <=0.995 when MLB/NHL say "Final"? Pass: 30%+ of games, latency under 10 s. Output `lab/data/raw/official_end/` — **assistant**
+- [ ] (owner yes 2026-10-06) Phone alerts: no alert for harmless live-feed drops ("feed closed", reconnects in seconds); alert only if the feed is down 5+ min. Sent to V1 by message — **V1 session**
 - [x] Shadow mode: enforce B7 (max 1 pretend buy per match and rule; second chances logged as `skip_second_buy`)
 - [x] End-window study: record real watch time (`seconds_watched`), report leaves out pre-fix rows
 - [x] Autopilot: restart shadow mode only when code changes, not for note edits ([[28-Autopilot]])

@@ -1,0 +1,302 @@
+[
+ {
+  "league": "lol",
+  "title": "LoL: HANJIN BRION vs JD Gaming (BO1) - Demacia Cup Global In",
+  "trigger": "score_decided",
+  "fs_ao_vs_t0": 890.8,
+  "band_gone_vs_t0": null,
+  "bid99_vs_t0": null,
+  "fs_ao_vs_band_gone": null,
+  "score_at_start": "000-000|1-0|Bo1"
+ },
+ {
+  "league": "lol",
+  "title": "LoL: GAM Esports vs Team WE (BO1) - Demacia Cup Global Invit",
+  "trigger": "score_decided",
+  "fs_ao_vs_t0": -5834.2,
+  "band_gone_vs_t0": null,
+  "bid99_vs_t0": null,
+  "fs_ao_vs_band_gone": null,
+  "score_at_start": "000-000|0-1|Bo1"
+ },
+ {
+  "league": "cs2",
+  "title": "Counter-Strike: fnatic vs Alliance (BO3) - Stake Ranked Epis",
+  "trigger": "score_decided",
+  "fs_ao_vs_t0": -165.5,
+  "band_gone_vs_t0": null,
+  "bid99_vs_t0": null,
+  "fs_ao_vs_band_gone": null,
+  "score_at_start": "000-000|2-0|Bo3"
+ },
+ {
+  "league": "cs2",
+  "title": "Counter-Strike: Aurora Gaming vs 9z (BO3) - ESL Pro League G",
+  "trigger": "score_decided",
+  "fs_ao_vs_t0": -65.3,
+  "band_gone_vs_t0": null,
+  "bid99_vs_t0": null,
+  "fs_ao_vs_band_gone": null,
+  "score_at_start": "000-000|2-0|Bo3"
+ },
+ {
+  "league": "dota2",
+  "title": "Dota 2: LGD Gaming vs GamerLegion (BO3) - BLAST Slam Last Ch",
+  "trigger": "score_decided",
+  "fs_ao_vs_t0": -231.9,
+  "band_gone_vs_t0": null,
+  "bid99_vs_t0": null,
+  "fs_ao_vs_band_gone": null,
+  "score_at_start": "000-000|2-1|Bo3"
+ },
+ {
+  "league": "cs2",
+  "title": "Counter-Strike: Luminosity vs Nemiga (BO3) - Stake Ranked Ep",
+  "trigger": "score_decided",
+  "fs_ao_vs_t0": 348.9,
+  "band_gone_vs_t0": null,
+  "bid99_vs_t0": null,
+  "fs_ao_vs_band_gone": null,
+  "score_at_start": "000-000|0-2|Bo3"
+ },
+ {
+  "league": "cs2",
+  "title": "Counter-Strike: MOUZ vs M80 (BO3) - ESL Pro League Group Sta",
+  "trigger": "score_decided",
+  "fs_ao_vs_t0": -152.6,
+  "band_gone_vs_t0": null,
+  "bid99_vs_t0": null,
+  "fs_ao_vs_band_gone": null,
+  "score_at_start": "000-000|2-0|Bo3"
+ },
+ {
+  "league": "lol",
+  "title": "LoL: LOUD vs FURIA Esports (BO5) - CBLOL Playoffs",
+  "trigger": "score_decided",
+  "fs_ao_vs_t0": 27.2,
+  "band_gone_vs_t0": null,
+  "bid99_vs_t0": null,
+  "fs_ao_vs_band_gone": null,
+  "score_at_start": "000-000|0-3|Bo5"
+ },
+ {
+  "league": "lol",
+  "title": "LoL: LGD Gaming vs BNK FEARX (BO3) - Demacia Cup Global Invi",
+  "trigger": "score_decided",
+  "fs_ao_vs_t0": -17.8,
+  "band_gone_vs_t0": -94.4,
+  "bid99_vs_t0": -94.4,
+  "fs_ao_vs_band_gone": 76.6,
+  "score_at_start": "000-000|1-2|Bo3"
+ },
+ {
+  "league": "lol",
+  "title": "LoL: RED Canids vs KT Rolster (BO3) - Demacia Cup Global Inv",
+  "trigger": "score_decided",
+  "fs_ao_vs_t0": -16.1,
+  "band_gone_vs_t0": null,
+  "bid99_vs_t0": -408.26,
+  "fs_ao_vs_band_gone": null,
+  "score_at_start": "000-000|0-2|Bo3"
+ },
+ {
+  "league": "cs2",
+  "title": "Counter-Strike: ShindeN vs Legacy (BO3) - ESL Pro League Gro",
+  "trigger": "score_decided",
+  "fs_ao_vs_t0": -108.0,
+  "band_gone_vs_t0": null,
+  "bid99_vs_t0": -181.74,
+  "fs_ao_vs_band_gone": null,
+  "score_at_start": "000-000|0-2|Bo3"
+ },
+ {
+  "league": "cs2",
+  "title": "Counter-Strike: Spirit vs PARIVISION (BO3) - ESL Pro League ",
+  "trigger": "score_decided",
+  "fs_ao_vs_t0": -101.4,
+  "band_gone_vs_t0": -120.08,
+  "bid99_vs_t0": -180.03,
+  "fs_ao_vs_band_gone": 18.7,
+  "score_at_start": "000-000|2-1|Bo3"
+ },
+ {
+  "league": "cs2",
+  "title": "Counter-Strike: 9z vs TYLOO (BO3) - ESL Pro League Group Sta",
+  "trigger": "score_decided",
+  "fs_ao_vs_t0": -115.5,
+  "band_gone_vs_t0": null,
+  "bid99_vs_t0": -184.47,
+  "fs_ao_vs_band_gone": null,
+  "score_at_start": "000-000|2-0|Bo3"
+ },
+ {
+  "league": "lol",
+  "title": "LoL: Team WE vs HANJIN BRION (BO3) - Demacia Cup Global Invi",
+  "trigger": "score_decided",
+  "fs_ao_vs_t0": -58.9,
+  "band_gone_vs_t0": -115.6,
+  "bid99_vs_t0": -115.6,
+  "fs_ao_vs_band_gone": 56.7,
+  "score_at_start": "000-000|2-1|Bo3"
+ },
+ {
+  "league": "cs2",
+  "title": "Counter-Strike: Team Falcons vs Aurora Gaming (BO3) - ESL Pr",
+  "trigger": "score_decided",
+  "fs_ao_vs_t0": -150.2,
+  "band_gone_vs_t0": null,
+  "bid99_vs_t0": -195.39,
+  "fs_ao_vs_band_gone": null,
+  "score_at_start": "000-000|2-0|Bo3"
+ },
+ {
+  "league": "cs2",
+  "title": "Counter-Strike: FURIA vs MOUZ (BO3) - ESL Pro League Group S",
+  "trigger": "score_decided",
+  "fs_ao_vs_t0": -158.0,
+  "band_gone_vs_t0": null,
+  "bid99_vs_t0": -197.78,
+  "fs_ao_vs_band_gone": null,
+  "score_at_start": "000-000|0-2|Bo3"
+ },
+ {
+  "league": "cs2",
+  "title": "Counter-Strike: G2 vs 1WIN (BO3) - ESL Pro League Group Stag",
+  "trigger": "score_decided",
+  "fs_ao_vs_t0": -61.3,
+  "band_gone_vs_t0": -118.99,
+  "bid99_vs_t0": -118.99,
+  "fs_ao_vs_band_gone": 57.7,
+  "score_at_start": "000-000|1-2|Bo3"
+ },
+ {
+  "league": "lol",
+  "title": "LoL: Galions vs The Secret Club Esport (BO5) - EMEA Masters ",
+  "trigger": "score_decided",
+  "fs_ao_vs_t0": -67.5,
+  "band_gone_vs_t0": null,
+  "bid99_vs_t0": -251.65,
+  "fs_ao_vs_band_gone": null,
+  "score_at_start": "000-000|3-0|Bo5"
+ },
+ {
+  "league": "lol",
+  "title": "LoL: Solary vs Bar\u00e7a eSports (BO5) - EMEA Masters Knockout S",
+  "trigger": "score_decided",
+  "fs_ao_vs_t0": -498.6,
+  "band_gone_vs_t0": null,
+  "bid99_vs_t0": -2.25,
+  "fs_ao_vs_band_gone": null,
+  "score_at_start": "000-000|3-0|Bo5"
+ },
+ {
+  "league": "cs2",
+  "title": "Counter-Strike: BetBoom Team vs M80 (BO3) - ESL Pro League G",
+  "trigger": "score_decided",
+  "fs_ao_vs_t0": -59.3,
+  "band_gone_vs_t0": -103.8,
+  "bid99_vs_t0": -104.3,
+  "fs_ao_vs_band_gone": 44.5,
+  "score_at_start": "000-000|2-0|Bo3"
+ },
+ {
+  "league": "cs2",
+  "title": "Counter-Strike: Nemiga vs Astralis (BO5) - Stake Ranked Epis",
+  "trigger": "score_decided",
+  "fs_ao_vs_t0": 7510.7,
+  "band_gone_vs_t0": -153.1,
+  "bid99_vs_t0": -153.38,
+  "fs_ao_vs_band_gone": 7663.8,
+  "score_at_start": "000-000|1-3|Bo5"
+ },
+ {
+  "league": "lol",
+  "title": "LoL: GAM Esports vs Team Vitality (BO3) - Demacia Cup Global",
+  "trigger": "score_decided",
+  "fs_ao_vs_t0": -19.6,
+  "band_gone_vs_t0": -88.38,
+  "bid99_vs_t0": -103.34,
+  "fs_ao_vs_band_gone": 68.7,
+  "score_at_start": "000-000|0-2|Bo3"
+ },
+ {
+  "league": "lol",
+  "title": "LoL: Natus Vincere vs FlyQuest (BO3) - Demacia Cup Global In",
+  "trigger": "score_decided",
+  "fs_ao_vs_t0": -32.0,
+  "band_gone_vs_t0": -146.8,
+  "bid99_vs_t0": -146.8,
+  "fs_ao_vs_band_gone": 114.8,
+  "score_at_start": "000-000|2-0|Bo3"
+ },
+ {
+  "league": "cs2",
+  "title": "Counter-Strike: ShindeN vs G2 (BO3) - ESL Pro League Group S",
+  "trigger": "score_decided",
+  "fs_ao_vs_t0": -101.1,
+  "band_gone_vs_t0": null,
+  "bid99_vs_t0": -211.21,
+  "fs_ao_vs_band_gone": null,
+  "score_at_start": "000-000|0-2|Bo3"
+ },
+ {
+  "league": "lol",
+  "title": "LoL: Shopify Rebellion vs JD Gaming (BO3) - Demacia Cup Glob",
+  "trigger": "score_decided",
+  "fs_ao_vs_t0": -40.9,
+  "band_gone_vs_t0": null,
+  "bid99_vs_t0": -272.95,
+  "fs_ao_vs_band_gone": null,
+  "score_at_start": "000-000|0-2|Bo3"
+ },
+ {
+  "league": "cs2",
+  "title": "Counter-Strike: PARIVISION vs FURIA (BO3) - ESL Pro League G",
+  "trigger": "score_decided",
+  "fs_ao_vs_t0": -34.7,
+  "band_gone_vs_t0": -56.71,
+  "bid99_vs_t0": -56.51,
+  "fs_ao_vs_band_gone": 22.0,
+  "score_at_start": "000-000|1-2|Bo3"
+ },
+ {
+  "league": "cs2",
+  "title": "Counter-Strike: Legacy vs 1WIN (BO3) - ESL Pro League Group ",
+  "trigger": "score_decided",
+  "fs_ao_vs_t0": -65.6,
+  "band_gone_vs_t0": -81.41,
+  "bid99_vs_t0": -81.4,
+  "fs_ao_vs_band_gone": 15.8,
+  "score_at_start": "000-000|0-2|Bo3"
+ },
+ {
+  "league": "cs2",
+  "title": "Counter-Strike: M80 vs TYLOO (BO3) - ESL Pro League Group St",
+  "trigger": "score_decided",
+  "fs_ao_vs_t0": -216.7,
+  "band_gone_vs_t0": null,
+  "bid99_vs_t0": -269.71,
+  "fs_ao_vs_band_gone": null,
+  "score_at_start": "000-000|2-1|Bo3"
+ },
+ {
+  "league": "cs2",
+  "title": "Counter-Strike: Vitality vs Team Falcons (BO3) - ESL Pro Lea",
+  "trigger": "score_decided",
+  "fs_ao_vs_t0": -230.2,
+  "band_gone_vs_t0": null,
+  "bid99_vs_t0": -236.26,
+  "fs_ao_vs_band_gone": null,
+  "score_at_start": "000-000|2-1|Bo3"
+ },
+ {
+  "league": "cs2",
+  "title": "Counter-Strike: Aurora Gaming vs BetBoom Team (BO3) - ESL Pr",
+  "trigger": "score_decided",
+  "fs_ao_vs_t0": -23.5,
+  "band_gone_vs_t0": -117.42,
+  "bid99_vs_t0": -117.42,
+  "fs_ao_vs_band_gone": 94.0,
+  "score_at_start": "000-000|2-1|Bo3"
+ }
+]

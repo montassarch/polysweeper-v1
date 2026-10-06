@@ -1,0 +1,143 @@
+{
+ "games": 376,
+ "fills": 2281,
+ "wallets": 336,
+ "gross_pnl": 5728.53,
+ "top": [
+  {
+   "wallet": "0xb595d09c",
+   "fills": 163,
+   "shares": 14125,
+   "median_size": 13.0,
+   "median_s_from_end": 9.0,
+   "losing_token_fills": 2,
+   "pnl_no_fees": -674.25
+  },
+  {
+   "wallet": "0x72bc9c9d",
+   "fills": 112,
+   "shares": 4911,
+   "median_size": 17.310000000000002,
+   "median_s_from_end": -44.0,
+   "losing_token_fills": 2,
+   "pnl_no_fees": 4.97
+  },
+  {
+   "wallet": "0xd1ed1219",
+   "fills": 111,
+   "shares": 40897,
+   "median_size": 50.0,
+   "median_s_from_end": -39.0,
+   "losing_token_fills": 3,
+   "pnl_no_fees": 964.14
+  },
+  {
+   "wallet": "0x4ddc7068",
+   "fills": 89,
+   "shares": 10239,
+   "median_size": 100.0,
+   "median_s_from_end": -3.1989998817443848,
+   "losing_token_fills": 0,
+   "pnl_no_fees": 112.2
+  },
+  {
+   "wallet": "0xbd9a44b4",
+   "fills": 71,
+   "shares": 157,
+   "median_size": 1.0309,
+   "median_s_from_end": -56.28399991989136,
+   "losing_token_fills": 3,
+   "pnl_no_fees": -11.7
+  },
+  {
+   "wallet": "0xe4017252",
+   "fills": 69,
+   "shares": 4595,
+   "median_size": 10.0,
+   "median_s_from_end": 0.7130000591278076,
+   "losing_token_fills": 0,
+   "pnl_no_fees": 75.33
+  },
+  {
+   "wallet": "0x50b4ab86",
+   "fills": 67,
+   "shares": 1797,
+   "median_size": 10.0,
+   "median_s_from_end": 12.621999979019165,
+   "losing_token_fills": 0,
+   "pnl_no_fees": 17.41
+  },
+  {
+   "wallet": "0x0849cd5d",
+   "fills": 66,
+   "shares": 713,
+   "median_size": 10.0,
+   "median_s_from_end": 5.203500032424927,
+   "losing_token_fills": 0,
+   "pnl_no_fees": 7.14
+  },
+  {
+   "wallet": "0x0d2d845a",
+   "fills": 45,
+   "shares": 5886,
+   "median_size": 50.0,
+   "median_s_from_end": -41.0,
+   "losing_token_fills": 0,
+   "pnl_no_fees": 114.04
+  },
+  {
+   "wallet": "0xc785252b",
+   "fills": 44,
+   "shares": 6516,
+   "median_size": 68.0,
+   "median_s_from_end": -49.5,
+   "losing_token_fills": 0,
+   "pnl_no_fees": 166.75
+  },
+  {
+   "wallet": "0xc98ff9da",
+   "fills": 39,
+   "shares": 3119,
+   "median_size": 80.0,
+   "median_s_from_end": -11.0,
+   "losing_token_fills": 0,
+   "pnl_no_fees": 73.64
+  },
+  {
+   "wallet": "0xbca08c1b",
+   "fills": 36,
+   "shares": 14954,
+   "median_size": 201.5,
+   "median_s_from_end": -1.087499976158142,
+   "losing_token_fills": 0,
+   "pnl_no_fees": 403.26
+  },
+  {
+   "wallet": "0x745c0e81",
+   "fills": 35,
+   "shares": 788,
+   "median_size": 13.29,
+   "median_s_from_end": -32.0,
+   "losing_token_fills": 2,
+   "pnl_no_fees": -56.88
+  },
+  {
+   "wallet": "0x4638702f",
+   "fills": 34,
+   "shares": 6239,
+   "median_size": 50.82,
+   "median_s_from_end": -7.91349995136261,
+   "losing_token_fills": 0,
+   "pnl_no_fees": 64.16
+  },
+  {
+   "wallet": "0xdfc84669",
+   "fills": 34,
+   "shares": 163,
+   "median_size": 5.0,
+   "median_s_from_end": 25.67799997329712,
+   "losing_token_fills": 0,
+   "pnl_no_fees": 1.94
+  }
+ ]
+}

@@ -1,0 +1,602 @@
+{
+ "all 90 games": {
+  "0.96-0.995": {
+   "0": {
+    "games": 90,
+    "days": 14,
+    "fills": 356,
+    "fills_per_day": 25.4,
+    "games_with_fill": 82,
+    "profit_5sh_per_day": 1.37
+   },
+   "3": {
+    "games": 90,
+    "days": 14,
+    "fills": 259,
+    "fills_per_day": 18.5,
+    "games_with_fill": 74,
+    "profit_5sh_per_day": 0.98
+   },
+   "5": {
+    "games": 90,
+    "days": 14,
+    "fills": 220,
+    "fills_per_day": 15.7,
+    "games_with_fill": 64,
+    "profit_5sh_per_day": 0.83
+   },
+   "8": {
+    "games": 90,
+    "days": 14,
+    "fills": 170,
+    "fills_per_day": 12.1,
+    "games_with_fill": 50,
+    "profit_5sh_per_day": 0.65
+   },
+   "10": {
+    "games": 90,
+    "days": 14,
+    "fills": 144,
+    "fills_per_day": 10.3,
+    "games_with_fill": 46,
+    "profit_5sh_per_day": 0.51
+   },
+   "15": {
+    "games": 90,
+    "days": 14,
+    "fills": 97,
+    "fills_per_day": 6.9,
+    "games_with_fill": 34,
+    "profit_5sh_per_day": 0.33
+   },
+   "20": {
+    "games": 90,
+    "days": 14,
+    "fills": 57,
+    "fills_per_day": 4.1,
+    "games_with_fill": 21,
+    "profit_5sh_per_day": 0.18
+   },
+   "30": {
+    "games": 90,
+    "days": 14,
+    "fills": 25,
+    "fills_per_day": 1.8,
+    "games_with_fill": 10,
+    "profit_5sh_per_day": 0.08
+   },
+   "45": {
+    "games": 90,
+    "days": 14,
+    "fills": 15,
+    "fills_per_day": 1.1,
+    "games_with_fill": 6,
+    "profit_5sh_per_day": 0.05
+   }
+  },
+  "0.99-0.995": {
+   "0": {
+    "games": 90,
+    "days": 14,
+    "fills": 288,
+    "fills_per_day": 20.6,
+    "games_with_fill": 82,
+    "profit_5sh_per_day": 0.96
+   },
+   "3": {
+    "games": 90,
+    "days": 14,
+    "fills": 224,
+    "fills_per_day": 16.0,
+    "games_with_fill": 74,
+    "profit_5sh_per_day": 0.74
+   },
+   "5": {
+    "games": 90,
+    "days": 14,
+    "fills": 190,
+    "fills_per_day": 13.6,
+    "games_with_fill": 64,
+    "profit_5sh_per_day": 0.62
+   },
+   "8": {
+    "games": 90,
+    "days": 14,
+    "fills": 141,
+    "fills_per_day": 10.1,
+    "games_with_fill": 50,
+    "profit_5sh_per_day": 0.45
+   },
+   "10": {
+    "games": 90,
+    "days": 14,
+    "fills": 124,
+    "fills_per_day": 8.9,
+    "games_with_fill": 46,
+    "profit_5sh_per_day": 0.4
+   },
+   "15": {
+    "games": 90,
+    "days": 14,
+    "fills": 81,
+    "fills_per_day": 5.8,
+    "games_with_fill": 34,
+    "profit_5sh_per_day": 0.25
+   },
+   "20": {
+    "games": 90,
+    "days": 14,
+    "fills": 49,
+    "fills_per_day": 3.5,
+    "games_with_fill": 21,
+    "profit_5sh_per_day": 0.15
+   },
+   "30": {
+    "games": 90,
+    "days": 14,
+    "fills": 22,
+    "fills_per_day": 1.6,
+    "games_with_fill": 10,
+    "profit_5sh_per_day": 0.07
+   },
+   "45": {
+    "games": 90,
+    "days": 14,
+    "fills": 12,
+    "fills_per_day": 0.9,
+    "games_with_fill": 6,
+    "profit_5sh_per_day": 0.04
+   }
+  }
+ },
+ "postseason (Division Series)": {
+  "0.96-0.995": {
+   "0": {
+    "games": 8,
+    "days": 4,
+    "fills": 22,
+    "fills_per_day": 5.5,
+    "games_with_fill": 7,
+    "profit_5sh_per_day": 0.35
+   },
+   "3": {
+    "games": 8,
+    "days": 4,
+    "fills": 9,
+    "fills_per_day": 2.2,
+    "games_with_fill": 5,
+    "profit_5sh_per_day": 0.11
+   },
+   "5": {
+    "games": 8,
+    "days": 4,
+    "fills": 9,
+    "fills_per_day": 2.2,
+    "games_with_fill": 5,
+    "profit_5sh_per_day": 0.11
+   },
+   "8": {
+    "games": 8,
+    "days": 4,
+    "fills": 7,
+    "fills_per_day": 1.8,
+    "games_with_fill": 4,
+    "profit_5sh_per_day": 0.08
+   },
+   "10": {
+    "games": 8,
+    "days": 4,
+    "fills": 5,
+    "fills_per_day": 1.2,
+    "games_with_fill": 3,
+    "profit_5sh_per_day": 0.06
+   },
+   "15": {
+    "games": 8,
+    "days": 4,
+    "fills": 3,
+    "fills_per_day": 0.8,
+    "games_with_fill": 2,
+    "profit_5sh_per_day": 0.04
+   },
+   "20": {
+    "games": 8,
+    "days": 4,
+    "fills": 0,
+    "fills_per_day": 0.0,
+    "games_with_fill": 0,
+    "profit_5sh_per_day": 0.0
+   },
+   "30": {
+    "games": 8,
+    "days": 4,
+    "fills": 0,
+    "fills_per_day": 0.0,
+    "games_with_fill": 0,
+    "profit_5sh_per_day": 0.0
+   },
+   "45": {
+    "games": 8,
+    "days": 4,
+    "fills": 0,
+    "fills_per_day": 0.0,
+    "games_with_fill": 0,
+    "profit_5sh_per_day": 0.0
+   }
+  },
+  "0.99-0.995": {
+   "0": {
+    "games": 8,
+    "days": 4,
+    "fills": 16,
+    "fills_per_day": 4.0,
+    "games_with_fill": 7,
+    "profit_5sh_per_day": 0.19
+   },
+   "3": {
+    "games": 8,
+    "days": 4,
+    "fills": 9,
+    "fills_per_day": 2.2,
+    "games_with_fill": 5,
+    "profit_5sh_per_day": 0.11
+   },
+   "5": {
+    "games": 8,
+    "days": 4,
+    "fills": 9,
+    "fills_per_day": 2.2,
+    "games_with_fill": 5,
+    "profit_5sh_per_day": 0.11
+   },
+   "8": {
+    "games": 8,
+    "days": 4,
+    "fills": 7,
+    "fills_per_day": 1.8,
+    "games_with_fill": 4,
+    "profit_5sh_per_day": 0.08
+   },
+   "10": {
+    "games": 8,
+    "days": 4,
+    "fills": 5,
+    "fills_per_day": 1.2,
+    "games_with_fill": 3,
+    "profit_5sh_per_day": 0.06
+   },
+   "15": {
+    "games": 8,
+    "days": 4,
+    "fills": 3,
+    "fills_per_day": 0.8,
+    "games_with_fill": 2,
+    "profit_5sh_per_day": 0.04
+   },
+   "20": {
+    "games": 8,
+    "days": 4,
+    "fills": 0,
+    "fills_per_day": 0.0,
+    "games_with_fill": 0,
+    "profit_5sh_per_day": 0.0
+   },
+   "30": {
+    "games": 8,
+    "days": 4,
+    "fills": 0,
+    "fills_per_day": 0.0,
+    "games_with_fill": 0,
+    "profit_5sh_per_day": 0.0
+   },
+   "45": {
+    "games": 8,
+    "days": 4,
+    "fills": 0,
+    "fills_per_day": 0.0,
+    "games_with_fill": 0,
+    "profit_5sh_per_day": 0.0
+   }
+  }
+ },
+ "postseason Wild Card": {
+  "0.96-0.995": {
+   "0": {
+    "games": 9,
+    "days": 4,
+    "fills": 72,
+    "fills_per_day": 18.0,
+    "games_with_fill": 8,
+    "profit_5sh_per_day": 0.95
+   },
+   "3": {
+    "games": 9,
+    "days": 4,
+    "fills": 59,
+    "fills_per_day": 14.8,
+    "games_with_fill": 7,
+    "profit_5sh_per_day": 0.74
+   },
+   "5": {
+    "games": 9,
+    "days": 4,
+    "fills": 54,
+    "fills_per_day": 13.5,
+    "games_with_fill": 6,
+    "profit_5sh_per_day": 0.67
+   },
+   "8": {
+    "games": 9,
+    "days": 4,
+    "fills": 48,
+    "fills_per_day": 12.0,
+    "games_with_fill": 6,
+    "profit_5sh_per_day": 0.59
+   },
+   "10": {
+    "games": 9,
+    "days": 4,
+    "fills": 46,
+    "fills_per_day": 11.5,
+    "games_with_fill": 6,
+    "profit_5sh_per_day": 0.56
+   },
+   "15": {
+    "games": 9,
+    "days": 4,
+    "fills": 37,
+    "fills_per_day": 9.2,
+    "games_with_fill": 5,
+    "profit_5sh_per_day": 0.45
+   },
+   "20": {
+    "games": 9,
+    "days": 4,
+    "fills": 19,
+    "fills_per_day": 4.8,
+    "games_with_fill": 4,
+    "profit_5sh_per_day": 0.16
+   },
+   "30": {
+    "games": 9,
+    "days": 4,
+    "fills": 3,
+    "fills_per_day": 0.8,
+    "games_with_fill": 1,
+    "profit_5sh_per_day": 0.01
+   },
+   "45": {
+    "games": 9,
+    "days": 4,
+    "fills": 1,
+    "fills_per_day": 0.2,
+    "games_with_fill": 1,
+    "profit_5sh_per_day": 0.01
+   }
+  },
+  "0.99-0.995": {
+   "0": {
+    "games": 9,
+    "days": 4,
+    "fills": 52,
+    "fills_per_day": 13.0,
+    "games_with_fill": 8,
+    "profit_5sh_per_day": 0.56
+   },
+   "3": {
+    "games": 9,
+    "days": 4,
+    "fills": 44,
+    "fills_per_day": 11.0,
+    "games_with_fill": 7,
+    "profit_5sh_per_day": 0.46
+   },
+   "5": {
+    "games": 9,
+    "days": 4,
+    "fills": 40,
+    "fills_per_day": 10.0,
+    "games_with_fill": 6,
+    "profit_5sh_per_day": 0.41
+   },
+   "8": {
+    "games": 9,
+    "days": 4,
+    "fills": 35,
+    "fills_per_day": 8.8,
+    "games_with_fill": 6,
+    "profit_5sh_per_day": 0.35
+   },
+   "10": {
+    "games": 9,
+    "days": 4,
+    "fills": 33,
+    "fills_per_day": 8.2,
+    "games_with_fill": 6,
+    "profit_5sh_per_day": 0.33
+   },
+   "15": {
+    "games": 9,
+    "days": 4,
+    "fills": 24,
+    "fills_per_day": 6.0,
+    "games_with_fill": 5,
+    "profit_5sh_per_day": 0.22
+   },
+   "20": {
+    "games": 9,
+    "days": 4,
+    "fills": 14,
+    "fills_per_day": 3.5,
+    "games_with_fill": 4,
+    "profit_5sh_per_day": 0.12
+   },
+   "30": {
+    "games": 9,
+    "days": 4,
+    "fills": 3,
+    "fills_per_day": 0.8,
+    "games_with_fill": 1,
+    "profit_5sh_per_day": 0.01
+   },
+   "45": {
+    "games": 9,
+    "days": 4,
+    "fills": 1,
+    "fills_per_day": 0.2,
+    "games_with_fill": 1,
+    "profit_5sh_per_day": 0.01
+   }
+  }
+ },
+ "regular season": {
+  "0.96-0.995": {
+   "0": {
+    "games": 73,
+    "days": 6,
+    "fills": 262,
+    "fills_per_day": 43.7,
+    "games_with_fill": 67,
+    "profit_5sh_per_day": 2.33
+   },
+   "3": {
+    "games": 73,
+    "days": 6,
+    "fills": 191,
+    "fills_per_day": 31.8,
+    "games_with_fill": 62,
+    "profit_5sh_per_day": 1.71
+   },
+   "5": {
+    "games": 73,
+    "days": 6,
+    "fills": 157,
+    "fills_per_day": 26.2,
+    "games_with_fill": 53,
+    "profit_5sh_per_day": 1.41
+   },
+   "8": {
+    "games": 73,
+    "days": 6,
+    "fills": 115,
+    "fills_per_day": 19.2,
+    "games_with_fill": 40,
+    "profit_5sh_per_day": 1.08
+   },
+   "10": {
+    "games": 73,
+    "days": 6,
+    "fills": 93,
+    "fills_per_day": 15.5,
+    "games_with_fill": 37,
+    "profit_5sh_per_day": 0.76
+   },
+   "15": {
+    "games": 73,
+    "days": 6,
+    "fills": 57,
+    "fills_per_day": 9.5,
+    "games_with_fill": 27,
+    "profit_5sh_per_day": 0.45
+   },
+   "20": {
+    "games": 73,
+    "days": 6,
+    "fills": 38,
+    "fills_per_day": 6.3,
+    "games_with_fill": 17,
+    "profit_5sh_per_day": 0.31
+   },
+   "30": {
+    "games": 73,
+    "days": 6,
+    "fills": 22,
+    "fills_per_day": 3.7,
+    "games_with_fill": 9,
+    "profit_5sh_per_day": 0.18
+   },
+   "45": {
+    "games": 73,
+    "days": 6,
+    "fills": 14,
+    "fills_per_day": 2.3,
+    "games_with_fill": 5,
+    "profit_5sh_per_day": 0.12
+   }
+  },
+  "0.99-0.995": {
+   "0": {
+    "games": 73,
+    "days": 6,
+    "fills": 220,
+    "fills_per_day": 36.7,
+    "games_with_fill": 67,
+    "profit_5sh_per_day": 1.73
+   },
+   "3": {
+    "games": 73,
+    "days": 6,
+    "fills": 171,
+    "fills_per_day": 28.5,
+    "games_with_fill": 62,
+    "profit_5sh_per_day": 1.34
+   },
+   "5": {
+    "games": 73,
+    "days": 6,
+    "fills": 141,
+    "fills_per_day": 23.5,
+    "games_with_fill": 53,
+    "profit_5sh_per_day": 1.1
+   },
+   "8": {
+    "games": 73,
+    "days": 6,
+    "fills": 99,
+    "fills_per_day": 16.5,
+    "games_with_fill": 40,
+    "profit_5sh_per_day": 0.77
+   },
+   "10": {
+    "games": 73,
+    "days": 6,
+    "fills": 86,
+    "fills_per_day": 14.3,
+    "games_with_fill": 37,
+    "profit_5sh_per_day": 0.66
+   },
+   "15": {
+    "games": 73,
+    "days": 6,
+    "fills": 54,
+    "fills_per_day": 9.0,
+    "games_with_fill": 27,
+    "profit_5sh_per_day": 0.41
+   },
+   "20": {
+    "games": 73,
+    "days": 6,
+    "fills": 35,
+    "fills_per_day": 5.8,
+    "games_with_fill": 17,
+    "profit_5sh_per_day": 0.27
+   },
+   "30": {
+    "games": 73,
+    "days": 6,
+    "fills": 19,
+    "fills_per_day": 3.2,
+    "games_with_fill": 9,
+    "profit_5sh_per_day": 0.14
+   },
+   "45": {
+    "games": 73,
+    "days": 6,
+    "fills": 11,
+    "fills_per_day": 1.8,
+    "games_with_fill": 5,
+    "profit_5sh_per_day": 0.08
+   }
+  }
+ }
+}

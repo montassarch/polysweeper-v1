@@ -1,0 +1,146 @@
+{
+ "tennis": {
+  "buys": 417,
+  "dollars": 57382,
+  "profit": 81,
+  "lost": 2
+ },
+ "MLB": {
+  "buys": 415,
+  "dollars": 29033,
+  "profit": 221,
+  "lost": 1
+ },
+ "NFL": {
+  "buys": 392,
+  "dollars": 26339,
+  "profit": 206,
+  "lost": 1
+ },
+ "soccer": {
+  "buys": 283,
+  "dollars": 44093,
+  "profit": 407,
+  "lost": 0
+ },
+ "CFB": {
+  "buys": 250,
+  "dollars": 25933,
+  "profit": 225,
+  "lost": 1
+ },
+ "counter-strike": {
+  "buys": 140,
+  "dollars": 21525,
+  "profit": 229,
+  "lost": 0
+ },
+ "premier-league-2025": {
+  "buys": 97,
+  "dollars": 6391,
+  "profit": 67,
+  "lost": 0
+ },
+ "la-liga-2025": {
+  "buys": 92,
+  "dollars": 6331,
+  "profit": 64,
+  "lost": 0
+ },
+ "league-of-legends": {
+  "buys": 65,
+  "dollars": 18825,
+  "profit": 197,
+  "lost": 0
+ },
+ "NHL": {
+  "buys": 29,
+  "dollars": 3447,
+  "profit": 31,
+  "lost": 0
+ },
+ "WNBA": {
+  "buys": 26,
+  "dollars": 4301,
+  "profit": 41,
+  "lost": 0
+ },
+ "ufc": {
+  "buys": 22,
+  "dollars": 4816,
+  "profit": 52,
+  "lost": 0
+ },
+ "uel-2025": {
+  "buys": 22,
+  "dollars": 1216,
+  "profit": 12,
+  "lost": 0
+ },
+ "NBA": {
+  "buys": 15,
+  "dollars": 2928,
+  "profit": 35,
+  "lost": 0
+ },
+ "dota-2": {
+  "buys": 14,
+  "dollars": 3667,
+  "profit": 31,
+  "lost": 0
+ },
+ "valorant": {
+  "buys": 7,
+  "dollars": 2264,
+  "profit": 31,
+  "lost": 0
+ },
+ "efl-cup": {
+  "buys": 4,
+  "dollars": 346,
+  "profit": 5,
+  "lost": 0
+ },
+ "us_timing": {
+  "30+ min before": {
+   "buys": 297,
+   "shares": 23946,
+   "lost": 0
+  },
+  "5-30 min before": {
+   "buys": 467,
+   "shares": 40260,
+   "lost": 2
+  },
+  "1-5 min before": {
+   "buys": 259,
+   "shares": 21051,
+   "lost": 1
+  },
+  "last minute before": {
+   "buys": 90,
+   "shares": 6693,
+   "lost": 0
+  },
+  "0-10 s after": {
+   "buys": 3,
+   "shares": 142,
+   "lost": 0
+  },
+  "10-60 s after": {
+   "buys": 8,
+   "shares": 553,
+   "lost": 0
+  },
+  "1-5 min after": {
+   "buys": 2,
+   "shares": 200,
+   "lost": 0
+  },
+  "5-30 min after": {
+   "buys": 1,
+   "shares": 100,
+   "lost": 0
+  }
+ }
+}

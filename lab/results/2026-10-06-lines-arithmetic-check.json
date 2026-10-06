@@ -1,0 +1,86 @@
+{
+ "MLB:moneyline": {
+  "markets": 98,
+  "matched": 98
+ },
+ "MLB:spreads": {
+  "markets": 603,
+  "matched": 603
+ },
+ "MLB:totals": {
+  "markets": 688,
+  "matched": 688
+ },
+ "MLB:team_totals": {
+  "markets": 980,
+  "matched": 980
+ },
+ "CFB:moneyline": {
+  "markets": 234,
+  "matched": 234
+ },
+ "CFB:spreads": {
+  "markets": 5447,
+  "matched": 5447
+ },
+ "CFB:totals": {
+  "markets": 3458,
+  "matched": 3458
+ },
+ "CFB:team_totals": {
+  "markets": 1300,
+  "matched": 1300
+ },
+ "NHL:moneyline": {
+  "markets": 92,
+  "matched": 92
+ },
+ "NHL:spreads": {
+  "markets": 94,
+  "matched": 94
+ },
+ "NHL:totals": {
+  "markets": 388,
+  "matched": 388
+ },
+ "NBA:moneyline": {
+  "markets": 6,
+  "matched": 6
+ },
+ "NBA:spreads": {
+  "markets": 26,
+  "matched": 26
+ },
+ "NBA:totals": {
+  "markets": 32,
+  "matched": 32
+ },
+ "WNBA:moneyline": {
+  "markets": 26,
+  "matched": 26
+ },
+ "WNBA:spreads": {
+  "markets": 55,
+  "matched": 55
+ },
+ "WNBA:totals": {
+  "markets": 74,
+  "matched": 74
+ },
+ "NFL:moneyline": {
+  "markets": 33,
+  "matched": 33
+ },
+ "NFL:spreads": {
+  "markets": 1143,
+  "matched": 1143
+ },
+ "NFL:totals": {
+  "markets": 1176,
+  "matched": 1176
+ },
+ "NFL:team_totals": {
+  "markets": 704,
+  "matched": 704
+ }
+}

@@ -1,0 +1,152 @@
+{
+ "Apr 7-13": {
+  "games": 77,
+  "days": 7,
+  "stamp_lag_median_s": 63.3,
+  "before_end_120s": {
+   "fills_per_game": 2.22,
+   "games_with_fill": 51
+  },
+  "0-10s": {
+   "fills_per_game": 4.1,
+   "games_with_fill": 65
+  },
+  "10-30s": {
+   "fills_per_game": 2.47,
+   "games_with_fill": 52
+  },
+  "30-60s": {
+   "fills_per_game": 1.17,
+   "games_with_fill": 34
+  },
+  "1-15min": {
+   "fills_per_game": 0.18,
+   "games_with_fill": 9
+  }
+ },
+ "Jun 9-15": {
+  "games": 79,
+  "days": 7,
+  "stamp_lag_median_s": 78.4,
+  "before_end_120s": {
+   "fills_per_game": 6.91,
+   "games_with_fill": 65
+  },
+  "0-10s": {
+   "fills_per_game": 5.76,
+   "games_with_fill": 65
+  },
+  "10-30s": {
+   "fills_per_game": 0.84,
+   "games_with_fill": 22
+  },
+  "30-60s": {
+   "fills_per_game": 0.32,
+   "games_with_fill": 10
+  },
+  "1-15min": {
+   "fills_per_game": 0.11,
+   "games_with_fill": 4
+  }
+ },
+ "Jul 28-Aug 3": {
+  "games": 83,
+  "days": 7,
+  "stamp_lag_median_s": 77.4,
+  "before_end_120s": {
+   "fills_per_game": 5.28,
+   "games_with_fill": 64
+  },
+  "0-10s": {
+   "fills_per_game": 4.18,
+   "games_with_fill": 65
+  },
+  "10-30s": {
+   "fills_per_game": 1.51,
+   "games_with_fill": 37
+  },
+  "30-60s": {
+   "fills_per_game": 0.53,
+   "games_with_fill": 16
+  },
+  "1-15min": {
+   "fills_per_game": 0.07,
+   "games_with_fill": 2
+  }
+ },
+ "Aug 25-31": {
+  "games": 81,
+  "days": 7,
+  "stamp_lag_median_s": 84.8,
+  "before_end_120s": {
+   "fills_per_game": 3.31,
+   "games_with_fill": 61
+  },
+  "0-10s": {
+   "fills_per_game": 2.88,
+   "games_with_fill": 63
+  },
+  "10-30s": {
+   "fills_per_game": 0.85,
+   "games_with_fill": 21
+  },
+  "30-60s": {
+   "fills_per_game": 0.23,
+   "games_with_fill": 10
+  },
+  "1-15min": {
+   "fills_per_game": 0.09,
+   "games_with_fill": 3
+  }
+ },
+ "Sep 22-27": {
+  "games": 75,
+  "days": 6,
+  "stamp_lag_median_s": 84.2,
+  "before_end_120s": {
+   "fills_per_game": 3.6,
+   "games_with_fill": 55
+  },
+  "0-10s": {
+   "fills_per_game": 2.13,
+   "games_with_fill": 55
+  },
+  "10-30s": {
+   "fills_per_game": 0.84,
+   "games_with_fill": 28
+  },
+  "30-60s": {
+   "fills_per_game": 0.17,
+   "games_with_fill": 6
+  },
+  "1-15min": {
+   "fills_per_game": 0.11,
+   "games_with_fill": 3
+  }
+ },
+ "Postseason Sep29-Oct5": {
+  "games": 17,
+  "days": 6,
+  "stamp_lag_median_s": 76.3,
+  "before_end_120s": {
+   "fills_per_game": 5.24,
+   "games_with_fill": 13
+  },
+  "0-10s": {
+   "fills_per_game": 2.47,
+   "games_with_fill": 10
+  },
+  "10-30s": {
+   "fills_per_game": 2.35,
+   "games_with_fill": 9
+  },
+  "30-60s": {
+   "fills_per_game": 0.0,
+   "games_with_fill": 0
+  },
+  "1-15min": {
+   "fills_per_game": 0.06,
+   "games_with_fill": 1
+  }
+ }
+}

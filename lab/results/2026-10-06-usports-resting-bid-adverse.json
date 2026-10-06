@@ -1,0 +1,53 @@
+{
+ "30+ min before": {
+  "fills": 5,
+  "shares": 235,
+  "on_losers": 0
+ },
+ "5-30 min before": {
+  "fills": 417,
+  "shares": 128460,
+  "on_losers": 0
+ },
+ "last 5 min": {
+  "fills": 573,
+  "shares": 130081,
+  "on_losers": 3
+ },
+ "0-2 min after": {
+  "fills": 580,
+  "shares": 242088,
+  "on_losers": 0
+ },
+ "2+ min after": {
+  "fills": 113,
+  "shares": 42031,
+  "on_losers": 0
+ },
+ "moneyline_last30": {
+  "MLB": {
+   "fills": 151,
+   "on_losers": 0
+  },
+  "NHL": {
+   "fills": 85,
+   "on_losers": 0
+  },
+  "NFL": {
+   "fills": 239,
+   "on_losers": 0
+  },
+  "CFB": {
+   "fills": 103,
+   "on_losers": 0
+  },
+  "WNBA": {
+   "fills": 60,
+   "on_losers": 0
+  },
+  "NBA": {
+   "fills": 7,
+   "on_losers": 0
+  }
+ }
+}

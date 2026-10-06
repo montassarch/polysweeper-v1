@@ -1,0 +1,30 @@
+{
+ "matches": 482,
+ "by_time_before_stamp": {
+  "2-4h": {
+   "fills": 12,
+   "on_losers": 0,
+   "matches": 3
+  },
+  "1-2h": {
+   "fills": 41,
+   "on_losers": 21,
+   "matches": 11
+  },
+  "30-60min": {
+   "fills": 54,
+   "on_losers": 6,
+   "matches": 24
+  },
+  "10-30min": {
+   "fills": 429,
+   "on_losers": 0,
+   "matches": 106
+  },
+  "last10min": {
+   "fills": 1041,
+   "on_losers": 0,
+   "matches": 263
+  }
+ }
+}

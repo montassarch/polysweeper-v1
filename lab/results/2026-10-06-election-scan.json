@@ -1,0 +1,3345 @@
+{
+ "events": 924,
+ "good": 43440,
+ "bad": 1355,
+ "losing_events": [
+  {
+   "slug": "calgary-shaw-provincial-by-election-winner",
+   "end": 1789430340,
+   "good": 0,
+   "bad": 18,
+   "good_sh": 0,
+   "bad_sh": 229,
+   "losers": [
+    {
+     "event": "calgary-shaw-provincial-by-election-winner",
+     "market": "Will Kyle Campbell win the 2026 Calgary-Shaw provincial by-e",
+     "outcome": "No",
+     "price": 0.9879999989,
+     "size": 3.593083,
+     "hours_after_end": 0.1
+    },
+    {
+     "event": "calgary-shaw-provincial-by-election-winner",
+     "market": "Will Mike Derry win the 2026 Calgary-Shaw provincial by-elec",
+     "outcome": "Yes",
+     "price": 0.9879999983,
+     "size": 4.686166,
+     "hours_after_end": 0.1
+    },
+    {
+     "event": "calgary-shaw-provincial-by-election-winner",
+     "market": "Will Mike Derry win the 2026 Calgary-Shaw provincial by-elec",
+     "outcome": "Yes",
+     "price": 0.987999998,
+     "size": 4.058666,
+     "hours_after_end": 0.1
+    },
+    {
+     "event": "calgary-shaw-provincial-by-election-winner",
+     "market": "Will Kyle Campbell win the 2026 Calgary-Shaw provincial by-e",
+     "outcome": "No",
+     "price": 0.9879999992,
+     "size": 5.283333,
+     "hours_after_end": 0.1
+    },
+    {
+     "event": "calgary-shaw-provincial-by-election-winner",
+     "market": "Will Kyle Campbell win the 2026 Calgary-Shaw provincial by-e",
+     "outcome": "No",
+     "price": 0.9879999994,
+     "size": 13.410916,
+     "hours_after_end": 0.1
+    },
+    {
+     "event": "calgary-shaw-provincial-by-election-winner",
+     "market": "Will Kyle Campbell win the 2026 Calgary-Shaw provincial by-e",
+     "outcome": "No",
+     "price": 0.988,
+     "size": 4.44325,
+     "hours_after_end": 0.1
+    },
+    {
+     "event": "calgary-shaw-provincial-by-election-winner",
+     "market": "Will Kyle Campbell win the 2026 Calgary-Shaw provincial by-e",
+     "outcome": "No",
+     "price": 0.9879999991,
+     "size": 4.655833,
+     "hours_after_end": 0.1
+    },
+    {
+     "event": "calgary-shaw-provincial-by-election-winner",
+     "market": "Will Kyle Campbell win the 2026 Calgary-Shaw provincial by-e",
+     "outcome": "No",
+     "price": 0.9879999993,
+     "size": 6.072833,
+     "hours_after_end": 0.1
+    },
+    {
+     "event": "calgary-shaw-provincial-by-election-winner",
+     "market": "Will Mike Derry win the 2026 Calgary-Shaw provincial by-elec",
+     "outcome": "Yes",
+     "price": 0.988,
+     "size": 4.77725,
+     "hours_after_end": 0.1
+    },
+    {
+     "event": "calgary-shaw-provincial-by-election-winner",
+     "market": "Will Mike Derry win the 2026 Calgary-Shaw provincial by-elec",
+     "outcome": "Yes",
+     "price": 0.9879999989,
+     "size": 3.593083,
+     "hours_after_end": 0.1
+    }
+   ]
+  },
+  {
+   "slug": "sweden-parliamentary-election-turnout",
+   "end": 1789257600,
+   "good": 45,
+   "bad": 9,
+   "good_sh": 2245,
+   "bad_sh": 130,
+   "losers": [
+    {
+     "event": "sweden-parliamentary-election-turnout",
+     "market": "Will voter turnout in the 2026 Sweden parliamentary election",
+     "outcome": "No",
+     "price": 0.961296875,
+     "size": 12.8,
+     "hours_after_end": 39.8
+    },
+    {
+     "event": "sweden-parliamentary-election-turnout",
+     "market": "Will voter turnout in the 2026 Sweden parliamentary election",
+     "outcome": "No",
+     "price": 0.98,
+     "size": 13.1,
+     "hours_after_end": 23.5
+    },
+    {
+     "event": "sweden-parliamentary-election-turnout",
+     "market": "Will voter turnout in the 2026 Sweden parliamentary election",
+     "outcome": "No",
+     "price": 0.97,
+     "size": 5.0206,
+     "hours_after_end": 21.0
+    },
+    {
+     "event": "sweden-parliamentary-election-turnout",
+     "market": "Will voter turnout in the 2026 Sweden parliamentary election",
+     "outcome": "No",
+     "price": 0.98,
+     "size": 1.0204,
+     "hours_after_end": 20.2
+    },
+    {
+     "event": "sweden-parliamentary-election-turnout",
+     "market": "Will voter turnout in the 2026 Sweden parliamentary election",
+     "outcome": "No",
+     "price": 0.97,
+     "size": 10.0,
+     "hours_after_end": 20.2
+    },
+    {
+     "event": "sweden-parliamentary-election-turnout",
+     "market": "Will voter turnout in the 2026 Sweden parliamentary election",
+     "outcome": "No",
+     "price": 0.98,
+     "size": 30.0,
+     "hours_after_end": 20.2
+    },
+    {
+     "event": "sweden-parliamentary-election-turnout",
+     "market": "Will voter turnout in the 2026 Sweden parliamentary election",
+     "outcome": "No",
+     "price": 0.9740089865,
+     "size": 20.03,
+     "hours_after_end": 20.2
+    },
+    {
+     "event": "sweden-parliamentary-election-turnout",
+     "market": "Will voter turnout in the 2026 Sweden parliamentary election",
+     "outcome": "No",
+     "price": 0.97,
+     "size": 25.0,
+     "hours_after_end": 20.2
+    },
+    {
+     "event": "sweden-parliamentary-election-turnout",
+     "market": "Will voter turnout in the 2026 Sweden parliamentary election",
+     "outcome": "No",
+     "price": 0.97,
+     "size": 13.0,
+     "hours_after_end": 20.2
+    }
+   ]
+  },
+  {
+   "slug": "casalnuovo-di-napoli-mayoral-election-winner",
+   "end": 1780898400,
+   "good": 5,
+   "bad": 4,
+   "good_sh": 394,
+   "bad_sh": 249,
+   "losers": [
+    {
+     "event": "casalnuovo-di-napoli-mayoral-election-winner",
+     "market": "Will Nicoletta Romano win the 2026 Casalnuovo Di Napoli mayo",
+     "outcome": "Yes",
+     "price": 0.99,
+     "size": 5.0,
+     "hours_after_end": 4.7
+    },
+    {
+     "event": "casalnuovo-di-napoli-mayoral-election-winner",
+     "market": "Will Nicoletta Romano win the 2026 Casalnuovo Di Napoli mayo",
+     "outcome": "Yes",
+     "price": 0.99,
+     "size": 41.0,
+     "hours_after_end": 4.7
+    },
+    {
+     "event": "casalnuovo-di-napoli-mayoral-election-winner",
+     "market": "Will Nicoletta Romano win the 2026 Casalnuovo Di Napoli mayo",
+     "outcome": "Yes",
+     "price": 0.9899999951,
+     "size": 202.020201,
+     "hours_after_end": 2.9
+    },
+    {
+     "event": "casalnuovo-di-napoli-mayoral-election-winner",
+     "market": "Will Nicoletta Romano win the 2026 Casalnuovo Di Napoli mayo",
+     "outcome": "Yes",
+     "price": 0.98,
+     "size": 1.0408,
+     "hours_after_end": 0.3
+    }
+   ]
+  },
+  {
+   "slug": "2026-gyeongsangnam-province-gubernatorial-election-winner",
+   "end": 1780466400,
+   "good": 39,
+   "bad": 17,
+   "good_sh": 9661,
+   "bad_sh": 1289,
+   "losers": [
+    {
+     "event": "2026-gyeongsangnam-province-gubernatorial-election-winner",
+     "market": "Will Kim Kyung-soo win the 2026 Gyeongsangnam Province Guber",
+     "outcome": "Yes",
+     "price": 0.988,
+     "size": 105.0,
+     "hours_after_end": 4.9
+    },
+    {
+     "event": "2026-gyeongsangnam-province-gubernatorial-election-winner",
+     "market": "Will Park Wan-soo win the 2026 Gyeongsangnam Province Gubern",
+     "outcome": "No",
+     "price": 0.98,
+     "size": 40.0,
+     "hours_after_end": 4.8
+    },
+    {
+     "event": "2026-gyeongsangnam-province-gubernatorial-election-winner",
+     "market": "Will Park Wan-soo win the 2026 Gyeongsangnam Province Gubern",
+     "outcome": "No",
+     "price": 0.98,
+     "size": 10.0,
+     "hours_after_end": 4.8
+    },
+    {
+     "event": "2026-gyeongsangnam-province-gubernatorial-election-winner",
+     "market": "Will Kim Kyung-soo win the 2026 Gyeongsangnam Province Guber",
+     "outcome": "Yes",
+     "price": 0.985605821,
+     "size": 304.381166,
+     "hours_after_end": 4.8
+    },
+    {
+     "event": "2026-gyeongsangnam-province-gubernatorial-election-winner",
+     "market": "Will Park Wan-soo win the 2026 Gyeongsangnam Province Gubern",
+     "outcome": "No",
+     "price": 0.98,
+     "size": 14.0,
+     "hours_after_end": 4.8
+    },
+    {
+     "event": "2026-gyeongsangnam-province-gubernatorial-election-winner",
+     "market": "Will Kim Kyung-soo win the 2026 Gyeongsangnam Province Guber",
+     "outcome": "Yes",
+     "price": 0.98,
+     "size": 10.20405,
+     "hours_after_end": 4.7
+    },
+    {
+     "event": "2026-gyeongsangnam-province-gubernatorial-election-winner",
+     "market": "Will Park Wan-soo win the 2026 Gyeongsangnam Province Gubern",
+     "outcome": "No",
+     "price": 0.98,
+     "size": 1.15305,
+     "hours_after_end": 4.7
+    },
+    {
+     "event": "2026-gyeongsangnam-province-gubernatorial-election-winner",
+     "market": "Will Kim Kyung-soo win the 2026 Gyeongsangnam Province Guber",
+     "outcome": "Yes",
+     "price": 0.971,
+     "size": 309.46,
+     "hours_after_end": 4.7
+    },
+    {
+     "event": "2026-gyeongsangnam-province-gubernatorial-election-winner",
+     "market": "Will Kim Kyung-soo win the 2026 Gyeongsangnam Province Guber",
+     "outcome": "Yes",
+     "price": 0.97,
+     "size": 40.0,
+     "hours_after_end": 4.5
+    },
+    {
+     "event": "2026-gyeongsangnam-province-gubernatorial-election-winner",
+     "market": "Will Kim Kyung-soo win the 2026 Gyeongsangnam Province Guber",
+     "outcome": "Yes",
+     "price": 0.97,
+     "size": 90.0,
+     "hours_after_end": 4.4
+    }
+   ]
+  },
+  {
+   "slug": "2026-seoul-mayoral-election-margin-of-victory",
+   "end": 1780444800,
+   "good": 75,
+   "bad": 54,
+   "good_sh": 8760,
+   "bad_sh": 1933,
+   "losers": [
+    {
+     "event": "2026-seoul-mayoral-election-margin-of-victory",
+     "market": "Will Oh Se-hoon win the 2026 Seoul Mayoral Election by less ",
+     "outcome": "No",
+     "price": 0.986,
+     "size": 178.0,
+     "hours_after_end": 17.4
+    },
+    {
+     "event": "2026-seoul-mayoral-election-margin-of-victory",
+     "market": "Will Oh Se-hoon win the 2026 Seoul Mayoral Election by less ",
+     "outcome": "No",
+     "price": 0.985364,
+     "size": 30.0,
+     "hours_after_end": 17.4
+    },
+    {
+     "event": "2026-seoul-mayoral-election-margin-of-victory",
+     "market": "Will Oh Se-hoon win the 2026 Seoul Mayoral Election by less ",
+     "outcome": "No",
+     "price": 0.985,
+     "size": 9.0,
+     "hours_after_end": 17.4
+    },
+    {
+     "event": "2026-seoul-mayoral-election-margin-of-victory",
+     "market": "Will Oh Se-hoon win the 2026 Seoul Mayoral Election by less ",
+     "outcome": "No",
+     "price": 0.9849999999,
+     "size": 35.918733,
+     "hours_after_end": 17.4
+    },
+    {
+     "event": "2026-seoul-mayoral-election-margin-of-victory",
+     "market": "Will Oh Se-hoon win the 2026 Seoul Mayoral Election by less ",
+     "outcome": "No",
+     "price": 0.9819999985,
+     "size": 9.073277,
+     "hours_after_end": 17.4
+    },
+    {
+     "event": "2026-seoul-mayoral-election-margin-of-victory",
+     "market": "Will Oh Se-hoon win the 2026 Seoul Mayoral Election by less ",
+     "outcome": "No",
+     "price": 0.985,
+     "size": 36.0,
+     "hours_after_end": 17.4
+    },
+    {
+     "event": "2026-seoul-mayoral-election-margin-of-victory",
+     "market": "Will Oh Se-hoon win the 2026 Seoul Mayoral Election by less ",
+     "outcome": "No",
+     "price": 0.9837336757,
+     "size": 136.3,
+     "hours_after_end": 17.4
+    },
+    {
+     "event": "2026-seoul-mayoral-election-margin-of-victory",
+     "market": "Will Oh Se-hoon win the 2026 Seoul Mayoral Election by less ",
+     "outcome": "No",
+     "price": 0.98299936,
+     "size": 125.0,
+     "hours_after_end": 17.4
+    },
+    {
+     "event": "2026-seoul-mayoral-election-margin-of-victory",
+     "market": "Will Oh Se-hoon win the 2026 Seoul Mayoral Election by less ",
+     "outcome": "No",
+     "price": 0.985,
+     "size": 20.4,
+     "hours_after_end": 17.3
+    },
+    {
+     "event": "2026-seoul-mayoral-election-margin-of-victory",
+     "market": "Will Oh Se-hoon win the 2026 Seoul Mayoral Election by less ",
+     "outcome": "No",
+     "price": 0.988,
+     "size": 10.0,
+     "hours_after_end": 15.2
+    }
+   ]
+  },
+  {
+   "slug": "of-seats-won-by-ppp-in-south-korea-by-elections",
+   "end": 1780444800,
+   "good": 33,
+   "bad": 8,
+   "good_sh": 2532,
+   "bad_sh": 172,
+   "losers": [
+    {
+     "event": "of-seats-won-by-ppp-in-south-korea-by-elections",
+     "market": "Will the People Power Party win 4 seats in South Korea\u2019s Jun",
+     "outcome": "No",
+     "price": 0.99,
+     "size": 21.0,
+     "hours_after_end": 14.5
+    },
+    {
+     "event": "of-seats-won-by-ppp-in-south-korea-by-elections",
+     "market": "Will the People Power Party win 4 seats in South Korea\u2019s Jun",
+     "outcome": "No",
+     "price": 0.99,
+     "size": 21.0,
+     "hours_after_end": 14.5
+    },
+    {
+     "event": "of-seats-won-by-ppp-in-south-korea-by-elections",
+     "market": "Will the People Power Party win 4 seats in South Korea\u2019s Jun",
+     "outcome": "No",
+     "price": 0.99,
+     "size": 12.0,
+     "hours_after_end": 14.4
+    },
+    {
+     "event": "of-seats-won-by-ppp-in-south-korea-by-elections",
+     "market": "Will the People Power Party win 4 seats in South Korea\u2019s Jun",
+     "outcome": "No",
+     "price": 0.99,
+     "size": 44.0,
+     "hours_after_end": 14.4
+    },
+    {
+     "event": "of-seats-won-by-ppp-in-south-korea-by-elections",
+     "market": "Will the People Power Party win 4 seats in South Korea\u2019s Jun",
+     "outcome": "No",
+     "price": 0.99,
+     "size": 25.0,
+     "hours_after_end": 14.4
+    },
+    {
+     "event": "of-seats-won-by-ppp-in-south-korea-by-elections",
+     "market": "Will the People Power Party win 4 seats in South Korea\u2019s Jun",
+     "outcome": "No",
+     "price": 0.99,
+     "size": 10.0,
+     "hours_after_end": 14.4
+    },
+    {
+     "event": "of-seats-won-by-ppp-in-south-korea-by-elections",
+     "market": "Will the People Power Party win 4 seats in South Korea\u2019s Jun",
+     "outcome": "No",
+     "price": 0.99,
+     "size": 9.0,
+     "hours_after_end": 14.4
+    },
+    {
+     "event": "of-seats-won-by-ppp-in-south-korea-by-elections",
+     "market": "Will the People Power Party win 4 seats in South Korea\u2019s Jun",
+     "outcome": "No",
+     "price": 0.99,
+     "size": 30.0,
+     "hours_after_end": 14.4
+    }
+   ]
+  },
+  {
+   "slug": "of-seats-won-by-dp-in-south-korea-by-elections-763",
+   "end": 1780444800,
+   "good": 12,
+   "bad": 14,
+   "good_sh": 115,
+   "bad_sh": 37,
+   "losers": [
+    {
+     "event": "of-seats-won-by-dp-in-south-korea-by-elections-763",
+     "market": "Will the Democratic Party of Korea win 10 or more seats in S",
+     "outcome": "Yes",
+     "price": 0.9889999901,
+     "size": 1.01109,
+     "hours_after_end": 14.2
+    },
+    {
+     "event": "of-seats-won-by-dp-in-south-korea-by-elections-763",
+     "market": "Will the Democratic Party of Korea win 10 or more seats in S",
+     "outcome": "Yes",
+     "price": 0.9799991572,
+     "size": 1.020407,
+     "hours_after_end": 14.2
+    },
+    {
+     "event": "of-seats-won-by-dp-in-south-korea-by-elections-763",
+     "market": "Will the Democratic Party of Korea win 10 or more seats in S",
+     "outcome": "Yes",
+     "price": 0.9799991572,
+     "size": 1.020407,
+     "hours_after_end": 14.2
+    },
+    {
+     "event": "of-seats-won-by-dp-in-south-korea-by-elections-763",
+     "market": "Will the Democratic Party of Korea win 10 or more seats in S",
+     "outcome": "Yes",
+     "price": 0.9799991572,
+     "size": 1.020407,
+     "hours_after_end": 14.2
+    },
+    {
+     "event": "of-seats-won-by-dp-in-south-korea-by-elections-763",
+     "market": "Will the Democratic Party of Korea win 10 or more seats in S",
+     "outcome": "Yes",
+     "price": 0.9799991572,
+     "size": 1.020407,
+     "hours_after_end": 14.2
+    },
+    {
+     "event": "of-seats-won-by-dp-in-south-korea-by-elections-763",
+     "market": "Will the Democratic Party of Korea win 10 or more seats in S",
+     "outcome": "Yes",
+     "price": 0.9799991572,
+     "size": 1.020407,
+     "hours_after_end": 14.2
+    },
+    {
+     "event": "of-seats-won-by-dp-in-south-korea-by-elections-763",
+     "market": "Will the Democratic Party of Korea win 10 or more seats in S",
+     "outcome": "Yes",
+     "price": 0.9799991572,
+     "size": 1.020407,
+     "hours_after_end": 14.2
+    },
+    {
+     "event": "of-seats-won-by-dp-in-south-korea-by-elections-763",
+     "market": "Will the Democratic Party of Korea win 10 or more seats in S",
+     "outcome": "Yes",
+     "price": 0.9799991572,
+     "size": 1.020407,
+     "hours_after_end": 14.2
+    },
+    {
+     "event": "of-seats-won-by-dp-in-south-korea-by-elections-763",
+     "market": "Will the Democratic Party of Korea win 10 or more seats in S",
+     "outcome": "Yes",
+     "price": 0.9799991572,
+     "size": 1.020407,
+     "hours_after_end": 14.2
+    },
+    {
+     "event": "of-seats-won-by-dp-in-south-korea-by-elections-763",
+     "market": "Will the Democratic Party of Korea win 10 or more seats in S",
+     "outcome": "Yes",
+     "price": 0.9799991572,
+     "size": 1.020407,
+     "hours_after_end": 14.2
+    }
+   ]
+  },
+  {
+   "slug": "2026-seoul-mayoral-election-winner",
+   "end": 1780444800,
+   "good": 140,
+   "bad": 320,
+   "good_sh": 228324,
+   "bad_sh": 242664,
+   "losers": [
+    {
+     "event": "2026-seoul-mayoral-election-winner",
+     "market": "Will Chong Won-oh win the 2026 Seoul Mayoral Election",
+     "outcome": "Yes",
+     "price": 0.9619999918,
+     "size": 109.147608,
+     "hours_after_end": 16.9
+    },
+    {
+     "event": "2026-seoul-mayoral-election-winner",
+     "market": "Will Chong Won-oh win the 2026 Seoul Mayoral Election",
+     "outcome": "Yes",
+     "price": 0.96,
+     "size": 137.0,
+     "hours_after_end": 16.4
+    },
+    {
+     "event": "2026-seoul-mayoral-election-winner",
+     "market": "Will Chong Won-oh win the 2026 Seoul Mayoral Election",
+     "outcome": "Yes",
+     "price": 0.96,
+     "size": 200.0,
+     "hours_after_end": 16.4
+    },
+    {
+     "event": "2026-seoul-mayoral-election-winner",
+     "market": "Will Oh Se-hoon win the 2026 Seoul Mayoral Election",
+     "outcome": "No",
+     "price": 0.964,
+     "size": 90.0,
+     "hours_after_end": 16.4
+    },
+    {
+     "event": "2026-seoul-mayoral-election-winner",
+     "market": "Will Chong Won-oh win the 2026 Seoul Mayoral Election",
+     "outcome": "Yes",
+     "price": 0.9673455245,
+     "size": 1039.0,
+     "hours_after_end": 16.4
+    },
+    {
+     "event": "2026-seoul-mayoral-election-winner",
+     "market": "Will Oh Se-hoon win the 2026 Seoul Mayoral Election",
+     "outcome": "No",
+     "price": 0.965,
+     "size": 459.005171,
+     "hours_after_end": 16.4
+    },
+    {
+     "event": "2026-seoul-mayoral-election-winner",
+     "market": "Will Oh Se-hoon win the 2026 Seoul Mayoral Election",
+     "outcome": "No",
+     "price": 0.964,
+     "size": 61.28,
+     "hours_after_end": 16.4
+    },
+    {
+     "event": "2026-seoul-mayoral-election-winner",
+     "market": "Will Oh Se-hoon win the 2026 Seoul Mayoral Election",
+     "outcome": "No",
+     "price": 0.9639999992,
+     "size": 28.713666,
+     "hours_after_end": 16.4
+    },
+    {
+     "event": "2026-seoul-mayoral-election-winner",
+     "market": "Will Chong Won-oh win the 2026 Seoul Mayoral Election",
+     "outcome": "Yes",
+     "price": 0.9671794375,
+     "size": 160.0,
+     "hours_after_end": 16.4
+    },
+    {
+     "event": "2026-seoul-mayoral-election-winner",
+     "market": "Will Chong Won-oh win the 2026 Seoul Mayoral Election",
+     "outcome": "Yes",
+     "price": 0.967,
+     "size": 160.0,
+     "hours_after_end": 16.4
+    }
+   ]
+  },
+  {
+   "slug": "croydon-mayoral-election-winner",
+   "end": 1778133600,
+   "good": 42,
+   "bad": 4,
+   "good_sh": 2766,
+   "bad_sh": 223,
+   "losers": [
+    {
+     "event": "croydon-mayoral-election-winner",
+     "market": "Will Rowenna Davis win the 2026 London Borough of Croydon ma",
+     "outcome": "Yes",
+     "price": 0.98,
+     "size": 175.36,
+     "hours_after_end": 29.7
+    },
+    {
+     "event": "croydon-mayoral-election-winner",
+     "market": "Will Rowenna Davis win the 2026 London Borough of Croydon ma",
+     "outcome": "Yes",
+     "price": 0.97,
+     "size": 7.83,
+     "hours_after_end": 29.7
+    },
+    {
+     "event": "croydon-mayoral-election-winner",
+     "market": "Will Rowenna Davis win the 2026 London Borough of Croydon ma",
+     "outcome": "Yes",
+     "price": 0.96,
+     "size": 14.6,
+     "hours_after_end": 29.7
+    },
+    {
+     "event": "croydon-mayoral-election-winner",
+     "market": "Will Rowenna Davis win the 2026 London Borough of Croydon ma",
+     "outcome": "Yes",
+     "price": 0.96,
+     "size": 25.0,
+     "hours_after_end": 29.4
+    }
+   ]
+  },
+  {
+   "slug": "2026-united-kingdom-local-elections-reform-wins-seats",
+   "end": 1778112000,
+   "good": 19,
+   "bad": 11,
+   "good_sh": 1595,
+   "bad_sh": 27,
+   "losers": [
+    {
+     "event": "2026-united-kingdom-local-elections-reform-wins-seats",
+     "market": "Will Reform UK win at least 1600 council seat elections in t",
+     "outcome": "Yes",
+     "price": 0.9699997866,
+     "size": 1.030926,
+     "hours_after_end": 25.8
+    },
+    {
+     "event": "2026-united-kingdom-local-elections-reform-wins-seats",
+     "market": "Will Reform UK win at least 1600 council seat elections in t",
+     "outcome": "Yes",
+     "price": 0.9699997866,
+     "size": 1.030926,
+     "hours_after_end": 25.7
+    },
+    {
+     "event": "2026-united-kingdom-local-elections-reform-wins-seats",
+     "market": "Will Reform UK win at least 1600 council seat elections in t",
+     "outcome": "Yes",
+     "price": 0.9699997866,
+     "size": 1.030926,
+     "hours_after_end": 25.7
+    },
+    {
+     "event": "2026-united-kingdom-local-elections-reform-wins-seats",
+     "market": "Will Reform UK win at least 1600 council seat elections in t",
+     "outcome": "Yes",
+     "price": 0.9699997866,
+     "size": 1.030926,
+     "hours_after_end": 25.7
+    },
+    {
+     "event": "2026-united-kingdom-local-elections-reform-wins-seats",
+     "market": "Will Reform UK win at least 1600 council seat elections in t",
+     "outcome": "Yes",
+     "price": 0.9699997866,
+     "size": 1.030926,
+     "hours_after_end": 25.7
+    },
+    {
+     "event": "2026-united-kingdom-local-elections-reform-wins-seats",
+     "market": "Will Reform UK win at least 1600 council seat elections in t",
+     "outcome": "Yes",
+     "price": 0.9699997866,
+     "size": 1.030926,
+     "hours_after_end": 25.7
+    },
+    {
+     "event": "2026-united-kingdom-local-elections-reform-wins-seats",
+     "market": "Will Reform UK win at least 1600 council seat elections in t",
+     "outcome": "Yes",
+     "price": 0.9699997866,
+     "size": 1.030926,
+     "hours_after_end": 25.7
+    },
+    {
+     "event": "2026-united-kingdom-local-elections-reform-wins-seats",
+     "market": "Will Reform UK win at least 1600 council seat elections in t",
+     "outcome": "Yes",
+     "price": 0.9699997866,
+     "size": 1.030926,
+     "hours_after_end": 25.7
+    },
+    {
+     "event": "2026-united-kingdom-local-elections-reform-wins-seats",
+     "market": "Will Reform UK win at least 1600 council seat elections in t",
+     "outcome": "Yes",
+     "price": 0.9699997866,
+     "size": 1.030926,
+     "hours_after_end": 25.7
+    },
+    {
+     "event": "2026-united-kingdom-local-elections-reform-wins-seats",
+     "market": "Will Reform UK win at least 1600 council seat elections in t",
+     "outcome": "Yes",
+     "price": 0.9699997866,
+     "size": 1.030926,
+     "hours_after_end": 25.7
+    }
+   ]
+  },
+  {
+   "slug": "tamil-nadu-legislative-assembly-election-winner",
+   "end": 1776902400,
+   "good": 291,
+   "bad": 59,
+   "good_sh": 104170,
+   "bad_sh": 15568,
+   "losers": [
+    {
+     "event": "tamil-nadu-legislative-assembly-election-winner",
+     "market": "Will Tamilaga Vettri Kazhagam (TVK) win the most seats in th",
+     "outcome": "No",
+     "price": 0.96,
+     "size": 1.04165,
+     "hours_after_end": 267.4
+    },
+    {
+     "event": "tamil-nadu-legislative-assembly-election-winner",
+     "market": "Will Tamilaga Vettri Kazhagam (TVK) win the most seats in th",
+     "outcome": "No",
+     "price": 0.96,
+     "size": 1.04165,
+     "hours_after_end": 267.4
+    },
+    {
+     "event": "tamil-nadu-legislative-assembly-election-winner",
+     "market": "Will Tamilaga Vettri Kazhagam (TVK) win the most seats in th",
+     "outcome": "No",
+     "price": 0.9659999866,
+     "size": 1.045529,
+     "hours_after_end": 267.3
+    },
+    {
+     "event": "tamil-nadu-legislative-assembly-election-winner",
+     "market": "Will Tamilaga Vettri Kazhagam (TVK) win the most seats in th",
+     "outcome": "No",
+     "price": 0.9699999904,
+     "size": 1.041233,
+     "hours_after_end": 267.3
+    },
+    {
+     "event": "tamil-nadu-legislative-assembly-election-winner",
+     "market": "Will Tamilaga Vettri Kazhagam (TVK) win the most seats in th",
+     "outcome": "No",
+     "price": 0.97,
+     "size": 100.11,
+     "hours_after_end": 267.3
+    },
+    {
+     "event": "tamil-nadu-legislative-assembly-election-winner",
+     "market": "Will Tamilaga Vettri Kazhagam (TVK) win the most seats in th",
+     "outcome": "No",
+     "price": 0.97,
+     "size": 532.4536,
+     "hours_after_end": 267.3
+    },
+    {
+     "event": "tamil-nadu-legislative-assembly-election-winner",
+     "market": "Will Tamilaga Vettri Kazhagam (TVK) win the most seats in th",
+     "outcome": "No",
+     "price": 0.97,
+     "size": 100.11,
+     "hours_after_end": 267.3
+    },
+    {
+     "event": "tamil-nadu-legislative-assembly-election-winner",
+     "market": "Will Tamilaga Vettri Kazhagam (TVK) win the most seats in th",
+     "outcome": "No",
+     "price": 0.975,
+     "size": 101.00512,
+     "hours_after_end": 267.3
+    },
+    {
+     "event": "tamil-nadu-legislative-assembly-election-winner",
+     "market": "Will Tamilaga Vettri Kazhagam (TVK) win the most seats in th",
+     "outcome": "No",
+     "price": 0.9789999996,
+     "size": 13.891714,
+     "hours_after_end": 267.2
+    },
+    {
+     "event": "tamil-nadu-legislative-assembly-election-winner",
+     "market": "Will Tamilaga Vettri Kazhagam (TVK) win the most seats in th",
+     "outcome": "No",
+     "price": 0.97,
+     "size": 5.0,
+     "hours_after_end": 267.2
+    }
+   ]
+  },
+  {
+   "slug": "hungary-election-popular-vote-margin-of-victory-higher-strikes-for-tisza",
+   "end": 1775952000,
+   "good": 289,
+   "bad": 11,
+   "good_sh": 34810,
+   "bad_sh": 486,
+   "losers": [
+    {
+     "event": "hungary-election-popular-vote-margin-of-victory-higher-strikes-for-tis",
+     "market": "Will Tisza win the national list vote in the 2026 Hungarian ",
+     "outcome": "No",
+     "price": 0.96,
+     "size": 124.770825,
+     "hours_after_end": 19.9
+    },
+    {
+     "event": "hungary-election-popular-vote-margin-of-victory-higher-strikes-for-tis",
+     "market": "Will Tisza win the national list vote in the 2026 Hungarian ",
+     "outcome": "No",
+     "price": 0.96,
+     "size": 178.395825,
+     "hours_after_end": 19.9
+    },
+    {
+     "event": "hungary-election-popular-vote-margin-of-victory-higher-strikes-for-tis",
+     "market": "Will Tisza win the national list vote in the 2026 Hungarian ",
+     "outcome": "No",
+     "price": 0.96,
+     "size": 10.0,
+     "hours_after_end": 19.9
+    },
+    {
+     "event": "hungary-election-popular-vote-margin-of-victory-higher-strikes-for-tis",
+     "market": "Will Tisza win the national list vote in the 2026 Hungarian ",
+     "outcome": "No",
+     "price": 0.96,
+     "size": 10.0,
+     "hours_after_end": 19.9
+    },
+    {
+     "event": "hungary-election-popular-vote-margin-of-victory-higher-strikes-for-tis",
+     "market": "Will Tisza win the national list vote in the 2026 Hungarian ",
+     "outcome": "No",
+     "price": 0.98,
+     "size": 7.69,
+     "hours_after_end": 19.8
+    },
+    {
+     "event": "hungary-election-popular-vote-margin-of-victory-higher-strikes-for-tis",
+     "market": "Will Tisza win the national list vote in the 2026 Hungarian ",
+     "outcome": "No",
+     "price": 0.98,
+     "size": 32.3,
+     "hours_after_end": 19.8
+    },
+    {
+     "event": "hungary-election-popular-vote-margin-of-victory-higher-strikes-for-tis",
+     "market": "Will Tisza win the national list vote in the 2026 Hungarian ",
+     "outcome": "No",
+     "price": 0.98,
+     "size": 7.69,
+     "hours_after_end": 19.8
+    },
+    {
+     "event": "hungary-election-popular-vote-margin-of-victory-higher-strikes-for-tis",
+     "market": "Will Tisza win the national list vote in the 2026 Hungarian ",
+     "outcome": "No",
+     "price": 0.97,
+     "size": 13.3402,
+     "hours_after_end": 19.8
+    },
+    {
+     "event": "hungary-election-popular-vote-margin-of-victory-higher-strikes-for-tis",
+     "market": "Will Tisza win the national list vote in the 2026 Hungarian ",
+     "outcome": "No",
+     "price": 0.98,
+     "size": 18.0,
+     "hours_after_end": 19.8
+    },
+    {
+     "event": "hungary-election-popular-vote-margin-of-victory-higher-strikes-for-tis",
+     "market": "Will Tisza win the national list vote in the 2026 Hungarian ",
+     "outcome": "No",
+     "price": 0.97,
+     "size": 49.15,
+     "hours_after_end": 19.8
+    }
+   ]
+  },
+  {
+   "slug": "which-candidates-advance-to-2026-peru-presidential-runoff",
+   "end": 1775952000,
+   "good": 196,
+   "bad": 10,
+   "good_sh": 7367,
+   "bad_sh": 174,
+   "losers": [
+    {
+     "event": "which-candidates-advance-to-2026-peru-presidential-runoff",
+     "market": "Will a different combination of candidates advance to the ru",
+     "outcome": "No",
+     "price": 0.974,
+     "size": 10.0,
+     "hours_after_end": 38.7
+    },
+    {
+     "event": "which-candidates-advance-to-2026-peru-presidential-runoff",
+     "market": "Will a different combination of candidates advance to the ru",
+     "outcome": "No",
+     "price": 0.984,
+     "size": 10.17,
+     "hours_after_end": 38.2
+    },
+    {
+     "event": "which-candidates-advance-to-2026-peru-presidential-runoff",
+     "market": "Will a different combination of candidates advance to the ru",
+     "outcome": "No",
+     "price": 0.985,
+     "size": 1.401,
+     "hours_after_end": 38.2
+    },
+    {
+     "event": "which-candidates-advance-to-2026-peru-presidential-runoff",
+     "market": "Will a different combination of candidates advance to the ru",
+     "outcome": "No",
+     "price": 0.982,
+     "size": 5.38,
+     "hours_after_end": 37.0
+    },
+    {
+     "event": "which-candidates-advance-to-2026-peru-presidential-runoff",
+     "market": "Will a different combination of candidates advance to the ru",
+     "outcome": "No",
+     "price": 0.981,
+     "size": 9.03,
+     "hours_after_end": 36.9
+    },
+    {
+     "event": "which-candidates-advance-to-2026-peru-presidential-runoff",
+     "market": "Will a different combination of candidates advance to the ru",
+     "outcome": "No",
+     "price": 0.9829999983,
+     "size": 5.97147,
+     "hours_after_end": 36.7
+    },
+    {
+     "event": "which-candidates-advance-to-2026-peru-presidential-runoff",
+     "market": "Will a different combination of candidates advance to the ru",
+     "outcome": "No",
+     "price": 0.9629999947,
+     "size": 5.887837,
+     "hours_after_end": 34.4
+    },
+    {
+     "event": "which-candidates-advance-to-2026-peru-presidential-runoff",
+     "market": "Will a different combination of candidates advance to the ru",
+     "outcome": "No",
+     "price": 0.98,
+     "size": 13.46935,
+     "hours_after_end": 29.5
+    },
+    {
+     "event": "which-candidates-advance-to-2026-peru-presidential-runoff",
+     "market": "Will a different combination of candidates advance to the ru",
+     "outcome": "No",
+     "price": 0.9779999985,
+     "size": 13.00609,
+     "hours_after_end": 29.5
+    },
+    {
+     "event": "which-candidates-advance-to-2026-peru-presidential-runoff",
+     "market": "Will a different combination of candidates advance to the ru",
+     "outcome": "No",
+     "price": 0.9797400689,
+     "size": 100.0265,
+     "hours_after_end": 29.3
+    }
+   ]
+  },
+  {
+   "slug": "peru-presidential-election-first-round-margin-of-victory",
+   "end": 1775952000,
+   "good": 25,
+   "bad": 15,
+   "good_sh": 1081,
+   "bad_sh": 281,
+   "losers": [
+    {
+     "event": "peru-presidential-election-first-round-margin-of-victory",
+     "market": "Will Keiko Fujimori win the first round of the 2026 Peruvian",
+     "outcome": "No",
+     "price": 0.961,
+     "size": 7.5,
+     "hours_after_end": 38.1
+    },
+    {
+     "event": "peru-presidential-election-first-round-margin-of-victory",
+     "market": "Will Keiko Fujimori win the first round of the 2026 Peruvian",
+     "outcome": "Yes",
+     "price": 0.98,
+     "size": 5.0,
+     "hours_after_end": 37.4
+    },
+    {
+     "event": "peru-presidential-election-first-round-margin-of-victory",
+     "market": "Will Keiko Fujimori win the first round of the 2026 Peruvian",
+     "outcome": "No",
+     "price": 0.9849999983,
+     "size": 5.979666,
+     "hours_after_end": 36.8
+    },
+    {
+     "event": "peru-presidential-election-first-round-margin-of-victory",
+     "market": "Will Keiko Fujimori win the first round of the 2026 Peruvian",
+     "outcome": "Yes",
+     "price": 0.9859999675,
+     "size": 5.973629,
+     "hours_after_end": 36.7
+    },
+    {
+     "event": "peru-presidential-election-first-round-margin-of-victory",
+     "market": "Will Keiko Fujimori win the first round of the 2026 Peruvian",
+     "outcome": "No",
+     "price": 0.982,
+     "size": 60.0,
+     "hours_after_end": 36.7
+    },
+    {
+     "event": "peru-presidential-election-first-round-margin-of-victory",
+     "market": "Will Keiko Fujimori win the first round of the 2026 Peruvian",
+     "outcome": "No",
+     "price": 0.982,
+     "size": 29.66,
+     "hours_after_end": 35.9
+    },
+    {
+     "event": "peru-presidential-election-first-round-margin-of-victory",
+     "market": "Will Keiko Fujimori win the first round of the 2026 Peruvian",
+     "outcome": "Yes",
+     "price": 0.9909999435,
+     "size": 2.936426,
+     "hours_after_end": 35.9
+    },
+    {
+     "event": "peru-presidential-election-first-round-margin-of-victory",
+     "market": "Will Keiko Fujimori win the first round of the 2026 Peruvian",
+     "outcome": "No",
+     "price": 0.982,
+     "size": 7.16,
+     "hours_after_end": 35.9
+    },
+    {
+     "event": "peru-presidential-election-first-round-margin-of-victory",
+     "market": "Will Keiko Fujimori win the first round of the 2026 Peruvian",
+     "outcome": "No",
+     "price": 0.981,
+     "size": 9.14,
+     "hours_after_end": 35.9
+    },
+    {
+     "event": "peru-presidential-election-first-round-margin-of-victory",
+     "market": "Will Keiko Fujimori win the first round of the 2026 Peruvian",
+     "outcome": "No",
+     "price": 0.982,
+     "size": 7.26,
+     "hours_after_end": 35.9
+    }
+   ]
+  },
+  {
+   "slug": "peru-presidential-election-first-round-turnout",
+   "end": 1775952000,
+   "good": 483,
+   "bad": 15,
+   "good_sh": 20427,
+   "bad_sh": 217,
+   "losers": [
+    {
+     "event": "peru-presidential-election-first-round-turnout",
+     "market": "Will turnout in the first round of the 2026 Peruvian preside",
+     "outcome": "No",
+     "price": 0.988,
+     "size": 12.61,
+     "hours_after_end": 58.9
+    },
+    {
+     "event": "peru-presidential-election-first-round-turnout",
+     "market": "Will turnout in the first round of the 2026 Peruvian preside",
+     "outcome": "No",
+     "price": 0.966,
+     "size": 50.0,
+     "hours_after_end": 46.7
+    },
+    {
+     "event": "peru-presidential-election-first-round-turnout",
+     "market": "Will turnout in the first round of the 2026 Peruvian preside",
+     "outcome": "No",
+     "price": 0.96,
+     "size": 15.0,
+     "hours_after_end": 46.7
+    },
+    {
+     "event": "peru-presidential-election-first-round-turnout",
+     "market": "Will turnout in the first round of the 2026 Peruvian preside",
+     "outcome": "No",
+     "price": 0.9680727778,
+     "size": 18.0,
+     "hours_after_end": 46.7
+    },
+    {
+     "event": "peru-presidential-election-first-round-turnout",
+     "market": "Will turnout in the first round of the 2026 Peruvian preside",
+     "outcome": "No",
+     "price": 0.9653509934,
+     "size": 15.1,
+     "hours_after_end": 46.7
+    },
+    {
+     "event": "peru-presidential-election-first-round-turnout",
+     "market": "Will turnout in the first round of the 2026 Peruvian preside",
+     "outcome": "No",
+     "price": 0.968,
+     "size": 3.0,
+     "hours_after_end": 46.7
+    },
+    {
+     "event": "peru-presidential-election-first-round-turnout",
+     "market": "Will turnout in the first round of the 2026 Peruvian preside",
+     "outcome": "No",
+     "price": 0.9669999932,
+     "size": 1.034121,
+     "hours_after_end": 46.7
+    },
+    {
+     "event": "peru-presidential-election-first-round-turnout",
+     "market": "Will turnout in the first round of the 2026 Peruvian preside",
+     "outcome": "No",
+     "price": 0.968,
+     "size": 32.4,
+     "hours_after_end": 46.7
+    },
+    {
+     "event": "peru-presidential-election-first-round-turnout",
+     "market": "Will turnout in the first round of the 2026 Peruvian preside",
+     "outcome": "No",
+     "price": 0.968,
+     "size": 25.0,
+     "hours_after_end": 46.7
+    },
+    {
+     "event": "peru-presidential-election-first-round-turnout",
+     "market": "Will turnout in the first round of the 2026 Peruvian preside",
+     "outcome": "No",
+     "price": 0.968,
+     "size": 25.0,
+     "hours_after_end": 46.7
+    }
+   ]
+  },
+  {
+   "slug": "peru-presidential-election-first-round-4th-place",
+   "end": 1775952000,
+   "good": 361,
+   "bad": 5,
+   "good_sh": 20294,
+   "bad_sh": 68,
+   "losers": [
+    {
+     "event": "peru-presidential-election-first-round-4th-place",
+     "market": "Will Jorge Nieto finish in fourth place in the first round o",
+     "outcome": "No",
+     "price": 0.964,
+     "size": 2.09,
+     "hours_after_end": 41.5
+    },
+    {
+     "event": "peru-presidential-election-first-round-4th-place",
+     "market": "Will Jorge Nieto finish in fourth place in the first round o",
+     "outcome": "No",
+     "price": 0.964,
+     "size": 3.08,
+     "hours_after_end": 41.5
+    },
+    {
+     "event": "peru-presidential-election-first-round-4th-place",
+     "market": "Will Jorge Nieto finish in fourth place in the first round o",
+     "outcome": "No",
+     "price": 0.9859999998,
+     "size": 17.697714,
+     "hours_after_end": 40.1
+    },
+    {
+     "event": "peru-presidential-election-first-round-4th-place",
+     "market": "Will Jorge Nieto finish in fourth place in the first round o",
+     "outcome": "No",
+     "price": 0.98475,
+     "size": 20.0,
+     "hours_after_end": 40.1
+    },
+    {
+     "event": "peru-presidential-election-first-round-4th-place",
+     "market": "Will Jorge Nieto finish in fourth place in the first round o",
+     "outcome": "No",
+     "price": 0.986,
+     "size": 25.0,
+     "hours_after_end": 40.1
+    }
+   ]
+  },
+  {
+   "slug": "peru-presidential-election-first-round-3rd-place",
+   "end": 1775952000,
+   "good": 164,
+   "bad": 14,
+   "good_sh": 15008,
+   "bad_sh": 242,
+   "losers": [
+    {
+     "event": "peru-presidential-election-first-round-3rd-place",
+     "market": "Will Rafael L\u00f3pez Aliaga finish in third place in the first ",
+     "outcome": "No",
+     "price": 0.98,
+     "size": 25.0,
+     "hours_after_end": 41.3
+    },
+    {
+     "event": "peru-presidential-election-first-round-3rd-place",
+     "market": "Will Rafael L\u00f3pez Aliaga finish in third place in the first ",
+     "outcome": "No",
+     "price": 0.98,
+     "size": 55.85,
+     "hours_after_end": 41.3
+    },
+    {
+     "event": "peru-presidential-election-first-round-3rd-place",
+     "market": "Will Rafael L\u00f3pez Aliaga finish in third place in the first ",
+     "outcome": "No",
+     "price": 0.973,
+     "size": 7.0,
+     "hours_after_end": 40.7
+    },
+    {
+     "event": "peru-presidential-election-first-round-3rd-place",
+     "market": "Will Rafael L\u00f3pez Aliaga finish in third place in the first ",
+     "outcome": "No",
+     "price": 0.981,
+     "size": 20.0,
+     "hours_after_end": 39.1
+    },
+    {
+     "event": "peru-presidential-election-first-round-3rd-place",
+     "market": "Will Rafael L\u00f3pez Aliaga finish in third place in the first ",
+     "outcome": "No",
+     "price": 0.98,
+     "size": 6.0,
+     "hours_after_end": 39.1
+    },
+    {
+     "event": "peru-presidential-election-first-round-3rd-place",
+     "market": "Will Rafael L\u00f3pez Aliaga finish in third place in the first ",
+     "outcome": "No",
+     "price": 0.98,
+     "size": 3.67,
+     "hours_after_end": 39.0
+    },
+    {
+     "event": "peru-presidential-election-first-round-3rd-place",
+     "market": "Will Rafael L\u00f3pez Aliaga finish in third place in the first ",
+     "outcome": "No",
+     "price": 0.979,
+     "size": 3.91,
+     "hours_after_end": 39.0
+    },
+    {
+     "event": "peru-presidential-election-first-round-3rd-place",
+     "market": "Will Rafael L\u00f3pez Aliaga finish in third place in the first ",
+     "outcome": "No",
+     "price": 0.9778610729,
+     "size": 14.54,
+     "hours_after_end": 39.0
+    },
+    {
+     "event": "peru-presidential-election-first-round-3rd-place",
+     "market": "Will Rafael L\u00f3pez Aliaga finish in third place in the first ",
+     "outcome": "No",
+     "price": 0.98,
+     "size": 17.7755,
+     "hours_after_end": 39.0
+    },
+    {
+     "event": "peru-presidential-election-first-round-3rd-place",
+     "market": "Will Rafael L\u00f3pez Aliaga finish in third place in the first ",
+     "outcome": "No",
+     "price": 0.98,
+     "size": 10.46935,
+     "hours_after_end": 39.0
+    }
+   ]
+  },
+  {
+   "slug": "next-prime-minister-of-hungary",
+   "end": 1775952000,
+   "good": 1339,
+   "bad": 1,
+   "good_sh": 1011364,
+   "bad_sh": 5,
+   "losers": [
+    {
+     "event": "next-prime-minister-of-hungary",
+     "market": "Will the next Prime Minister of Hungary be Viktor Orb\u00e1n?",
+     "outcome": "Yes",
+     "price": 0.99,
+     "size": 5.0,
+     "hours_after_end": 396.1
+    }
+   ]
+  },
+  {
+   "slug": "how-many-seats-will-iuml-win-in-the-2026-kerala-legislative-assembly-election",
+   "end": 1775692800,
+   "good": 37,
+   "bad": 8,
+   "good_sh": 1152,
+   "bad_sh": 36,
+   "losers": [
+    {
+     "event": "how-many-seats-will-iuml-win-in-the-2026-kerala-legislative-assembly-e",
+     "market": "Will the Indian Union Muslim League (IUML) win 22 or more se",
+     "outcome": "No",
+     "price": 0.9809999992,
+     "size": 15.005052,
+     "hours_after_end": 597.8
+    },
+    {
+     "event": "how-many-seats-will-iuml-win-in-the-2026-kerala-legislative-assembly-e",
+     "market": "Will the Indian Union Muslim League (IUML) win 22 or more se",
+     "outcome": "No",
+     "price": 0.973,
+     "size": 5.0,
+     "hours_after_end": 595.3
+    },
+    {
+     "event": "how-many-seats-will-iuml-win-in-the-2026-kerala-legislative-assembly-e",
+     "market": "Will the Indian Union Muslim League (IUML) win 22 or more se",
+     "outcome": "No",
+     "price": 0.9729999986,
+     "size": 10.020518,
+     "hours_after_end": 595.3
+    },
+    {
+     "event": "how-many-seats-will-iuml-win-in-the-2026-kerala-legislative-assembly-e",
+     "market": "Will the Indian Union Muslim League (IUML) win 22 or more se",
+     "outcome": "No",
+     "price": 0.992,
+     "size": 1.10875,
+     "hours_after_end": 12.2
+    },
+    {
+     "event": "how-many-seats-will-iuml-win-in-the-2026-kerala-legislative-assembly-e",
+     "market": "Will the Indian Union Muslim League (IUML) win 22 or more se",
+     "outcome": "No",
+     "price": 0.992,
+     "size": 1.10875,
+     "hours_after_end": 12.2
+    },
+    {
+     "event": "how-many-seats-will-iuml-win-in-the-2026-kerala-legislative-assembly-e",
+     "market": "Will the Indian Union Muslim League (IUML) win 22 or more se",
+     "outcome": "No",
+     "price": 0.992,
+     "size": 1.10875,
+     "hours_after_end": 12.2
+    },
+    {
+     "event": "how-many-seats-will-iuml-win-in-the-2026-kerala-legislative-assembly-e",
+     "market": "Will the Indian Union Muslim League (IUML) win 22 or more se",
+     "outcome": "No",
+     "price": 0.992,
+     "size": 1.10875,
+     "hours_after_end": 7.6
+    },
+    {
+     "event": "how-many-seats-will-iuml-win-in-the-2026-kerala-legislative-assembly-e",
+     "market": "Will the Indian Union Muslim League (IUML) win 22 or more se",
+     "outcome": "No",
+     "price": 0.992,
+     "size": 1.10875,
+     "hours_after_end": 7.5
+    }
+   ]
+  },
+  {
+   "slug": "liberals-up-or-down-for-canada-seats-polls-this-week",
+   "end": 1774742400,
+   "good": 4,
+   "bad": 2,
+   "good_sh": 21,
+   "bad_sh": 6,
+   "losers": [
+    {
+     "event": "liberals-up-or-down-for-canada-seats-polls-this-week",
+     "market": "Liberals Up or Down for Canada Seats Polls this week?",
+     "outcome": "Up",
+     "price": 0.99,
+     "size": 5.0505,
+     "hours_after_end": 180.8
+    },
+    {
+     "event": "liberals-up-or-down-for-canada-seats-polls-this-week",
+     "market": "Liberals Up or Down for Canada Seats Polls this week?",
+     "outcome": "Up",
+     "price": 0.99,
+     "size": 1.0101,
+     "hours_after_end": 180.3
+    }
+   ]
+  },
+  {
+   "slug": "denmark-election-popular-vote-margin-of-victory",
+   "end": 1774310400,
+   "good": 45,
+   "bad": 9,
+   "good_sh": 752,
+   "bad_sh": 263,
+   "losers": [
+    {
+     "event": "denmark-election-popular-vote-margin-of-victory",
+     "market": "Will the Social Democrats\u2019 Popular Vote Margin of Victory in",
+     "outcome": "No",
+     "price": 0.98,
+     "size": 1.1224,
+     "hours_after_end": 20.7
+    },
+    {
+     "event": "denmark-election-popular-vote-margin-of-victory",
+     "market": "Will the Social Democrats\u2019 Popular Vote Margin of Victory in",
+     "outcome": "No",
+     "price": 0.98,
+     "size": 1.1224,
+     "hours_after_end": 20.7
+    },
+    {
+     "event": "denmark-election-popular-vote-margin-of-victory",
+     "market": "Will the Social Democrats\u2019 Popular Vote Margin of Victory in",
+     "outcome": "No",
+     "price": 0.98,
+     "size": 1.1224,
+     "hours_after_end": 20.7
+    },
+    {
+     "event": "denmark-election-popular-vote-margin-of-victory",
+     "market": "Will the Social Democrats\u2019 Popular Vote Margin of Victory in",
+     "outcome": "No",
+     "price": 0.96,
+     "size": 4.23,
+     "hours_after_end": 20.6
+    },
+    {
+     "event": "denmark-election-popular-vote-margin-of-victory",
+     "market": "Will the Social Democrats\u2019 Popular Vote Margin of Victory in",
+     "outcome": "No",
+     "price": 0.96,
+     "size": 10.05,
+     "hours_after_end": 20.6
+    },
+    {
+     "event": "denmark-election-popular-vote-margin-of-victory",
+     "market": "Will the Social Democrats\u2019 Popular Vote Margin of Victory in",
+     "outcome": "No",
+     "price": 0.98,
+     "size": 10.0,
+     "hours_after_end": 20.5
+    },
+    {
+     "event": "denmark-election-popular-vote-margin-of-victory",
+     "market": "Will the Social Democrats\u2019 Popular Vote Margin of Victory in",
+     "outcome": "No",
+     "price": 0.98,
+     "size": 30.0,
+     "hours_after_end": 20.5
+    },
+    {
+     "event": "denmark-election-popular-vote-margin-of-victory",
+     "market": "Will the Social Democrats\u2019 Popular Vote Margin of Victory in",
+     "outcome": "No",
+     "price": 0.98,
+     "size": 5.0,
+     "hours_after_end": 20.5
+    },
+    {
+     "event": "denmark-election-popular-vote-margin-of-victory",
+     "market": "Will the Social Democrats\u2019 Popular Vote Margin of Victory in",
+     "outcome": "No",
+     "price": 0.98,
+     "size": 200.0,
+     "hours_after_end": 20.5
+    }
+   ]
+  },
+  {
+   "slug": "denmark-parliamentary-election-3rd-place",
+   "end": 1774310400,
+   "good": 136,
+   "bad": 9,
+   "good_sh": 3558,
+   "bad_sh": 142,
+   "losers": [
+    {
+     "event": "denmark-parliamentary-election-3rd-place",
+     "market": "Will Venstre win the third most seats in the Danish Folketin",
+     "outcome": "No",
+     "price": 0.96,
+     "size": 5.61,
+     "hours_after_end": 19.6
+    },
+    {
+     "event": "denmark-parliamentary-election-3rd-place",
+     "market": "Will Venstre win the third most seats in the Danish Folketin",
+     "outcome": "No",
+     "price": 0.96,
+     "size": 5.0,
+     "hours_after_end": 19.5
+    },
+    {
+     "event": "denmark-parliamentary-election-3rd-place",
+     "market": "Will Venstre win the third most seats in the Danish Folketin",
+     "outcome": "No",
+     "price": 0.96,
+     "size": 10.0,
+     "hours_after_end": 19.5
+    },
+    {
+     "event": "denmark-parliamentary-election-3rd-place",
+     "market": "Will Venstre win the third most seats in the Danish Folketin",
+     "outcome": "No",
+     "price": 0.96,
+     "size": 20.0,
+     "hours_after_end": 19.5
+    },
+    {
+     "event": "denmark-parliamentary-election-3rd-place",
+     "market": "Will Venstre win the third most seats in the Danish Folketin",
+     "outcome": "No",
+     "price": 0.978785,
+     "size": 20.0,
+     "hours_after_end": 19.1
+    },
+    {
+     "event": "denmark-parliamentary-election-3rd-place",
+     "market": "Will Venstre win the third most seats in the Danish Folketin",
+     "outcome": "No",
+     "price": 0.9835619048,
+     "size": 21.0,
+     "hours_after_end": 19.1
+    },
+    {
+     "event": "denmark-parliamentary-election-3rd-place",
+     "market": "Will Venstre win the third most seats in the Danish Folketin",
+     "outcome": "No",
+     "price": 0.969004,
+     "size": 50.0,
+     "hours_after_end": 19.1
+    },
+    {
+     "event": "denmark-parliamentary-election-3rd-place",
+     "market": "Will Venstre win the third most seats in the Danish Folketin",
+     "outcome": "No",
+     "price": 0.97,
+     "size": 5.0,
+     "hours_after_end": 19.1
+    },
+    {
+     "event": "denmark-parliamentary-election-3rd-place",
+     "market": "Will Venstre win the third most seats in the Danish Folketin",
+     "outcome": "No",
+     "price": 0.97,
+     "size": 5.0,
+     "hours_after_end": 19.1
+    }
+   ]
+  },
+  {
+   "slug": "strasbourg-mayoral-election-winner",
+   "end": 1774137600,
+   "good": 58,
+   "bad": 23,
+   "good_sh": 6005,
+   "bad_sh": 7267,
+   "losers": [
+    {
+     "event": "strasbourg-mayoral-election-winner",
+     "market": "Will Catherine Trautmann be the next mayor of Strasbourg?",
+     "outcome": "No",
+     "price": 0.97,
+     "size": 101.0,
+     "hours_after_end": 20.2
+    },
+    {
+     "event": "strasbourg-mayoral-election-winner",
+     "market": "Will Catherine Trautmann be the next mayor of Strasbourg?",
+     "outcome": "No",
+     "price": 0.976,
+     "size": 30.0,
+     "hours_after_end": 20.2
+    },
+    {
+     "event": "strasbourg-mayoral-election-winner",
+     "market": "Will Catherine Trautmann be the next mayor of Strasbourg?",
+     "outcome": "No",
+     "price": 0.979,
+     "size": 203.0,
+     "hours_after_end": 20.2
+    },
+    {
+     "event": "strasbourg-mayoral-election-winner",
+     "market": "Will Jeanne Barseghian be the next mayor of Strasbourg?",
+     "outcome": "Yes",
+     "price": 0.989,
+     "size": 139.03,
+     "hours_after_end": 20.2
+    },
+    {
+     "event": "strasbourg-mayoral-election-winner",
+     "market": "Will Catherine Trautmann be the next mayor of Strasbourg?",
+     "outcome": "No",
+     "price": 0.9795744681,
+     "size": 47.0,
+     "hours_after_end": 20.1
+    },
+    {
+     "event": "strasbourg-mayoral-election-winner",
+     "market": "Will Catherine Trautmann be the next mayor of Strasbourg?",
+     "outcome": "No",
+     "price": 0.979,
+     "size": 174.0,
+     "hours_after_end": 20.1
+    },
+    {
+     "event": "strasbourg-mayoral-election-winner",
+     "market": "Will Catherine Trautmann be the next mayor of Strasbourg?",
+     "outcome": "No",
+     "price": 0.9869749372,
+     "size": 521.89,
+     "hours_after_end": 20.1
+    },
+    {
+     "event": "strasbourg-mayoral-election-winner",
+     "market": "Will Catherine Trautmann be the next mayor of Strasbourg?",
+     "outcome": "No",
+     "price": 0.9869999956,
+     "size": 2.026307,
+     "hours_after_end": 20.1
+    },
+    {
+     "event": "strasbourg-mayoral-election-winner",
+     "market": "Will Jeanne Barseghian be the next mayor of Strasbourg?",
+     "outcome": "Yes",
+     "price": 0.98,
+     "size": 408.0,
+     "hours_after_end": 20.1
+    },
+    {
+     "event": "strasbourg-mayoral-election-winner",
+     "market": "Will Catherine Trautmann be the next mayor of Strasbourg?",
+     "outcome": "No",
+     "price": 0.985,
+     "size": 2.0304,
+     "hours_after_end": 20.1
+    }
+   ]
+  },
+  {
+   "slug": "paris-mayoral-election-runoff-margin-of-victory",
+   "end": 1774137600,
+   "good": 231,
+   "bad": 32,
+   "good_sh": 8303,
+   "bad_sh": 943,
+   "losers": [
+    {
+     "event": "paris-mayoral-election-runoff-margin-of-victory",
+     "market": "Will the Emmanuel Gr\u00e9goire List win the most citywide list v",
+     "outcome": "No",
+     "price": 0.982,
+     "size": 10.0,
+     "hours_after_end": 20.7
+    },
+    {
+     "event": "paris-mayoral-election-runoff-margin-of-victory",
+     "market": "Will the Emmanuel Gr\u00e9goire List win the most citywide list v",
+     "outcome": "No",
+     "price": 0.987,
+     "size": 10.0,
+     "hours_after_end": 20.6
+    },
+    {
+     "event": "paris-mayoral-election-runoff-margin-of-victory",
+     "market": "Will the Emmanuel Gr\u00e9goire List win the most citywide list v",
+     "outcome": "No",
+     "price": 0.986,
+     "size": 30.0,
+     "hours_after_end": 20.6
+    },
+    {
+     "event": "paris-mayoral-election-runoff-margin-of-victory",
+     "market": "Will the Emmanuel Gr\u00e9goire List win the most citywide list v",
+     "outcome": "No",
+     "price": 0.9869999956,
+     "size": 2.026307,
+     "hours_after_end": 20.3
+    },
+    {
+     "event": "paris-mayoral-election-runoff-margin-of-victory",
+     "market": "Will the Emmanuel Gr\u00e9goire List win the most citywide list v",
+     "outcome": "No",
+     "price": 0.988,
+     "size": 2.02425,
+     "hours_after_end": 20.3
+    },
+    {
+     "event": "paris-mayoral-election-runoff-margin-of-victory",
+     "market": "Will the Emmanuel Gr\u00e9goire List win the most citywide list v",
+     "outcome": "No",
+     "price": 0.988,
+     "size": 2.02425,
+     "hours_after_end": 20.3
+    },
+    {
+     "event": "paris-mayoral-election-runoff-margin-of-victory",
+     "market": "Will the Emmanuel Gr\u00e9goire List win the most citywide list v",
+     "outcome": "No",
+     "price": 0.988,
+     "size": 2.02425,
+     "hours_after_end": 20.3
+    },
+    {
+     "event": "paris-mayoral-election-runoff-margin-of-victory",
+     "market": "Will the Emmanuel Gr\u00e9goire List win the most citywide list v",
+     "outcome": "No",
+     "price": 0.992262,
+     "size": 20.0,
+     "hours_after_end": 20.2
+    },
+    {
+     "event": "paris-mayoral-election-runoff-margin-of-victory",
+     "market": "Will the Emmanuel Gr\u00e9goire List win the most citywide list v",
+     "outcome": "No",
+     "price": 0.9885901156,
+     "size": 112.46319,
+     "hours_after_end": 20.2
+    },
+    {
+     "event": "paris-mayoral-election-runoff-margin-of-victory",
+     "market": "Will the Emmanuel Gr\u00e9goire List win the most citywide list v",
+     "outcome": "No",
+     "price": 0.994,
+     "size": 30.0,
+     "hours_after_end": 20.2
+    }
+   ]
+  },
+  {
+   "slug": "turnout-in-2026-slovenian-parliamentary-election",
+   "end": 1774137600,
+   "good": 185,
+   "bad": 7,
+   "good_sh": 10446,
+   "bad_sh": 27,
+   "losers": [
+    {
+     "event": "turnout-in-2026-slovenian-parliamentary-election",
+     "market": "Will turnout in the 2026 Slovenian parliamentary elections b",
+     "outcome": "Yes",
+     "price": 0.979999657,
+     "size": 2.040815,
+     "hours_after_end": 22.1
+    },
+    {
+     "event": "turnout-in-2026-slovenian-parliamentary-election",
+     "market": "Will turnout in the 2026 Slovenian parliamentary elections b",
+     "outcome": "Yes",
+     "price": 0.979999657,
+     "size": 2.040815,
+     "hours_after_end": 22.1
+    },
+    {
+     "event": "turnout-in-2026-slovenian-parliamentary-election",
+     "market": "Will turnout in the 2026 Slovenian parliamentary elections b",
+     "outcome": "Yes",
+     "price": 0.979999657,
+     "size": 2.040815,
+     "hours_after_end": 22.1
+    },
+    {
+     "event": "turnout-in-2026-slovenian-parliamentary-election",
+     "market": "Will turnout in the 2026 Slovenian parliamentary elections b",
+     "outcome": "Yes",
+     "price": 0.979999657,
+     "size": 2.040815,
+     "hours_after_end": 22.1
+    },
+    {
+     "event": "turnout-in-2026-slovenian-parliamentary-election",
+     "market": "Will turnout in the 2026 Slovenian parliamentary elections b",
+     "outcome": "Yes",
+     "price": 0.979999657,
+     "size": 2.040815,
+     "hours_after_end": 22.1
+    },
+    {
+     "event": "turnout-in-2026-slovenian-parliamentary-election",
+     "market": "Will turnout in the 2026 Slovenian parliamentary elections b",
+     "outcome": "Yes",
+     "price": 0.97,
+     "size": 5.2577,
+     "hours_after_end": 21.4
+    },
+    {
+     "event": "turnout-in-2026-slovenian-parliamentary-election",
+     "market": "Will turnout in the 2026 Slovenian parliamentary elections b",
+     "outcome": "Yes",
+     "price": 0.9636482413,
+     "size": 11.22815,
+     "hours_after_end": 21.3
+    }
+   ]
+  },
+  {
+   "slug": "which-parties-will-be-part-of-the-next-government-of-slovenia",
+   "end": 1774137600,
+   "good": 373,
+   "bad": 10,
+   "good_sh": 9802,
+   "bad_sh": 370,
+   "losers": [
+    {
+     "event": "which-parties-will-be-part-of-the-next-government-of-slovenia",
+     "market": "Will the Slovenian People\u2019s Party (SLS) be part of the next ",
+     "outcome": "Yes",
+     "price": 0.9779999883,
+     "size": 1.022454,
+     "hours_after_end": 1446.8
+    },
+    {
+     "event": "which-parties-will-be-part-of-the-next-government-of-slovenia",
+     "market": "Will the Slovenian People\u2019s Party (SLS) be part of the next ",
+     "outcome": "Yes",
+     "price": 0.9779999977,
+     "size": 5.112454,
+     "hours_after_end": 1446.0
+    },
+    {
+     "event": "which-parties-will-be-part-of-the-next-government-of-slovenia",
+     "market": "Will the Slovenian People\u2019s Party (SLS) be part of the next ",
+     "outcome": "Yes",
+     "price": 0.9779999998,
+     "size": 10.224909,
+     "hours_after_end": 1445.7
+    },
+    {
+     "event": "which-parties-will-be-part-of-the-next-government-of-slovenia",
+     "market": "Will the Slovenian People\u2019s Party (SLS) be part of the next ",
+     "outcome": "Yes",
+     "price": 0.9779999999,
+     "size": 15.337409,
+     "hours_after_end": 1443.5
+    },
+    {
+     "event": "which-parties-will-be-part-of-the-next-government-of-slovenia",
+     "market": "Will the Slovenian People\u2019s Party (SLS) be part of the next ",
+     "outcome": "Yes",
+     "price": 0.968,
+     "size": 5.54,
+     "hours_after_end": 1438.9
+    },
+    {
+     "event": "which-parties-will-be-part-of-the-next-government-of-slovenia",
+     "market": "Will the Slovenian People\u2019s Party (SLS) be part of the next ",
+     "outcome": "Yes",
+     "price": 0.9679995564,
+     "size": 2.055784,
+     "hours_after_end": 1437.6
+    },
+    {
+     "event": "which-parties-will-be-part-of-the-next-government-of-slovenia",
+     "market": "Will the Slovenian People\u2019s Party (SLS) be part of the next ",
+     "outcome": "Yes",
+     "price": 0.9658769137,
+     "size": 229.92,
+     "hours_after_end": 1436.1
+    },
+    {
+     "event": "which-parties-will-be-part-of-the-next-government-of-slovenia",
+     "market": "Will the Slovenian People\u2019s Party (SLS) be part of the next ",
+     "outcome": "Yes",
+     "price": 0.961,
+     "size": 65.85,
+     "hours_after_end": 1435.9
+    },
+    {
+     "event": "which-parties-will-be-part-of-the-next-government-of-slovenia",
+     "market": "Will the Slovenian People\u2019s Party (SLS) be part of the next ",
+     "outcome": "Yes",
+     "price": 0.9679999994,
+     "size": 25.826437,
+     "hours_after_end": 1434.4
+    },
+    {
+     "event": "which-parties-will-be-part-of-the-next-government-of-slovenia",
+     "market": "Will the Slovenian People\u2019s Party (SLS) be part of the next ",
+     "outcome": "Yes",
+     "price": 0.96,
+     "size": 9.38,
+     "hours_after_end": 1326.8
+    }
+   ]
+  },
+  {
+   "slug": "2026-bolivia-gubernatorial-elections-party-winner",
+   "end": 1774137600,
+   "good": 14,
+   "bad": 1,
+   "good_sh": 328,
+   "bad_sh": 10,
+   "losers": [
+    {
+     "event": "2026-bolivia-gubernatorial-elections-party-winner",
+     "market": "Will Libre \u2013 Liberty and Democracy (LIBRE) win the most gube",
+     "outcome": "No",
+     "price": 0.99,
+     "size": 9.9898,
+     "hours_after_end": 924.9
+    }
+   ]
+  },
+  {
+   "slug": "sucre-mayoral-election-winner-bolivia",
+   "end": 1774137600,
+   "good": 50,
+   "bad": 2,
+   "good_sh": 3211,
+   "bad_sh": 26,
+   "losers": [
+    {
+     "event": "sucre-mayoral-election-winner-bolivia",
+     "market": "Will F\u00e1tima Tard\u00edo win the 2026 Sucre mayoral election?",
+     "outcome": "No",
+     "price": 0.993,
+     "size": 1.007,
+     "hours_after_end": 9.6
+    },
+    {
+     "event": "sucre-mayoral-election-winner-bolivia",
+     "market": "Will F\u00e1tima Tard\u00edo win the 2026 Sucre mayoral election?",
+     "outcome": "No",
+     "price": 0.993,
+     "size": 25.2,
+     "hours_after_end": 7.4
+    }
+   ]
+  },
+  {
+   "slug": "amsterdam-municipal-election-party-winner",
+   "end": 1773792000,
+   "good": 61,
+   "bad": 15,
+   "good_sh": 2796,
+   "bad_sh": 197,
+   "losers": [
+    {
+     "event": "amsterdam-municipal-election-party-winner",
+     "market": "Will GroenLinks (GL) win the most seats in Amsterdam\u2019s 2026 ",
+     "outcome": "No",
+     "price": 0.994,
+     "size": 5.0,
+     "hours_after_end": 20.9
+    },
+    {
+     "event": "amsterdam-municipal-election-party-winner",
+     "market": "Will GroenLinks (GL) win the most seats in Amsterdam\u2019s 2026 ",
+     "outcome": "No",
+     "price": 0.978999992,
+     "size": 1.123571,
+     "hours_after_end": 17.6
+    },
+    {
+     "event": "amsterdam-municipal-election-party-winner",
+     "market": "Will GroenLinks (GL) win the most seats in Amsterdam\u2019s 2026 ",
+     "outcome": "No",
+     "price": 0.978999992,
+     "size": 1.123571,
+     "hours_after_end": 17.4
+    },
+    {
+     "event": "amsterdam-municipal-election-party-winner",
+     "market": "Will GroenLinks (GL) win the most seats in Amsterdam\u2019s 2026 ",
+     "outcome": "No",
+     "price": 0.989,
+     "size": 100.0,
+     "hours_after_end": 10.4
+    },
+    {
+     "event": "amsterdam-municipal-election-party-winner",
+     "market": "Will GroenLinks (GL) win the most seats in Amsterdam\u2019s 2026 ",
+     "outcome": "No",
+     "price": 0.989,
+     "size": 30.0,
+     "hours_after_end": 10.4
+    },
+    {
+     "event": "amsterdam-municipal-election-party-winner",
+     "market": "Will GroenLinks (GL) win the most seats in Amsterdam\u2019s 2026 ",
+     "outcome": "No",
+     "price": 0.989,
+     "size": 40.0,
+     "hours_after_end": 10.4
+    },
+    {
+     "event": "amsterdam-municipal-election-party-winner",
+     "market": "Will GroenLinks (GL) win the most seats in Amsterdam\u2019s 2026 ",
+     "outcome": "No",
+     "price": 0.9869999891,
+     "size": 1.013153,
+     "hours_after_end": 9.9
+    },
+    {
+     "event": "amsterdam-municipal-election-party-winner",
+     "market": "Will GroenLinks (GL) win the most seats in Amsterdam\u2019s 2026 ",
+     "outcome": "No",
+     "price": 0.9869999975,
+     "size": 1.215769,
+     "hours_after_end": 9.9
+    },
+    {
+     "event": "amsterdam-municipal-election-party-winner",
+     "market": "Will GroenLinks (GL) win the most seats in Amsterdam\u2019s 2026 ",
+     "outcome": "No",
+     "price": 0.9869999909,
+     "size": 1.317076,
+     "hours_after_end": 9.9
+    },
+    {
+     "event": "amsterdam-municipal-election-party-winner",
+     "market": "Will GroenLinks (GL) win the most seats in Amsterdam\u2019s 2026 ",
+     "outcome": "No",
+     "price": 0.9869999975,
+     "size": 1.215769,
+     "hours_after_end": 9.9
+    }
+   ]
+  },
+  {
+   "slug": "colombia-chamber-of-representatives-election-3rd-place",
+   "end": 1772928000,
+   "good": 380,
+   "bad": 5,
+   "good_sh": 40007,
+   "bad_sh": 111,
+   "losers": [
+    {
+     "event": "colombia-chamber-of-representatives-election-3rd-place",
+     "market": "Will PLC win the third most seats in the 2026 Colombian Cham",
+     "outcome": "No",
+     "price": 0.966,
+     "size": 20.0,
+     "hours_after_end": 22.4
+    },
+    {
+     "event": "colombia-chamber-of-representatives-election-3rd-place",
+     "market": "Will PLC win the third most seats in the 2026 Colombian Cham",
+     "outcome": "No",
+     "price": 0.979,
+     "size": 20.0,
+     "hours_after_end": 21.6
+    },
+    {
+     "event": "colombia-chamber-of-representatives-election-3rd-place",
+     "market": "Will PLC win the third most seats in the 2026 Colombian Cham",
+     "outcome": "No",
+     "price": 0.979,
+     "size": 20.0,
+     "hours_after_end": 21.6
+    },
+    {
+     "event": "colombia-chamber-of-representatives-election-3rd-place",
+     "market": "Will PLC win the third most seats in the 2026 Colombian Cham",
+     "outcome": "No",
+     "price": 0.9793624346,
+     "size": 30.63215,
+     "hours_after_end": 20.4
+    },
+    {
+     "event": "colombia-chamber-of-representatives-election-3rd-place",
+     "market": "Will PLC win the third most seats in the 2026 Colombian Cham",
+     "outcome": "No",
+     "price": 0.9770459071,
+     "size": 20.469857,
+     "hours_after_end": 19.3
+    }
+   ]
+  },
+  {
+   "slug": "colombia-chamber-of-representatives-election-second-place",
+   "end": 1772928000,
+   "good": 145,
+   "bad": 1,
+   "good_sh": 17351,
+   "bad_sh": 13,
+   "losers": [
+    {
+     "event": "colombia-chamber-of-representatives-election-second-place",
+     "market": "Will CD win the second most seats in the 2026 Colombian Cham",
+     "outcome": "No",
+     "price": 0.97,
+     "size": 12.98676,
+     "hours_after_end": 15.7
+    }
+   ]
+  },
+  {
+   "slug": "who-will-win-the-most-seats-in-the-2026-baden-wrttemberg-parliamentary-elections",
+   "end": 1772928000,
+   "good": 403,
+   "bad": 224,
+   "good_sh": 137226,
+   "bad_sh": 98856,
+   "losers": [
+    {
+     "event": "who-will-win-the-most-seats-in-the-2026-baden-wrttemberg-parliamentary",
+     "market": "Will CDU win the most seats in the 2026 Baden-W\u00fcrttemberg pa",
+     "outcome": "No",
+     "price": 0.96,
+     "size": 6.0,
+     "hours_after_end": 20.6
+    },
+    {
+     "event": "who-will-win-the-most-seats-in-the-2026-baden-wrttemberg-parliamentary",
+     "market": "Will CDU win the most seats in the 2026 Baden-W\u00fcrttemberg pa",
+     "outcome": "No",
+     "price": 0.96,
+     "size": 8.0,
+     "hours_after_end": 20.6
+    },
+    {
+     "event": "who-will-win-the-most-seats-in-the-2026-baden-wrttemberg-parliamentary",
+     "market": "Will CDU win the most seats in the 2026 Baden-W\u00fcrttemberg pa",
+     "outcome": "No",
+     "price": 0.97,
+     "size": 3.0,
+     "hours_after_end": 20.6
+    },
+    {
+     "event": "who-will-win-the-most-seats-in-the-2026-baden-wrttemberg-parliamentary",
+     "market": "Will The Greens win the most seats in the 2026 Baden-W\u00fcrttem",
+     "outcome": "Yes",
+     "price": 0.963,
+     "size": 806.645891,
+     "hours_after_end": 20.6
+    },
+    {
+     "event": "who-will-win-the-most-seats-in-the-2026-baden-wrttemberg-parliamentary",
+     "market": "Will CDU win the most seats in the 2026 Baden-W\u00fcrttemberg pa",
+     "outcome": "No",
+     "price": 0.965,
+     "size": 3209.32,
+     "hours_after_end": 20.6
+    },
+    {
+     "event": "who-will-win-the-most-seats-in-the-2026-baden-wrttemberg-parliamentary",
+     "market": "Will CDU win the most seats in the 2026 Baden-W\u00fcrttemberg pa",
+     "outcome": "No",
+     "price": 0.965,
+     "size": 664.124342,
+     "hours_after_end": 20.6
+    },
+    {
+     "event": "who-will-win-the-most-seats-in-the-2026-baden-wrttemberg-parliamentary",
+     "market": "Will CDU win the most seats in the 2026 Baden-W\u00fcrttemberg pa",
+     "outcome": "No",
+     "price": 0.964,
+     "size": 100.0,
+     "hours_after_end": 20.6
+    },
+    {
+     "event": "who-will-win-the-most-seats-in-the-2026-baden-wrttemberg-parliamentary",
+     "market": "Will CDU win the most seats in the 2026 Baden-W\u00fcrttemberg pa",
+     "outcome": "No",
+     "price": 0.964,
+     "size": 564.12,
+     "hours_after_end": 20.6
+    },
+    {
+     "event": "who-will-win-the-most-seats-in-the-2026-baden-wrttemberg-parliamentary",
+     "market": "Will CDU win the most seats in the 2026 Baden-W\u00fcrttemberg pa",
+     "outcome": "No",
+     "price": 0.964,
+     "size": 200.0,
+     "hours_after_end": 20.6
+    },
+    {
+     "event": "who-will-win-the-most-seats-in-the-2026-baden-wrttemberg-parliamentary",
+     "market": "Will The Greens win the most seats in the 2026 Baden-W\u00fcrttem",
+     "outcome": "Yes",
+     "price": 0.965,
+     "size": 1824.37,
+     "hours_after_end": 20.6
+    }
+   ]
+  },
+  {
+   "slug": "of-seats-won-by-cpn-uml-in-nepal-house-of-representatives-election",
+   "end": 1772668800,
+   "good": 56,
+   "bad": 3,
+   "good_sh": 4032,
+   "bad_sh": 170,
+   "losers": [
+    {
+     "event": "of-seats-won-by-cpn-uml-in-nepal-house-of-representatives-election",
+     "market": "Will Communist Party of Nepal (Unified Marxist\u2013Leninist) (CP",
+     "outcome": "No",
+     "price": 0.99,
+     "size": 20.0,
+     "hours_after_end": 33.3
+    },
+    {
+     "event": "of-seats-won-by-cpn-uml-in-nepal-house-of-representatives-election",
+     "market": "Will Communist Party of Nepal (Unified Marxist\u2013Leninist) (CP",
+     "outcome": "No",
+     "price": 0.9844741437,
+     "size": 100.0026,
+     "hours_after_end": 33.3
+    },
+    {
+     "event": "of-seats-won-by-cpn-uml-in-nepal-house-of-representatives-election",
+     "market": "Will Communist Party of Nepal (Unified Marxist\u2013Leninist) (CP",
+     "outcome": "No",
+     "price": 0.978946058,
+     "size": 50.00275,
+     "hours_after_end": 33.3
+    }
+   ]
+  },
+  {
+   "slug": "of-seats-won-by-nc-in-nepal-house-of-representatives-election",
+   "end": 1772668800,
+   "good": 51,
+   "bad": 2,
+   "good_sh": 1411,
+   "bad_sh": 6,
+   "losers": [
+    {
+     "event": "of-seats-won-by-nc-in-nepal-house-of-representatives-election",
+     "market": "Will Nepali Congress (NC) win less than 80 seats in Nepal\u2019s ",
+     "outcome": "No",
+     "price": 0.96,
+     "size": 1.04165,
+     "hours_after_end": 11.5
+    },
+    {
+     "event": "of-seats-won-by-nc-in-nepal-house-of-representatives-election",
+     "market": "Will Nepali Congress (NC) win less than 80 seats in Nepal\u2019s ",
+     "outcome": "No",
+     "price": 0.96,
+     "size": 5.208325,
+     "hours_after_end": 9.6
+    }
+   ]
+  },
+  {
+   "slug": "iceland-eu-referendum-turnout",
+   "end": 1788047940,
+   "good": 24,
+   "bad": 1,
+   "good_sh": 582,
+   "bad_sh": 11,
+   "losers": [
+    {
+     "event": "iceland-eu-referendum-turnout",
+     "market": "Will turnout in the Icelandic EU membership negotiations ref",
+     "outcome": "No",
+     "price": 0.96,
+     "size": 10.99,
+     "hours_after_end": 1.6
+    }
+   ]
+  },
+  {
+   "slug": "south-carolina-special-senate-republican-primary-runoff-margin-of-victory",
+   "end": 1787702340,
+   "good": 71,
+   "bad": 1,
+   "good_sh": 7872,
+   "bad_sh": 5,
+   "losers": [
+    {
+     "event": "south-carolina-special-senate-republican-primary-runoff-margin-of-vict",
+     "market": "Will Darline Graham Nordone win the SC Republican Senate spe",
+     "outcome": "No",
+     "price": 0.96,
+     "size": 5.0,
+     "hours_after_end": 0.2
+    }
+   ]
+  },
+  {
+   "slug": "alaska-at-large-primary-winners",
+   "end": 1787011200,
+   "good": 8,
+   "bad": 4,
+   "good_sh": 335,
+   "bad_sh": 13,
+   "losers": [
+    {
+     "event": "alaska-at-large-primary-winners",
+     "market": "Will Matthew \"Bronco\" Williams advance from the AK-AL primar",
+     "outcome": "Yes",
+     "price": 0.99,
+     "size": 5.0505,
+     "hours_after_end": 29.7
+    },
+    {
+     "event": "alaska-at-large-primary-winners",
+     "market": "Will Matthew \"Bronco\" Williams advance from the AK-AL primar",
+     "outcome": "Yes",
+     "price": 0.99,
+     "size": 1.5151,
+     "hours_after_end": 29.7
+    },
+    {
+     "event": "alaska-at-large-primary-winners",
+     "market": "Will Matthew \"Bronco\" Williams advance from the AK-AL primar",
+     "outcome": "Yes",
+     "price": 0.99,
+     "size": 1.5151,
+     "hours_after_end": 26.0
+    },
+    {
+     "event": "alaska-at-large-primary-winners",
+     "market": "Will Matthew \"Bronco\" Williams advance from the AK-AL primar",
+     "outcome": "Yes",
+     "price": 0.99,
+     "size": 5.0505,
+     "hours_after_end": 26.0
+    }
+   ]
+  },
+  {
+   "slug": "florida-democratic-senate-primary-winner",
+   "end": 1787011200,
+   "good": 27,
+   "bad": 2,
+   "good_sh": 2601,
+   "bad_sh": 536,
+   "losers": [
+    {
+     "event": "florida-democratic-senate-primary-winner",
+     "market": "Will Angie Nixon be the Democratic nominee for Senate in Flo",
+     "outcome": "No",
+     "price": 0.9704157429,
+     "size": 36.242181,
+     "hours_after_end": 23.1
+    },
+    {
+     "event": "florida-democratic-senate-primary-winner",
+     "market": "Will Angie Nixon be the Democratic nominee for Senate in Flo",
+     "outcome": "No",
+     "price": 0.97178922,
+     "size": 500.0,
+     "hours_after_end": 19.0
+    }
+   ]
+  },
+  {
+   "slug": "wi-06-democratic-primary-winner-20260716185219518",
+   "end": 1786492740,
+   "good": 23,
+   "bad": 2,
+   "good_sh": 1521,
+   "bad_sh": 3,
+   "losers": [
+    {
+     "event": "wi-06-democratic-primary-winner-20260716185219518",
+     "market": "Will Brad Smith be the WI-06 Democratic nominee?",
+     "outcome": "No",
+     "price": 0.96,
+     "size": 1.5625,
+     "hours_after_end": 2.3
+    },
+    {
+     "event": "wi-06-democratic-primary-winner-20260716185219518",
+     "market": "Will Brad Smith be the WI-06 Democratic nominee?",
+     "outcome": "No",
+     "price": 0.97,
+     "size": 1.1237,
+     "hours_after_end": 2.3
+    }
+   ]
+  },
+  {
+   "slug": "wisconsin-governor-democratic-primary-waukesha-county-winner-20260807145202406",
+   "end": 1786406400,
+   "good": 0,
+   "bad": 1,
+   "good_sh": 0,
+   "bad_sh": 10,
+   "losers": [
+    {
+     "event": "wisconsin-governor-democratic-primary-waukesha-county-winner-202608071",
+     "market": "Will Francesca Hong win Waukesha County in the Wisconsin Dem",
+     "outcome": "Yes",
+     "price": 0.993,
+     "size": 10.06,
+     "hours_after_end": 0.2
+    }
+   ]
+  },
+  {
+   "slug": "wisconsin-governor-democratic-primary-winner",
+   "end": 1786406400,
+   "good": 26,
+   "bad": 313,
+   "good_sh": 60038,
+   "bad_sh": 87041,
+   "losers": [
+    {
+     "event": "wisconsin-governor-democratic-primary-winner",
+     "market": "Will David Crowley win the 2026 Wisconsin Governor Democrati",
+     "outcome": "No",
+     "price": 0.9709999299,
+     "size": 2.039133,
+     "hours_after_end": 25.2
+    },
+    {
+     "event": "wisconsin-governor-democratic-primary-winner",
+     "market": "Will David Crowley win the 2026 Wisconsin Governor Democrati",
+     "outcome": "No",
+     "price": 0.9709999299,
+     "size": 2.039133,
+     "hours_after_end": 25.2
+    },
+    {
+     "event": "wisconsin-governor-democratic-primary-winner",
+     "market": "Will David Crowley win the 2026 Wisconsin Governor Democrati",
+     "outcome": "No",
+     "price": 0.9709999299,
+     "size": 2.039133,
+     "hours_after_end": 25.2
+    },
+    {
+     "event": "wisconsin-governor-democratic-primary-winner",
+     "market": "Will David Crowley win the 2026 Wisconsin Governor Democrati",
+     "outcome": "No",
+     "price": 0.9709991223,
+     "size": 1.060761,
+     "hours_after_end": 25.2
+    },
+    {
+     "event": "wisconsin-governor-democratic-primary-winner",
+     "market": "Will David Crowley win the 2026 Wisconsin Governor Democrati",
+     "outcome": "No",
+     "price": 0.9689998758,
+     "size": 1.135189,
+     "hours_after_end": 25.2
+    },
+    {
+     "event": "wisconsin-governor-democratic-primary-winner",
+     "market": "Will David Crowley win the 2026 Wisconsin Governor Democrati",
+     "outcome": "No",
+     "price": 0.9689998758,
+     "size": 1.135189,
+     "hours_after_end": 25.2
+    },
+    {
+     "event": "wisconsin-governor-democratic-primary-winner",
+     "market": "Will David Crowley win the 2026 Wisconsin Governor Democrati",
+     "outcome": "No",
+     "price": 0.9679997987,
+     "size": 1.033056,
+     "hours_after_end": 25.2
+    },
+    {
+     "event": "wisconsin-governor-democratic-primary-winner",
+     "market": "Will David Crowley win the 2026 Wisconsin Governor Democrati",
+     "outcome": "No",
+     "price": 0.9679997987,
+     "size": 1.033056,
+     "hours_after_end": 25.2
+    },
+    {
+     "event": "wisconsin-governor-democratic-primary-winner",
+     "market": "Will David Crowley win the 2026 Wisconsin Governor Democrati",
+     "outcome": "No",
+     "price": 0.9679996339,
+     "size": 1.136362,
+     "hours_after_end": 25.2
+    },
+    {
+     "event": "wisconsin-governor-democratic-primary-winner",
+     "market": "Will David Crowley win the 2026 Wisconsin Governor Democrati",
+     "outcome": "No",
+     "price": 0.9679999923,
+     "size": 1.033031,
+     "hours_after_end": 25.2
+    }
+   ]
+  },
+  {
+   "slug": "tn-05-republican-primary-winner-20260722205329746",
+   "end": 1786060740,
+   "good": 14,
+   "bad": 1,
+   "good_sh": 1425,
+   "bad_sh": 250,
+   "losers": [
+    {
+     "event": "tn-05-republican-primary-winner-20260722205329746",
+     "market": "Will Andy Ogles be the TN-05 Republican nominee?",
+     "outcome": "Yes",
+     "price": 0.97,
+     "size": 249.98,
+     "hours_after_end": 0.3
+    }
+   ]
+  },
+  {
+   "slug": "michigan-democratic-senate-primary-macomb-county-winner-20260728150015515",
+   "end": 1785887940,
+   "good": 4,
+   "bad": 9,
+   "good_sh": 2074,
+   "bad_sh": 342,
+   "losers": [
+    {
+     "event": "michigan-democratic-senate-primary-macomb-county-winner-20260728150015",
+     "market": "Will Abdul El-Sayed win Macomb County in the Michigan Senate",
+     "outcome": "Yes",
+     "price": 0.98,
+     "size": 34.81,
+     "hours_after_end": 1.9
+    },
+    {
+     "event": "michigan-democratic-senate-primary-macomb-county-winner-20260728150015",
+     "market": "Will Abdul El-Sayed win Macomb County in the Michigan Senate",
+     "outcome": "Yes",
+     "price": 0.98,
+     "size": 87.58,
+     "hours_after_end": 1.9
+    },
+    {
+     "event": "michigan-democratic-senate-primary-macomb-county-winner-20260728150015",
+     "market": "Will Haley Stevens win Macomb County in the Michigan Senate ",
+     "outcome": "No",
+     "price": 0.969,
+     "size": 45.0,
+     "hours_after_end": 0.5
+    },
+    {
+     "event": "michigan-democratic-senate-primary-macomb-county-winner-20260728150015",
+     "market": "Will Haley Stevens win Macomb County in the Michigan Senate ",
+     "outcome": "No",
+     "price": 0.969,
+     "size": 5.0,
+     "hours_after_end": 0.5
+    },
+    {
+     "event": "michigan-democratic-senate-primary-macomb-county-winner-20260728150015",
+     "market": "Will Haley Stevens win Macomb County in the Michigan Senate ",
+     "outcome": "No",
+     "price": 0.967,
+     "size": 50.0,
+     "hours_after_end": 0.4
+    },
+    {
+     "event": "michigan-democratic-senate-primary-macomb-county-winner-20260728150015",
+     "market": "Will Abdul El-Sayed win Macomb County in the Michigan Senate",
+     "outcome": "Yes",
+     "price": 0.97,
+     "size": 50.0,
+     "hours_after_end": 0.4
+    },
+    {
+     "event": "michigan-democratic-senate-primary-macomb-county-winner-20260728150015",
+     "market": "Will Haley Stevens win Macomb County in the Michigan Senate ",
+     "outcome": "No",
+     "price": 0.967,
+     "size": 40.0,
+     "hours_after_end": 0.4
+    },
+    {
+     "event": "michigan-democratic-senate-primary-macomb-county-winner-20260728150015",
+     "market": "Will Haley Stevens win Macomb County in the Michigan Senate ",
+     "outcome": "No",
+     "price": 0.967,
+     "size": 5.0,
+     "hours_after_end": 0.4
+    },
+    {
+     "event": "michigan-democratic-senate-primary-macomb-county-winner-20260728150015",
+     "market": "Will Abdul El-Sayed win Macomb County in the Michigan Senate",
+     "outcome": "Yes",
+     "price": 0.96,
+     "size": 25.0,
+     "hours_after_end": 0.4
+    }
+   ]
+  },
+  {
+   "slug": "michigan-democratic-senate-primary-wayne-county-detroit-winner-20260715181258953",
+   "end": 1785801600,
+   "good": 55,
+   "bad": 2,
+   "good_sh": 4250,
+   "bad_sh": 121,
+   "losers": [
+    {
+     "event": "michigan-democratic-senate-primary-wayne-county-detroit-winner-2026071",
+     "market": "Will Abdul El-Sayed win Wayne County in the Michigan Senate ",
+     "outcome": "Yes",
+     "price": 0.98,
+     "size": 91.0,
+     "hours_after_end": 24.4
+    },
+    {
+     "event": "michigan-democratic-senate-primary-wayne-county-detroit-winner-2026071",
+     "market": "Will Abdul El-Sayed win Wayne County in the Michigan Senate ",
+     "outcome": "Yes",
+     "price": 0.97,
+     "size": 29.84,
+     "hours_after_end": 24.4
+    }
+   ]
+  },
+  {
+   "slug": "michigan-democratic-senate-primary-margin-of-victory-20260706180330731",
+   "end": 1785801600,
+   "good": 61,
+   "bad": 11,
+   "good_sh": 4900,
+   "bad_sh": 570,
+   "losers": [
+    {
+     "event": "michigan-democratic-senate-primary-margin-of-victory-20260706180330731",
+     "market": "Will Abdul El-Sayed win the Michigan Senate Democratic prima",
+     "outcome": "No",
+     "price": 0.9894867059,
+     "size": 85.0,
+     "hours_after_end": 20.5
+    },
+    {
+     "event": "michigan-democratic-senate-primary-margin-of-victory-20260706180330731",
+     "market": "Will Abdul El-Sayed win the Michigan Senate Democratic prima",
+     "outcome": "No",
+     "price": 0.985,
+     "size": 40.0,
+     "hours_after_end": 20.2
+    },
+    {
+     "event": "michigan-democratic-senate-primary-margin-of-victory-20260706180330731",
+     "market": "Will Abdul El-Sayed win the Michigan Senate Democratic prima",
+     "outcome": "No",
+     "price": 0.985,
+     "size": 18.0,
+     "hours_after_end": 20.2
+    },
+    {
+     "event": "michigan-democratic-senate-primary-margin-of-victory-20260706180330731",
+     "market": "Will Abdul El-Sayed win the Michigan Senate Democratic prima",
+     "outcome": "No",
+     "price": 0.985,
+     "size": 40.0,
+     "hours_after_end": 20.2
+    },
+    {
+     "event": "michigan-democratic-senate-primary-margin-of-victory-20260706180330731",
+     "market": "Will Abdul El-Sayed win the Michigan Senate Democratic prima",
+     "outcome": "No",
+     "price": 0.985,
+     "size": 139.543133,
+     "hours_after_end": 20.1
+    },
+    {
+     "event": "michigan-democratic-senate-primary-margin-of-victory-20260706180330731",
+     "market": "Will Abdul El-Sayed win the Michigan Senate Democratic prima",
+     "outcome": "No",
+     "price": 0.985,
+     "size": 30.0,
+     "hours_after_end": 20.1
+    },
+    {
+     "event": "michigan-democratic-senate-primary-margin-of-victory-20260706180330731",
+     "market": "Will Abdul El-Sayed win the Michigan Senate Democratic prima",
+     "outcome": "No",
+     "price": 0.985,
+     "size": 135.0,
+     "hours_after_end": 20.1
+    },
+    {
+     "event": "michigan-democratic-senate-primary-margin-of-victory-20260706180330731",
+     "market": "Will Abdul El-Sayed win the Michigan Senate Democratic prima",
+     "outcome": "No",
+     "price": 0.985,
+     "size": 43.6,
+     "hours_after_end": 15.3
+    },
+    {
+     "event": "michigan-democratic-senate-primary-margin-of-victory-20260706180330731",
+     "market": "Will Abdul El-Sayed win the Michigan Senate Democratic prima",
+     "outcome": "No",
+     "price": 0.984375,
+     "size": 24.0,
+     "hours_after_end": 15.3
+    },
+    {
+     "event": "michigan-democratic-senate-primary-margin-of-victory-20260706180330731",
+     "market": "Will Abdul El-Sayed win the Michigan Senate Democratic prima",
+     "outcome": "No",
+     "price": 0.984,
+     "size": 5.0,
+     "hours_after_end": 15.3
+    }
+   ]
+  },
+  {
+   "slug": "ga-13-special-election-winner-20260604224652888",
+   "end": 1785297540,
+   "good": 14,
+   "bad": 2,
+   "good_sh": 370,
+   "bad_sh": 42,
+   "losers": [
+    {
+     "event": "ga-13-special-election-winner-20260604224652888",
+     "market": "Will Marcye Scott win the 2026 GA-13 special election?",
+     "outcome": "Yes",
+     "price": 0.98,
+     "size": 22.16325,
+     "hours_after_end": 16.0
+    },
+    {
+     "event": "ga-13-special-election-winner-20260604224652888",
+     "market": "Will Marcye Scott win the 2026 GA-13 special election?",
+     "outcome": "Yes",
+     "price": 0.99,
+     "size": 20.0,
+     "hours_after_end": 0.0
+    }
+   ]
+  },
+  {
+   "slug": "colorado-governor-republican-primary-winner",
+   "end": 1782777600,
+   "good": 135,
+   "bad": 28,
+   "good_sh": 3053,
+   "bad_sh": 1843,
+   "losers": [
+    {
+     "event": "colorado-governor-republican-primary-winner",
+     "market": "Will Barbara Kirkmeyer win the 2026 Colorado Governor Republ",
+     "outcome": "Yes",
+     "price": 0.9893578275,
+     "size": 313.0,
+     "hours_after_end": 28.8
+    },
+    {
+     "event": "colorado-governor-republican-primary-winner",
+     "market": "Will Barbara Kirkmeyer win the 2026 Colorado Governor Republ",
+     "outcome": "Yes",
+     "price": 0.965,
+     "size": 28.45,
+     "hours_after_end": 28.8
+    },
+    {
+     "event": "colorado-governor-republican-primary-winner",
+     "market": "Will Barbara Kirkmeyer win the 2026 Colorado Governor Republ",
+     "outcome": "Yes",
+     "price": 0.965,
+     "size": 100.0,
+     "hours_after_end": 28.8
+    },
+    {
+     "event": "colorado-governor-republican-primary-winner",
+     "market": "Will Barbara Kirkmeyer win the 2026 Colorado Governor Republ",
+     "outcome": "Yes",
+     "price": 0.965,
+     "size": 100.0,
+     "hours_after_end": 28.8
+    },
+    {
+     "event": "colorado-governor-republican-primary-winner",
+     "market": "Will Barbara Kirkmeyer win the 2026 Colorado Governor Republ",
+     "outcome": "Yes",
+     "price": 0.965,
+     "size": 213.47,
+     "hours_after_end": 28.8
+    },
+    {
+     "event": "colorado-governor-republican-primary-winner",
+     "market": "Will Barbara Kirkmeyer win the 2026 Colorado Governor Republ",
+     "outcome": "Yes",
+     "price": 0.965,
+     "size": 1.07,
+     "hours_after_end": 28.8
+    },
+    {
+     "event": "colorado-governor-republican-primary-winner",
+     "market": "Will Barbara Kirkmeyer win the 2026 Colorado Governor Republ",
+     "outcome": "Yes",
+     "price": 0.965,
+     "size": 28.45,
+     "hours_after_end": 28.8
+    },
+    {
+     "event": "colorado-governor-republican-primary-winner",
+     "market": "Will Barbara Kirkmeyer win the 2026 Colorado Governor Republ",
+     "outcome": "Yes",
+     "price": 0.9649904,
+     "size": 100.0,
+     "hours_after_end": 28.8
+    },
+    {
+     "event": "colorado-governor-republican-primary-winner",
+     "market": "Will Barbara Kirkmeyer win the 2026 Colorado Governor Republ",
+     "outcome": "Yes",
+     "price": 0.965,
+     "size": 28.45,
+     "hours_after_end": 28.8
+    },
+    {
+     "event": "colorado-governor-republican-primary-winner",
+     "market": "Will Barbara Kirkmeyer win the 2026 Colorado Governor Republ",
+     "outcome": "Yes",
+     "price": 0.965,
+     "size": 1.07,
+     "hours_after_end": 28.8
+    }
+   ]
+  },
+  {
+   "slug": "virginia-republican-senate-primary-winner",
+   "end": 1781568000,
+   "good": 105,
+   "bad": 2,
+   "good_sh": 2856,
+   "bad_sh": 15,
+   "losers": [
+    {
+     "event": "virginia-republican-senate-primary-winner",
+     "market": "Will Bert Mizusawa be the Republican nominee for Senate in V",
+     "outcome": "No",
+     "price": 0.97,
+     "size": 5.0,
+     "hours_after_end": 8.4
+    },
+    {
+     "event": "virginia-republican-senate-primary-winner",
+     "market": "Will Bert Mizusawa be the Republican nominee for Senate in V",
+     "outcome": "No",
+     "price": 0.98,
+     "size": 10.0,
+     "hours_after_end": 8.4
+    }
+   ]
+  },
+  {
+   "slug": "south-carolina-senate-republican-primary-first-round-margin-of-victory-20260608180148293",
+   "end": 1781035140,
+   "good": 22,
+   "bad": 2,
+   "good_sh": 1829,
+   "bad_sh": 7,
+   "losers": [
+    {
+     "event": "south-carolina-senate-republican-primary-first-round-margin-of-victory",
+     "market": "Will Lindsey Graham win the first round of the South Carolin",
+     "outcome": "No",
+     "price": 0.9799998712,
+     "size": 3.571427,
+     "hours_after_end": 8.6
+    },
+    {
+     "event": "south-carolina-senate-republican-primary-first-round-margin-of-victory",
+     "market": "Will Lindsey Graham win the first round of the South Carolin",
+     "outcome": "No",
+     "price": 0.9699999972,
+     "size": 3.608233,
+     "hours_after_end": 8.6
+    }
+   ]
+  },
+  {
+   "slug": "which-pair-advances-to-south-dakota-governor-republican-primary-runoff",
+   "end": 1780358400,
+   "good": 46,
+   "bad": 2,
+   "good_sh": 814,
+   "bad_sh": 10,
+   "losers": [
+    {
+     "event": "which-pair-advances-to-south-dakota-governor-republican-primary-runoff",
+     "market": "Will Toby Doeden and Larry Rhoden advance to the South Dakot",
+     "outcome": "No",
+     "price": 0.96,
+     "size": 6.7,
+     "hours_after_end": 25.3
+    },
+    {
+     "event": "which-pair-advances-to-south-dakota-governor-republican-primary-runoff",
+     "market": "Will Toby Doeden and Larry Rhoden advance to the South Dakot",
+     "outcome": "No",
+     "price": 0.97,
+     "size": 3.25,
+     "hours_after_end": 25.3
+    }
+   ]
+  },
+  {
+   "slug": "la-mayoral-election-1st-round-margin-of-victory",
+   "end": 1780358400,
+   "good": 96,
+   "bad": 1,
+   "good_sh": 10972,
+   "bad_sh": 13,
+   "losers": [
+    {
+     "event": "la-mayoral-election-1st-round-margin-of-victory",
+     "market": "Will Karen Bass win the first round of the 2026 Los Angeles ",
+     "outcome": "No",
+     "price": 0.98,
+     "size": 13.0,
+     "hours_after_end": 171.0
+    }
+   ]
+  },
+  {
+   "slug": "mt-01-democratic-primary-winner",
+   "end": 1780358400,
+   "good": 14,
+   "bad": 1,
+   "good_sh": 1354,
+   "bad_sh": 1,
+   "losers": [
+    {
+     "event": "mt-01-democratic-primary-winner",
+     "market": "Will Ryan Busse be the Democratic nominee for MT-01?",
+     "outcome": "Yes",
+     "price": 0.97,
+     "size": 1.3608,
+     "hours_after_end": 29.9
+    }
+   ]
+  },
+  {
+   "slug": "texas-senate-republican-primary-runoff-margin-of-victory-larger-brackets",
+   "end": 1779753600,
+   "good": 159,
+   "bad": 9,
+   "good_sh": 16619,
+   "bad_sh": 61,
+   "losers": [
+    {
+     "event": "texas-senate-republican-primary-runoff-margin-of-victory-larger-bracke",
+     "market": "Will Ken Paxton win the Texas Republican Senate Primary runo",
+     "outcome": "No",
+     "price": 0.992,
+     "size": 1.008,
+     "hours_after_end": 21.8
+    },
+    {
+     "event": "texas-senate-republican-primary-runoff-margin-of-victory-larger-bracke",
+     "market": "Will Ken Paxton win the Texas Republican Senate Primary runo",
+     "outcome": "No",
+     "price": 0.992,
+     "size": 4.425375,
+     "hours_after_end": 21.4
+    },
+    {
+     "event": "texas-senate-republican-primary-runoff-margin-of-victory-larger-bracke",
+     "market": "Will Ken Paxton win the Texas Republican Senate Primary runo",
+     "outcome": "No",
+     "price": 0.992,
+     "size": 42.963625,
+     "hours_after_end": 21.4
+    },
+    {
+     "event": "texas-senate-republican-primary-runoff-margin-of-victory-larger-bracke",
+     "market": "Will Ken Paxton win the Texas Republican Senate Primary runo",
+     "outcome": "No",
+     "price": 0.992,
+     "size": 7.57,
+     "hours_after_end": 20.3
+    },
+    {
+     "event": "texas-senate-republican-primary-runoff-margin-of-victory-larger-bracke",
+     "market": "Will Ken Paxton win the Texas Republican Senate Primary runo",
+     "outcome": "No",
+     "price": 0.992,
+     "size": 1.008,
+     "hours_after_end": 0.6
+    },
+    {
+     "event": "texas-senate-republican-primary-runoff-margin-of-victory-larger-bracke",
+     "market": "Will Ken Paxton win the Texas Republican Senate Primary runo",
+     "outcome": "No",
+     "price": 0.992,
+     "size": 1.008,
+     "hours_after_end": 0.6
+    },
+    {
+     "event": "texas-senate-republican-primary-runoff-margin-of-victory-larger-bracke",
+     "market": "Will Ken Paxton win the Texas Republican Senate Primary runo",
+     "outcome": "No",
+     "price": 0.992,
+     "size": 1.008,
+     "hours_after_end": 0.6
+    },
+    {
+     "event": "texas-senate-republican-primary-runoff-margin-of-victory-larger-bracke",
+     "market": "Will Ken Paxton win the Texas Republican Senate Primary runo",
+     "outcome": "No",
+     "price": 0.992,
+     "size": 1.008,
+     "hours_after_end": 0.6
+    },
+    {
+     "event": "texas-senate-republican-primary-runoff-margin-of-victory-larger-bracke",
+     "market": "Will Ken Paxton win the Texas Republican Senate Primary runo",
+     "outcome": "No",
+     "price": 0.992,
+     "size": 1.008,
+     "hours_after_end": 0.6
+    }
+   ]
+  },
+  {
+   "slug": "georgia-senate-republican-primary-runoff-margin-of-victory-20260610202915154",
+   "end": 1779667200,
+   "good": 27,
+   "bad": 1,
+   "good_sh": 804,
+   "bad_sh": 5,
+   "losers": [
+    {
+     "event": "georgia-senate-republican-primary-runoff-margin-of-victory-20260610202",
+     "market": "Will Mike Collins win the Georgia Republican Senate Primary ",
+     "outcome": "No",
+     "price": 0.98,
+     "size": 5.0,
+     "hours_after_end": 409.8
+    }
+   ]
+  },
+  {
+   "slug": "georgia-governor-democratic-primary-first-round-winner",
+   "end": 1779148800,
+   "good": 32,
+   "bad": 1,
+   "good_sh": 627,
+   "bad_sh": 6,
+   "losers": [
+    {
+     "event": "georgia-governor-democratic-primary-first-round-winner",
+     "market": "Will Mike Thurmond finish first in the first round of the 20",
+     "outcome": "Yes",
+     "price": 0.97,
+     "size": 6.0,
+     "hours_after_end": 1.9
+    }
+   ]
+  },
+  {
+   "slug": "alabama-democratic-senate-primary-winner",
+   "end": 1779148800,
+   "good": 24,
+   "bad": 5,
+   "good_sh": 704,
+   "bad_sh": 199,
+   "losers": [
+    {
+     "event": "alabama-democratic-senate-primary-winner",
+     "market": "Will Kyle Sweetser be the Democratic nominee for Senate in A",
+     "outcome": "Yes",
+     "price": 0.9639999977,
+     "size": 10.373416,
+     "hours_after_end": 23.2
+    },
+    {
+     "event": "alabama-democratic-senate-primary-winner",
+     "market": "Will Kyle Sweetser be the Democratic nominee for Senate in A",
+     "outcome": "Yes",
+     "price": 0.9759999998,
+     "size": 71.721291,
+     "hours_after_end": 17.3
+    },
+    {
+     "event": "alabama-democratic-senate-primary-winner",
+     "market": "Will Kyle Sweetser be the Democratic nominee for Senate in A",
+     "outcome": "Yes",
+     "price": 0.9756386522,
+     "size": 83.0225,
+     "hours_after_end": 17.3
+    },
+    {
+     "event": "alabama-democratic-senate-primary-winner",
+     "market": "Will Kyle Sweetser be the Democratic nominee for Senate in A",
+     "outcome": "Yes",
+     "price": 0.972,
+     "size": 27.77775,
+     "hours_after_end": 17.3
+    },
+    {
+     "event": "alabama-democratic-senate-primary-winner",
+     "market": "Will Kyle Sweetser be the Democratic nominee for Senate in A",
+     "outcome": "Yes",
+     "price": 0.96,
+     "size": 6.5,
+     "hours_after_end": 16.4
+    }
+   ]
+  },
+  {
+   "slug": "ne-02-democratic-primary-winner",
+   "end": 1778544000,
+   "good": 23,
+   "bad": 1,
+   "good_sh": 3457,
+   "bad_sh": 100,
+   "losers": [
+    {
+     "event": "ne-02-democratic-primary-winner",
+     "market": "Will Denise Powell be the Democratic nominee for NE-02?",
+     "outcome": "No",
+     "price": 0.96,
+     "size": 100.0,
+     "hours_after_end": 25.4
+    }
+   ]
+  },
+  {
+   "slug": "illinois-democratic-senate-primary-margin-of-victory",
+   "end": 1773705600,
+   "good": 69,
+   "bad": 1,
+   "good_sh": 3750,
+   "bad_sh": 50,
+   "losers": [
+    {
+     "event": "illinois-democratic-senate-primary-margin-of-victory",
+     "market": "Will Raja Krishnamoorthi win the Illinois Democratic Senate ",
+     "outcome": "Yes",
+     "price": 0.99,
+     "size": 50.0,
+     "hours_after_end": 24.3
+    }
+   ]
+  },
+  {
+   "slug": "texas-republican-senate-primary-margin-of-victory",
+   "end": 1772496000,
+   "good": 119,
+   "bad": 7,
+   "good_sh": 4703,
+   "bad_sh": 290,
+   "losers": [
+    {
+     "event": "texas-republican-senate-primary-margin-of-victory",
+     "market": "Will John Cornyn win the Texas Republican Senate Primary by ",
+     "outcome": "No",
+     "price": 0.9698537541,
+     "size": 82.0536,
+     "hours_after_end": 19.9
+    },
+    {
+     "event": "texas-republican-senate-primary-margin-of-victory",
+     "market": "Will John Cornyn win the Texas Republican Senate Primary by ",
+     "outcome": "No",
+     "price": 0.9694000605,
+     "size": 20.002033,
+     "hours_after_end": 19.4
+    },
+    {
+     "event": "texas-republican-senate-primary-margin-of-victory",
+     "market": "Will John Cornyn win the Texas Republican Senate Primary by ",
+     "outcome": "No",
+     "price": 0.9699999997,
+     "size": 63.185566,
+     "hours_after_end": 19.4
+    },
+    {
+     "event": "texas-republican-senate-primary-margin-of-victory",
+     "market": "Will John Cornyn win the Texas Republican Senate Primary by ",
+     "outcome": "No",
+     "price": 0.969,
+     "size": 20.0,
+     "hours_after_end": 19.4
+    },
+    {
+     "event": "texas-republican-senate-primary-margin-of-victory",
+     "market": "Will John Cornyn win the Texas Republican Senate Primary by ",
+     "outcome": "No",
+     "price": 0.969,
+     "size": 20.0,
+     "hours_after_end": 18.8
+    },
+    {
+     "event": "texas-republican-senate-primary-margin-of-victory",
+     "market": "Will John Cornyn win the Texas Republican Senate Primary by ",
+     "outcome": "No",
+     "price": 0.969504169,
+     "size": 64.538133,
+     "hours_after_end": 16.8
+    },
+    {
+     "event": "texas-republican-senate-primary-margin-of-victory",
+     "market": "Will John Cornyn win the Texas Republican Senate Primary by ",
+     "outcome": "No",
+     "price": 0.988,
+     "size": 20.0,
+     "hours_after_end": 10.4
+    }
+   ]
+  },
+  {
+   "slug": "texas-republican-senate-primary-first-round-winner",
+   "end": 1772496000,
+   "good": 54,
+   "bad": 1,
+   "good_sh": 2400,
+   "bad_sh": 10,
+   "losers": [
+    {
+     "event": "texas-republican-senate-primary-first-round-winner",
+     "market": "Will John Cornyn win the first round of the Republican Senat",
+     "outcome": "No",
+     "price": 0.96,
+     "size": 10.36,
+     "hours_after_end": 14.2
+    }
+   ]
+  },
+  {
+   "slug": "2nd-place-in-first-round-of-texas-republican-senate-primary",
+   "end": 1772496000,
+   "good": 97,
+   "bad": 2,
+   "good_sh": 6053,
+   "bad_sh": 26,
+   "losers": [
+    {
+     "event": "2nd-place-in-first-round-of-texas-republican-senate-primary",
+     "market": "Will Ken Paxton come in 2nd in the 2026 Texas Republican Pri",
+     "outcome": "No",
+     "price": 0.9699999746,
+     "size": 5.515462,
+     "hours_after_end": 24.8
+    },
+    {
+     "event": "2nd-place-in-first-round-of-texas-republican-senate-primary",
+     "market": "Will Ken Paxton come in 2nd in the 2026 Texas Republican Pri",
+     "outcome": "No",
+     "price": 0.96,
+     "size": 20.0,
+     "hours_after_end": 12.2
+    }
+   ]
+  }
+ ]
+}

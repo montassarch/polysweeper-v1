@@ -1,0 +1,146 @@
+{
+ "taker": {
+  "mlb": {
+   "30+ min before": 30,
+   "5-30 min before": 22,
+   "1-5 min before": 15,
+   "last minute before": 20,
+   "0-10 s after": 22,
+   "10-30 s after": 2,
+   "30 s-2 min after": 0,
+   "2+ min after": 0
+  },
+  "nfl": {
+   "30+ min before": 18,
+   "5-30 min before": 13,
+   "1-5 min before": 19,
+   "last minute before": 4,
+   "0-10 s after": 1,
+   "10-30 s after": 3,
+   "30 s-2 min after": 3,
+   "2+ min after": 0
+  },
+  "cfb": {
+   "30+ min before": 26,
+   "5-30 min before": 12,
+   "1-5 min before": 11,
+   "last minute before": 5,
+   "0-10 s after": 0,
+   "10-30 s after": 0,
+   "30 s-2 min after": 0,
+   "2+ min after": 0
+  },
+  "nhl": {
+   "30+ min before": 1,
+   "5-30 min before": 0,
+   "1-5 min before": 3,
+   "last minute before": 1,
+   "0-10 s after": 3,
+   "10-30 s after": 2,
+   "30 s-2 min after": 0,
+   "2+ min after": 0
+  },
+  "wnba": {
+   "30+ min before": 2,
+   "5-30 min before": 5,
+   "1-5 min before": 1,
+   "last minute before": 0,
+   "0-10 s after": 0,
+   "10-30 s after": 0,
+   "30 s-2 min after": 0,
+   "2+ min after": 0
+  },
+  "nba": {
+   "30+ min before": 1,
+   "5-30 min before": 3,
+   "1-5 min before": 1,
+   "last minute before": 0,
+   "0-10 s after": 1,
+   "10-30 s after": 1,
+   "30 s-2 min after": 0,
+   "2+ min after": 0
+  },
+  "ALL": {
+   "30+ min before": 78,
+   "5-30 min before": 55,
+   "1-5 min before": 50,
+   "last minute before": 30,
+   "0-10 s after": 27,
+   "10-30 s after": 8,
+   "30 s-2 min after": 3,
+   "2+ min after": 0
+  }
+ },
+ "maker": {
+  "mlb": {
+   "30+ min before": 45,
+   "5-30 min before": 39,
+   "1-5 min before": 12,
+   "last minute before": 9,
+   "0-10 s after": 16,
+   "10-30 s after": 16,
+   "30 s-2 min after": 26,
+   "2+ min after": 0
+  },
+  "nfl": {
+   "30+ min before": 31,
+   "5-30 min before": 73,
+   "1-5 min before": 24,
+   "last minute before": 31,
+   "0-10 s after": 2,
+   "10-30 s after": 14,
+   "30 s-2 min after": 16,
+   "2+ min after": 2
+  },
+  "cfb": {
+   "30+ min before": 27,
+   "5-30 min before": 35,
+   "1-5 min before": 14,
+   "last minute before": 6,
+   "0-10 s after": 7,
+   "10-30 s after": 3,
+   "30 s-2 min after": 4,
+   "2+ min after": 2
+  },
+  "nhl": {
+   "30+ min before": 6,
+   "5-30 min before": 0,
+   "1-5 min before": 4,
+   "last minute before": 0,
+   "0-10 s after": 1,
+   "10-30 s after": 6,
+   "30 s-2 min after": 2,
+   "2+ min after": 0
+  },
+  "wnba": {
+   "30+ min before": 2,
+   "5-30 min before": 9,
+   "1-5 min before": 1,
+   "last minute before": 1,
+   "0-10 s after": 1,
+   "10-30 s after": 0,
+   "30 s-2 min after": 1,
+   "2+ min after": 0
+  },
+  "nba": {
+   "30+ min before": 0,
+   "5-30 min before": 3,
+   "1-5 min before": 1,
+   "last minute before": 0,
+   "0-10 s after": 0,
+   "10-30 s after": 0,
+   "30 s-2 min after": 0,
+   "2+ min after": 0
+  },
+  "ALL": {
+   "30+ min before": 111,
+   "5-30 min before": 159,
+   "1-5 min before": 56,
+   "last minute before": 47,
+   "0-10 s after": 27,
+   "10-30 s after": 39,
+   "30 s-2 min after": 49,
+   "2+ min after": 4
+  }
+ }
+}

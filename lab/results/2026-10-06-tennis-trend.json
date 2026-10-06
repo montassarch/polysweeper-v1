@@ -1,0 +1,50 @@
+{
+ "Apr 6-12": {
+  "matches": 104,
+  "median_first99_vs_stamp_s": -192.5,
+  "share_99_after_stamp": 0.0,
+  "median_first995_vs_stamp_s": -39.0,
+  "inband_fills_after_stamp_per_match": 0.02,
+  "matches_with_inband_after_stamp": 0.01
+ },
+ "Jun 1-7": {
+  "matches": 98,
+  "median_first99_vs_stamp_s": -246.0,
+  "share_99_after_stamp": 0.0,
+  "median_first995_vs_stamp_s": 258.0,
+  "inband_fills_after_stamp_per_match": 0.0,
+  "matches_with_inband_after_stamp": 0.0
+ },
+ "Jul 20-26": {
+  "matches": 99,
+  "median_first99_vs_stamp_s": -89,
+  "share_99_after_stamp": 0.04,
+  "median_first995_vs_stamp_s": -25,
+  "inband_fills_after_stamp_per_match": 0.7,
+  "matches_with_inband_after_stamp": 0.01
+ },
+ "Aug 17-23": {
+  "matches": 107,
+  "median_first99_vs_stamp_s": -87,
+  "share_99_after_stamp": 0.03,
+  "median_first995_vs_stamp_s": -30,
+  "inband_fills_after_stamp_per_match": 0.07,
+  "matches_with_inband_after_stamp": 0.01
+ },
+ "Sep 14-20": {
+  "matches": 106,
+  "median_first99_vs_stamp_s": -82.0,
+  "share_99_after_stamp": 0.05,
+  "median_first995_vs_stamp_s": -34.5,
+  "inband_fills_after_stamp_per_match": 0.0,
+  "matches_with_inband_after_stamp": 0.0
+ },
+ "Sep 28-Oct 4": {
+  "matches": 106,
+  "median_first99_vs_stamp_s": -132.0,
+  "share_99_after_stamp": 0.01,
+  "median_first995_vs_stamp_s": -45.5,
+  "inband_fills_after_stamp_per_match": 0.0,
+  "matches_with_inband_after_stamp": 0.0
+ }
+}

@@ -1,0 +1,320 @@
+{
+ "MLB": {
+  "moneyline": {
+   "5": {
+    "fills_per_game": 0.23,
+    "games_with_fill": 9,
+    "games": 90
+   },
+   "10": {
+    "fills_per_game": 0.16,
+    "games_with_fill": 5,
+    "games": 90
+   },
+   "30": {
+    "fills_per_game": 0.02,
+    "games_with_fill": 1,
+    "games": 90
+   }
+  },
+  "spreads/totals": {
+   "5": {
+    "fills_per_game": 1.92,
+    "games_with_fill": 62,
+    "games": 90
+   },
+   "10": {
+    "fills_per_game": 1.2,
+    "games_with_fill": 44,
+    "games": 90
+   },
+   "30": {
+    "fills_per_game": 0.21,
+    "games_with_fill": 9,
+    "games": 90
+   }
+  },
+  "other": {
+   "5": {
+    "fills_per_game": 0.14,
+    "games_with_fill": 4,
+    "games": 90
+   },
+   "10": {
+    "fills_per_game": 0.11,
+    "games_with_fill": 4,
+    "games": 90
+   },
+   "30": {
+    "fills_per_game": 0.02,
+    "games_with_fill": 2,
+    "games": 90
+   }
+  }
+ },
+ "NHL": {
+  "moneyline": {
+   "5": {
+    "fills_per_game": 1.18,
+    "games_with_fill": 33,
+    "games": 92
+   },
+   "10": {
+    "fills_per_game": 0.62,
+    "games_with_fill": 25,
+    "games": 92
+   },
+   "30": {
+    "fills_per_game": 0.15,
+    "games_with_fill": 9,
+    "games": 92
+   }
+  },
+  "spreads/totals": {
+   "5": {
+    "fills_per_game": 0.57,
+    "games_with_fill": 23,
+    "games": 92
+   },
+   "10": {
+    "fills_per_game": 0.27,
+    "games_with_fill": 13,
+    "games": 92
+   },
+   "30": {
+    "fills_per_game": 0.05,
+    "games_with_fill": 4,
+    "games": 92
+   }
+  },
+  "other": {
+   "5": {
+    "fills_per_game": 0.0,
+    "games_with_fill": 0,
+    "games": 92
+   },
+   "10": {
+    "fills_per_game": 0.0,
+    "games_with_fill": 0,
+    "games": 92
+   },
+   "30": {
+    "fills_per_game": 0.0,
+    "games_with_fill": 0,
+    "games": 92
+   }
+  }
+ },
+ "NFL": {
+  "moneyline": {
+   "5": {
+    "fills_per_game": 1.06,
+    "games_with_fill": 5,
+    "games": 33
+   },
+   "10": {
+    "fills_per_game": 0.88,
+    "games_with_fill": 4,
+    "games": 33
+   },
+   "30": {
+    "fills_per_game": 0.0,
+    "games_with_fill": 0,
+    "games": 33
+   }
+  },
+  "spreads/totals": {
+   "5": {
+    "fills_per_game": 3.18,
+    "games_with_fill": 20,
+    "games": 33
+   },
+   "10": {
+    "fills_per_game": 3.09,
+    "games_with_fill": 20,
+    "games": 33
+   },
+   "30": {
+    "fills_per_game": 2.06,
+    "games_with_fill": 13,
+    "games": 33
+   }
+  },
+  "other": {
+   "5": {
+    "fills_per_game": 1.82,
+    "games_with_fill": 11,
+    "games": 33
+   },
+   "10": {
+    "fills_per_game": 1.82,
+    "games_with_fill": 11,
+    "games": 33
+   },
+   "30": {
+    "fills_per_game": 1.39,
+    "games_with_fill": 9,
+    "games": 33
+   }
+  }
+ },
+ "CFB": {
+  "moneyline": {
+   "5": {
+    "fills_per_game": 0.07,
+    "games_with_fill": 3,
+    "games": 131
+   },
+   "10": {
+    "fills_per_game": 0.06,
+    "games_with_fill": 2,
+    "games": 131
+   },
+   "30": {
+    "fills_per_game": 0.06,
+    "games_with_fill": 2,
+    "games": 131
+   }
+  },
+  "spreads/totals": {
+   "5": {
+    "fills_per_game": 0.39,
+    "games_with_fill": 17,
+    "games": 131
+   },
+   "10": {
+    "fills_per_game": 0.27,
+    "games_with_fill": 12,
+    "games": 131
+   },
+   "30": {
+    "fills_per_game": 0.21,
+    "games_with_fill": 10,
+    "games": 131
+   }
+  },
+  "other": {
+   "5": {
+    "fills_per_game": 0.1,
+    "games_with_fill": 4,
+    "games": 131
+   },
+   "10": {
+    "fills_per_game": 0.08,
+    "games_with_fill": 3,
+    "games": 131
+   },
+   "30": {
+    "fills_per_game": 0.05,
+    "games_with_fill": 2,
+    "games": 131
+   }
+  }
+ },
+ "WNBA": {
+  "moneyline": {
+   "5": {
+    "fills_per_game": 0.0,
+    "games_with_fill": 0,
+    "games": 24
+   },
+   "10": {
+    "fills_per_game": 0.0,
+    "games_with_fill": 0,
+    "games": 24
+   },
+   "30": {
+    "fills_per_game": 0.0,
+    "games_with_fill": 0,
+    "games": 24
+   }
+  },
+  "spreads/totals": {
+   "5": {
+    "fills_per_game": 0.0,
+    "games_with_fill": 0,
+    "games": 24
+   },
+   "10": {
+    "fills_per_game": 0.0,
+    "games_with_fill": 0,
+    "games": 24
+   },
+   "30": {
+    "fills_per_game": 0.0,
+    "games_with_fill": 0,
+    "games": 24
+   }
+  },
+  "other": {
+   "5": {
+    "fills_per_game": 0.12,
+    "games_with_fill": 2,
+    "games": 24
+   },
+   "10": {
+    "fills_per_game": 0.08,
+    "games_with_fill": 1,
+    "games": 24
+   },
+   "30": {
+    "fills_per_game": 0.08,
+    "games_with_fill": 1,
+    "games": 24
+   }
+  }
+ },
+ "NBA": {
+  "moneyline": {
+   "5": {
+    "fills_per_game": 1.83,
+    "games_with_fill": 1,
+    "games": 6
+   },
+   "10": {
+    "fills_per_game": 0.5,
+    "games_with_fill": 1,
+    "games": 6
+   },
+   "30": {
+    "fills_per_game": 0.17,
+    "games_with_fill": 1,
+    "games": 6
+   }
+  },
+  "spreads/totals": {
+   "5": {
+    "fills_per_game": 3.0,
+    "games_with_fill": 2,
+    "games": 6
+   },
+   "10": {
+    "fills_per_game": 2.67,
+    "games_with_fill": 2,
+    "games": 6
+   },
+   "30": {
+    "fills_per_game": 1.17,
+    "games_with_fill": 1,
+    "games": 6
+   }
+  },
+  "other": {
+   "5": {
+    "fills_per_game": 0.0,
+    "games_with_fill": 0,
+    "games": 6
+   },
+   "10": {
+    "fills_per_game": 0.0,
+    "games_with_fill": 0,
+    "games": 6
+   },
+   "30": {
+    "fills_per_game": 0.0,
+    "games_with_fill": 0,
+    "games": 6
+   }
+  }
+ }
+}

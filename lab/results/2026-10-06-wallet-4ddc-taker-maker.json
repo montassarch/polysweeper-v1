@@ -1,0 +1,66 @@
+{
+ "taker": {
+  "settled_buys": 921,
+  "lost": 2,
+  "shares": 139572,
+  "median_size": 100.0,
+  "by_timing_vs_polymarket_stamp": {
+   "30+ min before": {
+    "buys": 242,
+    "lost": 1
+   },
+   "5-30 min before": {
+    "buys": 273,
+    "lost": 1
+   },
+   "1-5 min before": {
+    "buys": 213,
+    "lost": 0
+   },
+   "last minute before": {
+    "buys": 62,
+    "lost": 0
+   },
+   "5-30 min after": {
+    "buys": 1,
+    "lost": 0
+   }
+  }
+ },
+ "maker": {
+  "settled_buys": 1371,
+  "lost": 3,
+  "shares": 122364,
+  "median_size": 42.02,
+  "by_timing_vs_polymarket_stamp": {
+   "30+ min before": {
+    "buys": 300,
+    "lost": 1
+   },
+   "5-30 min before": {
+    "buys": 451,
+    "lost": 1
+   },
+   "1-5 min before": {
+    "buys": 301,
+    "lost": 1
+   },
+   "last minute before": {
+    "buys": 149,
+    "lost": 0
+   },
+   "0-10 s after": {
+    "buys": 10,
+    "lost": 0
+   },
+   "10-60 s after": {
+    "buys": 33,
+    "lost": 0
+   },
+   "1-5 min after": {
+    "buys": 6,
+    "lost": 0
+   }
+  }
+ }
+}

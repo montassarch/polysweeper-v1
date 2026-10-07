@@ -1,0 +1,20 @@
+{
+ "updated": "2026-10-07T18:44:07+00:00",
+ "games": 0,
+ "at_0.98": {
+  "tries": 0,
+  "filled": 0,
+  "filled_on_loser": 0,
+  "filled_unresolved": 0,
+  "by_league_tries_filled_lost": {},
+  "loser_fills": []
+ },
+ "at_0.99": {
+  "tries": 0,
+  "filled": 0,
+  "filled_on_loser": 0,
+  "filled_unresolved": 0,
+  "by_league_tries_filled_lost": {},
+  "loser_fills": []
+ }
+}

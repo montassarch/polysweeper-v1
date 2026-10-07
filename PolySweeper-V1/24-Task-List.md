@@ -6,7 +6,7 @@ created: 2026-10-02
 
 # Master task list
 
-Back to [[V1-Home]] · Logic and audit: [[23-Bot-Logic-Spec-and-Audit]] · Test plan: [[07-Open-Questions-and-Next-Steps]]
+Back to [[V1-Home]] · Logic and audit: [[23-Bot-Logic-Spec-and-Audit]] · **Until 21 Oct: [[34-Fill-Scoreboard]]**
 
 One place for everything. Older notes keep their own checklists for context;
 this list is the one to follow. Owner = who does it.
@@ -24,11 +24,12 @@ owner plainly and propose a new date; never lower the bar to make a rule pass.
 - [x] (2026-10-05: rule `mlb_lead7` in shadow mode) MLB "lead 7+ after 8 innings" shadow rule (Research Hub focus #1). — **V1 session**
 - [ ] ~21 Oct: check NBA score order on settled games, then add NBA to `shadow_leagues.txt`. — **V1 session**
 - [ ] Small: HTML dashboard tabs don't list `mlb_lead7` yet (reviewer note). — **V1 session**
-- [ ] Best-wallet copy study: which sports, how many seconds after the end, what size (#10, #14). — **lab**
-- [ ] Finish the Sports WebSocket lag result; Flashscore lag test (#20). — **assistant / lab**
+- [x] (parked 2026-10-06: best wallet is a maker + fast in-play sniper, nothing copyable) Best-wallet copy study (#10, #14). — **lab**
+- [x] (rejected 2026-10-06: Flashscore ~42 s ahead but the band is gone 77 s earlier) Flashscore lag test (#20). — **lab**
+- [ ] Finish the Sports WebSocket lag result. — **assistant**
 - [x] (2026-10-05, ntfy topic in code/config.json) Phone alerts (free ntfy app). **Owner said yes 2026-10-05**, installing ntfy (Philipp Heckel, free, iPhone). Topic: `polysweeper-4463a025f72df6b3` (keep private; server ntfy.sh). Owner subscribes in the app; V1 builds the sender (stdlib HTTP POST to https://ntfy.sh/<topic>, alerts: no PC data 4 h, errors piling up, any pretend loss, crash/restart loop) and sends one test message. — **owner (subscribe) + V1 (build)**
 
-**By 17 Oct: choose the ONE rule to trade** (it needs 14 days of shadow mode before 1 Nov). — **both**
+**21 Oct: choose the ONE rule from [[34-Fill-Scoreboard]]** (owner 2026-10-07; was 17 Oct). Note: this leaves ~10 days of shadow mode before 1 Nov instead of 14, and the [[32-Go-Live-Checklist]] still needs 200+ pretend trades with 0 losses on that rule; if it can't be met by 31 Oct, propose a new date. — **both**
 
 **Weeks 2-3 (13-26 Oct): make it solid**
 - [ ] Full bug hunt on the chosen rule: red team + reviewer audit of the whole buy path. — **lab + V1**
@@ -49,12 +50,12 @@ owner plainly and propose a new date; never lower the bar to make a rule pass.
 ## Now: running test (Phase 1)
 
 **Speed plan (laptop session 2026-10-06; owner: "your project, make it work", full permission; goal 100% win rate, never below 98.5%):**
-- [ ] **0.999 queue test** (owner yes 2026-10-07 02:45): `lab/queue999.py` running on the laptop for 24 h (to ~2026-10-08 03:00 Tunisia), read-only, output LOCAL ONLY in `lab/data/raw/queue999/`. Question: if we rest a 5-share buy at 0.999 once a match is over, does it fill, and how fast? Next laptop session runs `py lab/queue999.py report` and writes the answer in that day's research note. First look: queues are big (Dodgers game ~1M shares at 0.999, LoL 45k).
+- [ ] **0.999 queue test** (owner yes 2026-10-07 02:45): `lab/queue999.py` running on the laptop (restarted 2026-10-07 04:00, to ~2026-10-08 03:00 Tunisia), read-only; raw output local in `lab/data/raw/queue999/`, **summary pushed every 3 h to `lab/results/queue999-summary.json`** (cloud lab can read it). Question: if we rest a 5-share buy at 0.999 once a match is over, does it fill, and how fast? Next laptop session writes the answer in that day's research note. Early: 0 of 7 filled (too few to judge). First look: queues are big (Dodgers game ~1M shares at 0.999, LoL 45k).
 - [ ] **Tennis end race** running on the laptop until ~2026-10-07 13:30 Tunisia (`lab/tennis_end_race.py`, output `lab/data/raw/tennis_end_race/` is LOCAL ONLY, git-ignored): next laptop session reads it and reports: ESPN "final" vs Polymarket "ended" (seconds), winner agreement, shares left at 0.96-0.995 at the ESPN moment. Write the result into today's research note so the lab sees it.
 - [ ] If ESPN is clearly faster and shares are left: propose a shadow rule "confirmed tennis" (ESPN final + Polymarket score agrees), owner decides.
-- [ ] CS2 second result source: research focus #5 in [[30-Research-Hub]].
+- [ ] CS2 (and every other traded sport) second result source: owner's focus #1 in [[30-Research-Hub]].
 - [ ] Two sources must agree for any real-money buy (Polymarket score + outside source).
-- [ ] Waiting orders before the end, and less-watched leagues where books stay non-empty longer: measure with end-window data.
+- [ ] Waiting (resting) orders: scoreboard rows 3 and 4; less-watched leagues where books stay non-empty longer.
 - [ ] If every free feed is too slow: tell the owner plainly (pay for a pro feed vs very few trades).
 
 - [x] Desktop app PolySweeper.exe: live view of shadow mode, built and tested on Windows by GitHub, installed by the autopilot ([[31-Desktop-App]])
@@ -70,7 +71,7 @@ owner plainly and propose a new date; never lower the bar to make a rule pass.
 - [x] (2026-10-04) "Today" results report live (double-click `code/report_shadow.bat`)
 - [x] Live feed + 2-second checks near the end + score log (shadow v2.6, [[29-Live-Feed-and-Score-Log]])
 - [x] (2026-10-04) Live feed on the PC: connected, 0 errors, 36/36 checks agree with the 15-second reads
-- [ ] First live end-window look (8 matches): 0 trades at 0.96-0.995 after the result, but all 8 had late-band trades (0.995-0.999, ~87,700 shares). Confirm over 1-2 days — **assistant**
+- [x] (confirmed 2026-10-07 on 358 matches: after-result money is at 0.999, [[R-2026-10-07]]) First live end-window look (8 matches): 0 trades at 0.96-0.995 after the result, but all 8 had late-band trades (0.995-0.999, ~87,700 shares). Confirm over 1-2 days — **assistant**
 - [x] (2026-10-05, [[R-2026-10-05]]) After 1-2 days: live end-window report: no gap after the result; market reacts ~1.5-2.5 min before Polymarket's score
 - [x] (done 2026-10-05) Save price and side of each after-result trade in end-window records (logging only) — **V1 session**
 - [ ] Per sport: find a free result source and measure its lag vs Polymarket's score (score log); need ~2 min faster — **assistant (lab)**
@@ -90,7 +91,7 @@ owner plainly and propose a new date; never lower the bar to make a rule pass.
 - [x] Team of agents, idea board and daily routines set up ([[30-Research-Hub]])
 - [x] Cloud network set to full trust (owner, 2026-10-03): agents can read web pages; live feed tested on the real server
 - [x] (2026-10-04) Exa connected on claude.ai (works in new chats and the PC chat; free credit only, never add a card)
-- [ ] Run `lab/official_end_recorder.py` on the laptop (MLB+NHL, ~6 h, read-only; pass bar 5+ shares at <=0.995 at "Final" in 30%+ of games) — **owner/laptop session** (2026-10-06)
+- [x] (duplicate: running since 2026-10-06 12:05, see Phase 1) Run `lab/official_end_recorder.py` on the laptop (MLB+NHL, ~6 h, read-only; pass bar 5+ shares at <=0.995 at "Final" in 30%+ of games) — **owner/laptop session** (2026-10-06)
 - [ ] Read the daily research note; tell the lab what to focus on — **owner** (whenever useful)
 - [x] (2026-10-05, owner) New idea agent `ps-ideas` (effort max, skill `idea-methods`): 15+ ideas a day, top 3-5, one pick for research
 - [x] (2026-10-05, owner) Research agent refocused: deep dives on data, news and trends, effort max
@@ -102,8 +103,8 @@ owner plainly and propose a new date; never lower the bar to make a rule pass.
 - [x] (2026-10-04) #10 profitable wallets, first pass ([[R-2026-10-04-wallets]])
 - [x] (2026-10-04 12:33 UTC) US sports (MLB, NFL, college football, NHL) added to shadow mode; PC restarted fine
 - [ ] Rebuild the game situation at each buy of the best US-sports wallet: which situations never lose? — **assistant (lab)**
-- [ ] Decide: add shadow-only MLB rule "lead 7+ after 8 innings" (Stats API live feed, lead ≥7 + runners on base, no buy if price <0.98, game-ID match) — **owner, then V1**
-- [ ] Lab next: #18 paid UMA proposer: whitelist path, then a 3-day shadow proposer log (no wallet) — **assistant (lab)**
+- [x] (done 2026-10-05: `mlb_lead7`) Decide: add shadow-only MLB rule "lead 7+ after 8 innings" (Stats API live feed, lead ≥7 + runners on base, no buy if price <0.98, game-ID match) — **owner, then V1**
+- [ ] (parked until after 21 Oct) Lab: #18 paid UMA proposer: whitelist path, then a 3-day shadow proposer log (no wallet) — **assistant (lab)**
 - [x] Overwatch post-result asks verified (2026-10-05): Bo3/BO5 score artefact; scorecheck fixed
 - [x] Live locked-lines watcher on NFL (2026-10-04): nothing for sale on the winner; idea #17 rejected
 - [x] (done 2026-10-04 by V1 session, no need for the lab) **Morning of 2026-10-05 (owner OK given):** fix `report_shadow.bat` crash on team names with hidden characters (UnicodeEncodeError, cp1252 console): in `shadow_report.py` `main()` add `sys.stdout.reconfigure(encoding="utf-8", errors="replace")`, run tests, push (restarts shadow mode once) — **lab fixer (05:17 run)**
@@ -111,7 +112,7 @@ owner plainly and propose a new date; never lower the bar to make a rule pass.
 ## Next: compare with the late band (Phase 2)
 
 - [x] Record prices up to 0.999 and check results there too (logging only)
-- [ ] Analyse the late band (0.995-0.999) on the same matches — **assistant**
+- [ ] Analyse the late band (0.995-0.999) on the same matches — now the 0.999 queue test (scoreboard row 3) — **assistant**
 - [ ] Compare both bands: trades/day, fills, thin/junk skips, losses, profit/trade, time to payout — **assistant**
 - [ ] Decide which band(s) the real bot uses — **owner**
 
@@ -144,7 +145,7 @@ owner plainly and propose a new date; never lower the bar to make a rule pass.
 - [ ] Market veto: skip a "confirmed" winner that still trades below 0.90 after the end — **assistant**
 - [ ] UMA watcher: log proposals and disputes for watched markets — **assistant**
 - [ ] Event-based exit (sell only on a UMA proposal against us, a dispute or a source correction) — test with shadow data — **assistant**
-- [x] Resting buy orders: dropped 2026-10-03 (after the result buyers already offer 0.99-0.999 in 27 of 27 matches; before it, fills come when we are wrong)
+- [ ] Resting buy orders: dropped 2026-10-03, **reopened 2026-10-07** (after-result money goes to resting 0.999 bids; late US games at 0.98+): scoreboard rows 3 and 4 — **lab**
 - [ ] Settlement cross-check after every payout (our result vs Polymarket's) — **assistant**
 - [ ] Duplicate-fixture check and rules-text reader — **assistant**
 - [x] Websocket price feed (built into shadow mode v2.6, measuring only)

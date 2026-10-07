@@ -10,61 +10,47 @@ Back to [[V1-Home]] · Task list: [[24-Task-List]] · Why we look for new ideas:
 
 An automated research team that works every day, writes its findings here, and never trades.
 
-## The target: "scraps"
+## The target
 
-About **$0.01 or more per trade, 40-50 trades a day, zero losses**.
+- **Owner's bar (2026-10-06): 100% wins, never below 98.5%.** Break-even win rate is about the buy price, so
+  98.5% only profits when buying at about 0.98 or lower; at 0.999 a single loss wipes out ~1,000 wins.
+- An idea only counts if a loss is *structurally* near impossible, not just rare, and it must get **real fills**
+  (enough shares, not taken first by faster bots).
+- Minimum order 5 shares. Profit grows only with order size and number of matches.
 
-- The minimum order is 5 shares. To make $0.01 on 5 shares, you buy at 0.998 or less (after fees).
-- One loss at 0.998 wipes out about 500 wins. So an idea only counts if a loss is *structurally*
-  near impossible, not just rare.
-- At 5 shares, 50 trades a day make about $0.50. More profit needs bigger orders, which needs
-  enough shares for sale. So every test measures **how many shares** are really available.
+## Until 21 October: one question (owner 2026-10-07)
+
+**"Which method gets filled with zero losses?"** Table and verdicts: [[34-Fill-Scoreboard]], updated daily by the
+tester; the 17:00 phone summary starts with it. Every run works on a scoreboard row first.
+
+- **21 Oct:** a method with a YES (200+ pretend fills, 0 losses, the Go-Live bar) goes to a tiny real-money test, owner decides.
+  None: rethink the approach.
+- **1 Nov:** first real money, $20, only with the owner's yes (plan: [[24-Task-List]], "Road to real money").
+- Facts as of 7 Oct: buying during play does not pay; cheap asks after a result are gone within seconds;
+  the safe after-result money is at 0.999 and goes to resting buy orders, but the 0.999 queue is long
+  ([[R-2026-10-07]], test `lab/queue999.py`, summary in `lab/results/queue999-summary.json`).
+
+## Owner's focus (serves the question above)
+
+1. **Second result source for every sport we would trade (owner 2026-10-06; now required for 0.999):**
+   Polymarket's score is wrong ~1 in 4,000, and at 0.999 one loss costs ~1,000 wins. Football (ESPN), Dota 2
+   (OpenDota) done; tennis (ESPN, test running on the laptop), MLB/NHL official feeds (recorder running).
+   Still needed: CS2, LoL, Valorant and the rest. For each source: free or paid (price), key needed, terms allow
+   automated use, coverage of Polymarket's matches, how fast it says "finished". Research only; nothing paid
+   without the owner's yes.
+2. **Resting (maker) orders:** queue size at 0.999 and 0.98-0.99, how fast it refills, who gets filled, and
+   when fills happen on the side that then loses (adverse selection). Scoreboard rows 3 and 4.
+3. One brand-new angle per run, only if it answers the question.
+
+Parked until after 21 Oct: #18 paid UMA proposer, MCP servers side task (done 2026-10-06, re-check monthly,
+see [[R-2026-10-06]]). Answered: "almost certain" in-play moments (only MLB lead 7+ after 8 survives, now
+shadow rule `mlb_lead7`); Flashscore lag (rejected, #20); markets certain by another result (merged into #17).
 
 ## The team
 
-| Agent | Job |
-|---|---|
-| **Lead** (the daily routine) | Runs the team, writes the daily note, updates this board, saves to GitHub |
-| **ps-researcher** | The most important one: searches the web, open-source bots, papers and Polymarket's own data for new approaches; writes "idea cards" |
-| **ps-red-team** | Attacks every idea: how could it lose money? Verdict: reject / test with guards / promising |
-| **ps-tester** | Measures ideas on real Polymarket data (small scripts in the `lab` folder, outside `code`, so the PC is not restarted) |
-| **ps-analyst** | Reads the shadow-mode data from the owner's PC: results, live feed, score log, errors |
-| **ps-fixer** | Health check: tests, errors, is the PC still sending data? Fixes bugs under strict safety rules |
-
-Role files: `.claude/agents/ps-*.md` in the repo.
-
-**Schedule (Tunisia time):**
-- Every day at 05:17: full lab run, with all agents and a new daily note.
-- Every day at 17:43: health check (fixer and analyst).
-
-The owner gets a short summary on their phone after each run.
-
-## Road to 1 November (owner, 2026-10-05): goes first
-
-Real money starts **1 Nov 2026 with $20** (plan: [[24-Task-List]], "Road to real money"). Lab priorities until then: (1) best-wallet copy study for US sports after the end (#10/#14): sports, seconds after the end, sizes, fills/day at ~0.99; (2) Flashscore lag test (#20); (3) from mid-October, red-team the chosen rule and its whole buy path.
-
-## Owner's focus for the next runs (set 2026-10-05)
-
-The lab reads this first and puts these ahead of its own picks. Ideas that need **no speed race** come first.
-
-0. **Until 2026-10-21 (owner 2026-10-07): one question, "Which method gets filled with zero losses?"** Table and verdicts: [[34-Fill-Scoreboard]], updated daily by the tester; the phone summary shows it. Everything below serves that question.
-
-1. **"Almost certain" moments (new, owner 2026-10-05):** the safe rules made 0 buys because the 0.96-0.995 band empties ~74 s before Polymarket's score says "ended" and ~40 s before the free Sports WebSocket does (R-2026-10-05). Fast bots buy at match point / last round. Using the PC's score log (`code/data/shadow/daily/`, both books at every score change), end windows and the 7 losses, find per sport the in-play situations (tennis: sets and games ahead, serving; CS2/Valorant/LoL: maps and rounds ahead; US sports: lead and time left) where (a) shares were still for sale in our band and (b) the leader never lost, with enough cases to bound the loss rate. Pass bar: loss rate clearly below the ~1 in 30 that breaks even at 0.97 (aim for 1 in 1,000+), checked on public history too (#15 found baseball 9th-inning leads of 4+ still lose ~1 in 300-1,000). Report the rule, the count, and how many shares/day it would buy. Red team it before any shadow rule. **Answered 2026-10-05 ([[R-2026-10-05]]):** in-play prices are fair (tennis, CS2, LoL/Dota, NFL states in our band lose 1 in 6 to 1 in 70). Only MLB lead 7+ after 8 innings survives (0 in 5,408 games); supply ~3 of 81 games; shadow-rule candidate.
-2. **#20 Flashscore lag test (owner 2026-10-05):** in the cloud, never on the owner's PC, watch ~20 live matches on Flashscore (tennis and CS2 first) and log the moment it shows the final point/round and "finished", next to the Polymarket Sports WebSocket (`wss://sports-api.polymarket.com/ws`) and the winner's book. Pass bar: Flashscore at least 60-90 s ahead of Polymarket's score field AND ahead of the moment our 0.96-0.995 band empties; otherwise drop it. Also note how often its score was corrected. Measuring only; no browser robot is built for the bot unless it passes.
-3. **#11 Markets made certain by another result** (e.g. a map market after the series is already won): do they stay cheap, and what do the rules say about matches not played?
-4. **#18 Paid UMA proposer:** whitelist path, then the 3-day shadow proposer log.
-5. **Second result source for CS2 and tennis (owner 2026-10-06):** these two caused 7 of 8 price_only losses and today rely on Polymarket's score alone (ESPN covers football, OpenDota Dota 2, official MLB/NHL feeds are being tested). Find a free, reliable, machine-readable source that says "match over + winner" for CS2 (e.g. GRID open data, PandaScore free tier, Valve/tournament APIs, Liquipedia API, bo3.gg, HLTV scrapers' terms) and tennis (e.g. ATP/WTA/ITF live feeds, Sofascore/Flashscore public endpoints, ESPN tennis). For each: free or paid (price), key needed, terms allow automated use, coverage (which tournaments Polymarket lists), and how fast it says "finished" vs Polymarket's score/ended flag (measure on a few live matches in the cloud). Research only; nothing paid without the owner's yes.
-6. Still one brand-new out-of-the-box angle per run.
-
-**Side task (owner 2026-10-06, keep aside, small; do it once in the next research run, then re-check monthly):
-MCP servers that would really help PolySweeper.** Search GitHub (and the official MCP registry / Anthropic's
-lists) for MCP servers useful here: faster live sports results, sports data, Polymarket/prediction-market *read-only*
-data, market news, data analysis. Only list ones that are **popular and trusted**: high GitHub stars (aim 1,000+; say
-the number), many users, updated in the last 3 months, a known owner (official company, Anthropic, or well-known
-developer), open code. **Reject** anything that places orders, holds wallet keys or private keys, needs a paid plan
-(note any price), or looks new/unknown/scammy. Write a short table in the day's note (name, link, stars, last update,
-owner, what it gives us, free or paid, verdict) and one line on the idea board. **Research only: never install;**
-the owner decides.
+Split schedule, one agent per run (Tunisia time): 01:00 analyst, 05:00 ideas (Mon + Thu), 09:00 researcher,
+13:00 red team (odd days), 17:00 tester + phone summary, 21:00 health check (even days). ps-reviewer checks every
+`code/` change before it goes to main. Steps: `.claude/lab-run.md`; role files: `.claude/agents/ps-*.md`.
 
 ## Idea board
 
@@ -104,6 +90,7 @@ The lab updates this table every day. Every rejected or parked idea also goes in
 
 Folder `Research/`, one note per day: `R-<date>`. Newest first:
 
+- [[R-2026-10-07]] — 0.999 after-result money goes to resting buy orders; queue test started; one-question goal and scoreboard
 - [[R-2026-10-06]] — wallet study (nothing to copy), Flashscore lag fails, slow-arena sweep safe on Quebec (21/21) but tiny; official-feed finish rule is the next candidate
 - [[R-2026-10-05]] — daily run + evening "almost certain moments" study (only MLB 7+ after 8 survives): Overwatch Bo3/BO5 score bug fixed; UMA window and liquidity rewards rejected; new #18 paid UMA proposer (shadow test)
 - [[R-2026-10-04]] — daily run: locked lines (2,270/2,270 correct, but ~nothing at 0.99 after the safe moment); crypto rejected; win model parked; lab made leaner

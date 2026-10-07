@@ -32,7 +32,7 @@ ps-fixer under its rules.
 2. **05:00 Ideas (Monday and Thursday only, owner 2026-10-06: ideas pile up faster than they can be tested):** ps-ideas (effort max). Section "New ideas": raw list (one line each, kept or kill reason),
    top 3-5 cards, and a line `Pick for research: <idea>`. Until 2026-10-21 only ideas that could get real fills with 0 losses (scoreboard question). Add the top cards to the idea board in
    `30-Research-Hub.md` with status "new".
-3. **09:00 Research:** ps-researcher (effort max) with today's UTC date, the "Road to 1 Nov" priorities below,
+3. **09:00 Research:** ps-researcher (effort max) with today's UTC date,
    the scoreboard (`34-Fill-Scoreboard.md`: work on the most promising NOT YET row first), the hub's "Owner's focus" list, the analyst's key numbers and the ideas pick from today's note (on days with no ideas run: the most
    promising untested idea on the hub's idea board, status "new" or "promising"); load the
    `polymarket-data` skill. Sections "Road to 1 Nov" (2-4 lines, put at the top of the note), "News and
@@ -99,15 +99,12 @@ ps-fixer under its rules.
 
 ## Road to 1 November (owner decision 2026-10-05: real money starts 1 Nov 2026 with $20)
 
-Plan: `PolySweeper-V1/24-Task-List.md`, section "Road to real money". Until then the lab's priorities are,
-ahead of everything else (including the hub's "Owner's focus" list):
-1. **Best-wallet copy study, US sports after the end (#10/#14):** which sports, how many seconds after the
-   end, what sizes, and how many fills a day we could really get at about 0.99.
-2. **Flashscore lag test (#20):** how many seconds before Polymarket's score / the sports websocket does a
-   free score site show the result?
-3. **From mid-October:** red-team the one chosen rule and its whole buy path (data source → decision →
-   order → settlement).
-Every daily note starts with a section **"Road to 1 Nov"** (2-4 lines: where each priority stands), before the
+Plan: `PolySweeper-V1/24-Task-List.md`, section "Road to real money". **Since 2026-10-07 the priority is the
+one-question goal above (`34-Fill-Scoreboard.md`), ahead of everything else.** The 21 Oct scoreboard verdict picks
+the rule; from then until 1 Nov: red-team that one rule and its whole buy path (data source → decision → order →
+settlement). Done or dropped: best-wallet copy study (#10, parked 10-06: nothing copyable), Flashscore lag (#20,
+rejected 10-06).
+Every daily note starts with a section **"Road to 1 Nov"** (2-4 lines: scoreboard verdicts and days left to 21 Oct), before the
 summary for the owner.
 
 ## Keep usage low (owner, 2026-10-04: "use less, but stay productive")

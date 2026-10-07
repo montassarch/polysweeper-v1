@@ -8,6 +8,11 @@ created: 2026-10-02
 
 Back to [[V1-Home]] · Logic and audit: [[23-Bot-Logic-Spec-and-Audit]] · Tasks: [[24-Task-List]] · Risks: [[03-Risks]]
 
+> **What changed since (2026-10-07):** buying during play has no edge (price_only 370 trades, 12 losses, ~+$0.35).
+> After a result, cheap asks are gone within seconds; the safe money is at 0.999 and goes to **resting buy orders**
+> (section on resting orders below was "dropped 2026-10-03": reopened, see [[34-Fill-Scoreboard]] rows 3-4).
+> Shadow rules now: price_only (with score veto), score, confirmed, mlb_lead7. Current goal: [[34-Fill-Scoreboard]].
+
 A living section for one goal: **win almost every trade, and make the rare loss
 as small and as rare as possible.** New ideas get added at the bottom; tested
 ideas move up with their result.

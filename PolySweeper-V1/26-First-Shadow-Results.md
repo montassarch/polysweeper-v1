@@ -8,6 +8,10 @@ created: 2026-10-03
 
 Back to [[V1-Home]] · Task list: [[24-Task-List]] · Shadow mode: [[21-Shadow-Mode-v2]]
 
+> **What changed since (2026-10-07):** these were the first 10 trades. Now: price_only 370 settled, 358 wins,
+> 12 losses, ~+$0.35 (comebacks in tennis and CS2); score rule 1 win; confirmed 0 buys; 358 end windows show the
+> after-result money is at 0.999 via resting buy orders ([[R-2026-10-07]]). Current goal: [[34-Fill-Scoreboard]].
+
 These are pretend trades only. No real money was used.
 
 ## What happened

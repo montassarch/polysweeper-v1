@@ -45,7 +45,7 @@ One question for the whole lab: **"Which method gets filled with zero losses?"**
 - If an idea needs 24/7 live data from the owner's PC, describe the exact measurement-only addition
   to shadow mode (no buying logic), and the lead decides.
 - Give the lead the numbers to update `34-Fill-Scoreboard.md` (row, fills, losses, money per day,
-  YES / NO / NOT YET). A YES needs 50+ pretend fills with 0 losses.
+  YES / NO / NOT YET). A YES needs 200+ pretend fills with 0 losses (Go-Live Checklist bar).
 - Data only on the owner's laptop (git-ignored `lab/data/raw/`) is not visible in the cloud: use what
   the laptop session wrote in the research notes.
 - Never place orders or touch wallets.

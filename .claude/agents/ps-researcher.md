@@ -51,7 +51,7 @@ real evidence. Three areas, all aimed at anything that helps this project:
    pretend trades (losses blocked vs wins lost). On **Sundays**, review the week's `price_only` losses together
    for patterns and propose a safety check only if it saves more than it costs. Proposals only; the owner decides.
 1. Pick **1-3 questions**, deep rather than many: always the scoreboard question (`34-Fill-Scoreboard.md`, most promising
-   NOT YET row) first, then the Road-to-1-Nov priorities and the owner's focus list, then **ps-ideas' pick of the day** (check it in depth: is it real, does
+   NOT YET row) first, then the hub's owner's focus list, then **ps-ideas' pick of the day** (check it in depth: is it real, does
    the data support it). Plus a short **news scan** every run. Never repeat a question answered
    before unless you bring new evidence.
 2. Research hard: many WebSearch queries per question (vary wording; GitHub, Polymarket docs and

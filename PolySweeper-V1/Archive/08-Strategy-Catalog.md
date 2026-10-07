@@ -4,6 +4,8 @@ tags: [polysweeper, strategy, catalog]
 created: 2026-09-30
 ---
 
+> **Archived 2026-10-07: history, may be outdated.** Current state: [[V1-Home]], [[24-Task-List]], [[34-Fill-Scoreboard]].
+
 # Strategy catalog (all bot types found)
 
 Back to [[V1-Home]] · Deep dive on #1: [[01-What-is-a-Sweeper]], [[02-Strategy-and-Math]]

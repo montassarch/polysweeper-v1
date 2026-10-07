@@ -4,6 +4,8 @@ tags: [polysweeper, results, dota2, backtest]
 created: 2026-10-01
 ---
 
+> **Archived 2026-10-07: history, may be outdated.** Current state: [[V1-Home]], [[24-Task-List]], [[34-Fill-Scoreboard]].
+
 # Results check: Dota 2 with true end times
 
 Back to [[V1-Home]] · Data sources: [[12-Data-Sources]] · Earlier backtests: [[15-First-Real-Backtest]]

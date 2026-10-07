@@ -4,6 +4,8 @@ tags: [polysweeper, backtest, football, shadow]
 created: 2026-09-30
 ---
 
+> **Archived 2026-10-07: history, may be outdated.** Current state: [[V1-Home]], [[24-Task-List]], [[34-Fill-Scoreboard]].
+
 # Football results and shadow mode
 
 Back to [[V1-Home]] · Esports results: [[15-First-Real-Backtest]] · Code overview: [[13-Code-Overview]]

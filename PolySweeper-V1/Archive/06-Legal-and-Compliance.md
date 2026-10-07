@@ -4,6 +4,8 @@ tags: [polysweeper, legal]
 created: 2026-09-30
 ---
 
+> **Archived 2026-10-07: history, may be outdated.** Current state: [[V1-Home]], [[24-Task-List]], [[34-Fill-Scoreboard]].
+
 # Legal and compliance
 
 > **2026-10-03:** the owner handles legal, venue-access and funding questions

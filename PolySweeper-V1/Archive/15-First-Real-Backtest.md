@@ -4,6 +4,8 @@ tags: [polysweeper, backtest, results, esports]
 created: 2026-09-30
 ---
 
+> **Archived 2026-10-07: history, may be outdated.** Current state: [[V1-Home]], [[24-Task-List]], [[34-Fill-Scoreboard]].
+
 # First real backtest: esports (2026-08-20 to 2026-09-30)
 
 Back to [[V1-Home]] · Findings so far: [[14-Real-Data-Findings]] · Plan: [[11-V1-Plan-Simple]]

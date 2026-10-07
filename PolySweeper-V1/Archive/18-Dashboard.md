@@ -4,6 +4,8 @@ tags: [polysweeper, dashboard]
 created: 2026-10-01
 ---
 
+> **Archived 2026-10-07: history, may be outdated.** Current state: [[V1-Home]], [[24-Task-List]], [[34-Fill-Scoreboard]].
+
 # Dashboard
 
 Back to [[V1-Home]] · Shadow mode: [[17-Run-Shadow-On-Your-PC]] · Results so far: [[16-Football-Results-and-Shadow-Mode]]

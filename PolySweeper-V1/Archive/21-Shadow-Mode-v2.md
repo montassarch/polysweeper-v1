@@ -4,6 +4,8 @@ tags: [polysweeper, shadow, results]
 created: 2026-10-01
 ---
 
+> **Archived 2026-10-07: history, may be outdated.** Current state: [[V1-Home]], [[24-Task-List]], [[34-Fill-Scoreboard]].
+
 # Shadow mode v2: testing the real rule
 
 Back to [[V1-Home]] · Football check: [[20-Results-Check-Football]] · Dota check: [[19-Results-Check-Dota]] · Dashboard: [[18-Dashboard]]

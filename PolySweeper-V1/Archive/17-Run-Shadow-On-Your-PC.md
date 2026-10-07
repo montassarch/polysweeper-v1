@@ -4,6 +4,8 @@ tags: [polysweeper, shadow, setup, windows]
 created: 2026-09-30
 ---
 
+> **Archived 2026-10-07: history, may be outdated.** Current state: [[V1-Home]], [[24-Task-List]], [[34-Fill-Scoreboard]].
+
 # Run shadow mode on your own computer (Windows)
 
 Back to [[V1-Home]] · What it is: [[16-Football-Results-and-Shadow-Mode]]

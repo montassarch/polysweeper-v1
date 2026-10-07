@@ -4,6 +4,8 @@ tags: [polysweeper, tech, api]
 created: 2026-09-30
 ---
 
+> **Archived 2026-10-07: history, may be outdated.** Current state: [[V1-Home]], [[24-Task-List]], [[34-Fill-Scoreboard]].
+
 # Technical stack
 
 Back to [[V1-Home]] · Related: [[03-Risks]]

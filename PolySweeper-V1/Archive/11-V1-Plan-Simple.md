@@ -4,6 +4,8 @@ tags: [polysweeper, plan, v1, risk, backtest]
 created: 2026-09-30
 ---
 
+> **Archived 2026-10-07: history, may be outdated.** Current state: [[V1-Home]], [[24-Task-List]], [[34-Fill-Scoreboard]].
+
 # V1 plan (plain language)
 
 Back to [[V1-Home]] · Idea: [[10-After-Match-Sweeper-Brainstorm]] · Data: [[12-Data-Sources]]

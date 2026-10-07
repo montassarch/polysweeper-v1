@@ -4,6 +4,8 @@ tags: [polysweeper, results, football, backtest]
 created: 2026-10-01
 ---
 
+> **Archived 2026-10-07: history, may be outdated.** Current state: [[V1-Home]], [[24-Task-List]], [[34-Fill-Scoreboard]].
+
 # Results check: football against ESPN
 
 Back to [[V1-Home]] · Dota 2 version: [[19-Results-Check-Dota]] · Data sources: [[12-Data-Sources]]

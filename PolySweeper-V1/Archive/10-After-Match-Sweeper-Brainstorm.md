@@ -4,6 +4,8 @@ tags: [polysweeper, brainstorm, sports, architecture]
 created: 2026-09-30
 ---
 
+> **Archived 2026-10-07: history, may be outdated.** Current state: [[V1-Home]], [[24-Task-List]], [[34-Fill-Scoreboard]].
+
 # Brainstorm: the "after-the-match" sweeper
 
 Back to [[V1-Home]] · Sports background: [[09-Sports-Markets]] · Risks: [[03-Risks]]

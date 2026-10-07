@@ -4,6 +4,8 @@ tags: [polysweeper, data, findings]
 created: 2026-09-30
 ---
 
+> **Archived 2026-10-07: history, may be outdated.** Current state: [[V1-Home]], [[24-Task-List]], [[34-Fill-Scoreboard]].
+
 # Real data findings (first look, 2026-09-30)
 
 Back to [[V1-Home]] · Plan: [[11-V1-Plan-Simple]] · Data: [[12-Data-Sources]]

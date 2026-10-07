@@ -8,55 +8,7 @@ created: 2026-09-30
 
 Back to [[V1-Home]].
 
-## 2026-09-30
-
-1. Checked GitHub connection: session authenticated as `montassarch`.
-2. Attached repo `montassarch/polysweeper-v1` (was empty, **public**).
-3. Tried to create `Polysweep-V2` (private) from the session. **Failed**:
-   GitHub returned `403 Resource not accessible by integration`. The
-   integration cannot create repos; must be created manually at
-   https://github.com/new.
-4. Goal stated: deep research on the **Polymarket sweeper bot**, with zero
-   prior knowledge. Everything discussed should be saved as Markdown in an
-   Obsidian-compatible vault, pushed to a **private** GitHub repo.
-5. Research done via web search (see [[Sources]]). Direct page fetches were
-   blocked by the environment's network policy.
-6. Notes written: [[01-What-is-a-Sweeper]] through
-   [[07-Open-Questions-and-Next-Steps]].
-
-## Blockers at time of writing
-
-- `polysweeper-v1` was still **public** → user must switch to private
-  (Settings → General → Danger Zone → Change visibility).
-- Pushing from the session was refused: Claude GitHub App not installed on
-  the repo (https://github.com/apps/claude/installations/select_target).
-- Notes are committed locally only until both are fixed.
-
-## Later in 2026-09-30
-
-- Pushed notes to the now-private repo; installed Obsidian Git plugin.
-- Listed 13 strategy types ([[08-Strategy-Catalog]]); focused on sports
-  ([[09-Sports-Markets]]).
-- Brainstormed the after-the-match sweeper
-  ([[10-After-Match-Sweeper-Brainstorm]]).
-- Owner answered setup questions; wrote [[11-V1-Plan-Simple]] and
-  [[12-Data-Sources]]. Found: Tunisia listed accessible; 50/50 resolution
-  rule for forfeits/cancellations; fee is tiny near 0.99; price history has
-  no depth data.
-
-## 2026-10-01
-
-- Built dashboard (snapshot and 15-second live mode), Dota 2 results check
-  (OpenDota) and football results check (ESPN); found and fixed the extra-time
-  and wrong-team traps.
-- Shadow mode v2: confirmed-result rule alongside price only.
-- Reviewed the PolySweeper V2 white paper (now in the V2 research project).
-- Agreed test plan: test our rules first, then the late band,
-  then compare (see [[07-Open-Questions-and-Next-Steps]]).
-- Wrote the full bot logic and audit ([[23-Bot-Logic-Spec-and-Audit]]); fixed
-  A1-A5 in shadow mode (crash guard, batched reads, fresh match states, late-band
-  logging, junk-book filter). Owner connected MetaMask to UMA: wallet safety
-  notes added to [[03-Risks]].
+Older entries (2026-09-30 to 2026-10-01): [[00-Session-Log-2026-09-30-to-10-01]]
 
 ## 2026-10-03
 
@@ -175,3 +127,4 @@ Back to [[V1-Home]].
 - 2026-10-07 03:00 Tunisia, laptop session: **owner said yes: one shared lab goal until 2026-10-21, "Which method gets filled with zero losses?"** New [[34-Fill-Scoreboard]] (7 methods, verdict YES/NO/NOT YET); tester updates it daily and the 17:00 phone summary starts with it; ideas only if they answer the question. lab-run.md and Research Hub updated. On 21 Oct: a YES method goes to a tiny real-money test (owner decides), otherwise rethink. Correction: the lab had already studied resting bids at 0.96-0.99 (R-2026-10-06 lead E); new tonight is the size of the 0.999 after-result money.
 - 2026-10-07 03:15 Tunisia, laptop session: owner asked if the agent instructions fit the goal. Review found them out of date: they framed 0.999 only as competitors (not as the resting-order money), thought only in taker buys, still said "0 of 32" end windows, the analyst skipped `mlb_lead7`, ideas asked for 5 non-sports ideas instead of the fill question. Fixed: a shared "Current goal and picture" block in ps-ideas, ps-researcher, ps-tester, ps-red-team (scoreboard question, 0.999 maker facts, maker risks); analyst reports mlb_lead7 and scoreboard rows; tester feeds the scoreboard. Effort levels unchanged.
 - 2026-10-07 03:20 Tunisia, laptop session: **owner: always be truthful, even when the answer is unwelcome.** Added as the first working rule in CLAUDE.md (all sessions and lab agents read it).
+- 2026-10-07 03:35 Tunisia, laptop session: **owner said yes to a vault clean-up.** 14 outdated early notes (04, 06, 07, 08, 10, 11, 14-21) moved to `PolySweeper-V1/Archive/` with an "archived, may be outdated" banner (nothing deleted, wikilinks still work); session-log entries 2026-09-30 to 10-01 moved to `Archive/00-Session-Log-2026-09-30-to-10-01.md`; [[V1-Home]] rewritten (living notes / background / archive, status as of 10-07). 13-Code-Overview stays (code/README.md points to it).

@@ -12,11 +12,12 @@ simulate a 5-share buy joining the back of the 0.999 queue at two moments:
   t_999  first poll with a 0.999 bid on that side   (earlier, NOT safe: for comparison only)
 Filled when taker SELL shares at 0.999 after that moment exceed the queue ahead + 5. Cancels ahead of us are
 ignored, so the fill estimate is cautious.
-Result: lab/data/raw/queue999/<utc date>.jsonl, one line per match.
+Result: lab/data/raw/queue999/<utc date>.jsonl, one line per match (local only). Every 3 h and at the end, a small
+summary goes to lab/results/queue999-summary.json and is committed and pushed (that file only), so the cloud lab sees it.
   py lab/queue999.py [hours=24]        measure (stop with Ctrl-C)
   py lab/queue999.py report            summary of everything recorded so far
 """
-import json, sys, time
+import json, subprocess, sys, time
 from datetime import datetime, timezone
 from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
@@ -30,6 +31,7 @@ OUT.mkdir(parents=True, exist_ok=True)
 SHARES = 5
 meta = {}    # market id -> {"cid", "tokens", "title", "league"}
 recs = {}    # market id -> {"polls": {token: [[t, ended, q999, best_bid, best_ask], ...]}, "t_end", "seen"}
+done = set()  # market ids already written
 
 
 def market_meta(mid):
@@ -52,6 +54,8 @@ def poll():
     now = time.time()
     tok2 = {}
     for m in live.get("markets", []):
+        if m["mid"] in done:   # already measured; shadow mode may keep listing it for a while
+            continue
         mm = market_meta(m["mid"])
         if not mm:
             continue
@@ -117,6 +121,7 @@ def simulate(polls, sells, t0):
 
 def finish(mid):
     r, mm = recs.pop(mid), meta.get(mid)
+    done.add(mid)
     if not mm or not r["polls"]:
         return
     start = int(min(p[0] for ps in r["polls"].values() for p in ps)) - 5
@@ -137,21 +142,62 @@ def finish(mid):
     print("done", r["league"], r["title"][:50], [(s["outcome"], s["at_end"]) for s in sides], flush=True)
 
 
-def report():
+def summary():
     rows = [json.loads(l) for f in sorted(OUT.glob("*.jsonl")) for l in open(f, encoding="utf-8")]
+    out = {"updated": datetime.now(timezone.utc).isoformat(timespec="seconds"), "matches": len(rows)}
     for key in ("at_end", "at_999"):
-        sims = [s[key] for r in rows for s in r["sides"] if s.get(key)]
+        sims = [dict(s[key], league=r["league"]) for r in rows for s in r["sides"] if s.get(key)]
         filled = [s for s in sims if s["filled"]]
         waits = sorted(s["wait_s"] for s in filled)
-        print(f"{key}: {len(sims)} tries, {len(filled)} filled"
-              + (f", median wait {waits[len(waits) // 2]} s, median queue "
-                 f"{sorted(s['queue'] for s in sims)[len(sims) // 2]:.0f} shares" if waits else ""))
-    print("matches:", len(rows))
+        queues = sorted(s["queue"] for s in sims)
+        by = {}
+        for s in sims:
+            b = by.setdefault(s["league"], [0, 0])
+            b[0] += 1
+            b[1] += s["filled"]
+        out[key] = {"tries": len(sims), "filled": len(filled),
+                    "median_wait_s": waits[len(waits) // 2] if waits else None,
+                    "median_queue_shares": round(queues[len(queues) // 2]) if queues else None,
+                    "by_league_tries_filled": by}
+    return out
+
+
+def report():
+    print(json.dumps(summary(), indent=1))
+
+
+def publish():
+    """Write the summary and push only that file (git pull --rebase first; never touches other files)."""
+    f = ROOT / "lab/results/queue999-summary.json"
+    f.write_text(json.dumps(summary(), indent=1) + "\n", encoding="utf-8")
+    rel = "lab/results/queue999-summary.json"
+    git = ["git", "-C", str(ROOT)]
+    try:
+        subprocess.run(git + ["add", rel], check=True, capture_output=True)
+        if subprocess.run(git + ["diff", "--cached", "--quiet", "--", rel]).returncode == 0:
+            return
+        subprocess.run(git + ["commit", "-q", "-m", "Lab: 0.999 queue test summary (laptop)", "--", rel],
+                       check=True, capture_output=True)
+        for _ in range(3):
+            subprocess.run(git + ["pull", "-q", "--rebase", "--autostash"], capture_output=True)
+            if subprocess.run(git + ["push", "-q"], capture_output=True).returncode == 0:
+                print("summary pushed", flush=True)
+                return
+            time.sleep(10)
+        print("summary push failed (will retry next time)", flush=True)
+    except Exception as exc:  # noqa: BLE001
+        print("publish error", exc, flush=True)
 
 
 def main(hours):
+    for f in OUT.glob("*.jsonl"):  # after a restart, don't measure finished matches again
+        done.update(json.loads(l)["market_id"] for l in open(f, encoding="utf-8"))
     stop = time.time() + hours * 3600
+    next_pub = time.time() + 3 * 3600
     while time.time() < stop:
+        if time.time() > next_pub:
+            publish()
+            next_pub = time.time() + 3 * 3600
         poll()
         now = time.time()
         for mid in [m for m, r in recs.items() if (r["t_end"] and now - r["t_end"] > 1200) or now - r["seen"] > 600]:
@@ -159,6 +205,7 @@ def main(hours):
         time.sleep(5)
     for mid in list(recs):
         finish(mid)
+    publish()
 
 
 if __name__ == "__main__":

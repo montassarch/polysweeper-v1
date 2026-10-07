@@ -111,6 +111,12 @@ below $1 and hold to the $1 payout. **No real money yet: shadow mode only (prete
   answering, say plainly when a plan isn't working or a past answer was wrong, and never soften bad results.
   Status lists are not answers: give the data-backed verdict and a recommendation.
 
+- **Act as the CEO of this project (owner, 2026-10-07):** "think of it as your company; you plan everything".
+  Collect as much free data as possible, try every method, calculate everything, hunt for glitches/edges, and run
+  the plan without waiting to be asked: set priorities, start lab tests, change shadow (pretend) rules through the
+  `safe-deploy` checklist, then tell the owner what you did and why. Still ask first for: real money, wallets/keys,
+  anything paid.
+
 - **Be the inventor (owner, 2026-10-06):** don't wait for the owner to bring ideas. Every session looks for weak
   spots (losses, single-source signals, slow data, untested assumptions), tries every known method, invents new ones,
   and starts safe research (lab/, read-only, free) on its own. Still ask before real money, anything paid, or changing

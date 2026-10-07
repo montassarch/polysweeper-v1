@@ -21,12 +21,14 @@ On 21 Oct: a method with real fills and 0 losses goes to a tiny real-money test 
 | 5 | MLB lead 7+ after 8 innings (`mlb_lead7`) | 0 so far | 0 | ~3 of 81 games qualify | **NOT YET**: too rare to judge | shadow, analyst |
 | 6 | Faster result source (ESPN tennis, official MLB/NHL feeds) | ESPN tennis ~140 s ahead, agrees 11/11 | - | 0 shares left at that moment | **NO as a speed edge, YES as a safety check** (tennis) | `lab/tennis_end_race.py`, `lab/official_end_recorder.py`, laptop |
 | 7 | Slow markets (elections, small events) | 21/21 right (Quebec) | 0 | $5-550 per market | **NOT YET**: small money | R-2026-10-06 tester |
+| 8 | Football, lead of 2+ goals at minute 88+ (owner idea 2026-10-07) | not measured | - | ? | **NOT YET**: test whether anyone still sells the leader below 0.99 then (public trades + ESPN goal minutes, past matches) | tester |
 
 **Verdict words:** YES = real fills, 0 losses, enough cases to trust. NO = loses or never fills. NOT YET = not enough data.
 A "YES" needs **200+ pretend fills with 0 losses**, the same bar as [[32-Go-Live-Checklist]] (50 fills with 0 losses
 would only prove the loss rate is below ~6%). Owner's bar: 100% wins, never below 98.5%.
 
 ## Changes
+- 2026-10-07 23:15: row 8 added (owner idea: late football with a 2+ goal lead; 1-goal leads excluded, ~3-5% still fail to win).
 - 2026-10-07 17:00: row 4 tested on 114 US games: 0 losers in 1,319 sells into 0.98+ bids, but mostly at 0.999; fill rate unmeasured ([[R-2026-10-07]]).
 - 2026-10-07 16:45: owner: row 4 is the main job until 21 Oct; row 3 background only.
 - 2026-10-07 10:50: rows 1-3 and 6 updated from overnight tests ([[R-2026-10-07]]).

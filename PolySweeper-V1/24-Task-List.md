@@ -49,6 +49,7 @@ owner plainly and propose a new date; never lower the bar to make a rule pass.
 ## Now: running test (Phase 1)
 
 **Speed plan (laptop session 2026-10-06; owner: "your project, make it work", full permission; goal 100% win rate, never below 98.5%):**
+- [ ] **0.999 queue test** (owner yes 2026-10-07 02:45): `lab/queue999.py` running on the laptop for 24 h (to ~2026-10-08 03:00 Tunisia), read-only, output LOCAL ONLY in `lab/data/raw/queue999/`. Question: if we rest a 5-share buy at 0.999 once a match is over, does it fill, and how fast? Next laptop session runs `py lab/queue999.py report` and writes the answer in that day's research note. First look: queues are big (Dodgers game ~1M shares at 0.999, LoL 45k).
 - [ ] **Tennis end race** running on the laptop until ~2026-10-07 13:30 Tunisia (`lab/tennis_end_race.py`, output `lab/data/raw/tennis_end_race/` is LOCAL ONLY, git-ignored): next laptop session reads it and reports: ESPN "final" vs Polymarket "ended" (seconds), winner agreement, shares left at 0.96-0.995 at the ESPN moment. Write the result into today's research note so the lab sees it.
 - [ ] If ESPN is clearly faster and shares are left: propose a shadow rule "confirmed tennis" (ESPN final + Polymarket score agrees), owner decides.
 - [ ] CS2 second result source: research focus #5 in [[30-Research-Hub]].

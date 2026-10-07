@@ -1,28 +1,40 @@
 {
- "updated": "2026-10-07T02:01:41+00:00",
- "matches": 7,
+ "updated": "2026-10-07T05:01:22+00:00",
+ "matches": 19,
  "at_end": {
-  "tries": 7,
+  "tries": 19,
   "filled": 0,
   "median_wait_s": null,
-  "median_queue_shares": 45203,
+  "median_queue_shares": 107876,
   "by_league_tries_filled": {
    "lol": [
     4,
     0
    ],
    "atp": [
-    2,
+    5,
     0
    ],
    "mlb": [
+    1,
+    0
+   ],
+   "nhl": [
+    6,
+    0
+   ],
+   "wta": [
+    2,
+    0
+   ],
+   "cfb": [
     1,
     0
    ]
   }
  },
  "at_999": {
-  "tries": 7,
+  "tries": 19,
   "filled": 0,
   "median_wait_s": null,
   "median_queue_shares": 45203,
@@ -32,10 +44,22 @@
     0
    ],
    "atp": [
-    2,
+    5,
     0
    ],
    "mlb": [
+    1,
+    0
+   ],
+   "nhl": [
+    6,
+    0
+   ],
+   "wta": [
+    2,
+    0
+   ],
+   "cfb": [
     1,
     0
    ]

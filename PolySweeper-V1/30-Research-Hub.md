@@ -12,8 +12,11 @@ An automated research team that works every day, writes its findings here, and n
 
 ## The target
 
-- **Owner's bar (2026-10-06): 100% wins, never below 98.5%.** Break-even win rate is about the buy price, so
-  98.5% only profits when buying at about 0.98 or lower; at 0.999 a single loss wipes out ~1,000 wins.
+- **Owner's bar (updated 2026-10-08, owner yes): win rate must beat the buy price plus fees, with 0 losses over at
+  least 200 fills, and more fills the higher the price: fills needed = the larger of 200 and 3 / (1 - price)**
+  (0.96-0.98: 200; 0.99: 300; 0.995: 600; 0.999: 3,000). Reason: with 0 losses in N fills we can only say the true
+  loss rate is likely below 3/N, and it must be below the margin (1 - price). Replaces "100% wins, never below 98.5%"
+  (98.5% loses money at 0.99).
 - An idea only counts if a loss is *structurally* near impossible, not just rare, and it must get **real fills**
   (enough shares, not taken first by faster bots).
 - Minimum order 5 shares. Profit grows only with order size and number of matches.

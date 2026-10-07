@@ -25,9 +25,10 @@ On 21 Oct: a method with real fills and 0 losses goes to a tiny real-money test 
 
 **Verdict words:** YES = real fills, 0 losses, enough cases to trust. NO = loses or never fills. NOT YET = not enough data.
 A "YES" needs **200+ pretend fills with 0 losses**, the same bar as [[32-Go-Live-Checklist]] (50 fills with 0 losses
-would only prove the loss rate is below ~6%). Owner's bar: 100% wins, never below 98.5%.
+would only prove the loss rate is below ~6%). Owner's bar (2026-10-08): fills needed = larger of 200 and 3 / (1 - price), 0 losses; win rate above price + fees (0.99 needs 300, 0.999 needs 3,000).
 
 ## Changes
+- 2026-10-08: owner yes: bar = win rate above price + fees, fills needed = larger of 200 and 3 / (1 - price), 0 losses (replaces 100% / 98.5%).
 - 2026-10-07 23:15: row 8 added (owner idea: late football with a 2+ goal lead; 1-goal leads excluded, ~3-5% still fail to win).
 - 2026-10-07 17:00: row 4 tested on 114 US games: 0 losers in 1,319 sells into 0.98+ bids, but mostly at 0.999; fill rate unmeasured ([[R-2026-10-07]]).
 - 2026-10-07 16:45: owner: row 4 is the main job until 21 Oct; row 3 background only.

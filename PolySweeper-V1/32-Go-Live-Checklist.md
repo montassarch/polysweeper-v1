@@ -14,8 +14,8 @@ the owner can change them, but only before looking at the results, never to make
 
 ## 1. Proven in shadow mode
 
-- [ ] **200+ settled pretend trades** on that rule (at ~0.99 one loss costs ~100 wins, so fewer
-  trades cannot show a loss rate below 1%).
+- [ ] **200+ settled pretend trades** on that rule, and at least 3 / (1 - price) at higher prices (0.99: 300, 0.995: 600,
+  0.999: 3,000; owner 2026-10-08). With 0 losses in N trades the loss rate is only shown below ~3/N.
 - [ ] **0 losses** on that rule. One loss = back to the drawing board for that rule.
 - [ ] At least **14 days** of running, covering both weekdays and weekends.
 - [ ] Every trade bought **after the result was certain** (never "price only" during play).

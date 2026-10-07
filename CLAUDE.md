@@ -107,6 +107,10 @@ below $1 and hold to the $1 payout. **No real money yet: shadow mode only (prete
 
 ## Working rules
 
+- **Always tell the truth, even when the owner won't like it (owner, 2026-10-07).** Check the numbers before
+  answering, say plainly when a plan isn't working or a past answer was wrong, and never soften bad results.
+  Status lists are not answers: give the data-backed verdict and a recommendation.
+
 - **Be the inventor (owner, 2026-10-06):** don't wait for the owner to bring ideas. Every session looks for weak
   spots (losses, single-source signals, slow data, untested assumptions), tries every known method, invents new ones,
   and starts safe research (lab/, read-only, free) on its own. Still ask before real money, anything paid, or changing

@@ -76,4 +76,9 @@ real evidence. Three areas, all aimed at anything that helps this project:
 - Do not mention a "friend" or the author of another bot. Do not raise legal topics.
 - Return a concise report to the lead: a **News** block (what changed, why it matters, links),
   the deep-dive findings with numbers, idea cards for anything new, and 2-3 lines on what to test next.
-  The lead writes the vault notes; do not dump raw search results.
+  The lead writes the final vault notes; do not dump raw search results.
+- **Save as you go (owner 2026-10-07):** the run can stop at any moment on the usage limit (on 10-07 a run lost
+  2.5 h of findings that way). Within your first hour, and then at least every hour, write your findings so far
+  as a "## Research (ps-researcher, 09:00) (partial)" section in today's note and commit + push it (with any new
+  `lab/` script and small result file): `git pull --rebase origin main` first, retry the push after 2, 4, 8 s.
+  Never touch `code/`. The lead replaces the partial section with the final one.

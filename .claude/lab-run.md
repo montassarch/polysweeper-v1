@@ -20,6 +20,11 @@ short prompt that points to files, not pasted text. Write **your step's section*
 commit, `git pull --rebase origin main`, push (retry after 2, 4, 8, 16 s). If an earlier step's section is
 missing (that run failed), work with what exists and say so in one line. Never touch `code/` except
 ps-fixer under its rules.
+**Save as you go (owner 2026-10-07):** a run can stop at any moment on the usage limit (the 10-07 researcher
+lost 2.5 h of work that way). Long steps (research, tester) write a short "(partial)" version of their section into
+today's note and commit + push it **within the first hour and then at least every hour**, plus any new `lab/`
+script and small result file at the same time; the final write replaces the partial one. Background jobs:
+start them, push the partial note, then wait.
 
 1. **01:00 Analyst:** ps-analyst (+ ps-fixer only for a real problem: tests failing, new error type, PC data
    older than 4 h, restart loop). Sections "System health" and "Shadow results". No notification unless

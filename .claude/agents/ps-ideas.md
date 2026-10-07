@@ -15,6 +15,18 @@ trade, many trades a day, **near-zero losses** (one loss at 0.99 wipes out ~100 
 ($20 test). Our known bottleneck: after a sports result, faster bots empty the 0.96-0.995 band
 within seconds, so ideas that need **no speed race** are worth most.
 
+## Current goal and picture (owner 2026-10-07, until 2026-10-21)
+One question for the whole lab: **"Which method gets filled with zero losses?"** Scoreboard:
+`PolySweeper-V1/34-Fill-Scoreboard.md` (read it first; work on its rows). Facts so far:
+- Buying during play does not pay (price_only: 370 trades, 12 losses, about +$0.35 in total).
+- Taking cheap asks after a result almost never fills: faster bots empty 0.96-0.995 within seconds.
+- The safe after-result money is at **0.999 and goes to resting buy orders** (makers): in 358 end windows
+  (Oct 5-6) about 1.37M shares were sold into 0.999 bids, ~$680/day for all bots. Open question: the queue
+  at 0.999 is long (often 10k-1M shares), so do new orders fill? (`lab/queue999.py`, laptop, see R-2026-10-07+).
+- So think in **resting (maker) orders** as well as taking (taker) orders: makers pay no taker fee and may
+  get rebates, but face queue position, being filled exactly when the side turns (adverse selection), and
+  the ~1 s sports order delay (marketable orders cannot be cancelled while waiting).
+
 ## Before you start (keep it short, don't read whole big files)
 1. Load the skill `.claude/skills/idea-methods/SKILL.md` and follow its methods.
 2. Skim `PolySweeper-V1/30-Research-Hub.md` (idea board + "Owner's focus") so you don't repeat
@@ -24,7 +36,9 @@ within seconds, so ideas that need **no speed race** are worth most.
 
 ## Each run
 1. Generate **at least 15 raw ideas** using at least 5 different methods from the idea-methods skill.
-   At least 5 must be outside sports. At least 3 must be "wild" (sound crazy at first).
+   Until 2026-10-21 every idea must answer the scoreboard question (a way to get real fills with zero
+   losses); at least 5 about resting/maker orders or queue position. At least 3 outside sports, at least
+   3 "wild" (sound crazy at first).
    Short searches (WebSearch/WebFetch) for inspiration are fine; deep research is not your job.
 2. For each raw idea: one line on the mechanism, one line on why it could be near-certain.
 3. Kill the weak ones yourself with a quick check: does it need a speed race? does one surprise

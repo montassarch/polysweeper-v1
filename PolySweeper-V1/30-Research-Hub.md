@@ -32,14 +32,23 @@ tester; the 17:00 phone summary starts with it. Every run works on a scoreboard 
 
 ## Owner's focus (serves the question above)
 
+**MAIN JOB until 21 Oct (owner 2026-10-07 16:45): scoreboard row 4, resting buys at 0.98-0.99 late in US games**
+(MLB, NHL, NFL, college football; NBA from ~21 Oct). Why this one: profit 1-2 cents a share, so one loss costs
+~50-100 wins (not ~1,000 as at 0.999), and public data already shows 1,688 fills with 0.2% on losers, none in
+moneyline. Questions, in order: (a) would OUR order fill (queue ahead at 0.98/0.99 vs sellers); (b) how often a
+fill lands on the side that loses, by sport, period and lead; (c) which simple guard (time left, lead, official
+feed) removes those; (d) fills per day. Live test on the laptop: `lab/queue_late.py` (to 21 Oct; summary every 3 h
+in `lab/results/queue-late-summary.json`). Cloud lab: history of the same question from public trades + official
+game feeds (MLB Stats API, NHL API, ESPN) over the past weeks, so we reach 200+ cases fast.
+Background only (no new effort): 0.999 early-queue (row 3, 0 of 36 fills at the safe moment), slow markets (row 7).
+
 1. **Second result source for every sport we would trade (owner 2026-10-06; now required for 0.999):**
    Polymarket's score is wrong ~1 in 4,000, and at 0.999 one loss costs ~1,000 wins. Football (ESPN), Dota 2
    (OpenDota) done; tennis (ESPN, test running on the laptop), MLB/NHL official feeds (recorder running).
    Still needed: CS2, LoL, Valorant and the rest. For each source: free or paid (price), key needed, terms allow
    automated use, coverage of Polymarket's matches, how fast it says "finished". Research only; nothing paid
    without the owner's yes.
-2. **Resting (maker) orders:** queue size at 0.999 and 0.98-0.99, how fast it refills, who gets filled, and
-   when fills happen on the side that then loses (adverse selection). Scoreboard rows 3 and 4.
+2. **Resting (maker) orders:** see the main job above.
 3. One brand-new angle per run, only if it answers the question.
 
 Parked until after 21 Oct: #18 paid UMA proposer, MCP servers side task (done 2026-10-06, re-check monthly,

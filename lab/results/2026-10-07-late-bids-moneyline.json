@@ -1,0 +1,86 @@
+{
+ "games": 114,
+ "by_sport": {
+  "CFB": 29,
+  "MLB": 11,
+  "NBA": 10,
+  "NFL": 16,
+  "NHL": 44,
+  "WNBA": 4
+ },
+ "window": "30 min before finished stamp",
+ "sells_into_bids_>=0.98": {
+  "fills": 1319,
+  "shares": 1090207,
+  "on_losers": 0,
+  "loser_shares": 0,
+  "games_with_fill": 104,
+  "games_loser_fill": 0,
+  "games_with_>=5_sold": 104,
+  "sold_per_game_median": 728.0,
+  "sold_per_game_p75": 3853,
+  "sold_per_game_max": 484152
+ },
+ "sells_into_bids_>=0.99": {
+  "fills": 1201,
+  "shares": 1056872,
+  "on_losers": 0,
+  "loser_shares": 0,
+  "games_with_fill": 103,
+  "games_loser_fill": 0,
+  "games_with_>=5_sold": 103,
+  "sold_per_game_median": 723.5,
+  "sold_per_game_p75": 3505,
+  "sold_per_game_max": 482131
+ },
+ "by_sport_ge98": {
+  "CFB": {
+   "fills": 88,
+   "losers": 0
+  },
+  "MLB": {
+   "fills": 126,
+   "losers": 0
+  },
+  "NBA": {
+   "fills": 192,
+   "losers": 0
+  },
+  "NFL": {
+   "fills": 558,
+   "losers": 0
+  },
+  "NHL": {
+   "fills": 286,
+   "losers": 0
+  },
+  "WNBA": {
+   "fills": 69,
+   "losers": 0
+  }
+ },
+ "taker_buys_ge98_before_end": {
+  "fills": 1784,
+  "on_losers": 1,
+  "games": 105
+ },
+ "tape_truncated_games": 0,
+ "sell_fills_by_time_to_end": {
+  "0-5m": 788,
+  "5-15m": 330,
+  "15-30m": 201
+ },
+ "sell_fills_by_price": {
+  "0.999": 805,
+  "0.99-0.998": 396,
+  "0.98-0.989": 118
+ },
+ "losing_taker_buys": [
+  [
+   "cfb-pitt-vtech-2026-10-02",
+   72,
+   0.98,
+   35.0
+  ]
+ ]
+}

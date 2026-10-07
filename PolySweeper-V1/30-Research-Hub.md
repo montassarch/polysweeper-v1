@@ -99,7 +99,7 @@ The lab updates this table every day. Every rejected or parked idea also goes in
 
 Folder `Research/`, one note per day: `R-<date>`. Newest first:
 
-- [[R-2026-10-07]] — 0.999 after-result money goes to resting buy orders; queue test started; one-question goal and scoreboard
+- [[R-2026-10-07]] — row 4 test: 0 losers in 1,319 late 0.98+ sells (114 US games), fills unmeasured; 0.999 after-result money goes to resting buy orders; queue test started; one-question goal and scoreboard
 - [[R-2026-10-06]] — wallet study (nothing to copy), Flashscore lag fails, slow-arena sweep safe on Quebec (21/21) but tiny; official-feed finish rule is the next candidate
 - [[R-2026-10-05]] — daily run + evening "almost certain moments" study (only MLB 7+ after 8 survives): Overwatch Bo3/BO5 score bug fixed; UMA window and liquidity rewards rejected; new #18 paid UMA proposer (shadow test)
 - [[R-2026-10-04]] — daily run: locked lines (2,270/2,270 correct, but ~nothing at 0.99 after the safe moment); crypto rejected; win model parked; lab made leaner

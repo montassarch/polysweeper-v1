@@ -6,6 +6,11 @@ step below plus today's note, where the earlier steps left their results. Times 
 
 ## Split schedule (one agent per run)
 
+**One shared goal until 2026-10-21 (owner 2026-10-07): "Which method gets filled with zero losses?"**
+Scoreboard: `PolySweeper-V1/34-Fill-Scoreboard.md`. Every step works on a row of that table (or a new method
+that could fill with 0 losses) before anything else. Measuring beats brainstorming: new ideas only if they
+answer the question.
+
 **Every step:** `git pull --rebase origin main`; read the "Rules for every run" section below and your
 step only (don't read whole big files). Today's note = `PolySweeper-V1/Research/R-YYYY-MM-DD.md` (UTC date;
 if missing, create it with YAML front matter: title, tags [polysweeper, research, daily], created, and a link
@@ -25,10 +30,10 @@ ps-fixer under its rules.
      the match turned, time from buy to result) and send the owner a push notification ("loss on safe rule X").
    - Loss on `price_only`: one line per loss under "Shadow results" (sport, side, price, score at buy). No card.
 2. **05:00 Ideas (Monday and Thursday only, owner 2026-10-06: ideas pile up faster than they can be tested):** ps-ideas (effort max). Section "New ideas": raw list (one line each, kept or kill reason),
-   top 3-5 cards, and a line `Pick for research: <idea>`. Add the top cards to the idea board in
+   top 3-5 cards, and a line `Pick for research: <idea>`. Until 2026-10-21 only ideas that could get real fills with 0 losses (scoreboard question). Add the top cards to the idea board in
    `30-Research-Hub.md` with status "new".
 3. **09:00 Research:** ps-researcher (effort max) with today's UTC date, the "Road to 1 Nov" priorities below,
-   the hub's "Owner's focus" list, the analyst's key numbers and the ideas pick from today's note (on days with no ideas run: the most
+   the scoreboard (`34-Fill-Scoreboard.md`: work on the most promising NOT YET row first), the hub's "Owner's focus" list, the analyst's key numbers and the ideas pick from today's note (on days with no ideas run: the most
    promising untested idea on the hub's idea board, status "new" or "promising"); load the
    `polymarket-data` skill. Sections "Road to 1 Nov" (2-4 lines, put at the top of the note), "News and
    trends", "Research". Update the idea board (status, one line why, date). Side task: the hub's "MCP servers" item (small, after the main work).
@@ -40,12 +45,13 @@ ps-fixer under its rules.
    proposals only: nothing changes in the bot without the owner's yes. Rejected fixes go to `33-Rejected-Ideas.md`.
 4. **13:00 Red team (odd days only, owner 2026-10-06 to save usage):** ps-red-team on the new or upgraded ideas in today's and yesterday's notes. If there are none, write
    "Red team: nothing new today" and stop (don't spawn the agent). Section "Red team".
-5. **17:00 Tester:** ps-tester on the one best idea measurable today with public APIs (scripts in `lab/`).
+5. **17:00 Tester:** ps-tester on the one best idea measurable today with public APIs (scripts in `lab/`), taken from a NOT YET row of the scoreboard.
+   **Update `34-Fill-Scoreboard.md` every day** (fills, losses, money per day, verdict per row, one line in its "Changes").
    Sections "Tests and numbers" and "Decisions and next steps". Then finish the day's note: "Summary for the
    owner" (5 short plain lines) at the top, the hub's daily-notes list (newest first), one line in
    `00-Session-Log.md`, real new tasks in `24-Task-List.md`. PushNotification (status "proactive") with the day's
    report. **Owner (2026-10-05): keep it simple, only the report, no advice and no tasks.** 3-5 short plain
-   lines of facts: bot results (wins, losses, pretend profit), best new idea in one line, what research and
+   lines of facts, **starting with the scoreboard in short form** (one line per method: name, fills, losses, YES/NO/NOT YET), then: bot results (wins, losses, pretend profit), best new idea in one line, what research and
    the test found, anything broken. No "you should", no to-dos, no next steps.
 6. **21:00 Health check (even days only, owner 2026-10-06 to save usage; the PC's phone alerts cover the other days):** follow "Health check" below.
 

@@ -1,18 +1,18 @@
 {
- "updated": "2026-10-07T14:02:21+00:00",
- "matches": 74,
+ "updated": "2026-10-07T17:02:32+00:00",
+ "matches": 99,
  "at_end": {
-  "tries": 74,
+  "tries": 98,
   "filled": 3,
   "median_wait_s": 481,
-  "median_queue_shares": 67630,
+  "median_queue_shares": 46107,
   "by_league_tries_filled": {
    "lol": [
     7,
     0
    ],
    "atp": [
-    20,
+    24,
     0
    ],
    "mlb": [
@@ -24,7 +24,7 @@
     0
    ],
    "wta": [
-    8,
+    11,
     0
    ],
    "cfb": [
@@ -32,15 +32,15 @@
     0
    ],
    "hok": [
-    2,
+    3,
     1
    ],
    "cs2": [
-    23,
+    38,
     2
    ],
    "dota2": [
-    2,
+    3,
     0
    ],
    "val": [
@@ -50,17 +50,17 @@
   }
  },
  "at_999": {
-  "tries": 74,
-  "filled": 13,
-  "median_wait_s": 90,
-  "median_queue_shares": 19191,
+  "tries": 98,
+  "filled": 18,
+  "median_wait_s": 166,
+  "median_queue_shares": 12282,
   "by_league_tries_filled": {
    "lol": [
     7,
     2
    ],
    "atp": [
-    20,
+    24,
     2
    ],
    "mlb": [
@@ -72,24 +72,24 @@
     0
    ],
    "wta": [
-    8,
-    1
+    11,
+    2
    ],
    "cfb": [
     1,
     0
    ],
    "hok": [
-    2,
+    3,
     2
    ],
    "cs2": [
-    23,
-    5
+    38,
+    8
    ],
    "dota2": [
-    2,
-    0
+    3,
+    1
    ],
    "val": [
     2,

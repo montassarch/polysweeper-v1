@@ -1,0 +1,2410 @@
+{
+ "made": "2026-10-08T10:34:44.727785+00:00",
+ "reward_markets": 18351,
+ "reward_usd_day_total": 178385,
+ "reward_rate_hist": {
+  "1-4.99": 10810,
+  "5-24.99": 5760,
+  "25-99": 1280,
+  "100-999": 199,
+  "<1": 290,
+  "1000+": 12
+ },
+ "open_markets": 279836,
+ "by_type": {
+  "crypto_ladder_other": {
+   "markets": 2504,
+   "with_rewards": 1131,
+   "rewards_usd_day": 6598,
+   "median_rate": 3,
+   "top_rate": 109.99936,
+   "vol24_usd": 3900595,
+   "median_vol24_rated": 0,
+   "clearBookOnStart": 2446,
+   "holdingRewards": 108,
+   "fee_schedules": [
+    [
+     "{\"exponent\": 1, \"rate\": 0.07, \"rebateRate\": 0.2, \"takerOnly\": true}",
+     2392
+    ],
+    [
+     "{\"exponent\": 1, \"rate\": 0.04, \"rebateRate\": 0.25, \"takerOnly\": true}",
+     108
+    ],
+    [
+     "none",
+     2
+    ]
+   ]
+  },
+  "crypto_updown": {
+   "markets": 3510,
+   "with_rewards": 0,
+   "rewards_usd_day": 0,
+   "median_rate": 0,
+   "top_rate": 0,
+   "vol24_usd": 92983,
+   "median_vol24_rated": 0,
+   "clearBookOnStart": 357,
+   "holdingRewards": 0,
+   "fee_schedules": [
+    [
+     "{\"exponent\": 1, \"rate\": 0.07, \"rebateRate\": 0.2, \"takerOnly\": true}",
+     3509
+    ],
+    [
+     "{\"exponent\": 2, \"rate\": 0.25, \"rebateRate\": 0.2, \"takerOnly\": true}",
+     1
+    ]
+   ]
+  },
+  "culture_tech_econ": {
+   "markets": 6027,
+   "with_rewards": 1762,
+   "rewards_usd_day": 23697,
+   "median_rate": 5.0,
+   "top_rate": 247,
+   "vol24_usd": 1404388,
+   "median_vol24_rated": 27,
+   "clearBookOnStart": 6026,
+   "holdingRewards": 0,
+   "fee_schedules": [
+    [
+     "{\"exponent\": 1, \"rate\": 0.05, \"rebateRate\": 0.25, \"takerOnly\": true}",
+     3975
+    ],
+    [
+     "{\"exponent\": 1, \"rate\": 0.04, \"rebateRate\": 0.25, \"takerOnly\": true}",
+     2006
+    ],
+    [
+     "{\"exponent\": 1, \"rate\": 0.03, \"rebateRate\": 0.25, \"takerOnly\": true}",
+     40
+    ]
+   ]
+  },
+  "other": {
+   "markets": 71,
+   "with_rewards": 11,
+   "rewards_usd_day": 30,
+   "median_rate": 2,
+   "top_rate": 6,
+   "vol24_usd": 10862,
+   "median_vol24_rated": 253,
+   "clearBookOnStart": 71,
+   "holdingRewards": 0,
+   "fee_schedules": [
+    [
+     "{\"exponent\": 1, \"rate\": 0.04, \"rebateRate\": 0.25, \"takerOnly\": true}",
+     36
+    ],
+    [
+     "{\"exponent\": 1, \"rate\": 0.05, \"rebateRate\": 0.25, \"takerOnly\": true}",
+     23
+    ],
+    [
+     "{\"exponent\": 1, \"rate\": 0.03, \"rebateRate\": 0.25, \"takerOnly\": true}",
+     11
+    ]
+   ]
+  },
+  "other_long_dated": {
+   "markets": 174,
+   "with_rewards": 55,
+   "rewards_usd_day": 468,
+   "median_rate": 2,
+   "top_rate": 200,
+   "vol24_usd": 51583,
+   "median_vol24_rated": 20,
+   "clearBookOnStart": 174,
+   "holdingRewards": 0,
+   "fee_schedules": [
+    [
+     "{\"exponent\": 1, \"rate\": 0.03, \"rebateRate\": 0.25, \"takerOnly\": true}",
+     92
+    ],
+    [
+     "{\"exponent\": 1, \"rate\": 0.04, \"rebateRate\": 0.25, \"takerOnly\": true}",
+     56
+    ],
+    [
+     "{\"exponent\": 1, \"rate\": 0.05, \"rebateRate\": 0.25, \"takerOnly\": true}",
+     23
+    ]
+   ]
+  },
+  "politics_long_dated": {
+   "markets": 5507,
+   "with_rewards": 1257,
+   "rewards_usd_day": 33271,
+   "median_rate": 2,
+   "top_rate": 2049.99968,
+   "vol24_usd": 5269007,
+   "median_vol24_rated": 1,
+   "clearBookOnStart": 5506,
+   "holdingRewards": 442,
+   "fee_schedules": [
+    [
+     "{\"exponent\": 1, \"rate\": 0.04, \"rebateRate\": 0.25, \"takerOnly\": true}",
+     4588
+    ],
+    [
+     "none",
+     728
+    ],
+    [
+     "{\"exponent\": 1, \"rate\": 0.05, \"rebateRate\": 0.25, \"takerOnly\": true}",
+     190
+    ]
+   ]
+  },
+  "politics_short_dated": {
+   "markets": 15505,
+   "with_rewards": 3899,
+   "rewards_usd_day": 43268,
+   "median_rate": 2,
+   "top_rate": 1336,
+   "vol24_usd": 10504621,
+   "median_vol24_rated": 0,
+   "clearBookOnStart": 15505,
+   "holdingRewards": 35,
+   "fee_schedules": [
+    [
+     "{\"exponent\": 1, \"rate\": 0.04, \"rebateRate\": 0.25, \"takerOnly\": true}",
+     14454
+    ],
+    [
+     "none",
+     562
+    ],
+    [
+     "{\"exponent\": 1, \"rate\": 0.05, \"rebateRate\": 0.25, \"takerOnly\": true}",
+     489
+    ]
+   ]
+  },
+  "sports_futures": {
+   "markets": 20592,
+   "with_rewards": 7317,
+   "rewards_usd_day": 24921,
+   "median_rate": 2,
+   "top_rate": 146,
+   "vol24_usd": 1750592,
+   "median_vol24_rated": 0,
+   "clearBookOnStart": 20591,
+   "holdingRewards": 0,
+   "fee_schedules": [
+    [
+     "{\"exponent\": 1, \"rate\": 0.05, \"rebateRate\": 0.15, \"takerOnly\": true}",
+     17941
+    ],
+    [
+     "{\"exponent\": 1, \"rate\": 0.03, \"rebateRate\": 0.25, \"takerOnly\": true}",
+     2537
+    ],
+    [
+     "{\"exponent\": 1, \"rate\": 0.05, \"rebateRate\": 0.25, \"takerOnly\": true}",
+     110
+    ]
+   ]
+  },
+  "sports_game_lines_props": {
+   "markets": 210749,
+   "with_rewards": 640,
+   "rewards_usd_day": 3676,
+   "median_rate": 1.0,
+   "top_rate": 400,
+   "vol24_usd": 3448067,
+   "median_vol24_rated": 0,
+   "clearBookOnStart": 210749,
+   "holdingRewards": 0,
+   "fee_schedules": [
+    [
+     "{\"exponent\": 1, \"rate\": 0.05, \"rebateRate\": 0.15, \"takerOnly\": true}",
+     167976
+    ],
+    [
+     "{\"exponent\": 1, \"rate\": 0.03, \"rebateRate\": 0.15, \"takerOnly\": true}",
+     41776
+    ],
+    [
+     "{\"exponent\": 1, \"rate\": 0.03, \"rebateRate\": 0.25, \"takerOnly\": true}",
+     931
+    ]
+   ]
+  },
+  "sports_game_moneyline": {
+   "markets": 8966,
+   "with_rewards": 57,
+   "rewards_usd_day": 798,
+   "median_rate": 5,
+   "top_rate": 500,
+   "vol24_usd": 4263036,
+   "median_vol24_rated": 54,
+   "clearBookOnStart": 8966,
+   "holdingRewards": 0,
+   "fee_schedules": [
+    [
+     "{\"exponent\": 1, \"rate\": 0.05, \"rebateRate\": 0.15, \"takerOnly\": true}",
+     8190
+    ],
+    [
+     "{\"exponent\": 1, \"rate\": 0.05, \"rebateRate\": 0.25, \"takerOnly\": true}",
+     336
+    ],
+    [
+     "{\"exponent\": 1, \"rate\": 0.03, \"rebateRate\": 0.15, \"takerOnly\": true}",
+     267
+    ]
+   ]
+  },
+  "stock_finance": {
+   "markets": 2759,
+   "with_rewards": 1217,
+   "rewards_usd_day": 18275,
+   "median_rate": 5,
+   "top_rate": 500,
+   "vol24_usd": 786907,
+   "median_vol24_rated": 30,
+   "clearBookOnStart": 1504,
+   "holdingRewards": 15,
+   "fee_schedules": [
+    [
+     "{\"exponent\": 1, \"rate\": 0.04, \"rebateRate\": 0.25, \"takerOnly\": true}",
+     2465
+    ],
+    [
+     "{\"exponent\": 1, \"rate\": 0.05, \"rebateRate\": 0.25, \"takerOnly\": true}",
+     272
+    ],
+    [
+     "none",
+     22
+    ]
+   ]
+  },
+  "weather": {
+   "markets": 3472,
+   "with_rewards": 973,
+   "rewards_usd_day": 22023,
+   "median_rate": 13,
+   "top_rate": 202,
+   "vol24_usd": 1544991,
+   "median_vol24_rated": 56,
+   "clearBookOnStart": 337,
+   "holdingRewards": 0,
+   "fee_schedules": [
+    [
+     "{\"exponent\": 1, \"rate\": 0.05, \"rebateRate\": 0.25, \"takerOnly\": true}",
+     3438
+    ],
+    [
+     "none",
+     23
+    ],
+    [
+     "{\"exponent\": 1, \"rate\": 0.04, \"rebateRate\": 0.25, \"takerOnly\": true}",
+     11
+    ]
+   ]
+  }
+ },
+ "books_by_type": {
+  "crypto_ladder_other": {
+   "books": 99,
+   "one_side_empty": 2,
+   "median_spread_c": 3.0,
+   "median_depth_2c_usd": 368,
+   "median_depth_5c_usd": 510,
+   "median_vol24": 38,
+   "rated_books": 80,
+   "median_reward_rate": 35.0,
+   "median_qbook": 134.35,
+   "median_our_usd_day_join_best": 0.3175,
+   "median_our_usd_day_half_v": 0.451,
+   "sum_top10_usdA": 122.36,
+   "median_capital_usd": 19.7,
+   "median_rebate_pool_day": 0.26
+  },
+  "crypto_updown": {
+   "books": 20,
+   "one_side_empty": 0,
+   "median_spread_c": 1.0,
+   "median_depth_2c_usd": 156.0,
+   "median_depth_5c_usd": 373.0,
+   "median_vol24": 0.0,
+   "rated_books": 0,
+   "median_reward_rate": null,
+   "median_qbook": null,
+   "median_our_usd_day_join_best": null,
+   "median_our_usd_day_half_v": null,
+   "sum_top10_usdA": 0,
+   "median_capital_usd": null,
+   "median_rebate_pool_day": 0.0
+  },
+  "culture_tech_econ": {
+   "books": 92,
+   "one_side_empty": 1,
+   "median_spread_c": 2.0,
+   "median_depth_2c_usd": 319,
+   "median_depth_5c_usd": 600,
+   "median_vol24": 239,
+   "rated_books": 80,
+   "median_reward_rate": 65.0,
+   "median_qbook": 165.85,
+   "median_our_usd_day_join_best": 1.724,
+   "median_our_usd_day_half_v": 1.1,
+   "sum_top10_usdA": 587.71,
+   "median_capital_usd": 19.6,
+   "median_rebate_pool_day": 1.24
+  },
+  "other": {
+   "books": 14,
+   "one_side_empty": 0,
+   "median_spread_c": 6.05,
+   "median_depth_2c_usd": 2.0,
+   "median_depth_5c_usd": 46.0,
+   "median_vol24": 215.5,
+   "rated_books": 11,
+   "median_reward_rate": 2,
+   "median_qbook": 0.0,
+   "median_our_usd_day_join_best": 0.139,
+   "median_our_usd_day_half_v": 0.893,
+   "sum_top10_usdA": 5.41,
+   "median_capital_usd": 18.58,
+   "median_rebate_pool_day": 2.015
+  },
+  "other_long_dated": {
+   "books": 65,
+   "one_side_empty": 0,
+   "median_spread_c": 2.0,
+   "median_depth_2c_usd": 298,
+   "median_depth_5c_usd": 1322,
+   "median_vol24": 19,
+   "rated_books": 55,
+   "median_reward_rate": 2,
+   "median_qbook": 472.3,
+   "median_our_usd_day_join_best": 0.062,
+   "median_our_usd_day_half_v": 0.039,
+   "sum_top10_usdA": 8.48,
+   "median_capital_usd": 19.6,
+   "median_rebate_pool_day": 0.04
+  },
+  "politics_long_dated": {
+   "books": 87,
+   "one_side_empty": 1,
+   "median_spread_c": 1.0,
+   "median_depth_2c_usd": 6072.0,
+   "median_depth_5c_usd": 11763.0,
+   "median_vol24": 37.0,
+   "rated_books": 80,
+   "median_reward_rate": 89.5,
+   "median_qbook": 6199.05,
+   "median_our_usd_day_join_best": 0.4445,
+   "median_our_usd_day_half_v": 0.1635,
+   "sum_top10_usdA": 38.16,
+   "median_capital_usd": 49.525,
+   "median_rebate_pool_day": 0.01
+  },
+  "politics_short_dated": {
+   "books": 93,
+   "one_side_empty": 3,
+   "median_spread_c": 1.0,
+   "median_depth_2c_usd": 1122.0,
+   "median_depth_5c_usd": 2909.0,
+   "median_vol24": 178.5,
+   "rated_books": 79,
+   "median_reward_rate": 26,
+   "median_qbook": 950.8,
+   "median_our_usd_day_join_best": 0.202,
+   "median_our_usd_day_half_v": 0.149,
+   "sum_top10_usdA": 73.87,
+   "median_capital_usd": 19.98,
+   "median_rebate_pool_day": 0.0
+  },
+  "sports_futures": {
+   "books": 95,
+   "one_side_empty": 5,
+   "median_spread_c": 2.6,
+   "median_depth_2c_usd": 244.5,
+   "median_depth_5c_usd": 396.5,
+   "median_vol24": 0.0,
+   "rated_books": 79,
+   "median_reward_rate": 34,
+   "median_qbook": 397.5,
+   "median_our_usd_day_join_best": 0.181,
+   "median_our_usd_day_half_v": 0.266,
+   "sum_top10_usdA": 28.66,
+   "median_capital_usd": 19.6,
+   "median_rebate_pool_day": 0.0
+  },
+  "sports_game_lines_props": {
+   "books": 100,
+   "one_side_empty": 11,
+   "median_spread_c": 19.4,
+   "median_depth_2c_usd": 0,
+   "median_depth_5c_usd": 0,
+   "median_vol24": 0,
+   "rated_books": 77,
+   "median_reward_rate": 5,
+   "median_qbook": 0.0,
+   "median_our_usd_day_join_best": 0,
+   "median_our_usd_day_half_v": 1.938,
+   "sum_top10_usdA": 198.38,
+   "median_capital_usd": 19.6,
+   "median_rebate_pool_day": 0.0
+  },
+  "sports_game_moneyline": {
+   "books": 77,
+   "one_side_empty": 6,
+   "median_spread_c": 3.0,
+   "median_depth_2c_usd": 100,
+   "median_depth_5c_usd": 335,
+   "median_vol24": 30,
+   "rated_books": 57,
+   "median_reward_rate": 5,
+   "median_qbook": 95.9,
+   "median_our_usd_day_join_best": 0.164,
+   "median_our_usd_day_half_v": 0.139,
+   "sum_top10_usdA": 22.89,
+   "median_capital_usd": 39.88,
+   "median_rebate_pool_day": 0.11
+  },
+  "stock_finance": {
+   "books": 98,
+   "one_side_empty": 2,
+   "median_spread_c": 2.0,
+   "median_depth_2c_usd": 485.0,
+   "median_depth_5c_usd": 788.0,
+   "median_vol24": 8.0,
+   "rated_books": 80,
+   "median_reward_rate": 50.0,
+   "median_qbook": 358.7,
+   "median_our_usd_day_join_best": 0.2985,
+   "median_our_usd_day_half_v": 0.543,
+   "sum_top10_usdA": 151.81,
+   "median_capital_usd": 47.75,
+   "median_rebate_pool_day": 0.07
+  },
+  "weather": {
+   "books": 100,
+   "one_side_empty": 18,
+   "median_spread_c": 3.0,
+   "median_depth_2c_usd": 25.0,
+   "median_depth_5c_usd": 189.5,
+   "median_vol24": 1122.5,
+   "rated_books": 73,
+   "median_reward_rate": 89,
+   "median_qbook": 35.0,
+   "median_our_usd_day_join_best": 6.223,
+   "median_our_usd_day_half_v": 12.093,
+   "sum_top10_usdA": 809.95,
+   "median_capital_usd": 19.6,
+   "median_rebate_pool_day": 4.855
+  }
+ },
+ "top_sample_rows": [
+  {
+   "type": "culture_tech_econ",
+   "q": "Will MrBeast's next video get at least 223 million views on week 1?",
+   "cid": "0x6865114c0524aa13295618367475ab7c694d0e926014091569cd48d14e16e481",
+   "tok": "108895999763014780404002738645719622524079939865876420295841172025333184814966",
+   "ev": "of-views-of-next-mrbeast-video-on-week-1-even-higher-brackets-20261003",
+   "rate": 247,
+   "v": 4.5,
+   "mn": 20.0,
+   "vol24": 2321,
+   "rebate_pool_day": 15.96,
+   "clear": true,
+   "end_days": 2.7,
+   "bb": 0.41,
+   "ba": 0.49,
+   "mid": 0.45,
+   "raw_mid": 0.45,
+   "spread": 0.08,
+   "d1": [
+    0,
+    0
+   ],
+   "d2": [
+    0,
+    0
+   ],
+   "d5": [
+    16,
+    39
+   ],
+   "q1": 0.2,
+   "q2": 0.6,
+   "qbook": 0.2,
+   "size": 20.0,
+   "qA": 0.25,
+   "qB": 5.0,
+   "capA": 18.4,
+   "capB": 19.1,
+   "nb": 14,
+   "na": 20,
+   "usdA": 137.222,
+   "usdB": 237.5,
+   "shareA": 0.5556,
+   "shareB": 0.9615
+  },
+  {
+   "type": "weather",
+   "q": "Will the highest temperature in Helsinki be 12\u00b0C on October 8?",
+   "cid": "0x1ed029f4c3718cba0e32fb018695a6b7661ccec9f6cdba1f22a48611424f2d29",
+   "tok": "61060273111153592052747071452008160885555918220104664181020258749801495678254",
+   "ev": "highest-temperature-in-helsinki-on-october-8-2026",
+   "rate": 114,
+   "v": 4.5,
+   "mn": 20.0,
+   "vol24": 2377,
+   "rebate_pool_day": 11.88,
+   "clear": false,
+   "end_days": 0.1,
+   "bb": 0.64,
+   "ba": 0.71,
+   "mid": 0.6,
+   "raw_mid": 0.675,
+   "spread": 0.07,
+   "d1": [
+    12,
+    0
+   ],
+   "d2": [
+    12,
+    0
+   ],
+   "d5": [
+    18,
+    0
+   ],
+   "q1": 0.0,
+   "q2": 0.0,
+   "qbook": 0.0,
+   "size": 20.0,
+   "qA": 0.08,
+   "qB": 5.0,
+   "capA": 18.6,
+   "capB": 19.1,
+   "nb": 17,
+   "na": 24,
+   "usdA": 114.0,
+   "usdB": 114.0,
+   "shareA": 1.0,
+   "shareB": 1.0
+  },
+  {
+   "type": "weather",
+   "q": "Will the highest temperature in Warsaw be 21\u00b0C on October 8?",
+   "cid": "0xb59ff7b49443ccb0eaf6c2fe1a4fbcbdc62fd3a38fcb5a19d01d9bcc4ce07667",
+   "tok": "28079972161784255126797907164521537853096851589084126087342345891967554469019",
+   "ev": "highest-temperature-in-warsaw-on-october-8-2026",
+   "rate": 111,
+   "v": 4.5,
+   "mn": 20.0,
+   "vol24": 1923,
+   "rebate_pool_day": 9.4,
+   "clear": false,
+   "end_days": 0.1,
+   "bb": 0.518,
+   "ba": 0.6,
+   "mid": 0.609,
+   "raw_mid": 0.559,
+   "spread": 0.082,
+   "d1": [
+    0,
+    5
+   ],
+   "d2": [
+    0,
+    10
+   ],
+   "d5": [
+    0,
+    19
+   ],
+   "q1": 0.0,
+   "q2": 0.0,
+   "qbook": 0.0,
+   "size": 20.0,
+   "qA": 4.27,
+   "qB": 5.0,
+   "capA": 18.36,
+   "capB": 19.1,
+   "nb": 21,
+   "na": 38,
+   "usdA": 111.0,
+   "usdB": 111.0,
+   "shareA": 1.0,
+   "shareB": 1.0
+  },
+  {
+   "type": "weather",
+   "q": "Will the highest temperature in Paris be 16\u00b0C on October 8?",
+   "cid": "0xd99e9dc94e22c3700a13cb5d5d2ad937b5e973659e5045fdc2303b9b4963d31d",
+   "tok": "61516367033664758720748013801282910455925912996157260690863545214440464426770",
+   "ev": "highest-temperature-in-paris-on-october-8-2026",
+   "rate": 107,
+   "v": 4.5,
+   "mn": 20.0,
+   "vol24": 4604,
+   "rebate_pool_day": 15.25,
+   "clear": false,
+   "end_days": 0.1,
+   "bb": 0.7,
+   "ba": 0.72,
+   "mid": 0.735,
+   "raw_mid": 0.71,
+   "spread": 0.02,
+   "d1": [
+    0,
+    3
+   ],
+   "d2": [
+    0,
+    6
+   ],
+   "d5": [
+    21,
+    15
+   ],
+   "q1": 0.0,
+   "q2": 0.0,
+   "qbook": 0.0,
+   "size": 20.0,
+   "qA": 2.96,
+   "qB": 5.0,
+   "capA": 19.6,
+   "capB": 19.1,
+   "nb": 21,
+   "na": 24,
+   "usdA": 107.0,
+   "usdB": 107.0,
+   "shareA": 1.0,
+   "shareB": 1.0
+  },
+  {
+   "type": "culture_tech_econ",
+   "q": "Will Jynxzi, Ron and Los beat the Minecraft challenge by October 10?",
+   "cid": "0xf7422fb35f758ffbf2a74b2cfc8c64ec44964406f64f782e0d3d715fe11c522d",
+   "tok": "43944939605875195873349761554127899457141808971091029566165324956765713580291",
+   "ev": "jynxzi-ron-and-los-beat-minecraft-byptptpt",
+   "rate": 100,
+   "v": 6.5,
+   "mn": 100.0,
+   "vol24": 36477,
+   "rebate_pool_day": 79.79,
+   "clear": true,
+   "end_days": 2.7,
+   "bb": 0.75,
+   "ba": 0.79,
+   "mid": 0.825,
+   "raw_mid": 0.77,
+   "spread": 0.04,
+   "d1": [
+    0,
+    29
+   ],
+   "d2": [
+    0,
+    31
+   ],
+   "d5": [
+    0,
+    41
+   ],
+   "q1": 0.0,
+   "q2": 0.0,
+   "qbook": 0.0,
+   "size": 100.0,
+   "qA": 7.1,
+   "qB": 25.0,
+   "capA": 96.0,
+   "capB": 93.5,
+   "nb": 25,
+   "na": 18,
+   "usdA": 100.0,
+   "usdB": 100.0,
+   "shareA": 1.0,
+   "shareB": 1.0
+  },
+  {
+   "type": "culture_tech_econ",
+   "q": "Will Noah Wyle be named People's Sexiest Man Alive in 2026?",
+   "cid": "0xe96eeb79dd5c065bd09d105706c03a58672c66d171659e95ac191adc6c14c085",
+   "tok": "55452112303520956822815330263026146055099438603290297447345530847394457438017",
+   "ev": "peoples-sexiest-man-alive-2026",
+   "rate": 97,
+   "v": 4.5,
+   "mn": 20.0,
+   "vol24": 446,
+   "rebate_pool_day": 3.01,
+   "clear": true,
+   "end_days": 83.6,
+   "bb": 0.42,
+   "ba": 0.76,
+   "mid": 0.46,
+   "raw_mid": 0.59,
+   "spread": 0.34,
+   "d1": [
+    0,
+    0
+   ],
+   "d2": [
+    0,
+    0
+   ],
+   "d5": [
+    3,
+    0
+   ],
+   "q1": 0.0,
+   "q2": 0.0,
+   "qbook": 0.0,
+   "size": 20.0,
+   "qA": 0.08,
+   "qB": 5.0,
+   "capA": 13.2,
+   "capB": 19.1,
+   "nb": 6,
+   "na": 10,
+   "usdA": 97.0,
+   "usdB": 97.0,
+   "shareA": 1.0,
+   "shareB": 1.0
+  },
+  {
+   "type": "weather",
+   "q": "Will the highest temperature in Houston be between 92-93\u00b0F on October 8?",
+   "cid": "0x35c2430206f5d60bb580dbecc06f6156b6911af80b356ab86635bdf178d9f634",
+   "tok": "28589767050755141510466143802266697459490140702869983476614160341764829285233",
+   "ev": "highest-temperature-in-houston-on-october-8-2026",
+   "rate": 97,
+   "v": 4.5,
+   "mn": 100.0,
+   "vol24": 2643,
+   "rebate_pool_day": 18.5,
+   "clear": false,
+   "end_days": 0.1,
+   "bb": 0.43,
+   "ba": 0.47,
+   "mid": 0.44,
+   "raw_mid": 0.45,
+   "spread": 0.04,
+   "d1": [
+    7,
+    0
+   ],
+   "d2": [
+    16,
+    0
+   ],
+   "d5": [
+    78,
+    63
+   ],
+   "q1": 1.3,
+   "q2": 1.3,
+   "qbook": 1.3,
+   "size": 100.0,
+   "qA": 20.16,
+   "qB": 25.0,
+   "capA": 96.0,
+   "capB": 95.5,
+   "nb": 13,
+   "na": 39,
+   "usdA": 91.124,
+   "usdB": 92.205,
+   "shareA": 0.9394,
+   "shareB": 0.9506
+  },
+  {
+   "type": "weather",
+   "q": "Will the highest temperature in Helsinki be 13\u00b0C on October 8?",
+   "cid": "0xac0090f123a06385751e1c52cd0c02ada6dddea8ce2d69d5f3db91e9c145c9a0",
+   "tok": "76493319740884755477605276128621390139935632019888238975825273188244850499823",
+   "ev": "highest-temperature-in-helsinki-on-october-8-2026",
+   "rate": 86,
+   "v": 4.5,
+   "mn": 20.0,
+   "vol24": 1895,
+   "rebate_pool_day": 14.45,
+   "clear": false,
+   "end_days": 0.1,
+   "bb": 0.28,
+   "ba": 0.36,
+   "mid": 0.39,
+   "raw_mid": 0.32,
+   "spread": 0.08,
+   "d1": [
+    0,
+    18
+   ],
+   "d2": [
+    0,
+    18
+   ],
+   "d5": [
+    0,
+    24
+   ],
+   "q1": 0.0,
+   "q2": 0.0,
+   "qbook": 0.0,
+   "size": 20.0,
+   "qA": 0.74,
+   "qB": 5.0,
+   "capA": 18.4,
+   "capB": 19.1,
+   "nb": 14,
+   "na": 39,
+   "usdA": 86.0,
+   "usdB": 86.0,
+   "shareA": 1.0,
+   "shareB": 1.0
+  },
+  {
+   "type": "culture_tech_econ",
+   "q": "Will MrBeast's next video get between 215 and 223 million views on week 1?",
+   "cid": "0x3090f7aa4fda5d791f43c415dbe1bb4ad60d2b56dce93ed135dadcb0d3e9988d",
+   "tok": "86737246134181475364227727304040054567343937541492003389891314423516304312550",
+   "ev": "of-views-of-next-mrbeast-video-on-week-1-even-higher-brackets-20261003",
+   "rate": 84,
+   "v": 4.5,
+   "mn": 20.0,
+   "vol24": 134,
+   "rebate_pool_day": 1.25,
+   "clear": true,
+   "end_days": 2.7,
+   "bb": 0.18,
+   "ba": 0.25,
+   "mid": 0.255,
+   "raw_mid": 0.215,
+   "spread": 0.07,
+   "d1": [
+    0,
+    7
+   ],
+   "d2": [
+    0,
+    7
+   ],
+   "d5": [
+    0,
+    7
+   ],
+   "q1": 0.0,
+   "q2": 0.0,
+   "qbook": 0.0,
+   "size": 20.0,
+   "qA": 5.27,
+   "qB": 5.0,
+   "capA": 18.6,
+   "capB": 19.1,
+   "nb": 10,
+   "na": 18,
+   "usdA": 84.0,
+   "usdB": 84.0,
+   "shareA": 1.0,
+   "shareB": 1.0
+  },
+  {
+   "type": "weather",
+   "q": "Will the highest temperature in Seattle be between 68-69\u00b0F on October 8?",
+   "cid": "0xd8edd5e6d984f78ff6c63830870eff10f3e54026fb1cc87830223bf6a75afccb",
+   "tok": "78603466894127521263769883403731117393485596399575189131879375331335352516804",
+   "ev": "highest-temperature-in-seattle-on-october-8-2026",
+   "rate": 101,
+   "v": 4.5,
+   "mn": 100.0,
+   "vol24": 1731,
+   "rebate_pool_day": 11.58,
+   "clear": false,
+   "end_days": 0.1,
+   "bb": 0.44,
+   "ba": 0.48,
+   "mid": 0.465,
+   "raw_mid": 0.46,
+   "spread": 0.04,
+   "d1": [
+    0,
+    0
+   ],
+   "d2": [
+    0,
+    3
+   ],
+   "d5": [
+    64,
+    181
+   ],
+   "q1": 5.2,
+   "q2": 15.8,
+   "qbook": 5.3,
+   "size": 100.0,
+   "qA": 19.75,
+   "qB": 25.0,
+   "capA": 96.0,
+   "capB": 95.5,
+   "nb": 14,
+   "na": 37,
+   "usdA": 79.631,
+   "usdB": 83.333,
+   "shareA": 0.7884,
+   "shareB": 0.8251
+  },
+  {
+   "type": "weather",
+   "q": "Will the highest temperature in Amsterdam be 15\u00b0C on October 8?",
+   "cid": "0x8c315e38510bef5fd0af375338e7535697fd17fbb437021b525bcf749cc7d3d2",
+   "tok": "22714514386681341529721144462189435997723714568139518407426331151539526120189",
+   "ev": "highest-temperature-in-amsterdam-on-october-8-2026",
+   "rate": 117,
+   "v": 4.5,
+   "mn": 20.0,
+   "vol24": 4121,
+   "rebate_pool_day": 31.94,
+   "clear": false,
+   "end_days": 0.1,
+   "bb": 0.35,
+   "ba": 0.41,
+   "mid": 0.38,
+   "raw_mid": 0.38,
+   "spread": 0.06,
+   "d1": [
+    0,
+    0
+   ],
+   "d2": [
+    0,
+    0
+   ],
+   "d5": [
+    18,
+    23
+   ],
+   "q1": 3.3,
+   "q2": 2.2,
+   "qbook": 2.2,
+   "size": 20.0,
+   "qA": 2.22,
+   "qB": 5.0,
+   "capA": 18.8,
+   "capB": 19.1,
+   "nb": 17,
+   "na": 32,
+   "usdA": 58.765,
+   "usdB": 81.25,
+   "shareA": 0.5023,
+   "shareB": 0.6944
+  },
+  {
+   "type": "weather",
+   "q": "Will the highest temperature in London be 15\u00b0C on October 8?",
+   "cid": "0x29693ff5c944bc0498a3e6e5e4a85ac9724d99e07d5a6b269646b5af2ec151cc",
+   "tok": "23423261254971963023021840491595475574953036126715825955696261089743525862991",
+   "ev": "highest-temperature-in-london-on-october-8-2026",
+   "rate": 117,
+   "v": 4.5,
+   "mn": 20.0,
+   "vol24": 3902,
+   "rebate_pool_day": 17.07,
+   "clear": false,
+   "end_days": 0.1,
+   "bb": 0.63,
+   "ba": 0.67,
+   "mid": 0.65,
+   "raw_mid": 0.65,
+   "spread": 0.04,
+   "d1": [
+    0,
+    0
+   ],
+   "d2": [
+    13,
+    10
+   ],
+   "d5": [
+    34,
+    23
+   ],
+   "q1": 6.5,
+   "q2": 12.6,
+   "qbook": 6.5,
+   "size": 20.0,
+   "qA": 6.17,
+   "qB": 5.0,
+   "capA": 19.2,
+   "capB": 19.1,
+   "nb": 26,
+   "na": 27,
+   "usdA": 56.976,
+   "usdB": 50.87,
+   "shareA": 0.487,
+   "shareB": 0.4348
+  },
+  {
+   "type": "weather",
+   "q": "Will the highest temperature in Milan be 20\u00b0C on October 8?",
+   "cid": "0x06acf979431be3382fa937d3e30f2c7287f29121d4a558f8f0a99773ebb272d9",
+   "tok": "27310704751220270042720813316088319409360340608668929370768925170787528591121",
+   "ev": "highest-temperature-in-milan-on-october-8-2026",
+   "rate": 109,
+   "v": 4.5,
+   "mn": 20.0,
+   "vol24": 6346,
+   "rebate_pool_day": 39.27,
+   "clear": false,
+   "end_days": 0.1,
+   "bb": 0.51,
+   "ba": 0.52,
+   "mid": 0.505,
+   "raw_mid": 0.515,
+   "spread": 0.01,
+   "d1": [
+    4,
+    0
+   ],
+   "d2": [
+    14,
+    10
+   ],
+   "d5": [
+    45,
+    38
+   ],
+   "q1": 8.9,
+   "q2": 8.9,
+   "qbook": 8.9,
+   "size": 20.0,
+   "qA": 8.89,
+   "qB": 5.0,
+   "capA": 19.8,
+   "capB": 19.1,
+   "nb": 16,
+   "na": 31,
+   "usdA": 54.469,
+   "usdB": 39.209,
+   "shareA": 0.4997,
+   "shareB": 0.3597
+  },
+  {
+   "type": "culture_tech_econ",
+   "q": "Gemini 4.0 released by October 15, 2026?",
+   "cid": "0xc1c33117799d760032da62406160105dbe60ed8a57e549a3e8152e7d6f501f0a",
+   "tok": "49958526363515189242259666331472550510633904553808953540090109523960081903849",
+   "ev": "gemini-4pt0-released-by-june-30-2026",
+   "rate": 200,
+   "v": 6.5,
+   "mn": 100.0,
+   "vol24": 25894,
+   "rebate_pool_day": 54.38,
+   "clear": true,
+   "end_days": 7.7,
+   "bb": 0.77,
+   "ba": 0.82,
+   "mid": 0.79,
+   "raw_mid": 0.795,
+   "spread": 0.05,
+   "d1": [
+    0,
+    0
+   ],
+   "d2": [
+    49,
+    0
+   ],
+   "d5": [
+    588,
+    51
+   ],
+   "q1": 179.3,
+   "q2": 83.6,
+   "qbook": 83.6,
+   "size": 100.0,
+   "qA": 28.99,
+   "qB": 25.0,
+   "capA": 95.0,
+   "capB": 93.5,
+   "nb": 36,
+   "na": 13,
+   "usdA": 51.497,
+   "usdB": 46.041,
+   "shareA": 0.2575,
+   "shareB": 0.2302
+  },
+  {
+   "type": "weather",
+   "q": "Will the highest temperature in Los Angeles be between 80-81\u00b0F on October 8?",
+   "cid": "0x8ba868bf39c37e2bf9735887d601157ab0c39642a2d95cfb8ae002682ea8eee7",
+   "tok": "65650334984468980934107570717334903941317228472083833262241339368519562409069",
+   "ev": "highest-temperature-in-los-angeles-on-october-8-2026",
+   "rate": 177,
+   "v": 4.5,
+   "mn": 100.0,
+   "vol24": 1222,
+   "rebate_pool_day": 9.4,
+   "clear": false,
+   "end_days": 0.1,
+   "bb": 0.38,
+   "ba": 0.39,
+   "mid": 0.385,
+   "raw_mid": 0.385,
+   "spread": 0.01,
+   "d1": [
+    5,
+    6
+   ],
+   "d2": [
+    212,
+    234
+   ],
+   "d5": [
+    288,
+    358
+   ],
+   "q1": 288.3,
+   "q2": 195.3,
+   "qbook": 195.3,
+   "size": 100.0,
+   "qA": 79.01,
+   "qB": 25.0,
+   "capA": 99.0,
+   "capB": 95.5,
+   "nb": 17,
+   "na": 43,
+   "usdA": 50.982,
+   "usdB": 20.086,
+   "shareA": 0.288,
+   "shareB": 0.1135
+  },
+  {
+   "type": "crypto_ladder_other",
+   "q": "Will Pump.fun reach $0.0100 by December 31, 2026?",
+   "cid": "0xff79d5b808b02c6093d5901941e572f960419501906993b937f96b11830348c4",
+   "tok": "85242840240522230974836626593561282578550685468587855780843782623107734547470",
+   "ev": "what-price-will-pumpfun-hit-before-2027",
+   "rate": 50,
+   "v": 6.5,
+   "mn": 20.0,
+   "vol24": 0,
+   "rebate_pool_day": 0.0,
+   "clear": true,
+   "end_days": 84.8,
+   "bb": 0.22,
+   "ba": 0.38,
+   "mid": 0.255,
+   "raw_mid": 0.3,
+   "spread": 0.16,
+   "d1": [
+    0,
+    0
+   ],
+   "d2": [
+    0,
+    0
+   ],
+   "d5": [
+    2,
+    0
+   ],
+   "q1": 0.0,
+   "q2": 0.0,
+   "qbook": 0.0,
+   "size": 20.0,
+   "qA": 1.42,
+   "qB": 5.0,
+   "capA": 16.8,
+   "capB": 18.7,
+   "nb": 11,
+   "na": 10,
+   "usdA": 50.0,
+   "usdB": 50.0,
+   "shareA": 1.0,
+   "shareB": 1.0
+  },
+  {
+   "type": "weather",
+   "q": "Will the highest temperature in Lucknow be 29\u00b0C on October 8?",
+   "cid": "0xf77fae31de65cb2e912e06a5307d2dae8d285433db714ab11d3ae843bc192d9a",
+   "tok": "64052125635257936921676467663029093356062319312741406573162886215309890176949",
+   "ev": "highest-temperature-in-lucknow-on-october-8-2026",
+   "rate": 200,
+   "v": 4.5,
+   "mn": 20.0,
+   "vol24": 2719,
+   "rebate_pool_day": 0.85,
+   "clear": false,
+   "end_days": 0.1,
+   "bb": 0.97,
+   "ba": 0.99,
+   "mid": 0.975,
+   "raw_mid": 0.98,
+   "spread": 0.02,
+   "d1": [
+    17,
+    0
+   ],
+   "d2": [
+    51,
+    3
+   ],
+   "d5": [
+    119,
+    3
+   ],
+   "q1": 27.0,
+   "q2": 131.6,
+   "qbook": 27.0,
+   "size": 20.0,
+   "qA": 8.89,
+   "qB": 5.0,
+   "capA": 19.6,
+   "capB": 19.25,
+   "nb": 18,
+   "na": 1,
+   "usdA": 49.54,
+   "usdB": 31.25,
+   "shareA": 0.2477,
+   "shareB": 0.1562
+  },
+  {
+   "type": "weather",
+   "q": "Will the highest temperature in Tel Aviv be 30\u00b0C on October 8?",
+   "cid": "0x9164744f04029599f5ae9385ac4d413599c2d19f83aebfcfdc31535d141d1890",
+   "tok": "30764252548822336916399981133826553486705772129822761457289031808538994232142",
+   "ev": "highest-temperature-in-tel-aviv-on-october-8-2026",
+   "rate": 96,
+   "v": 4.5,
+   "mn": 20.0,
+   "vol24": 4500,
+   "rebate_pool_day": 52.31,
+   "clear": false,
+   "end_days": 0.1,
+   "bb": 0.06,
+   "ba": 0.09,
+   "mid": 0.07,
+   "raw_mid": 0.075,
+   "spread": 0.03,
+   "d1": [
+    0,
+    0
+   ],
+   "d2": [
+    8,
+    18
+   ],
+   "d5": [
+    13,
+    203
+   ],
+   "q1": 55.4,
+   "q2": 6.2,
+   "qbook": 6.2,
+   "size": 20.0,
+   "qA": 6.17,
+   "qB": 5.0,
+   "capA": 19.4,
+   "capB": 19.1,
+   "nb": 6,
+   "na": 27,
+   "usdA": 47.884,
+   "usdB": 42.857,
+   "shareA": 0.4988,
+   "shareB": 0.4464
+  },
+  {
+   "type": "sports_game_lines_props",
+   "q": "Bucky Irving: Anytime Touchdown",
+   "cid": "0x0e03a37ed34b892d765542cb7c384e1e8d3f31c8baff43cb488d9f121b92994f",
+   "tok": "14220834443066030256135317377209234422979954097508530500507898260457563086027",
+   "ev": "nfl-tb-dal-2026-10-09-player-props",
+   "rate": 100,
+   "v": 2.5,
+   "mn": 1000.0,
+   "vol24": 10,
+   "rebate_pool_day": 0.03,
+   "clear": true,
+   "end_days": 0.6,
+   "bb": 0.3,
+   "ba": 0.32,
+   "mid": 0.31,
+   "raw_mid": 0.31,
+   "spread": 0.02,
+   "d1": [
+    630,
+    748
+   ],
+   "d2": [
+    630,
+    1419
+   ],
+   "d5": [
+    770,
+    7175
+   ],
+   "q1": 756.4,
+   "q2": 436.0,
+   "qbook": 436.0,
+   "size": 1000.0,
+   "qA": 360.0,
+   "qB": 250.0,
+   "capA": 980.0,
+   "capB": 975.0,
+   "nb": 6,
+   "na": 14,
+   "usdA": 45.226,
+   "usdB": 36.443,
+   "shareA": 0.4523,
+   "shareB": 0.3644
+  },
+  {
+   "type": "weather",
+   "q": "Will the highest temperature in Los Angeles be between 82-83\u00b0F on October 8?",
+   "cid": "0x21f6ce98ea79b65ec014ed5a13eafbc6730afcdd3f2cc958984cc618785e2758",
+   "tok": "11732753800729233964919365629507533443893777289896548110818819370155650213824",
+   "ev": "highest-temperature-in-los-angeles-on-october-8-2026",
+   "rate": 130,
+   "v": 4.5,
+   "mn": 100.0,
+   "vol24": 2533,
+   "rebate_pool_day": 21.85,
+   "clear": false,
+   "end_days": 0.1,
+   "bb": 0.28,
+   "ba": 0.33,
+   "mid": 0.31,
+   "raw_mid": 0.305,
+   "spread": 0.05,
+   "d1": [
+    0,
+    0
+   ],
+   "d2": [
+    0,
+    10
+   ],
+   "d5": [
+    59,
+    182
+   ],
+   "q1": 22.3,
+   "q2": 26.9,
+   "qbook": 22.3,
+   "size": 100.0,
+   "qA": 11.11,
+   "qB": 25.0,
+   "capA": 95.0,
+   "capB": 95.5,
+   "nb": 12,
+   "na": 47,
+   "usdA": 43.23,
+   "usdB": 68.71,
+   "shareA": 0.3325,
+   "shareB": 0.5285
+  },
+  {
+   "type": "weather",
+   "q": "Will the highest temperature in Chicago be between 72-73\u00b0F on October 8?",
+   "cid": "0x2c742fd60810b56c8d0307b0ad33e37cdea10d0514144549baeeb9764723d58a",
+   "tok": "34162025079174560216942374484745244920868387076607072400644065197907424877532",
+   "ev": "highest-temperature-in-chicago-on-october-8-2026",
+   "rate": 106,
+   "v": 4.5,
+   "mn": 100.0,
+   "vol24": 2737,
+   "rebate_pool_day": 17.96,
+   "clear": false,
+   "end_days": 0.1,
+   "bb": 0.46,
+   "ba": 0.49,
+   "mid": 0.475,
+   "raw_mid": 0.475,
+   "spread": 0.03,
+   "d1": [
+    0,
+    0
+   ],
+   "d2": [
+    4,
+    3
+   ],
+   "d5": [
+    190,
+    214
+   ],
+   "q1": 65.4,
+   "q2": 81.2,
+   "qbook": 65.4,
+   "size": 100.0,
+   "qA": 44.44,
+   "qB": 25.0,
+   "capA": 97.0,
+   "capB": 95.5,
+   "nb": 12,
+   "na": 37,
+   "usdA": 42.886,
+   "usdB": 29.314,
+   "shareA": 0.4046,
+   "shareB": 0.2765
+  },
+  {
+   "type": "stock_finance",
+   "q": "SPY (SPY) Up or Down on October 8?",
+   "cid": "0x7b962d5e23d5d98530711268c6e7732731bb523d2adf739b7fdd94fd0fe760a5",
+   "tok": "77699142836330111770395852392093202480049256786503598006123732831073136084671",
+   "ev": "spy-up-or-down-on-october-8-2026",
+   "rate": 200,
+   "v": 4.5,
+   "mn": 200.0,
+   "vol24": 2060,
+   "rebate_pool_day": 17.61,
+   "clear": false,
+   "end_days": 0.4,
+   "bb": 0.14,
+   "ba": 0.15,
+   "mid": 0.145,
+   "raw_mid": 0.145,
+   "spread": 0.01,
+   "d1": [
+    2,
+    33
+   ],
+   "d2": [
+    119,
+    709
+   ],
+   "d5": [
+    382,
+    5757
+   ],
+   "q1": 586.5,
+   "q2": 878.5,
+   "qbook": 586.5,
+   "size": 200.0,
+   "qA": 158.02,
+   "qB": 50.0,
+   "capA": 198.0,
+   "capB": 191.0,
+   "nb": 14,
+   "na": 19,
+   "usdA": 42.449,
+   "usdB": 15.711,
+   "shareA": 0.2122,
+   "shareB": 0.0786
+  },
+  {
+   "type": "weather",
+   "q": "Will the highest temperature in Miami be between 88-89\u00b0F on October 8?",
+   "cid": "0x1093c3f2eecfdd4aa20d7c551ddec015db2bf5f7dc6b654f522823857971f5fa",
+   "tok": "77008180526165734912052916320336251405207906614089404599019266573837184582442",
+   "ev": "highest-temperature-in-miami-on-october-8-2026",
+   "rate": 95,
+   "v": 4.5,
+   "mn": 100.0,
+   "vol24": 6593,
+   "rebate_pool_day": 46.97,
+   "clear": false,
+   "end_days": 0.1,
+   "bb": 0.41,
+   "ba": 0.45,
+   "mid": 0.43,
+   "raw_mid": 0.43,
+   "spread": 0.04,
+   "d1": [
+    0,
+    0
+   ],
+   "d2": [
+    10,
+    9
+   ],
+   "d5": [
+    352,
+    529
+   ],
+   "q1": 43.4,
+   "q2": 106.0,
+   "qbook": 43.4,
+   "size": 100.0,
+   "qA": 30.86,
+   "qB": 25.0,
+   "capA": 96.0,
+   "capB": 95.5,
+   "nb": 17,
+   "na": 38,
+   "usdA": 39.479,
+   "usdB": 34.722,
+   "shareA": 0.4156,
+   "shareB": 0.3655
+  },
+  {
+   "type": "sports_game_lines_props",
+   "q": "CeeDee Lamb: Anytime Touchdown",
+   "cid": "0x8417e6fef0086f7a56de27cfd7c3bdf44fdaf29aafa8abd45981557441a0af29",
+   "tok": "94329197137968146583027970845249547154032360172712977498227452254328231062287",
+   "ev": "nfl-tb-dal-2026-10-09-player-props",
+   "rate": 100,
+   "v": 2.5,
+   "mn": 1000.0,
+   "vol24": 31,
+   "rebate_pool_day": 0.07,
+   "clear": true,
+   "end_days": 0.6,
+   "bb": 0.49,
+   "ba": 0.5,
+   "mid": 0.495,
+   "raw_mid": 0.495,
+   "spread": 0.01,
+   "d1": [
+    490,
+    945
+   ],
+   "d2": [
+    1978,
+    4015
+   ],
+   "d5": [
+    3158,
+    8071
+   ],
+   "q1": 1136.2,
+   "q2": 2211.6,
+   "qbook": 1136.2,
+   "size": 1000.0,
+   "qA": 640.0,
+   "qB": 250.0,
+   "capA": 990.0,
+   "capB": 975.0,
+   "nb": 8,
+   "na": 10,
+   "usdA": 36.032,
+   "usdB": 18.035,
+   "shareA": 0.3603,
+   "shareB": 0.1803
+  },
+  {
+   "type": "weather",
+   "q": "Will the highest temperature in Austin be between 92-93\u00b0F on October 8?",
+   "cid": "0xfaac58f35b6cb9dd01af7697c3a70406531e63810d714782963d68ec31d80a74",
+   "tok": "3710735275410421833539564114671512035574774987437473617721269651402659605770",
+   "ev": "highest-temperature-in-austin-on-october-8-2026",
+   "rate": 94,
+   "v": 4.5,
+   "mn": 100.0,
+   "vol24": 1334,
+   "rebate_pool_day": 8.84,
+   "clear": false,
+   "end_days": 0.1,
+   "bb": 0.47,
+   "ba": 0.48,
+   "mid": 0.47,
+   "raw_mid": 0.475,
+   "spread": 0.01,
+   "d1": [
+    5,
+    25
+   ],
+   "d2": [
+    142,
+    229
+   ],
+   "d5": [
+    190,
+    234
+   ],
+   "q1": 105.2,
+   "q2": 123.5,
+   "qbook": 105.2,
+   "size": 100.0,
+   "qA": 60.49,
+   "qB": 25.0,
+   "capA": 99.0,
+   "capB": 95.5,
+   "nb": 20,
+   "na": 36,
+   "usdA": 34.317,
+   "usdB": 18.049,
+   "shareA": 0.3651,
+   "shareB": 0.192
+  },
+  {
+   "type": "sports_game_lines_props",
+   "q": "Javonte Williams: Anytime Touchdown",
+   "cid": "0xccb02c3cbbdb49e719d232c1ece97ad8423595b378e7bf9ce146b0c92a20b09f",
+   "tok": "74282514686769758599499098934005807774236849093634556185394140301760229364586",
+   "ev": "nfl-tb-dal-2026-10-09-player-props",
+   "rate": 100,
+   "v": 2.5,
+   "mn": 1000.0,
+   "vol24": 0,
+   "rebate_pool_day": 0.0,
+   "clear": true,
+   "end_days": 0.6,
+   "bb": 0.6,
+   "ba": 0.62,
+   "mid": 0.61,
+   "raw_mid": 0.61,
+   "spread": 0.02,
+   "d1": [
+    1200,
+    1520
+   ],
+   "d2": [
+    2380,
+    2260
+   ],
+   "d5": [
+    2380,
+    2318
+   ],
+   "q1": 800.0,
+   "q2": 1520.0,
+   "qbook": 800.0,
+   "size": 1000.0,
+   "qA": 360.0,
+   "qB": 250.0,
+   "capA": 980.0,
+   "capB": 975.0,
+   "nb": 10,
+   "na": 12,
+   "usdA": 31.034,
+   "usdB": 23.81,
+   "shareA": 0.3103,
+   "shareB": 0.2381
+  },
+  {
+   "type": "culture_tech_econ",
+   "q": "Next Fable Model (5.2+) released by October 24, 2026?",
+   "cid": "0x27181038a8cf9e075296846162b8f0dc247344162613407e3f0f9a313485d839",
+   "tok": "54919133689039400783480034844847338981243273677161374614241203530830623640964",
+   "ev": "next-fable-model-5pt2-released-byptptpt",
+   "rate": 200,
+   "v": 4.5,
+   "mn": 50.0,
+   "vol24": 7940,
+   "rebate_pool_day": 27.39,
+   "clear": true,
+   "end_days": 16.7,
+   "bb": 0.65,
+   "ba": 0.66,
+   "mid": 0.655,
+   "raw_mid": 0.655,
+   "spread": 0.01,
+   "d1": [
+    243,
+    63
+   ],
+   "d2": [
+    371,
+    112
+   ],
+   "d5": [
+    447,
+    133
+   ],
+   "q1": 398.4,
+   "q2": 216.0,
+   "qbook": 216.0,
+   "size": 50.0,
+   "qA": 39.51,
+   "qB": 12.5,
+   "capA": 49.5,
+   "capB": 47.75,
+   "nb": 21,
+   "na": 24,
+   "usdA": 30.926,
+   "usdB": 10.941,
+   "shareA": 0.1546,
+   "shareB": 0.0547
+  },
+  {
+   "type": "weather",
+   "q": "Will the highest temperature in Seattle be between 70-71\u00b0F on October 8?",
+   "cid": "0xf5eac84a5a18e67e10fcf33b9f1e2f3016de62986ab0b8fa296f974dd501e9f3",
+   "tok": "9012063034094426301983435019191470468021638173331991659062275577118760756621",
+   "ev": "highest-temperature-in-seattle-on-october-8-2026",
+   "rate": 35,
+   "v": 4.5,
+   "mn": 100.0,
+   "vol24": 1972,
+   "rebate_pool_day": 23.17,
+   "clear": false,
+   "end_days": 0.1,
+   "bb": 0.07,
+   "ba": 0.09,
+   "mid": 0.06,
+   "raw_mid": 0.08,
+   "spread": 0.02,
+   "d1": [
+    6,
+    0
+   ],
+   "d2": [
+    7,
+    0
+   ],
+   "d5": [
+    11,
+    234
+   ],
+   "q1": 1.5,
+   "q2": 2.7,
+   "qbook": 1.5,
+   "size": 100.0,
+   "qA": 11.11,
+   "qB": 25.0,
+   "capA": 98.0,
+   "capB": 95.5,
+   "nb": 6,
+   "na": 49,
+   "usdA": 30.837,
+   "usdB": 33.019,
+   "shareA": 0.881,
+   "shareB": 0.9434
+  },
+  {
+   "type": "weather",
+   "q": "Will the highest temperature in Madrid be 22\u00b0C on October 8?",
+   "cid": "0xae7b2bd28d5fe7764aaf0bd707d01d7123dd2d25d757f5f032648e16373bdf39",
+   "tok": "22967476975443916912595189596212124178807150514433224045817897951965383975759",
+   "ev": "highest-temperature-in-madrid-on-october-8-2026",
+   "rate": 87,
+   "v": 4.5,
+   "mn": 20.0,
+   "vol24": 11463,
+   "rebate_pool_day": 98.87,
+   "clear": false,
+   "end_days": 0.1,
+   "bb": 0.29,
+   "ba": 0.33,
+   "mid": 0.31,
+   "raw_mid": 0.31,
+   "spread": 0.04,
+   "d1": [
+    0,
+    0
+   ],
+   "d2": [
+    17,
+    13
+   ],
+   "d5": [
+    31,
+    79
+   ],
+   "q1": 20.7,
+   "q2": 11.4,
+   "qbook": 11.4,
+   "size": 20.0,
+   "qA": 6.17,
+   "qB": 5.0,
+   "capA": 19.2,
+   "capB": 19.1,
+   "nb": 18,
+   "na": 39,
+   "usdA": 30.552,
+   "usdB": 26.524,
+   "shareA": 0.3512,
+   "shareB": 0.3049
+  },
+  {
+   "type": "weather",
+   "q": "Will the highest temperature in New York City be between 74-75\u00b0F on October 8?",
+   "cid": "0x7c722d3d5ce629d1dfcba8860e3f14d447ab4159356f23baab950ffb90291ba1",
+   "tok": "67843556777077838637699071411772960202863282039734766374161456696949889038483",
+   "ev": "highest-temperature-in-nyc-on-october-8-2026",
+   "rate": 202,
+   "v": 4.5,
+   "mn": 100.0,
+   "vol24": 6194,
+   "rebate_pool_day": 41.04,
+   "clear": false,
+   "end_days": 0.1,
+   "bb": 0.45,
+   "ba": 0.48,
+   "mid": 0.47,
+   "raw_mid": 0.465,
+   "spread": 0.03,
+   "d1": [
+    0,
+    29
+   ],
+   "d2": [
+    114,
+    443
+   ],
+   "d5": [
+    619,
+    632
+   ],
+   "q1": 205.0,
+   "q2": 283.0,
+   "qbook": 205.0,
+   "size": 100.0,
+   "qA": 30.86,
+   "qB": 25.0,
+   "capA": 97.0,
+   "capB": 95.5,
+   "nb": 18,
+   "na": 33,
+   "usdA": 26.43,
+   "usdB": 21.957,
+   "shareA": 0.1308,
+   "shareB": 0.1087
+  },
+  {
+   "type": "culture_tech_econ",
+   "q": "Will MrBeast Gaming's next video get between 17.5 and 20 million views on day 1?",
+   "cid": "0x58a295d0c5a8e244a46fa23630de5887de2f6829e939e10fd000432f660bcbe9",
+   "tok": "34651380285855446192189807181981530808468426748623184344805114309989775034482",
+   "ev": "of-views-of-next-mrbeast-gaming-video-on-day-1-20261010",
+   "rate": 122,
+   "v": 4.5,
+   "mn": 20.0,
+   "vol24": 205,
+   "rebate_pool_day": 1.91,
+   "clear": true,
+   "end_days": 3.7,
+   "bb": 0.22,
+   "ba": 0.29,
+   "mid": 0.255,
+   "raw_mid": 0.255,
+   "spread": 0.07,
+   "d1": [
+    0,
+    0
+   ],
+   "d2": [
+    0,
+    0
+   ],
+   "d5": [
+    31,
+    58
+   ],
+   "q1": 6.9,
+   "q2": 4.0,
+   "qbook": 4.0,
+   "size": 20.0,
+   "qA": 0.99,
+   "qB": 5.0,
+   "capA": 18.6,
+   "capB": 19.1,
+   "nb": 4,
+   "na": 13,
+   "usdA": 24.204,
+   "usdB": 67.778,
+   "shareA": 0.1984,
+   "shareB": 0.5556
+  },
+  {
+   "type": "culture_tech_econ",
+   "q": "Will OpenAI announce another Millennium Prize solution by December 31, 2027?",
+   "cid": "0x80ae98ffc8aba2c15dbdc9efa0ed2188929daa6300720765f6337d60632f8e15",
+   "tok": "52894055023364356366230272605972876834190408527634232232326573198322288583579",
+   "ev": "openai-announces-another-millennium-prize-solution-by",
+   "rate": 201.99872,
+   "v": 4.5,
+   "mn": 200.0,
+   "vol24": 13541,
+   "rebate_pool_day": 54.84,
+   "clear": true,
+   "end_days": 449.8,
+   "bb": 0.59,
+   "ba": 0.6,
+   "mid": 0.595,
+   "raw_mid": 0.595,
+   "spread": 0.01,
+   "d1": [
+    248,
+    480
+   ],
+   "d2": [
+    950,
+    2404
+   ],
+   "d5": [
+    1422,
+    4472
+   ],
+   "q1": 971.9,
+   "q2": 3654.2,
+   "qbook": 1218.1,
+   "size": 200.0,
+   "qA": 158.02,
+   "qB": 50.0,
+   "capA": 198.0,
+   "capB": 191.0,
+   "nb": 22,
+   "na": 20,
+   "usdA": 23.196,
+   "usdB": 7.965,
+   "shareA": 0.1148,
+   "shareB": 0.0394
+  },
+  {
+   "type": "weather",
+   "q": "Will the highest temperature in Munich be 20\u00b0C on October 8?",
+   "cid": "0x7f8fdc26d2528fbc2fe12c45286e81713b64392df9bb7f5977e0688c62be7c55",
+   "tok": "38510143823096450505742406141021142645472637583583625685712931770233945377002",
+   "ev": "highest-temperature-in-munich-on-october-8-2026",
+   "rate": 140,
+   "v": 4.5,
+   "mn": 20.0,
+   "vol24": 7259,
+   "rebate_pool_day": 6.81,
+   "clear": false,
+   "end_days": 0.1,
+   "bb": 0.91,
+   "ba": 0.94,
+   "mid": 0.925,
+   "raw_mid": 0.925,
+   "spread": 0.03,
+   "d1": [
+    0,
+    0
+   ],
+   "d2": [
+    92,
+    8
+   ],
+   "d5": [
+    99,
+    26
+   ],
+   "q1": 45.0,
+   "q2": 90.2,
+   "qbook": 45.0,
+   "size": 20.0,
+   "qA": 8.89,
+   "qB": 5.0,
+   "capA": 19.4,
+   "capB": 19.1,
+   "nb": 18,
+   "na": 6,
+   "usdA": 23.095,
+   "usdB": 14.0,
+   "shareA": 0.165,
+   "shareB": 0.1
+  },
+  {
+   "type": "weather",
+   "q": "Will the highest temperature in Miami be between 90-91\u00b0F on October 8?",
+   "cid": "0x330efc2907791bc22b4fcc10ebe2c922d47f6f3cd6d5bbabea42ea14d6ed4c70",
+   "tok": "24473702341357015238641526779721647638239489768450185384862968897150841251461",
+   "ev": "highest-temperature-in-miami-on-october-8-2026",
+   "rate": 100,
+   "v": 4.5,
+   "mn": 100.0,
+   "vol24": 3580,
+   "rebate_pool_day": 25.51,
+   "clear": false,
+   "end_days": 0.1,
+   "bb": 0.41,
+   "ba": 0.43,
+   "mid": 0.43,
+   "raw_mid": 0.42,
+   "spread": 0.02,
+   "d1": [
+    0,
+    28
+   ],
+   "d2": [
+    123,
+    336
+   ],
+   "d5": [
+    284,
+    397
+   ],
+   "q1": 111.4,
+   "q2": 184.4,
+   "qbook": 111.4,
+   "size": 100.0,
+   "qA": 33.33,
+   "qB": 25.0,
+   "capA": 98.0,
+   "capB": 95.5,
+   "nb": 14,
+   "na": 39,
+   "usdA": 23.029,
+   "usdB": 18.328,
+   "shareA": 0.2303,
+   "shareB": 0.1833
+  },
+  {
+   "type": "weather",
+   "q": "Will the highest temperature in Sao Paulo be 31\u00b0C on October 8?",
+   "cid": "0xecce4ff7670e78b53643d13d914dfe628c2da83e8200f1976f2195983fc5c867",
+   "tok": "88805771842021945500909990749387614719561124189242912559353204413342406655784",
+   "ev": "highest-temperature-in-sao-paulo-on-october-8-2026",
+   "rate": 89,
+   "v": 4.5,
+   "mn": 100.0,
+   "vol24": 4196,
+   "rebate_pool_day": 27.01,
+   "clear": false,
+   "end_days": 0.1,
+   "bb": 0.46,
+   "ba": 0.5,
+   "mid": 0.485,
+   "raw_mid": 0.48,
+   "spread": 0.04,
+   "d1": [
+    0,
+    0
+   ],
+   "d2": [
+    0,
+    3
+   ],
+   "d5": [
+    266,
+    260
+   ],
+   "q1": 62.1,
+   "q2": 99.1,
+   "qbook": 62.1,
+   "size": 100.0,
+   "qA": 19.75,
+   "qB": 25.0,
+   "capA": 96.0,
+   "capB": 95.5,
+   "nb": 12,
+   "na": 35,
+   "usdA": 21.475,
+   "usdB": 25.545,
+   "shareA": 0.2413,
+   "shareB": 0.287
+  },
+  {
+   "type": "culture_tech_econ",
+   "q": "Next Fable Model (5.2+) released by October 17, 2026?",
+   "cid": "0x3ce7fcccc9417cd3f73f421a08b134acf17502bf97bfaf4221d179e904ae0fd3",
+   "tok": "12252003189764607063315444894479004662832554513400371908857374164797143441768",
+   "ev": "next-fable-model-5pt2-released-byptptpt",
+   "rate": 100,
+   "v": 4.5,
+   "mn": 50.0,
+   "vol24": 4445,
+   "rebate_pool_day": 21.33,
+   "clear": true,
+   "end_days": 9.7,
+   "bb": 0.51,
+   "ba": 0.53,
+   "mid": 0.52,
+   "raw_mid": 0.52,
+   "spread": 0.02,
+   "d1": [
+    160,
+    46
+   ],
+   "d2": [
+    310,
+    90
+   ],
+   "d5": [
+    560,
+    211
+   ],
+   "q1": 296.1,
+   "q2": 111.2,
+   "qbook": 111.2,
+   "size": 50.0,
+   "qA": 30.25,
+   "qB": 12.5,
+   "capA": 49.0,
+   "capB": 47.75,
+   "nb": 17,
+   "na": 24,
+   "usdA": 21.386,
+   "usdB": 10.105,
+   "shareA": 0.2139,
+   "shareB": 0.1011
+  },
+  {
+   "type": "weather",
+   "q": "Will the highest temperature in New York City be between 76-77\u00b0F on October 8?",
+   "cid": "0x1e9d456a54b50799226a809b2e1c3fa83ec5c1ad7cb90f9ef9d20beae5fa6fc8",
+   "tok": "12740235964268331617912830039161661674562516243777393211084792208404122199171",
+   "ev": "highest-temperature-in-nyc-on-october-8-2026",
+   "rate": 188,
+   "v": 4.5,
+   "mn": 100.0,
+   "vol24": 4008,
+   "rebate_pool_day": 27.81,
+   "clear": false,
+   "end_days": 0.1,
+   "bb": 0.43,
+   "ba": 0.45,
+   "mid": 0.445,
+   "raw_mid": 0.44,
+   "spread": 0.02,
+   "d1": [
+    0,
+    3
+   ],
+   "d2": [
+    283,
+    331
+   ],
+   "d5": [
+    564,
+    770
+   ],
+   "q1": 356.6,
+   "q2": 351.3,
+   "qbook": 351.3,
+   "size": 100.0,
+   "qA": 44.44,
+   "qB": 25.0,
+   "capA": 98.0,
+   "capB": 95.5,
+   "nb": 17,
+   "na": 40,
+   "usdA": 21.112,
+   "usdB": 12.49,
+   "shareA": 0.1123,
+   "shareB": 0.0664
+  },
+  {
+   "type": "stock_finance",
+   "q": "Will WTI Crude Oil (WTI) hit (HIGH) $95 in October?",
+   "cid": "0xc97dfdadb9df05ae810d375c22e6226d78e657c9f4a24fc2d307c39b136efbfe",
+   "tok": "36609595209061267599064071591481832129524747878699421999162236248801945808541",
+   "ev": "what-price-will-wti-hit-in-october-2026",
+   "rate": 100,
+   "v": 4.5,
+   "mn": 100.0,
+   "vol24": 28314,
+   "rebate_pool_day": 67.95,
+   "clear": false,
+   "end_days": 23.7,
+   "bb": 0.75,
+   "ba": 0.76,
+   "mid": 0.76,
+   "raw_mid": 0.755,
+   "spread": 0.01,
+   "d1": [
+    582,
+    65
+   ],
+   "d2": [
+    1071,
+    65
+   ],
+   "d5": [
+    1305,
+    329
+   ],
+   "q1": 695.8,
+   "q2": 183.2,
+   "qbook": 231.9,
+   "size": 100.0,
+   "qA": 60.49,
+   "qB": 25.0,
+   "capA": 99.0,
+   "capB": 95.5,
+   "nb": 54,
+   "na": 14,
+   "usdA": 20.688,
+   "usdB": 9.731,
+   "shareA": 0.2069,
+   "shareB": 0.0973
+  },
+  {
+   "type": "weather",
+   "q": "Will the highest temperature in Austin be between 90-91\u00b0F on October 8?",
+   "cid": "0x1eecb16afc610dfa40bf8fce106ddf76a4068a3006bbb37fe97f85722a533f5d",
+   "tok": "59406054170673347417294322517702205895868659401909250288024700784619470025145",
+   "ev": "highest-temperature-in-austin-on-october-8-2026",
+   "rate": 106,
+   "v": 4.5,
+   "mn": 100.0,
+   "vol24": 2028,
+   "rebate_pool_day": 13.44,
+   "clear": false,
+   "end_days": 0.1,
+   "bb": 0.45,
+   "ba": 0.49,
+   "mid": 0.47,
+   "raw_mid": 0.47,
+   "spread": 0.04,
+   "d1": [
+    0,
+    0
+   ],
+   "d2": [
+    159,
+    183
+   ],
+   "d5": [
+    251,
+    349
+   ],
+   "q1": 131.7,
+   "q2": 144.4,
+   "qbook": 131.7,
+   "size": 100.0,
+   "qA": 30.86,
+   "qB": 25.0,
+   "capA": 96.0,
+   "capB": 95.5,
+   "nb": 13,
+   "na": 35,
+   "usdA": 20.123,
+   "usdB": 16.911,
+   "shareA": 0.1898,
+   "shareB": 0.1595
+  },
+  {
+   "type": "weather",
+   "q": "Will the highest temperature in Tel Aviv be 29\u00b0C on October 8?",
+   "cid": "0x7a67ffd5d50672c2bca3ccf453dd381faa40dff5a3c2e93dc82dd13b0f3e17fd",
+   "tok": "71381846830413352387578979771071861437658670257048813675939064917958949456415",
+   "ev": "highest-temperature-in-tel-aviv-on-october-8-2026",
+   "rate": 104,
+   "v": 4.5,
+   "mn": 20.0,
+   "vol24": 4238,
+   "rebate_pool_day": 4.24,
+   "clear": false,
+   "end_days": 0.1,
+   "bb": 0.89,
+   "ba": 0.92,
+   "mid": 0.92,
+   "raw_mid": 0.905,
+   "spread": 0.03,
+   "d1": [
+    0,
+    2
+   ],
+   "d2": [
+    0,
+    3
+   ],
+   "d5": [
+    260,
+    13
+   ],
+   "q1": 28.9,
+   "q2": 9.5,
+   "qbook": 9.5,
+   "size": 20.0,
+   "qA": 2.22,
+   "qB": 5.0,
+   "capA": 19.4,
+   "capB": 19.1,
+   "nb": 18,
+   "na": 8,
+   "usdA": 19.7,
+   "usdB": 35.862,
+   "shareA": 0.1894,
+   "shareB": 0.3448
+  }
+ ],
+ "reward_rate_top20": [
+  [
+   2049.99968,
+   "politics_long_dated",
+   "Will North Carolina enact a data center moratorium by December 31, 202"
+  ],
+  [
+   2001.99872,
+   "politics_long_dated",
+   "Will North Carolina enact a data center moratorium by June 30, 2027?"
+  ],
+  [
+   2001.99872,
+   "politics_long_dated",
+   "Will North Carolina enact a data center moratorium by December 31, 202"
+  ],
+  [
+   2000,
+   "politics_long_dated",
+   "Will North Carolina enact a data center moratorium by December 31, 202"
+  ],
+  [
+   1336,
+   "politics_short_dated",
+   "2026 Balance of Power: D Senate, D House"
+  ],
+  [
+   1035.99712,
+   "politics_short_dated",
+   "Will Luiz In\u00e1cio Lula da Silva win the 2026 Brazilian presidential ele"
+  ],
+  [
+   1030.99888,
+   "politics_short_dated",
+   "2026 Balance of Power: R Senate, D House"
+  ],
+  [
+   1003.99744,
+   "politics_short_dated",
+   "Will Fl\u00e1vio Bolsonaro win the 2026 Brazilian presidential election?"
+  ],
+  [
+   1001.99872,
+   "politics_short_dated",
+   "Will there be no change in Fed interest rates after the October 2026 m"
+  ],
+  [
+   1000,
+   "politics_short_dated",
+   "Will the Fed increase interest rates by 25 bps after the October 2026 "
+  ],
+  [
+   1000,
+   "politics_long_dated",
+   "Any of the Cornell 7 charged with a felony sex crime?"
+  ],
+  [
+   611,
+   "politics_short_dated",
+   "Will Sudan's Emergency Response Rooms win the Nobel Peace Prize in 202"
+  ],
+  [
+   500,
+   "stock_finance",
+   "Will Anthropic announce bankruptcy by December 31, 2028?"
+  ],
+  [
+   500,
+   "stock_finance",
+   "Will Anthropic announce bankruptcy by December 31, 2027?"
+  ],
+  [
+   500,
+   "sports_game_moneyline",
+   "Buccaneers vs. Cowboys"
+  ],
+  [
+   500,
+   "politics_short_dated",
+   "Will the Republican Party control the Senate after the 2026 Midterm el"
+  ],
+  [
+   500,
+   "politics_short_dated",
+   "Will the Democratic Party control the Senate after the 2026 Midterm el"
+  ],
+  [
+   500,
+   "politics_long_dated",
+   "Will Texas enact a data center moratorium by June 30, 2027?"
+  ],
+  [
+   500,
+   "politics_long_dated",
+   "Will Texas enact a data center moratorium by December 31, 2028?"
+  ],
+  [
+   500,
+   "politics_long_dated",
+   "Will Texas enact a data center moratorium by December 31, 2027?"
+  ]
+ ]
+}

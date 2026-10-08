@@ -109,41 +109,46 @@ def days_to(end):
         return None
 
 
+POL = {"politics", "elections", "midterms", "geopolitics", "global-elections", "us-presidential-election",
+       "house-elections", "world", "us-politics", "trump", "main-election", "nov-4-elections"}
+FIN = {"finance", "equities", "pyth-finance", "finance-updown", "stocks", "commodities", "forex", "pre-market", "ipos"}
+CUL = {"pop-culture", "tech", "ai", "economy", "economics", "awards", "mentions", "culture", "science"}
+NOT_ML = ("o/u", "spread", "total", "exact", "corner", "handicap", "both teams", "first half", "1st half", "map ",
+          "games total", "set ", "points", "rebounds", "assists", "yards", "touchdown", "strikeouts", "hits",
+          " say ", "announcer", "mention")
+
+
 def mtype(m):
+    """Market type. Note: clearBookOnStart is True on ~97% of all markets, so it is NOT a sports flag."""
     tags = set(m["tags"] or [])
     q = m["q"].lower()
     fee = m["fee"] or {}
     rate = fee.get("rate")
     reb = fee.get("rebateRate")
-    sports = ("sports" in tags) or (rate == 0.05 and reb == 0.15) or bool(m["clear"]) or ("esports" in tags)
+    smt = (m.get("smt") or "").lower()
+    sports = bool(tags & {"sports", "esports", "games"}) or reb == 0.15 or bool(smt)
     if sports:
-        dt = days_to(m["game"]) if m.get("game") else None
-        if m["clear"] or (dt is not None and dt < 3):
-            smt = (m.get("smt") or "").lower()
-            if smt in ("moneyline", "") and (" vs" in q or "win" in q or "winner" in q) and "spread" not in q and "o/u" not in q:
+        g = days_to(m["game"]) if m.get("game") else None
+        if "games" in tags or smt or (g is not None and g < 3):
+            if smt == "moneyline" or (not smt and (" vs" in q or "winner" in q or " win " in q or q.endswith(" win?"))
+                                      and not any(w in q for w in NOT_ML)):
                 return "sports_game_moneyline"
             return "sports_game_lines_props"
         return "sports_futures"
     if "crypto" in tags or rate == 0.07:
-        if "up or down" in q:
+        if "up or down" in q or "up-or-down" in tags:
             return "crypto_updown"
         return "crypto_ladder_other"
-    if "weather" in tags or "temperature" in q:
+    if tags & {"weather", "daily-temperature", "highest-temperature"} or "temperature" in q:
         return "weather"
-    if ("stocks" in tags or "equities" in tags or "finance" in tags or "commodities" in tags or "forex" in tags) and (
-            "close" in q or "up or down" in q or "above" in q or "finish" in q or "hit" in q):
-        return "stock_finance_ladder"
-    if "elections" in tags or "politics" in tags or "geopolitics" in tags or "world" in tags or "us-politics" in tags:
-        dte = days_to(m["end"]) if m.get("end") else None
-        if dte is not None and dte > 60:
-            return "politics_long_dated"
-        return "politics_short_dated"
-    if "mentions" in tags or "culture" in tags or "pop-culture" in tags or "tech" in tags or "economy" in tags or "economics" in tags:
-        return "culture_tech_econ_mentions"
+    if tags & FIN:
+        return "stock_finance"
     dte = days_to(m["end"]) if m.get("end") else None
-    if dte is not None and dte > 60:
-        return "other_long_dated"
-    return "other"
+    if tags & POL:
+        return "politics_long_dated" if (dte is not None and dte > 60) else "politics_short_dated"
+    if tags & CUL:
+        return "culture_tech_econ"
+    return "other_long_dated" if (dte is not None and dte > 60) else "other"
 
 
 def score_book(book, v, mn, tick):
@@ -255,7 +260,7 @@ def main():
         fee = m["fee"] or {}
         p = sc["mid"]
         fee_pool = (fee.get("rate") or 0) * (1 - p) * m["vol24"] * (fee.get("rebateRate") or 0)  # vol24 ~ sum(price*shares)
-        rows.append({"type": m["type"], "q": m["q"], "ev": m["ev"], "rate": m["rate"], "v": v, "mn": mn,
+        rows.append({"type": m["type"], "q": m["q"], "cid": m["cid"], "tok": m["tok"], "ev": m["ev"], "rate": m["rate"], "v": v, "mn": mn,
                      "vol24": round(m["vol24"]), "rebate_pool_day": round(fee_pool, 2), "clear": m["clear"],
                      "end_days": round(days_to(m["end"]), 1) if m.get("end") and days_to(m["end"]) is not None else None,
                      **sc, "usdA": round(shareA * m["rate"], 3), "usdB": round(shareB * m["rate"], 3),

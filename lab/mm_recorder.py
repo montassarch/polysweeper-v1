@@ -49,35 +49,46 @@ def iso_ts(s):
         return None
 
 
+PLAN = {"politics_long_dated": 6, "politics_short_dated": 6, "stock_finance": 5, "crypto_ladder_other": 5,
+        "sports_futures": 4, "sports_game_moneyline": 4, "culture_tech_econ": 4, "weather": 4}
+
+
+sys.path.insert(0, ROOT)
+from mm_scan import mtype  # noqa: E402
+
+
 def pick_markets(nmax):
+    """Per type: half the slots to the biggest reward pools, half to random reward markets (seeded), only
+    two-sided books with mid 0.12-0.88; sports games must start 3-30 h from now (quotes stop 10 min before)."""
     rows = json.load(open(os.path.join(RAW, "scan-rows.json"), encoding="utf-8"))
     ev = {m["cid"]: m for m in json.load(open(os.path.join(RAW, "gamma-open-markets.json"), encoding="utf-8"))}
-    qmap = {}
-    for m in ev.values():
-        qmap[m["q"][:110]] = m
     now = time.time()
     cands = collections.defaultdict(list)
     for r in rows:
-        if r.get("empty_side") or (r.get("rate") or 0) < 5:
+        if r.get("empty_side") or (r.get("rate") or 0) < 2:
             continue
-        m = qmap.get(r["q"])
-        if not m:
+        m = ev.get(r.get("cid"))
+        if not m or not (0.12 <= r["mid"] <= 0.88):
             continue
-        if not (0.12 <= r["mid"] <= 0.88):
-            continue
+        r = dict(r, type=mtype(m))
         g = iso_ts(m["game"]) if m.get("game") else None
         if r["type"].startswith("sports_game"):
             if not g or g - now < 3 * 3600 or g - now > 30 * 3600:
                 continue
+        else:
+            g = None
         cands[r["type"]].append((r, m, g))
+    rnd = random.Random(8)
     chosen = []
-    per = max(3, nmax // max(1, len(cands)))
-    for t, lst in sorted(cands.items()):
-        lst.sort(key=lambda x: -x[0]["rate"])
-        for r, m, g in lst[:per]:
+    for t, n in PLAN.items():
+        lst = sorted(cands.get(t, []), key=lambda x: -x[0]["rate"])
+        top = lst[:(n + 1) // 2]
+        rest = lst[(n + 1) // 2:]
+        pick = top + rnd.sample(rest, min(n - len(top), len(rest)))
+        for r, m, g in pick:
             chosen.append({"cid": m["cid"], "tok": m["tok"], "q": m["q"][:80], "type": t, "rate": r["rate"],
                            "v": r["v"], "mn": r["mn"], "tick": float(m.get("tick") or 0.01), "game": g,
-                           "clear": bool(m.get("clear")), "fee": m.get("fee")})
+                           "fee": m.get("fee"), "qbook0": r["qbook"], "vol24": r["vol24"]})
     return chosen[:nmax]
 
 
@@ -128,7 +139,7 @@ def q_combine(q1, q2, mid):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--hours", type=float, default=24)
-    ap.add_argument("--max", type=int, default=30)
+    ap.add_argument("--max", type=int, default=40)
     ap.add_argument("--cycle", type=float, default=20)
     a = ap.parse_args()
     mk = pick_markets(a.max)

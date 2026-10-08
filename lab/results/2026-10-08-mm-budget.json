@@ -1,0 +1,1287 @@
+{
+ "all:100:A": {
+  "budget": 100,
+  "mode": "A",
+  "usd_day": 566.22,
+  "capital_used": 88.2,
+  "markets": 5,
+  "types": {
+   "culture_tech_econ": 2,
+   "weather": 3
+  },
+  "top": [
+   {
+    "q": "Will MrBeast's next video get at least 223 million views on ",
+    "type": "culture_tech_econ",
+    "units": 1,
+    "usd_day": 137.22,
+    "capital": 18.4,
+    "rate": 247,
+    "qbook": 0.2,
+    "mid": 0.45,
+    "end_days": 2.7
+   },
+   {
+    "q": "Will the highest temperature in Helsinki be 12\u00b0C on October ",
+    "type": "weather",
+    "units": 1,
+    "usd_day": 114.0,
+    "capital": 18.6,
+    "rate": 114,
+    "qbook": 0.0,
+    "mid": 0.6,
+    "end_days": 0.1
+   },
+   {
+    "q": "Will the highest temperature in Warsaw be 21\u00b0C on October 8?",
+    "type": "weather",
+    "units": 1,
+    "usd_day": 111.0,
+    "capital": 18.4,
+    "rate": 111,
+    "qbook": 0.0,
+    "mid": 0.609,
+    "end_days": 0.1
+   },
+   {
+    "q": "Will the highest temperature in Paris be 16\u00b0C on October 8?",
+    "type": "weather",
+    "units": 1,
+    "usd_day": 107.0,
+    "capital": 19.6,
+    "rate": 107,
+    "qbook": 0.0,
+    "mid": 0.735,
+    "end_days": 0.1
+   },
+   {
+    "q": "Will Noah Wyle be named People's Sexiest Man Alive in 2026?",
+    "type": "culture_tech_econ",
+    "units": 1,
+    "usd_day": 97.0,
+    "capital": 13.2,
+    "rate": 97,
+    "qbook": 0.0,
+    "mid": 0.46,
+    "end_days": 83.6
+   }
+  ]
+ },
+ "all:100:B": {
+  "budget": 100,
+  "mode": "B",
+  "usd_day": 818.5,
+  "capital_used": 95.1,
+  "markets": 5,
+  "types": {
+   "culture_tech_econ": 2,
+   "politics_short_dated": 1,
+   "weather": 1,
+   "politics_long_dated": 1
+  },
+  "top": [
+   {
+    "q": "Will MrBeast's next video get at least 223 million views on ",
+    "type": "culture_tech_econ",
+    "units": 1,
+    "usd_day": 237.5,
+    "capital": 19.1,
+    "rate": 247,
+    "qbook": 0.2,
+    "mid": 0.45,
+    "end_days": 2.7
+   },
+   {
+    "q": "Will the Green Party (MP) be in the next Swedish government?",
+    "type": "politics_short_dated",
+    "units": 1,
+    "usd_day": 200.0,
+    "capital": 18.7,
+    "rate": 200,
+    "qbook": 0.0,
+    "mid": 0.68,
+    "end_days": -24.3
+   },
+   {
+    "q": "Will MrBeast Gaming's next video get 55 million or more view",
+    "type": "culture_tech_econ",
+    "units": 1,
+    "usd_day": 155.0,
+    "capital": 19.1,
+    "rate": 155,
+    "qbook": 0.0,
+    "mid": 0.3,
+    "end_days": 9.7
+   },
+   {
+    "q": "Will the highest temperature in Helsinki be 12\u00b0C on October ",
+    "type": "weather",
+    "units": 1,
+    "usd_day": 114.0,
+    "capital": 19.1,
+    "rate": 114,
+    "qbook": 0.0,
+    "mid": 0.6,
+    "end_days": 0.1
+   },
+   {
+    "q": "Reserve Bank of New Zealand increases interest rates by 25 b",
+    "type": "politics_long_dated",
+    "units": 1,
+    "usd_day": 112.0,
+    "capital": 19.1,
+    "rate": 112,
+    "qbook": 0.0,
+    "mid": 0.475,
+    "end_days": 61.6
+   }
+  ]
+ },
+ "all:500:A": {
+  "budget": 500,
+  "mode": "A",
+  "usd_day": 1358.91,
+  "capital_used": 485.4,
+  "markets": 18,
+  "types": {
+   "culture_tech_econ": 5,
+   "weather": 12,
+   "crypto_ladder_other": 1
+  },
+  "top": [
+   {
+    "q": "Will MrBeast's next video get at least 223 million views on ",
+    "type": "culture_tech_econ",
+    "units": 2,
+    "usd_day": 176.43,
+    "capital": 36.8,
+    "rate": 247,
+    "qbook": 0.2,
+    "mid": 0.45,
+    "end_days": 2.7
+   },
+   {
+    "q": "Will the highest temperature in Helsinki be 12\u00b0C on October ",
+    "type": "weather",
+    "units": 1,
+    "usd_day": 114.0,
+    "capital": 18.6,
+    "rate": 114,
+    "qbook": 0.0,
+    "mid": 0.6,
+    "end_days": 0.1
+   },
+   {
+    "q": "Will the highest temperature in Warsaw be 21\u00b0C on October 8?",
+    "type": "weather",
+    "units": 1,
+    "usd_day": 111.0,
+    "capital": 18.4,
+    "rate": 111,
+    "qbook": 0.0,
+    "mid": 0.609,
+    "end_days": 0.1
+   },
+   {
+    "q": "Will the highest temperature in Paris be 16\u00b0C on October 8?",
+    "type": "weather",
+    "units": 1,
+    "usd_day": 107.0,
+    "capital": 19.6,
+    "rate": 107,
+    "qbook": 0.0,
+    "mid": 0.735,
+    "end_days": 0.1
+   },
+   {
+    "q": "Will Jynxzi, Ron and Los beat the Minecraft challenge by Oct",
+    "type": "culture_tech_econ",
+    "units": 1,
+    "usd_day": 100.0,
+    "capital": 96.0,
+    "rate": 100,
+    "qbook": 0.0,
+    "mid": 0.825,
+    "end_days": 2.7
+   },
+   {
+    "q": "Will Noah Wyle be named People's Sexiest Man Alive in 2026?",
+    "type": "culture_tech_econ",
+    "units": 1,
+    "usd_day": 97.0,
+    "capital": 13.2,
+    "rate": 97,
+    "qbook": 0.0,
+    "mid": 0.46,
+    "end_days": 83.6
+   },
+   {
+    "q": "Will the highest temperature in Helsinki be 13\u00b0C on October ",
+    "type": "weather",
+    "units": 1,
+    "usd_day": 86.0,
+    "capital": 18.4,
+    "rate": 86,
+    "qbook": 0.0,
+    "mid": 0.39,
+    "end_days": 0.1
+   },
+   {
+    "q": "Will MrBeast's next video get between 215 and 223 million vi",
+    "type": "culture_tech_econ",
+    "units": 1,
+    "usd_day": 84.0,
+    "capital": 18.6,
+    "rate": 84,
+    "qbook": 0.0,
+    "mid": 0.255,
+    "end_days": 2.7
+   },
+   {
+    "q": "Will the highest temperature in Lucknow be 29\u00b0C on October 8",
+    "type": "weather",
+    "units": 2,
+    "usd_day": 79.41,
+    "capital": 39.2,
+    "rate": 200,
+    "qbook": 27.0,
+    "mid": 0.975,
+    "end_days": 0.1
+   },
+   {
+    "q": "Will the highest temperature in Amsterdam be 15\u00b0C on October",
+    "type": "weather",
+    "units": 2,
+    "usd_day": 78.23,
+    "capital": 37.6,
+    "rate": 117,
+    "qbook": 2.2,
+    "mid": 0.38,
+    "end_days": 0.1
+   },
+   {
+    "q": "Will the highest temperature in London be 15\u00b0C on October 8?",
+    "type": "weather",
+    "units": 2,
+    "usd_day": 76.63,
+    "capital": 38.4,
+    "rate": 117,
+    "qbook": 6.5,
+    "mid": 0.65,
+    "end_days": 0.1
+   },
+   {
+    "q": "Will the highest temperature in Milan be 20\u00b0C on October 8?",
+    "type": "weather",
+    "units": 1,
+    "usd_day": 54.47,
+    "capital": 19.8,
+    "rate": 109,
+    "qbook": 8.9,
+    "mid": 0.505,
+    "end_days": 0.1
+   }
+  ]
+ },
+ "all:500:B": {
+  "budget": 500,
+  "mode": "B",
+  "usd_day": 2408.53,
+  "capital_used": 493.2,
+  "markets": 26,
+  "types": {
+   "culture_tech_econ": 5,
+   "politics_short_dated": 1,
+   "weather": 10,
+   "politics_long_dated": 1,
+   "stock_finance": 1,
+   "sports_futures": 1,
+   "crypto_ladder_other": 7
+  },
+  "top": [
+   {
+    "q": "Will MrBeast's next video get at least 223 million views on ",
+    "type": "culture_tech_econ",
+    "units": 1,
+    "usd_day": 237.5,
+    "capital": 19.1,
+    "rate": 247,
+    "qbook": 0.2,
+    "mid": 0.45,
+    "end_days": 2.7
+   },
+   {
+    "q": "Will the Green Party (MP) be in the next Swedish government?",
+    "type": "politics_short_dated",
+    "units": 1,
+    "usd_day": 200.0,
+    "capital": 18.7,
+    "rate": 200,
+    "qbook": 0.0,
+    "mid": 0.68,
+    "end_days": -24.3
+   },
+   {
+    "q": "Will MrBeast Gaming's next video get 55 million or more view",
+    "type": "culture_tech_econ",
+    "units": 1,
+    "usd_day": 155.0,
+    "capital": 19.1,
+    "rate": 155,
+    "qbook": 0.0,
+    "mid": 0.3,
+    "end_days": 9.7
+   },
+   {
+    "q": "Will the highest temperature in Helsinki be 12\u00b0C on October ",
+    "type": "weather",
+    "units": 1,
+    "usd_day": 114.0,
+    "capital": 19.1,
+    "rate": 114,
+    "qbook": 0.0,
+    "mid": 0.6,
+    "end_days": 0.1
+   },
+   {
+    "q": "Reserve Bank of New Zealand increases interest rates by 25 b",
+    "type": "politics_long_dated",
+    "units": 1,
+    "usd_day": 112.0,
+    "capital": 19.1,
+    "rate": 112,
+    "qbook": 0.0,
+    "mid": 0.475,
+    "end_days": 61.6
+   },
+   {
+    "q": "Will the highest temperature in Warsaw be 21\u00b0C on October 8?",
+    "type": "weather",
+    "units": 1,
+    "usd_day": 111.0,
+    "capital": 19.1,
+    "rate": 111,
+    "qbook": 0.0,
+    "mid": 0.609,
+    "end_days": 0.1
+   },
+   {
+    "q": "Will the highest temperature in Moscow be 14\u00b0C on October 8?",
+    "type": "weather",
+    "units": 1,
+    "usd_day": 108.0,
+    "capital": 19.1,
+    "rate": 108,
+    "qbook": 0.0,
+    "mid": 0.415,
+    "end_days": 0.1
+   },
+   {
+    "q": "Will the highest temperature in Paris be 16\u00b0C on October 8?",
+    "type": "weather",
+    "units": 1,
+    "usd_day": 107.0,
+    "capital": 19.1,
+    "rate": 107,
+    "qbook": 0.0,
+    "mid": 0.735,
+    "end_days": 0.1
+   },
+   {
+    "q": "Will NYC have less than 3 inches of precipitation in October",
+    "type": "weather",
+    "units": 1,
+    "usd_day": 102.0,
+    "capital": 19.1,
+    "rate": 102,
+    "qbook": 0.0,
+    "mid": 0.33,
+    "end_days": 91.8
+   },
+   {
+    "q": "Will the highest temperature in Istanbul be 22\u00b0C on October ",
+    "type": "weather",
+    "units": 1,
+    "usd_day": 100.0,
+    "capital": 19.1,
+    "rate": 100,
+    "qbook": 0.0,
+    "mid": 0.69,
+    "end_days": 0.1
+   },
+   {
+    "q": "Will Noah Wyle be named People's Sexiest Man Alive in 2026?",
+    "type": "culture_tech_econ",
+    "units": 1,
+    "usd_day": 97.0,
+    "capital": 19.1,
+    "rate": 97,
+    "qbook": 0.0,
+    "mid": 0.46,
+    "end_days": 83.6
+   },
+   {
+    "q": "Will the highest temperature in Cape Town be 20\u00b0C on October",
+    "type": "weather",
+    "units": 1,
+    "usd_day": 95.0,
+    "capital": 19.1,
+    "rate": 95,
+    "qbook": 0.0,
+    "mid": 0.365,
+    "end_days": 0.1
+   }
+  ]
+ },
+ "no_resolution_within_7d_no_sports_games:100:A": {
+  "budget": 100,
+  "mode": "A",
+  "usd_day": 192.04,
+  "capital_used": 84.6,
+  "markets": 5,
+  "types": {
+   "culture_tech_econ": 2,
+   "crypto_ladder_other": 3
+  },
+  "top": [
+   {
+    "q": "Will Noah Wyle be named People's Sexiest Man Alive in 2026?",
+    "type": "culture_tech_econ",
+    "units": 1,
+    "usd_day": 97.0,
+    "capital": 13.2,
+    "rate": 97,
+    "qbook": 0.0,
+    "mid": 0.46,
+    "end_days": 83.6
+   },
+   {
+    "q": "Will Pump.fun reach $0.0100 by December 31, 2026?",
+    "type": "crypto_ladder_other",
+    "units": 1,
+    "usd_day": 50.0,
+    "capital": 16.8,
+    "rate": 50,
+    "qbook": 0.0,
+    "mid": 0.255,
+    "end_days": 84.8
+   },
+   {
+    "q": "Will Ethena dip to $0.12 by December 31, 2026?",
+    "type": "crypto_ladder_other",
+    "units": 1,
+    "usd_day": 17.15,
+    "capital": 17.8,
+    "rate": 50,
+    "qbook": 0.9,
+    "mid": 0.415,
+    "end_days": 84.8
+   },
+   {
+    "q": "Will Gemini Argon be released on October 30, 2026?",
+    "type": "culture_tech_econ",
+    "units": 1,
+    "usd_day": 14.06,
+    "capital": 18.8,
+    "rate": 28,
+    "qbook": 2.2,
+    "mid": 0.18,
+    "end_days": 22.7
+   },
+   {
+    "q": "Will Cap dip to $0.015 before 2027?",
+    "type": "crypto_ladder_other",
+    "units": 1,
+    "usd_day": 13.82,
+    "capital": 18.0,
+    "rate": 50,
+    "qbook": 2.8,
+    "mid": 0.38,
+    "end_days": 84.8
+   }
+  ]
+ },
+ "no_resolution_within_7d_no_sports_games:100:B": {
+  "budget": 100,
+  "mode": "B",
+  "usd_day": 553.0,
+  "capital_used": 95.5,
+  "markets": 5,
+  "types": {
+   "culture_tech_econ": 2,
+   "politics_long_dated": 1,
+   "weather": 2
+  },
+  "top": [
+   {
+    "q": "Will MrBeast Gaming's next video get 55 million or more view",
+    "type": "culture_tech_econ",
+    "units": 1,
+    "usd_day": 155.0,
+    "capital": 19.1,
+    "rate": 155,
+    "qbook": 0.0,
+    "mid": 0.3,
+    "end_days": 9.7
+   },
+   {
+    "q": "Reserve Bank of New Zealand increases interest rates by 25 b",
+    "type": "politics_long_dated",
+    "units": 1,
+    "usd_day": 112.0,
+    "capital": 19.1,
+    "rate": 112,
+    "qbook": 0.0,
+    "mid": 0.475,
+    "end_days": 61.6
+   },
+   {
+    "q": "Will NYC have less than 3 inches of precipitation in October",
+    "type": "weather",
+    "units": 1,
+    "usd_day": 102.0,
+    "capital": 19.1,
+    "rate": 102,
+    "qbook": 0.0,
+    "mid": 0.33,
+    "end_days": 91.8
+   },
+   {
+    "q": "Will Noah Wyle be named People's Sexiest Man Alive in 2026?",
+    "type": "culture_tech_econ",
+    "units": 1,
+    "usd_day": 97.0,
+    "capital": 19.1,
+    "rate": 97,
+    "qbook": 0.0,
+    "mid": 0.46,
+    "end_days": 83.6
+   },
+   {
+    "q": "Will Isaias peak at Category 2?",
+    "type": "weather",
+    "units": 1,
+    "usd_day": 87.0,
+    "capital": 19.1,
+    "rate": 87,
+    "qbook": 0.0,
+    "mid": 0.53,
+    "end_days": 12.7
+   }
+  ]
+ },
+ "no_resolution_within_7d_no_sports_games:500:A": {
+  "budget": 500,
+  "mode": "A",
+  "usd_day": 406.67,
+  "capital_used": 499.5,
+  "markets": 12,
+  "types": {
+   "culture_tech_econ": 8,
+   "crypto_ladder_other": 4
+  },
+  "top": [
+   {
+    "q": "Will Noah Wyle be named People's Sexiest Man Alive in 2026?",
+    "type": "culture_tech_econ",
+    "units": 1,
+    "usd_day": 97.0,
+    "capital": 13.2,
+    "rate": 97,
+    "qbook": 0.0,
+    "mid": 0.46,
+    "end_days": 83.6
+   },
+   {
+    "q": "Next Fable Model (5.2+) released by October 24, 2026?",
+    "type": "culture_tech_econ",
+    "units": 2,
+    "usd_day": 53.57,
+    "capital": 99.0,
+    "rate": 200,
+    "qbook": 216.0,
+    "mid": 0.655,
+    "end_days": 16.7
+   },
+   {
+    "q": "Gemini 4.0 released by October 15, 2026?",
+    "type": "culture_tech_econ",
+    "units": 1,
+    "usd_day": 51.5,
+    "capital": 95.0,
+    "rate": 200,
+    "qbook": 83.6,
+    "mid": 0.79,
+    "end_days": 7.7
+   },
+   {
+    "q": "Will Pump.fun reach $0.0100 by December 31, 2026?",
+    "type": "crypto_ladder_other",
+    "units": 1,
+    "usd_day": 50.0,
+    "capital": 16.8,
+    "rate": 50,
+    "qbook": 0.0,
+    "mid": 0.255,
+    "end_days": 84.8
+   },
+   {
+    "q": "Will Jynxzi, Ron, and Los have between 120 and 149 Minecraft",
+    "type": "culture_tech_econ",
+    "units": 4,
+    "usd_day": 42.82,
+    "capital": 77.6,
+    "rate": 200,
+    "qbook": 90.6,
+    "mid": 0.52,
+    "end_days": 53.8
+   },
+   {
+    "q": "Will Ethena dip to $0.12 by December 31, 2026?",
+    "type": "crypto_ladder_other",
+    "units": 2,
+    "usd_day": 25.54,
+    "capital": 35.6,
+    "rate": 50,
+    "qbook": 0.9,
+    "mid": 0.415,
+    "end_days": 84.8
+   },
+   {
+    "q": "Will Cap dip to $0.015 before 2027?",
+    "type": "crypto_ladder_other",
+    "units": 2,
+    "usd_day": 21.66,
+    "capital": 36.0,
+    "rate": 50,
+    "qbook": 2.8,
+    "mid": 0.38,
+    "end_days": 84.8
+   },
+   {
+    "q": "Next Fable Model (5.2+) released by October 17, 2026?",
+    "type": "culture_tech_econ",
+    "units": 1,
+    "usd_day": 21.39,
+    "capital": 49.0,
+    "rate": 100,
+    "qbook": 111.2,
+    "mid": 0.52,
+    "end_days": 9.7
+   },
+   {
+    "q": "Will Gemini Argon be released on October 30, 2026?",
+    "type": "culture_tech_econ",
+    "units": 1,
+    "usd_day": 14.06,
+    "capital": 18.8,
+    "rate": 28,
+    "qbook": 2.2,
+    "mid": 0.18,
+    "end_days": 22.7
+   },
+   {
+    "q": "Will Dune: Part Three win Best Casting at the 99th Academy A",
+    "type": "culture_tech_econ",
+    "units": 1,
+    "usd_day": 10.9,
+    "capital": 18.9,
+    "rate": 22,
+    "qbook": 2.9,
+    "mid": 0.051,
+    "end_days": 265.7
+   },
+   {
+    "q": "Will Pump.fun reach $0.0070 by December 31, 2026?",
+    "type": "crypto_ladder_other",
+    "units": 1,
+    "usd_day": 9.9,
+    "capital": 19.8,
+    "rate": 50,
+    "qbook": 69.0,
+    "mid": 0.655,
+    "end_days": 84.8
+   },
+   {
+    "q": "Will \u201cA Song To Sing\u201d by Miranda Lambert and Chris Stapleton",
+    "type": "culture_tech_econ",
+    "units": 1,
+    "usd_day": 8.33,
+    "capital": 19.8,
+    "rate": 99,
+    "qbook": 172.0,
+    "mid": 0.465,
+    "end_days": 41.8
+   }
+  ]
+ },
+ "no_resolution_within_7d_no_sports_games:500:B": {
+  "budget": 500,
+  "mode": "B",
+  "usd_day": 1565.37,
+  "capital_used": 489.8,
+  "markets": 26,
+  "types": {
+   "culture_tech_econ": 3,
+   "politics_long_dated": 1,
+   "weather": 2,
+   "sports_futures": 7,
+   "crypto_ladder_other": 11,
+   "stock_finance": 2
+  },
+  "top": [
+   {
+    "q": "Will MrBeast Gaming's next video get 55 million or more view",
+    "type": "culture_tech_econ",
+    "units": 1,
+    "usd_day": 155.0,
+    "capital": 19.1,
+    "rate": 155,
+    "qbook": 0.0,
+    "mid": 0.3,
+    "end_days": 9.7
+   },
+   {
+    "q": "Reserve Bank of New Zealand increases interest rates by 25 b",
+    "type": "politics_long_dated",
+    "units": 1,
+    "usd_day": 112.0,
+    "capital": 19.1,
+    "rate": 112,
+    "qbook": 0.0,
+    "mid": 0.475,
+    "end_days": 61.6
+   },
+   {
+    "q": "Will NYC have less than 3 inches of precipitation in October",
+    "type": "weather",
+    "units": 1,
+    "usd_day": 102.0,
+    "capital": 19.1,
+    "rate": 102,
+    "qbook": 0.0,
+    "mid": 0.33,
+    "end_days": 91.8
+   },
+   {
+    "q": "Will Noah Wyle be named People's Sexiest Man Alive in 2026?",
+    "type": "culture_tech_econ",
+    "units": 1,
+    "usd_day": 97.0,
+    "capital": 19.1,
+    "rate": 97,
+    "qbook": 0.0,
+    "mid": 0.46,
+    "end_days": 83.6
+   },
+   {
+    "q": "Will Isaias peak at Category 2?",
+    "type": "weather",
+    "units": 1,
+    "usd_day": 87.0,
+    "capital": 19.1,
+    "rate": 87,
+    "qbook": 0.0,
+    "mid": 0.53,
+    "end_days": 12.7
+   },
+   {
+    "q": "Will Jinggg have the most kills for Paper Rex at VALORANT Ch",
+    "type": "sports_futures",
+    "units": 1,
+    "usd_day": 54.0,
+    "capital": 19.1,
+    "rate": 54,
+    "qbook": 0.0,
+    "mid": 0.534,
+    "end_days": 40.8
+   },
+   {
+    "q": "Will Abyss be the fewest played map at VALORANT Champions 20",
+    "type": "sports_futures",
+    "units": 1,
+    "usd_day": 51.0,
+    "capital": 19.1,
+    "rate": 51,
+    "qbook": 0.0,
+    "mid": 0.5575,
+    "end_days": 40.8
+   },
+   {
+    "q": "Will Pump.fun reach $0.0100 by December 31, 2026?",
+    "type": "crypto_ladder_other",
+    "units": 1,
+    "usd_day": 50.0,
+    "capital": 18.7,
+    "rate": 50,
+    "qbook": 0.0,
+    "mid": 0.255,
+    "end_days": 84.8
+   },
+   {
+    "q": "Kraken IPO by December 31, 2027?",
+    "type": "crypto_ladder_other",
+    "units": 1,
+    "usd_day": 50.0,
+    "capital": 18.7,
+    "rate": 50,
+    "qbook": 0.0,
+    "mid": 0.67,
+    "end_days": 449.8
+   },
+   {
+    "q": "Will Hyperliquid reach $120 by December 31, 2026?",
+    "type": "crypto_ladder_other",
+    "units": 1,
+    "usd_day": 50.0,
+    "capital": 18.7,
+    "rate": 50,
+    "qbook": 0.0,
+    "mid": 0.285,
+    "end_days": 84.8
+   },
+   {
+    "q": "Will Hyperliquid reach $110 by December 31, 2026?",
+    "type": "crypto_ladder_other",
+    "units": 1,
+    "usd_day": 50.0,
+    "capital": 18.7,
+    "rate": 50,
+    "qbook": 0.0,
+    "mid": 0.33,
+    "end_days": 84.8
+   },
+   {
+    "q": "Will Ethena dip to $0.08 by December 31, 2026?",
+    "type": "crypto_ladder_other",
+    "units": 1,
+    "usd_day": 50.0,
+    "capital": 18.7,
+    "rate": 50,
+    "qbook": 0.0,
+    "mid": 0.545,
+    "end_days": 84.8
+   }
+  ]
+ },
+ "mid_0.10_0.90_and_7d:100:A": {
+  "budget": 100,
+  "mode": "A",
+  "usd_day": 192.04,
+  "capital_used": 84.6,
+  "markets": 5,
+  "types": {
+   "culture_tech_econ": 2,
+   "crypto_ladder_other": 3
+  },
+  "top": [
+   {
+    "q": "Will Noah Wyle be named People's Sexiest Man Alive in 2026?",
+    "type": "culture_tech_econ",
+    "units": 1,
+    "usd_day": 97.0,
+    "capital": 13.2,
+    "rate": 97,
+    "qbook": 0.0,
+    "mid": 0.46,
+    "end_days": 83.6
+   },
+   {
+    "q": "Will Pump.fun reach $0.0100 by December 31, 2026?",
+    "type": "crypto_ladder_other",
+    "units": 1,
+    "usd_day": 50.0,
+    "capital": 16.8,
+    "rate": 50,
+    "qbook": 0.0,
+    "mid": 0.255,
+    "end_days": 84.8
+   },
+   {
+    "q": "Will Ethena dip to $0.12 by December 31, 2026?",
+    "type": "crypto_ladder_other",
+    "units": 1,
+    "usd_day": 17.15,
+    "capital": 17.8,
+    "rate": 50,
+    "qbook": 0.9,
+    "mid": 0.415,
+    "end_days": 84.8
+   },
+   {
+    "q": "Will Gemini Argon be released on October 30, 2026?",
+    "type": "culture_tech_econ",
+    "units": 1,
+    "usd_day": 14.06,
+    "capital": 18.8,
+    "rate": 28,
+    "qbook": 2.2,
+    "mid": 0.18,
+    "end_days": 22.7
+   },
+   {
+    "q": "Will Cap dip to $0.015 before 2027?",
+    "type": "crypto_ladder_other",
+    "units": 1,
+    "usd_day": 13.82,
+    "capital": 18.0,
+    "rate": 50,
+    "qbook": 2.8,
+    "mid": 0.38,
+    "end_days": 84.8
+   }
+  ]
+ },
+ "mid_0.10_0.90_and_7d:100:B": {
+  "budget": 100,
+  "mode": "B",
+  "usd_day": 553.0,
+  "capital_used": 95.5,
+  "markets": 5,
+  "types": {
+   "culture_tech_econ": 2,
+   "politics_long_dated": 1,
+   "weather": 2
+  },
+  "top": [
+   {
+    "q": "Will MrBeast Gaming's next video get 55 million or more view",
+    "type": "culture_tech_econ",
+    "units": 1,
+    "usd_day": 155.0,
+    "capital": 19.1,
+    "rate": 155,
+    "qbook": 0.0,
+    "mid": 0.3,
+    "end_days": 9.7
+   },
+   {
+    "q": "Reserve Bank of New Zealand increases interest rates by 25 b",
+    "type": "politics_long_dated",
+    "units": 1,
+    "usd_day": 112.0,
+    "capital": 19.1,
+    "rate": 112,
+    "qbook": 0.0,
+    "mid": 0.475,
+    "end_days": 61.6
+   },
+   {
+    "q": "Will NYC have less than 3 inches of precipitation in October",
+    "type": "weather",
+    "units": 1,
+    "usd_day": 102.0,
+    "capital": 19.1,
+    "rate": 102,
+    "qbook": 0.0,
+    "mid": 0.33,
+    "end_days": 91.8
+   },
+   {
+    "q": "Will Noah Wyle be named People's Sexiest Man Alive in 2026?",
+    "type": "culture_tech_econ",
+    "units": 1,
+    "usd_day": 97.0,
+    "capital": 19.1,
+    "rate": 97,
+    "qbook": 0.0,
+    "mid": 0.46,
+    "end_days": 83.6
+   },
+   {
+    "q": "Will Isaias peak at Category 2?",
+    "type": "weather",
+    "units": 1,
+    "usd_day": 87.0,
+    "capital": 19.1,
+    "rate": 87,
+    "qbook": 0.0,
+    "mid": 0.53,
+    "end_days": 12.7
+   }
+  ]
+ },
+ "mid_0.10_0.90_and_7d:500:A": {
+  "budget": 500,
+  "mode": "A",
+  "usd_day": 403.75,
+  "capital_used": 500.0,
+  "markets": 11,
+  "types": {
+   "culture_tech_econ": 7,
+   "crypto_ladder_other": 4
+  },
+  "top": [
+   {
+    "q": "Will Noah Wyle be named People's Sexiest Man Alive in 2026?",
+    "type": "culture_tech_econ",
+    "units": 1,
+    "usd_day": 97.0,
+    "capital": 13.2,
+    "rate": 97,
+    "qbook": 0.0,
+    "mid": 0.46,
+    "end_days": 83.6
+   },
+   {
+    "q": "Next Fable Model (5.2+) released by October 24, 2026?",
+    "type": "culture_tech_econ",
+    "units": 2,
+    "usd_day": 53.57,
+    "capital": 99.0,
+    "rate": 200,
+    "qbook": 216.0,
+    "mid": 0.655,
+    "end_days": 16.7
+   },
+   {
+    "q": "Gemini 4.0 released by October 15, 2026?",
+    "type": "culture_tech_econ",
+    "units": 1,
+    "usd_day": 51.5,
+    "capital": 95.0,
+    "rate": 200,
+    "qbook": 83.6,
+    "mid": 0.79,
+    "end_days": 7.7
+   },
+   {
+    "q": "Will Jynxzi, Ron, and Los have between 120 and 149 Minecraft",
+    "type": "culture_tech_econ",
+    "units": 5,
+    "usd_day": 50.8,
+    "capital": 97.0,
+    "rate": 200,
+    "qbook": 90.6,
+    "mid": 0.52,
+    "end_days": 53.8
+   },
+   {
+    "q": "Will Pump.fun reach $0.0100 by December 31, 2026?",
+    "type": "crypto_ladder_other",
+    "units": 1,
+    "usd_day": 50.0,
+    "capital": 16.8,
+    "rate": 50,
+    "qbook": 0.0,
+    "mid": 0.255,
+    "end_days": 84.8
+   },
+   {
+    "q": "Will Ethena dip to $0.12 by December 31, 2026?",
+    "type": "crypto_ladder_other",
+    "units": 2,
+    "usd_day": 25.54,
+    "capital": 35.6,
+    "rate": 50,
+    "qbook": 0.9,
+    "mid": 0.415,
+    "end_days": 84.8
+   },
+   {
+    "q": "Will Cap dip to $0.015 before 2027?",
+    "type": "crypto_ladder_other",
+    "units": 2,
+    "usd_day": 21.66,
+    "capital": 36.0,
+    "rate": 50,
+    "qbook": 2.8,
+    "mid": 0.38,
+    "end_days": 84.8
+   },
+   {
+    "q": "Next Fable Model (5.2+) released by October 17, 2026?",
+    "type": "culture_tech_econ",
+    "units": 1,
+    "usd_day": 21.39,
+    "capital": 49.0,
+    "rate": 100,
+    "qbook": 111.2,
+    "mid": 0.52,
+    "end_days": 9.7
+   },
+   {
+    "q": "Will Gemini Argon be released on October 30, 2026?",
+    "type": "culture_tech_econ",
+    "units": 1,
+    "usd_day": 14.06,
+    "capital": 18.8,
+    "rate": 28,
+    "qbook": 2.2,
+    "mid": 0.18,
+    "end_days": 22.7
+   },
+   {
+    "q": "Will Pump.fun reach $0.0070 by December 31, 2026?",
+    "type": "crypto_ladder_other",
+    "units": 1,
+    "usd_day": 9.9,
+    "capital": 19.8,
+    "rate": 50,
+    "qbook": 69.0,
+    "mid": 0.655,
+    "end_days": 84.8
+   },
+   {
+    "q": "Will \u201cA Song To Sing\u201d by Miranda Lambert and Chris Stapleton",
+    "type": "culture_tech_econ",
+    "units": 1,
+    "usd_day": 8.33,
+    "capital": 19.8,
+    "rate": 99,
+    "qbook": 172.0,
+    "mid": 0.465,
+    "end_days": 41.8
+   }
+  ]
+ },
+ "mid_0.10_0.90_and_7d:500:B": {
+  "budget": 500,
+  "mode": "B",
+  "usd_day": 1565.37,
+  "capital_used": 489.8,
+  "markets": 26,
+  "types": {
+   "culture_tech_econ": 3,
+   "politics_long_dated": 1,
+   "weather": 2,
+   "sports_futures": 7,
+   "crypto_ladder_other": 11,
+   "stock_finance": 2
+  },
+  "top": [
+   {
+    "q": "Will MrBeast Gaming's next video get 55 million or more view",
+    "type": "culture_tech_econ",
+    "units": 1,
+    "usd_day": 155.0,
+    "capital": 19.1,
+    "rate": 155,
+    "qbook": 0.0,
+    "mid": 0.3,
+    "end_days": 9.7
+   },
+   {
+    "q": "Reserve Bank of New Zealand increases interest rates by 25 b",
+    "type": "politics_long_dated",
+    "units": 1,
+    "usd_day": 112.0,
+    "capital": 19.1,
+    "rate": 112,
+    "qbook": 0.0,
+    "mid": 0.475,
+    "end_days": 61.6
+   },
+   {
+    "q": "Will NYC have less than 3 inches of precipitation in October",
+    "type": "weather",
+    "units": 1,
+    "usd_day": 102.0,
+    "capital": 19.1,
+    "rate": 102,
+    "qbook": 0.0,
+    "mid": 0.33,
+    "end_days": 91.8
+   },
+   {
+    "q": "Will Noah Wyle be named People's Sexiest Man Alive in 2026?",
+    "type": "culture_tech_econ",
+    "units": 1,
+    "usd_day": 97.0,
+    "capital": 19.1,
+    "rate": 97,
+    "qbook": 0.0,
+    "mid": 0.46,
+    "end_days": 83.6
+   },
+   {
+    "q": "Will Isaias peak at Category 2?",
+    "type": "weather",
+    "units": 1,
+    "usd_day": 87.0,
+    "capital": 19.1,
+    "rate": 87,
+    "qbook": 0.0,
+    "mid": 0.53,
+    "end_days": 12.7
+   },
+   {
+    "q": "Will Jinggg have the most kills for Paper Rex at VALORANT Ch",
+    "type": "sports_futures",
+    "units": 1,
+    "usd_day": 54.0,
+    "capital": 19.1,
+    "rate": 54,
+    "qbook": 0.0,
+    "mid": 0.534,
+    "end_days": 40.8
+   },
+   {
+    "q": "Will Abyss be the fewest played map at VALORANT Champions 20",
+    "type": "sports_futures",
+    "units": 1,
+    "usd_day": 51.0,
+    "capital": 19.1,
+    "rate": 51,
+    "qbook": 0.0,
+    "mid": 0.5575,
+    "end_days": 40.8
+   },
+   {
+    "q": "Will Pump.fun reach $0.0100 by December 31, 2026?",
+    "type": "crypto_ladder_other",
+    "units": 1,
+    "usd_day": 50.0,
+    "capital": 18.7,
+    "rate": 50,
+    "qbook": 0.0,
+    "mid": 0.255,
+    "end_days": 84.8
+   },
+   {
+    "q": "Kraken IPO by December 31, 2027?",
+    "type": "crypto_ladder_other",
+    "units": 1,
+    "usd_day": 50.0,
+    "capital": 18.7,
+    "rate": 50,
+    "qbook": 0.0,
+    "mid": 0.67,
+    "end_days": 449.8
+   },
+   {
+    "q": "Will Hyperliquid reach $120 by December 31, 2026?",
+    "type": "crypto_ladder_other",
+    "units": 1,
+    "usd_day": 50.0,
+    "capital": 18.7,
+    "rate": 50,
+    "qbook": 0.0,
+    "mid": 0.285,
+    "end_days": 84.8
+   },
+   {
+    "q": "Will Hyperliquid reach $110 by December 31, 2026?",
+    "type": "crypto_ladder_other",
+    "units": 1,
+    "usd_day": 50.0,
+    "capital": 18.7,
+    "rate": 50,
+    "qbook": 0.0,
+    "mid": 0.33,
+    "end_days": 84.8
+   },
+   {
+    "q": "Will Ethena dip to $0.08 by December 31, 2026?",
+    "type": "crypto_ladder_other",
+    "units": 1,
+    "usd_day": 50.0,
+    "capital": 18.7,
+    "rate": 50,
+    "qbook": 0.0,
+    "mid": 0.545,
+    "end_days": 84.8
+   }
+  ]
+ }
+}

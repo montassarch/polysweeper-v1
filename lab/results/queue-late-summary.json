@@ -1,20 +1,32 @@
 {
- "updated": "2026-10-07T21:44:20+00:00",
- "games": 0,
+ "updated": "2026-10-08T00:44:34+00:00",
+ "games": 1,
  "at_0.98": {
-  "tries": 0,
-  "filled": 0,
+  "tries": 1,
+  "filled": 1,
   "filled_on_loser": 0,
   "filled_unresolved": 0,
-  "by_league_tries_filled_lost": {},
+  "by_league_tries_filled_lost": {
+   "mlb": [
+    1,
+    1,
+    0
+   ]
+  },
   "loser_fills": []
  },
  "at_0.99": {
-  "tries": 0,
-  "filled": 0,
+  "tries": 1,
+  "filled": 1,
   "filled_on_loser": 0,
   "filled_unresolved": 0,
-  "by_league_tries_filled_lost": {},
+  "by_league_tries_filled_lost": {
+   "mlb": [
+    1,
+    1,
+    0
+   ]
+  },
   "loser_fills": []
  }
 }

@@ -33,7 +33,7 @@ S365 = "https://webws.365scores.com/web"
 LS = "https://prod-public-api.livescore.com/v1/api/app"
 S365_SPORTS = (1, 2, 3, 4, 5, 6, 7, 8, 9)
 LS_SPORTS = ("soccer", "basketball", "hockey", "tennis", "cricket")
-LS_OVER = {"FT", "AET", "AP", "Ended", "Fin", "Abd", "Canc.", "Pst.", "Aband.", "Int."}
+LS_OVER = {"FT", "AET", "AP", "Ended", "Fin", "Abd", "Canc.", "Aband.", "Ret."}   # "Int." = interrupted, not over
 BAND = (0.96, 0.995)
 watch = {}          # pm event id -> record
 done_ids = set()

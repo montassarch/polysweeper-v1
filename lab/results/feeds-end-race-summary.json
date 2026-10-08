@@ -1,0 +1,32 @@
+{
+ "updated": "2026-10-08T17:46:58+00:00",
+ "matches_saved": 0,
+ "s365": {
+  "n": 0,
+  "source_first": 0,
+  "median_lead_s": null,
+  "p10_lead_s": null,
+  "p90_lead_s": null,
+  "score_agree": 0,
+  "score_disagree": []
+ },
+ "livescore": {
+  "n": 0,
+  "source_first": 0,
+  "median_lead_s": null,
+  "p10_lead_s": null,
+  "p90_lead_s": null,
+  "score_agree": 0,
+  "score_disagree": []
+ },
+ "pm_never_ended": 0,
+ "by_series": {},
+ "started": "2026-10-08T17:45:23+00:00",
+ "discovered": 7,
+ "no_source": 1,
+ "errors": 0,
+ "no_source_examples": [
+  "Braga (Doubles): Gurri/Izquierdo vs Domingues/Torres"
+ ],
+ "watching_now": 7
+}

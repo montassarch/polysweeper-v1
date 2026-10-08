@@ -1,0 +1,234 @@
+{
+ "state_of_loser_fills": [
+  {
+   "sport": "CFB",
+   "game": "cfb-ncst-vand-2026-09-19",
+   "secs_before_stamp": 1058,
+   "price": 0.99,
+   "period": 4,
+   "clock": 64.0,
+   "lead": 3
+  },
+  {
+   "sport": "CFB",
+   "game": "cfb-ncst-vand-2026-09-19",
+   "secs_before_stamp": 1058,
+   "price": 0.99,
+   "period": 4,
+   "clock": 64.0,
+   "lead": 3
+  },
+  {
+   "sport": "CFB",
+   "game": "cfb-ncst-vand-2026-09-19",
+   "secs_before_stamp": 1105,
+   "price": 0.99,
+   "period": 4,
+   "clock": 64.0,
+   "lead": 3
+  },
+  {
+   "sport": "CFB",
+   "game": "cfb-templ-toledo-2026-09-19",
+   "secs_before_stamp": 1581,
+   "price": 0.999,
+   "period": 4,
+   "clock": 120.0,
+   "lead": 14
+  },
+  {
+   "sport": "CFB",
+   "game": "cfb-templ-toledo-2026-09-19",
+   "secs_before_stamp": 1644,
+   "price": 0.999,
+   "period": 4,
+   "clock": 120.0,
+   "lead": 14
+  },
+  {
+   "sport": "WNBA",
+   "game": "wnba-gsv-la-2026-09-24",
+   "secs_before_stamp": 1380,
+   "price": 0.98,
+   "period": 4,
+   "clock": 141.0,
+   "lead": 10
+  }
+ ],
+ "rules": {
+  "timed sports: last regulation period or OT, clock <= 600s": {
+   "fills": 3329,
+   "games": 297,
+   "loser_fills": 6,
+   "loser_games": 3
+  },
+  "timed sports: last regulation period or OT, clock <= 480s": {
+   "fills": 3188,
+   "games": 291,
+   "loser_fills": 6,
+   "loser_games": 3
+  },
+  "timed sports: last regulation period or OT, clock <= 300s": {
+   "fills": 2913,
+   "games": 282,
+   "loser_fills": 6,
+   "loser_games": 3
+  },
+  "timed sports: last regulation period or OT, clock <= 240s": {
+   "fills": 2774,
+   "games": 271,
+   "loser_fills": 6,
+   "loser_games": 3
+  },
+  "timed sports: last regulation period or OT, clock <= 180s": {
+   "fills": 2587,
+   "games": 265,
+   "loser_fills": 6,
+   "loser_games": 3
+  },
+  "timed sports: last regulation period or OT, clock <= 120s": {
+   "fills": 2345,
+   "games": 250,
+   "loser_fills": 5,
+   "loser_games": 2
+  },
+  "timed sports: any fill": {
+   "fills": 3668,
+   "games": 367,
+   "loser_fills": 6,
+   "loser_games": 3
+  },
+  "MLB inning >= 9": {
+   "fills": 1300,
+   "games": 226,
+   "loser_fills": 0,
+   "loser_games": 0
+  },
+  "MLB inning >= 8": {
+   "fills": 1582,
+   "games": 231,
+   "loser_fills": 0,
+   "loser_games": 0
+  },
+  "MLB any fill": {
+   "fills": 1601,
+   "games": 232,
+   "loser_fills": 0,
+   "loser_games": 0
+  },
+  "timed, clock<=300s, lead>=1 (buyer's side ahead)": {
+   "fills": 2903,
+   "games": 282,
+   "loser_fills": 6,
+   "loser_games": 3
+  },
+  "timed, clock<=300s, buyer's side behind or level": {
+   "fills": 10,
+   "games": 4,
+   "loser_fills": 0,
+   "loser_games": 0
+  },
+  "CFB: lead >= 9": {
+   "fills": 374,
+   "games": 97,
+   "loser_fills": 2,
+   "loser_games": 1
+  },
+  "CFB: lead < 9": {
+   "fills": 319,
+   "games": 69,
+   "loser_fills": 3,
+   "loser_games": 1
+  },
+  "CFB: all fills": {
+   "fills": 693,
+   "games": 153,
+   "loser_fills": 5,
+   "loser_games": 2
+  },
+  "NFL: lead >= 9": {
+   "fills": 800,
+   "games": 32,
+   "loser_fills": 0,
+   "loser_games": 0
+  },
+  "NFL: lead < 9": {
+   "fills": 977,
+   "games": 39,
+   "loser_fills": 0,
+   "loser_games": 0
+  },
+  "NFL: all fills": {
+   "fills": 1777,
+   "games": 63,
+   "loser_fills": 0,
+   "loser_games": 0
+  },
+  "NHL: lead >= 2": {
+   "fills": 237,
+   "games": 58,
+   "loser_fills": 0,
+   "loser_games": 0
+  },
+  "NHL: lead < 2": {
+   "fills": 225,
+   "games": 37,
+   "loser_fills": 0,
+   "loser_games": 0
+  },
+  "NHL: all fills": {
+   "fills": 462,
+   "games": 94,
+   "loser_fills": 0,
+   "loser_games": 0
+  },
+  "WNBA: lead >= 10": {
+   "fills": 280,
+   "games": 34,
+   "loser_fills": 1,
+   "loser_games": 1
+  },
+  "WNBA: lead < 10": {
+   "fills": 143,
+   "games": 12,
+   "loser_fills": 0,
+   "loser_games": 0
+  },
+  "WNBA: all fills": {
+   "fills": 423,
+   "games": 40,
+   "loser_fills": 1,
+   "loser_games": 1
+  },
+  "NBA: lead >= 10": {
+   "fills": 214,
+   "games": 11,
+   "loser_fills": 0,
+   "loser_games": 0
+  },
+  "NBA: lead < 10": {
+   "fills": 99,
+   "games": 8,
+   "loser_fills": 0,
+   "loser_games": 0
+  },
+  "NBA: all fills": {
+   "fills": 313,
+   "games": 17,
+   "loser_fills": 0,
+   "loser_games": 0
+  },
+  "MLB: lead >= 3 runs": {
+   "fills": 1024,
+   "games": 133,
+   "loser_fills": 0,
+   "loser_games": 0
+  },
+  "MLB: lead < 3 runs": {
+   "fills": 577,
+   "games": 106,
+   "loser_fills": 0,
+   "loser_games": 0
+  }
+ }
+}

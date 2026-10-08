@@ -1,0 +1,354 @@
+{
+ "stamp_minus_last_play_seconds_median": {
+  "CFB": 55,
+  "MLB": 79,
+  "NBA": 66,
+  "NFL": 269,
+  "NHL": 86,
+  "WNBA": 62
+ },
+ "before_last_play": {
+  "fills": 3117,
+  "games": 465,
+  "loser_fills": 6,
+  "loser_games": 3,
+  "shares": 1572030
+ },
+ "after_last_play": {
+  "fills": 2153,
+  "games": 389,
+  "loser_fills": 0,
+  "loser_games": 0,
+  "shares": 2615927
+ },
+ "after_last_play_by_price": {
+  "0.98-0.99": {
+   "fills": 36,
+   "games": 14,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "shares": 3372
+  },
+  "0.99-0.995": {
+   "fills": 529,
+   "games": 128,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "shares": 169529
+  },
+  "0.995-0.999": {
+   "fills": 17,
+   "games": 6,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "shares": 1585
+  },
+  "0.999-1.0": {
+   "fills": 1571,
+   "games": 315,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "shares": 2441442
+  }
+ },
+ "before_last_play_by_price": {
+  "0.98-0.99": {
+   "fills": 515,
+   "games": 192,
+   "loser_fills": 1,
+   "loser_games": 1,
+   "shares": 154134
+  },
+  "0.99-0.995": {
+   "fills": 936,
+   "games": 310,
+   "loser_fills": 3,
+   "loser_games": 1,
+   "shares": 250200
+  },
+  "0.995-0.999": {
+   "fills": 271,
+   "games": 106,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "shares": 57845
+  },
+  "0.999-1.0": {
+   "fills": 1395,
+   "games": 286,
+   "loser_fills": 2,
+   "loser_games": 1,
+   "shares": 1109851
+  }
+ },
+ "by_real_minutes_before_end": {
+  "0-5": {
+   "fills": 1260,
+   "games": 348,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "shares": 674438
+  },
+  "5-10": {
+   "fills": 624,
+   "games": 203,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "shares": 314189
+  },
+  "10-15": {
+   "fills": 407,
+   "games": 152,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "shares": 238103
+  },
+  "15-20": {
+   "fills": 375,
+   "games": 121,
+   "loser_fills": 4,
+   "loser_games": 2,
+   "shares": 131426
+  },
+  "20-25": {
+   "fills": 257,
+   "games": 105,
+   "loser_fills": 1,
+   "loser_games": 1,
+   "shares": 87733
+  },
+  "25+": {
+   "fills": 194,
+   "games": 67,
+   "loser_fills": 1,
+   "loser_games": 1,
+   "shares": 126141
+  }
+ },
+ "by_real_minutes_before_end_cheap_0.98_0.995": {
+  "0-5": {
+   "fills": 525,
+   "games": 203,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "shares": 108330
+  },
+  "5-10": {
+   "fills": 250,
+   "games": 99,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "shares": 61451
+  },
+  "10-15": {
+   "fills": 198,
+   "games": 88,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "shares": 49466
+  },
+  "15-20": {
+   "fills": 194,
+   "games": 75,
+   "loser_fills": 4,
+   "loser_games": 2,
+   "shares": 45703
+  },
+  "20-25": {
+   "fills": 168,
+   "games": 69,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "shares": 53456
+  },
+  "25+": {
+   "fills": 116,
+   "games": 48,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "shares": 85929
+  }
+ },
+ "clock_rule_football_basketball": {
+  "clock<=30s": {
+   "all": {
+    "fills": 1481,
+    "games": 181,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "shares": 1849550
+   },
+   "before_last_play": {
+    "fills": 349,
+    "games": 89,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "shares": 161381
+   },
+   "before_last_play_cheap_0.98_0.995": {
+    "fills": 168,
+    "games": 42,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "shares": 59087
+   },
+   "after_last_play_cheap_0.98_0.995": {
+    "fills": 182,
+    "games": 30,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "shares": 58299
+   }
+  },
+  "clock<=60s": {
+   "all": {
+    "fills": 1679,
+    "games": 202,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "shares": 2089589
+   },
+   "before_last_play": {
+    "fills": 537,
+    "games": 129,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "shares": 374469
+   },
+   "before_last_play_cheap_0.98_0.995": {
+    "fills": 242,
+    "games": 64,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "shares": 84062
+   },
+   "after_last_play_cheap_0.98_0.995": {
+    "fills": 182,
+    "games": 30,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "shares": 58299
+   }
+  },
+  "clock<=90s": {
+   "all": {
+    "fills": 1891,
+    "games": 212,
+    "loser_fills": 3,
+    "loser_games": 1,
+    "shares": 2160350
+   },
+   "before_last_play": {
+    "fills": 747,
+    "games": 162,
+    "loser_fills": 3,
+    "loser_games": 1,
+    "shares": 445190
+   },
+   "before_last_play_cheap_0.98_0.995": {
+    "fills": 328,
+    "games": 84,
+    "loser_fills": 3,
+    "loser_games": 1,
+    "shares": 108723
+   },
+   "after_last_play_cheap_0.98_0.995": {
+    "fills": 183,
+    "games": 31,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "shares": 58334
+   }
+  },
+  "clock<=120s": {
+   "all": {
+    "fills": 2180,
+    "games": 232,
+    "loser_fills": 5,
+    "loser_games": 2,
+    "shares": 2320770
+   },
+   "before_last_play": {
+    "fills": 1035,
+    "games": 196,
+    "loser_fills": 5,
+    "loser_games": 2,
+    "shares": 605588
+   },
+   "before_last_play_cheap_0.98_0.995": {
+    "fills": 421,
+    "games": 108,
+    "loser_fills": 3,
+    "loser_games": 1,
+    "shares": 133770
+   },
+   "after_last_play_cheap_0.98_0.995": {
+    "fills": 183,
+    "games": 31,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "shares": 58334
+   }
+  },
+  "clock<=180s": {
+   "all": {
+    "fills": 2421,
+    "games": 246,
+    "loser_fills": 6,
+    "loser_games": 3,
+    "shares": 2490829
+   },
+   "before_last_play": {
+    "fills": 1276,
+    "games": 211,
+    "loser_fills": 6,
+    "loser_games": 3,
+    "shares": 775646
+   },
+   "before_last_play_cheap_0.98_0.995": {
+    "fills": 517,
+    "games": 122,
+    "loser_fills": 4,
+    "loser_games": 2,
+    "shares": 163309
+   },
+   "after_last_play_cheap_0.98_0.995": {
+    "fills": 183,
+    "games": 31,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "shares": 58334
+   }
+  },
+  "clock<=300s": {
+   "all": {
+    "fills": 2743,
+    "games": 261,
+    "loser_fills": 6,
+    "loser_games": 3,
+    "shares": 2664001
+   },
+   "before_last_play": {
+    "fills": 1598,
+    "games": 227,
+    "loser_fills": 6,
+    "loser_games": 3,
+    "shares": 948818
+   },
+   "before_last_play_cheap_0.98_0.995": {
+    "fills": 650,
+    "games": 139,
+    "loser_fills": 4,
+    "loser_games": 2,
+    "shares": 266926
+   },
+   "after_last_play_cheap_0.98_0.995": {
+    "fills": 183,
+    "games": 31,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "shares": 58334
+   }
+  }
+ }
+}

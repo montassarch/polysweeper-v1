@@ -21,13 +21,14 @@ On 21 Oct: a method with real fills and 0 losses goes to a tiny real-money test 
 | 5 | MLB lead 7+ after 8 innings (`mlb_lead7`) | 0 so far | 0 | ~3 of 81 games qualify | **NOT YET**: too rare to judge | shadow, analyst |
 | 6 | Faster result source (ESPN tennis, official MLB/NHL feeds) | ESPN tennis ~140 s ahead, agrees 11/11 | - | 0 shares left at that moment | **NO as a speed edge, YES as a safety check** (tennis) | `lab/tennis_end_race.py`, `lab/official_end_recorder.py`, laptop |
 | 7 | Slow markets (elections, small events) | 21/21 right (Quebec) | 0 | $5-550 per market | **NOT YET**: small money | R-2026-10-06 tester |
-| 8 | Football, lead of 2+ goals at minute 88+ (owner idea 2026-10-07) | not measured | - | ? | **NOT YET**: test whether anyone still sells the leader below 0.99 then (public trades + ESPN goal minutes, past matches) | tester |
+| 8 | Football, lead of 2+ goals at minute 88+ (owner idea 2026-10-07) | 22 of 62 lead-2 matches had 5+ shares at 0.95-0.99 in 45 days (lead 3+: 1 of 46) | 28 of 3,099 lead-2 leaders failed (0.9%); 1 of 62 in Part B (PSG-Lille, with fills); lead 3+: 0 of 1,970 | far below 200 | **NO**: lead 2 loses 1 in 110; lead 3+ is safe but the cheap fills do not exist | `lab/late_football.py`; [[R-2026-10-08]] |
 
 **Verdict words:** YES = real fills, 0 losses, enough cases to trust. NO = loses or never fills. NOT YET = not enough data.
 A "YES" needs **200+ pretend fills with 0 losses**, the same bar as [[32-Go-Live-Checklist]] (50 fills with 0 losses
 would only prove the loss rate is below ~6%). Owner's bar (2026-10-08): fills needed = larger of 200 and 3 / (1 - price), 0 losses; win rate above price + fees (0.99 needs 300, 0.999 needs 3,000).
 
 ## Changes
+- 2026-10-08: row 8 tested (cloud one-off, 16,020 matches + 45 days of trades): NO. Also, 1-goal leads fail 14% at minute 88, not 3-5% ([[R-2026-10-08]]).
 - 2026-10-08: owner yes: bar = win rate above price + fees, fills needed = larger of 200 and 3 / (1 - price), 0 losses (replaces 100% / 98.5%).
 - 2026-10-07 23:15: row 8 added (owner idea: late football with a 2+ goal lead; 1-goal leads excluded, ~3-5% still fail to win).
 - 2026-10-07 17:00: row 4 tested on 114 US games: 0 losers in 1,319 sells into 0.98+ bids, but mostly at 0.999; fill rate unmeasured ([[R-2026-10-07]]).

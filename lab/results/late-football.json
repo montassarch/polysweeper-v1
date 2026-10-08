@@ -1,36 +1,6 @@
 {
- "made": "2026-10-07T23:53:40+00:00",
+ "made": "2026-10-08T01:43:22+00:00",
  "part_b": [
-  {
-   "league": "eng.1",
-   "match": "Aston Villa at Brighton & Hove Albion",
-   "date": "2026-08-23",
-   "lead_at_88": 4,
-   "leader_won": true,
-   "window_min": 4.9,
-   "ft_marked": true,
-   "shares": {
-    "0.95-0.99": 0,
-    "0.99-0.995": 0,
-    ">0.995": 703,
-    "<0.95": 0
-   }
-  },
-  {
-   "league": "eng.1",
-   "match": "Liverpool at Newcastle United",
-   "date": "2026-08-23",
-   "lead_at_88": 1,
-   "leader_won": false,
-   "window_min": 13.3,
-   "ft_marked": true,
-   "shares": {
-    "0.95-0.99": 49857,
-    "0.99-0.995": 0,
-    ">0.995": 0,
-    "<0.95": 205568
-   }
-  },
   {
    "league": "eng.1",
    "match": "Chelsea at Fulham",
@@ -434,21 +404,6 @@
     "0.99-0.995": 0,
     ">0.995": 0,
     "<0.95": 56157
-   }
-  },
-  {
-   "league": "esp.1",
-   "match": "Barcelona at Elche",
-   "date": "2026-08-23",
-   "lead_at_88": 5,
-   "leader_won": true,
-   "window_min": 4.0,
-   "ft_marked": true,
-   "shares": {
-    "0.95-0.99": 0,
-    "0.99-0.995": 0,
-    ">0.995": 413134,
-    "<0.95": 0
    }
   },
   {
@@ -1413,66 +1368,6 @@
   },
   {
    "league": "ita.1",
-   "match": "Juventus at Frosinone",
-   "date": "2026-08-23",
-   "lead_at_88": 1,
-   "leader_won": true,
-   "window_min": 12.4,
-   "ft_marked": true,
-   "shares": {
-    "0.95-0.99": 17196,
-    "0.99-0.995": 12668,
-    ">0.995": 89,
-    "<0.95": 8986
-   }
-  },
-  {
-   "league": "ita.1",
-   "match": "Lecce at Venezia",
-   "date": "2026-08-23",
-   "lead_at_88": 2,
-   "leader_won": true,
-   "window_min": 7.0,
-   "ft_marked": true,
-   "shares": {
-    "0.95-0.99": 3,
-    "0.99-0.995": 0,
-    ">0.995": 3165,
-    "<0.95": 0
-   }
-  },
-  {
-   "league": "ita.1",
-   "match": "Sassuolo at Atalanta",
-   "date": "2026-08-23",
-   "lead_at_88": 1,
-   "leader_won": true,
-   "window_min": 9.2,
-   "ft_marked": true,
-   "shares": {
-    "0.95-0.99": 1954,
-    "0.99-0.995": 1658,
-    ">0.995": 1406,
-    "<0.95": 4250
-   }
-  },
-  {
-   "league": "ita.1",
-   "match": "AC Milan at Torino",
-   "date": "2026-08-23",
-   "lead_at_88": 2,
-   "leader_won": true,
-   "window_min": 5.6,
-   "ft_marked": true,
-   "shares": {
-    "0.95-0.99": 1400,
-    "0.99-0.995": 237,
-    ">0.995": 66283,
-    "<0.95": 0
-   }
-  },
-  {
-   "league": "ita.1",
    "match": "Lazio at Bologna",
    "date": "2026-08-24",
    "lead_at_88": 1,
@@ -1949,36 +1844,6 @@
     "0.99-0.995": 0,
     ">0.995": 1989,
     "<0.95": 0
-   }
-  },
-  {
-   "league": "fra.1",
-   "match": "Lille at Angers",
-   "date": "2026-08-23",
-   "lead_at_88": 2,
-   "leader_won": true,
-   "window_min": 8.6,
-   "ft_marked": true,
-   "shares": {
-    "0.95-0.99": 0,
-    "0.99-0.995": 880,
-    ">0.995": 4278,
-    "<0.95": 0
-   }
-  },
-  {
-   "league": "fra.1",
-   "match": "AS Monaco at Le Havre AC",
-   "date": "2026-08-23",
-   "lead_at_88": 1,
-   "leader_won": true,
-   "window_min": 8.1,
-   "ft_marked": true,
-   "shares": {
-    "0.95-0.99": 14802,
-    "0.99-0.995": 61,
-    ">0.995": 1160,
-    "<0.95": 3361
    }
   },
   {
@@ -2658,51 +2523,6 @@
   },
   {
    "league": "por.1",
-   "match": "C.D. Nacional at Vit\u00f3ria de Guimaraes",
-   "date": "2026-08-23",
-   "lead_at_88": 1,
-   "leader_won": true,
-   "window_min": 6.3,
-   "ft_marked": true,
-   "shares": {
-    "0.95-0.99": 1143,
-    "0.99-0.995": 152,
-    ">0.995": 536,
-    "<0.95": 17
-   }
-  },
-  {
-   "league": "por.1",
-   "match": "FC Famalicao at Santa Clara",
-   "date": "2026-08-23",
-   "lead_at_88": 1,
-   "leader_won": true,
-   "window_min": 8.0,
-   "ft_marked": true,
-   "shares": {
-    "0.95-0.99": 5984,
-    "0.99-0.995": 760,
-    ">0.995": 0,
-    "<0.95": 180
-   }
-  },
-  {
-   "league": "por.1",
-   "match": "Arouca at FC Porto",
-   "date": "2026-08-23",
-   "lead_at_88": 2,
-   "leader_won": true,
-   "window_min": 9.8,
-   "ft_marked": true,
-   "shares": {
-    "0.95-0.99": 0,
-    "0.99-0.995": 795,
-    ">0.995": 3998,
-    "<0.95": 0
-   }
-  },
-  {
-   "league": "por.1",
    "match": "Casa Pia at Gil Vicente",
    "date": "2026-08-24",
    "lead_at_88": 2,
@@ -3138,36 +2958,6 @@
   },
   {
    "league": "ned.1",
-   "match": "ADO Den Haag at Go Ahead Eagles",
-   "date": "2026-08-23",
-   "lead_at_88": 1,
-   "leader_won": true,
-   "window_min": 8.9,
-   "ft_marked": true,
-   "shares": {
-    "0.95-0.99": 177,
-    "0.99-0.995": 25,
-    ">0.995": 608,
-    "<0.95": 134
-   }
-  },
-  {
-   "league": "ned.1",
-   "match": "Feyenoord Rotterdam at SC Cambuur",
-   "date": "2026-08-23",
-   "lead_at_88": 3,
-   "leader_won": true,
-   "window_min": 4.0,
-   "ft_marked": true,
-   "shares": {
-    "0.95-0.99": 0,
-    "0.99-0.995": 0,
-    ">0.995": 9,
-    "<0.95": 0
-   }
-  },
-  {
-   "league": "ned.1",
    "match": "Fortuna Sittard at FC Groningen",
    "date": "2026-08-28",
    "lead_at_88": 1,
@@ -3406,5 +3196,2040 @@
     "<0.95": 0
    }
   }
- ]
+ ],
+ "part_a": {
+  "matches": 16020,
+  "stats": {
+   "T88_lead1": {
+    "n": 6563,
+    "won": 5662,
+    "drew": 839,
+    "lost": 62
+   },
+   "T80_lead2": {
+    "n": 3032,
+    "won": 2960,
+    "drew": 67,
+    "lost": 5
+   },
+   "T85_lead2": {
+    "n": 3056,
+    "won": 3016,
+    "drew": 37,
+    "lost": 3
+   },
+   "T88_lead2": {
+    "n": 3099,
+    "won": 3071,
+    "drew": 28,
+    "lost": 0
+   },
+   "T88_lead3": {
+    "n": 1970,
+    "won": 1970,
+    "drew": 0,
+    "lost": 0
+   },
+   "T80_lead1": {
+    "n": 6681,
+    "won": 5316,
+    "drew": 1200,
+    "lost": 165
+   },
+   "T85_lead1": {
+    "n": 6636,
+    "won": 5531,
+    "drew": 1005,
+    "lost": 100
+   },
+   "T80_lead3": {
+    "n": 1673,
+    "won": 1672,
+    "drew": 1,
+    "lost": 0
+   },
+   "T85_lead3": {
+    "n": 1877,
+    "won": 1877,
+    "drew": 0,
+    "lost": 0
+   }
+  },
+  "lead2_failures": [
+   {
+    "league": "eng.1",
+    "match": "AFC Bournemouth at Everton",
+    "date": "2024-08-31",
+    "T": 80,
+    "score_at_T": [
+     2,
+     0
+    ],
+    "final": [
+     2,
+     3
+    ]
+   },
+   {
+    "league": "eng.1",
+    "match": "AFC Bournemouth at Everton",
+    "date": "2024-08-31",
+    "T": 85,
+    "score_at_T": [
+     2,
+     0
+    ],
+    "final": [
+     2,
+     3
+    ]
+   },
+   {
+    "league": "eng.1",
+    "match": "Wolverhampton Wanderers at Brighton & Hove Albion",
+    "date": "2024-10-26",
+    "T": 88,
+    "score_at_T": [
+     2,
+     0
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "eng.1",
+    "match": "Brighton & Hove Albion at Leicester City",
+    "date": "2024-12-08",
+    "T": 80,
+    "score_at_T": [
+     0,
+     2
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "eng.1",
+    "match": "Brighton & Hove Albion at Leicester City",
+    "date": "2024-12-08",
+    "T": 85,
+    "score_at_T": [
+     0,
+     2
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "eng.1",
+    "match": "Manchester City at Brentford",
+    "date": "2025-01-14",
+    "T": 80,
+    "score_at_T": [
+     0,
+     2
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "esp.1",
+    "match": "Barcelona at Celta Vigo",
+    "date": "2024-11-23",
+    "T": 80,
+    "score_at_T": [
+     0,
+     2
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "esp.1",
+    "match": "Alav\u00e9s at Las Palmas",
+    "date": "2025-03-14",
+    "T": 80,
+    "score_at_T": [
+     0,
+     2
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "esp.1",
+    "match": "Alav\u00e9s at Las Palmas",
+    "date": "2025-03-14",
+    "T": 85,
+    "score_at_T": [
+     0,
+     2
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "esp.1",
+    "match": "Alav\u00e9s at Las Palmas",
+    "date": "2025-03-14",
+    "T": 88,
+    "score_at_T": [
+     0,
+     2
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "esp.1",
+    "match": "Osasuna at Mallorca",
+    "date": "2025-11-29",
+    "T": 80,
+    "score_at_T": [
+     2,
+     0
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "esp.1",
+    "match": "Mallorca at Osasuna",
+    "date": "2026-03-07",
+    "T": 80,
+    "score_at_T": [
+     0,
+     2
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "esp.1",
+    "match": "Mallorca at Osasuna",
+    "date": "2026-03-07",
+    "T": 85,
+    "score_at_T": [
+     0,
+     2
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "esp.1",
+    "match": "Mallorca at Osasuna",
+    "date": "2026-03-07",
+    "T": 88,
+    "score_at_T": [
+     0,
+     2
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "esp.1",
+    "match": "Real Sociedad at Rayo Vallecano",
+    "date": "2026-04-26",
+    "T": 80,
+    "score_at_T": [
+     1,
+     3
+    ],
+    "final": [
+     3,
+     3
+    ]
+   },
+   {
+    "league": "ger.1",
+    "match": "Bayer Leverkusen at SC Freiburg",
+    "date": "2025-05-04",
+    "T": 80,
+    "score_at_T": [
+     2,
+     0
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "ger.1",
+    "match": "Borussia Dortmund at St. Pauli",
+    "date": "2025-08-23",
+    "T": 80,
+    "score_at_T": [
+     1,
+     3
+    ],
+    "final": [
+     3,
+     3
+    ]
+   },
+   {
+    "league": "ger.1",
+    "match": "Borussia Dortmund at St. Pauli",
+    "date": "2025-08-23",
+    "T": 85,
+    "score_at_T": [
+     1,
+     3
+    ],
+    "final": [
+     3,
+     3
+    ]
+   },
+   {
+    "league": "ger.1",
+    "match": "Bayern Munich at SC Freiburg",
+    "date": "2026-04-04",
+    "T": 80,
+    "score_at_T": [
+     2,
+     0
+    ],
+    "final": [
+     2,
+     3
+    ]
+   },
+   {
+    "league": "ita.1",
+    "match": "Torino at AC Milan",
+    "date": "2024-08-17",
+    "T": 80,
+    "score_at_T": [
+     0,
+     2
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "ita.1",
+    "match": "Torino at AC Milan",
+    "date": "2024-08-17",
+    "T": 85,
+    "score_at_T": [
+     0,
+     2
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "ita.1",
+    "match": "Torino at AC Milan",
+    "date": "2024-08-17",
+    "T": 88,
+    "score_at_T": [
+     0,
+     2
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "ita.1",
+    "match": "Parma at Lecce",
+    "date": "2024-09-21",
+    "T": 80,
+    "score_at_T": [
+     2,
+     0
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "ita.1",
+    "match": "Parma at Lecce",
+    "date": "2024-09-21",
+    "T": 85,
+    "score_at_T": [
+     2,
+     0
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "ita.1",
+    "match": "Parma at Lecce",
+    "date": "2024-09-21",
+    "T": 88,
+    "score_at_T": [
+     2,
+     0
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "fra.1",
+    "match": "Marseille at Paris FC",
+    "date": "2026-01-31",
+    "T": 80,
+    "score_at_T": [
+     0,
+     2
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "fra.1",
+    "match": "Paris Saint-Germain at Lille",
+    "date": "2026-08-28",
+    "T": 85,
+    "score_at_T": [
+     2,
+     0
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "fra.1",
+    "match": "Paris Saint-Germain at Lille",
+    "date": "2026-08-28",
+    "T": 88,
+    "score_at_T": [
+     2,
+     0
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "uefa.champions",
+    "match": "Feyenoord Rotterdam at Manchester City",
+    "date": "2024-11-26",
+    "T": 80,
+    "score_at_T": [
+     3,
+     1
+    ],
+    "final": [
+     3,
+     3
+    ]
+   },
+   {
+    "league": "uefa.champions",
+    "match": "Shakhtar Donetsk at PSV Eindhoven",
+    "date": "2024-11-27",
+    "T": 80,
+    "score_at_T": [
+     0,
+     2
+    ],
+    "final": [
+     3,
+     2
+    ]
+   },
+   {
+    "league": "uefa.champions",
+    "match": "Shakhtar Donetsk at PSV Eindhoven",
+    "date": "2024-11-27",
+    "T": 85,
+    "score_at_T": [
+     0,
+     2
+    ],
+    "final": [
+     3,
+     2
+    ]
+   },
+   {
+    "league": "uefa.champions",
+    "match": "Borussia Dortmund at Juventus",
+    "date": "2025-09-16",
+    "T": 88,
+    "score_at_T": [
+     2,
+     4
+    ],
+    "final": [
+     4,
+     4
+    ]
+   },
+   {
+    "league": "uefa.europa",
+    "match": "Viktoria Plzen at Eintracht Frankfurt",
+    "date": "2024-09-26",
+    "T": 80,
+    "score_at_T": [
+     3,
+     1
+    ],
+    "final": [
+     3,
+     3
+    ]
+   },
+   {
+    "league": "uefa.europa",
+    "match": "Viktoria Plzen at Eintracht Frankfurt",
+    "date": "2024-09-26",
+    "T": 85,
+    "score_at_T": [
+     3,
+     1
+    ],
+    "final": [
+     3,
+     3
+    ]
+   },
+   {
+    "league": "uefa.europa",
+    "match": "Viktoria Plzen at PAOK",
+    "date": "2024-10-24",
+    "T": 80,
+    "score_at_T": [
+     0,
+     2
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "por.1",
+    "match": "Boavista at Vit\u00f3ria de Guimaraes",
+    "date": "2024-10-06",
+    "T": 80,
+    "score_at_T": [
+     2,
+     0
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "por.1",
+    "match": "Boavista at Vit\u00f3ria de Guimaraes",
+    "date": "2024-10-06",
+    "T": 85,
+    "score_at_T": [
+     2,
+     0
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "por.1",
+    "match": "Boavista at Vit\u00f3ria de Guimaraes",
+    "date": "2024-10-06",
+    "T": 88,
+    "score_at_T": [
+     2,
+     0
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "por.1",
+    "match": "SC Farense at Estoril",
+    "date": "2025-03-08",
+    "T": 80,
+    "score_at_T": [
+     2,
+     0
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "por.1",
+    "match": "SC Farense at Estoril",
+    "date": "2025-03-08",
+    "T": 85,
+    "score_at_T": [
+     2,
+     0
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "por.1",
+    "match": "Rio Ave at C.D. Nacional",
+    "date": "2025-05-10",
+    "T": 80,
+    "score_at_T": [
+     1,
+     3
+    ],
+    "final": [
+     3,
+     3
+    ]
+   },
+   {
+    "league": "por.1",
+    "match": "Rio Ave at C.D. Nacional",
+    "date": "2025-05-10",
+    "T": 85,
+    "score_at_T": [
+     1,
+     3
+    ],
+    "final": [
+     3,
+     3
+    ]
+   },
+   {
+    "league": "por.1",
+    "match": "Rio Ave at C.D. Nacional",
+    "date": "2025-05-10",
+    "T": 88,
+    "score_at_T": [
+     1,
+     3
+    ],
+    "final": [
+     3,
+     3
+    ]
+   },
+   {
+    "league": "por.1",
+    "match": "AVS at Casa Pia",
+    "date": "2026-01-23",
+    "T": 80,
+    "score_at_T": [
+     3,
+     1
+    ],
+    "final": [
+     3,
+     3
+    ]
+   },
+   {
+    "league": "por.1",
+    "match": "AVS at Casa Pia",
+    "date": "2026-01-23",
+    "T": 85,
+    "score_at_T": [
+     3,
+     1
+    ],
+    "final": [
+     3,
+     3
+    ]
+   },
+   {
+    "league": "por.1",
+    "match": "AVS at Casa Pia",
+    "date": "2026-01-23",
+    "T": 88,
+    "score_at_T": [
+     3,
+     1
+    ],
+    "final": [
+     3,
+     3
+    ]
+   },
+   {
+    "league": "por.1",
+    "match": "Tondela at Sporting CP",
+    "date": "2026-04-29",
+    "T": 80,
+    "score_at_T": [
+     2,
+     0
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "por.1",
+    "match": "Tondela at Sporting CP",
+    "date": "2026-04-29",
+    "T": 85,
+    "score_at_T": [
+     2,
+     0
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "por.1",
+    "match": "Tondela at Sporting CP",
+    "date": "2026-04-29",
+    "T": 88,
+    "score_at_T": [
+     2,
+     0
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "por.1",
+    "match": "Arouca at Sporting CP",
+    "date": "2026-09-19",
+    "T": 80,
+    "score_at_T": [
+     2,
+     0
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "ned.1",
+    "match": "Feyenoord Rotterdam at FC Groningen",
+    "date": "2024-09-14",
+    "T": 80,
+    "score_at_T": [
+     0,
+     2
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "ned.1",
+    "match": "Go Ahead Eagles at FC Utrecht",
+    "date": "2024-12-15",
+    "T": 80,
+    "score_at_T": [
+     1,
+     3
+    ],
+    "final": [
+     3,
+     3
+    ]
+   },
+   {
+    "league": "ned.1",
+    "match": "Go Ahead Eagles at FC Utrecht",
+    "date": "2024-12-15",
+    "T": 85,
+    "score_at_T": [
+     1,
+     3
+    ],
+    "final": [
+     3,
+     3
+    ]
+   },
+   {
+    "league": "ned.1",
+    "match": "Go Ahead Eagles at FC Utrecht",
+    "date": "2024-12-15",
+    "T": 88,
+    "score_at_T": [
+     1,
+     3
+    ],
+    "final": [
+     3,
+     3
+    ]
+   },
+   {
+    "league": "ned.1",
+    "match": "PSV Eindhoven at NEC Nijmegen",
+    "date": "2025-02-01",
+    "T": 80,
+    "score_at_T": [
+     1,
+     3
+    ],
+    "final": [
+     3,
+     3
+    ]
+   },
+   {
+    "league": "ned.1",
+    "match": "PSV Eindhoven at NEC Nijmegen",
+    "date": "2025-02-01",
+    "T": 85,
+    "score_at_T": [
+     1,
+     3
+    ],
+    "final": [
+     3,
+     3
+    ]
+   },
+   {
+    "league": "ned.1",
+    "match": "PSV Eindhoven at NEC Nijmegen",
+    "date": "2025-02-01",
+    "T": 88,
+    "score_at_T": [
+     1,
+     3
+    ],
+    "final": [
+     3,
+     3
+    ]
+   },
+   {
+    "league": "eng.2",
+    "match": "Preston North End at Plymouth Argyle",
+    "date": "2024-10-26",
+    "T": 80,
+    "score_at_T": [
+     1,
+     3
+    ],
+    "final": [
+     3,
+     3
+    ]
+   },
+   {
+    "league": "eng.2",
+    "match": "Leeds United at Hull City",
+    "date": "2025-01-04",
+    "T": 80,
+    "score_at_T": [
+     1,
+     3
+    ],
+    "final": [
+     3,
+     3
+    ]
+   },
+   {
+    "league": "eng.2",
+    "match": "Southampton at Leicester City",
+    "date": "2026-02-10",
+    "T": 80,
+    "score_at_T": [
+     3,
+     1
+    ],
+    "final": [
+     3,
+     4
+    ]
+   },
+   {
+    "league": "eng.2",
+    "match": "West Ham United at Burnley",
+    "date": "2026-08-16",
+    "T": 80,
+    "score_at_T": [
+     0,
+     2
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "esp.2",
+    "match": "Eibar at Racing Santander",
+    "date": "2024-08-23",
+    "T": 80,
+    "score_at_T": [
+     0,
+     2
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "esp.2",
+    "match": "Eibar at Racing Santander",
+    "date": "2024-08-23",
+    "T": 85,
+    "score_at_T": [
+     0,
+     2
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "esp.2",
+    "match": "Almer\u00eda at Huesca",
+    "date": "2024-10-27",
+    "T": 80,
+    "score_at_T": [
+     2,
+     0
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "esp.2",
+    "match": "Eldense at Racing Santander",
+    "date": "2024-12-22",
+    "T": 80,
+    "score_at_T": [
+     2,
+     0
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "esp.2",
+    "match": "Eldense at Racing Santander",
+    "date": "2024-12-22",
+    "T": 85,
+    "score_at_T": [
+     2,
+     0
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "esp.2",
+    "match": "Real Zaragoza at Granada",
+    "date": "2025-02-22",
+    "T": 80,
+    "score_at_T": [
+     2,
+     0
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "esp.2",
+    "match": "Real Zaragoza at Granada",
+    "date": "2025-02-22",
+    "T": 85,
+    "score_at_T": [
+     2,
+     0
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "esp.2",
+    "match": "Real Zaragoza at Granada",
+    "date": "2025-02-22",
+    "T": 88,
+    "score_at_T": [
+     2,
+     0
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "esp.2",
+    "match": "Burgos at M\u00e1laga",
+    "date": "2025-05-31",
+    "T": 80,
+    "score_at_T": [
+     0,
+     2
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "ger.2",
+    "match": "Schalke 04 at SpVgg Greuther F\u00fcrth",
+    "date": "2025-03-30",
+    "T": 80,
+    "score_at_T": [
+     3,
+     1
+    ],
+    "final": [
+     3,
+     3
+    ]
+   },
+   {
+    "league": "ger.2",
+    "match": "Hannover 96 at Preu\u00dfen M\u00fcnster",
+    "date": "2025-12-05",
+    "T": 80,
+    "score_at_T": [
+     0,
+     2
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "ger.2",
+    "match": "Hannover 96 at Preu\u00dfen M\u00fcnster",
+    "date": "2025-12-05",
+    "T": 85,
+    "score_at_T": [
+     0,
+     2
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "ger.2",
+    "match": "Hannover 96 at Preu\u00dfen M\u00fcnster",
+    "date": "2025-12-05",
+    "T": 88,
+    "score_at_T": [
+     0,
+     2
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "ger.2",
+    "match": "Kaiserslautern at Schalke 04",
+    "date": "2026-01-25",
+    "T": 85,
+    "score_at_T": [
+     0,
+     2
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "ger.2",
+    "match": "Hannover 96 at Schalke 04",
+    "date": "2026-03-15",
+    "T": 80,
+    "score_at_T": [
+     2,
+     0
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "ita.2",
+    "match": "Reggiana at Bari",
+    "date": "2024-11-02",
+    "T": 80,
+    "score_at_T": [
+     2,
+     0
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "ita.2",
+    "match": "Palermo at Spezia",
+    "date": "2025-02-09",
+    "T": 80,
+    "score_at_T": [
+     0,
+     2
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "ita.2",
+    "match": "Palermo at Spezia",
+    "date": "2025-02-09",
+    "T": 85,
+    "score_at_T": [
+     0,
+     2
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "ita.2",
+    "match": "Palermo at Spezia",
+    "date": "2025-02-09",
+    "T": 88,
+    "score_at_T": [
+     0,
+     2
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "ita.2",
+    "match": "Spezia at Mantova",
+    "date": "2025-04-13",
+    "T": 80,
+    "score_at_T": [
+     0,
+     2
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "ita.2",
+    "match": "Padova at Juve Stabia",
+    "date": "2026-02-07",
+    "T": 85,
+    "score_at_T": [
+     3,
+     1
+    ],
+    "final": [
+     3,
+     3
+    ]
+   },
+   {
+    "league": "ita.2",
+    "match": "Pescara at Frosinone",
+    "date": "2026-03-04",
+    "T": 80,
+    "score_at_T": [
+     0,
+     2
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "ita.2",
+    "match": "Pescara at Frosinone",
+    "date": "2026-03-04",
+    "T": 85,
+    "score_at_T": [
+     0,
+     2
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "fra.2",
+    "match": "Lorient at Rodez Aveyron",
+    "date": "2024-10-25",
+    "T": 88,
+    "score_at_T": [
+     1,
+     3
+    ],
+    "final": [
+     3,
+     3
+    ]
+   },
+   {
+    "league": "usa.1",
+    "match": "Real Salt Lake at Austin FC",
+    "date": "2024-09-29",
+    "T": 80,
+    "score_at_T": [
+     0,
+     2
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "usa.1",
+    "match": "Inter Miami CF at Philadelphia Union",
+    "date": "2025-05-24",
+    "T": 80,
+    "score_at_T": [
+     3,
+     1
+    ],
+    "final": [
+     3,
+     3
+    ]
+   },
+   {
+    "league": "usa.1",
+    "match": "Inter Miami CF at Philadelphia Union",
+    "date": "2025-05-24",
+    "T": 85,
+    "score_at_T": [
+     3,
+     1
+    ],
+    "final": [
+     3,
+     3
+    ]
+   },
+   {
+    "league": "usa.1",
+    "match": "Colorado Rapids at New England Revolution",
+    "date": "2025-06-28",
+    "T": 80,
+    "score_at_T": [
+     1,
+     3
+    ],
+    "final": [
+     3,
+     3
+    ]
+   },
+   {
+    "league": "usa.1",
+    "match": "Colorado Rapids at New England Revolution",
+    "date": "2025-06-28",
+    "T": 85,
+    "score_at_T": [
+     1,
+     3
+    ],
+    "final": [
+     3,
+     3
+    ]
+   },
+   {
+    "league": "usa.1",
+    "match": "Houston Dynamo FC at Austin FC",
+    "date": "2025-08-10",
+    "T": 80,
+    "score_at_T": [
+     2,
+     0
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "usa.1",
+    "match": "FC Cincinnati at New York City FC",
+    "date": "2026-04-22",
+    "T": 80,
+    "score_at_T": [
+     4,
+     2
+    ],
+    "final": [
+     4,
+     4
+    ]
+   },
+   {
+    "league": "usa.1",
+    "match": "FC Cincinnati at New York City FC",
+    "date": "2026-04-22",
+    "T": 85,
+    "score_at_T": [
+     4,
+     2
+    ],
+    "final": [
+     4,
+     4
+    ]
+   },
+   {
+    "league": "usa.1",
+    "match": "FC Cincinnati at New York City FC",
+    "date": "2026-04-22",
+    "T": 88,
+    "score_at_T": [
+     4,
+     2
+    ],
+    "final": [
+     4,
+     4
+    ]
+   },
+   {
+    "league": "usa.1",
+    "match": "LAFC at San Diego FC",
+    "date": "2026-05-03",
+    "T": 80,
+    "score_at_T": [
+     2,
+     0
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "usa.1",
+    "match": "CF Montr\u00e9al at D.C. United",
+    "date": "2026-05-23",
+    "T": 88,
+    "score_at_T": [
+     4,
+     2
+    ],
+    "final": [
+     4,
+     4
+    ]
+   },
+   {
+    "league": "usa.1",
+    "match": "FC Dallas at St. Louis CITY SC",
+    "date": "2026-08-30",
+    "T": 80,
+    "score_at_T": [
+     3,
+     1
+    ],
+    "final": [
+     3,
+     3
+    ]
+   },
+   {
+    "league": "usa.1",
+    "match": "San Diego FC at Austin FC",
+    "date": "2026-09-27",
+    "T": 80,
+    "score_at_T": [
+     1,
+     3
+    ],
+    "final": [
+     3,
+     3
+    ]
+   },
+   {
+    "league": "bra.1",
+    "match": "Juventude at Vit\u00f3ria",
+    "date": "2025-08-16",
+    "T": 80,
+    "score_at_T": [
+     2,
+     0
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "bra.1",
+    "match": "Mirassol at Remo",
+    "date": "2026-02-04",
+    "T": 80,
+    "score_at_T": [
+     2,
+     0
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "bra.1",
+    "match": "Santos at Mirassol",
+    "date": "2026-03-11",
+    "T": 80,
+    "score_at_T": [
+     2,
+     0
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "bra.1",
+    "match": "Vasco da Gama at Flamengo",
+    "date": "2026-05-03",
+    "T": 80,
+    "score_at_T": [
+     2,
+     0
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "bra.1",
+    "match": "Athletico Paranaense at Coritiba",
+    "date": "2026-09-12",
+    "T": 80,
+    "score_at_T": [
+     1,
+     3
+    ],
+    "final": [
+     3,
+     3
+    ]
+   },
+   {
+    "league": "bra.1",
+    "match": "Athletico Paranaense at Coritiba",
+    "date": "2026-09-12",
+    "T": 85,
+    "score_at_T": [
+     1,
+     3
+    ],
+    "final": [
+     3,
+     3
+    ]
+   },
+   {
+    "league": "bra.1",
+    "match": "Athletico Paranaense at Coritiba",
+    "date": "2026-09-12",
+    "T": 88,
+    "score_at_T": [
+     1,
+     3
+    ],
+    "final": [
+     3,
+     3
+    ]
+   },
+   {
+    "league": "arg.1",
+    "match": "Atl\u00e9tico Tucum\u00e1n at Sarmiento (Jun\u00edn)",
+    "date": "2025-08-18",
+    "T": 80,
+    "score_at_T": [
+     2,
+     0
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "arg.1",
+    "match": "Atl\u00e9tico Tucum\u00e1n at Sarmiento (Jun\u00edn)",
+    "date": "2025-08-18",
+    "T": 85,
+    "score_at_T": [
+     2,
+     0
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "mex.1",
+    "match": "Atlas at Tijuana",
+    "date": "2025-03-10",
+    "T": 80,
+    "score_at_T": [
+     3,
+     1
+    ],
+    "final": [
+     3,
+     4
+    ]
+   },
+   {
+    "league": "mex.1",
+    "match": "Atlas at Quer\u00e9taro",
+    "date": "2025-08-17",
+    "T": 80,
+    "score_at_T": [
+     1,
+     3
+    ],
+    "final": [
+     3,
+     3
+    ]
+   },
+   {
+    "league": "mex.1",
+    "match": "Atlas at Quer\u00e9taro",
+    "date": "2025-08-17",
+    "T": 85,
+    "score_at_T": [
+     1,
+     3
+    ],
+    "final": [
+     3,
+     3
+    ]
+   },
+   {
+    "league": "mex.1",
+    "match": "Atlas at Quer\u00e9taro",
+    "date": "2025-08-17",
+    "T": 88,
+    "score_at_T": [
+     1,
+     3
+    ],
+    "final": [
+     3,
+     3
+    ]
+   },
+   {
+    "league": "mex.1",
+    "match": "Guadalajara at Tijuana",
+    "date": "2025-08-23",
+    "T": 80,
+    "score_at_T": [
+     3,
+     1
+    ],
+    "final": [
+     3,
+     3
+    ]
+   },
+   {
+    "league": "mex.1",
+    "match": "Am\u00e9rica at Monterrey",
+    "date": "2025-09-21",
+    "T": 80,
+    "score_at_T": [
+     2,
+     0
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "mex.1",
+    "match": "Puebla at FC Ju\u00e1rez",
+    "date": "2025-10-25",
+    "T": 80,
+    "score_at_T": [
+     4,
+     2
+    ],
+    "final": [
+     4,
+     4
+    ]
+   },
+   {
+    "league": "mex.1",
+    "match": "Puebla at FC Ju\u00e1rez",
+    "date": "2025-10-25",
+    "T": 85,
+    "score_at_T": [
+     4,
+     2
+    ],
+    "final": [
+     4,
+     4
+    ]
+   },
+   {
+    "league": "mex.1",
+    "match": "Puebla at FC Ju\u00e1rez",
+    "date": "2025-10-25",
+    "T": 88,
+    "score_at_T": [
+     4,
+     2
+    ],
+    "final": [
+     4,
+     4
+    ]
+   },
+   {
+    "league": "tur.1",
+    "match": "Kayserispor at Trabzonspor",
+    "date": "2024-09-19",
+    "T": 80,
+    "score_at_T": [
+     0,
+     2
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "tur.1",
+    "match": "Kayserispor at Trabzonspor",
+    "date": "2024-09-19",
+    "T": 85,
+    "score_at_T": [
+     0,
+     2
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "tur.1",
+    "match": "Kayserispor at Trabzonspor",
+    "date": "2024-09-19",
+    "T": 88,
+    "score_at_T": [
+     0,
+     2
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "tur.1",
+    "match": "Kasimpasa at Galatasaray",
+    "date": "2024-09-28",
+    "T": 80,
+    "score_at_T": [
+     3,
+     1
+    ],
+    "final": [
+     3,
+     3
+    ]
+   },
+   {
+    "league": "tur.1",
+    "match": "Kasimpasa at Goztepe",
+    "date": "2026-04-12",
+    "T": 80,
+    "score_at_T": [
+     1,
+     3
+    ],
+    "final": [
+     3,
+     3
+    ]
+   },
+   {
+    "league": "bel.1",
+    "match": "KAA Gent at KV Mechelen",
+    "date": "2025-02-07",
+    "T": 80,
+    "score_at_T": [
+     3,
+     1
+    ],
+    "final": [
+     3,
+     3
+    ]
+   },
+   {
+    "league": "bel.1",
+    "match": "Royal Charleroi SC at Oud-Heverlee Leuven",
+    "date": "2025-07-27",
+    "T": 80,
+    "score_at_T": [
+     2,
+     0
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "bel.1",
+    "match": "Royal Charleroi SC at Oud-Heverlee Leuven",
+    "date": "2025-07-27",
+    "T": 85,
+    "score_at_T": [
+     2,
+     0
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "bel.1",
+    "match": "Royal Charleroi SC at Oud-Heverlee Leuven",
+    "date": "2025-07-27",
+    "T": 88,
+    "score_at_T": [
+     2,
+     0
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "bel.1",
+    "match": "Racing Genk at RAAL La Louvi\u00e8re",
+    "date": "2026-03-22",
+    "T": 88,
+    "score_at_T": [
+     3,
+     5
+    ],
+    "final": [
+     5,
+     5
+    ]
+   },
+   {
+    "league": "bel.1",
+    "match": "Sint-Truidense at Cercle Brugge KSV",
+    "date": "2026-08-14",
+    "T": 80,
+    "score_at_T": [
+     1,
+     3
+    ],
+    "final": [
+     3,
+     3
+    ]
+   },
+   {
+    "league": "bel.1",
+    "match": "Standard Liege at KV Mechelen",
+    "date": "2026-08-16",
+    "T": 80,
+    "score_at_T": [
+     1,
+     3
+    ],
+    "final": [
+     3,
+     3
+    ]
+   },
+   {
+    "league": "bel.1",
+    "match": "Standard Liege at KV Mechelen",
+    "date": "2026-08-16",
+    "T": 85,
+    "score_at_T": [
+     1,
+     3
+    ],
+    "final": [
+     3,
+     3
+    ]
+   },
+   {
+    "league": "bel.1",
+    "match": "Standard Liege at KV Mechelen",
+    "date": "2026-08-16",
+    "T": 88,
+    "score_at_T": [
+     1,
+     3
+    ],
+    "final": [
+     3,
+     3
+    ]
+   },
+   {
+    "league": "bel.1",
+    "match": "Racing Genk at Antwerp",
+    "date": "2026-08-22",
+    "T": 80,
+    "score_at_T": [
+     1,
+     4
+    ],
+    "final": [
+     4,
+     4
+    ]
+   },
+   {
+    "league": "bel.1",
+    "match": "Racing Genk at Antwerp",
+    "date": "2026-08-22",
+    "T": 85,
+    "score_at_T": [
+     2,
+     4
+    ],
+    "final": [
+     4,
+     4
+    ]
+   },
+   {
+    "league": "sco.1",
+    "match": "St Johnstone at Ross County",
+    "date": "2024-09-21",
+    "T": 85,
+    "score_at_T": [
+     1,
+     3
+    ],
+    "final": [
+     3,
+     3
+    ]
+   },
+   {
+    "league": "sco.1",
+    "match": "Kilmarnock at Dundee",
+    "date": "2024-10-05",
+    "T": 85,
+    "score_at_T": [
+     2,
+     0
+    ],
+    "final": [
+     2,
+     3
+    ]
+   },
+   {
+    "league": "sco.1",
+    "match": "Heart of Midlothian at Ross County",
+    "date": "2024-12-29",
+    "T": 80,
+    "score_at_T": [
+     0,
+     2
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "sco.1",
+    "match": "Heart of Midlothian at Ross County",
+    "date": "2024-12-29",
+    "T": 85,
+    "score_at_T": [
+     0,
+     2
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "sco.1",
+    "match": "Heart of Midlothian at Ross County",
+    "date": "2024-12-29",
+    "T": 88,
+    "score_at_T": [
+     0,
+     2
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "sco.1",
+    "match": "Rangers at Livingston",
+    "date": "2026-02-22",
+    "T": 80,
+    "score_at_T": [
+     2,
+     0
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "sco.1",
+    "match": "Dundee United at Dundee",
+    "date": "2026-03-15",
+    "T": 80,
+    "score_at_T": [
+     0,
+     2
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "sco.1",
+    "match": "Dundee United at Dundee",
+    "date": "2026-03-15",
+    "T": 85,
+    "score_at_T": [
+     0,
+     2
+    ],
+    "final": [
+     2,
+     2
+    ]
+   },
+   {
+    "league": "sco.1",
+    "match": "Dundee United at Dundee",
+    "date": "2026-03-15",
+    "T": 88,
+    "score_at_T": [
+     0,
+     2
+    ],
+    "final": [
+     2,
+     2
+    ]
+   }
+  ]
+ }
 }

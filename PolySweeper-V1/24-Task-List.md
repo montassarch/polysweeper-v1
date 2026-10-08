@@ -58,7 +58,8 @@ owner plainly and propose a new date; never lower the bar to make a rule pass.
   fills), (2) row 9 stock/ETF ladder last-hour sweep, (3) backup research: market making (both sides, spread +
   rewards). 21 Oct: neither near 300 safe fills with 0 losses -> switch to the backup, owner decides. Details:
   [[30-Research-Hub]] "Owner's focus". — **lab + assistant**
-- [ ] **V1 session (found 2026-10-08):** new-contract test markets (5-30 Oct) keep outcome ids in `positionIds`; `collector.py` and `shadow.py` read only `clobTokenIds`, so they would skip those markets. Check and handle before they go wide. — **V1 session**
+- [x] (checked 2026-10-08: no code change needed now, see R-2026-10-08 "positionIds check") **V1 session (found 2026-10-08):** new-contract test markets (5-30 Oct) keep outcome ids in `positionIds`; `collector.py` and `shadow.py` read only `clobTokenIds`, so they would skip those markets. Check and handle before they go wide. — **V1 session**
+- [ ] Re-check `positionIds` vs `clobTokenIds` on live sports markets weekly until 30 Oct (and if any moneyline market lacks `clobTokenIds`, or `positionIds` gets CLOB order books). — **lab analyst**
 - [ ] Backup (market making) verdict NO for 21 Oct ([[R-2026-10-08]]); `lab/mm_recorder.py` to 10 Oct, close unless politics nets +$2/day per $100. — **assistant**
 - [ ] (superseded 2026-10-08 by the narrowed plan) **CEO plan (owner 2026-10-07: "you are the CEO, plan everything")**, in order — **assistant + lab**:
   1. Row 4 keeps running to 21 Oct (main job). 2. Row 8 late football 2+ goals: tester measures on past matches

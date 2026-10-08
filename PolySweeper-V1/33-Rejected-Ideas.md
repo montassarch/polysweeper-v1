@@ -51,3 +51,11 @@ ps-tester says no), add one row here, newest at the top of its table. One line e
 | 2026-10-06 | Copy the best sweeper wallets (#10) | Best wallet is a market maker + fast in-play sniper; nothing to copy |
 | 2026-10-05 | ML model as an extra veto (#19) | Too little data of our own yet |
 | 2026-10-04 | Own win-probability model (#15) | Even very safe states lose ~1 in 300-1,000 |
+| 2026-10-08 | Rest bids 0.96-0.99 after finished stamp | ps-ideas: 0 sells below 0.99 after the stamp (77 games) ([[R-2026-10-08]]) |
+| 2026-10-08 | Cancel-aware 0.999 queue / early join | ps-ideas: End-join 2% fills; early-join under $0.01 floor ([[R-2026-10-08]]) |
+| 2026-10-08 | Trailing team's NO in 3-way soccer | ps-ideas: Supply in 4 of 55 matches ([[R-2026-10-08]]) |
+| 2026-10-08 | Bids on decided side markets | ps-ideas: Only 22 of 176 traded above 0.95 ([[R-2026-10-08]]) |
+| 2026-10-08 | Crypto last-hour dead-strike ladders | ps-ideas: 4 of 135 fills lost ([[R-2026-10-08]]) |
+| 2026-10-08 | Long-tail league atlas (#22) | ps-ideas: 1% of games had fills, kill line 10% ([[R-2026-10-08]]) |
+| 2026-10-08 | Soccer lead 3+ from minute 70-80 | ps-ideas: No cheap fills; lead 2 has 1 draw in 31 ([[R-2026-10-08]]) |
+| 2026-10-08 | Pre-mint pairs / buy loser at 0.001 / Kalshi alarm | ps-ideas: Same book, wrong shape, needs login ([[R-2026-10-08]]) |

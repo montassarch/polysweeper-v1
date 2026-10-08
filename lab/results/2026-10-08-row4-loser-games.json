@@ -1,0 +1,178 @@
+[
+ {
+  "game": "cfb-monst-idaho-2026-10-02",
+  "loser": "Montana State",
+  "score": "34-35",
+  "sport": "cfb",
+  "first_098_s_before_end": 775,
+  "last_098_s_before_end": 210,
+  "peak": [
+   0.997,
+   762
+  ],
+  "60s_later_min_price": 0.001,
+  "120s_later_min_price": 0.001,
+  "300s_later_min_price": null,
+  "n_trades_098": 28
+ },
+ {
+  "game": "cfb-ncat-bryant-2026-10-03",
+  "loser": "North Carolina A&T",
+  "score": "30-31",
+  "sport": "cfb",
+  "first_098_s_before_end": 1735,
+  "last_098_s_before_end": 1289,
+  "peak": [
+   0.99,
+   1289
+  ],
+  "60s_later_min_price": 0.001,
+  "120s_later_min_price": 0.001,
+  "300s_later_min_price": 0.001,
+  "n_trades_098": 2
+ },
+ {
+  "game": "cfb-ncst-vand-2026-09-19",
+  "loser": "NC State",
+  "score": "31-35",
+  "sport": "cfb",
+  "first_098_s_before_end": 1112,
+  "last_098_s_before_end": 686,
+  "peak": [
+   0.997,
+   908
+  ],
+  "60s_later_min_price": 0.001,
+  "120s_later_min_price": 0.001,
+  "300s_later_min_price": 0.001,
+  "n_trades_098": 15
+ },
+ {
+  "game": "cfb-nesu-ncol-2026-09-19",
+  "loser": "Northeastern State",
+  "score": "17-23",
+  "sport": "cfb",
+  "first_098_s_before_end": 1216,
+  "last_098_s_before_end": 1216,
+  "peak": [
+   0.99,
+   1216
+  ],
+  "60s_later_min_price": null,
+  "120s_later_min_price": null,
+  "300s_later_min_price": null,
+  "n_trades_098": 1
+ },
+ {
+  "game": "cfb-pitt-vtech-2026-10-02",
+  "loser": "Virginia Tech",
+  "score": "35-33",
+  "sport": "cfb",
+  "first_098_s_before_end": 72,
+  "last_098_s_before_end": 72,
+  "peak": [
+   0.98,
+   72
+  ],
+  "60s_later_min_price": 0.001,
+  "120s_later_min_price": 0.001,
+  "300s_later_min_price": null,
+  "n_trades_098": 2
+ },
+ {
+  "game": "cfb-templ-toledo-2026-09-19",
+  "loser": "Temple",
+  "score": "48-49",
+  "sport": "cfb",
+  "first_098_s_before_end": 1674,
+  "last_098_s_before_end": 1190,
+  "peak": [
+   0.999,
+   1674
+  ],
+  "60s_later_min_price": 0.001,
+  "120s_later_min_price": 0.001,
+  "300s_later_min_price": 0.001,
+  "n_trades_098": 8
+ },
+ {
+  "game": "mlb-chc-mil-2026-09-08",
+  "loser": "Chicago Cubs",
+  "score": "3-4",
+  "sport": "mlb",
+  "first_098_s_before_end": 1351,
+  "last_098_s_before_end": 1240,
+  "peak": [
+   0.99,
+   1318
+  ],
+  "60s_later_min_price": 0.001,
+  "120s_later_min_price": 0.001,
+  "300s_later_min_price": 0.001,
+  "n_trades_098": 17
+ },
+ {
+  "game": "mlb-mia-ari-2026-09-15",
+  "loser": "Arizona Diamondbacks",
+  "score": "4-2",
+  "sport": "mlb",
+  "first_098_s_before_end": 1686,
+  "last_098_s_before_end": 1686,
+  "peak": [
+   0.98,
+   1686
+  ],
+  "60s_later_min_price": 0.001,
+  "120s_later_min_price": 0.001,
+  "300s_later_min_price": 0.001,
+  "n_trades_098": 1
+ },
+ {
+  "game": "mlb-stl-sf-2026-09-09",
+  "loser": "St. Louis Cardinals",
+  "score": "6-7",
+  "sport": "mlb",
+  "first_098_s_before_end": 1797,
+  "last_098_s_before_end": 1239,
+  "peak": [
+   0.991,
+   1403
+  ],
+  "60s_later_min_price": 0.001,
+  "120s_later_min_price": 0.001,
+  "300s_later_min_price": 0.001,
+  "n_trades_098": 12
+ },
+ {
+  "game": "nhl-tb-nsh-2026-09-22",
+  "loser": "Lightning",
+  "score": "2-3",
+  "sport": "nhl",
+  "first_098_s_before_end": 1304,
+  "last_098_s_before_end": 1295,
+  "peak": [
+   0.98,
+   1304
+  ],
+  "60s_later_min_price": 0.001,
+  "120s_later_min_price": 0.001,
+  "300s_later_min_price": 0.001,
+  "n_trades_098": 2
+ },
+ {
+  "game": "wnba-gsv-la-2026-09-24",
+  "loser": "Los Angeles Sparks",
+  "score": "76-75",
+  "sport": "wnba",
+  "first_098_s_before_end": 1771,
+  "last_098_s_before_end": 1369,
+  "peak": [
+   0.99,
+   1452
+  ],
+  "60s_later_min_price": 0.001,
+  "120s_later_min_price": 0.001,
+  "300s_later_min_price": 0.001,
+  "n_trades_098": 10
+ }
+]

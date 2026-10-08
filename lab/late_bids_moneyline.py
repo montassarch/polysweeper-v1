@@ -124,3 +124,14 @@ out["by_sport_band_fills_losers"] = by_sport_band
 out["games_with_sell_fill_by_sport"] = dict(collections.Counter(g["sport"] for g in games if any(t["side"] == "SELL" and 0.98 <= float(t["price"]) < 0.9995 and t["timestamp"] < g["fin"] for t in g["trades"])))
 print(out["sell_fills_by_price_band"]); print(sell_losers)
 OUTFILE.write_text(json.dumps(out, indent=1))
+
+# 2026-10-08: every bid-side fill (taker SELL at 0.98+ before the stamp) as a compact row for offline guard tests
+allrows = []
+for g in games:
+    for t in g["trades"]:
+        p_ = float(t["price"])
+        if t["side"] == "SELL" and p_ >= 0.98 and p_ < 0.9995 and t["timestamp"] < g["fin"]:
+            allrows.append([g["sport"], g["game"], round(g["fin"] - t["timestamp"]), round(p_, 4), round(float(t["size"]), 2),
+                            int(g["px"][t["outcomeIndex"]] != 1.0)])
+(OUTFILE.with_name(OUTFILE.stem + "-fills.json")).write_text(json.dumps({"cols": ["sport", "game", "secs_before_stamp", "price", "shares", "on_loser"], "rows": allrows}))
+print("wrote fills", len(allrows))

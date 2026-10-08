@@ -1,0 +1,2562 @@
+{
+ "generated": "2026-10-08T17:01:46+00:00",
+ "hours_ahead": 48.0,
+ "total": {
+  "matches": 3006,
+  "espn": 0,
+  "s365": 1780,
+  "livescore": 1735,
+  "bo3": 70,
+  "lolesp": 7,
+  "any": 1982
+ },
+ "leagues": [
+  {
+   "league": "setkameua",
+   "matches": 118,
+   "espn": 0,
+   "s365": 0,
+   "livescore": 0,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 0,
+   "where": {},
+   "missed": [
+    "Levshyn Anatolii vs. Hrabskyi Andrii",
+    "Shvydkyi Vadym vs. Holoborodko Evhenii",
+    "Reva Vadym vs. Karelov Maksym"
+   ]
+  },
+  {
+   "league": "el1",
+   "matches": 84,
+   "espn": 0,
+   "s365": 72,
+   "livescore": 72,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 72,
+   "where": {
+    "s365": "s365:League One",
+    "livescore": "livescore:League 1"
+   },
+   "missed": [
+    "Notts County FC vs. Oxford United FC",
+    "Plymouth Argyle FC vs. AFC Wimbledon",
+    "Stockport County FC vs. Barnsley FC"
+   ]
+  },
+  {
+   "league": "el2",
+   "matches": 84,
+   "espn": 0,
+   "s365": 72,
+   "livescore": 72,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 72,
+   "where": {
+    "s365": "s365:League Two",
+    "livescore": "livescore:League 2"
+   },
+   "missed": [
+    "Oldham Athletic AFC vs. Accrington Stanley FC",
+    "Swindon Town FC vs. Crewe Alexandra FC",
+    "Shrewsbury Town FC vs. Exeter City FC"
+   ]
+  },
+  {
+   "league": "cs2",
+   "matches": 78,
+   "espn": 0,
+   "s365": 0,
+   "livescore": 0,
+   "bo3": 70,
+   "lolesp": 0,
+   "any": 70,
+   "where": {
+    "bo3": "bo3:d1"
+   },
+   "missed": [
+    "Counter-Strike: Honvéd vs 6666 (BO3) - CCT Europe Closed Qualifier: Series #11 Group C",
+    "Counter-Strike: MORROW vs ENJOY (BO3) - CCT Europe Closed Qualifier: Series #11 Group A",
+    "Counter-Strike: Ground Zero vs KZG (BO1) - ANZC Locals Brisbane: Group A"
+   ]
+  },
+  {
+   "league": "elc",
+   "matches": 77,
+   "espn": 0,
+   "s365": 54,
+   "livescore": 54,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 54,
+   "where": {
+    "s365": "s365:Championship",
+    "livescore": "livescore:Championship"
+   },
+   "missed": [
+    "West Ham United FC vs. Queens Park Rangers FC",
+    "West Ham United FC vs. Queens Park Rangers FC - Halftime Result",
+    "West Ham United FC vs. Queens Park Rangers FC - Second Half Result"
+   ]
+  },
+  {
+   "league": "epl",
+   "matches": 60,
+   "espn": 0,
+   "s365": 54,
+   "livescore": 54,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 54,
+   "where": {
+    "s365": "s365:Premier League",
+    "livescore": "livescore:Premier League"
+   },
+   "missed": [
+    "Arsenal FC vs. Leeds United FC",
+    "Sunderland AFC vs. Brighton & Hove Albion FC",
+    "Ipswich Town FC vs. Fulham FC"
+   ]
+  },
+  {
+   "league": "enl",
+   "matches": 60,
+   "espn": 0,
+   "s365": 48,
+   "livescore": 48,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 48,
+   "where": {
+    "s365": "s365:National League",
+    "livescore": "livescore:National League"
+   },
+   "missed": [
+    "Sutton United FC vs. Boreham Wood FC",
+    "Altrincham FC vs. Aldershot Town FC",
+    "Carlisle United FC vs. Kidderminster Harriers FC"
+   ]
+  },
+  {
+   "league": "crint",
+   "matches": 50,
+   "espn": 0,
+   "s365": 0,
+   "livescore": 21,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 21,
+   "where": {
+    "livescore": "livescore:South Africa v Australia Test Series"
+   },
+   "missed": [
+    "Test Match: South Africa vs Australia",
+    "Test Match: Afghanistan vs Bangladesh",
+    "Cricket World Cup League 2: Namibia vs UAE"
+   ]
+  },
+  {
+   "league": "itf",
+   "matches": 50,
+   "espn": 0,
+   "s365": 0,
+   "livescore": 0,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 0,
+   "where": {},
+   "missed": [
+    "W35 Villeneuve d'Ascq: Amandine Monnot vs Kim Chiarello",
+    "W35 Villeneuve d'Ascq: Julia Stusek vs Jana Otzipka",
+    "M15+H Rodez: Alexandre Reco vs Jelle Sels"
+   ]
+  },
+  {
+   "league": "ned2",
+   "matches": 50,
+   "espn": 0,
+   "s365": 40,
+   "livescore": 40,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 40,
+   "where": {
+    "s365": "s365:Eerste Divisie",
+    "livescore": "livescore:Eerste Divisie"
+   },
+   "missed": [
+    "Almere City FC vs. FC Eindhoven",
+    "FC Dordrecht vs. FC Emmen",
+    "De Graafschap vs. Jong FC Utrecht"
+   ]
+  },
+  {
+   "league": "fr2",
+   "matches": 49,
+   "espn": 0,
+   "s365": 42,
+   "livescore": 42,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 42,
+   "where": {
+    "s365": "s365:Ligue 2",
+    "livescore": "livescore:Ligue 2"
+   },
+   "missed": [
+    "AS Nancy-Lorraine vs. En Avant Guingamp",
+    "Pau FC vs. Stade Lavallois Mayenne FC",
+    "USL Dunkerque vs. FC Annecy"
+   ]
+  },
+  {
+   "league": "bun",
+   "matches": 49,
+   "espn": 0,
+   "s365": 42,
+   "livescore": 42,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 42,
+   "where": {
+    "s365": "s365:Bundesliga",
+    "livescore": "livescore:Bundesliga"
+   },
+   "missed": [
+    "BV Borussia 09 Dortmund vs. SV Werder Bremen",
+    "TSG 1899 Hoffenheim vs. Hamburger SV",
+    "SC Paderborn 07 vs. VfB Stuttgart"
+   ]
+  },
+  {
+   "league": "wwcquefa",
+   "matches": 48,
+   "espn": 0,
+   "s365": 32,
+   "livescore": 32,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 32,
+   "where": {
+    "s365": "s365:UEFA Women WC Qualifiers - Playoffs",
+    "livescore": "livescore:UEFA Qualification: Playoff"
+   },
+   "missed": [
+    "Kazakhstan vs. Ireland",
+    "Finland vs. Serbia",
+    "Kosovo vs. Austria"
+   ]
+  },
+  {
+   "league": "tur2",
+   "matches": 48,
+   "espn": 0,
+   "s365": 35,
+   "livescore": 40,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 40,
+   "where": {
+    "s365": "s365:1. Lig",
+    "livescore": "livescore:1st Lig"
+   },
+   "missed": [
+    "Bodrum FK vs. Ankara Keciorengucu",
+    "Sivasspor vs. Pendikspor",
+    "Umraniyespor vs. Sariyer SK"
+   ]
+  },
+  {
+   "league": "cfb",
+   "matches": 47,
+   "espn": 0,
+   "s365": 47,
+   "livescore": 0,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 47,
+   "where": {
+    "s365": "s365:NCAAF (FBS)"
+   },
+   "missed": []
+  },
+  {
+   "league": "atp",
+   "matches": 46,
+   "espn": 0,
+   "s365": 43,
+   "livescore": 46,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 46,
+   "where": {
+    "s365": "s365:Braga - Round of 16",
+    "livescore": "livescore:Braga, Portugal"
+   },
+   "missed": []
+  },
+  {
+   "league": "modus",
+   "matches": 43,
+   "espn": 0,
+   "s365": 0,
+   "livescore": 0,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 0,
+   "where": {},
+   "missed": [
+    "MODUS Super Series: Oliver Mitchell vs Harrison Leigh",
+    "MODUS Super Series: Alex Spellman vs Danny Ayres",
+    "MODUS Super Series: Harrison Leigh vs Conor Heneghan"
+   ]
+  },
+  {
+   "league": "darts",
+   "matches": 43,
+   "espn": 0,
+   "s365": 0,
+   "livescore": 0,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 0,
+   "where": {},
+   "missed": [
+    "MODUS Super Series: Oliver Mitchell vs Harrison Leigh",
+    "MODUS Super Series: Alex Spellman vs Danny Ayres",
+    "MODUS Super Series: Harrison Leigh vs Conor Heneghan"
+   ]
+  },
+  {
+   "league": "jap",
+   "matches": 42,
+   "espn": 0,
+   "s365": 36,
+   "livescore": 36,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 36,
+   "where": {
+    "s365": "s365:J1 League",
+    "livescore": "livescore:J1 League"
+   },
+   "missed": [
+    "Kashima Antlers vs. Gamba Ōsaka",
+    "Kashiwa Reysol vs. Vissel Kōbe",
+    "Cerezo Ōsaka vs. Yokohama F·Marinos"
+   ]
+  },
+  {
+   "league": "j1100",
+   "matches": 42,
+   "espn": 0,
+   "s365": 36,
+   "livescore": 36,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 36,
+   "where": {
+    "s365": "s365:J1 League",
+    "livescore": "livescore:J1 League"
+   },
+   "missed": [
+    "Kashima Antlers vs. Gamba Ōsaka",
+    "Kashiwa Reysol vs. Vissel Kōbe",
+    "Cerezo Ōsaka vs. Yokohama F·Marinos"
+   ]
+  },
+  {
+   "league": "itsb",
+   "matches": 42,
+   "espn": 0,
+   "s365": 36,
+   "livescore": 36,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 36,
+   "where": {
+    "s365": "s365:Serie B",
+    "livescore": "livescore:Serie B"
+   },
+   "missed": [
+    "US Avellino 1912 vs. UC Sampdoria",
+    "Empoli FC vs. Palermo FC",
+    "Benevento Calcio vs. Cesena FC"
+   ]
+  },
+  {
+   "league": "lal",
+   "matches": 40,
+   "espn": 0,
+   "s365": 36,
+   "livescore": 36,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 36,
+   "where": {
+    "s365": "s365:LaLiga",
+    "livescore": "livescore:LaLiga"
+   },
+   "missed": [
+    "Málaga CF vs. RCD Espanyol de Barcelona",
+    "Rayo Vallecano de Madrid vs. Athletic Club",
+    "Deportivo Alavés vs. Club Atlético de Madrid"
+   ]
+  },
+  {
+   "league": "ppa-doubles",
+   "matches": 40,
+   "espn": 0,
+   "s365": 0,
+   "livescore": 0,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 0,
+   "where": {},
+   "missed": [
+    "PPA - Men's Singles: Noe Khlif vs Jaume Martinez Vich",
+    "PPA - Men's Singles: Camden Chaffin vs Cason Campbell",
+    "PPA - Men's Singles: Roscoe Bellamy vs Yates Johnson"
+   ]
+  },
+  {
+   "league": "mlp",
+   "matches": 40,
+   "espn": 0,
+   "s365": 0,
+   "livescore": 0,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 0,
+   "where": {},
+   "missed": [
+    "PPA - Men's Singles: Noe Khlif vs Jaume Martinez Vich",
+    "PPA - Men's Singles: Camden Chaffin vs Cason Campbell",
+    "PPA - Men's Singles: Roscoe Bellamy vs Yates Johnson"
+   ]
+  },
+  {
+   "league": "spl",
+   "matches": 35,
+   "espn": 0,
+   "s365": 18,
+   "livescore": 12,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 18,
+   "where": {
+    "s365": "s365:Saudi League",
+    "livescore": "livescore:Saudi Professional League"
+   },
+   "missed": [
+    "Al Hazem SC vs. NEOM SC",
+    "Al Fateh Saudi Club vs. Al Ahli Saudi Club",
+    "Al Nassr Saudi Club vs. Al Diraiyah Saudi Club"
+   ]
+  },
+  {
+   "league": "bl2",
+   "matches": 35,
+   "espn": 0,
+   "s365": 30,
+   "livescore": 30,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 30,
+   "where": {
+    "s365": "s365:Bundesliga 2",
+    "livescore": "livescore:2. Bundesliga"
+   },
+   "missed": [
+    "Eintracht Braunschweig vs. Holstein Kiel",
+    "1. FC Heidenheim vs. 1. FC Kaiserslautern",
+    "1. FC Magdeburg vs. Hannover 96"
+   ]
+  },
+  {
+   "league": "tur",
+   "matches": 35,
+   "espn": 0,
+   "s365": 24,
+   "livescore": 30,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 30,
+   "where": {
+    "livescore": "livescore:Süper Lig",
+    "s365": "s365:Super Lig"
+   },
+   "missed": [
+    "Galatasaray SK vs. Kasımpaşa SK",
+    "Gençlerbirliği SK vs. Amed Sportif",
+    "Alanyaspor vs. Erzurumspor FK"
+   ]
+  },
+  {
+   "league": "chi",
+   "matches": 35,
+   "espn": 0,
+   "s365": 30,
+   "livescore": 30,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 30,
+   "where": {
+    "s365": "s365:Super League",
+    "livescore": "livescore:Super League"
+   },
+   "missed": [
+    "Shenzhen Xinpengcheng FC vs. Henan FC",
+    "Qingdao Hainiu FC vs. Beijing Guoan FC",
+    "Zhejiang Zhiye FC vs. Shanghai Haigang FC"
+   ]
+  },
+  {
+   "league": "kor",
+   "matches": 35,
+   "espn": 0,
+   "s365": 30,
+   "livescore": 30,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 30,
+   "where": {
+    "s365": "s365:K League 1",
+    "livescore": "livescore:K-League 1"
+   },
+   "missed": [
+    "Daejeon Hana Citizen FC vs. Jeonbuk Hyundai Motors FC",
+    "Incheon United FC vs. Pohang Steelers FC",
+    "Gangwon FC vs. Bucheon FC 1995"
+   ]
+  },
+  {
+   "league": "kor2",
+   "matches": 35,
+   "espn": 0,
+   "s365": 28,
+   "livescore": 28,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 28,
+   "where": {
+    "s365": "s365:K League 2",
+    "livescore": "livescore:K League 2"
+   },
+   "missed": [
+    "Suwon FC vs. Hwaseong FC",
+    "Chungbuk Cheongju FC vs. Seongnam Ilhwa",
+    "Gimpo FC vs. Seoul E-Land FC"
+   ]
+  },
+  {
+   "league": "idn1",
+   "matches": 34,
+   "espn": 0,
+   "s365": 24,
+   "livescore": 28,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 28,
+   "where": {
+    "s365": "s365:Super League",
+    "livescore": "livescore:Super League"
+   },
+   "missed": [
+    "Persik Kediri vs. Madura United",
+    "Arema FC vs. Bhayangkara Presisi Lampung FC",
+    "Psim Yogyakarta vs. Persija Jakarta"
+   ]
+  },
+  {
+   "league": "setkamemd",
+   "matches": 31,
+   "espn": 0,
+   "s365": 0,
+   "livescore": 0,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 0,
+   "where": {},
+   "missed": [
+    "Mitul Anatoli vs. Bodac Alexandr",
+    "Burucenco Vadim vs. Galiuc Evgheni",
+    "Mitul Anatoli vs. Galiuc Evgheni"
+   ]
+  },
+  {
+   "league": "fin1",
+   "matches": 31,
+   "espn": 0,
+   "s365": 5,
+   "livescore": 5,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 5,
+   "where": {
+    "s365": "s365:Veikkausliiga",
+    "livescore": "livescore:Veikkausliiga: Relegation"
+   },
+   "missed": [
+    "Kuopion Palloseura vs. AC Oulu",
+    "Kuopion Palloseura vs. AC Oulu - Halftime Result",
+    "Kuopion Palloseura vs. AC Oulu - Second Half Result"
+   ]
+  },
+  {
+   "league": "ja2",
+   "matches": 30,
+   "espn": 0,
+   "s365": 24,
+   "livescore": 24,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 24,
+   "where": {
+    "s365": "s365:J2 League",
+    "livescore": "livescore:J2 League"
+   },
+   "missed": [
+    "Yokohama FC vs. Ōita Trinita",
+    "Tokushima Vortis vs. FC Imabari",
+    "Sagan Tosu vs. Fujieda MYFC"
+   ]
+  },
+  {
+   "league": "j2100",
+   "matches": 30,
+   "espn": 0,
+   "s365": 24,
+   "livescore": 24,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 24,
+   "where": {
+    "s365": "s365:J2 League",
+    "livescore": "livescore:J2 League"
+   },
+   "missed": [
+    "Yokohama FC vs. Ōita Trinita",
+    "Tokushima Vortis vs. FC Imabari",
+    "Sagan Tosu vs. Fujieda MYFC"
+   ]
+  },
+  {
+   "league": "nirl1",
+   "matches": 30,
+   "espn": 0,
+   "s365": 24,
+   "livescore": 24,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 24,
+   "where": {
+    "s365": "s365:Premiership",
+    "livescore": "livescore:Premiership"
+   },
+   "missed": [
+    "Portadown FC vs. Glentoran FC",
+    "Coleraine FC vs. Cliftonville FC",
+    "Crusaders FC vs. Larne FC"
+   ]
+  },
+  {
+   "league": "kaz1",
+   "matches": 29,
+   "espn": 0,
+   "s365": 5,
+   "livescore": 19,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 19,
+   "where": {
+    "livescore": "livescore:Premier League",
+    "s365": "s365:Premier League"
+   },
+   "missed": [
+    "FC Yelimai vs. FC Aktobe",
+    "FC Yelimai vs. FC Aktobe - Halftime Result",
+    "FC Yelimai vs. FC Aktobe - Second Half Result"
+   ]
+  },
+  {
+   "league": "bra",
+   "matches": 28,
+   "espn": 0,
+   "s365": 24,
+   "livescore": 18,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 24,
+   "where": {
+    "s365": "s365:Brasileirão Série A",
+    "livescore": "livescore:Serie A"
+   },
+   "missed": [
+    "Santos FC vs. CR Flamengo",
+    "CA Paranaense vs. CA Mineiro",
+    "Fluminense FC vs. Coritiba FBC"
+   ]
+  },
+  {
+   "league": "svk1",
+   "matches": 28,
+   "espn": 0,
+   "s365": 24,
+   "livescore": 24,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 24,
+   "where": {
+    "s365": "s365:Niké liga",
+    "livescore": "livescore:Super Liga"
+   },
+   "missed": [
+    "MFK Skalica vs. ŠK Slovan Bratislava",
+    "AS Trenčín vs. MFK Dukla Banská Bystrica",
+    "FC Košice vs. KFC Komárno"
+   ]
+  },
+  {
+   "league": "scop",
+   "matches": 28,
+   "espn": 0,
+   "s365": 18,
+   "livescore": 18,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 18,
+   "where": {
+    "s365": "s365:Scottish Premiership",
+    "livescore": "livescore:Premiership"
+   },
+   "missed": [
+    "Dundee United FC vs. Hibernian FC",
+    "Rangers FC vs. Kilmarnock FC",
+    "Heart of Midlothian FC vs. St Mirren FC"
+   ]
+  },
+  {
+   "league": "cze1",
+   "matches": 25,
+   "espn": 0,
+   "s365": 20,
+   "livescore": 16,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 20,
+   "where": {
+    "s365": "s365:Chance Liga",
+    "livescore": "livescore:1st League"
+   },
+   "missed": [
+    "FC Zlín vs. SK Slavia Praha",
+    "FC Zbrojovka Brno vs. FK Jablonec",
+    "FC Viktoria Plzeň vs. FK Mladá Boleslav"
+   ]
+  },
+  {
+   "league": "rus",
+   "matches": 25,
+   "espn": 0,
+   "s365": 20,
+   "livescore": 0,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 20,
+   "where": {
+    "s365": "s365:Premier Liga"
+   },
+   "missed": [
+    "FK Rostov vs. FK Akron Tolyatti",
+    "FK Orenburg vs. FK Dinamo Makhachkala",
+    "FK Fakel Voronezh vs. FK Lokomotiv Moskva"
+   ]
+  },
+  {
+   "league": "isr",
+   "matches": 25,
+   "espn": 0,
+   "s365": 20,
+   "livescore": 20,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 20,
+   "where": {
+    "s365": "s365:Premier League",
+    "livescore": "livescore:Premier League"
+   },
+   "missed": [
+    "Hapoel Haifa FC vs. Maccabi Petah Tikva FC",
+    "Ironi Tiberias vs. Hapoel Be`er Sheva FC",
+    "Hapoel Petah Tikva FC vs. Maccabi Netanya FC"
+   ]
+  },
+  {
+   "league": "atp-doubles",
+   "matches": 25,
+   "espn": 0,
+   "s365": 12,
+   "livescore": 18,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 18,
+   "where": {
+    "s365": "s365:Palermo",
+    "livescore": "livescore:Palermo, Italy"
+   },
+   "missed": [
+    "Antofagasta (Doubles): Ribeiro/Zormann vs Alves/Almeida",
+    "Shanghai Rolex Masters (Doubles): Harrison/Skupski vs Arneodo/Gonzalez",
+    "Shanghai Rolex Masters (Doubles): Buse/Vallejo vs Andreozzi/Guinard"
+   ]
+  },
+  {
+   "league": "pol",
+   "matches": 24,
+   "espn": 0,
+   "s365": 20,
+   "livescore": 20,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 20,
+   "where": {
+    "s365": "s365:Ekstraklasa",
+    "livescore": "livescore:Ekstraklasa"
+   },
+   "missed": [
+    "Wieczysta Krakow vs. Wisla Plock",
+    "KS Cracovia Krakow vs. Zaglebie Lubin",
+    "WKS Slask Wroclaw vs. KKS Lech Poznan"
+   ]
+  },
+  {
+   "league": "swe",
+   "matches": 24,
+   "espn": 0,
+   "s365": 10,
+   "livescore": 10,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 15,
+   "where": {
+    "livescore": "livescore:Allsvenskan",
+    "s365": "s365:Allsvenskan"
+   },
+   "missed": [
+    "IFK Goteborg vs. Vasteraas SK",
+    "IFK Goteborg vs. Vasteraas SK - Halftime Result",
+    "IFK Goteborg vs. Vasteraas SK - Second Half Result"
+   ]
+  },
+  {
+   "league": "swe2",
+   "matches": 24,
+   "espn": 0,
+   "s365": 20,
+   "livescore": 10,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 20,
+   "where": {
+    "s365": "s365:Superettan",
+    "livescore": "livescore:Superettan"
+   },
+   "missed": [
+    "Landskrona BoIS vs. Sandvikens IF",
+    "Ostersunds FK vs. Varbergs BoIS",
+    "IK Oddevold vs. Nordic United FC"
+   ]
+  },
+  {
+   "league": "qat1",
+   "matches": 22,
+   "espn": 0,
+   "s365": 17,
+   "livescore": 17,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 17,
+   "where": {
+    "s365": "s365:Doha Bank Stars League",
+    "livescore": "livescore:Qatar Stars League"
+   },
+   "missed": [
+    "Qatar SC vs. Al Rayyan SC",
+    "Al Sadd SC vs. Al Arabi Doha SC",
+    "Al-Shamal vs. Al Duhail SC"
+   ]
+  },
+  {
+   "league": "ere",
+   "matches": 21,
+   "espn": 0,
+   "s365": 6,
+   "livescore": 6,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 6,
+   "where": {
+    "s365": "s365:Eredivisie",
+    "livescore": "livescore:Eredivisie"
+   },
+   "missed": [
+    "PSV vs. SC Heerenveen",
+    "Go Ahead Eagles vs. Sparta Rotterdam",
+    "PSV vs. SC Heerenveen - Halftime Result"
+   ]
+  },
+  {
+   "league": "por",
+   "matches": 21,
+   "espn": 0,
+   "s365": 18,
+   "livescore": 18,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 18,
+   "where": {
+    "s365": "s365:Liga Portugal",
+    "livescore": "livescore:Primeira Liga"
+   },
+   "missed": [
+    "Moreirense FC vs. Gil Vicente FC",
+    "SC Braga vs. Sporting CP",
+    "Casa Pia AC vs. CD Santa Clara"
+   ]
+  },
+  {
+   "league": "nor",
+   "matches": 21,
+   "espn": 0,
+   "s365": 18,
+   "livescore": 18,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 18,
+   "where": {
+    "s365": "s365:Eliteserien",
+    "livescore": "livescore:Eliteserien"
+   },
+   "missed": [
+    "SK Brann vs. Viking FK",
+    "FK Bodø/Glimt vs. Kristiansund BK",
+    "Rosenborg BK vs. Sandefjord Fotball"
+   ]
+  },
+  {
+   "league": "rou1",
+   "matches": 21,
+   "espn": 0,
+   "s365": 17,
+   "livescore": 17,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 17,
+   "where": {
+    "s365": "s365:Liga 1",
+    "livescore": "livescore:Liga 1"
+   },
+   "missed": [
+    "FC CFR 1907 Cluj vs. FC Universitatea Cluj",
+    "FC Corvinul 1921 Hunedoara vs. FC Voluntari",
+    "Sepsi OSK vs. Dinamo 1948"
+   ]
+  },
+  {
+   "league": "hr1",
+   "matches": 21,
+   "espn": 0,
+   "s365": 18,
+   "livescore": 18,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 18,
+   "where": {
+    "s365": "s365:HNL",
+    "livescore": "livescore:HNL"
+   },
+   "missed": [
+    "HNK Gorica vs. NK Rudeš",
+    "HNK Hajduk Split vs. GNK Dinamo Zagreb",
+    "NK Osijek vs. NK Istra 1961"
+   ]
+  },
+  {
+   "league": "setkamecz",
+   "matches": 21,
+   "espn": 0,
+   "s365": 0,
+   "livescore": 0,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 0,
+   "where": {},
+   "missed": [
+    "Brichacek David vs. Rucky Premysl",
+    "Kanka Tomas vs. Provaznik Petr",
+    "Brichacek David vs. Simecek Jan Jr"
+   ]
+  },
+  {
+   "league": "sea",
+   "matches": 20,
+   "espn": 0,
+   "s365": 9,
+   "livescore": 18,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 18,
+   "where": {
+    "s365": "s365:Serie A",
+    "livescore": "livescore:Serie A"
+   },
+   "missed": [
+    "Genoa CFC vs. ACF Fiorentina",
+    "FC Internazionale Milano vs. Parma Calcio 1913"
+   ]
+  },
+  {
+   "league": "fl1",
+   "matches": 20,
+   "espn": 0,
+   "s365": 18,
+   "livescore": 18,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 18,
+   "where": {
+    "s365": "s365:Ligue 1",
+    "livescore": "livescore:Ligue 1"
+   },
+   "missed": [
+    "Racing Club de Lens vs. Olympique Lyonnais",
+    "Lille OSC vs. Le Havre AC"
+   ]
+  },
+  {
+   "league": "arg",
+   "matches": 20,
+   "espn": 0,
+   "s365": 16,
+   "livescore": 16,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 16,
+   "where": {
+    "s365": "s365:Liga Profesional - Clausura",
+    "livescore": "livescore:Liga Profesional: Clausura"
+   },
+   "missed": [
+    "CA Aldosivi vs. CA Sarmiento",
+    "Gimnasia y Esgrima de La Plata vs. CA Tucumán",
+    "Instituto AC Córdoba vs. CA Boca Juniors"
+   ]
+  },
+  {
+   "league": "mar1",
+   "matches": 20,
+   "espn": 0,
+   "s365": 9,
+   "livescore": 6,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 9,
+   "where": {
+    "s365": "s365:Botola Pro",
+    "livescore": "livescore:Botola Pro"
+   },
+   "missed": [
+    "Union Touarga Sports vs. RS Berkane",
+    "RCA Zemamra vs. HUS Agadir",
+    "AS FAR vs. Wydad Sportif Témara"
+   ]
+  },
+  {
+   "league": "ukr1",
+   "matches": 20,
+   "espn": 0,
+   "s365": 12,
+   "livescore": 12,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 12,
+   "where": {
+    "s365": "s365:Premier League",
+    "livescore": "livescore:Premier League"
+   },
+   "missed": [
+    "RNK Veres Rivne vs. FK Shakhtar Donetsk",
+    "FK Chornomorets Odesa vs. FK Kharkiv",
+    "FK Kolos Kovalivka vs. FK Epitsentr Dunaivtsi"
+   ]
+  },
+  {
+   "league": "bel2",
+   "matches": 20,
+   "espn": 0,
+   "s365": 16,
+   "livescore": 16,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 16,
+   "where": {
+    "s365": "s365:Challenger Pro League",
+    "livescore": "livescore:Challenger Pro League"
+   },
+   "missed": [
+    "FCV Dender EH vs. Club NXT",
+    "RSC Anderlecht Futures vs. KAS Eupen",
+    "Royal Excelsior Virton vs. Sporting Hasselt"
+   ]
+  },
+  {
+   "league": "aze1",
+   "matches": 20,
+   "espn": 0,
+   "s365": 16,
+   "livescore": 16,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 16,
+   "where": {
+    "s365": "s365:Premier League",
+    "livescore": "livescore:Premier League"
+   },
+   "missed": [
+    "Neftchi Baku PFC vs. Sabah Masazir",
+    "Zira FK vs. Shamakhi FK",
+    "Araz Nakhchivan PFK vs. FK Kapaz"
+   ]
+  },
+  {
+   "league": "uzb1",
+   "matches": 20,
+   "espn": 0,
+   "s365": 16,
+   "livescore": 12,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 16,
+   "where": {
+    "s365": "s365:Super League",
+    "livescore": "livescore:Super League"
+   },
+   "missed": [
+    "FK Kokand 1912 vs. PFK Mash AL Mubarek",
+    "Pakhtakor vs. FC Bunyodkor",
+    "FK Buxoro vs. FC Andijon"
+   ]
+  },
+  {
+   "league": "bel1",
+   "matches": 19,
+   "espn": 0,
+   "s365": 16,
+   "livescore": 16,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 16,
+   "where": {
+    "s365": "s365:Jupiler Pro League",
+    "livescore": "livescore:Belgian Pro League"
+   },
+   "missed": [
+    "SK Beveren vs. Lommel SK",
+    "Cercle Brugge vs. RSC Anderlecht",
+    "RAAL La Louviere vs. Club Brugge"
+   ]
+  },
+  {
+   "league": "col1",
+   "matches": 18,
+   "espn": 0,
+   "s365": 14,
+   "livescore": 14,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 14,
+   "where": {
+    "s365": "s365:Liga BetPlay - Clausura",
+    "livescore": "livescore:Primera A: Clausura"
+   },
+   "missed": [
+    "Atlético Nacional vs. CD Tolima",
+    "Fortaleza FC vs. Millonarios FC",
+    "Alianza FC vs. Águilas Doradas Rionegro"
+   ]
+  },
+  {
+   "league": "sui",
+   "matches": 18,
+   "espn": 0,
+   "s365": 15,
+   "livescore": 15,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 15,
+   "where": {
+    "s365": "s365:Super League",
+    "livescore": "livescore:Super League"
+   },
+   "missed": [
+    "FC Zurich vs. FC Thun",
+    "Servette Geneva vs. FC Sion",
+    "FC Lugano vs. FC Luzern"
+   ]
+  },
+  {
+   "league": "ecu1",
+   "matches": 17,
+   "espn": 0,
+   "s365": 14,
+   "livescore": 14,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 14,
+   "where": {
+    "s365": "s365:Liga Pro - Quadrangular",
+    "livescore": "livescore:Serie A: Placement Group"
+   },
+   "missed": [
+    "Libertad Loja vs. Leones Futbol Club",
+    "Delfin SC vs. Mushuc Runa SC",
+    "CSD Independiente del Valle vs. SD Aucas"
+   ]
+  },
+  {
+   "league": "uru1",
+   "matches": 15,
+   "espn": 0,
+   "s365": 12,
+   "livescore": 12,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 12,
+   "where": {
+    "s365": "s365:Uruguayan Championship - Clausura",
+    "livescore": "livescore:Primera División: Clausura"
+   },
+   "missed": [
+    "Deportivo Maldonado vs. Liverpool Montevideo",
+    "Montevideo City Torque vs. Danubio FC",
+    "Defensor Sporting vs. CA Cerro"
+   ]
+  },
+  {
+   "league": "isl1",
+   "matches": 15,
+   "espn": 0,
+   "s365": 8,
+   "livescore": 12,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 12,
+   "where": {
+    "s365": "s365:Besta-deild karla",
+    "livescore": "livescore:Besta deildin: Relegation Group"
+   },
+   "missed": [
+    "Stjarnan Gardabae vs. KA Akureyri",
+    "Valur Reykjavik vs. FH Hafnarfjordur",
+    "Thor Akureyri vs. IBV Vestmannaeyjar"
+   ]
+  },
+  {
+   "league": "est1",
+   "matches": 15,
+   "espn": 0,
+   "s365": 12,
+   "livescore": 12,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 12,
+   "where": {
+    "s365": "s365:Meistriliiga",
+    "livescore": "livescore:Meistriliiga"
+   },
+   "missed": [
+    "Parnu JK Vaprus vs. JK Narva Trans",
+    "Nomme Kalju FC vs. Harju JK Laagri",
+    "Tartu JK Tammeka vs. FC Nomme United"
+   ]
+  },
+  {
+   "league": "es2",
+   "matches": 14,
+   "espn": 0,
+   "s365": 12,
+   "livescore": 12,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 12,
+   "where": {
+    "s365": "s365:LaLiga 2",
+    "livescore": "livescore:LaLiga 2"
+   },
+   "missed": [
+    "AD Ceuta FC vs. CE Sabadell FC",
+    "CD Eldense vs. Córdoba CF"
+   ]
+  },
+  {
+   "league": "mex",
+   "matches": 14,
+   "espn": 0,
+   "s365": 12,
+   "livescore": 12,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 12,
+   "where": {
+    "s365": "s365:Liga MX - Apertura",
+    "livescore": "livescore:Liga MX: Apertura"
+   },
+   "missed": [
+    "Club Puebla vs. Club León FC",
+    "Tigres de la UANL vs. Deportivo Toluca FC"
+   ]
+  },
+  {
+   "league": "nhl",
+   "matches": 14,
+   "espn": 0,
+   "s365": 14,
+   "livescore": 14,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 14,
+   "where": {
+    "s365": "s365:NHL",
+    "livescore": "livescore:NHL: Regular season"
+   },
+   "missed": []
+  },
+  {
+   "league": "isp",
+   "matches": 14,
+   "espn": 0,
+   "s365": 12,
+   "livescore": 6,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 12,
+   "where": {
+    "s365": "s365:Indian Super League",
+    "livescore": "livescore:Super League"
+   },
+   "missed": [
+    "Bengaluru FC vs. SC Delhi",
+    "FC Goa vs. Chennaiyin FC"
+   ]
+  },
+  {
+   "league": "per1",
+   "matches": 14,
+   "espn": 0,
+   "s365": 11,
+   "livescore": 11,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 11,
+   "where": {
+    "s365": "s365:Liga 1 - Clausura",
+    "livescore": "livescore:Liga 1: Clausura"
+   },
+   "missed": [
+    "CD Moquegua vs. CS Cienciano",
+    "CA Grau vs. CD Los Chankas",
+    "CD Garcilaso vs. CS Huancayo"
+   ]
+  },
+  {
+   "league": "shl",
+   "matches": 14,
+   "espn": 0,
+   "s365": 0,
+   "livescore": 2,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 2,
+   "where": {
+    "livescore": "livescore:SHL"
+   },
+   "missed": [
+    "SHL: Brynäs vs. Bjoerkloeven",
+    "SHL: Djurgården vs. Örebro HK",
+    "SHL: Rögle vs. HV71"
+   ]
+  },
+  {
+   "league": "cricwcl",
+   "matches": 13,
+   "espn": 0,
+   "s365": 0,
+   "livescore": 0,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 0,
+   "where": {},
+   "missed": [
+    "World Championship of Legends: Australia Champions vs South Africa Champions",
+    "World Championship of Legends: Australia Champions vs South Africa Champions - Toss Match Double",
+    "World Championship of Legends: Australia Champions vs South Africa Champions - Most Sixes"
+   ]
+  },
+  {
+   "league": "mlbb",
+   "matches": 13,
+   "espn": 0,
+   "s365": 0,
+   "livescore": 0,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 0,
+   "where": {},
+   "missed": [
+    "Mobile Legends Bang Bang: Team Vamos vs Invictus Gaming (BO3) - MPL Malaysia Regular Season",
+    "Mobile Legends Bang Bang: AC Esports vs RRQ Tora (BO3) - MPL Malaysia Regular Season",
+    "Mobile Legends Bang Bang: AP.Bren vs Omega Esports (BO3) - MPL Philippines Regular Season"
+   ]
+  },
+  {
+   "league": "srb",
+   "matches": 12,
+   "espn": 0,
+   "s365": 5,
+   "livescore": 10,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 10,
+   "where": {
+    "s365": "s365:Super Liga",
+    "livescore": "livescore:Super Liga"
+   },
+   "missed": [
+    "FK Cukaricki Belgrade vs. FK Macva Sabac",
+    "FK IMT Novi Beograd vs. FK Radnik Surdulica"
+   ]
+  },
+  {
+   "league": "gre1",
+   "matches": 12,
+   "espn": 0,
+   "s365": 10,
+   "livescore": 10,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 10,
+   "where": {
+    "s365": "s365:Super League",
+    "livescore": "livescore:Super League"
+   },
+   "missed": [
+    "Asteras Tripolis vs. Atromitos Athinon",
+    "AEK Athens vs. OFI Crete"
+   ]
+  },
+  {
+   "league": "aut",
+   "matches": 12,
+   "espn": 0,
+   "s365": 10,
+   "livescore": 10,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 10,
+   "where": {
+    "s365": "s365:Bundesliga",
+    "livescore": "livescore:Bundesliga"
+   },
+   "missed": [
+    "Grazer AK 1902 vs. FC Salzburg",
+    "WSG Tirol vs. SV Ried"
+   ]
+  },
+  {
+   "league": "mex2",
+   "matches": 12,
+   "espn": 0,
+   "s365": 9,
+   "livescore": 9,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 9,
+   "where": {
+    "s365": "s365:Liga de Expansión MX - Apertura",
+    "livescore": "livescore:Liga de Expansion MX: Apertura"
+   },
+   "missed": [
+    "Alebrijes de Oaxaca FC vs. CF Correcaminos UAT",
+    "CD Tapatio vs. Club Atletico La Paz",
+    "Tepatitlan FC vs. Atletico Morelia"
+   ]
+  },
+  {
+   "league": "slo",
+   "matches": 12,
+   "espn": 0,
+   "s365": 10,
+   "livescore": 10,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 10,
+   "where": {
+    "s365": "s365:PrvaLiga - Regular Season",
+    "livescore": "livescore:Prva Liga"
+   },
+   "missed": [
+    "NK Radomlje vs. FC Koper",
+    "NK Celje vs. Aluminij Kidricevo"
+   ]
+  },
+  {
+   "league": "khl",
+   "matches": 12,
+   "espn": 0,
+   "s365": 12,
+   "livescore": 0,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 12,
+   "where": {
+    "s365": "s365:KHL"
+   },
+   "missed": []
+  },
+  {
+   "league": "bkjpn",
+   "matches": 12,
+   "espn": 0,
+   "s365": 10,
+   "livescore": 11,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 11,
+   "where": {
+    "s365": "s365:B. League",
+    "livescore": "livescore:B.League"
+   },
+   "missed": [
+    "Tokyo Sunrockers vs. Toyama Grouses"
+   ]
+  },
+  {
+   "league": "col2",
+   "matches": 12,
+   "espn": 0,
+   "s365": 6,
+   "livescore": 3,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 6,
+   "where": {
+    "s365": "s365:Primera B - Finalizacion",
+    "livescore": "livescore:Primera B: Clausura"
+   },
+   "missed": [
+    "Atletico FC Cali vs. Real Cartagena FC",
+    "Atletico FC Cali vs. Real Cartagena FC - Halftime Result",
+    "Atletico FC Cali vs. Real Cartagena FC - Exact Score"
+   ]
+  },
+  {
+   "league": "mlb",
+   "matches": 12,
+   "espn": 0,
+   "s365": 12,
+   "livescore": 0,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 12,
+   "where": {
+    "s365": "s365:MLB - Division Series"
+   },
+   "missed": []
+  },
+  {
+   "league": "tha1",
+   "matches": 12,
+   "espn": 0,
+   "s365": 9,
+   "livescore": 9,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 9,
+   "where": {
+    "s365": "s365:Premier League",
+    "livescore": "livescore:Thai League"
+   },
+   "missed": [
+    "Ratchaburi FC vs. Sukhothai FC",
+    "BG Pathum United vs. Ayutthaya United FC",
+    "Buriram United vs. Rayong FC"
+   ]
+  },
+  {
+   "league": "irl1",
+   "matches": 12,
+   "espn": 0,
+   "s365": 10,
+   "livescore": 10,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 10,
+   "where": {
+    "s365": "s365:Premier Division",
+    "livescore": "livescore:League of Ireland Premier Division"
+   },
+   "missed": [
+    "Shamrock Rovers vs. Drogheda United FC",
+    "Shelbourne FC vs. Sligo Rovers FC"
+   ]
+  },
+  {
+   "league": "wta",
+   "matches": 12,
+   "espn": 0,
+   "s365": 11,
+   "livescore": 12,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 12,
+   "where": {
+    "s365": "s365:Beijing - Quarter Finals",
+    "livescore": "livescore:China Open"
+   },
+   "missed": []
+  },
+  {
+   "league": "hok",
+   "matches": 11,
+   "espn": 0,
+   "s365": 0,
+   "livescore": 0,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 0,
+   "where": {},
+   "missed": [
+    "Honor of Kings: Wolves vs Hero JiuJing (BO5) - King Pro League Grand Finals Group Stage",
+    "Honor of Kings: JD Gaming vs Douyu Gaming (BO5) - King Pro League Grand Finals Group Stage",
+    "Honor of Kings: Talent Gaming vs LGD NBW (BO5) - King Pro League Grand Finals Group Stage"
+   ]
+  },
+  {
+   "league": "bul",
+   "matches": 10,
+   "espn": 0,
+   "s365": 8,
+   "livescore": 8,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 8,
+   "where": {
+    "s365": "s365:Parva Liga",
+    "livescore": "livescore:Parva Liga"
+   },
+   "missed": [
+    "POFC Botev Vratsa vs. FK Spartak 1918 Varna",
+    "FC Lokomotiv 1929 Sofia vs. PFC Lokomotiv Plovdiv"
+   ]
+  },
+  {
+   "league": "hun",
+   "matches": 10,
+   "espn": 0,
+   "s365": 8,
+   "livescore": 8,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 8,
+   "where": {
+    "s365": "s365:OTP Bank Liga",
+    "livescore": "livescore:NB I"
+   },
+   "missed": [
+    "Vasas FC vs. Kisvarda FC",
+    "Ferencvarosi Budapest vs. Debreceni VSC"
+   ]
+  },
+  {
+   "league": "idn2",
+   "matches": 10,
+   "espn": 0,
+   "s365": 0,
+   "livescore": 0,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 0,
+   "where": {},
+   "missed": [
+    "Persipura Jayapura vs. Rans Nusantara",
+    "Persipura Jayapura vs. Rans Nusantara - Halftime Result",
+    "Persipura Jayapura vs. Rans Nusantara - Exact Score"
+   ]
+  },
+  {
+   "league": "aze2",
+   "matches": 10,
+   "espn": 0,
+   "s365": 0,
+   "livescore": 0,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 0,
+   "where": {},
+   "missed": [
+    "Moik Baku vs. Energetik Mingechevir",
+    "Moik Baku vs. Energetik Mingechevir - Halftime Result",
+    "Moik Baku vs. Energetik Mingechevir - Exact Score"
+   ]
+  },
+  {
+   "league": "ahl",
+   "matches": 9,
+   "espn": 0,
+   "s365": 0,
+   "livescore": 9,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 9,
+   "where": {
+    "livescore": "livescore:AHL"
+   },
+   "missed": []
+  },
+  {
+   "league": "euroleague",
+   "matches": 9,
+   "espn": 0,
+   "s365": 9,
+   "livescore": 9,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 9,
+   "where": {
+    "s365": "s365:EuroLeague",
+    "livescore": "livescore:EuroLeague: Regular season"
+   },
+   "missed": []
+  },
+  {
+   "league": "lva1",
+   "matches": 9,
+   "espn": 0,
+   "s365": 7,
+   "livescore": 7,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 7,
+   "where": {
+    "s365": "s365:Virsliga",
+    "livescore": "livescore:Virsliga"
+   },
+   "missed": [
+    "SK Super Nova vs. FK Grobina",
+    "FK Tukums 2000/TSS vs. Riga FC"
+   ]
+  },
+  {
+   "league": "liiga",
+   "matches": 9,
+   "espn": 0,
+   "s365": 0,
+   "livescore": 4,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 4,
+   "where": {
+    "livescore": "livescore:Liiga"
+   },
+   "missed": [
+    "SaiPa Lappeenranta vs. JYP Jyvaskyla",
+    "Assat Pori vs. HPK Hameenlinna",
+    "TPS Turku vs. Vaasan Sport"
+   ]
+  },
+  {
+   "league": "bra2",
+   "matches": 8,
+   "espn": 0,
+   "s365": 6,
+   "livescore": 6,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 6,
+   "where": {
+    "s365": "s365:Brasileirão - Série B",
+    "livescore": "livescore:Serie B"
+   },
+   "missed": [
+    "Ceará SC vs. Criciúma EC",
+    "Clube Náutico Capibaribe vs. Grêmio Novorizontino"
+   ]
+  },
+  {
+   "league": "nba",
+   "matches": 8,
+   "espn": 0,
+   "s365": 8,
+   "livescore": 8,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 8,
+   "where": {
+    "s365": "s365:NBA - Pre Season",
+    "livescore": "livescore:Pre-season"
+   },
+   "missed": []
+  },
+  {
+   "league": "r6siege",
+   "matches": 8,
+   "espn": 0,
+   "s365": 0,
+   "livescore": 0,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 0,
+   "where": {},
+   "missed": [
+    "Rainbow Six Siege: ENTERPRISE Esports vs Man eSports LFO (BO3) - Asia Pacific League Oceania - Stage 2 Playoffs",
+    "Rainbow Six Siege: Chiefs Esports Club vs 7VEN (BO3) - Asia Pacific League Oceania - Stage 2 Playoffs",
+    "Rainbow Six Siege: Cloud9 vs DarkZero Esports (BO3) - North America League Stage 2 Playoffs"
+   ]
+  },
+  {
+   "league": "gtm",
+   "matches": 7,
+   "espn": 0,
+   "s365": 6,
+   "livescore": 6,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 6,
+   "where": {
+    "s365": "s365:Liga Nacional - Apertura",
+    "livescore": "livescore:Liga Nacional: Apertura"
+   },
+   "missed": [
+    "Antigua GFC vs. CSD Municipal"
+   ]
+  },
+  {
+   "league": "fpd",
+   "matches": 7,
+   "espn": 0,
+   "s365": 6,
+   "livescore": 0,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 6,
+   "where": {
+    "s365": "s365:liga FPD - Apertura"
+   },
+   "missed": [
+    "Sporting FC vs. CS Cartaginés"
+   ]
+  },
+  {
+   "league": "den",
+   "matches": 7,
+   "espn": 0,
+   "s365": 6,
+   "livescore": 0,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 6,
+   "where": {
+    "s365": "s365:Superliga"
+   },
+   "missed": [
+    "FC Nordsjælland vs. Odense BK"
+   ]
+  },
+  {
+   "league": "dehl",
+   "matches": 7,
+   "espn": 0,
+   "s365": 0,
+   "livescore": 6,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 6,
+   "where": {
+    "livescore": "livescore:DEL"
+   },
+   "missed": [
+    "DEL: EHC Red Bull München vs. ERC Ingolstadt"
+   ]
+  },
+  {
+   "league": "cehl",
+   "matches": 7,
+   "espn": 0,
+   "s365": 0,
+   "livescore": 7,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 7,
+   "where": {
+    "livescore": "livescore:Extraliga"
+   },
+   "missed": []
+  },
+  {
+   "league": "lol",
+   "matches": 7,
+   "espn": 0,
+   "s365": 0,
+   "livescore": 0,
+   "bo3": 0,
+   "lolesp": 7,
+   "any": 7,
+   "where": {
+    "lolesp": "lolesp:CBLOL"
+   },
+   "missed": []
+  },
+  {
+   "league": "dpwt",
+   "matches": 7,
+   "espn": 0,
+   "s365": 0,
+   "livescore": 0,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 0,
+   "where": {},
+   "missed": [
+    "DP World Tour: Open de Espana Winner",
+    "DP World Tour: Open de Espana Top 5",
+    "DP World Tour: Open de Espana Top 10"
+   ]
+  },
+  {
+   "league": "kft",
+   "matches": 7,
+   "espn": 0,
+   "s365": 0,
+   "livescore": 0,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 0,
+   "where": {},
+   "missed": [
+    "Korn Ferry Tour: Korn Ferry Tour Championship Winner",
+    "Korn Ferry Tour: Korn Ferry Tour Championship Top 5",
+    "Korn Ferry Tour: Korn Ferry Tour Championship Top 10"
+   ]
+  },
+  {
+   "league": "boxing",
+   "matches": 7,
+   "espn": 0,
+   "s365": 0,
+   "livescore": 0,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 0,
+   "where": {},
+   "missed": [
+    "Luis Santana vs. Dzmitry Asanau",
+    "Osleys Iglesias vs. Oliver Zaren",
+    "Imam Khataev vs. Padraig McCrory"
+   ]
+  },
+  {
+   "league": "ruurc",
+   "matches": 7,
+   "espn": 0,
+   "s365": 0,
+   "livescore": 0,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 0,
+   "where": {},
+   "missed": [
+    "United Rugby Championship: Glasgow Warriors vs Connacht",
+    "United Rugby Championship: Dragons vs Ospreys",
+    "United Rugby Championship: Bulls vs Lions"
+   ]
+  },
+  {
+   "league": "auc",
+   "matches": 7,
+   "espn": 0,
+   "s365": 6,
+   "livescore": 6,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 6,
+   "where": {
+    "s365": "s365:Australia Cup - Final",
+    "livescore": "livescore:Australia Cup"
+   },
+   "missed": [
+    "South Melbourne FC vs. Melbourne Victory FC"
+   ]
+  },
+  {
+   "league": "wta-doubles",
+   "matches": 7,
+   "espn": 0,
+   "s365": 3,
+   "livescore": 5,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 5,
+   "where": {
+    "s365": "s365:Beijing - Quarter Finals",
+    "livescore": "livescore:China Open"
+   },
+   "missed": [
+    "China Open (Doubles): Hsieh/Ostapenko vs Routliffe/Sutjiadi",
+    "Suzhou (Doubles): Prozorova/Sasnovich vs Li/Zheng"
+   ]
+  },
+  {
+   "league": "uslc",
+   "matches": 6,
+   "espn": 0,
+   "s365": 5,
+   "livescore": 5,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 5,
+   "where": {
+    "s365": "s365:USL Championship",
+    "livescore": "livescore:USL Championship"
+   },
+   "missed": [
+    "Lexington SC vs. FC Tulsa"
+   ]
+  },
+  {
+   "league": "val",
+   "matches": 6,
+   "espn": 0,
+   "s365": 0,
+   "livescore": 0,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 0,
+   "where": {},
+   "missed": [
+    "Valorant: Fire Flux Esports vs Misa Esports (BO3) - Monsters Reloaded Closed Qualifier Playoffs",
+    "Valorant: BBL Esports vs Pcific Esports (BO3) - Monsters Reloaded Closed Qualifier Playoffs",
+    "Valorant: T1 vs Paper Rex (BO3) - VCT Champions Playoffs"
+   ]
+  },
+  {
+   "league": "ow",
+   "matches": 6,
+   "espn": 0,
+   "s365": 0,
+   "livescore": 0,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 0,
+   "where": {},
+   "missed": [
+    "Overwatch: Falcons vs O2 Blast (BO5) - OCS Korea Stage 3 Regular Season",
+    "Overwatch: Poker Face vs T1 (BO5) - OCS Korea Stage 3 Regular Season",
+    "Overwatch: SEIJI ESPORTS vs ZETA DIVISION (BO5) - OCS Korea Stage 3 Regular Season"
+   ]
+  },
+  {
+   "league": "snhl",
+   "matches": 5,
+   "espn": 0,
+   "s365": 0,
+   "livescore": 5,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 5,
+   "where": {
+    "livescore": "livescore:National League"
+   },
+   "missed": []
+  },
+  {
+   "league": "kbo",
+   "matches": 5,
+   "espn": 0,
+   "s365": 0,
+   "livescore": 0,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 0,
+   "where": {},
+   "missed": [
+    "KBO: LG Twins vs. Lotte Giants",
+    "KBO: SSG Landers vs. Kia Tigers",
+    "KBO: LG Twins vs. Lotte Giants"
+   ]
+  },
+  {
+   "league": "bkarg",
+   "matches": 5,
+   "espn": 0,
+   "s365": 5,
+   "livescore": 5,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 5,
+   "where": {
+    "s365": "s365:Liga Nacional de Básquetbol",
+    "livescore": "livescore:LNB"
+   },
+   "missed": []
+  },
+  {
+   "league": "aflw",
+   "matches": 5,
+   "espn": 0,
+   "s365": 0,
+   "livescore": 0,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 0,
+   "where": {},
+   "missed": [
+    "Western Bulldogs vs. Essendon Bombers",
+    "St Kilda Saints vs. Collingwood Magpies",
+    "Port Adelaide Power vs. West Coast Eagles"
+   ]
+  },
+  {
+   "league": "rutopft",
+   "matches": 5,
+   "espn": 0,
+   "s365": 0,
+   "livescore": 0,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 0,
+   "where": {},
+   "missed": [
+    "Top 14: Lyon Rugby vs La Rochelle",
+    "Top 14: Toulon vs Racing 92",
+    "Top 14: Pau vs Castres Olympique"
+   ]
+  },
+  {
+   "league": "hbehfcl",
+   "matches": 5,
+   "espn": 0,
+   "s365": 4,
+   "livescore": 0,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 4,
+   "where": {
+    "s365": "s365:Champions League"
+   },
+   "missed": [
+    "RK Zagreb vs. Aalborg Haandbold"
+   ]
+  },
+  {
+   "league": "dota2",
+   "matches": 5,
+   "espn": 0,
+   "s365": 0,
+   "livescore": 0,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 0,
+   "where": {},
+   "missed": [
+    "Dota 2: Aurora vs 1win (BO3) - BLAST Slam Playoffs",
+    "Dota 2: Team Synapse vs Blasterbl (BO3) - PARI Universe Closed Qualifier Playoffs",
+    "Dota 2: PARIVISION vs Team Yandex (BO3) - BLAST Slam Playoffs"
+   ]
+  },
+  {
+   "league": "nfl",
+   "matches": 4,
+   "espn": 0,
+   "s365": 4,
+   "livescore": 0,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 4,
+   "where": {
+    "s365": "s365:NFL"
+   },
+   "missed": []
+  },
+  {
+   "league": "bol1",
+   "matches": 4,
+   "espn": 0,
+   "s365": 3,
+   "livescore": 3,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 3,
+   "where": {
+    "s365": "s365:División Profesional",
+    "livescore": "livescore:Primera Division"
+   },
+   "missed": [
+    "CD San Antonio Bulo Bulo vs. CD Real Tomayapo"
+   ]
+  },
+  {
+   "league": "chl2",
+   "matches": 4,
+   "espn": 0,
+   "s365": 3,
+   "livescore": 3,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 3,
+   "where": {
+    "s365": "s365:First Division B",
+    "livescore": "livescore:Primera B"
+   },
+   "missed": [
+    "Deportes Recoleta vs. Deportes Magallanes"
+   ]
+  },
+  {
+   "league": "bkkbl",
+   "matches": 4,
+   "espn": 0,
+   "s365": 3,
+   "livescore": 4,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 4,
+   "where": {
+    "s365": "s365:Korean Basketball League - Regular Season",
+    "livescore": "livescore:KBL: Play-off"
+   },
+   "missed": []
+  },
+  {
+   "league": "bkfr1",
+   "matches": 4,
+   "espn": 0,
+   "s365": 4,
+   "livescore": 4,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 4,
+   "where": {
+    "s365": "s365:LNB Élite",
+    "livescore": "livescore:LNB Pro A"
+   },
+   "missed": []
+  },
+  {
+   "league": "ltu1",
+   "matches": 4,
+   "espn": 0,
+   "s365": 0,
+   "livescore": 3,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 3,
+   "where": {
+    "livescore": "livescore:A Lyga"
+   },
+   "missed": [
+    "Vilnius FK Zalgiris vs. FK Suduva Marijampole"
+   ]
+  },
+  {
+   "league": "hbhandbold",
+   "matches": 4,
+   "espn": 0,
+   "s365": 0,
+   "livescore": 0,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 0,
+   "where": {},
+   "missed": [
+    "Tth Holstebro vs. Ribe-Esbjerg HH",
+    "TMS Ringsted vs. Nordsjaelland Haandbold",
+    "Mors-Thy Haandbold vs. Soenderjyske HK"
+   ]
+  },
+  {
+   "league": "bkaba",
+   "matches": 3,
+   "espn": 0,
+   "s365": 2,
+   "livescore": 3,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 3,
+   "where": {
+    "livescore": "livescore:ABA League: Group A",
+    "s365": "s365:ABA League"
+   },
+   "missed": []
+  },
+  {
+   "league": "bkbbl",
+   "matches": 3,
+   "espn": 0,
+   "s365": 2,
+   "livescore": 3,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 3,
+   "where": {
+    "s365": "s365:Bundesliga",
+    "livescore": "livescore:BBL"
+   },
+   "missed": []
+  },
+  {
+   "league": "bkbsl",
+   "matches": 3,
+   "espn": 0,
+   "s365": 3,
+   "livescore": 2,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 3,
+   "where": {
+    "s365": "s365:Super Ligi",
+    "livescore": "livescore:BSL"
+   },
+   "missed": []
+  },
+  {
+   "league": "hblnh",
+   "matches": 3,
+   "espn": 0,
+   "s365": 2,
+   "livescore": 0,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 2,
+   "where": {
+    "s365": "s365:Lidl Starligue"
+   },
+   "missed": [
+    "PAUC Handball vs. Saran Loiret Handball"
+   ]
+  },
+  {
+   "league": "bknbl",
+   "matches": 3,
+   "espn": 0,
+   "s365": 3,
+   "livescore": 3,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 3,
+   "where": {
+    "s365": "s365:NBL",
+    "livescore": "livescore:NBL"
+   },
+   "missed": []
+  },
+  {
+   "league": "ruprem",
+   "matches": 3,
+   "espn": 0,
+   "s365": 0,
+   "livescore": 0,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 0,
+   "where": {},
+   "missed": [
+    "Premiership Rugby: Leicester Tigers vs Gloucester",
+    "Premiership Rugby: Northampton Saints vs Bath",
+    "Premiership Rugby: Saracens vs Bristol Bears"
+   ]
+  },
+  {
+   "league": "hbasobal",
+   "matches": 3,
+   "espn": 0,
+   "s365": 2,
+   "livescore": 0,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 2,
+   "where": {
+    "s365": "s365:Liga Asobal"
+   },
+   "missed": [
+    "Fertiberia Puerto Sagunto vs. Eon Horneo Alicante"
+   ]
+  },
+  {
+   "league": "hbbundesliga",
+   "matches": 3,
+   "espn": 0,
+   "s365": 3,
+   "livescore": 0,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 3,
+   "where": {
+    "s365": "s365:Bundesliga"
+   },
+   "missed": []
+  },
+  {
+   "league": "bkvtb",
+   "matches": 2,
+   "espn": 0,
+   "s365": 2,
+   "livescore": 0,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 2,
+   "where": {
+    "s365": "s365:VTB United League"
+   },
+   "missed": []
+  },
+  {
+   "league": "wnba",
+   "matches": 2,
+   "espn": 0,
+   "s365": 1,
+   "livescore": 1,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 1,
+   "where": {
+    "s365": "s365:WNBA - Semi Finals",
+    "livescore": "livescore:WNBA: Play-off"
+   },
+   "missed": [
+    "Atlanta Dream vs. New York Liberty"
+   ]
+  },
+  {
+   "league": "npb",
+   "matches": 2,
+   "espn": 0,
+   "s365": 0,
+   "livescore": 0,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 0,
+   "where": {},
+   "missed": [
+    "Saitama Seibu Lions vs. Nippon Ham Fighters",
+    "Yomiuri Giants vs. Yokohama BayStars"
+   ]
+  },
+  {
+   "league": "cfl",
+   "matches": 2,
+   "espn": 0,
+   "s365": 2,
+   "livescore": 0,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 2,
+   "where": {
+    "s365": "s365:CFL"
+   },
+   "missed": []
+  },
+  {
+   "league": "powerslap",
+   "matches": 2,
+   "espn": 0,
+   "s365": 0,
+   "livescore": 0,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 0,
+   "where": {},
+   "missed": [
+    "Power Slap 24: Pono Pau vs. Nathan Klingensmith (Fight 1)",
+    "Power Slap 24: Jaxon Slade vs. Eduard Soghomonyan (Fight 2)"
+   ]
+  },
+  {
+   "league": "cpbl",
+   "matches": 2,
+   "espn": 0,
+   "s365": 0,
+   "livescore": 0,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 0,
+   "where": {},
+   "missed": [
+    "Chinatrust Brothers vs. Uni-President Lions",
+    "Uni-President Lions vs. Chinatrust Brothers"
+   ]
+  },
+  {
+   "league": "bkligend",
+   "matches": 1,
+   "espn": 0,
+   "s365": 1,
+   "livescore": 1,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 1,
+   "where": {
+    "s365": "s365:ACB",
+    "livescore": "livescore:Liga ACB"
+   },
+   "missed": []
+  },
+  {
+   "league": "cycling",
+   "matches": 1,
+   "espn": 0,
+   "s365": 0,
+   "livescore": 0,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 0,
+   "where": {},
+   "missed": [
+    "Il Lombardia 2026: Winner"
+   ]
+  },
+  {
+   "league": "bklkl",
+   "matches": 1,
+   "espn": 0,
+   "s365": 1,
+   "livescore": 1,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 1,
+   "where": {
+    "s365": "s365:LKL League - Regular Season",
+    "livescore": "livescore:LKL"
+   },
+   "missed": []
+  },
+  {
+   "league": "bkplk",
+   "matches": 1,
+   "espn": 0,
+   "s365": 1,
+   "livescore": 1,
+   "bo3": 0,
+   "lolesp": 0,
+   "any": 1,
+   "where": {
+    "s365": "s365:Basket Liga",
+    "livescore": "livescore:Energa Basket Liga"
+   },
+   "missed": []
+  }
+ ]
+}

@@ -13,6 +13,8 @@ match below $1, hold until it pays $1. Code lives in the repo's `code/` folder.
 > Buying during play does not pay (+$0.35 on 370 trades). One question until 21 Oct: which method gets filled
 > with zero losses? See [[34-Fill-Scoreboard]]. First real money: 1 Nov 2026, $20, only with the owner's yes.
 
+- [[35-Score-Source-Atlas]]: every Polymarket sports/esports league, its resolution source, and which free sources can read scores (2026-10-08).
+
 ## Start here (living notes)
 
 - [[24-Task-List]] — **master to-do list**

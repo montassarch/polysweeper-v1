@@ -1,0 +1,7249 @@
+[
+ {
+  "url": "https://abff.by/",
+  "status": "error",
+  "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.",
+  "secs": 0.5,
+  "leagues": [
+   "blr1"
+  ],
+  "domain": "abff.by"
+ },
+ {
+  "url": "https://alyga.lt/",
+  "final": "https://toplyga.lt/",
+  "status": 200,
+  "secs": 3.4,
+  "bytes": 154103,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [
+   "https://fonts.googleapis.com/css"
+  ],
+  "leagues": [
+   "ltu1"
+  ],
+  "domain": "alyga.lt"
+ },
+ {
+  "url": "https://aseanutdfc.com/",
+  "final": "https://aseanutdfc.com/",
+  "status": 200,
+  "secs": 2.0,
+  "bytes": 389329,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 1,
+   "initial_state": 0,
+   "score_word": 64
+  },
+  "api_urls": [],
+  "leagues": [
+   "aseanw",
+   "aseanc"
+  ],
+  "domain": "aseanutdfc.com"
+ },
+ {
+  "url": "https://asobal.es/",
+  "final": "https://asobal.es/",
+  "status": 200,
+  "secs": 2.0,
+  "bytes": 69546,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "hbasobal"
+  ],
+  "domain": "asobal.es"
+ },
+ {
+  "url": "https://basket.co.il/",
+  "final": "https://basket.co.il/",
+  "status": 200,
+  "secs": 1.2,
+  "bytes": 155352,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [
+   "https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js",
+   "https://fonts.googleapis.com/css"
+  ],
+  "leagues": [
+   "bkisrsl"
+  ],
+  "domain": "basket.co.il"
+ },
+ {
+  "url": "https://basket.fi/sarjat/sarjat/i-divisioonat/",
+  "final": "https://basket.fi/sarjat/sarjat/i-divisioonat/",
+  "status": 200,
+  "secs": 5.3,
+  "bytes": 482608,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 1,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [
+   "https://api.w.org/"
+  ],
+  "leagues": [
+   "bkfi2"
+  ],
+  "domain": "basket.fi"
+ },
+ {
+  "url": "https://basketball.bg/",
+  "final": "https://basketball.bg/",
+  "status": 200,
+  "secs": 1.7,
+  "bytes": 68837,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [
+   "https://fonts.googleapis.com",
+   "https://fonts.googleapis.com/css2"
+  ],
+  "leagues": [
+   "bkbul"
+  ],
+  "domain": "basketball.bg"
+ },
+ {
+  "url": "https://basketball.mk/",
+  "final": "https://basketball.mk/",
+  "status": 200,
+  "secs": 1.2,
+  "bytes": 103831,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 5
+  },
+  "api_urls": [
+   "https://api.w.org/"
+  ],
+  "leagues": [
+   "bkmkd"
+  ],
+  "domain": "basketball.mk"
+ },
+ {
+  "url": "https://bfunion.bg/",
+  "final": "https://bfunion.bg/",
+  "status": 200,
+  "secs": 1.0,
+  "bytes": 148550,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [
+   "https://fonts.googleapis.com",
+   "https://fonts.googleapis.com/css2"
+  ],
+  "leagues": [
+   "bul"
+  ],
+  "domain": "bfunion.bg"
+ },
+ {
+  "url": "https://bsnpr.com/",
+  "final": "https://bsnpr.com/",
+  "status": 200,
+  "secs": 1.1,
+  "bytes": 120014,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "bkbsn"
+  ],
+  "domain": "bsnpr.com"
+ },
+ {
+  "url": "https://canadasoccer.com/championship/canchamp/",
+  "final": "https://canadasoccer.com/championship/canchamp/2026/",
+  "status": 200,
+  "secs": 3.6,
+  "bytes": 216561,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 64
+  },
+  "api_urls": [
+   "https://api.w.org/",
+   "https://cs-data-production.azurewebsites.net/api/teamplayer/GetChampionshipScheduleByYear/",
+   "https://live-canada-soccer-new.pantheonsite.io/wp-content/plugins/sitepress-multilingual-cms/templates/language-switchers/lega"
+  ],
+  "leagues": [
+   "canch"
+  ],
+  "domain": "canadasoccer.com"
+ },
+ {
+  "url": "https://conmebollibertadores.com/",
+  "final": "https://gol.conmebol.com/libertadores/en",
+  "status": 200,
+  "secs": 6.2,
+  "bytes": 452192,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 1030
+  },
+  "api_urls": [
+   "https://api.clubcast.co.uk/analytics/cda.js",
+   "https://fonts.googleapis.com/css2"
+  ],
+  "leagues": [
+   "lib"
+  ],
+  "domain": "conmebollibertadores.com"
+ },
+ {
+  "url": "https://conmebolsudamericana.com/",
+  "final": "https://gol.conmebol.com/sudamericana/en",
+  "status": 200,
+  "secs": 5.4,
+  "bytes": 435629,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 1029
+  },
+  "api_urls": [
+   "https://api.clubcast.co.uk/analytics/cda.js",
+   "https://fonts.googleapis.com/css2"
+  ],
+  "leagues": [
+   "sud"
+  ],
+  "domain": "conmebolsudamericana.com"
+ },
+ {
+  "url": "https://dimayor.com.co/",
+  "final": "https://dimayor.com.co/",
+  "status": 200,
+  "secs": 2.8,
+  "bytes": 420569,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 1,
+   "initial_state": 0,
+   "score_word": 52
+  },
+  "api_urls": [
+   "https://api.w.org/",
+   "https://fonts.googleapis.com/css2"
+  ],
+  "leagues": [
+   "col2"
+  ],
+  "domain": "dimayor.com.co"
+ },
+ {
+  "url": "https://ehfcl.eurohandball.com/",
+  "final": "https://ehfcl.eurohandball.com/",
+  "status": 200,
+  "secs": 1.9,
+  "bytes": 172134,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 17
+  },
+  "api_urls": [
+   "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+  ],
+  "leagues": [
+   "hbehfcl"
+  ],
+  "domain": "ehfcl.eurohandball.com"
+ },
+ {
+  "url": "https://ekstraklasa.org/",
+  "final": "https://ekstraklasa.org/",
+  "status": 200,
+  "secs": 1.3,
+  "bytes": 440206,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 23
+  },
+  "api_urls": [
+   "https://livepark.pl/",
+   "https://livepark.pl/\\",
+   "https://www.statsperform.com/",
+   "https://www.statsperform.com/\\"
+  ],
+  "leagues": [
+   "pol"
+  ],
+  "domain": "ekstraklasa.org"
+ },
+ {
+  "url": "https://en.khl.ru/calendar/",
+  "final": "https://en.khl.ru/calendar/",
+  "status": 307,
+  "secs": 6.5,
+  "bytes": 5,
+  "ctype": "",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "khl"
+  ],
+  "domain": "en.khl.ru"
+ },
+ {
+  "url": "https://en.volleyballworld.com/",
+  "final": "https://en.volleyballworld.com/",
+  "status": 200,
+  "secs": 6.8,
+  "bytes": 1208064,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 2,
+   "initial_state": 0,
+   "score_word": 13
+  },
+  "api_urls": [
+   "https://auth-api.volleyballworld.com/api/gameday/anonymous-token\\",
+   "https://auth-api.volleyballworld.com\\",
+   "https://dapi.volleyballworld.com/v2/content/en-gb/competitions/beach-u18-world-championships-2026\\",
+   "https://dapi.volleyballworld.com/v2/content/en-gb/competitions/beach-u21-world-championships-2025\\",
+   "https://dapi.volleyballworld.com/v2/content/en-gb/competitions/beach-volleyball-world-championships-2025\\",
+   "https://dapi.volleyballworld.com/v2/content/en-gb/competitions/club-world-championship-men-2025\\",
+   "https://dapi.volleyballworld.com/v2/content/en-gb/competitions/club-world-championship-women-2025\\",
+   "https://dapi.volleyballworld.com/v2/content/en-gb/competitions/coppa-italia-superlega-2026\\"
+  ],
+  "leagues": [
+   "vbworlds",
+   "vbvnl"
+  ],
+  "domain": "en.volleyballworld.com"
+ },
+ {
+  "url": "https://eredivisie.eu/competition/",
+  "final": "https://eredivisie.com/competition/",
+  "status": 200,
+  "secs": 2.0,
+  "bytes": 97002,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 1,
+   "initial_state": 0,
+   "score_word": 2
+  },
+  "api_urls": [],
+  "leagues": [
+   "ere"
+  ],
+  "domain": "eredivisie.eu"
+ },
+ {
+  "url": "https://fbu.ua/",
+  "final": "https://fbu.ua/",
+  "status": 200,
+  "secs": 2.0,
+  "bytes": 126134,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 83
+  },
+  "api_urls": [
+   "https://fibalivestats.dcd.shared.geniussports.com/u/UBF/2936875/",
+   "https://fonts.googleapis.com/css",
+   "https://images.statsengine.playbyplay.api.geniussports.com/86dc2e6d6d33a4eede1788480af7ea3eT1.png",
+   "https://images.statsengine.playbyplay.api.geniussports.com/f7d655e609dd01d8fe05d09e7b222299T1.png"
+  ],
+  "leagues": [
+   "bkukr"
+  ],
+  "domain": "fbu.ua"
+ },
+ {
+  "url": "https://fpvoleibol.pt/",
+  "final": "https://fpvoleibol.pt/",
+  "status": 200,
+  "secs": 0.8,
+  "bytes": 286,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "vbdivisao1"
+  ],
+  "domain": "fpvoleibol.pt"
+ },
+ {
+  "url": "https://fvf.org.ve/",
+  "status": "error",
+  "error": "<urlopen error [Errno 11001] getaddrinfo failed>",
+  "secs": 1.1,
+  "leagues": [
+   "ven1"
+  ],
+  "domain": "fvf.org.ve"
+ },
+ {
+  "url": "https://gff.ge/",
+  "final": "https://gff.ge/ge",
+  "status": 200,
+  "secs": 9.8,
+  "bytes": 58865,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "geo1"
+  ],
+  "domain": "gff.ge"
+ },
+ {
+  "url": "https://handbollsligan.se/",
+  "final": "https://handbollsligan.se/",
+  "status": 200,
+  "secs": 4.6,
+  "bytes": 39369,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [
+   "https://api.w.org/",
+   "https://fonts.googleapis.com/css2",
+   "https://livesport.expressen.se/sv",
+   "https://livesport.expressen.se/sv/handboll"
+  ],
+  "leagues": [
+   "hbhandboll"
+  ],
+  "domain": "handbollsligan.se"
+ },
+ {
+  "url": "https://hks.hr/",
+  "final": "https://www.hks.hr/hr/",
+  "status": 200,
+  "secs": 5.8,
+  "bytes": 184536,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 30
+  },
+  "api_urls": [],
+  "leagues": [
+   "bkcro"
+  ],
+  "domain": "hks.hr"
+ },
+ {
+  "url": "https://hltv.org",
+  "final": "https://hltv.org",
+  "status": 403,
+  "secs": 1.4,
+  "bytes": 5616,
+  "ctype": "text/html",
+  "blocked": true,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "cs2"
+  ],
+  "domain": "hltv.org"
+ },
+ {
+  "url": "https://hnl.hr/",
+  "final": "https://hnl.hr/",
+  "status": 200,
+  "secs": 1.3,
+  "bytes": 29637,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [
+   "https://fonts.googleapis.com/css"
+  ],
+  "leagues": [
+   "hr1"
+  ],
+  "domain": "hnl.hr"
+ },
+ {
+  "url": "https://ileague.id/",
+  "final": "https://ileague.id/",
+  "status": 200,
+  "secs": 1.8,
+  "bytes": 200318,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 24
+  },
+  "api_urls": [
+   "https://fonts.googleapis.com/css"
+  ],
+  "leagues": [
+   "idn1",
+   "idn2"
+  ],
+  "domain": "ileague.id"
+ },
+ {
+  "url": "https://jalgpall.ee/",
+  "final": "https://jalgpall.ee/",
+  "status": 200,
+  "secs": 1.2,
+  "bytes": 87340,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [
+   "https://fonts.googleapis.com/css"
+  ],
+  "leagues": [
+   "est1"
+  ],
+  "domain": "jalgpall.ee"
+ },
+ {
+  "url": "https://kff.kz/",
+  "final": "https://kff.kz/kk",
+  "status": 200,
+  "secs": 3.8,
+  "bytes": 71887,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "kaz1"
+  ],
+  "domain": "kff.kz"
+ },
+ {
+  "url": "https://kls.rs/",
+  "final": "https://kls.rs/",
+  "status": 200,
+  "secs": 3.3,
+  "bytes": 127872,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 1,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [
+   "https://api.w.org/",
+   "https://kss-live.com/s2627/ukkls/kolo.php",
+   "https://kss-live.com/s2627/ukkls/tabelica.php"
+  ],
+  "leagues": [
+   "bkkls"
+  ],
+  "domain": "kls.rs"
+ },
+ {
+  "url": "https://laligaargentina.com.ar/",
+  "status": "error",
+  "error": "<urlopen error [Errno 11001] getaddrinfo failed>",
+  "secs": 0.3,
+  "leagues": [
+   "bkligarg"
+  ],
+  "domain": "laligaargentina.com.ar"
+ },
+ {
+  "url": "https://lichess.org/",
+  "final": "https://lichess.org/",
+  "status": 200,
+  "secs": 1.0,
+  "bytes": 37510,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "chess"
+  ],
+  "domain": "lichess.org"
+ },
+ {
+  "url": "https://ligabbvaexpansion.mx/",
+  "final": "https://ligabbvaexpansion.mx/",
+  "status": 200,
+  "secs": 18.3,
+  "bytes": 618990,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 9
+  },
+  "api_urls": [
+   "http://mxfeed.matchanalysis.com/player-ranking-data.jsp",
+   "https://cldrsrcs.apilmx.com/v1/css/assets/bg/arriba.png",
+   "https://cldrsrcs.apilmx.com/v1/css/bootstrap.css",
+   "https://cldrsrcs.apilmx.com/v1/css/jquery.smartbanner.css",
+   "https://cldrsrcs.apilmx.com/v1/css/video-js.css",
+   "https://cldrsrcs.apilmx.com/v1/docs/archdgtl/AfldDrct/logos/",
+   "https://cldrsrcs.apilmx.com/v1/docs/archdgtl/AfldDrct/logos35x35/10732/10732.png",
+   "https://cldrsrcs.apilmx.com/v1/docs/archdgtl/AfldDrct/logos35x35/11592/11592.png"
+  ],
+  "leagues": [
+   "mex2"
+  ],
+  "domain": "ligabbvaexpansion.mx"
+ },
+ {
+  "url": "https://ligue1.com/en",
+  "final": "https://ligue1.com/en",
+  "status": 200,
+  "secs": 7.6,
+  "bytes": 71120,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 1,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "fl1"
+  ],
+  "domain": "ligue1.com"
+ },
+ {
+  "url": "https://liiga.fi/en",
+  "final": "https://liiga.fi/en",
+  "status": 200,
+  "secs": 0.5,
+  "bytes": 12594,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [
+   "https://fonts.googleapis.com",
+   "https://fonts.googleapis.com/css",
+   "https://fonts.googleapis.com/css2"
+  ],
+  "leagues": [
+   "liiga"
+  ],
+  "domain": "liiga.fi"
+ },
+ {
+  "url": "https://liquipedia.net/callofduty/Main_Page",
+  "final": "https://liquipedia.net/callofduty/Main_Page",
+  "status": 403,
+  "secs": 0.3,
+  "bytes": 2059,
+  "ctype": "text/html",
+  "blocked": true,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "codmw"
+  ],
+  "domain": "liquipedia.net"
+ },
+ {
+  "url": "https://liquipedia.net/easportsfc/Main_Page",
+  "final": "https://liquipedia.net/easportsfc/Main_Page",
+  "status": 403,
+  "secs": 0.7,
+  "bytes": 2059,
+  "ctype": "text/html",
+  "blocked": true,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "fifa"
+  ],
+  "domain": "liquipedia.net"
+ },
+ {
+  "url": "https://liquipedia.net/honorofkings/Main_Page",
+  "final": "https://liquipedia.net/honorofkings/Main_Page",
+  "status": 403,
+  "secs": 0.4,
+  "bytes": 2059,
+  "ctype": "text/html",
+  "blocked": true,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "hok"
+  ],
+  "domain": "liquipedia.net"
+ },
+ {
+  "url": "https://liquipedia.net/leagueoflegends/Main_Page",
+  "final": "https://liquipedia.net/leagueoflegends/Main_Page",
+  "status": 403,
+  "secs": 0.3,
+  "bytes": 2059,
+  "ctype": "text/html",
+  "blocked": true,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "lol"
+  ],
+  "domain": "liquipedia.net"
+ },
+ {
+  "url": "https://liquipedia.net/mobilelegends/Main_Page",
+  "final": "https://liquipedia.net/mobilelegends/Main_Page",
+  "status": 403,
+  "secs": 0.3,
+  "bytes": 2059,
+  "ctype": "text/html",
+  "blocked": true,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "mlbb"
+  ],
+  "domain": "liquipedia.net"
+ },
+ {
+  "url": "https://liquipedia.net/overwatch/Main_Page",
+  "final": "https://liquipedia.net/overwatch/Main_Page",
+  "status": 403,
+  "secs": 0.3,
+  "bytes": 2059,
+  "ctype": "text/html",
+  "blocked": true,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "ow"
+  ],
+  "domain": "liquipedia.net"
+ },
+ {
+  "url": "https://liquipedia.net/pubg/Main_Page",
+  "final": "https://liquipedia.net/pubg/Main_Page",
+  "status": 403,
+  "secs": 0.2,
+  "bytes": 2059,
+  "ctype": "text/html",
+  "blocked": true,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "pubg"
+  ],
+  "domain": "liquipedia.net"
+ },
+ {
+  "url": "https://liquipedia.net/rainbowsix/Main_Page",
+  "final": "https://liquipedia.net/rainbowsix/Main_Page",
+  "status": 403,
+  "secs": 0.2,
+  "bytes": 2059,
+  "ctype": "text/html",
+  "blocked": true,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "r6siege"
+  ],
+  "domain": "liquipedia.net"
+ },
+ {
+  "url": "https://liquipedia.net/rocketleague/Main_Page",
+  "final": "https://liquipedia.net/rocketleague/Main_Page",
+  "status": 403,
+  "secs": 0.4,
+  "bytes": 2059,
+  "ctype": "text/html",
+  "blocked": true,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "rl"
+  ],
+  "domain": "liquipedia.net"
+ },
+ {
+  "url": "https://liquipedia.net/starcraft/Main_Page",
+  "final": "https://liquipedia.net/starcraft/Main_Page",
+  "status": 403,
+  "secs": 1.0,
+  "bytes": 2059,
+  "ctype": "text/html",
+  "blocked": true,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "sc1",
+   "sc"
+  ],
+  "domain": "liquipedia.net"
+ },
+ {
+  "url": "https://liquipedia.net/starcraft2/Main_Page",
+  "final": "https://liquipedia.net/starcraft2/Main_Page",
+  "status": 403,
+  "secs": 0.4,
+  "bytes": 2059,
+  "ctype": "text/html",
+  "blocked": true,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "sc2"
+  ],
+  "domain": "liquipedia.net"
+ },
+ {
+  "url": "https://liquipedia.net/valorant/Main_Page",
+  "final": "https://liquipedia.net/valorant/Main_Page",
+  "status": 403,
+  "secs": 0.9,
+  "bytes": 2059,
+  "ctype": "text/html",
+  "blocked": true,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "val"
+  ],
+  "domain": "liquipedia.net"
+ },
+ {
+  "url": "https://liquipedia.net/wildrift/Main_Page",
+  "final": "https://liquipedia.net/wildrift/Main_Page",
+  "status": 403,
+  "secs": 0.8,
+  "bytes": 2059,
+  "ctype": "text/html",
+  "blocked": true,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "lol-wild-rift"
+  ],
+  "domain": "liquipedia.net"
+ },
+ {
+  "url": "https://lkl.lt/",
+  "final": "https://lkl.lt/",
+  "status": 200,
+  "secs": 1.1,
+  "bytes": 125311,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 6
+  },
+  "api_urls": [],
+  "leagues": [
+   "bklkl"
+  ],
+  "domain": "lkl.lt"
+ },
+ {
+  "url": "https://lnb.com.br/nbb/",
+  "final": "https://lnb.com.br/nbb/",
+  "status": 200,
+  "secs": 9.1,
+  "bytes": 1689784,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "bknbb"
+  ],
+  "domain": "lnb.com.br"
+ },
+ {
+  "url": "https://lnbp.mx/",
+  "final": "https://lnbp.mx/",
+  "status": 200,
+  "secs": 2.6,
+  "bytes": 15262,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 2
+  },
+  "api_urls": [],
+  "leagues": [
+   "bkmex"
+  ],
+  "domain": "lnbp.mx"
+ },
+ {
+  "url": "https://mlb.com",
+  "final": "https://www.mlb.com/",
+  "status": 200,
+  "secs": 17.7,
+  "bytes": 1447452,
+  "ctype": "text/html",
+  "blocked": true,
+  "hints": {
+   "next_data": 1,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 15
+  },
+  "api_urls": [
+   "http://search-api.mlb.com",
+   "http://statsapi.mlb.com",
+   "http://statsapi.mlb.com/api/v1/sports/1",
+   "http://statsapi.mlb.com/api/v1/teams",
+   "https://dapi.cms.mlbinfra.com/v2/content",
+   "https://data-graph.mlb.com/graphql",
+   "https://fanatics-api.mlb.com",
+   "https://search-api.mlb.com"
+  ],
+  "leagues": [
+   "wbc"
+  ],
+  "domain": "mlb.com"
+ },
+ {
+  "url": "https://modussuperseries.com/",
+  "final": "https://modussuperseries.com/",
+  "status": 200,
+  "secs": 2.9,
+  "bytes": 37221,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 69
+  },
+  "api_urls": [
+   "https://fonts.googleapis.com/css2"
+  ],
+  "leagues": [
+   "modus"
+  ],
+  "domain": "modussuperseries.com"
+ },
+ {
+  "url": "https://nikeliga.sk/",
+  "final": "https://www.nikeliga.sk/",
+  "status": 200,
+  "secs": 1.7,
+  "bytes": 41089,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [
+   "https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js",
+   "https://data.esportsmedia.cz/data/import.js"
+  ],
+  "leagues": [
+   "svk1"
+  ],
+  "domain": "nikeliga.sk"
+ },
+ {
+  "url": "https://npb.jp/",
+  "final": "https://npb.jp/",
+  "status": 200,
+  "secs": 7.6,
+  "bytes": 95174,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 10
+  },
+  "api_urls": [],
+  "leagues": [
+   "npb"
+  ],
+  "domain": "npb.jp"
+ },
+ {
+  "url": "https://nznbl.basketball/",
+  "final": "https://nznbl.basketball/",
+  "status": 200,
+  "secs": 7.3,
+  "bytes": 87155,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 1,
+   "initial_state": 0,
+   "score_word": 2
+  },
+  "api_urls": [
+   "https://api.w.org/",
+   "https://fonts.googleapis.com/css",
+   "https://fonts.googleapis.com/css2",
+   "https://stats.wp.com/e-202641.js"
+  ],
+  "leagues": [
+   "bknznbl"
+  ],
+  "domain": "nznbl.basketball"
+ },
+ {
+  "url": "https://olympics.com/",
+  "status": "error",
+  "error": "The read operation timed out",
+  "secs": 20.3,
+  "leagues": [
+   "ttolympics"
+  ],
+  "domain": "olympics.com"
+ },
+ {
+  "url": "https://orlen-superliga.pl/",
+  "final": "https://orlen-superliga.pl/",
+  "status": 200,
+  "secs": 3.1,
+  "bytes": 99715,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 6
+  },
+  "api_urls": [
+   "https://api.w.org/"
+  ],
+  "leagues": [
+   "hbsuperliga"
+  ],
+  "domain": "orlen-superliga.pl"
+ },
+ {
+  "url": "https://pfl.uz/",
+  "final": "https://pfl.uz/",
+  "status": 200,
+  "secs": 1.9,
+  "bytes": 595756,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 2,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 4
+  },
+  "api_urls": [
+   "https://api.pfl.uz/v1/web",
+   "https://fonts.googleapis.com",
+   "https://fonts.googleapis.com/css2"
+  ],
+  "leagues": [
+   "uzb1"
+  ],
+  "domain": "pfl.uz"
+ },
+ {
+  "url": "https://plk.pl/",
+  "final": "https://plk.pl/",
+  "status": 200,
+  "secs": 1.1,
+  "bytes": 747838,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "bkplk"
+  ],
+  "domain": "plk.pl"
+ },
+ {
+  "url": "https://polymarket-upload.s3.us-east-2.amazonaws.com/soccer ball-bba4025f77.png",
+  "status": "error",
+  "error": "URL can't contain control characters. '/soccer ball-bba4025f77.png' (found at least ' ')",
+  "secs": 0.0,
+  "leagues": [
+   "ccc"
+  ],
+  "domain": "polymarket-upload.s3.us-east-2.amazonaws.com"
+ },
+ {
+  "url": "https://ppatour.com/",
+  "final": "https://www.ppatour.com/",
+  "status": 200,
+  "secs": 1.7,
+  "bytes": 575160,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 2,
+   "initial_state": 0,
+   "score_word": 2
+  },
+  "api_urls": [],
+  "leagues": [
+   "ppa-doubles",
+   "mlp"
+  ],
+  "domain": "ppatour.com"
+ },
+ {
+  "url": "https://premierlacrosseleague.com",
+  "final": "https://premierlacrosseleague.com",
+  "status": 200,
+  "secs": 1.7,
+  "bytes": 516840,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 2,
+   "initial_state": 0,
+   "score_word": 112
+  },
+  "api_urls": [
+   "https://stats.premierlacrosseleague.com",
+   "https://stats.premierlacrosseleague.com/",
+   "https://stats.premierlacrosseleague.com/career-leaders",
+   "https://stats.premierlacrosseleague.com/games/2026/2026-all-star-game",
+   "https://stats.premierlacrosseleague.com/games/2026/2026-championship-game",
+   "https://stats.premierlacrosseleague.com/games/2026/2026-ev-1",
+   "https://stats.premierlacrosseleague.com/games/2026/2026-ev-10",
+   "https://stats.premierlacrosseleague.com/games/2026/2026-ev-11"
+  ],
+  "leagues": [
+   "pll"
+  ],
+  "domain": "premierlacrosseleague.com"
+ },
+ {
+  "url": "https://premierliga.ru",
+  "final": "https://premierliga.ru",
+  "status": 307,
+  "secs": 3.4,
+  "bytes": 0,
+  "ctype": "",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "rus"
+  ],
+  "domain": "premierliga.ru"
+ },
+ {
+  "url": "https://russiabasket.ru/",
+  "final": "https://russiabasket.ru/",
+  "status": 200,
+  "secs": 5.5,
+  "bytes": 167997,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 2,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "bkrus"
+  ],
+  "domain": "russiabasket.ru"
+ },
+ {
+  "url": "https://setkacup.com",
+  "final": "https://tabletennis.setkacup.com/",
+  "status": 200,
+  "secs": 5.4,
+  "bytes": 2923,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "setkameua",
+   "setkamemd",
+   "setkamecz",
+   "setkawoua"
+  ],
+  "domain": "setkacup.com"
+ },
+ {
+  "url": "https://spfl.co.uk/",
+  "final": "https://spfl.co.uk/",
+  "status": 200,
+  "secs": 0.8,
+  "bytes": 204033,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 5
+  },
+  "api_urls": [
+   "https://fonts.googleapis.com/css"
+  ],
+  "leagues": [
+   "scop",
+   "sclc"
+  ],
+  "domain": "spfl.co.uk"
+ },
+ {
+  "url": "https://super.rugby/",
+  "final": "https://super.rugby/therugbychampionship/",
+  "status": 200,
+  "secs": 3.5,
+  "bytes": 46953,
+  "ctype": "text/html",
+  "blocked": true,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 7
+  },
+  "api_urls": [],
+  "leagues": [
+   "rusrp"
+  ],
+  "domain": "super.rugby"
+ },
+ {
+  "url": "https://superleaguebasketball.com/",
+  "status": "error",
+  "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1082)>",
+  "secs": 20.3,
+  "leagues": [
+   "bkgbr"
+  ],
+  "domain": "superleaguebasketball.com"
+ },
+ {
+  "url": "https://superliga.cbv.com.br/",
+  "final": "https://cbv.com.br/volei-de-quadra/superliga-a-feminina",
+  "status": 200,
+  "secs": 3.8,
+  "bytes": 854512,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [
+   "https://storage.googleapis.com/sge-documentos-publicos/CBV/relatorioEvento/ev79/inscricoes/283/identidade-visu",
+   "https://storage.googleapis.com/sge-documentos-publicos/CBV/relatorioEvento/ev79/inscricoes/285/identidade-visu",
+   "https://storage.googleapis.com/sge-documentos-publicos/CBV/relatorioEvento/ev79/inscricoes/287/identidade-visu",
+   "https://storage.googleapis.com/sge-documentos-publicos/CBV/relatorioEvento/ev79/inscricoes/288/identidade-visu",
+   "https://storage.googleapis.com/sge-documentos-publicos/CBV/relatorioEvento/ev79/inscricoes/290/identidade-visu",
+   "https://storage.googleapis.com/sge-documentos-publicos/CBV/relatorioEvento/ev79/inscricoes/291/identidade-visu",
+   "https://storage.googleapis.com/sge-documentos-publicos/CBV/relatorioEvento/ev79/inscricoes/292/identidade-visu",
+   "https://storage.googleapis.com/sge-documentos-publicos/CBV/relatorioEvento/ev79/inscricoes/293/identidade-visu"
+  ],
+  "leagues": [
+   "vbsuperliga"
+  ],
+  "domain": "superliga.cbv.com.br"
+ },
+ {
+  "url": "https://superliga.rs/",
+  "final": "https://www.superliga.rs/",
+  "status": 200,
+  "secs": 2.3,
+  "bytes": 82539,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 1,
+   "initial_state": 0,
+   "score_word": 7
+  },
+  "api_urls": [],
+  "leagues": [
+   "srb"
+  ],
+  "domain": "superliga.rs"
+ },
+ {
+  "url": "https://tff.org/",
+  "final": "https://www.tff.org/",
+  "status": 200,
+  "secs": 2.5,
+  "bytes": 177102,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [
+   "https://platform-api.sharethis.com/js/sharethis.js#property=683f4fb8bde97c0013e1dfb5&product=sharing-intelligence"
+  ],
+  "leagues": [
+   "tur",
+   "trsk"
+  ],
+  "domain": "tff.org"
+ },
+ {
+  "url": "https://thaileague.co.th/",
+  "final": "https://thaileague.co.th/",
+  "status": 200,
+  "secs": 2.5,
+  "bytes": 41042,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "tha1"
+  ],
+  "domain": "thaileague.co.th"
+ },
+ {
+  "url": "https://theahl.com/stats/schedule",
+  "final": "https://theahl.com/stats/schedule",
+  "status": 200,
+  "secs": 0.8,
+  "bytes": 121988,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 24
+  },
+  "api_urls": [
+   "https://ajax.googleapis.com/ajax/libs/angularjs/1.5.11/angular-route.min.js",
+   "https://ajax.googleapis.com/ajax/libs/angularjs/1.5.11/angular-touch.min.js",
+   "https://ajax.googleapis.com/ajax/libs/angularjs/1.5.11/angular.min.js",
+   "https://api.w.org/",
+   "https://fonts.googleapis.com/css"
+  ],
+  "leagues": [
+   "ahl"
+  ],
+  "domain": "theahl.com"
+ },
+ {
+  "url": "https://thewll.com/",
+  "final": "https://thewll.com/",
+  "status": 200,
+  "secs": 1.4,
+  "bytes": 275836,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 2,
+   "initial_state": 0,
+   "score_word": 24
+  },
+  "api_urls": [],
+  "leagues": [
+   "wll"
+  ],
+  "domain": "thewll.com"
+ },
+ {
+  "url": "https://tophaandbold.dk/",
+  "final": "https://tophaandbold.dk/",
+  "status": 200,
+  "secs": 1.5,
+  "bytes": 222907,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 3,
+   "initial_state": 0,
+   "score_word": 13
+  },
+  "api_urls": [],
+  "leagues": [
+   "hbhandbold"
+  ],
+  "domain": "tophaandbold.dk"
+ },
+ {
+  "url": "https://tt-cup.com",
+  "status": "error",
+  "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.",
+  "secs": 0.4,
+  "leagues": [
+   "ttcup",
+   "czechligapro",
+   "ttchallenger"
+  ],
+  "domain": "tt-cup.com"
+ },
+ {
+  "url": "https://ttensports.com/",
+  "final": "https://ttensports.com/",
+  "status": 200,
+  "secs": 1.4,
+  "bytes": 39846,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [
+   "https://api.w.org/",
+   "https://fonts.googleapis.com/css"
+  ],
+  "leagues": [
+   "cricadt10"
+  ],
+  "domain": "ttensports.com"
+ },
+ {
+  "url": "https://uaeproleague.ae/",
+  "final": "https://uaeproleague.ae/en",
+  "status": 200,
+  "secs": 2.7,
+  "bytes": 287189,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 26
+  },
+  "api_urls": [],
+  "leagues": [
+   "uae1"
+  ],
+  "domain": "uaeproleague.ae"
+ },
+ {
+  "url": "https://upl.ua",
+  "final": "https://upl.ua/ua",
+  "status": 200,
+  "secs": 1.9,
+  "bytes": 84831,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 1
+  },
+  "api_urls": [
+   "http://live.upl.ua"
+  ],
+  "leagues": [
+   "ukr1"
+  ],
+  "domain": "upl.ua"
+ },
+ {
+  "url": "https://www.a-league.com.au/",
+  "final": "https://aleagues.com.au/",
+  "status": 200,
+  "secs": 6.2,
+  "bytes": 532205,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 2,
+   "initial_state": 0,
+   "score_word": 13
+  },
+  "api_urls": [
+   "https://api.w.org/",
+   "https://stats.wp.com/e-202641.js"
+  ],
+  "leagues": [
+   "auc"
+  ],
+  "domain": "a-league.com.au"
+ },
+ {
+  "url": "https://www.aba-liga.com/",
+  "final": "https://www.aba-liga.com/",
+  "status": 200,
+  "secs": 1.5,
+  "bytes": 546548,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 380
+  },
+  "api_urls": [
+   "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js",
+   "https://fonts.googleapis.com/css2"
+  ],
+  "leagues": [
+   "bkaba"
+  ],
+  "domain": "aba-liga.com"
+ },
+ {
+  "url": "https://www.acb.com/",
+  "final": "https://acb.com/es/liga",
+  "status": 200,
+  "secs": 4.7,
+  "bytes": 602819,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 6,
+   "initial_state": 0,
+   "score_word": 2
+  },
+  "api_urls": [
+   "https://live.acb.com/es/partidos/casademont-zaragoza-vs-valencia-basket-105390/resumen",
+   "https://live.acb.com/es/partidos/casademont-zaragoza-vs-valencia-basket-105390/resumen\\",
+   "https://live.acb.com/es/partidos/kosner-baskonia-vs-fiatc-girona-105391/resumen",
+   "https://live.acb.com/es/partidos/kosner-baskonia-vs-fiatc-girona-105391/resumen\\",
+   "https://live.acb.com/es/partidos/ucam-murcia-vs-barca-105392/resumen",
+   "https://live.acb.com/es/partidos/ucam-murcia-vs-barca-105392/resumen\\",
+   "https://live.acb.com/partidos/barca-vs-valencia-basket-105401/previa",
+   "https://live.acb.com/partidos/kosner-baskonia-vs-asisa-joventut-105399/previa"
+  ],
+  "leagues": [
+   "bkligend"
+  ],
+  "domain": "acb.com"
+ },
+ {
+  "url": "https://www.afa.com.ar/",
+  "final": "https://www.afa.com.ar/es/",
+  "status": 200,
+  "secs": 2.1,
+  "bytes": 158346,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 1
+  },
+  "api_urls": [
+   "https://fonts.googleapis.com",
+   "https://fonts.googleapis.com/css2",
+   "https://www.feedconstruct.com/"
+  ],
+  "leagues": [
+   "argpn",
+   "arg"
+  ],
+  "domain": "afa.com.ar"
+ },
+ {
+  "url": "https://www.affa.az/",
+  "final": "https://www.affa.az/",
+  "status": 200,
+  "secs": 2.1,
+  "bytes": 112355,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 4
+  },
+  "api_urls": [
+   "https://apis.google.com/js/platform.js"
+  ],
+  "leagues": [
+   "azec"
+  ],
+  "domain": "affa.az"
+ },
+ {
+  "url": "https://www.afl.com.au/",
+  "final": "https://www.afl.com.au/",
+  "status": 200,
+  "secs": 3.6,
+  "bytes": 917908,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 2,
+   "initial_state": 0,
+   "score_word": 29
+  },
+  "api_urls": [
+   "https://afl-digital-xapi-prd.au-s1.cloudhub.io/api",
+   "https://aflapi.afc.com.au",
+   "https://aflapi.carltonfc.com.au",
+   "https://aflapi.collingwoodfc.com.au",
+   "https://aflapi.essendonfc.com.au",
+   "https://aflapi.fremantlefc.com.au",
+   "https://aflapi.geelongcats.com.au",
+   "https://aflapi.goldcoastfc.com.au"
+  ],
+  "leagues": [
+   "afl"
+  ],
+  "domain": "afl.com.au"
+ },
+ {
+  "url": "https://www.afl.com.au/aflw",
+  "final": "https://www.afl.com.au/aflw",
+  "status": 200,
+  "secs": 3.8,
+  "bytes": 758253,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 14
+  },
+  "api_urls": [
+   "https://afl-digital-xapi-prd.au-s1.cloudhub.io/api",
+   "https://aflapi.afc.com.au",
+   "https://aflapi.carltonfc.com.au",
+   "https://aflapi.collingwoodfc.com.au",
+   "https://aflapi.essendonfc.com.au",
+   "https://aflapi.fremantlefc.com.au",
+   "https://aflapi.geelongcats.com.au",
+   "https://aflapi.goldcoastfc.com.au"
+  ],
+  "leagues": [
+   "aflw"
+  ],
+  "domain": "afl.com.au"
+ },
+ {
+  "url": "https://www.aleague.com.au/",
+  "status": "error",
+  "error": "<urlopen error timed out>",
+  "secs": 40.9,
+  "leagues": [
+   "aus"
+  ],
+  "domain": "aleague.com.au"
+ },
+ {
+  "url": "https://www.allsvenskan.se/",
+  "final": "https://allsvenskan.se/",
+  "status": 200,
+  "secs": 1.7,
+  "bytes": 69155,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [
+   "https://api.w.org/"
+  ],
+  "leagues": [
+   "swe"
+  ],
+  "domain": "allsvenskan.se"
+ },
+ {
+  "url": "https://www.anfp.cl/",
+  "final": "https://www.anfp.cl/",
+  "status": 200,
+  "secs": 0.7,
+  "bytes": 303599,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 1,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [
+   "https://api.w.org/"
+  ],
+  "leagues": [
+   "chl2"
+  ],
+  "domain": "anfp.cl"
+ },
+ {
+  "url": "https://www.apf.org.py/",
+  "final": "https://www.apf.org.py/",
+  "status": 200,
+  "secs": 1.1,
+  "bytes": 574038,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 1,
+   "nuxt": 0,
+   "json_ld": 1,
+   "initial_state": 0,
+   "score_word": 32
+  },
+  "api_urls": [
+   "https://api.unid.com.py/",
+   "https://apim-maker.llt-services.com/",
+   "https://apim-maker.llt-services.com/makerweb/",
+   "https://fonts.googleapis.com",
+   "https://fonts.googleapis.com/css2",
+   "https://www.statsperform.com/opta/"
+  ],
+  "leagues": [
+   "par1"
+  ],
+  "domain": "apf.org.py"
+ },
+ {
+  "url": "https://www.aseanfootball.org/",
+  "final": "https://www.aseanfootball.org/v3/",
+  "status": 200,
+  "secs": 9.9,
+  "bytes": 360496,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 14
+  },
+  "api_urls": [
+   "https://api.w.org/",
+   "https://fonts.googleapis.com/css"
+  ],
+  "leagues": [
+   "asean"
+  ],
+  "domain": "aseanfootball.org"
+ },
+ {
+  "url": "https://www.atptour.com/en/scores/current",
+  "final": "https://www.atptour.com/en/scores/current",
+  "status": 200,
+  "secs": 0.5,
+  "bytes": 148053,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 42
+  },
+  "api_urls": [
+   "https://api.exponea.com",
+   "https://api.uk.exponea.com"
+  ],
+  "leagues": [
+   "atp",
+   "atp-doubles"
+  ],
+  "domain": "atptour.com"
+ },
+ {
+  "url": "https://www.auf.org.uy/",
+  "final": "https://www.auf.org.uy/",
+  "status": 200,
+  "secs": 2.7,
+  "bytes": 292074,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 3
+  },
+  "api_urls": [
+   "https://fonts.googleapis.com/css",
+   "https://maps.googleapis.com/maps/api/js"
+  ],
+  "leagues": [
+   "uru1"
+  ],
+  "domain": "auf.org.uy"
+ },
+ {
+  "url": "https://www.baseballdecuba.com/",
+  "final": "https://www.baseballdecuba.com/",
+  "status": 200,
+  "secs": 1.1,
+  "bytes": 319004,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 1,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [
+   "https://fonts.googleapis.com/css2"
+  ],
+  "leagues": [
+   "cuba"
+  ],
+  "domain": "baseballdecuba.com"
+ },
+ {
+  "url": "https://www.basket.dk/",
+  "final": "https://basket.dk/",
+  "status": 200,
+  "secs": 3.2,
+  "bytes": 721025,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 1,
+   "initial_state": 0,
+   "score_word": 8
+  },
+  "api_urls": [
+   "https://api.w.org/",
+   "https://fonts.googleapis.com",
+   "https://fonts.googleapis.com/css"
+  ],
+  "leagues": [
+   "bkden"
+  ],
+  "domain": "basket.dk"
+ },
+ {
+  "url": "https://www.basket.ee/",
+  "final": "https://www.basket.ee/",
+  "status": 200,
+  "secs": 0.7,
+  "bytes": 70537,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [
+   "https://fonts.googleapis.com",
+   "https://fonts.googleapis.com/css2"
+  ],
+  "leagues": [
+   "bkest"
+  ],
+  "domain": "basket.ee"
+ },
+ {
+  "url": "https://www.basket.lv/",
+  "final": "https://www.basket.lv/",
+  "status": 200,
+  "secs": 2.5,
+  "bytes": 74677,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 1,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [
+   "https://apis.google.com/js/platform.js"
+  ],
+  "leagues": [
+   "bklat"
+  ],
+  "domain": "basket.lv"
+ },
+ {
+  "url": "https://www.basket.no/",
+  "final": "https://www.basket.no/",
+  "status": 200,
+  "secs": 1.1,
+  "bytes": 42989,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [
+   "https://fonts.googleapis.com/icon"
+  ],
+  "leagues": [
+   "bknor"
+  ],
+  "domain": "basket.no"
+ },
+ {
+  "url": "https://www.basketballaustria.at/",
+  "final": "https://www.basketballaustria.at/",
+  "status": 200,
+  "secs": 0.8,
+  "bytes": 60302,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "bkaut"
+  ],
+  "domain": "basketballaustria.at"
+ },
+ {
+  "url": "https://www.bcci.tv/domestic/ranji-trophy",
+  "final": "https://www.bcci.tv/domestic/ranji-trophy",
+  "status": 404,
+  "secs": 1.2,
+  "bytes": 30305,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 1,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "cricranji"
+  ],
+  "domain": "bcci.tv"
+ },
+ {
+  "url": "https://www.bigbash.com.au/matches",
+  "final": "https://www.bigbash.com.au/matches",
+  "status": 200,
+  "secs": 1.1,
+  "bytes": 139522,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 1,
+   "initial_state": 0,
+   "score_word": 7
+  },
+  "api_urls": [
+   "https://apiv2.cricket.com.au/web/",
+   "https://resources.bigbash.pulselive.com/bigbash/document/2024/07/22/00862a65-bb8c-4cb3-bb81-c8d91dec6645/perth-scorcher",
+   "https://resources.bigbash.pulselive.com/bigbash/document/2024/07/22/00f1af01-40fb-49af-9cb6-8f0536934ac3/sydney-sixers.",
+   "https://resources.bigbash.pulselive.com/bigbash/document/2024/07/22/27c8e87c-0a60-4169-91f7-46f8d70c0ef6/hobart-hurrica",
+   "https://resources.bigbash.pulselive.com/bigbash/document/2024/07/22/41593230-b94e-4154-a4b0-a5d9e0170c3b/adelaide-strik",
+   "https://resources.bigbash.pulselive.com/bigbash/document/2024/07/22/9e61e982-0472-4131-83f5-2e88e562526a/melbourne-star",
+   "https://resources.bigbash.pulselive.com/bigbash/document/2024/07/22/f05b78b1-5dc9-4e09-8ae4-08f10d49adbc/brisbane-heat.",
+   "https://resources.bigbash.pulselive.com/bigbash/document/2025/10/09/080e1868-6608-4770-be7e-75cede852c20/Group-2095.svg"
+  ],
+  "leagues": [
+   "abb"
+  ],
+  "domain": "bigbash.com.au"
+ },
+ {
+  "url": "https://www.billiejeankingcup.com/",
+  "final": "https://www.billiejeankingcup.com/en",
+  "status": 200,
+  "secs": 0.8,
+  "bytes": 356942,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [
+   "https://video-images-cdn.staylive.tv/y5qo68/thumbnail.jpg\\"
+  ],
+  "leagues": [
+   "bjkcup"
+  ],
+  "domain": "billiejeankingcup.com"
+ },
+ {
+  "url": "https://www.bleague.jp/en/",
+  "final": "https://www.bleague.jp/en/",
+  "status": 503,
+  "secs": 0.5,
+  "bytes": 19,
+  "ctype": "text/plain",
+  "blocked": true,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "bkjpn"
+  ],
+  "domain": "bleague.jp"
+ },
+ {
+  "url": "https://www.bnxtleague.com/",
+  "final": "https://bnxtleague.com/",
+  "status": 200,
+  "secs": 0.8,
+  "bytes": 1775,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "bkbel",
+   "bkned"
+  ],
+  "domain": "bnxtleague.com"
+ },
+ {
+  "url": "https://www.bundesliga.at/",
+  "final": "https://www.bundesliga.at/de",
+  "status": 200,
+  "secs": 1.2,
+  "bytes": 356109,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [
+   "https://webcache-eu.datareporter.eu/c/05335e21-abab-4b28-bd3d-c1f6226b4d26/kk4CRDQWyOJJ/E36/banner.css",
+   "https://webcache-eu.datareporter.eu/c/05335e21-abab-4b28-bd3d-c1f6226b4d26/kk4CRDQWyOJJ/E36/banner.css\\",
+   "https://webcache-eu.datareporter.eu/c/05335e21-abab-4b28-bd3d-c1f6226b4d26/kk4CRDQWyOJJ/E36/banner.js",
+   "https://webcache-eu.datareporter.eu/c/05335e21-abab-4b28-bd3d-c1f6226b4d26/kk4CRDQWyOJJ/E36/banner.js\\"
+  ],
+  "leagues": [
+   "aut"
+  ],
+  "domain": "bundesliga.at"
+ },
+ {
+  "url": "https://www.bundesliga.com/en/2bundesliga",
+  "final": "https://www.bundesliga.com/en/2bundesliga",
+  "status": 200,
+  "secs": 0.8,
+  "bytes": 1120984,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 32
+  },
+  "api_urls": [],
+  "leagues": [
+   "bl2"
+  ],
+  "domain": "bundesliga.com"
+ },
+ {
+  "url": "https://www.bundesliga.com/en/bundesliga",
+  "final": "https://www.bundesliga.com/en/bundesliga",
+  "status": 200,
+  "secs": 0.8,
+  "bytes": 1143632,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 39
+  },
+  "api_urls": [],
+  "leagues": [
+   "bun",
+   "gsc"
+  ],
+  "domain": "bundesliga.com"
+ },
+ {
+  "url": "https://www.cafonline.com/",
+  "final": "https://www.cafonline.com/",
+  "status": 200,
+  "secs": 1.6,
+  "bytes": 115371,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 5
+  },
+  "api_urls": [
+   "https://fonts.googleapis.com",
+   "https://fonts.googleapis.com/css2",
+   "https://southafricanorth.livediagnostics.monitor.azure.com/"
+  ],
+  "leagues": [
+   "afcq",
+   "caf",
+   "cafcl",
+   "afwq"
+  ],
+  "domain": "cafonline.com"
+ },
+ {
+  "url": "https://www.cafonline.com/caf-africa-cup-of-nations/",
+  "final": "https://www.cafonline.com/caf-africa-cup-of-nations/",
+  "status": 200,
+  "secs": 1.8,
+  "bytes": 96670,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [
+   "https://fonts.googleapis.com",
+   "https://fonts.googleapis.com/css2",
+   "https://southafricanorth.livediagnostics.monitor.azure.com/"
+  ],
+  "leagues": [
+   "acn"
+  ],
+  "domain": "cafonline.com"
+ },
+ {
+  "url": "https://www.cbf.basketball/",
+  "final": "https://www.cbf.basketball/",
+  "status": 200,
+  "secs": 2.0,
+  "bytes": 48500,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "bkcyp"
+  ],
+  "domain": "cbf.basketball"
+ },
+ {
+  "url": "https://www.cbf.com.br/",
+  "status": "error",
+  "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.",
+  "secs": 0.8,
+  "leagues": [
+   "bra",
+   "bra3"
+  ],
+  "domain": "cbf.com.br"
+ },
+ {
+  "url": "https://www.cbf.com.br/futebol-brasileiro/competicoes/copa-do-brasil",
+  "status": "error",
+  "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.",
+  "secs": 0.7,
+  "leagues": [
+   "brco"
+  ],
+  "domain": "cbf.com.br"
+ },
+ {
+  "url": "https://www.cebl.ca/",
+  "final": "https://www.cebl.ca/",
+  "status": 200,
+  "secs": 0.6,
+  "bytes": 338662,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 1,
+   "initial_state": 0,
+   "score_word": 18
+  },
+  "api_urls": [
+   "https://cebl-stats-hub.web.app/games-widget",
+   "https://cebl-stats-hub.web.app/league-leaders",
+   "https://cebl-stats-hub.web.app/standings"
+  ],
+  "leagues": [
+   "bkcebl"
+  ],
+  "domain": "cebl.ca"
+ },
+ {
+  "url": "https://www.cev.eu/",
+  "final": "https://www.cev.eu/",
+  "status": 200,
+  "secs": 2.0,
+  "bytes": 126505,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [
+   "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"
+  ],
+  "leagues": [
+   "vbeuro",
+   "vbcl"
+  ],
+  "domain": "cev.eu"
+ },
+ {
+  "url": "https://www.cfa.com.cn/",
+  "final": "https://www.cfa.com.cn/",
+  "status": 200,
+  "secs": 1.7,
+  "bytes": 22053,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "chi"
+  ],
+  "domain": "cfa.com.cn"
+ },
+ {
+  "url": "https://www.cfl.ca/",
+  "final": "https://cfl.ca/",
+  "status": 200,
+  "secs": 1.5,
+  "bytes": 804497,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 2,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 7
+  },
+  "api_urls": [
+   "https://api.id.cfl.ca",
+   "https://cfl.dataplane.rudderstack.com",
+   "https://stats.cfl.ca",
+   "https://stats.cfl.ca/",
+   "https://stats.cfl.ca/standings",
+   "https://stats.cfl.ca/stats/players/defence/2026",
+   "https://stats.cfl.ca/stats/players/passing/2026",
+   "https://stats.cfl.ca/stats/players/receiving/2026"
+  ],
+  "leagues": [
+   "cfl"
+  ],
+  "domain": "cfl.ca"
+ },
+ {
+  "url": "https://www.championshockeyleague.com/en",
+  "final": "https://www.chl.hockey/en",
+  "status": 200,
+  "secs": 1.5,
+  "bytes": 328564,
+  "ctype": "text/html",
+  "blocked": true,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [
+   "https://api.addsearch.com/v1/search"
+  ],
+  "leagues": [
+   "hockeychl"
+  ],
+  "domain": "championshockeyleague.com"
+ },
+ {
+  "url": "https://www.championsleague.basketball/",
+  "final": "https://www.championsleague.basketball/en",
+  "status": 200,
+  "secs": 1.9,
+  "bytes": 1117816,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 8
+  },
+  "api_urls": [
+   "https://digital-api.fiba.basketball/hapi",
+   "https://digital-api.fiba.basketball/hapi/getcustomgateway",
+   "https://digital-api.fiba.basketball/hapi/getcustomgateway\\",
+   "https://digital-api.fiba.basketball/hapi\\"
+  ],
+  "leagues": [
+   "bkcl"
+  ],
+  "domain": "championsleague.basketball"
+ },
+ {
+  "url": "https://www.concacaf.com/",
+  "final": "https://www.concacaf.com/",
+  "status": 200,
+  "secs": 2.7,
+  "bytes": 2999254,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 2,
+   "initial_state": 0,
+   "score_word": 213
+  },
+  "api_urls": [
+   "https://api-sdp.concacaf.com/v1/\\",
+   "https://dapi.concacaf.com/v2/content/en-us/competitions/beach-soccer-championship\\",
+   "https://dapi.concacaf.com/v2/content/en-us/competitions/calendar-beach-soccer-championship-2027\\",
+   "https://dapi.concacaf.com/v2/content/en-us/competitions/calendar-caribbean-cup-2026\\",
+   "https://dapi.concacaf.com/v2/content/en-us/competitions/calendar-caribbean-cup-2027\\",
+   "https://dapi.concacaf.com/v2/content/en-us/competitions/calendar-caribbean-cup-2028\\",
+   "https://dapi.concacaf.com/v2/content/en-us/competitions/calendar-caribbean-cup-2029\\",
+   "https://dapi.concacaf.com/v2/content/en-us/competitions/calendar-caribbean-cup-2030\\"
+  ],
+  "leagues": [
+   "conl",
+   "cof",
+   "nawq"
+  ],
+  "domain": "concacaf.com"
+ },
+ {
+  "url": "https://www.concacaf.com/gold-cup/",
+  "final": "https://www.concacaf.com/competitions/gold-cup/index",
+  "status": 200,
+  "secs": 2.5,
+  "bytes": 516395,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 2,
+   "initial_state": 0,
+   "score_word": 2
+  },
+  "api_urls": [
+   "https://api-sdp.concacaf.com/v1/\\",
+   "https://dapi.concacaf.com/v2/content/en-us/photos/april-nationl-team-ranking\\",
+   "https://dapi.concacaf.com/v2/content/en-us/photos/award-wide-best-gk\\",
+   "https://dapi.concacaf.com/v2/content/en-us/photos/award-wide-best-player\\",
+   "https://dapi.concacaf.com/v2/content/en-us/photos/award-wide-fair-play\\",
+   "https://dapi.concacaf.com/v2/content/en-us/photos/award-wide-top-goal-scorer\\",
+   "https://dapi.concacaf.com/v2/content/en-us/photos/award-wide-young-player\\",
+   "https://dapi.concacaf.com/v2/content/en-us/photos/concacaf-x-fox-sports-gold-cup-nations-league-lockup\\"
+  ],
+  "leagues": [
+   "ncag"
+  ],
+  "domain": "concacaf.com"
+ },
+ {
+  "url": "https://www.conmebol.com/",
+  "final": "https://www.conmebol.com/",
+  "status": 200,
+  "secs": 1.1,
+  "bytes": 441869,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 1
+  },
+  "api_urls": [
+   "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js></script>",
+   "https://api.w.org/",
+   "https://dataplane.rum.us-east-2.amazonaws.com",
+   "https://stats.wp.com/e-202641.js></script>"
+  ],
+  "leagues": [
+   "con",
+   "sawq"
+  ],
+  "domain": "conmebol.com"
+ },
+ {
+  "url": "https://www.copaamerica.com/",
+  "final": "https://copaamerica.com/es",
+  "status": 200,
+  "secs": 3.2,
+  "bytes": 110088,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 4,
+   "initial_state": 0,
+   "score_word": 1
+  },
+  "api_urls": [],
+  "leagues": [
+   "copaam"
+  ],
+  "domain": "copaamerica.com"
+ },
+ {
+  "url": "https://www.copaargentina.org/",
+  "final": "https://www.copaargentina.org/",
+  "status": 200,
+  "secs": 0.9,
+  "bytes": 18934,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "argcopa"
+  ],
+  "domain": "copaargentina.org"
+ },
+ {
+  "url": "https://www.cpbl.com.tw/",
+  "status": "error",
+  "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.",
+  "secs": 1.1,
+  "leagues": [
+   "cpbl"
+  ],
+  "domain": "cpbl.com.tw"
+ },
+ {
+  "url": "https://www.cplsoccer.com/",
+  "final": "https://www.cplsoccer.com/",
+  "status": 200,
+  "secs": 0.9,
+  "bytes": 508128,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 2,
+   "initial_state": 0,
+   "score_word": 2
+  },
+  "api_urls": [
+   "https://dapi.cplsoccer.com/v2/content/en-us/brightcovevideos/19c95e4b96984f0d880d99fe9a506b59\\",
+   "https://dapi.cplsoccer.com/v2/content/en-us/brightcovevideos/27e278095e854f75a8c180d86e8f4bd1\\",
+   "https://dapi.cplsoccer.com/v2/content/en-us/brightcovevideos/3375f21c239b4b0c95b17bdefd7838b1\\",
+   "https://dapi.cplsoccer.com/v2/content/en-us/brightcovevideos/342abe9561194411b419b4a4443c74b5\\",
+   "https://dapi.cplsoccer.com/v2/content/en-us/brightcovevideos/3e1c766c3b534ed58dad40c2b3ef6988\\",
+   "https://dapi.cplsoccer.com/v2/content/en-us/brightcovevideos/46285954953e44538515814c9475096b\\",
+   "https://dapi.cplsoccer.com/v2/content/en-us/brightcovevideos/838fed9cee42411ba81d0eda78b791b0\\",
+   "https://dapi.cplsoccer.com/v2/content/en-us/brightcovevideos/94651cfd0bc243c1bde1461cfa76d1c9\\"
+  ],
+  "leagues": [
+   "canpl"
+  ],
+  "domain": "cplsoccer.com"
+ },
+ {
+  "url": "https://www.cricket.com.au/competitions/sheffield-shield",
+  "final": "https://www.cricket.com.au/competitions/sheffield-shield",
+  "status": 404,
+  "secs": 1.2,
+  "bytes": 75638,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 1,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [
+   "https://apiv2.cricket.com.au/web/",
+   "https://resources.cricket-australia.pulselive.com/cricket-australia/document/2022/10/25/bdb5b713-9bb9-40c9-aefd-84b51f0b1b20/Cric",
+   "https://resources.cricket-australia.pulselive.com/cricket-australia/document/2022/12/15/49ef5c53-74f0-4425-bf6a-cd92143461d7/cric",
+   "https://resources.cricket-australia.pulselive.com/photo-resources/2023/08/07/43481716-f33b-413a-a37f-f61f107a29e6/404-0823.png",
+   "https://scp-api-v2.platform.pulselive.com/stream/"
+  ],
+  "leagues": [
+   "cricshield"
+  ],
+  "domain": "cricket.com.au"
+ },
+ {
+  "url": "https://www.cricket.com.au/matches",
+  "final": "https://www.cricket.com.au/matches",
+  "status": 200,
+  "secs": 1.2,
+  "bytes": 198141,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 1,
+   "initial_state": 0,
+   "score_word": 36
+  },
+  "api_urls": [
+   "https://apiv2.cricket.com.au/web/",
+   "https://resources.cricket-australia.pulselive.com/cricket-australia/document/2022/10/25/bdb5b713-9bb9-40c9-aefd-84b51f0b1b20/Cric",
+   "https://resources.cricket-australia.pulselive.com/cricket-australia/document/2022/12/15/49ef5c53-74f0-4425-bf6a-cd92143461d7/cric",
+   "https://resources.cricket-australia.pulselive.com/cricket-australia/photo/2023/08/01/96d65d2e-1959-4efa-a4e8-951009b8404d/foxtel.",
+   "https://resources.cricket-australia.pulselive.com/cricket-australia/photo/2023/08/01/adc877f4-c362-45d3-8512-33d8c346fc47/channel",
+   "https://resources.cricket-australia.pulselive.com/cricket-australia/photo/2023/08/01/c77ea4a1-bcdc-440b-951c-fe2fdc76307e/abc-spo",
+   "https://resources.cricket-australia.pulselive.com/cricket-australia/photo/2023/08/01/c9c5adcf-0a55-434f-a40a-0c72e7e07336/kayo.pn",
+   "https://resources.cricket-australia.pulselive.com/cricket-australia/photo/2023/09/04/282facc0-1c35-4556-b77a-629171d6dd7a/CCAU-Pr"
+  ],
+  "leagues": [
+   "she"
+  ],
+  "domain": "cricket.com.au"
+ },
+ {
+  "url": "https://www.ctfa.com.tw/",
+  "final": "https://www.ctfa.com.tw/",
+  "status": 200,
+  "secs": 2.3,
+  "bytes": 97876,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 13
+  },
+  "api_urls": [],
+  "leagues": [
+   "tpe1",
+   "tpew"
+  ],
+  "domain": "ctfa.com.tw"
+ },
+ {
+  "url": "https://www.daikin-hbl.de/",
+  "final": "https://www.opel-hbl.de/de/hbl",
+  "status": 200,
+  "secs": 2.4,
+  "bytes": 1185421,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 2,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 505
+  },
+  "api_urls": [],
+  "leagues": [
+   "hbbundesliga"
+  ],
+  "domain": "daikin-hbl.de"
+ },
+ {
+  "url": "https://www.daviscup.com/",
+  "final": "https://www.daviscup.com/en",
+  "status": 200,
+  "secs": 0.9,
+  "bytes": 362779,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [
+   "https://video-images-cdn.staylive.tv/i5njta/thumbnail.jpg\\"
+  ],
+  "leagues": [
+   "daviscup"
+  ],
+  "domain": "daviscup.com"
+ },
+ {
+  "url": "https://www.dfb.de/dfb-pokal/",
+  "final": "https://www.dfb.de/maenner/wettbewerbe/dfb-pokal",
+  "status": 200,
+  "secs": 2.5,
+  "bytes": 286109,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "dfb"
+  ],
+  "domain": "dfb.de"
+ },
+ {
+  "url": "https://www.easycredit-bbl.de/en/",
+  "final": "https://www.easycredit-bbl.de/en/",
+  "status": 404,
+  "secs": 1.4,
+  "bytes": 119022,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 1,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "bkbbl"
+  ],
+  "domain": "easycredit-bbl.de"
+ },
+ {
+  "url": "https://www.efl.com/",
+  "final": "https://www.efl.com/",
+  "status": 200,
+  "secs": 0.8,
+  "bytes": 155010,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 1,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 1
+  },
+  "api_urls": [
+   "https://fonts.googleapis.com/css",
+   "https://fonts.googleapis.com/css2",
+   "https://imasdk.googleapis.com/js/sdkloader/ima3.js"
+  ],
+  "leagues": [
+   "elc",
+   "el1",
+   "el2",
+   "efl"
+  ],
+  "domain": "efl.com"
+ },
+ {
+  "url": "https://www.eliteprospects.com/league/shl",
+  "final": "https://www.eliteprospects.com/league/shl",
+  "status": 403,
+  "secs": 0.3,
+  "bytes": 5677,
+  "ctype": "text/html",
+  "blocked": true,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "shl"
+  ],
+  "domain": "eliteprospects.com"
+ },
+ {
+  "url": "https://www.eliteserien.no/",
+  "final": "https://www.eliteserien.no/",
+  "status": 200,
+  "secs": 0.7,
+  "bytes": 130515,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 40
+  },
+  "api_urls": [],
+  "leagues": [
+   "nor"
+  ],
+  "domain": "eliteserien.no"
+ },
+ {
+  "url": "https://www.epcrugby.com/",
+  "final": "https://www.epcrugby.com/",
+  "status": 200,
+  "secs": 1.8,
+  "bytes": 488041,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 2,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 133
+  },
+  "api_urls": [
+   "https://feeds.incrowdsports.com/provider/media-management/v1",
+   "https://feeds.incrowdsports.com/provider/navigation-management-system/v1/clients/EPCR/navigations",
+   "https://historical-stats.epcrugby.com",
+   "https://historical-stats.epcrugby.com/champions-cup/history/roll-of-honour/",
+   "https://live-blog.incrowdsports.com/index.js",
+   "https://www.groupe-apicil.com/"
+  ],
+  "leagues": [
+   "rueuchamp"
+  ],
+  "domain": "epcrugby.com"
+ },
+ {
+  "url": "https://www.epcrugby.com/challenge-cup/",
+  "final": "https://www.epcrugby.com/challenge-cup",
+  "status": 200,
+  "secs": 1.9,
+  "bytes": 471051,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 2,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 109
+  },
+  "api_urls": [
+   "https://feeds.incrowdsports.com/provider/media-management/v1",
+   "https://feeds.incrowdsports.com/provider/navigation-management-system/v1/clients/EPCR/navigations",
+   "https://historical-stats.epcrugby.com",
+   "https://historical-stats.epcrugby.com/challenge-cup/history/european-shield/",
+   "https://historical-stats.epcrugby.com/challenge-cup/history/roll-of-honour/",
+   "https://live-blog.incrowdsports.com/index.js",
+   "https://www.groupe-apicil.com/"
+  ],
+  "leagues": [
+   "rueuchall"
+  ],
+  "domain": "epcrugby.com"
+ },
+ {
+  "url": "https://www.epo.gr/",
+  "final": "https://www.epo.gr/el",
+  "status": 200,
+  "secs": 1.3,
+  "bytes": 255372,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 1
+  },
+  "api_urls": [
+   "https://fonts.googleapis.com/css2"
+  ],
+  "leagues": [
+   "grc"
+  ],
+  "domain": "epo.gr"
+ },
+ {
+  "url": "https://www.esake.gr/",
+  "final": "https://www.esake.gr/",
+  "status": 200,
+  "secs": 3.3,
+  "bytes": 272816,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 51
+  },
+  "api_urls": [
+   "https://fonts.googleapis.com/css"
+  ],
+  "leagues": [
+   "bkgr1"
+  ],
+  "domain": "esake.gr"
+ },
+ {
+  "url": "https://www.espn.com/boxing/",
+  "final": "https://www.espn.com/boxing/",
+  "status": 202,
+  "secs": 0.5,
+  "bytes": 0,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "boxing"
+  ],
+  "domain": "espn.com"
+ },
+ {
+  "url": "https://www.espncricinfo.com/",
+  "final": "https://www.espncricinfo.com/",
+  "status": 403,
+  "secs": 0.6,
+  "bytes": 374,
+  "ctype": "text/html",
+  "blocked": true,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "cricwcl",
+   "cricss",
+   "cricmukono",
+   "cricpsl",
+   "crickerala",
+   "cricjclt10",
+   "cricjcl",
+   "criccoppat10",
+   "cricecsbg",
+   "crictbcl",
+   "cricpakt20cup",
+   "cricps",
+   "cricsa20",
+   "cricsm",
+   "crict20blast",
+   "crictopend",
+   "cricilt20",
+   "cricipl",
+   "cricmlc",
+   "crict20lpl",
+   "crickcct20",
+   "cricdpl",
+   "cricassam",
+   "crickcl",
+   "cricetpl",
+   "crictnpl",
+   "cricupt20",
+   "crict20max",
+   "cricodcw",
+   "cricsherepunjab",
+   "cricdplw",
+   "cricnrwt10",
+   "cricecspt",
+   "cricmajort20",
+   "cricomand50",
+   "cricwncl",
+   "crichundred",
+   "crichundredw",
+   "cricecsch",
+   "cricecseng",
+   "cricmaharani",
+   "cricppl",
+   "cricfalcons",
+   "cricinterprov",
+   "cricbpl",
+   "crichkt20w",
+   "cricnt20c",
+   "cricbbl",
+   "cricodc",
+   "criccsat20w",
+   "criccpl",
+   "cricshpageeza",
+   "cricmaharaja",
+   "cricnsk",
+   "cricapl",
+   "crickpl",
+   "cricgsl",
+   "cricodcl2w",
+   "cricgermant10",
+   "crictelangana",
+   "crict20blastl2w",
+   "crict20blastw",
+   "crict20plw",
+   "crwncl",
+   "crwpl20"
+  ],
+  "domain": "espncricinfo.com"
+ },
+ {
+  "url": "https://www.ettu.org/",
+  "final": "https://www.ettu.org/",
+  "status": 200,
+  "secs": 2.1,
+  "bytes": 316977,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 1,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [
+   "https://api.w.org/",
+   "https://storage.googleapis.com/stupaprodsguscentral/ettu-website-wordpress/2024/06/Group_33-removebg-preview-1",
+   "https://storage.googleapis.com/stupaprodsguscentral/ettu-website-wordpress/2024/07/Horizontal_BiColorhigh-res.",
+   "https://storage.googleapis.com/stupaprodsguscentral/ettu-website-wordpress/2024/07/Ljubljana-Logo-website-top-",
+   "https://storage.googleapis.com/stupaprodsguscentral/ettu-website-wordpress/2024/07/Logo-website-JOOLA-EYS-1024",
+   "https://storage.googleapis.com/stupaprodsguscentral/ettu-website-wordpress/2024/07/Logo-website-JOOLA-EYS.png",
+   "https://storage.googleapis.com/stupaprodsguscentral/ettu-website-wordpress/2024/07/Logo-website-top-part-9.png",
+   "https://storage.googleapis.com/stupaprodsguscentral/ettu-website-wordpress/2024/07/eclw-logo-up.jpg"
+  ],
+  "leagues": [
+   "ttcl",
+   "tteuropecup"
+  ],
+  "domain": "ettu.org"
+ },
+ {
+  "url": "https://www.eurocupbasketball.com/",
+  "final": "https://www.eurocupbasketball.com/",
+  "status": 429,
+  "secs": 0.5,
+  "bytes": 31193,
+  "ctype": "text/html",
+  "blocked": true,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "bkeurocup"
+  ],
+  "domain": "eurocupbasketball.com"
+ },
+ {
+  "url": "https://www.euroleaguebasketball.net/euroleague/",
+  "final": "https://www.euroleaguebasketball.net/euroleague/",
+  "status": 429,
+  "secs": 0.3,
+  "bytes": 31202,
+  "ctype": "text/html",
+  "blocked": true,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "euroleague"
+  ],
+  "domain": "euroleaguebasketball.net"
+ },
+ {
+  "url": "https://www.europeantour.com/",
+  "final": "https://www.europeantour.com/",
+  "status": 403,
+  "secs": 0.5,
+  "bytes": 372,
+  "ctype": "text/html",
+  "blocked": true,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "dpwt"
+  ],
+  "domain": "europeantour.com"
+ },
+ {
+  "url": "https://www.fai.ie/",
+  "final": "https://www.fai.ie/",
+  "status": 200,
+  "secs": 0.3,
+  "bytes": 71029,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "ire"
+  ],
+  "domain": "fai.ie"
+ },
+ {
+  "url": "https://www.feb.es/",
+  "final": "https://www.feb.es/inicio.aspx",
+  "status": 200,
+  "secs": 1.1,
+  "bytes": 141095,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "bkes2"
+  ],
+  "domain": "feb.es"
+ },
+ {
+  "url": "https://www.fff.fr/competitions/coupe-de-france/",
+  "final": "https://www.fff.fr/competitions/coupe-de-france/",
+  "status": 403,
+  "secs": 0.5,
+  "bytes": 12545,
+  "ctype": "text/html",
+  "blocked": true,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "cde"
+  ],
+  "domain": "fff.fr"
+ },
+ {
+  "url": "https://www.fiba.basketball/basketballworldcup/2027/qualifiers",
+  "final": "https://www.fiba.basketball/basketballworldcup/2027/qualifiers",
+  "status": 200,
+  "secs": 0.9,
+  "bytes": 225848,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 14
+  },
+  "api_urls": [
+   "https://digital-api.fiba.basketball/hapi",
+   "https://digital-api.fiba.basketball/hapi/getcustomgateway",
+   "https://digital-api.fiba.basketball/hapi/getcustomgateway\\",
+   "https://digital-api.fiba.basketball/hapi\\"
+  ],
+  "leagues": [
+   "bkfibaqam",
+   "bkfibaqaf",
+   "bkfibaqas",
+   "bkfibaqeu"
+  ],
+  "domain": "fiba.basketball"
+ },
+ {
+  "url": "https://www.fiba.basketball/en/events/fiba-womens-basketball-world-cup-2026",
+  "final": "https://www.fiba.basketball/en/events/fiba-womens-basketball-world-cup-2026",
+  "status": 200,
+  "secs": 1.2,
+  "bytes": 754450,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 8
+  },
+  "api_urls": [
+   "https://digital-api.fiba.basketball/hapi",
+   "https://digital-api.fiba.basketball/hapi/getcustomgateway",
+   "https://digital-api.fiba.basketball/hapi/getcustomgateway\\",
+   "https://digital-api.fiba.basketball/hapi\\"
+  ],
+  "leagues": [
+   "bkfibaw"
+  ],
+  "domain": "fiba.basketball"
+ },
+ {
+  "url": "https://www.fifa.com/",
+  "final": "https://www.fifa.com/",
+  "status": 200,
+  "secs": 1.0,
+  "bytes": 4546,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [
+   "https://api.fifa.com",
+   "https://cxm-api.fifa.com/fifaplusweb/api",
+   "https://cxm-api.fifa.com/fifaplusweb/api/themePalette"
+  ],
+  "leagues": [
+   "u20wwc",
+   "icwq"
+  ],
+  "domain": "fifa.com"
+ },
+ {
+  "url": "https://www.fifa.com/en",
+  "final": "https://www.fifa.com/en",
+  "status": 200,
+  "secs": 0.4,
+  "bytes": 4546,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [
+   "https://api.fifa.com",
+   "https://cxm-api.fifa.com/fifaplusweb/api",
+   "https://cxm-api.fifa.com/fifaplusweb/api/themePalette"
+  ],
+  "leagues": [
+   "fif"
+  ],
+  "domain": "fifa.com"
+ },
+ {
+  "url": "https://www.fifa.com/fifaplus/en/tournaments/mens/clubworldcup",
+  "final": "https://www.fifa.com/en/tournaments/mens/clubworldcup",
+  "status": 200,
+  "secs": 1.2,
+  "bytes": 4546,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [
+   "https://api.fifa.com",
+   "https://cxm-api.fifa.com/fifaplusweb/api",
+   "https://cxm-api.fifa.com/fifaplusweb/api/themePalette"
+  ],
+  "leagues": [
+   "cwc"
+  ],
+  "domain": "fifa.com"
+ },
+ {
+  "url": "https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup",
+  "final": "https://www.fifa.com/en/tournaments/mens/worldcup",
+  "status": 200,
+  "secs": 0.9,
+  "bytes": 4546,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [
+   "https://api.fifa.com",
+   "https://cxm-api.fifa.com/fifaplusweb/api",
+   "https://cxm-api.fifa.com/fifaplusweb/api/themePalette"
+  ],
+  "leagues": [
+   "fifwc"
+  ],
+  "domain": "fifa.com"
+ },
+ {
+  "url": "https://www.fifa.com/fifaplus/en/tournaments/womens/womensworldcup",
+  "final": "https://www.fifa.com/en/tournaments/womens/womensworldcup",
+  "status": 200,
+  "secs": 1.1,
+  "bytes": 4546,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [
+   "https://api.fifa.com",
+   "https://cxm-api.fifa.com/fifaplusweb/api",
+   "https://cxm-api.fifa.com/fifaplusweb/api/themePalette"
+  ],
+  "leagues": [
+   "wwcquefa",
+   "fifaw"
+  ],
+  "domain": "fifa.com"
+ },
+ {
+  "url": "https://www.flashscore.com/",
+  "final": "https://www.flashscore.com/",
+  "status": 200,
+  "secs": 0.7,
+  "bytes": 734689,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 42
+  },
+  "api_urls": [],
+  "leagues": [
+   "clf"
+  ],
+  "domain": "flashscore.com"
+ },
+ {
+  "url": "https://www.flashscore.com/basketball/belarus/premier-league/",
+  "final": "https://www.flashscore.com/basketball/belarus/premier-league/",
+  "status": 200,
+  "secs": 1.3,
+  "bytes": 902706,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 51
+  },
+  "api_urls": [],
+  "leagues": [
+   "bkblr"
+  ],
+  "domain": "flashscore.com"
+ },
+ {
+  "url": "https://www.flashscore.com/basketball/china/cba",
+  "final": "https://www.flashscore.com/basketball/china/cba/",
+  "status": 200,
+  "secs": 1.0,
+  "bytes": 898041,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 51
+  },
+  "api_urls": [],
+  "leagues": [
+   "bkcba"
+  ],
+  "domain": "flashscore.com"
+ },
+ {
+  "url": "https://www.flashscore.com/basketball/greece/elite-league/",
+  "final": "https://www.flashscore.com/basketball/greece/elite-league/",
+  "status": 200,
+  "secs": 1.3,
+  "bytes": 909456,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 51
+  },
+  "api_urls": [],
+  "leagues": [
+   "bkgr2"
+  ],
+  "domain": "flashscore.com"
+ },
+ {
+  "url": "https://www.flashscore.com/basketball/indonesia/ibl/",
+  "final": "https://www.flashscore.com/basketball/indonesia/ibl/",
+  "status": 200,
+  "secs": 2.0,
+  "bytes": 904908,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 51
+  },
+  "api_urls": [],
+  "leagues": [
+   "bkibl"
+  ],
+  "domain": "flashscore.com"
+ },
+ {
+  "url": "https://www.flashscore.com/basketball/venezuela/superliga/",
+  "final": "https://www.flashscore.com/basketball/venezuela/superliga/",
+  "status": 200,
+  "secs": 1.8,
+  "bytes": 906320,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 51
+  },
+  "api_urls": [],
+  "leagues": [
+   "bkvensl"
+  ],
+  "domain": "flashscore.com"
+ },
+ {
+  "url": "https://www.flashscoreusa.com/basketball/italy/lega-a",
+  "final": "https://www.flashscoreusa.com/basketball/italy/lega-a/",
+  "status": 200,
+  "secs": 1.2,
+  "bytes": 624977,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 51
+  },
+  "api_urls": [],
+  "leagues": [
+   "bkseriea"
+  ],
+  "domain": "flashscoreusa.com"
+ },
+ {
+  "url": "https://www.fmf.com.br/",
+  "status": "error",
+  "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.",
+  "secs": 1.2,
+  "leagues": [
+   "brcm"
+  ],
+  "domain": "fmf.com.br"
+ },
+ {
+  "url": "https://www.football.ch/super-league/",
+  "final": "https://www.football.ch/super-league/",
+  "status": 403,
+  "secs": 1.5,
+  "bytes": 5705,
+  "ctype": "text/html",
+  "blocked": true,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "sui"
+  ],
+  "domain": "football.ch"
+ },
+ {
+  "url": "https://www.football.fo/",
+  "final": "https://www.fsf.fo/",
+  "status": 200,
+  "secs": 1.6,
+  "bytes": 231588,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 1,
+   "initial_state": 0,
+   "score_word": 5
+  },
+  "api_urls": [
+   "https://api.w.org/",
+   "https://fonts.googleapis.com/css"
+  ],
+  "leagues": [
+   "fro1"
+  ],
+  "domain": "football.fo"
+ },
+ {
+  "url": "https://www.football.org.il/",
+  "final": "https://www.football.org.il/",
+  "status": 403,
+  "secs": 0.6,
+  "bytes": 4552,
+  "ctype": "text/html",
+  "blocked": true,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "isr"
+  ],
+  "domain": "football.org.il"
+ },
+ {
+  "url": "https://www.formula1.com/",
+  "final": "https://www.formula1.com/",
+  "status": 200,
+  "secs": 0.9,
+  "bytes": 646814,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 2,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [
+   "https://api.formula1.com/svc/v2/whereami\\",
+   "https://api.formula1.com\\",
+   "https://livetiming.formula1.com/signalrcore\\",
+   "https://livetiming.formula1.com/static/\\"
+  ],
+  "leagues": [
+   "f1"
+  ],
+  "domain": "formula1.com"
+ },
+ {
+  "url": "https://www.fpf.pt/",
+  "final": "https://www.fpf.pt/pt/",
+  "status": 200,
+  "secs": 0.9,
+  "bytes": 379366,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [
+   "https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.3/jquery-ui.min.js"
+  ],
+  "leagues": [
+   "ptsc"
+  ],
+  "domain": "fpf.pt"
+ },
+ {
+  "url": "https://www.handball.no/",
+  "final": "https://www.handball.no/",
+  "status": 200,
+  "secs": 0.7,
+  "bytes": 63408,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [
+   "https://fonts.googleapis.com",
+   "https://fonts.googleapis.com/css2",
+   "https://pub.dialogapi.no/s/MjE4MDg6N2I2NDhjYmYtM2ZhZS00NTRiLTgzNjAtMzJlMDgwYmUxYzhl"
+  ],
+  "leagues": [
+   "hbeliteserien"
+  ],
+  "domain": "handball.no"
+ },
+ {
+  "url": "https://www.hokej.cz/tipsport-extraliga",
+  "final": "https://www.hokej.cz/tipsport-extraliga",
+  "status": 200,
+  "secs": 0.8,
+  "bytes": 221394,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [
+   "https://fonts.googleapis.com/css2"
+  ],
+  "leagues": [
+   "cehl"
+  ],
+  "domain": "hokej.cz"
+ },
+ {
+  "url": "https://www.hunbasket.hu/",
+  "final": "https://hunbasket.hu/",
+  "status": 200,
+  "secs": 2.3,
+  "bytes": 348408,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 90
+  },
+  "api_urls": [
+   "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js",
+   "https://fonts.googleapis.com",
+   "https://fonts.googleapis.com/css",
+   "https://fonts.googleapis.com/css2",
+   "https://instagram-api.webpont.com/storage/img/hunbasket/825372450_1542415421263130_1880785070594210804_n.jpg",
+   "https://instagram-api.webpont.com/storage/img/hunbasket/833603930_1540051041499568_5386399603877442196_n.jpg",
+   "https://instagram-api.webpont.com/storage/img/hunbasket/833925289_1542409634597042_1867229965478941475_n.jpg",
+   "https://instagram-api.webpont.com/storage/img/hunbasket/834557640_18461099488189168_8077180727303819000_n.jpg"
+  ],
+  "leagues": [
+   "bkhun"
+  ],
+  "domain": "hunbasket.hu"
+ },
+ {
+  "url": "https://www.icc-cricket.com/",
+  "final": "https://www.icc-cricket.com/",
+  "status": 200,
+  "secs": 1.4,
+  "bytes": 1534539,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 4,
+   "initial_state": 0,
+   "score_word": 34
+  },
+  "api_urls": [
+   "https://dapi.icc-cricket.com/v2/content/en-gb/photos/2196328373\\",
+   "https://dapi.icc-cricket.com/v2/content/en-gb/photos/2196331388\\",
+   "https://dapi.icc-cricket.com/v2/content/en-gb/photos/2197189872\\",
+   "https://dapi.icc-cricket.com/v2/content/en-gb/photos/2197191865\\",
+   "https://dapi.icc-cricket.com/v2/content/en-gb/photos/2197194470\\",
+   "https://dapi.icc-cricket.com/v2/content/en-gb/photos/2197194540-1\\",
+   "https://dapi.icc-cricket.com/v2/content/en-gb/photos/2260212020\\",
+   "https://dapi.icc-cricket.com/v2/content/en-gb/photos/2260221809\\"
+  ],
+  "leagues": [
+   "crint",
+   "crafgwi20",
+   "craus",
+   "crban",
+   "crbtnmlyhkg20",
+   "creng",
+   "crind",
+   "crnew",
+   "crpak",
+   "crsou",
+   "cru19wc",
+   "cruae",
+   "crwt20wcgq"
+  ],
+  "domain": "icc-cricket.com"
+ },
+ {
+  "url": "https://www.icc-cricket.com/fixtures-results",
+  "final": "https://www.icc-cricket.com/fixtures-results",
+  "status": 200,
+  "secs": 1.3,
+  "bytes": 367321,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 4,
+   "initial_state": 0,
+   "score_word": 33
+  },
+  "api_urls": [
+   "https://dapi.icc-cricket.com/v2/content/en-gb/photos/4-t1-aramco-01\\",
+   "https://dapi.icc-cricket.com/v2/content/en-gb/photos/5-t1-emirates\\",
+   "https://dapi.icc-cricket.com/v2/content/en-gb/photos/coca-cola\\",
+   "https://dapi.icc-cricket.com/v2/content/en-gb/photos/cricket-4\\",
+   "https://dapi.icc-cricket.com/v2/content/en-gb/photos/espn-darkbg\\",
+   "https://dapi.icc-cricket.com/v2/content/en-gb/photos/icc-t20-26-m-sponsor-hyundai-lb\\",
+   "https://dapi.icc-cricket.com/v2/content/en-gb/photos/image-3\\",
+   "https://dapi.icc-cricket.com/v2/content/en-gb/photos/jio-star\\"
+  ],
+  "leagues": [
+   "csa",
+   "lpl",
+   "odi",
+   "sasa",
+   "t20",
+   "test"
+  ],
+  "domain": "icc-cricket.com"
+ },
+ {
+  "url": "https://www.iihf.com/",
+  "final": "https://www.iihf.com/",
+  "status": 403,
+  "secs": 0.3,
+  "bytes": 5595,
+  "ctype": "text/html",
+  "blocked": true,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "wjc",
+   "wch"
+  ],
+  "domain": "iihf.com"
+ },
+ {
+  "url": "https://www.indiansuperleague.com/",
+  "final": "https://www.indiansuperleague.com/",
+  "status": 200,
+  "secs": 2.1,
+  "bytes": 763223,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 1,
+   "initial_state": 0,
+   "score_word": 85
+  },
+  "api_urls": [],
+  "leagues": [
+   "isp"
+  ],
+  "domain": "indiansuperleague.com"
+ },
+ {
+  "url": "https://www.indycar.com",
+  "final": "https://www.indycar.com",
+  "status": 200,
+  "secs": 1.3,
+  "bytes": 228039,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 1,
+   "initial_state": 0,
+   "score_word": 1
+  },
+  "api_urls": [
+   "https://platform-api.sharethis.com/js/sharethis.js#property=675c8c247b87400012b95ba7&product=inline-share-buttons"
+  ],
+  "leagues": [
+   "indycar"
+  ],
+  "domain": "indycar.com"
+ },
+ {
+  "url": "https://www.ipl.com/cricket/news/thunderbolt-t10-league-2026-full-schedule-teams-squads-amp-live-streaming-details/",
+  "final": "https://www.ipl.com/cricket/news/thunderbolt-t10-league-2026-full-schedule-teams-squads-amp-live-streaming-details/",
+  "status": 200,
+  "secs": 0.8,
+  "bytes": 79978,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 3,
+   "initial_state": 0,
+   "score_word": 10
+  },
+  "api_urls": [],
+  "leagues": [
+   "cricthunderbolt"
+  ],
+  "domain": "ipl.com"
+ },
+ {
+  "url": "https://www.iplt20.com/",
+  "final": "https://www.iplt20.com/",
+  "status": 200,
+  "secs": 0.5,
+  "bytes": 385860,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 2,
+   "initial_state": 0,
+   "score_word": 4
+  },
+  "api_urls": [
+   "https://video-images-cdn.staylive.tv/26jb6/thumbnail.jpg",
+   "https://video-images-cdn.staylive.tv/26jb6/thumbnail.jpg\\",
+   "https://video-images-cdn.staylive.tv/75cjpr/thumbnail.jpg",
+   "https://video-images-cdn.staylive.tv/75cjpr/thumbnail.jpg\\",
+   "https://video-images-cdn.staylive.tv/95hw3/thumbnail.jpg",
+   "https://video-images-cdn.staylive.tv/95hw3/thumbnail.jpg\\",
+   "https://video-images-cdn.staylive.tv/9efvh/thumbnail.jpg",
+   "https://video-images-cdn.staylive.tv/9efvh/thumbnail.jpg\\"
+  ],
+  "leagues": [
+   "ipl"
+  ],
+  "domain": "iplt20.com"
+ },
+ {
+  "url": "https://www.itftennis.com/en/tournament-calendar/",
+  "final": "https://www.itftennis.com/en/tournament-calendar/",
+  "status": 200,
+  "secs": 0.5,
+  "bytes": 212,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "itf"
+  ],
+  "domain": "itftennis.com"
+ },
+ {
+  "url": "https://www.ittf.com/",
+  "final": "https://www.ittf.com/",
+  "status": 403,
+  "secs": 0.4,
+  "bytes": 5509,
+  "ctype": "text/html",
+  "blocked": true,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "ttworldcup",
+   "ttworlds"
+  ],
+  "domain": "ittf.com"
+ },
+ {
+  "url": "https://www.jleague.jp/",
+  "final": "https://www.jleague.jp/",
+  "status": 200,
+  "secs": 3.0,
+  "bytes": 1332321,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 3,
+   "initial_state": 0,
+   "score_word": 1335
+  },
+  "api_urls": [
+   "https://data.j-league.or.jp/SFTP01/",
+   "https://data.j-league.or.jp/SFTP01/\\",
+   "https://datastadium.co.jp/",
+   "https://datastadium.co.jp/\\",
+   "https://www.treasuredata.com/privacy/\\"
+  ],
+  "leagues": [
+   "jap",
+   "j1100",
+   "ja2",
+   "j2100"
+  ],
+  "domain": "jleague.jp"
+ },
+ {
+  "url": "https://www.kbl.or.kr/",
+  "final": "https://www.kbl.or.kr/",
+  "status": 200,
+  "secs": 0.6,
+  "bytes": 5229,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [
+   "https://kbl-data.sports2i.com/kbl/main.css",
+   "https://kbl-data.sports2i.com/kbl/main.js"
+  ],
+  "leagues": [
+   "bkkbl"
+  ],
+  "domain": "kbl.or.kr"
+ },
+ {
+  "url": "https://www.keukenkampioendivisie.nl/",
+  "final": "https://keukenkampioendivisie.nl/",
+  "status": 200,
+  "secs": 1.0,
+  "bytes": 185910,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 1,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 140
+  },
+  "api_urls": [
+   "https://api.keukenkampioendivisie.nl/match/almere-city-fc-vs-fc-eindhoven-2026-2027/",
+   "https://api.keukenkampioendivisie.nl/match/de-graafschap-vs-jong-fc-utrecht-2026-2027/",
+   "https://api.keukenkampioendivisie.nl/match/fc-dordrecht-vs-fc-emmen-2026-2027/",
+   "https://api.keukenkampioendivisie.nl/match/fc-volendam-vs-vitesse-2026-2027/",
+   "https://api.keukenkampioendivisie.nl/match/heracles-almelo-vs-rkc-waalwijk-2026-2027/",
+   "https://api.keukenkampioendivisie.nl/match/jong-ajax-vs-vvv-venlo-2026-2027/",
+   "https://api.keukenkampioendivisie.nl/match/jong-az-vs-fc-den-bosch-2026-2027/",
+   "https://api.keukenkampioendivisie.nl/match/nac-breda-vs-mvv-maastricht-2026-2027/"
+  ],
+  "leagues": [
+   "ned2"
+  ],
+  "domain": "keukenkampioendivisie.nl"
+ },
+ {
+  "url": "https://www.kleague.com/",
+  "final": "https://www.kleague.com/index.do",
+  "status": 200,
+  "secs": 2.4,
+  "bytes": 73608,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 9
+  },
+  "api_urls": [
+   "https://data.kleague.com"
+  ],
+  "leagues": [
+   "kor",
+   "kor2"
+  ],
+  "domain": "kleague.com"
+ },
+ {
+  "url": "https://www.knvb.nl/",
+  "final": "https://www.knvb.nl/",
+  "status": 200,
+  "secs": 1.6,
+  "bytes": 179419,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "nlc"
+  ],
+  "domain": "knvb.nl"
+ },
+ {
+  "url": "https://www.koreabaseball.com/",
+  "final": "https://www.koreabaseball.com/",
+  "status": 200,
+  "secs": 2.3,
+  "bytes": 113269,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 10
+  },
+  "api_urls": [],
+  "leagues": [
+   "kbo"
+  ],
+  "domain": "koreabaseball.com"
+ },
+ {
+  "url": "https://www.korisliiga.fi/",
+  "final": "https://basket.fi/sarjat/sarjat/korisliiga/",
+  "status": 200,
+  "secs": 2.0,
+  "bytes": 438273,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 1,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [
+   "https://api.w.org/"
+  ],
+  "leagues": [
+   "bkfin"
+  ],
+  "domain": "korisliiga.fi"
+ },
+ {
+  "url": "https://www.kovo.co.kr/",
+  "final": "https://kovo.co.kr/",
+  "status": 200,
+  "secs": 2.1,
+  "bytes": 3033,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "vbvleague"
+  ],
+  "domain": "kovo.co.kr"
+ },
+ {
+  "url": "https://www.ksi.is/",
+  "final": "https://www.ksi.is/",
+  "status": 200,
+  "secs": 1.3,
+  "bytes": 641582,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 34
+  },
+  "api_urls": [],
+  "leagues": [
+   "isl1"
+  ],
+  "domain": "ksi.is"
+ },
+ {
+  "url": "https://www.kzs.si/",
+  "final": "https://www.kzs.si/",
+  "status": 200,
+  "secs": 0.9,
+  "bytes": 135464,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 1,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 9
+  },
+  "api_urls": [],
+  "leagues": [
+   "bksvn"
+  ],
+  "domain": "kzs.si"
+ },
+ {
+  "url": "https://www.laliga.com/",
+  "final": "https://www.laliga.com/en-TN",
+  "status": 200,
+  "secs": 3.8,
+  "bytes": 801858,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 1,
+   "nuxt": 0,
+   "json_ld": 21,
+   "initial_state": 0,
+   "score_word": 10
+  },
+  "api_urls": [
+   "https://apim-int.laliga.com/public-service",
+   "https://apim.laliga.com/public-service",
+   "https://apim.laliga.com/webview"
+  ],
+  "leagues": [
+   "es2"
+  ],
+  "domain": "laliga.com"
+ },
+ {
+  "url": "https://www.laliga.com/en-GB",
+  "final": "https://www.laliga.com/en-GB",
+  "status": 200,
+  "secs": 1.3,
+  "bytes": 792255,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 1,
+   "nuxt": 0,
+   "json_ld": 21,
+   "initial_state": 0,
+   "score_word": 10
+  },
+  "api_urls": [
+   "https://apim-int.laliga.com/public-service",
+   "https://apim.laliga.com/public-service",
+   "https://apim.laliga.com/webview"
+  ],
+  "leagues": [
+   "lal"
+  ],
+  "domain": "laliga.com"
+ },
+ {
+  "url": "https://www.laliga.com/en-GB/copa-del-rey",
+  "final": "https://www.laliga.com/en-GB/copa-del-rey",
+  "status": 404,
+  "secs": 0.4,
+  "bytes": 9837,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 1,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [
+   "https://apim-int.laliga.com/public-service",
+   "https://apim.laliga.com/public-service",
+   "https://apim.laliga.com/webview"
+  ],
+  "leagues": [
+   "cdr"
+  ],
+  "domain": "laliga.com"
+ },
+ {
+  "url": "https://www.laliga.com/en-GB/other-competitions/supercopa-de-espana",
+  "final": "https://www.laliga.com/en-GB/other-competitions/supercopa-de-espana",
+  "status": 200,
+  "secs": 0.8,
+  "bytes": 265277,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 1,
+   "nuxt": 0,
+   "json_ld": 10,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [
+   "https://apim-int.laliga.com/public-service",
+   "https://apim.laliga.com/public-service",
+   "https://apim.laliga.com/webview"
+  ],
+  "leagues": [
+   "col1",
+   "egy1",
+   "bra2",
+   "mar1",
+   "rou1",
+   "cze1",
+   "per1",
+   "bol1",
+   "chi1",
+   "ssc"
+  ],
+  "domain": "laliga.com"
+ },
+ {
+  "url": "https://www.leagueofireland.ie/",
+  "final": "https://www.leagueofireland.ie/",
+  "status": 200,
+  "secs": 0.5,
+  "bytes": 248302,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "irl1"
+  ],
+  "domain": "leagueofireland.ie"
+ },
+ {
+  "url": "https://www.leaguescup.com/",
+  "final": "https://www.leaguescup.com/",
+  "status": 200,
+  "secs": 2.2,
+  "bytes": 900954,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [
+   "https://dapi.leaguescup.com/v1",
+   "https://dapi.leaguescup.com/v2",
+   "https://dapi.mlssoccer.com/v1",
+   "https://forge-dapi.lc-prd.deltatre.digital/v2/content/en-us/brightcovevideos/goal-a-cervantes-vs-mty-64",
+   "https://forge-dapi.lc-prd.deltatre.digital/v2/content/en-us/brightcovevideos/goal-a-cervantes-vs-mty-64&quot;,&#xA;",
+   "https://forge-dapi.lc-prd.deltatre.digital/v2/content/en-us/brightcovevideos/goal-a-vega-vs-mty-4",
+   "https://forge-dapi.lc-prd.deltatre.digital/v2/content/en-us/brightcovevideos/goal-a-vega-vs-mty-4&quot;,&#xA;",
+   "https://forge-dapi.lc-prd.deltatre.digital/v2/content/en-us/brightcovevideos/goal-b-rodriguez-vs-clb-45-6"
+  ],
+  "leagues": [
+   "lec"
+  ],
+  "domain": "leaguescup.com"
+ },
+ {
+  "url": "https://www.legapallacanestro.com/",
+  "final": "https://www.legapallacanestro.com/",
+  "status": 200,
+  "secs": 0.7,
+  "bytes": 127237,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [
+   "https://www.krusokapital.com/"
+  ],
+  "leagues": [
+   "bkit2"
+  ],
+  "domain": "legapallacanestro.com"
+ },
+ {
+  "url": "https://www.legaseriea.it/en",
+  "final": "https://www.legaseriea.it/en",
+  "status": 307,
+  "secs": 1.1,
+  "bytes": 10922,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "sea"
+  ],
+  "domain": "legaseriea.it"
+ },
+ {
+  "url": "https://www.legaseriea.it/en/coppa-italia",
+  "final": "https://en.legaseriea.it/coppa-italia",
+  "status": 200,
+  "secs": 2.1,
+  "bytes": 669909,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 4,
+   "initial_state": 0,
+   "score_word": 24
+  },
+  "api_urls": [
+   "https://api-sdp.legaseriea.it/v1/\\",
+   "https://cf-blast.livelikecdn.com/api/v1\\",
+   "https://dapi.legaseriea.it/v2/content/en-gb/competitions/coppa-italia\\",
+   "https://dapi.legaseriea.it/v2/content/en-gb/competitions/serie-a\\",
+   "https://dapi.legaseriea.it/v2/content/en-gb/competitions/supercoppa\\",
+   "https://dapi.legaseriea.it/v2/content/en-gb/divavideos/coppa-italia-2026-2027-cagliari-arezzo\\",
+   "https://dapi.legaseriea.it/v2/content/en-gb/divavideos/coppa-italia-2026-2027-cagliari-verona\\",
+   "https://dapi.legaseriea.it/v2/content/en-gb/divavideos/coppa-italia-2026-2027-fiorentina-pisa\\"
+  ],
+  "leagues": [
+   "itc"
+  ],
+  "domain": "legaseriea.it"
+ },
+ {
+  "url": "https://www.legaseriea.it/en/supercoppa",
+  "final": "https://en.legaseriea.it/supercoppa",
+  "status": 200,
+  "secs": 2.3,
+  "bytes": 653051,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 4,
+   "initial_state": 0,
+   "score_word": 10
+  },
+  "api_urls": [
+   "https://api-sdp.legaseriea.it/v1/\\",
+   "https://cf-blast.livelikecdn.com/api/v1\\",
+   "https://dapi.legaseriea.it/v2/content/en-gb/competitions/coppa-italia\\",
+   "https://dapi.legaseriea.it/v2/content/en-gb/competitions/serie-a\\",
+   "https://dapi.legaseriea.it/v2/content/en-gb/competitions/supercoppa\\",
+   "https://dapi.legaseriea.it/v2/content/en-gb/divavideos/linear-123\\",
+   "https://dapi.legaseriea.it/v2/content/en-gb/divavideos/super-cup-2025-2026-bologna-inter\\",
+   "https://dapi.legaseriea.it/v2/content/en-gb/divavideos/super-cup-2025-2026-napoli-bologna\\"
+  ],
+  "leagues": [
+   "isc"
+  ],
+  "domain": "legaseriea.it"
+ },
+ {
+  "url": "https://www.legaserieb.it/",
+  "final": "https://www.legaserieb.it/",
+  "status": 403,
+  "secs": 0.4,
+  "bytes": 9,
+  "ctype": "text/plain",
+  "blocked": true,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "itsb"
+  ],
+  "domain": "legaserieb.it"
+ },
+ {
+  "url": "https://www.legavolley.it/",
+  "final": "https://www.legavolley.it/",
+  "status": 200,
+  "secs": 0.6,
+  "bytes": 359883,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 9
+  },
+  "api_urls": [
+   "https://api.w.org/",
+   "https://fonts.googleapis.com/css"
+  ],
+  "leagues": [
+   "vbsuperlega"
+  ],
+  "domain": "legavolley.it"
+ },
+ {
+  "url": "https://www.lidom.com/",
+  "final": "https://www.lidom.com/",
+  "status": 200,
+  "secs": 1.6,
+  "bytes": 512120,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 3,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [
+   "https://fonts.googleapis.com"
+  ],
+  "leagues": [
+   "lidom"
+  ],
+  "domain": "lidom.com"
+ },
+ {
+  "url": "https://www.ligagt.org/",
+  "final": "https://ligagt.org/",
+  "status": 200,
+  "secs": 3.0,
+  "bytes": 212617,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 1,
+   "initial_state": 0,
+   "score_word": 14
+  },
+  "api_urls": [
+   "https://api.w.org/",
+   "https://fonts.googleapis.com/css"
+  ],
+  "leagues": [
+   "gtm"
+  ],
+  "domain": "ligagt.org"
+ },
+ {
+  "url": "https://www.ligamx.net/",
+  "final": "https://www.ligamx.net/",
+  "status": 200,
+  "secs": 2.7,
+  "bytes": 659080,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 11
+  },
+  "api_urls": [
+   "http://mxfeed.matchanalysis.com/player-ranking-data.jsp",
+   "https://cldrsrcs.apilmx.com/v1/css/assets/bg/arriba.png",
+   "https://cldrsrcs.apilmx.com/v1/css/bootstrap.css",
+   "https://cldrsrcs.apilmx.com/v1/css/jquery.smartbanner.css",
+   "https://cldrsrcs.apilmx.com/v1/css/video-js.css",
+   "https://cldrsrcs.apilmx.com/v1/docs/archdgtl/AfldDrct/logos/",
+   "https://cldrsrcs.apilmx.com/v1/docs/archdgtl/AfldDrct/logos35x35/1/1.png",
+   "https://cldrsrcs.apilmx.com/v1/docs/archdgtl/AfldDrct/logos35x35/10445/10445.png"
+  ],
+  "leagues": [
+   "mex"
+  ],
+  "domain": "ligamx.net"
+ },
+ {
+  "url": "https://www.ligaportugal.pt/",
+  "final": "https://www.ligaportugal.pt/",
+  "status": 200,
+  "secs": 1.7,
+  "bytes": 1293594,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 2,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 109
+  },
+  "api_urls": [],
+  "leagues": [
+   "por",
+   "ptc"
+  ],
+  "domain": "ligaportugal.pt"
+ },
+ {
+  "url": "https://www.ligapro.ec/",
+  "status": "error",
+  "error": "<urlopen error timed out>",
+  "secs": 20.9,
+  "leagues": [
+   "ecu1"
+  ],
+  "domain": "ligapro.ec"
+ },
+ {
+  "url": "https://www.ligue1.com/",
+  "final": "https://ligue1.com/en",
+  "status": 200,
+  "secs": 1.9,
+  "bytes": 71121,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 1,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "frtc"
+  ],
+  "domain": "ligue1.com"
+ },
+ {
+  "url": "https://www.ligue2.fr/",
+  "final": "https://ligue1.com/fr/competitions/ligue2bkt",
+  "status": 200,
+  "secs": 1.4,
+  "bytes": 68738,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 1,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "fr2"
+  ],
+  "domain": "ligue2.fr"
+ },
+ {
+  "url": "https://www.liquipedia.net/dota2/Main_Page",
+  "final": "https://www.liquipedia.net/dota2/Main_Page",
+  "status": 403,
+  "secs": 0.7,
+  "bytes": 2059,
+  "ctype": "text/html",
+  "blocked": true,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "dota2"
+  ],
+  "domain": "liquipedia.net"
+ },
+ {
+  "url": "https://www.livgolf.com/",
+  "final": "https://www.livgolf.com/",
+  "status": 200,
+  "secs": 0.7,
+  "bytes": 452959,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 6,
+   "initial_state": 0,
+   "score_word": 54
+  },
+  "api_urls": [],
+  "leagues": [
+   "liv"
+  ],
+  "domain": "livgolf.com"
+ },
+ {
+  "url": "https://www.llct20.com/",
+  "final": "https://www.llct20.com/",
+  "status": 200,
+  "secs": 2.0,
+  "bytes": 69819,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 1
+  },
+  "api_urls": [
+   "https://fonts.googleapis.com/",
+   "https://fonts.googleapis.com/css2"
+  ],
+  "leagues": [
+   "criclcl"
+  ],
+  "domain": "llct20.com"
+ },
+ {
+  "url": "https://www.lmb.com.mx/",
+  "final": "https://lmb.com.mx/",
+  "status": 200,
+  "secs": 2.0,
+  "bytes": 154473,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 2,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [
+   "https://portland-data-prod-thumb.s3.amazonaws.com/5768f6e0-14f8-4b54-80cb-e00a3a3bfdf7/1080-00001.jpg\\",
+   "https://portland-data-prod-thumb.s3.amazonaws.com/579fe428-1823-4275-989c-19dea003755c/1080-00001.jpg\\",
+   "https://portland-data-prod-thumb.s3.amazonaws.com/e7896701-22c5-49c2-b293-0603a3d14e2b/1080-00001.jpg\\",
+   "https://portland-data-prod-thumb.s3.amazonaws.com/fc924a62-e13a-4097-bdb1-2f3ccd90bdd4/1080-00001.jpg\\"
+  ],
+  "leagues": [
+   "lmb"
+  ],
+  "domain": "lmb.com.mx"
+ },
+ {
+  "url": "https://www.lmp.mx/",
+  "final": "https://www.lmp.mx/",
+  "status": 403,
+  "secs": 0.3,
+  "bytes": 5575,
+  "ctype": "text/html",
+  "blocked": true,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "lmp"
+  ],
+  "domain": "lmp.mx"
+ },
+ {
+  "url": "https://www.lnb.fr/",
+  "final": "https://lnb.fr:443/fr",
+  "status": 200,
+  "secs": 0.9,
+  "bytes": 174558,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "bkfr1",
+   "bkfr2"
+  ],
+  "domain": "lnb.fr"
+ },
+ {
+  "url": "https://www.lnba.com.ar/",
+  "status": "error",
+  "error": "<urlopen error [Errno 11001] getaddrinfo failed>",
+  "secs": 0.3,
+  "leagues": [
+   "bkarg"
+  ],
+  "domain": "lnba.com.ar"
+ },
+ {
+  "url": "https://www.lnh.fr/",
+  "final": "https://www.lnh.fr/",
+  "status": 200,
+  "secs": 0.7,
+  "bytes": 212996,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 2
+  },
+  "api_urls": [
+   "https://fonts.googleapis.com",
+   "https://fonts.googleapis.com/css2",
+   "https://fonts.googleapis.com/icon"
+  ],
+  "leagues": [
+   "hblnh"
+  ],
+  "domain": "lnh.fr"
+ },
+ {
+  "url": "https://www.lnr.fr/pro-d2",
+  "final": "https://www.lnr.fr/pro-d2",
+  "status": 404,
+  "secs": 0.8,
+  "bytes": 53226,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 1,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [
+   "https://fonts.googleapis.com",
+   "https://fonts.googleapis.com/css2"
+  ],
+  "leagues": [
+   "ruprod2"
+  ],
+  "domain": "lnr.fr"
+ },
+ {
+  "url": "https://www.lnr.fr/top-14",
+  "final": "https://www.lnr.fr/top-14",
+  "status": 404,
+  "secs": 0.6,
+  "bytes": 53254,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 1,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [
+   "https://fonts.googleapis.com",
+   "https://fonts.googleapis.com/css2"
+  ],
+  "leagues": [
+   "rutopft"
+  ],
+  "domain": "lnr.fr"
+ },
+ {
+  "url": "https://www.lnv.fr/",
+  "final": "https://www.lnv.fr/accueil",
+  "status": 200,
+  "secs": 0.9,
+  "bytes": 54112,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 1
+  },
+  "api_urls": [
+   "https://fonts.googleapis.com/icon"
+  ],
+  "leagues": [
+   "vbliguea",
+   "vbligueb",
+   "vbligueaw"
+  ],
+  "domain": "lnv.fr"
+ },
+ {
+  "url": "https://www.lpga.com/",
+  "status": "error",
+  "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.",
+  "secs": 0.3,
+  "leagues": [
+   "lpga"
+  ],
+  "domain": "lpga.com"
+ },
+ {
+  "url": "https://www.lvbp.com/",
+  "final": "https://lvbp.com/",
+  "status": 200,
+  "secs": 3.7,
+  "bytes": 551105,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 1,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [
+   "https://api.w.org/",
+   "https://fonts.googleapis.com/css",
+   "https://stats.lvbp.com/calendario.php",
+   "https://stats.lvbp.com/colectivas.php",
+   "https://stats.lvbp.com/equipos.php",
+   "https://stats.lvbp.com/lideres.php",
+   "https://stats.lvbp.com/mlb.php",
+   "https://stats.lvbp.com/posiciones.php"
+  ],
+  "leagues": [
+   "lvbp"
+  ],
+  "domain": "lvbp.com"
+ },
+ {
+  "url": "https://www.mksz.hu/",
+  "final": "https://www.mksz.hu/",
+  "status": 200,
+  "secs": 0.5,
+  "bytes": 12069,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "hbnbi"
+  ],
+  "domain": "mksz.hu"
+ },
+ {
+  "url": "https://www.mlb.com/",
+  "final": "https://www.mlb.com/",
+  "status": 200,
+  "secs": 1.9,
+  "bytes": 1447452,
+  "ctype": "text/html",
+  "blocked": true,
+  "hints": {
+   "next_data": 1,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 15
+  },
+  "api_urls": [
+   "http://search-api.mlb.com",
+   "http://statsapi.mlb.com",
+   "http://statsapi.mlb.com/api/v1/sports/1",
+   "http://statsapi.mlb.com/api/v1/teams",
+   "https://dapi.cms.mlbinfra.com/v2/content",
+   "https://data-graph.mlb.com/graphql",
+   "https://fanatics-api.mlb.com",
+   "https://search-api.mlb.com"
+  ],
+  "leagues": [
+   "mlb"
+  ],
+  "domain": "mlb.com"
+ },
+ {
+  "url": "https://www.mls.com/",
+  "final": "https://www.mls.com/",
+  "status": 200,
+  "secs": 1.6,
+  "bytes": 46712,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 2,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "mls"
+  ],
+  "domain": "mls.com"
+ },
+ {
+  "url": "https://www.mlssoccer.com/",
+  "final": "https://www.mlssoccer.com/",
+  "status": 200,
+  "secs": 1.3,
+  "bytes": 336193,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [
+   "https://dapi.mlssoccer.com/v1",
+   "https://dapi.mlssoccer.com/v2",
+   "https://forge-dapi.mls-prd.deltatre.digital/v2/content/en-us/brightcovevideos/energy-moment-of-the-matchday-28-christian-ra",
+   "https://forge-dapi.mls-prd.deltatre.digital/v2/content/en-us/brightcovevideos/inter-miami-at-columbus-crew-were-the-big-cal",
+   "https://forge-dapi.mls-prd.deltatre.digital/v2/content/en-us/brightcovevideos/match-trailer-st-louis-city-s-unbeaten-streak",
+   "https://forge-dapi.mls-prd.deltatre.digital/v2/content/en-us/brightcovevideos/moves-of-the-matchday-best-skills-from-matchd",
+   "https://forge-dapi.mls-prd.deltatre.digital/v2/content/en-us/brightcovevideos/what-a-save-who-had-the-best-stop-in-matchday",
+   "https://forge-dapi.mls-prd.deltatre.digital/v2/content/en-us/photos/260929-thumbnail-eng-md28"
+  ],
+  "leagues": [
+   "ccup"
+  ],
+  "domain": "mlssoccer.com"
+ },
+ {
+  "url": "https://www.mlsz.hu/",
+  "status": "error",
+  "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain ",
+  "secs": 0.4,
+  "leagues": [
+   "hun"
+  ],
+  "domain": "mlsz.hu"
+ },
+ {
+  "url": "https://www.nascar.com",
+  "final": "https://www.nascar.com",
+  "status": 200,
+  "secs": 0.7,
+  "bytes": 246816,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 1,
+   "initial_state": 0,
+   "score_word": 7
+  },
+  "api_urls": [
+   "https://api.w.org/"
+  ],
+  "leagues": [
+   "nascar-xfinity",
+   "nascar",
+   "nascar-truck"
+  ],
+  "domain": "nascar.com"
+ },
+ {
+  "url": "https://www.nationalleague.ch/",
+  "final": "https://www.nationalleague.ch/",
+  "status": 200,
+  "secs": 0.6,
+  "bytes": 4634,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "snhl"
+  ],
+  "domain": "nationalleague.ch"
+ },
+ {
+  "url": "https://www.nba.com/",
+  "final": "https://www.nba.com/",
+  "status": 403,
+  "secs": 0.7,
+  "bytes": 365,
+  "ctype": "text/html",
+  "blocked": true,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "nba"
+  ],
+  "domain": "nba.com"
+ },
+ {
+  "url": "https://www.nba.com/summer-league",
+  "final": "https://www.nba.com/summer-league/2026",
+  "status": 200,
+  "secs": 4.5,
+  "bytes": 638453,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 1,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 16
+  },
+  "api_urls": [
+   "https://content-api-prod.nba.com/public/1/leagues/nba/content/page/2208216",
+   "https://content-api-prod.nba.com/public/1/leagues/nba/content/page/2208223",
+   "https://content-api-prod.nba.com/public/1/leagues/nba/content/page/2208224",
+   "https://content-api-prod.nba.com/public/1/leagues/nba/content/page/2208225",
+   "https://content-api-prod.nba.com/public/1/leagues/nba/content/page/2208226",
+   "https://content-api-prod.nba.com/public/1/leagues/nba/content/page/2208227",
+   "https://content-api-prod.nba.com/public/1/leagues/nba/content/page/2208272",
+   "https://content-api-prod.nba.com/public/1/leagues/nba/content/page/2208273"
+  ],
+  "leagues": [
+   "nbasl"
+  ],
+  "domain": "nba.com"
+ },
+ {
+  "url": "https://www.nbl.com.au/",
+  "final": "https://www.nbl.com.au/",
+  "status": 200,
+  "secs": 1.3,
+  "bytes": 1149346,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 1,
+   "initial_state": 0,
+   "score_word": 404
+  },
+  "api_urls": [
+   "https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js",
+   "https://api.ipify.org",
+   "https://fonts.googleapis.com"
+  ],
+  "leagues": [
+   "bknbl"
+  ],
+  "domain": "nbl.com.au"
+ },
+ {
+  "url": "https://www.nbl.cz/",
+  "final": "http://nbl.basketball/",
+  "status": 200,
+  "secs": 3.8,
+  "bytes": 719947,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "bkcze"
+  ],
+  "domain": "nbl.cz"
+ },
+ {
+  "url": "https://www.nbl.kz/",
+  "final": "https://nbl.kz/",
+  "status": 200,
+  "secs": 4.2,
+  "bytes": 86176,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [
+   "https://api-maps.yandex.ru/2.1/",
+   "https://api.w.org/"
+  ],
+  "leagues": [
+   "bkkaz",
+   "bkkz2"
+  ],
+  "domain": "nbl.kz"
+ },
+ {
+  "url": "https://www.ncaa.com/",
+  "final": "https://www.ncaa.com/",
+  "status": 200,
+  "secs": 1.7,
+  "bytes": 143237,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 1,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [
+   "https://data.ncaa.com",
+   "https://fonts.googleapis.com"
+  ],
+  "leagues": [
+   "cfb",
+   "cbb"
+  ],
+  "domain": "ncaa.com"
+ },
+ {
+  "url": "https://www.ncaa.com/march-madness-live/bracket",
+  "final": "https://www.ncaa.com/march-madness-live/bracket",
+  "status": 200,
+  "secs": 3.2,
+  "bytes": 470466,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 1,
+   "initial_state": 1,
+   "score_word": 268
+  },
+  "api_urls": [],
+  "leagues": [
+   "ncaab"
+  ],
+  "domain": "ncaa.com"
+ },
+ {
+  "url": "https://www.ncaa.com/sports/baseball/d1",
+  "final": "https://www.ncaa.com/sports/baseball/d1",
+  "status": 200,
+  "secs": 2.4,
+  "bytes": 136351,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 1,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [
+   "https://data.ncaa.com",
+   "https://fonts.googleapis.com"
+  ],
+  "leagues": [
+   "ncaabaseball"
+  ],
+  "domain": "ncaa.com"
+ },
+ {
+  "url": "https://www.ncaa.com/sports/basketball-women/d1",
+  "final": "https://www.ncaa.com/sports/basketball-women/d1",
+  "status": 200,
+  "secs": 1.3,
+  "bytes": 138523,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 1,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [
+   "https://data.ncaa.com",
+   "https://fonts.googleapis.com"
+  ],
+  "leagues": [
+   "cwbb"
+  ],
+  "domain": "ncaa.com"
+ },
+ {
+  "url": "https://www.ncaa.com/sports/lacrosse-men/d1",
+  "final": "https://www.ncaa.com/sports/lacrosse-men/d1",
+  "status": 200,
+  "secs": 2.1,
+  "bytes": 141148,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 1,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [
+   "https://data.ncaa.com",
+   "https://fonts.googleapis.com"
+  ],
+  "leagues": [
+   "ncaalax"
+  ],
+  "domain": "ncaa.com"
+ },
+ {
+  "url": "https://www.ncaa.com/sports/lacrosse-women/d1",
+  "final": "https://www.ncaa.com/sports/lacrosse-women/d1",
+  "status": 200,
+  "secs": 1.3,
+  "bytes": 141063,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 1,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [
+   "https://data.ncaa.com",
+   "https://fonts.googleapis.com"
+  ],
+  "leagues": [
+   "ncaawlax"
+  ],
+  "domain": "ncaa.com"
+ },
+ {
+  "url": "https://www.nfl.com/",
+  "final": "https://www.nfl.com/international",
+  "status": 200,
+  "secs": 2.6,
+  "bytes": 1077066,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 174
+  },
+  "api_urls": [
+   "https://api.nfl.com",
+   "https://api.nfl.com\\",
+   "https://apis.google.com",
+   "https://apis.google.com\\",
+   "https://flags.api.nfl.com/api/v1/\\",
+   "https://imasdk.googleapis.com/js/sdkloader/gpt_proxy.js",
+   "https://imasdk.googleapis.com/js/sdkloader/gpt_proxy.js\\",
+   "https://nextgenstats.nfl.com/stats/"
+  ],
+  "leagues": [
+   "nfl"
+  ],
+  "domain": "nfl.com"
+ },
+ {
+  "url": "https://www.nhl.com/",
+  "final": "https://www.nhl.com/",
+  "status": 200,
+  "secs": 0.8,
+  "bytes": 384379,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 1
+  },
+  "api_urls": [
+   "https://fonts.googleapis.com",
+   "https://fonts.googleapis.com/css2",
+   "https://storage.googleapis.com"
+  ],
+  "leagues": [
+   "nhl"
+  ],
+  "domain": "nhl.com"
+ },
+ {
+  "url": "https://www.nifootballleague.com/",
+  "final": "https://www.nifootballleague.com/",
+  "status": 403,
+  "secs": 0.4,
+  "bytes": 5521,
+  "ctype": "text/html",
+  "blocked": true,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "nirl1"
+  ],
+  "domain": "nifootballleague.com"
+ },
+ {
+  "url": "https://www.nrl.com/",
+  "final": "https://www.nrl.com/",
+  "status": 200,
+  "secs": 2.4,
+  "bytes": 238025,
+  "ctype": "text/html",
+  "blocked": true,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 41
+  },
+  "api_urls": [],
+  "leagues": [
+   "rlnrl"
+  ],
+  "domain": "nrl.com"
+ },
+ {
+  "url": "https://www.nwslsoccer.com/",
+  "final": "https://www.nwslsoccer.com/",
+  "status": 200,
+  "secs": 1.4,
+  "bytes": 344281,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 2,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [
+   "https://dapi.nwslsoccer.com/v2/content/en-us/photos/21x9-4-x0489\\",
+   "https://dapi.nwslsoccer.com/v2/content/en-us/photos/gettyimages-2297160775\\",
+   "https://dapi.nwslsoccer.com/v2/content/en-us/photos/gettyimages-2298684138\\",
+   "https://dapi.nwslsoccer.com/v2/content/en-us/photos/nwsl-2026-howtowatch-21x9-bos\\",
+   "https://dapi.nwslsoccer.com/v2/content/en-us/photos/nwsl-2026-howtowatch-21x9-gfc\\",
+   "https://dapi.nwslsoccer.com/v2/content/en-us/photos/nwsl-2026-howtowatch-21x9-hou\\",
+   "https://dapi.nwslsoccer.com/v2/content/en-us/photos/nwsl-2026-howtowatch-21x9\\",
+   "https://dapi.nwslsoccer.com/v2/content/en-us/photos/potm-21x9-x3859\\"
+  ],
+  "leagues": [
+   "nwsl"
+  ],
+  "domain": "nwslsoccer.com"
+ },
+ {
+  "url": "https://www.obosligaen.no/",
+  "final": "https://www.obos-ligaen.no/",
+  "status": 200,
+  "secs": 1.0,
+  "bytes": 120186,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 40
+  },
+  "api_urls": [],
+  "leagues": [
+   "nor2"
+  ],
+  "domain": "obosligaen.no"
+ },
+ {
+  "url": "https://www.oceaniafootball.com/",
+  "final": "https://www.oceaniafootball.com/",
+  "status": 200,
+  "secs": 2.4,
+  "bytes": 170527,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 1,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [
+   "https://api.w.org/",
+   "https://fonts.googleapis.com/css",
+   "https://maps.googleapis.com/maps/api/js",
+   "https://stats.wp.com/e-202641.js"
+  ],
+  "leagues": [
+   "ofc",
+   "owq"
+  ],
+  "domain": "oceaniafootball.com"
+ },
+ {
+  "url": "https://www.oefb.at/",
+  "final": "https://www.oefb.at/",
+  "status": 200,
+  "secs": 0.6,
+  "bytes": 40830,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 7
+  },
+  "api_urls": [],
+  "leagues": [
+   "atc"
+  ],
+  "domain": "oefb.at"
+ },
+ {
+  "url": "https://www.olympics.com",
+  "status": "error",
+  "error": "The read operation timed out",
+  "secs": 20.3,
+  "leagues": [
+   "mwoh",
+   "wwoh"
+  ],
+  "domain": "olympics.com"
+ },
+ {
+  "url": "https://www.pdc.tv/",
+  "final": "https://www.pdc.tv/",
+  "status": 200,
+  "secs": 1.4,
+  "bytes": 1235770,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 2,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 13
+  },
+  "api_urls": [
+   "https://fonts.googleapis.com/css2"
+  ],
+  "leagues": [
+   "darts",
+   "pdcdarts"
+  ],
+  "domain": "pdc.tv"
+ },
+ {
+  "url": "https://www.penny-del.org/en/del/schedule-and-results.html",
+  "final": "https://www.penny-del.org/en/del/schedule-and-results.html",
+  "status": 404,
+  "secs": 0.7,
+  "bytes": 2896,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "dehl"
+  ],
+  "domain": "penny-del.org"
+ },
+ {
+  "url": "https://www.pfl.az/",
+  "final": "https://www.pfl.az/",
+  "status": 200,
+  "secs": 0.7,
+  "bytes": 1012,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "aze1",
+   "aze2"
+  ],
+  "domain": "pfl.az"
+ },
+ {
+  "url": "https://www.pgatour.com/",
+  "final": "https://www.pgatour.com/",
+  "status": 200,
+  "secs": 6.4,
+  "bytes": 1987506,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 1,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "pga"
+  ],
+  "domain": "pgatour.com"
+ },
+ {
+  "url": "https://www.pgatour.com/korn-ferry-tour",
+  "final": "https://www.pgatour.com/korn-ferry-tour",
+  "status": 200,
+  "secs": 4.2,
+  "bytes": 1515675,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 1,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "kft"
+  ],
+  "domain": "pgatour.com"
+ },
+ {
+  "url": "https://www.plusliga.pl/",
+  "final": "https://www.tauronliga.pl/strona-glowna/nocookies/1.html",
+  "status": 200,
+  "secs": 3.9,
+  "bytes": 542946,
+  "ctype": "text/html",
+  "blocked": true,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 150
+  },
+  "api_urls": [],
+  "leagues": [
+   "vbplusliga"
+  ],
+  "domain": "plusliga.pl"
+ },
+ {
+  "url": "https://www.powerslap.com/",
+  "final": "https://www.powerslap.com/",
+  "status": 200,
+  "secs": 0.7,
+  "bytes": 281119,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 1,
+   "initial_state": 0,
+   "score_word": 5
+  },
+  "api_urls": [],
+  "leagues": [
+   "powerslap"
+  ],
+  "domain": "powerslap.com"
+ },
+ {
+  "url": "https://www.premierleague.com/",
+  "final": "https://www.premierleague.com/",
+  "status": 200,
+  "secs": 0.5,
+  "bytes": 125929,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 1
+  },
+  "api_urls": [
+   "https://api.pingone.eu/v1",
+   "https://api.premierleague.com/adobe",
+   "https://api.premierleague.com/payment-integration/api/payment/signature/generation",
+   "https://api.premierleague.com/personalisation",
+   "https://api.premierleague.com/preferences/user/preferences",
+   "https://resources.premierleague.pulselive.com/photo-resources/2023/01/26/11fe030b-2b2e-41ed-8f34-be72a8403ea0/Barclays_Sponso",
+   "https://resources.premierleague.pulselive.com/photo-resources/2023/01/26/29bca766-5224-4166-b20b-3aac01e67fb9/AD_Sponsor.png",
+   "https://resources.premierleague.pulselive.com/photo-resources/2024/06/01/f620e214-5330-4021-b382-183e6b564a64/Rezzil_Logo.png"
+  ],
+  "leagues": [
+   "epl"
+  ],
+  "domain": "premierleague.com"
+ },
+ {
+  "url": "https://www.premiershiprugby.com/",
+  "final": "https://www.premrugby.com/",
+  "status": 200,
+  "secs": 2.4,
+  "bytes": 1461519,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 2,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 100
+  },
+  "api_urls": [
+   "https://api.streamplay.streamamg.com/fixtures/rugby_union/p/3000914",
+   "https://article-cms-api.incrowdsports.com/v2/articles",
+   "https://feeds.incrowdsports.com/provider/forms-management-system/v1",
+   "https://feeds.incrowdsports.com/provider/media-management/v1",
+   "https://feeds.incrowdsports.com/provider/navigation-management-system/v1/clients",
+   "https://feeds.incrowdsports.com/provider/navigation-management-system/v1/clients/PRL/navigations",
+   "https://rugby-union-feeds.incrowdsports.com/v1/matches",
+   "https://www.premiershiprugbydata.com/"
+  ],
+  "leagues": [
+   "ruprem"
+  ],
+  "domain": "premiershiprugby.com"
+ },
+ {
+  "url": "https://www.proleague.be/",
+  "final": "https://www.proleague.be/",
+  "status": 200,
+  "secs": 1.0,
+  "bytes": 254216,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 1,
+   "nuxt": 0,
+   "json_ld": 1,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [
+   "https://apim-maker.llt-services.com/",
+   "https://apim-maker.llt-services.com/makerweb/",
+   "https://fonts.googleapis.com",
+   "https://fonts.googleapis.com/css2"
+  ],
+  "leagues": [
+   "bel1",
+   "bel2"
+  ],
+  "domain": "proleague.be"
+ },
+ {
+  "url": "https://www.prorodeo.com/",
+  "final": "https://www.prorodeo.com/",
+  "status": 200,
+  "secs": 0.3,
+  "bytes": 212,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "rodeo"
+  ],
+  "domain": "prorodeo.com"
+ },
+ {
+  "url": "https://www.prvaliga.si/",
+  "final": "https://www.nzs.si/klubi/moski/prva-liga-telemach",
+  "status": 200,
+  "secs": 4.1,
+  "bytes": 608568,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 180
+  },
+  "api_urls": [],
+  "leagues": [
+   "slo"
+  ],
+  "domain": "prvaliga.si"
+ },
+ {
+  "url": "https://www.psl.co.za/",
+  "final": "https://www.psl.co.za/",
+  "status": 200,
+  "secs": 3.7,
+  "bytes": 176703,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 33
+  },
+  "api_urls": [
+   "https://fonts.googleapis.com/css"
+  ],
+  "leagues": [
+   "saf1"
+  ],
+  "domain": "psl.co.za"
+ },
+ {
+  "url": "https://www.qsl.com.qa/",
+  "status": "error",
+  "error": "<urlopen error timed out>",
+  "secs": 20.7,
+  "leagues": [
+   "qat1"
+  ],
+  "domain": "qsl.com.qa"
+ },
+ {
+  "url": "https://www.rugby-league.com/competitions/pro-national/betfred-challenge-cup",
+  "final": "https://www.rugby-league.com/competitions/pro-national/betfred-challenge-cup",
+  "status": 200,
+  "secs": 2.2,
+  "bytes": 167385,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 5
+  },
+  "api_urls": [
+   "https://maps.googleapis.com/maps/api/js"
+  ],
+  "leagues": [
+   "rlchallenge"
+  ],
+  "domain": "rugby-league.com"
+ },
+ {
+  "url": "https://www.sarugby.co.za/",
+  "final": "https://springboks.rugby/",
+  "status": 200,
+  "secs": 2.6,
+  "bytes": 55234,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 6
+  },
+  "api_urls": [],
+  "leagues": [
+   "ruchamp"
+  ],
+  "domain": "sarugby.co.za"
+ },
+ {
+  "url": "https://www.scottishfa.co.uk/",
+  "final": "https://www.scottishfa.co.uk/en",
+  "status": 200,
+  "secs": 1.0,
+  "bytes": 618531,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 43
+  },
+  "api_urls": [],
+  "leagues": [
+   "scoc"
+  ],
+  "domain": "scottishfa.co.uk"
+ },
+ {
+  "url": "https://www.sixnationsrugby.com/",
+  "final": "https://www.sixnationsrugby.com/en",
+  "status": 200,
+  "secs": 1.1,
+  "bytes": 371679,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 2,
+   "initial_state": 0,
+   "score_word": 15
+  },
+  "api_urls": [],
+  "leagues": [
+   "rusixnat"
+  ],
+  "domain": "sixnationsrugby.com"
+ },
+ {
+  "url": "https://www.slgr.gr/",
+  "final": "https://www.slgr.gr/el/",
+  "status": 200,
+  "secs": 1.4,
+  "bytes": 825290,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "gre1"
+  ],
+  "domain": "slgr.gr"
+ },
+ {
+  "url": "https://www.slovakbasket.sk/",
+  "final": "https://slovakbasket.sk/sk/",
+  "status": 200,
+  "secs": 2.3,
+  "bytes": 231885,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 52
+  },
+  "api_urls": [],
+  "leagues": [
+   "bksvk"
+  ],
+  "domain": "slovakbasket.sk"
+ },
+ {
+  "url": "https://www.slstat.com/",
+  "final": "https://www.slstat.com/",
+  "status": 200,
+  "secs": 1.0,
+  "bytes": 1,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "skc"
+  ],
+  "domain": "slstat.com"
+ },
+ {
+  "url": "https://www.spl.com.sa/",
+  "final": "https://www.spl.com.sa/en",
+  "status": 200,
+  "secs": 2.7,
+  "bytes": 1211862,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 2,
+   "initial_state": 0,
+   "score_word": 101
+  },
+  "api_urls": [
+   "https://api-sdp.spl.com.sa/v1/\\",
+   "https://dapi.spl.com.sa/v2/content/en-gb/albums/fresh-fits-kits-of-the-2026-27-rsl\\",
+   "https://dapi.spl.com.sa/v2/content/en-gb/competitions/saudi-pro-league\\",
+   "https://dapi.spl.com.sa/v2/content/en-gb/photos/44a8acfb-3010-4616-a76b-4af89fa30e9dm-209994\\",
+   "https://dapi.spl.com.sa/v2/content/en-gb/photos/5678fd8e-809c-4cd2-b674-4c586c979b9a\\",
+   "https://dapi.spl.com.sa/v2/content/en-gb/photos/7747ac5c-147e-4b40-b051-e4964fff34ecalshabab-24-abdulra",
+   "https://dapi.spl.com.sa/v2/content/en-gb/photos/al-hilal-fans-unfurl-amazing-tifo-during-home-match-wit",
+   "https://dapi.spl.com.sa/v2/content/en-gb/photos/al-nassr-drop-points-at-al-khaleej-powered-by-toyota\\"
+  ],
+  "leagues": [
+   "spl"
+  ],
+  "domain": "spl.com.sa"
+ },
+ {
+  "url": "https://www.superettan.se/",
+  "final": "https://superettan.se/",
+  "status": 200,
+  "secs": 0.9,
+  "bytes": 56498,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [
+   "https://api.w.org/"
+  ],
+  "leagues": [
+   "swe2"
+  ],
+  "domain": "superettan.se"
+ },
+ {
+  "url": "https://www.superleague.co.uk/",
+  "final": "https://www.superleague.co.uk/",
+  "status": 200,
+  "secs": 1.0,
+  "bytes": 87201,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 1,
+   "initial_state": 0,
+   "score_word": 35
+  },
+  "api_urls": [],
+  "leagues": [
+   "rlsuper"
+  ],
+  "domain": "superleague.co.uk"
+ },
+ {
+  "url": "https://www.superliga.dk/",
+  "final": "https://www.superliga.dk/",
+  "status": 200,
+  "secs": 1.1,
+  "bytes": 173689,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 1,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "den"
+  ],
+  "domain": "superliga.dk"
+ },
+ {
+  "url": "https://www.svleague.jp/",
+  "final": "https://www.svleague.jp/",
+  "status": 200,
+  "secs": 1.8,
+  "bytes": 82523,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [
+   "https://fonts.googleapis.com",
+   "https://fonts.googleapis.com/css2"
+  ],
+  "leagues": [
+   "vbsvleague"
+  ],
+  "domain": "svleague.jp"
+ },
+ {
+  "url": "https://www.tbl.org.tr/",
+  "status": "error",
+  "error": "<urlopen error [Errno 11002] getaddrinfo failed>",
+  "secs": 3.4,
+  "leagues": [
+   "bkbsl"
+  ],
+  "domain": "tbl.org.tr"
+ },
+ {
+  "url": "https://www.tff.org/",
+  "final": "https://www.tff.org/",
+  "status": 200,
+  "secs": 0.9,
+  "bytes": 177102,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [
+   "https://platform-api.sharethis.com/js/sharethis.js#property=683f4fb8bde97c0013e1dfb5&product=sharing-intelligence"
+  ],
+  "leagues": [
+   "tur2"
+  ],
+  "domain": "tff.org"
+ },
+ {
+  "url": "https://www.the-afc.com/",
+  "final": "https://www.the-afc.com/",
+  "status": 200,
+  "secs": 1.2,
+  "bytes": 27667,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "acle",
+   "afcl",
+   "aswq"
+  ],
+  "domain": "the-afc.com"
+ },
+ {
+  "url": "https://www.the-afc.com/en/home.html",
+  "final": "https://www.the-afc.com/en/home.html",
+  "status": 200,
+  "secs": 0.6,
+  "bytes": 5362,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "afc"
+  ],
+  "domain": "the-afc.com"
+ },
+ {
+  "url": "https://www.thecfa.cn/",
+  "final": "https://www.thecfa.cn/",
+  "status": 200,
+  "secs": 3.0,
+  "bytes": 146036,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 12
+  },
+  "api_urls": [
+   "https://data.thecfa.cn/gameplans.do",
+   "https://data.thecfa.cn/scoreboard.do",
+   "https://data.thecfa.cn/shooter.do"
+  ],
+  "leagues": [
+   "chi2",
+   "chfa"
+  ],
+  "domain": "thecfa.cn"
+ },
+ {
+  "url": "https://www.thefa.com/",
+  "final": "https://www.thefa.com/",
+  "status": 200,
+  "secs": 1.1,
+  "bytes": 212116,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 13
+  },
+  "api_urls": [],
+  "leagues": [
+   "ecs"
+  ],
+  "domain": "thefa.com"
+ },
+ {
+  "url": "https://www.thefa.com/competitions/thefacup",
+  "final": "https://www.thefa.com/competitions/thefacup",
+  "status": 200,
+  "secs": 1.2,
+  "bytes": 173657,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 23
+  },
+  "api_urls": [],
+  "leagues": [
+   "efa"
+  ],
+  "domain": "thefa.com"
+ },
+ {
+  "url": "https://www.thenationalleague.org.uk/",
+  "final": "https://www.thenationalleague.org.uk/",
+  "status": 200,
+  "secs": 0.9,
+  "bytes": 1288784,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 2,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 18
+  },
+  "api_urls": [],
+  "leagues": [
+   "enl"
+  ],
+  "domain": "thenationalleague.org.uk"
+ },
+ {
+  "url": "https://www.theufl.com/",
+  "final": "https://www.theufl.com/",
+  "status": 200,
+  "secs": 1.3,
+  "bytes": 425925,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 2,
+   "json_ld": 1,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [
+   "https://fonts.googleapis.com/css2",
+   "https://storage.googleapis.com/ufleague-prod/2026/06/03/37921d84-3f94-4cd1-a14c-e56f1924ae13.pdf"
+  ],
+  "leagues": [
+   "ufl"
+  ],
+  "domain": "theufl.com"
+ },
+ {
+  "url": "https://www.tigercricket.com.bd/",
+  "final": "https://www.tigercricket.com.bd/",
+  "status": 200,
+  "secs": 2.3,
+  "bytes": 128566,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 27
+  },
+  "api_urls": [
+   "https://fonts.googleapis.com",
+   "https://fonts.googleapis.com/css2",
+   "https://platform-api.sharethis.com/js/sharethis.js#property=62f75c40a2413d00197af5b6&product=inline-share-buttons"
+  ],
+  "leagues": [
+   "cricdhakadpl"
+  ],
+  "domain": "tigercricket.com.bd"
+ },
+ {
+  "url": "https://www.tt-series.com",
+  "final": "https://www.tt-series.com",
+  "status": 200,
+  "secs": 1.9,
+  "bytes": 127823,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 11
+  },
+  "api_urls": [
+   "https://api.w.org/",
+   "https://fonts.googleapis.com/css"
+  ],
+  "leagues": [
+   "ttelite"
+  ],
+  "domain": "tt-series.com"
+ },
+ {
+  "url": "https://www.ttbl.de/",
+  "final": "https://www.ttbl.de/",
+  "status": 200,
+  "secs": 0.9,
+  "bytes": 292506,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 1,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "ttbl"
+  ],
+  "domain": "ttbl.de"
+ },
+ {
+  "url": "https://www.tvf.org.tr/",
+  "final": "https://tvf.org.tr/",
+  "status": 200,
+  "secs": 1.1,
+  "bytes": 327774,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 26
+  },
+  "api_urls": [
+   "https://festistatistik.anatoliandata.com/",
+   "https://fonts.googleapis.com",
+   "https://fonts.googleapis.com/css2"
+  ],
+  "leagues": [
+   "vbefeler"
+  ],
+  "domain": "tvf.org.tr"
+ },
+ {
+  "url": "https://www.uci.org",
+  "final": "https://www.uci.org",
+  "status": 200,
+  "secs": 0.4,
+  "bytes": 69818,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 1
+  },
+  "api_urls": [],
+  "leagues": [
+   "cycling"
+  ],
+  "domain": "uci.org"
+ },
+ {
+  "url": "https://www.uefa.com/",
+  "status": "error",
+  "error": "The read operation timed out",
+  "secs": 20.3,
+  "leagues": [
+   "ewq",
+   "uef",
+   "ueq"
+  ],
+  "domain": "uefa.com"
+ },
+ {
+  "url": "https://www.uefa.com/euro2024/",
+  "status": "error",
+  "error": "The read operation timed out",
+  "secs": 20.2,
+  "leagues": [
+   "euc"
+  ],
+  "domain": "uefa.com"
+ },
+ {
+  "url": "https://www.uefa.com/uefachampionsleague/",
+  "status": "error",
+  "error": "The read operation timed out",
+  "secs": 20.2,
+  "leagues": [
+   "ucl"
+  ],
+  "domain": "uefa.com"
+ },
+ {
+  "url": "https://www.uefa.com/uefaconferenceleague/",
+  "status": "error",
+  "error": "The read operation timed out",
+  "secs": 20.2,
+  "leagues": [
+   "col"
+  ],
+  "domain": "uefa.com"
+ },
+ {
+  "url": "https://www.uefa.com/uefaeuropaleague/",
+  "status": "error",
+  "error": "The read operation timed out",
+  "secs": 20.2,
+  "leagues": [
+   "uel"
+  ],
+  "domain": "uefa.com"
+ },
+ {
+  "url": "https://www.uefa.com/uefanationsleague/",
+  "status": "error",
+  "error": "The read operation timed out",
+  "secs": 20.2,
+  "leagues": [
+   "unl"
+  ],
+  "domain": "uefa.com"
+ },
+ {
+  "url": "https://www.uefa.com/uefasupercup/",
+  "status": "error",
+  "error": "The read operation timed out",
+  "secs": 20.2,
+  "leagues": [
+   "usc"
+  ],
+  "domain": "uefa.com"
+ },
+ {
+  "url": "https://www.uefa.com/womenschampionsleague/",
+  "status": "error",
+  "error": "The read operation timed out",
+  "secs": 20.6,
+  "leagues": [
+   "uwcl"
+  ],
+  "domain": "uefa.com"
+ },
+ {
+  "url": "https://www.uefa.com/womenseuro/",
+  "status": "error",
+  "error": "[WinError 10054] An existing connection was forcibly closed by the remote host",
+  "secs": 19.6,
+  "leagues": [
+   "weuq",
+   "weuc"
+  ],
+  "domain": "uefa.com"
+ },
+ {
+  "url": "https://www.uefa.com/womenseuropacup/",
+  "status": "error",
+  "error": "The read operation timed out",
+  "secs": 20.2,
+  "leagues": [
+   "uwec"
+  ],
+  "domain": "uefa.com"
+ },
+ {
+  "url": "https://www.ufc.com/",
+  "final": "https://www.ufc.com/",
+  "status": 200,
+  "secs": 0.6,
+  "bytes": 213018,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [
+   "https://api.btloader.com/"
+  ],
+  "leagues": [
+   "ufc",
+   "zuffa"
+  ],
+  "domain": "ufc.com"
+ },
+ {
+  "url": "https://www.unafut.com/",
+  "final": "https://www.unafut.com/",
+  "status": 200,
+  "secs": 0.9,
+  "bytes": 87274,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 1,
+   "initial_state": 0,
+   "score_word": 2
+  },
+  "api_urls": [
+   "https://fonts.googleapis.com",
+   "https://fonts.googleapis.com/css2",
+   "https://platform-api.sharethis.com/js/sharethis.js#property=67648204c433c60012502ebd&product=inline-share-buttons&"
+  ],
+  "leagues": [
+   "fpd"
+  ],
+  "domain": "unafut.com"
+ },
+ {
+  "url": "https://www.unitedrugby.com/",
+  "final": "https://www.unitedrugby.com/",
+  "status": 200,
+  "secs": 0.5,
+  "bytes": 613729,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 319
+  },
+  "api_urls": [
+   "https://fonts.googleapis.com/css2",
+   "https://stats.unitedrugby.com/clubs",
+   "https://stats.unitedrugby.com/clubs/10bet-lions",
+   "https://stats.unitedrugby.com/clubs/benetton",
+   "https://stats.unitedrugby.com/clubs/cardiff-rugby",
+   "https://stats.unitedrugby.com/clubs/connacht",
+   "https://stats.unitedrugby.com/clubs/dhl-stormers",
+   "https://stats.unitedrugby.com/clubs/dragons-rfc"
+  ],
+  "leagues": [
+   "ruurc"
+  ],
+  "domain": "unitedrugby.com"
+ },
+ {
+  "url": "https://www.uslchampionship.com/",
+  "final": "https://www.uslchampionship.com/",
+  "status": 200,
+  "secs": 0.7,
+  "bytes": 139255,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 2
+  },
+  "api_urls": [
+   "https://apis.google.com/js/client.js"
+  ],
+  "leagues": [
+   "uslc"
+  ],
+  "domain": "uslchampionship.com"
+ },
+ {
+  "url": "https://www.uslleagueone.com/",
+  "final": "https://www.uslleagueone.com/",
+  "status": 200,
+  "secs": 0.5,
+  "bytes": 134466,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 2
+  },
+  "api_urls": [
+   "https://apis.google.com/js/client.js"
+  ],
+  "leagues": [
+   "usl1"
+  ],
+  "domain": "uslleagueone.com"
+ },
+ {
+  "url": "https://www.ussoccer.com/us-open-cup",
+  "final": "https://www.ussoccer.com/us-open-cup",
+  "status": 200,
+  "secs": 1.7,
+  "bytes": 1744826,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 276
+  },
+  "api_urls": [
+   "http://player.listenlive.co/58291\\"
+  ],
+  "leagues": [
+   "usoc"
+  ],
+  "domain": "ussoccer.com"
+ },
+ {
+  "url": "https://www.veikkausliiga.com/",
+  "status": "error",
+  "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.",
+  "secs": 0.3,
+  "leagues": [
+   "fin1"
+  ],
+  "domain": "veikkausliiga.com"
+ },
+ {
+  "url": "https://www.virsliga.lv/",
+  "status": "error",
+  "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1082)>",
+  "secs": 0.5,
+  "leagues": [
+   "lva1"
+  ],
+  "domain": "virsliga.lv"
+ },
+ {
+  "url": "https://www.volleyball-bundesliga.de/",
+  "final": "https://www.volleyball-bundesliga.de/",
+  "status": 200,
+  "secs": 3.4,
+  "bytes": 155211,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [
+   "https://live.volleyball-bundesliga.de/partner/Sport%40Leonardo%20Hotels_Angebot.pdf"
+  ],
+  "leagues": [
+   "vb2bundesliga",
+   "vbbundesligaw",
+   "vb2bundesligaw",
+   "vbbundesliga"
+  ],
+  "domain": "volleyball-bundesliga.de"
+ },
+ {
+  "url": "https://www.volleybelgium.be/",
+  "final": "https://www.volleybelgium.be/nl/",
+  "status": 200,
+  "secs": 1.2,
+  "bytes": 67322,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 3
+  },
+  "api_urls": [
+   "http://livescore.volleyadmin2.be",
+   "https://api.w.org/",
+   "https://fonts.googleapis.com/css"
+  ],
+  "leagues": [
+   "vbbelligaa"
+  ],
+  "domain": "volleybelgium.be"
+ },
+ {
+  "url": "https://www.vtb-league.com/en/",
+  "final": "https://vtb-league.com/en/",
+  "status": 200,
+  "secs": 1.7,
+  "bytes": 93575,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [
+   "https://api.vtb-league.com",
+   "https://api.w.org/",
+   "https://fonts.googleapis.com/css"
+  ],
+  "leagues": [
+   "bkvtb"
+  ],
+  "domain": "vtb-league.com"
+ },
+ {
+  "url": "https://www.wimbledon.com/en_GB/scores/index.html",
+  "final": "https://www.wimbledon.com/en_GB/scores/live",
+  "status": 200,
+  "secs": 2.0,
+  "bytes": 231857,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "wimbledon"
+  ],
+  "domain": "wimbledon.com"
+ },
+ {
+  "url": "https://www.wnba.com/",
+  "final": "https://www.wnba.com/",
+  "status": 200,
+  "secs": 1.0,
+  "bytes": 272917,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 1,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 1
+  },
+  "api_urls": [
+   "https://stats.wnba.com"
+  ],
+  "leagues": [
+   "wnba"
+  ],
+  "domain": "wnba.com"
+ },
+ {
+  "url": "https://www.world.rugby/",
+  "final": "https://www.world.rugby/",
+  "status": 200,
+  "secs": 0.9,
+  "bytes": 615721,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 1,
+   "initial_state": 0,
+   "score_word": 1
+  },
+  "api_urls": [
+   "https://api.uk.exponea.com",
+   "https://resources.worldrugby-rims.pulselive.com/photo-resources/2023/07/06/2315fddd-7741-4aa1-91ad-86a58db925ed/BECOME-YOUR-OWN",
+   "https://resources.worldrugby-rims.pulselive.com/photo-resources/2023/07/18/4d4bd266-8fe2-4def-be69-3b7b6a5ff2bb/HSBC_SVNS_Serie",
+   "https://resources.worldrugby-rims.pulselive.com/photo-resources/2023/10/31/20d7a1e9-875b-4efa-b5e9-9c444774b875/RWC2025.png",
+   "https://resources.worldrugby-rims.pulselive.com/photo-resources/2024/07/09/479fc7fc-9be7-4f78-ae33-9741818dde69/2020-WR_Backgro",
+   "https://resources.worldrugby-rims.pulselive.com/photo-resources/2024/09/09/07b78b2c-11d9-4387-b629-7b87ffd8aafa/HSBC-Logo.png",
+   "https://resources.worldrugby-rims.pulselive.com/photo-resources/2024/11/20/801672b6-33c4-4873-99a6-07947d945d99/WizTeam-WR.png",
+   "https://resources.worldrugby-rims.pulselive.com/photo-resources/2024/12/11/a3bae807-8053-48ca-a533-7f222573e6bf/MRWC27.png"
+  ],
+  "leagues": [
+   "rurgr"
+  ],
+  "domain": "world.rugby"
+ },
+ {
+  "url": "https://www.worldtabletennis.com/",
+  "final": "https://www.worldtabletennis.com/",
+  "status": 200,
+  "secs": 0.5,
+  "bytes": 6438,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 0,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [
+   "https://fonts.googleapis.com/css",
+   "https://fonts.googleapis.com/icon"
+  ],
+  "leagues": [
+   "wttmen",
+   "wttwom"
+  ],
+  "domain": "worldtabletennis.com"
+ },
+ {
+  "url": "https://www.wslfootball.com/",
+  "final": "https://www.wslfootball.com/",
+  "status": 200,
+  "secs": 1.3,
+  "bytes": 1327151,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 6,
+   "initial_state": 0,
+   "score_word": 19
+  },
+  "api_urls": [
+   "https://api-sdp.wslfootball.com/v1/\\",
+   "https://api-sdp.wslfootball.com/v1/wpll/football/\\",
+   "https://dapi.wslfootball.com/v2/content/en-gb/competitions/barclays-wsl2\\",
+   "https://dapi.wslfootball.com/v2/content/en-gb/competitions/barclays-wsl\\",
+   "https://dapi.wslfootball.com/v2/content/en-gb/photos/1000037545\\",
+   "https://dapi.wslfootball.com/v2/content/en-gb/photos/2246965896\\",
+   "https://dapi.wslfootball.com/v2/content/en-gb/photos/2293635003\\",
+   "https://dapi.wslfootball.com/v2/content/en-gb/photos/2295058927\\"
+  ],
+  "leagues": [
+   "wsl",
+   "wsl2"
+  ],
+  "domain": "wslfootball.com"
+ },
+ {
+  "url": "https://www.wsop.com/",
+  "final": "https://www.wsop.com/",
+  "status": 200,
+  "secs": 1.1,
+  "bytes": 379974,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 2,
+   "json_ld": 1,
+   "initial_state": 0,
+   "score_word": 0
+  },
+  "api_urls": [],
+  "leagues": [
+   "poker"
+  ],
+  "domain": "wsop.com"
+ },
+ {
+  "url": "https://www.wtatennis.com/scores",
+  "final": "https://www.wtatennis.com/scores",
+  "status": 200,
+  "secs": 1.0,
+  "bytes": 204840,
+  "ctype": "text/html",
+  "blocked": false,
+  "hints": {
+   "next_data": 0,
+   "nuxt": 0,
+   "json_ld": 3,
+   "initial_state": 0,
+   "score_word": 1
+  },
+  "api_urls": [
+   "https://api.uk.exponea.com",
+   "https://api.wtatennis.com",
+   "https://jkulhg7io5.execute-api.us-east-1.amazonaws.com/prod/interactions",
+   "https://sdk.wta.pulselive-id.pulselive.com/v1.0.0/client.js",
+   "https://wta-api-qa.livelikeapp.com",
+   "https://wta-qa.livelikeapp.com"
+  ],
+  "leagues": [
+   "wta",
+   "wta-doubles"
+  ],
+  "domain": "wtatennis.com"
+ }
+]

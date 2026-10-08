@@ -59,3 +59,7 @@ ps-tester says no), add one row here, newest at the top of its table. One line e
 | 2026-10-08 | Long-tail league atlas (#22) | ps-ideas: 1% of games had fills, kill line 10% ([[R-2026-10-08]]) |
 | 2026-10-08 | Soccer lead 3+ from minute 70-80 | ps-ideas: No cheap fills; lead 2 has 1 draw in 31 ([[R-2026-10-08]]) |
 | 2026-10-08 | Pre-mint pairs / buy loser at 0.001 / Kalshi alarm | ps-ideas: Same book, wrong shape, needs login ([[R-2026-10-08]]) |
+| 2026-10-08 | Resting NO bids on far stock strikes (maker side) | ps-researcher: only 7 gambler buys at 1.5c+ in 22 sessions ([[R-2026-10-08]]) |
+| 2026-10-08 | Post-close stock-ladder sweep | ps-researcher: 93% of cheap fills within 2 min of close, speed race ([[R-2026-10-08]]) |
+| 2026-10-08 | Stock Up/Down markets as dead-strike source | ps-researcher: losers under 2 moves, ties pay 50/50 ([[R-2026-10-08]]) |
+| 2026-10-08 | ESPN win probability / game clock 5 min as row 4 guard | ps-researcher: loser fills had 0.999 and 1-2 min left ([[R-2026-10-08]]) |

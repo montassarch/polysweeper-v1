@@ -95,10 +95,13 @@ The lab updates this table every day. Every rejected or parked idea also goes in
 | 22 | **Long-tail league atlas**: leagues with no Polymarket result feed (lower soccer, cricket, table tennis) | Asks may linger where bots lack a feed | Abandoned match 50/50, score correction | new (2026-10-06) |
 | 23 | **Soccer locked lines** (Over / both-teams-score after goals) | Arithmetic once the score passes the line | VAR reversal, abandoned match; NFL version had nothing left to buy | new (2026-10-06), low prior |
 | 24 | **Safe-state atlas part 2** (NBA, NHL, soccer late, LoL/Valorant) | Loss under 1 in 1,000 states | In-play prices were fair in tennis/CS2/NFL | new (2026-10-06), low prior |
-| 25 | **Last-hour dead-strike sweep, stock/ETF ladders**: buy the already-right side on far strikes in the last 60-90 min of the session | Far strike cannot be reached; no seconds race; tape: 75 right-side fills, 0 losers | Bad print, halt, news jump; trap asks (YES at 0.99 on far strikes); thin volume | new (2026-10-08), pick for research ([[R-2026-10-08]]) |
-| 26 | **Cancel-follow shield**: cancel resting bids when market-maker bids vanish, inside the ~1 s sports delay | Removes row 4's main loss path | Our round trip from Tunisia may be slower than the gap | new (2026-10-08) ([[R-2026-10-08]]) |
-| 27 | **One-event buffer rule** for resting bids: only where one more play cannot flip the game | Excludes the known row 4 loser | Removes about half the fills | new (2026-10-08) ([[R-2026-10-08]]) |
-| 28 | **Peg-up bidding**, cap 0.985 | Price priority instead of queue length | Margin only 1.5c | new (2026-10-08) ([[R-2026-10-08]]) |
+| 25 | **Last-hour dead-strike sweep, stock/ETF ladders**: buy the already-right side on far strikes in the last 60-90 min of the session | Far strike cannot be reached; no seconds race; tape: 75 right-side fills, 0 losers | Bad print, halt, news jump; trap asks (YES at 0.99 on far strikes); thin volume | testing (2026-10-08): tape 332 fills 0 losers, money tiny, 3 bots take 60%, recorder ready for Fri 9 Oct ([[R-2026-10-08]]) |
+| 26 | **Cancel-follow shield**: cancel resting bids when market-maker bids vanish, inside the ~1 s sports delay | Removes row 4's main loss path | Our round trip from Tunisia may be slower than the gap | new (2026-10-08), untested ([[R-2026-10-08]]) |
+| 27 | **One-event buffer rule** for resting bids: only where one more play cannot flip the game | Excludes the known row 4 loser | Removes about half the fills | weak (2026-10-08): losing leads were 3, 14 and 10 points ([[R-2026-10-08]]) |
+| 28 | **Peg-up bidding**, cap 0.985 | Price priority instead of queue length | Margin only 1.5c | new (2026-10-08); data says more fills but no edge ([[R-2026-10-08]]) |
+| 29 | **Row 4 tail-of-game bid**: hold the 0.98-0.995 bid only from 60 s left through the stamp, plus after-end flow | 0 losers in ~424 cheap history fills | Overfit to 6 losers; only ~36 fills by 21 Oct | new/testing (2026-10-08) ([[R-2026-10-08]]) |
+| 30 | Same rule on Pyth commodity/FX ladders | Pool ~2x stocks | 2 of 364 cheap buys lost; no price model | new, low (2026-10-08) |
+| 31 | Month-end weekend window on stock ladders | 32 h dead window | ~$20 total | new, low (2026-10-08) |
 | — | Resting buy orders before the end (option 2) | — | Fills mostly when we are wrong | rejected (2026-10-03); reopened as testing 2026-10-06: last 30 min of US-sports games only, bids at 0.98+ |
 | — | Buying on price during play (price-only rule) | — | Loss rate matches the price: no edge | rejected (2026-10-03) |
 

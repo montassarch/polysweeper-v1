@@ -65,7 +65,7 @@ def excursion_tail(Y):
 
 def main():
     rows, valid, mis = T.main()
-    Y = {f.stem: T.Bars(json.loads(f.read_text())) for f in (T.RAW / "yahoo").glob("*.json")}
+    Y = {f.stem: T.Bars(json.loads(f.read_text()), f.stem) for f in (T.RAW / "yahoo").glob("*.json")}
     evs = json.loads((T.RAW / "events.json").read_text())
     out = {"generated": datetime.datetime.utcnow().isoformat() + "Z"}
     # 1. price bands of right-side far-strike buys in the last 90 min of the final day

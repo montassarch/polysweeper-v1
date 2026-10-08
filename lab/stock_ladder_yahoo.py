@@ -1,6 +1,7 @@
 """Download Yahoo Finance 1-minute bars (regular session only) for the tickers of the stock ladder study.
 
   python3 lab/stock_ladder_yahoo.py NVDA SPY ...      (default: every ticker in events.json)
+  python3 lab/stock_ladder_yahoo.py daily             (daily bars, 2 years, for the overnight-gap volatility)
 Writes lab/data/raw/stockladder/yahoo/<TICKER>.json = {"t": [...unix secs...], "o","h","l","c","v"} merged over
 runs (Yahoo keeps only about 30 days of 1-minute data, so re-run weekly to extend the history).
 Yahoo's chart endpoint answers 429 for the default Python/curl user agents; a browser user agent works.
@@ -69,7 +70,33 @@ def pull(sym, days=30, step=6):
     return len(ts), n_new
 
 
+def pull_daily(sym, rng="2y"):
+    """daily bars (for the overnight-gap volatility) -> lab/data/raw/stockladder/yahoo_daily/<TICKER>.json"""
+    out_dir = OUT.parent / "yahoo_daily"
+    out_dir.mkdir(parents=True, exist_ok=True)
+    url = f"https://query1.finance.yahoo.com/v8/finance/chart/{sym}?interval=1d&range={rng}&includePrePost=false"
+    delay = 2.0
+    for _ in range(4):
+        try:
+            with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=40) as r:
+                d = json.load(r)
+            res = d["chart"]["result"][0]
+            q = res["indicators"]["quote"][0]
+            rows = [(t, o, h, l, c) for t, o, h, l, c in zip(res["timestamp"], q["open"], q["high"], q["low"], q["close"]) if c is not None and o is not None]
+            (out_dir / f"{sym}.json").write_text(json.dumps({"t": [x[0] for x in rows], "o": [x[1] for x in rows], "c": [x[4] for x in rows]}))
+            return len(rows)
+        except Exception:
+            time.sleep(delay); delay *= 2
+    return 0
+
+
 if __name__ == "__main__":
+    if sys.argv[1:2] == ["daily"]:
+        evs0 = json.loads((ROOT / "lab/data/raw/stockladder/events.json").read_text())
+        for s in sorted({e["ticker"] for e in evs0}):
+            print(s, "daily bars", pull_daily(s), flush=True)
+            time.sleep(0.6)
+        sys.exit(0)
     syms = sys.argv[1:]
     if not syms:
         evs = json.loads((ROOT / "lab/data/raw/stockladder/events.json").read_text())

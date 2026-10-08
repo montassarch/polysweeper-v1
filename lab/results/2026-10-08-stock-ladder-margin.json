@@ -1,0 +1,463 @@
+{
+ "generated": "2026-10-08T08:56:01.755915Z",
+ "per_week": {
+  "2026-09-11": {
+   "last90_z>=6": {
+    "fills": 109,
+    "markets": 61,
+    "losers": 0
+   },
+   "last90_z>=4": {
+    "fills": 133,
+    "markets": 74,
+    "losers": 0
+   },
+   "allday_z>=6": {
+    "fills": 260,
+    "markets": 142,
+    "losers": 0
+   },
+   "allday_z>=4": {
+    "fills": 537,
+    "markets": 237,
+    "losers": 0
+   }
+  },
+  "2026-09-18": {
+   "last90_z>=6": {
+    "fills": 59,
+    "markets": 58,
+    "losers": 0
+   },
+   "last90_z>=4": {
+    "fills": 82,
+    "markets": 77,
+    "losers": 0
+   },
+   "allday_z>=6": {
+    "fills": 161,
+    "markets": 119,
+    "losers": 0
+   },
+   "allday_z>=4": {
+    "fills": 321,
+    "markets": 220,
+    "losers": 0
+   }
+  },
+  "2026-09-25": {
+   "last90_z>=6": {
+    "fills": 57,
+    "markets": 51,
+    "losers": 0
+   },
+   "last90_z>=4": {
+    "fills": 81,
+    "markets": 70,
+    "losers": 0
+   },
+   "allday_z>=6": {
+    "fills": 183,
+    "markets": 132,
+    "losers": 0
+   },
+   "allday_z>=4": {
+    "fills": 428,
+    "markets": 249,
+    "losers": 0
+   }
+  },
+  "2026-10-02": {
+   "last90_z>=6": {
+    "fills": 93,
+    "markets": 81,
+    "losers": 0
+   },
+   "last90_z>=4": {
+    "fills": 157,
+    "markets": 125,
+    "losers": 0
+   },
+   "allday_z>=6": {
+    "fills": 365,
+    "markets": 295,
+    "losers": 0
+   },
+   "allday_z>=4": {
+    "fills": 773,
+    "markets": 505,
+    "losers": 0
+   }
+  },
+  "2026-10-09": {
+   "last90_z>=6": {
+    "fills": 14,
+    "markets": 12,
+    "losers": 0
+   },
+   "last90_z>=4": {
+    "fills": 38,
+    "markets": 34,
+    "losers": 0
+   },
+   "allday_z>=6": {
+    "fills": 26,
+    "markets": 15,
+    "losers": 0
+   },
+   "allday_z>=4": {
+    "fills": 126,
+    "markets": 52,
+    "losers": 0
+   }
+  }
+ },
+ "consumed_fraction": {
+  "last90_z>=4": {
+   "n": 434,
+   "median": 0.052,
+   "p90": 0.197,
+   "p99": 0.339,
+   "max": 0.892,
+   "share_over_0_5": 0.0023,
+   "share_over_0_3": 0.03,
+   "worst5": [
+    [
+     0.892,
+     "GOOGL",
+     "googl-close-above-on-september-30-20",
+     "$340",
+     0.989,
+     5.3,
+     65,
+     2.71
+    ],
+    [
+     0.5,
+     "MSFT",
+     "msft-close-above-on-october-5-2026",
+     "$520",
+     0.993,
+     6.6,
+     10,
+     1.52
+    ],
+    [
+     0.426,
+     "NVDA",
+     "nvda-close-above-on-september-30-202",
+     "$225",
+     0.99,
+     7.8,
+     18,
+     2.45
+    ],
+    [
+     0.339,
+     "SPY",
+     "spy-closes-above-on-october-1-2026",
+     "$765",
+     0.99,
+     4.0,
+     0,
+     0.17
+    ],
+    [
+     0.339,
+     "SPY",
+     "spy-closes-above-on-october-1-2026",
+     "$765",
+     0.989,
+     4.0,
+     1,
+     0.17
+    ]
+   ]
+  },
+  "last90_z>=6": {
+   "n": 312,
+   "median": 0.039,
+   "p90": 0.112,
+   "p99": 0.265,
+   "max": 0.5,
+   "share_over_0_5": 0.0,
+   "share_over_0_3": 0.0096,
+   "worst5": [
+    [
+     0.5,
+     "MSFT",
+     "msft-close-above-on-october-5-2026",
+     "$520",
+     0.993,
+     6.6,
+     10,
+     1.52
+    ],
+    [
+     0.426,
+     "NVDA",
+     "nvda-close-above-on-september-30-202",
+     "$225",
+     0.99,
+     7.8,
+     18,
+     2.45
+    ],
+    [
+     0.327,
+     "SPY",
+     "spy-closes-above-on-september-23-202",
+     "$770",
+     0.988,
+     6.4,
+     6,
+     0.39
+    ],
+    [
+     0.273,
+     "NVDA",
+     "nvda-close-above-on-september-25-202",
+     "$230",
+     0.99,
+     6.5,
+     39,
+     2.7
+    ],
+    [
+     0.265,
+     "AMZN",
+     "amzn-close-above-on-september-15-202",
+     "$250",
+     0.99,
+     6.1,
+     3,
+     0.71
+    ]
+   ]
+  },
+  "allday_z>=4": {
+   "n": 2124,
+   "median": 0.088,
+   "p90": 0.339,
+   "p99": 0.648,
+   "max": 1.042,
+   "share_over_0_5": 0.0221,
+   "share_over_0_3": 0.1342,
+   "worst5": [
+    [
+     1.042,
+     "SPY",
+     "spy-closes-above-on-september-16-202",
+     "$750",
+     0.989,
+     4.7,
+     168,
+     1.26
+    ],
+    [
+     1.042,
+     "SPY",
+     "spy-closes-above-on-september-16-202",
+     "$750",
+     0.989,
+     4.7,
+     168,
+     1.26
+    ],
+    [
+     1.042,
+     "SPY",
+     "spy-closes-above-on-september-16-202",
+     "$750",
+     0.989,
+     4.7,
+     167,
+     1.26
+    ],
+    [
+     1.042,
+     "SPY",
+     "spy-closes-above-on-september-16-202",
+     "$750",
+     0.99,
+     5.3,
+     137,
+     1.26
+    ],
+    [
+     1.042,
+     "SPY",
+     "spy-closes-above-on-september-16-202",
+     "$750",
+     0.99,
+     5.2,
+     137,
+     1.26
+    ]
+   ]
+  },
+  "allday_z>=6": {
+   "n": 973,
+   "median": 0.058,
+   "p90": 0.211,
+   "p99": 0.404,
+   "max": 0.653,
+   "share_over_0_5": 0.001,
+   "share_over_0_3": 0.038,
+   "worst5": [
+    [
+     0.653,
+     "NFLX",
+     "will-nflx-hit-week-of-september-14-2",
+     "\u2193 $67.50",
+     0.99,
+     8.5,
+     1220,
+     10.94
+    ],
+    [
+     0.5,
+     "MSFT",
+     "msft-close-above-on-october-5-2026",
+     "$520",
+     0.993,
+     6.6,
+     10,
+     1.52
+    ],
+    [
+     0.486,
+     "NFLX",
+     "will-nflx-hit-week-of-september-14-2",
+     "\u2193 $65",
+     0.99,
+     11.4,
+     1221,
+     14.71
+    ],
+    [
+     0.482,
+     "GOOGL",
+     "what-price-will-googl-hit-in-septemb",
+     "\u2193 $330",
+     0.991,
+     7.5,
+     178,
+     6.32
+    ],
+    [
+     0.482,
+     "GOOGL",
+     "what-price-will-googl-hit-in-septemb",
+     "\u2193 $330",
+     0.9896661454,
+     7.5,
+     178,
+     6.32
+    ]
+   ]
+  }
+ },
+ "max_overnight_gap_pct__day__median_pct": {
+  "AAPL": [
+   1.52,
+   "2026-09-29",
+   0.32
+  ],
+  "HOOD": [
+   5.34,
+   "2026-09-30",
+   1.98
+  ],
+  "COIN": [
+   5.62,
+   "2026-09-21",
+   2.32
+  ],
+  "MSTR": [
+   6.7,
+   "2026-09-21",
+   2.71
+  ],
+  "ABNB": [
+   2.27,
+   "2026-10-02",
+   0.54
+  ],
+  "NVDA": [
+   3.32,
+   "2026-09-14",
+   0.88
+  ],
+  "META": [
+   5.6,
+   "2026-09-09",
+   1.11
+  ],
+  "GOOGL": [
+   2.71,
+   "2026-09-18",
+   0.75
+  ],
+  "RKLB": [
+   3.4,
+   "2026-10-01",
+   1.74
+  ],
+  "OPEN": [
+   4.95,
+   "2026-09-10",
+   1.63
+  ],
+  "MSFT": [
+   2.09,
+   "2026-09-28",
+   0.7
+  ],
+  "PLTR": [
+   1.82,
+   "2026-09-28",
+   0.83
+  ],
+  "SPY": [
+   1.2,
+   "2026-09-17",
+   0.28
+  ],
+  "SKHY": [
+   8.28,
+   "2026-09-14",
+   1.81
+  ],
+  "SPCX": [
+   2.61,
+   "2026-09-14",
+   0.82
+  ],
+  "MU": [
+   7.25,
+   "2026-09-14",
+   1.02
+  ],
+  "TSLA": [
+   2.61,
+   "2026-09-17",
+   0.76
+  ],
+  "AMZN": [
+   2.13,
+   "2026-09-17",
+   0.89
+  ],
+  "EWY": [
+   5.56,
+   "2026-09-14",
+   1.55
+  ],
+  "NFLX": [
+   6.99,
+   "2026-09-18",
+   0.35
+  ]
+ }
+}

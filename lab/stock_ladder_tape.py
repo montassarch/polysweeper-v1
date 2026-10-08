@@ -32,12 +32,19 @@ def utc(ts):
 class Bars:
     """1-minute regular-session bars of one ticker, with prefix sums for rolling volatility."""
 
-    def __init__(self, d):
+    def __init__(self, d, sym=None):
+        self.sym = sym
         self.T, self.O, self.H, self.L, self.C = [], [], [], [], []
         self.official = {}
-        for t, o, h, l, c, v in zip(d["t"], d["o"], d["h"], d["l"], d["c"], d["v"]):
-            if t % 86400 >= CLOSE_H * 3600:  # Yahoo's synthetic 20:00 bar = official close
-                self.official[utc(t).strftime("%Y-%m-%d")] = c
+        rows = [r for r in zip(d["t"], d["o"], d["h"], d["l"], d["c"], d["v"]) if r[4] is not None]
+        last_of_day = {}
+        for k, r in enumerate(rows):
+            last_of_day[utc(r[0]).strftime("%Y-%m-%d")] = k
+        for k, (t, o, h, l, c, v) in enumerate(rows):
+            day = utc(t).strftime("%Y-%m-%d")
+            # Yahoo adds a synthetic last bar (volume 0, open=high=low=close) at the closing time = official close
+            if k == last_of_day[day] and not v and o == h == l == c and t % 60 == 0 and len(rows) > 1 and k > 0 and t - rows[k - 1][0] <= 120 and (t % 3600 == 0):
+                self.official[day] = c
                 continue
             self.T.append(t); self.O.append(o); self.H.append(h); self.L.append(l); self.C.append(c)
         self.n = len(self.T)
@@ -90,6 +97,28 @@ class Bars:
             return None
         i1 = self.days[keys[k - 1]][1] - 1
         return self.C[i1]
+
+
+_DAILY = {}
+
+
+def gap_sigma(tk, day):
+    """RMS of overnight log gaps (open vs previous close) over the 60 sessions before `day` (Yahoo daily bars)"""
+    if tk not in _DAILY:
+        f = RAW / "yahoo_daily" / f"{tk}.json"
+        if f.exists():
+            d = json.loads(f.read_text())
+            days = [utc(t).strftime("%Y-%m-%d") for t in d["t"]]
+            gaps = [math.log(d["o"][i] / d["c"][i - 1]) for i in range(1, len(days))]
+            _DAILY[tk] = (days[1:], gaps)
+        else:
+            _DAILY[tk] = ([], [])
+    days, gaps = _DAILY[tk]
+    k = bisect.bisect_left(days, day)
+    g = gaps[max(0, k - 60):k]
+    if len(g) < 10:
+        return 0.004          # fallback 0.4% when too little history
+    return math.sqrt(sum(x * x for x in g) / len(g))
 
 
 def num(s):
@@ -186,23 +215,27 @@ def classify(bars, fam, st, ts, end_day, wstart_day, created=None, why=None):
         return None
     spot = bars.C[i]
     scale = sig * math.sqrt(mleft)
+    # total horizon volatility: intraday 1-minute moves plus one overnight gap for every session open still to come
+    nights = sum(1 for dk, (a0, b0) in bars.days.items() if dk <= end_day and bars.T[a0] > ts)
+    gs = gap_sigma(bars.sym, end_day) if nights else 0.0
+    scale_total = math.sqrt(scale * scale + nights * gs * gs)
     kind = st[0]
     if kind == "above":
         K = st[1]
         d = math.log(spot / K)
-        return dict(implied=0 if d > 0 else 1, z=abs(d) / scale, mleft=mleft, spot=spot, dist=abs(d) * 100, post=post)
+        return dict(implied=0 if d > 0 else 1, z=abs(d) / scale, zt=abs(d) / scale_total, mleft=mleft, spot=spot, dist=abs(d) * 100, post=post, nights=nights)
     if kind == "updown":
         K = bars.prev_day_close(end_day)
         if K is None:
             return None
         d = math.log(spot / K)
-        return dict(implied=0 if d > 0 else 1, z=abs(d) / scale, mleft=mleft, spot=spot, dist=abs(d) * 100, post=post)
+        return dict(implied=0 if d > 0 else 1, z=abs(d) / scale, zt=abs(d) / scale_total, mleft=mleft, spot=spot, dist=abs(d) * 100, post=post, nights=nights)
     if kind == "bracket":
         lo, hi = st[1], st[2]
         inside = lo <= spot < hi
         edges = [e for e in (lo, hi) if math.isfinite(e)]
         d = min(abs(math.log(spot / e)) for e in edges)
-        return dict(implied=0 if inside else 1, z=d / scale, mleft=mleft, spot=spot, dist=d * 100, post=post)
+        return dict(implied=0 if inside else 1, z=d / scale, zt=d / scale_total, mleft=mleft, spot=spot, dist=d * 100, post=post, nights=nights)
     if kind in ("up", "down"):
         K = st[1]
         i0 = window_start_idx(bars, wstart_day, created)
@@ -218,8 +251,8 @@ def classify(bars, fam, st, ts, end_day, wstart_day, created=None, why=None):
             touched = mn[k] <= K
             d = math.log(spot / K)
         if touched:
-            return dict(implied=0, z=abs(d) / scale, mleft=mleft, spot=spot, dist=abs(d) * 100, post=post, touched=True)
-        return dict(implied=1, z=d / scale, mleft=mleft, spot=spot, dist=d * 100, post=post)
+            return dict(implied=0, z=abs(d) / scale, zt=abs(d) / scale_total, mleft=mleft, spot=spot, dist=abs(d) * 100, post=post, touched=True, nights=nights)
+        return dict(implied=1, z=d / scale, zt=d / scale_total, mleft=mleft, spot=spot, dist=d * 100, post=post, nights=nights)
     return None
 
 
@@ -235,7 +268,7 @@ def zbucket(z):
 
 def main():
     evs = json.loads((RAW / "events.json").read_text())
-    Y = {f.stem: Bars(json.loads(f.read_text())) for f in (RAW / "yahoo").glob("*.json")}
+    Y = {f.stem: Bars(json.loads(f.read_text()), f.stem) for f in (RAW / "yahoo").glob("*.json")}
     rows = []          # every classified BUY trade
     skipped = collections.Counter()
     valid = collections.defaultdict(lambda: collections.Counter())   # Yahoo vs settlement checks
@@ -314,7 +347,7 @@ def main():
             oi = t["oi"]
             rows.append(dict(fam=fam, tk=ev["ticker"], slug=ev["slug"], g=m["g"], end=end_day, ts=t["ts"], p=t["price"],
                              sz=t["size"], w=t["w"], oi=oi, right=(oi == c["implied"]), won=(oi == fi),
-                             z=c["z"], mleft=c["mleft"], dist=c["dist"], post=c["post"],
+                             z=c["z"], zt=c.get("zt", c["z"]), nights=c.get("nights", 0), mleft=c["mleft"], dist=c["dist"], post=c["post"],
                              min_to_end=(tend - t["ts"]) / 60.0, touched=c.get("touched", False)))
     print("classified BUY trades", len(rows), "skipped", dict(skipped))
     return rows, valid, valid_mis

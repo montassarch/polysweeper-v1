@@ -1,0 +1,213 @@
+{
+ "hours": 0.34,
+ "A:100": {
+  "reward_day": 281.51,
+  "fill_pnl_day": 42.35,
+  "capital": 87,
+  "picks": [
+   [
+    "culture_tech_econ",
+    "Will MrBeast's next video get at least 223 mi",
+    31,
+    165.74,
+    42.35
+   ],
+   [
+    "crypto_ladder_other",
+    "Will Pump.fun reach $0.0100 by December 31, 2",
+    19,
+    44.96,
+    0.0
+   ],
+   [
+    "culture_tech_econ",
+    "Will Claude Fable 5.2+ debut at an output tok",
+    19,
+    37.27,
+    0.0
+   ],
+   [
+    "sports_futures",
+    "Will Prodigy SEG Win the 2026 Esports Support",
+    19,
+    33.53,
+    0.0
+   ]
+  ]
+ },
+ "A:500": {
+  "reward_day": 430.16,
+  "fill_pnl_day": 222.35,
+  "capital": 489,
+  "picks": [
+   [
+    "culture_tech_econ",
+    "Will MrBeast's next video get at least 223 mi",
+    31,
+    165.74,
+    42.35
+   ],
+   [
+    "crypto_ladder_other",
+    "Will Pump.fun reach $0.0100 by December 31, 2",
+    19,
+    44.96,
+    0.0
+   ],
+   [
+    "culture_tech_econ",
+    "Will Claude Fable 5.2+ debut at an output tok",
+    19,
+    37.27,
+    0.0
+   ],
+   [
+    "sports_futures",
+    "Will Prodigy SEG Win the 2026 Esports Support",
+    19,
+    33.53,
+    0.0
+   ],
+   [
+    "weather",
+    "Will the highest temperature in Houston be be",
+    146,
+    64.73,
+    141.18
+   ],
+   [
+    "stock_finance",
+    "S&P 500 (SPX) Up or Down on October 8?",
+    114,
+    24.99,
+    35.29
+   ],
+   [
+    "weather",
+    "Will the highest temperature in New York City",
+    104,
+    48.92,
+    3.53
+   ],
+   [
+    "culture_tech_econ",
+    "Will MrBeast Gaming's next video get between ",
+    19,
+    7.2,
+    0.0
+   ],
+   [
+    "culture_tech_econ",
+    "Will Core CPI YoY be 2.4% in September?",
+    19,
+    2.82,
+    0.0
+   ]
+  ]
+ },
+ "B:100": {
+  "reward_day": 265.2,
+  "fill_pnl_day": 56.47,
+  "capital": 86,
+  "picks": [
+   [
+    "culture_tech_econ",
+    "Will MrBeast's next video get at least 223 mi",
+    31,
+    149.79,
+    56.47
+   ],
+   [
+    "crypto_ladder_other",
+    "Will Pump.fun reach $0.0100 by December 31, 2",
+    18,
+    44.61,
+    0.0
+   ],
+   [
+    "culture_tech_econ",
+    "Will Claude Fable 5.2+ debut at an output tok",
+    18,
+    37.27,
+    0.0
+   ],
+   [
+    "sports_futures",
+    "Will Prodigy SEG Win the 2026 Esports Support",
+    18,
+    33.53,
+    0.0
+   ]
+  ]
+ },
+ "B:500": {
+  "reward_day": 385.76,
+  "fill_pnl_day": 56.47,
+  "capital": 488,
+  "picks": [
+   [
+    "culture_tech_econ",
+    "Will MrBeast's next video get at least 223 mi",
+    31,
+    149.79,
+    56.47
+   ],
+   [
+    "crypto_ladder_other",
+    "Will Pump.fun reach $0.0100 by December 31, 2",
+    18,
+    44.61,
+    0.0
+   ],
+   [
+    "culture_tech_econ",
+    "Will Claude Fable 5.2+ debut at an output tok",
+    18,
+    37.27,
+    0.0
+   ],
+   [
+    "sports_futures",
+    "Will Prodigy SEG Win the 2026 Esports Support",
+    18,
+    33.53,
+    0.0
+   ],
+   [
+    "weather",
+    "Will the highest temperature in Houston be be",
+    96,
+    53.65,
+    0.0
+   ],
+   [
+    "weather",
+    "Will the highest temperature in New York City",
+    97,
+    41.44,
+    0.0
+   ],
+   [
+    "weather",
+    "Will the highest temperature in New York City",
+    95,
+    15.39,
+    0.0
+   ],
+   [
+    "culture_tech_econ",
+    "Will MrBeast Gaming's next video get between ",
+    19,
+    2.68,
+    0.0
+   ],
+   [
+    "weather",
+    "Will the highest temperature in Sao Paulo be ",
+    96,
+    7.41,
+    0.0
+   ]
+  ]
+ }
+}

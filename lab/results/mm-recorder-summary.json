@@ -1,0 +1,1125 @@
+{
+ "started": "2026-10-08T10:38:38.510404+00:00",
+ "hours": 0.34,
+ "markets": 38,
+ "totals": {
+  "A_reward": 7.594,
+  "A_mtm": 3.25,
+  "A_cap": 5365.25,
+  "A_fills": 5.0,
+  "B_reward": 6.06,
+  "B_mtm": 0.8,
+  "B_cap": 5192.2,
+  "B_fills": 1.0
+ },
+ "per_day_if_linear": {
+  "A_reward": 537.49,
+  "A_mtm": 230.03,
+  "B_reward": 428.9,
+  "B_mtm": 56.62
+ },
+ "per_market": [
+  {
+   "q": "Will North Carolina enact a data center moratorium by Decemb",
+   "type": "politics_long_dated",
+   "rate": 2049.99968,
+   "v": 4.5,
+   "size": 50.0,
+   "samples": 19,
+   "median_book_q": 150121.6,
+   "A": {
+    "reward": 0.007,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 49.5
+   },
+   "B": {
+    "reward": 0.004,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 48.5
+   }
+  },
+  {
+   "q": "Will North Carolina enact a data center moratorium by June 3",
+   "type": "politics_long_dated",
+   "rate": 2001.99872,
+   "v": 4.5,
+   "size": 50.0,
+   "samples": 19,
+   "median_book_q": 200964.9,
+   "A": {
+    "reward": 0.005,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 49.5
+   },
+   "B": {
+    "reward": 0.003,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 48.5
+   }
+  },
+  {
+   "q": "Will North Carolina enact a data center moratorium by Decemb",
+   "type": "politics_long_dated",
+   "rate": 2000,
+   "v": 4.5,
+   "size": 50.0,
+   "samples": 19,
+   "median_book_q": 368741.4,
+   "A": {
+    "reward": 0.003,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 49.5
+   },
+   "B": {
+    "reward": 0.002,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 48.5
+   }
+  },
+  {
+   "q": "Will Louisiana enact a data center moratorium by December 31",
+   "type": "politics_long_dated",
+   "rate": 500,
+   "v": 3.5,
+   "size": 200.0,
+   "samples": 19,
+   "median_book_q": 232803.0,
+   "A": {
+    "reward": 0.009,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 198.0
+   },
+   "B": {
+    "reward": 0.004,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 194.0
+   }
+  },
+  {
+   "q": "Will Delcy Rodr\u00edguez be the leader of Venezuela end of 2026?",
+   "type": "politics_long_dated",
+   "rate": 140,
+   "v": 4.5,
+   "size": 50.0,
+   "samples": 19,
+   "median_book_q": 7686.9,
+   "A": {
+    "reward": 0.01,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 49.5
+   },
+   "B": {
+    "reward": 0.005,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 48.5
+   }
+  },
+  {
+   "q": "Will David Lisnard win the 2027 French presidential election",
+   "type": "politics_long_dated",
+   "rate": 134.99952000000002,
+   "v": 6.5,
+   "size": 100.0,
+   "samples": 19,
+   "median_book_q": 59364.0,
+   "A": {
+    "reward": 0.003,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 99.8
+   },
+   "B": {
+    "reward": 0.003,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 99.6
+   }
+  },
+  {
+   "q": "2026 Balance of Power: D Senate, D House",
+   "type": "politics_short_dated",
+   "rate": 1336,
+   "v": 4.5,
+   "size": 200.0,
+   "samples": 19,
+   "median_book_q": 524457.8,
+   "A": {
+    "reward": 0.005,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 198.0
+   },
+   "B": {
+    "reward": 0.003,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 194.0
+   }
+  },
+  {
+   "q": "Will Luiz In\u00e1cio Lula da Silva win the 2026 Brazilian presid",
+   "type": "politics_short_dated",
+   "rate": 1035.99712,
+   "v": 6.5,
+   "size": 150.0,
+   "samples": 19,
+   "median_book_q": 313502.2,
+   "A": {
+    "reward": 0.006,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 148.5
+   },
+   "B": {
+    "reward": 0.004,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 145.5
+   }
+  },
+  {
+   "q": "2026 Balance of Power: R Senate, D House",
+   "type": "politics_short_dated",
+   "rate": 1030.99888,
+   "v": 4.5,
+   "size": 200.0,
+   "samples": 19,
+   "median_book_q": 698595.9,
+   "A": {
+    "reward": 0.003,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 198.0
+   },
+   "B": {
+    "reward": 0.002,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 194.0
+   }
+  },
+  {
+   "q": "Will the Republicans win the Texas Senate race in 2026?",
+   "type": "politics_short_dated",
+   "rate": 254,
+   "v": 6.5,
+   "size": 100.0,
+   "samples": 19,
+   "median_book_q": 57527.0,
+   "A": {
+    "reward": 0.005,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 99.0
+   },
+   "B": {
+    "reward": 0.004,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 97.0
+   }
+  },
+  {
+   "q": "US x Iran ceasefire continues through October 31?",
+   "type": "politics_short_dated",
+   "rate": 200,
+   "v": 6.5,
+   "size": 200.0,
+   "samples": 19,
+   "median_book_q": 6188.0,
+   "A": {
+    "reward": 0.063,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 198.0
+   },
+   "B": {
+    "reward": 0.043,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 194.0
+   }
+  },
+  {
+   "q": "Will the Fed increase interest rates by 25 bps after the Oct",
+   "type": "politics_short_dated",
+   "rate": 1000,
+   "v": 2.5,
+   "size": 200.0,
+   "samples": 19,
+   "median_book_q": 52014.4,
+   "A": {
+    "reward": 0.033,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 198.0
+   },
+   "B": {
+    "reward": 0.008,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 194.0
+   }
+  },
+  {
+   "q": "Will Anthropic announce bankruptcy by December 31, 2028?",
+   "type": "stock_finance",
+   "rate": 500,
+   "v": 4.5,
+   "size": 200.0,
+   "samples": 19,
+   "median_book_q": 147760.8,
+   "A": {
+    "reward": 0.007,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 198.0
+   },
+   "B": {
+    "reward": 0.004,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 194.0
+   }
+  },
+  {
+   "q": "SPY (SPY) Up or Down on October 8?",
+   "type": "stock_finance",
+   "rate": 200,
+   "v": 4.5,
+   "size": 200.0,
+   "samples": 19,
+   "median_book_q": 371.6,
+   "A": {
+    "reward": 0.491,
+    "fills": 1,
+    "fill_sh": 5.0,
+    "inv": 5.0,
+    "mtm": 0.1,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 198.0
+   },
+   "B": {
+    "reward": 0.266,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 194.0
+   }
+  },
+  {
+   "q": "Will CoreWeave announce bankruptcy by December 31, 2028?",
+   "type": "stock_finance",
+   "rate": 200,
+   "v": 3.5,
+   "size": 200.0,
+   "samples": 19,
+   "median_book_q": 36537.9,
+   "A": {
+    "reward": 0.01,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 198.0
+   },
+   "B": {
+    "reward": 0.005,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 194.0
+   }
+  },
+  {
+   "q": "Will Anthropic IPO by November 30, 2026?",
+   "type": "stock_finance",
+   "rate": 101.99872,
+   "v": 4.5,
+   "size": 200.0,
+   "samples": 19,
+   "median_book_q": 2061.9,
+   "A": {
+    "reward": 0.075,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 196.0
+   },
+   "B": {
+    "reward": 0.039,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 192.0
+   }
+  },
+  {
+   "q": "S&P 500 (SPX) Up or Down on October 8?",
+   "type": "stock_finance",
+   "rate": 100,
+   "v": 2.5,
+   "size": 100.0,
+   "samples": 19,
+   "median_book_q": 80.0,
+   "A": {
+    "reward": 0.354,
+    "fills": 1,
+    "fill_sh": 100.0,
+    "inv": 100.0,
+    "mtm": 0.5,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 114.0
+   },
+   "B": {
+    "reward": 0.086,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 97.0
+   }
+  },
+  {
+   "q": "Will none of these coins hit a $1B FDV?",
+   "type": "crypto_ladder_other",
+   "rate": 80,
+   "v": 4.5,
+   "size": 50.0,
+   "samples": 19,
+   "median_book_q": 7346.3,
+   "A": {
+    "reward": 0.004,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 49.0
+   },
+   "B": {
+    "reward": 0.002,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 48.0
+   }
+  },
+  {
+   "q": "Will Robinhood be first to list tokenized stocks in the US?",
+   "type": "crypto_ladder_other",
+   "rate": 76,
+   "v": 4.5,
+   "size": 50.0,
+   "samples": 19,
+   "median_book_q": 837.0,
+   "A": {
+    "reward": 0.036,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 49.0
+   },
+   "B": {
+    "reward": 0.019,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 48.0
+   }
+  },
+  {
+   "q": "Will Pump.fun reach $0.0100 by December 31, 2026?",
+   "type": "crypto_ladder_other",
+   "rate": 50,
+   "v": 6.5,
+   "size": 20.0,
+   "samples": 19,
+   "median_book_q": 0.0,
+   "A": {
+    "reward": 0.637,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 18.6
+   },
+   "B": {
+    "reward": 0.632,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 18.2
+   }
+  },
+  {
+   "q": "Will Pump.fun dip to $0.0026 by December 31, 2026?",
+   "type": "crypto_ladder_other",
+   "rate": 50,
+   "v": 6.5,
+   "size": 20.0,
+   "samples": 19,
+   "median_book_q": 443.2,
+   "A": {
+    "reward": 0.018,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 19.4
+   },
+   "B": {
+    "reward": 0.012,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 19.0
+   }
+  },
+  {
+   "q": "Will StripChain launch a token by December 31, 2027?",
+   "type": "crypto_ladder_other",
+   "rate": 3,
+   "v": 4.5,
+   "size": 30.0,
+   "samples": 19,
+   "median_book_q": 0.0,
+   "A": {
+    "reward": 0.0,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 11.1
+   },
+   "B": {
+    "reward": 0.0,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 10.8
+   }
+  },
+  {
+   "q": "Will another city host the final of the 2030 FIFA World Cup?",
+   "type": "sports_futures",
+   "rate": 146,
+   "v": 4.5,
+   "size": 50.0,
+   "samples": 19,
+   "median_book_q": 5483.7,
+   "A": {
+    "reward": 0.014,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 49.5
+   },
+   "B": {
+    "reward": 0.008,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 48.5
+   }
+  },
+  {
+   "q": "Will Madrid host the final of the 2030 FIFA World Cup?",
+   "type": "sports_futures",
+   "rate": 138,
+   "v": 4.5,
+   "size": 50.0,
+   "samples": 19,
+   "median_book_q": 18354.9,
+   "A": {
+    "reward": 0.004,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 49.5
+   },
+   "B": {
+    "reward": 0.002,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 48.5
+   }
+  },
+  {
+   "q": "Will Prodigy SEG Win the 2026 Esports Supporting Service of ",
+   "type": "sports_futures",
+   "rate": 36,
+   "v": 4.5,
+   "size": 20.0,
+   "samples": 19,
+   "median_book_q": 0.0,
+   "A": {
+    "reward": 0.475,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 18.8
+   },
+   "B": {
+    "reward": 0.475,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 18.4
+   }
+  },
+  {
+   "q": "Manchester City punishment announced by December 18?",
+   "type": "sports_futures",
+   "rate": 50,
+   "v": 6.5,
+   "size": 50.0,
+   "samples": 19,
+   "median_book_q": 397.5,
+   "A": {
+    "reward": 0.058,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 49.0
+   },
+   "B": {
+    "reward": 0.04,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 48.0
+   }
+  },
+  {
+   "q": "Buccaneers vs. Cowboys",
+   "type": "sports_game_moneyline",
+   "rate": 500,
+   "v": 2.5,
+   "size": 1000.0,
+   "samples": 19,
+   "median_book_q": 388096.4,
+   "A": {
+    "reward": 0.011,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 990.0
+   },
+   "B": {
+    "reward": 0.003,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 970.0
+   }
+  },
+  {
+   "q": "South Florida vs. UTSA",
+   "type": "sports_game_moneyline",
+   "rate": 50,
+   "v": 2.5,
+   "size": 1000.0,
+   "samples": 19,
+   "median_book_q": 12076.4,
+   "A": {
+    "reward": 0.019,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 990.0
+   },
+   "B": {
+    "reward": 0.006,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 970.0
+   }
+  },
+  {
+   "q": "China Open: Qinwen Zheng vs Elina Svitolina",
+   "type": "sports_game_moneyline",
+   "rate": 10.000359999999999,
+   "v": 4.5,
+   "size": 50.0,
+   "samples": 19,
+   "median_book_q": 4761.3,
+   "A": {
+    "reward": 0.001,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 49.5
+   },
+   "B": {
+    "reward": 0.001,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 48.5
+   }
+  },
+  {
+   "q": "Shanghai Rolex Masters: Alex de Minaur vs Alex Molcan",
+   "type": "sports_game_moneyline",
+   "rate": 19.99972,
+   "v": 4.5,
+   "size": 50.0,
+   "samples": 19,
+   "median_book_q": 8343.6,
+   "A": {
+    "reward": 0.001,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 49.5
+   },
+   "B": {
+    "reward": 0.001,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 48.5
+   }
+  },
+  {
+   "q": "Will MrBeast's next video get at least 223 million views on ",
+   "type": "culture_tech_econ",
+   "rate": 247,
+   "v": 4.5,
+   "size": 20.0,
+   "samples": 19,
+   "median_book_q": 0.0,
+   "A": {
+    "reward": 2.348,
+    "fills": 1,
+    "fill_sh": 20.0,
+    "inv": -20.0,
+    "mtm": 0.6,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 31.1
+   },
+   "B": {
+    "reward": 2.122,
+    "fills": 1,
+    "fill_sh": 20.0,
+    "inv": -20.0,
+    "mtm": 0.8,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 30.7
+   }
+  },
+  {
+   "q": "Will MrBeast Gaming's next video get between 15 and 17.5 mil",
+   "type": "culture_tech_econ",
+   "rate": 213,
+   "v": 4.5,
+   "size": 20.0,
+   "samples": 19,
+   "median_book_q": 446.1,
+   "A": {
+    "reward": 0.102,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 19.2
+   },
+   "B": {
+    "reward": 0.038,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 18.8
+   }
+  },
+  {
+   "q": "Will Core CPI YoY be 2.4% in September?",
+   "type": "culture_tech_econ",
+   "rate": 80,
+   "v": 4.5,
+   "size": 20.0,
+   "samples": 19,
+   "median_book_q": 224.8,
+   "A": {
+    "reward": 0.04,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 19.4
+   },
+   "B": {
+    "reward": 0.018,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 19.0
+   }
+  },
+  {
+   "q": "Will Claude Fable 5.2+ debut at an output token price of at ",
+   "type": "culture_tech_econ",
+   "rate": 40,
+   "v": 6.5,
+   "size": 20.0,
+   "samples": 19,
+   "median_book_q": 0.0,
+   "A": {
+    "reward": 0.528,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 18.6
+   },
+   "B": {
+    "reward": 0.528,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 18.2
+   }
+  },
+  {
+   "q": "Will the highest temperature in New York City be between 74-",
+   "type": "weather",
+   "rate": 202,
+   "v": 4.5,
+   "size": 100.0,
+   "samples": 19,
+   "median_book_q": 0.0,
+   "A": {
+    "reward": 0.29,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 97.0
+   },
+   "B": {
+    "reward": 0.218,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 95.0
+   }
+  },
+  {
+   "q": "Will the highest temperature in New York City be between 76-",
+   "type": "weather",
+   "rate": 188,
+   "v": 4.5,
+   "size": 100.0,
+   "samples": 19,
+   "median_book_q": 196.1,
+   "A": {
+    "reward": 0.693,
+    "fills": 1,
+    "fill_sh": 10.0,
+    "inv": -10.0,
+    "mtm": 0.05,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 104.2
+   },
+   "B": {
+    "reward": 0.587,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 97.0
+   }
+  },
+  {
+   "q": "Will the highest temperature in Sao Paulo be 31\u00b0C on October",
+   "type": "weather",
+   "rate": 89,
+   "v": 4.5,
+   "size": 100.0,
+   "samples": 19,
+   "median_book_q": 4.9,
+   "A": {
+    "reward": 0.312,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 98.0
+   },
+   "B": {
+    "reward": 0.105,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 96.0
+   }
+  },
+  {
+   "q": "Will the highest temperature in Houston be between 92-93\u00b0F o",
+   "type": "weather",
+   "rate": 97,
+   "v": 4.5,
+   "size": 100.0,
+   "samples": 19,
+   "median_book_q": 2.0,
+   "A": {
+    "reward": 0.917,
+    "fills": 1,
+    "fill_sh": 100.0,
+    "inv": 100.0,
+    "mtm": 2.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 145.5
+   },
+   "B": {
+    "reward": 0.76,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 96.0
+   }
+  }
+ ]
+}

@@ -1,0 +1,382 @@
+{
+ "generated": "2026-10-08T08:26:03.133502Z",
+ "last90_right_z>=4_by_price": {
+  "<0.95": {
+   "n": 19,
+   "n5": 19,
+   "shares": 961,
+   "markets": 7,
+   "losers": 0
+  },
+  "0.95-0.98": {
+   "n": 27,
+   "n5": 24,
+   "shares": 2326,
+   "markets": 16,
+   "losers": 0
+  },
+  "0.98-0.99": {
+   "n": 141,
+   "n5": 140,
+   "shares": 7317,
+   "markets": 89,
+   "losers": 0
+  },
+  "0.99-0.995": {
+   "n": 367,
+   "n5": 354,
+   "shares": 18595,
+   "markets": 349,
+   "losers": 0
+  },
+  "0.995-0.998": {
+   "n": 560,
+   "n5": 540,
+   "shares": 110407,
+   "markets": 449,
+   "losers": 0
+  },
+  "0.999+": {
+   "n": 1932,
+   "n5": 1859,
+   "shares": 98278,
+   "markets": 1809,
+   "losers": 0
+  }
+ },
+ "last90_right_z>=6_by_price": {
+  "<0.95": {
+   "n": 9,
+   "n5": 9,
+   "shares": 355,
+   "markets": 4,
+   "losers": 0
+  },
+  "0.95-0.98": {
+   "n": 6,
+   "n5": 6,
+   "shares": 367,
+   "markets": 5,
+   "losers": 0
+  },
+  "0.98-0.99": {
+   "n": 95,
+   "n5": 95,
+   "shares": 4070,
+   "markets": 62,
+   "losers": 0
+  },
+  "0.99-0.995": {
+   "n": 247,
+   "n5": 240,
+   "shares": 11422,
+   "markets": 241,
+   "losers": 0
+  },
+  "0.995-0.998": {
+   "n": 465,
+   "n5": 448,
+   "shares": 93225,
+   "markets": 376,
+   "losers": 0
+  },
+  "0.999+": {
+   "n": 1742,
+   "n5": 1678,
+   "shares": 93556,
+   "markets": 1636,
+   "losers": 0
+  }
+ },
+ "per_day_band_0.98-0.995_z>=6": {
+  "trades": 339,
+  "days_with_fill": 22,
+  "markets_per_day_avg": 12.2,
+  "markets_per_day_median": 4.0,
+  "min": 1,
+  "max": 55,
+  "profit_5sh_gross_total": 18.61,
+  "fees_5sh_total": 0.735,
+  "avg_profit_per_5sh_after_fee": 0.0527,
+  "all_sessions": 22
+ },
+ "per_day_band_0.98-0.995_z>=4": {
+  "trades": 504,
+  "days_with_fill": 22,
+  "markets_per_day_avg": 17.7,
+  "markets_per_day_median": 8.5,
+  "min": 2,
+  "max": 69,
+  "profit_5sh_gross_total": 27.54,
+  "fees_5sh_total": 1.088,
+  "avg_profit_per_5sh_after_fee": 0.0525,
+  "all_sessions": 22
+ },
+ "per_day_band_0.985-0.995_z>=6": {
+  "trades": 306,
+  "days_with_fill": 22,
+  "markets_per_day_avg": 11.6,
+  "markets_per_day_median": 4.0,
+  "min": 1,
+  "max": 53,
+  "profit_5sh_gross_total": 15.36,
+  "fees_5sh_total": 0.608,
+  "avg_profit_per_5sh_after_fee": 0.0482,
+  "all_sessions": 22
+ },
+ "by_family_z>=6_0.98-0.995_5sh+": {
+  "dailyclose_above": {
+   "trades": 72,
+   "markets": 71,
+   "losers": 0,
+   "shares_med": 10.0
+  },
+  "monthly_above": {
+   "trades": 8,
+   "markets": 8,
+   "losers": 0,
+   "shares_med": 8.0
+  },
+  "monthly_hit": {
+   "trades": 7,
+   "markets": 7,
+   "losers": 0,
+   "shares_med": 100
+  },
+  "updown": {
+   "trades": 19,
+   "markets": 14,
+   "losers": 0,
+   "shares_med": 10
+  },
+  "weekly_above": {
+   "trades": 2,
+   "markets": 2,
+   "losers": 0,
+   "shares_med": 200.0
+  },
+  "weekly_bracket": {
+   "trades": 44,
+   "markets": 29,
+   "losers": 0,
+   "shares_med": 5.0
+  },
+  "weekly_hit": {
+   "trades": 187,
+   "markets": 137,
+   "losers": 0,
+   "shares_med": 10
+  }
+ },
+ "timing_minutes_before_close_z>=6_cheap": {
+  "0-5": 106,
+  "30-60": 39,
+  "5-15": 130,
+  "15-30": 48,
+  "60-90": 23
+ },
+ "wallets_z>=6_cheap_last90": {
+  "distinct": 34,
+  "top5_share": [
+   [
+    "0xd13c1b0d",
+    75
+   ],
+   [
+    "0x06ce4f6a",
+    74
+   ],
+   [
+    "0xef5326fc",
+    58
+   ],
+   [
+    "0x8cb4cd50",
+    29
+   ],
+   [
+    "0x49f3dcb7",
+    14
+   ]
+  ],
+  "trades": 346
+ },
+ "wallets_z>=6_0.999_last90": {
+  "distinct": 62,
+  "trades": 1742,
+  "top5": [
+   [
+    "0xef5326fc",
+    596
+   ],
+   [
+    "0x8cb4cd50",
+    252
+   ],
+   [
+    "0xa4fcd427",
+    129
+   ],
+   [
+    "0x06ce4f6a",
+    116
+   ],
+   [
+    "0x4c26cb39",
+    99
+   ]
+  ]
+ },
+ "tail_excursion": {
+  "15": {
+   "sessions": 437,
+   "reach_k": {
+    "2": 37,
+    "3": 13,
+    "4": 4,
+    "5": 2,
+    "6": 1,
+    "8": 1
+   },
+   "finish_beyond_k": {
+    "2": 17,
+    "3": 5,
+    "4": 3,
+    "5": 1,
+    "6": 0,
+    "8": 0
+   },
+   "max_ratio": [
+    8.99,
+    "GOOGL 2026-09-30 (move 2.19%, sigma-scale 0.243%)"
+   ]
+  },
+  "30": {
+   "sessions": 437,
+   "reach_k": {
+    "2": 21,
+    "3": 5,
+    "4": 2,
+    "5": 1,
+    "6": 1,
+    "8": 0
+   },
+   "finish_beyond_k": {
+    "2": 9,
+    "3": 3,
+    "4": 0,
+    "5": 0,
+    "6": 0,
+    "8": 0
+   },
+   "max_ratio": [
+    6.44,
+    "GOOGL 2026-09-30 (move 2.22%, sigma-scale 0.344%)"
+   ]
+  },
+  "60": {
+   "sessions": 437,
+   "reach_k": {
+    "2": 14,
+    "3": 2,
+    "4": 1,
+    "5": 0,
+    "6": 0,
+    "8": 0
+   },
+   "finish_beyond_k": {
+    "2": 5,
+    "3": 0,
+    "4": 0,
+    "5": 0,
+    "6": 0,
+    "8": 0
+   },
+   "max_ratio": [
+    4.8,
+    "GOOGL 2026-09-30 (move 2.34%, sigma-scale 0.487%)"
+   ]
+  },
+  "90": {
+   "sessions": 437,
+   "reach_k": {
+    "2": 20,
+    "3": 5,
+    "4": 1,
+    "5": 0,
+    "6": 0,
+    "8": 0
+   },
+   "finish_beyond_k": {
+    "2": 5,
+    "3": 0,
+    "4": 0,
+    "5": 0,
+    "6": 0,
+    "8": 0
+   },
+   "max_ratio": [
+    4.19,
+    "SPY 2026-09-16 (move 1.34%, sigma-scale 0.319%)"
+   ]
+  }
+ },
+ "settle_delay_min_after_close": {
+  "dailyclose_above": {
+   "n": 1012,
+   "p10": 16.3,
+   "median": 17.5,
+   "p90": 26.0,
+   "p99": 80.5,
+   "max": 326.2
+  },
+  "updown": {
+   "n": 395,
+   "p10": 16.5,
+   "median": 18.7,
+   "p90": 101.2,
+   "p99": 137.0,
+   "max": 153.4
+  },
+  "weekly_hit": {
+   "n": 1182,
+   "p10": 20.1,
+   "median": 23.0,
+   "p90": 35.0,
+   "p99": 136.7,
+   "max": 248.4
+  },
+  "weekly_above": {
+   "n": 618,
+   "p10": 17.1,
+   "median": 22.4,
+   "p90": 26.9,
+   "p99": 33.5,
+   "max": 40.3
+  },
+  "weekly_bracket": {
+   "n": 528,
+   "p10": 17.9,
+   "median": 24.9,
+   "p90": 38.9,
+   "p99": 121.7,
+   "max": 197.9
+  },
+  "monthly_hit": {
+   "n": 334,
+   "p10": 17.8,
+   "median": 21.5,
+   "p90": 44.4,
+   "p99": 107.5,
+   "max": 107.5
+  },
+  "monthly_above": {
+   "n": 156,
+   "p10": 16.5,
+   "median": 22.5,
+   "p90": 27.8,
+   "p99": 42.0,
+   "max": 101.5
+  }
+ }
+}

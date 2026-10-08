@@ -3,7 +3,7 @@
   python3 lab/usports_events.py [days=15]
 series ids: MLB 3, NFL 12185, CFB 12756, NHL 10346, NBA 10345, WNBA 10105
 """
-import json, re, sys, time
+import json, re, sys, time, urllib.parse
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -24,9 +24,14 @@ def main(days):
     cutoff = (datetime.now(timezone.utc) - timedelta(days=days)).timestamp()
     out = []
     for sport, sid in SERIES.items():
-        off, n = 0, 0
+        # 2026-10-08: Gamma refuses offsets above ~2,500 ("use /events/keyset"), so page with the cursor instead
+        cur, n = "", 0
         while True:
-            page = get_json(f"{GAMMA}/events?series_id={sid}&closed=true&limit=100&offset={off}&order=startDate&ascending=false")
+            url = f"{GAMMA}/events/keyset?series_id={sid}&closed=true&limit=100&order=startDate&ascending=false"
+            if cur:
+                url += "&after_cursor=" + urllib.parse.quote(cur)
+            resp = get_json(url)
+            page = resp.get("events") if isinstance(resp, dict) else None
             if not isinstance(page, list) or not page:
                 break
             stop = False
@@ -42,9 +47,9 @@ def main(days):
                             "markets": [{"cid": m["conditionId"], "type": m.get("sportsMarketType"), "q": m.get("question"),
                                          "final": m.get("outcomePrices"), "outcomes": m.get("outcomes")} for m in e.get("markets", [])]})
                 n += 1
-            if stop or len(page) < 100:
+            cur = resp.get("next_cursor") or ""
+            if stop or len(page) < 100 or not cur:
                 break
-            off += 100
             time.sleep(0.2)
         print(sport, "events", n)
     OUT.write_text(json.dumps(out))

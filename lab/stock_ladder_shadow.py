@@ -33,7 +33,7 @@ SUMMARY = ROOT / "lab/results/stock-ladder-shadow-summary.json"
 RAW.mkdir(parents=True, exist_ok=True)
 UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
       "Accept": "application/json,text/plain,*/*"}
-FAMILIES = {"dailyclose_above", "weekly_above", "weekly_bracket", "weekly_hit"}
+FAMILIES = {"dailyclose_above", "weekly_above", "weekly_bracket", "weekly_hit", "monthly_above", "monthly_hit"}   # open events only (touched hit strikes close within minutes)
 HOLIDAYS = {"2026-11-26", "2026-12-25", "2027-01-01", "2027-01-18", "2027-02-15"}   # NYSE closed days after today
 SHARES = 5
 BAND_LO, BAND_HI = 0.98, 0.995
@@ -194,7 +194,7 @@ def settle(fills):
     for f in fills:
         if f.get("result") in ("win", "loss"):
             continue
-        m = get_json(f"{GAMMA}/markets?condition_ids={f['cid']}&limit=1")
+        m = get_json(f"{GAMMA}/markets?condition_ids={f['cid']}&closed=true&limit=1")   # closed=true is needed for settled markets
         if not m:
             continue
         m = m[0]

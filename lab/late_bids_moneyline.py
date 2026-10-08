@@ -1,7 +1,8 @@
 """Row 4 measurement (read-only): on finished US moneyline games (last ~6 days), public-tape taker SELLs into bids at 0.98+
 in the last 30 min before Polymarket's 'finished' stamp (= fills a resting buy at 0.98/0.99 would have competed for),
 split winner/loser per game, plus a crude queue proxy: shares sold into >=P bids per game vs 5.
-  python3 lab/late_bids_moneyline.py"""
+  python3 lab/late_bids_moneyline.py [result file, default lab/results/2026-10-07-late-bids-moneyline.json]
+  (reads lab/data/raw/usports_events.json made by lab/usports_events.py [days]; 2026-10-08: run with 30 days for more games)"""
 import json, sys, time, collections, statistics
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
@@ -9,6 +10,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "code"))
 from polysweeper.collector import get_json, GAMMA, parse_ts  # noqa: E402
 DATA = "https://data-api.polymarket.com"
+OUTFILE = ROOT / (sys.argv[1] if len(sys.argv) > 1 else "lab/results/2026-10-07-late-bids-moneyline.json")
 ev = json.load(open(ROOT / "lab/data/raw/usports_events.json"))
 sport = {e["game"]: e["sport"] for e in ev}
 def game_info(g):
@@ -81,7 +83,7 @@ for g in games:
 out["taker_buys_ge98_before_end"] = b
 out["tape_truncated_games"] = sum(1 for g in games if g["maxoff"] >= 10000)
 print(out["by_sport_ge98"], b, out["tape_truncated_games"])
-(ROOT / "lab/results/2026-10-07-late-bids-moneyline.json").write_text(json.dumps(out, indent=1))
+OUTFILE.write_text(json.dumps(out, indent=1))
 # extra: timing buckets of SELL fills >=0.98 before stamp, price split, and the one losing taker BUY
 bk = collections.Counter(); ps_ = collections.Counter(); lose = []
 for g in games:
@@ -95,4 +97,30 @@ for g in games:
                 lose.append((g["game"], round(d), p_, float(t["size"])))
 out["sell_fills_by_time_to_end"] = dict(bk); out["sell_fills_by_price"] = dict(ps_); out["losing_taker_buys"] = lose
 print(dict(bk), dict(ps_), lose)
-(ROOT / "lab/results/2026-10-07-late-bids-moneyline.json").write_text(json.dumps(out, indent=1))
+OUTFILE.write_text(json.dumps(out, indent=1))
+
+# 2026-10-08: price-band table for the bid side (taker SELL fills = what a resting buy would have received) and the loser fills in detail
+bands = [(0.98, 0.985), (0.985, 0.99), (0.99, 0.995), (0.995, 0.999), (0.999, 0.9995)]
+btab = {f"{lo}-{hi}": {"fills": 0, "shares": 0.0, "loser_fills": 0, "loser_shares": 0.0, "games": set(), "loser_games": set()} for lo, hi in bands}
+sell_losers = []
+by_sport_band = {}
+for g in games:
+    for t in g["trades"]:
+        p_ = float(t["price"])
+        if t["side"] != "SELL" or p_ < 0.98 or p_ >= 0.9995 or t["timestamp"] >= g["fin"]:
+            continue
+        key = next(f"{lo}-{hi}" for lo, hi in bands if lo <= p_ < hi)
+        lose = g["px"][t["outcomeIndex"]] != 1.0
+        b_ = btab[key]; b_["fills"] += 1; b_["shares"] += float(t["size"]); b_["games"].add(g["game"])
+        sb = by_sport_band.setdefault(g["sport"], {}).setdefault(key, [0, 0]); sb[0] += 1; sb[1] += lose
+        if lose:
+            b_["loser_fills"] += 1; b_["loser_shares"] += float(t["size"]); b_["loser_games"].add(g["game"])
+            sell_losers.append([g["sport"], g["game"], round(g["fin"] - t["timestamp"]), p_, round(float(t["size"]), 2)])
+out["sell_fills_by_price_band"] = {k: {"fills": v["fills"], "shares": round(v["shares"]), "loser_fills": v["loser_fills"], "loser_shares": round(v["loser_shares"]),
+                                       "games": len(v["games"]), "loser_games": len(v["loser_games"])} for k, v in btab.items()}
+out["sell_fills_on_losers"] = sell_losers
+out["by_sport_band_fills_losers"] = by_sport_band
+# per game: did ANY fill happen, and how many games had a loser fill, by sport
+out["games_with_sell_fill_by_sport"] = dict(collections.Counter(g["sport"] for g in games if any(t["side"] == "SELL" and 0.98 <= float(t["price"]) < 0.9995 and t["timestamp"] < g["fin"] for t in g["trades"])))
+print(out["sell_fills_by_price_band"]); print(sell_losers)
+OUTFILE.write_text(json.dumps(out, indent=1))

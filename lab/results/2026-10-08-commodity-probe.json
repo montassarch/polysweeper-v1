@@ -1,0 +1,52 @@
+{
+ "commodities:closes_above": {
+  "events": 22,
+  "trades": 242,
+  "markets": 73,
+  "shares": 34710,
+  "losers": 2,
+  "loser_shares": 45,
+  "gain_usd": 393.5,
+  "loss_usd": 44.5
+ },
+ "commodities:hit_week": {
+  "events": 16,
+  "trades": 108,
+  "markets": 34,
+  "shares": 10708,
+  "losers": 0,
+  "loser_shares": 0,
+  "gain_usd": 101.6,
+  "loss_usd": 0.0
+ },
+ "fx:hit_week": {
+  "events": 4,
+  "trades": 9,
+  "markets": 7,
+  "shares": 317,
+  "losers": 0,
+  "loser_shares": 0,
+  "gain_usd": 3.2,
+  "loss_usd": 0.0
+ },
+ "commodities:hit_month": {
+  "events": 3,
+  "trades": 5,
+  "markets": 1,
+  "shares": 2241,
+  "losers": 0,
+  "loser_shares": 0,
+  "gain_usd": 24.2,
+  "loss_usd": 0.0
+ },
+ "fx:hit_month": {
+  "events": 1,
+  "trades": 0,
+  "markets": 0,
+  "shares": 0,
+  "losers": 0,
+  "loser_shares": 0,
+  "gain_usd": 0.0,
+  "loss_usd": 0.0
+ }
+}

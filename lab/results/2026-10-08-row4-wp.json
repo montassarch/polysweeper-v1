@@ -1,0 +1,354 @@
+{
+ "matched_games": 502,
+ "fills_with_wp": 4742,
+ "overall": {
+  "name": "all fills >=0.98",
+  "all": {
+   "fills": 4742,
+   "games": 502,
+   "losers": 6
+  },
+  "wp>=0.9": {
+   "fills": 4675,
+   "games": 498,
+   "losers": 6
+  },
+  "wp>=0.95": {
+   "fills": 4623,
+   "games": 497,
+   "losers": 6
+  },
+  "wp>=0.98": {
+   "fills": 4438,
+   "games": 493,
+   "losers": 6
+  },
+  "wp>=0.99": {
+   "fills": 4156,
+   "games": 489,
+   "losers": 5
+  },
+  "wp>=0.995": {
+   "fills": 3810,
+   "games": 485,
+   "losers": 5
+  },
+  "wp>=0.999": {
+   "fills": 3278,
+   "games": 471,
+   "losers": 3
+  }
+ },
+ "cheap_0.98_0.995": {
+  "name": "price 0.98-0.995",
+  "all": {
+   "fills": 1768,
+   "games": 379,
+   "losers": 4
+  },
+  "wp>=0.9": {
+   "fills": 1718,
+   "games": 371,
+   "losers": 4
+  },
+  "wp>=0.95": {
+   "fills": 1686,
+   "games": 368,
+   "losers": 4
+  },
+  "wp>=0.98": {
+   "fills": 1534,
+   "games": 357,
+   "losers": 4
+  },
+  "wp>=0.99": {
+   "fills": 1280,
+   "games": 321,
+   "losers": 3
+  },
+  "wp>=0.995": {
+   "fills": 1004,
+   "games": 280,
+   "losers": 3
+  },
+  "wp>=0.999": {
+   "fills": 759,
+   "games": 200,
+   "losers": 3
+  }
+ },
+ "by_sport": {
+  "CFB": {
+   "name": "CFB",
+   "all": {
+    "fills": 693,
+    "games": 153,
+    "losers": 5
+   },
+   "wp>=0.9": {
+    "fills": 678,
+    "games": 150,
+    "losers": 5
+   },
+   "wp>=0.95": {
+    "fills": 677,
+    "games": 150,
+    "losers": 5
+   },
+   "wp>=0.98": {
+    "fills": 668,
+    "games": 148,
+    "losers": 5
+   },
+   "wp>=0.99": {
+    "fills": 643,
+    "games": 148,
+    "losers": 5
+   },
+   "wp>=0.995": {
+    "fills": 620,
+    "games": 148,
+    "losers": 5
+   },
+   "wp>=0.999": {
+    "fills": 536,
+    "games": 144,
+    "losers": 3
+   }
+  },
+  "MLB": {
+   "name": "MLB",
+   "all": {
+    "fills": 1601,
+    "games": 232,
+    "losers": 0
+   },
+   "wp>=0.9": {
+    "fills": 1574,
+    "games": 231,
+    "losers": 0
+   },
+   "wp>=0.95": {
+    "fills": 1562,
+    "games": 231,
+    "losers": 0
+   },
+   "wp>=0.98": {
+    "fills": 1486,
+    "games": 230,
+    "losers": 0
+   },
+   "wp>=0.99": {
+    "fills": 1306,
+    "games": 226,
+    "losers": 0
+   },
+   "wp>=0.995": {
+    "fills": 1180,
+    "games": 224,
+    "losers": 0
+   },
+   "wp>=0.999": {
+    "fills": 1004,
+    "games": 216,
+    "losers": 0
+   }
+  },
+  "NBA": {
+   "name": "NBA",
+   "all": {
+    "fills": 248,
+    "games": 14,
+    "losers": 0
+   },
+   "wp>=0.9": {
+    "fills": 247,
+    "games": 14,
+    "losers": 0
+   },
+   "wp>=0.95": {
+    "fills": 220,
+    "games": 13,
+    "losers": 0
+   },
+   "wp>=0.98": {
+    "fills": 211,
+    "games": 13,
+    "losers": 0
+   },
+   "wp>=0.99": {
+    "fills": 201,
+    "games": 13,
+    "losers": 0
+   },
+   "wp>=0.995": {
+    "fills": 196,
+    "games": 13,
+    "losers": 0
+   },
+   "wp>=0.999": {
+    "fills": 155,
+    "games": 13,
+    "losers": 0
+   }
+  },
+  "NFL": {
+   "name": "NFL",
+   "all": {
+    "fills": 1777,
+    "games": 63,
+    "losers": 0
+   },
+   "wp>=0.9": {
+    "fills": 1753,
+    "games": 63,
+    "losers": 0
+   },
+   "wp>=0.95": {
+    "fills": 1747,
+    "games": 63,
+    "losers": 0
+   },
+   "wp>=0.98": {
+    "fills": 1667,
+    "games": 62,
+    "losers": 0
+   },
+   "wp>=0.99": {
+    "fills": 1616,
+    "games": 62,
+    "losers": 0
+   },
+   "wp>=0.995": {
+    "fills": 1476,
+    "games": 60,
+    "losers": 0
+   },
+   "wp>=0.999": {
+    "fills": 1324,
+    "games": 59,
+    "losers": 0
+   }
+  },
+  "WNBA": {
+   "name": "WNBA",
+   "all": {
+    "fills": 423,
+    "games": 40,
+    "losers": 1
+   },
+   "wp>=0.9": {
+    "fills": 423,
+    "games": 40,
+    "losers": 1
+   },
+   "wp>=0.95": {
+    "fills": 417,
+    "games": 40,
+    "losers": 1
+   },
+   "wp>=0.98": {
+    "fills": 406,
+    "games": 40,
+    "losers": 1
+   },
+   "wp>=0.99": {
+    "fills": 390,
+    "games": 40,
+    "losers": 0
+   },
+   "wp>=0.995": {
+    "fills": 338,
+    "games": 40,
+    "losers": 0
+   },
+   "wp>=0.999": {
+    "fills": 259,
+    "games": 39,
+    "losers": 0
+   }
+  }
+ },
+ "wp_of_loser_fills": [
+  [
+   "CFB",
+   "cfb-ncst-vand-2026-09-19",
+   1058,
+   0.99,
+   0.999,
+   63
+  ],
+  [
+   "CFB",
+   "cfb-ncst-vand-2026-09-19",
+   1058,
+   0.99,
+   0.999,
+   63
+  ],
+  [
+   "CFB",
+   "cfb-ncst-vand-2026-09-19",
+   1105,
+   0.99,
+   0.999,
+   16
+  ],
+  [
+   "CFB",
+   "cfb-templ-toledo-2026-09-19",
+   1581,
+   0.999,
+   0.9986,
+   164
+  ],
+  [
+   "CFB",
+   "cfb-templ-toledo-2026-09-19",
+   1644,
+   0.999,
+   0.9986,
+   101
+  ],
+  [
+   "WNBA",
+   "wnba-gsv-la-2026-09-24",
+   1380,
+   0.98,
+   0.988,
+   59
+  ]
+ ],
+ "median_wp_by_price": {
+  "0.98-0.985": {
+   "n": 384,
+   "p10": 0.959,
+   "median": 0.987,
+   "p90": 0.999
+  },
+  "0.985-0.99": {
+   "n": 110,
+   "p10": 0.982,
+   "median": 0.993,
+   "p90": 0.999
+  },
+  "0.99-0.995": {
+   "n": 1270,
+   "p10": 0.985,
+   "median": 0.999,
+   "p90": 1.0
+  },
+  "0.995-0.999": {
+   "n": 268,
+   "p10": 0.9929,
+   "median": 0.998,
+   "p90": 0.999
+  },
+  "0.999-1.0": {
+   "n": 2704,
+   "p10": 0.9985,
+   "median": 0.999,
+   "p90": 1.0
+  }
+ }
+}

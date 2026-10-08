@@ -1,0 +1,3410 @@
+{
+ "made": "2026-10-07T23:53:40+00:00",
+ "part_b": [
+  {
+   "league": "eng.1",
+   "match": "Aston Villa at Brighton & Hove Albion",
+   "date": "2026-08-23",
+   "lead_at_88": 4,
+   "leader_won": true,
+   "window_min": 4.9,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 703,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "eng.1",
+   "match": "Liverpool at Newcastle United",
+   "date": "2026-08-23",
+   "lead_at_88": 1,
+   "leader_won": false,
+   "window_min": 13.3,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 49857,
+    "0.99-0.995": 0,
+    ">0.995": 0,
+    "<0.95": 205568
+   }
+  },
+  {
+   "league": "eng.1",
+   "match": "Chelsea at Fulham",
+   "date": "2026-08-24",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 8.4,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 74476,
+    "0.99-0.995": 6215,
+    ">0.995": 24351,
+    "<0.95": 77324
+   }
+  },
+  {
+   "league": "eng.1",
+   "match": "Manchester City at Crystal Palace",
+   "date": "2026-08-28",
+   "lead_at_88": 3,
+   "leader_won": true,
+   "window_min": 9.5,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 797054,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "eng.1",
+   "match": "Everton at AFC Bournemouth",
+   "date": "2026-08-29",
+   "lead_at_88": 1,
+   "leader_won": false,
+   "window_min": 9.2,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 0,
+    "<0.95": 37056
+   }
+  },
+  {
+   "league": "eng.1",
+   "match": "Hull City at Coventry City",
+   "date": "2026-08-29",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 4.0,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 42961,
+    "0.99-0.995": 5095,
+    ">0.995": 0,
+    "<0.95": 11172
+   }
+  },
+  {
+   "league": "eng.1",
+   "match": "Newcastle United at Tottenham Hotspur",
+   "date": "2026-08-29",
+   "lead_at_88": 2,
+   "leader_won": true,
+   "window_min": 5.9,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 13195,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "eng.1",
+   "match": "Brighton & Hove Albion at Chelsea",
+   "date": "2026-08-30",
+   "lead_at_88": 2,
+   "leader_won": true,
+   "window_min": 12.1,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 2679,
+    ">0.995": 2227395,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "eng.1",
+   "match": "Fulham at Sunderland",
+   "date": "2026-08-30",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 8.1,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 1162,
+    "0.99-0.995": 967,
+    ">0.995": 2449,
+    "<0.95": 6966
+   }
+  },
+  {
+   "league": "eng.1",
+   "match": "Ipswich Town at Manchester United",
+   "date": "2026-08-30",
+   "lead_at_88": 4,
+   "leader_won": true,
+   "window_min": 11.4,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 9591,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "eng.1",
+   "match": "Arsenal at Aston Villa",
+   "date": "2026-08-31",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 8.4,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 19741,
+    "0.99-0.995": 10900,
+    ">0.995": 82470,
+    "<0.95": 14455
+   }
+  },
+  {
+   "league": "eng.1",
+   "match": "Liverpool at Ipswich Town",
+   "date": "2026-09-04",
+   "lead_at_88": 2,
+   "leader_won": true,
+   "window_min": 9.2,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 7078,
+    ">0.995": 3722,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "eng.1",
+   "match": "AFC Bournemouth at Newcastle United",
+   "date": "2026-09-05",
+   "lead_at_88": 1,
+   "leader_won": false,
+   "window_min": 10.3,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 0,
+    "<0.95": 63202
+   }
+  },
+  {
+   "league": "eng.1",
+   "match": "Crystal Palace at Fulham",
+   "date": "2026-09-05",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 8.3,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 655,
+    "0.99-0.995": 7175,
+    ">0.995": 0,
+    "<0.95": 7680
+   }
+  },
+  {
+   "league": "eng.1",
+   "match": "Coventry City at Manchester City",
+   "date": "2026-09-05",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 10.3,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 35240,
+    "0.99-0.995": 3358,
+    ">0.995": 63183,
+    "<0.95": 12274
+   }
+  },
+  {
+   "league": "eng.1",
+   "match": "Chelsea at Arsenal",
+   "date": "2026-09-06",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 8.8,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 32069,
+    "0.99-0.995": 5225,
+    ">0.995": 21254,
+    "<0.95": 122202
+   }
+  },
+  {
+   "league": "eng.1",
+   "match": "Arsenal at Sunderland",
+   "date": "2026-09-12",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 11.8,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 22489,
+    "0.99-0.995": 18981,
+    ">0.995": 44083,
+    "<0.95": 35582
+   }
+  },
+  {
+   "league": "eng.1",
+   "match": "Brighton & Hove Albion at Coventry City",
+   "date": "2026-09-13",
+   "lead_at_88": 4,
+   "leader_won": true,
+   "window_min": 6.6,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 1859153,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "eng.1",
+   "match": "Manchester City at Manchester United",
+   "date": "2026-09-13",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 10.1,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 54157,
+    "0.99-0.995": 27926,
+    ">0.995": 4644,
+    "<0.95": 188101
+   }
+  },
+  {
+   "league": "eng.1",
+   "match": "Newcastle United at Leeds United",
+   "date": "2026-09-14",
+   "lead_at_88": 4,
+   "leader_won": true,
+   "window_min": 8.1,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 3448,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "eng.1",
+   "match": "Chelsea at Brentford",
+   "date": "2026-09-18",
+   "lead_at_88": 2,
+   "leader_won": true,
+   "window_min": 10.3,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 4002,
+    "0.99-0.995": 6944,
+    ">0.995": 34294,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "eng.1",
+   "match": "Aston Villa at Tottenham Hotspur",
+   "date": "2026-09-19",
+   "lead_at_88": 2,
+   "leader_won": true,
+   "window_min": 12.3,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 4,
+    "0.99-0.995": 16262,
+    ">0.995": 183894,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "eng.1",
+   "match": "Arsenal at Brighton & Hove Albion",
+   "date": "2026-09-19",
+   "lead_at_88": 3,
+   "leader_won": true,
+   "window_min": 10.1,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 30723,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "eng.1",
+   "match": "Ipswich Town at Everton",
+   "date": "2026-09-19",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 11.9,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 43080,
+    "0.99-0.995": 209,
+    ">0.995": 14917,
+    "<0.95": 1351
+   }
+  },
+  {
+   "league": "eng.1",
+   "match": "Hull City at Newcastle United",
+   "date": "2026-09-19",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 10.8,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 15275,
+    "0.99-0.995": 0,
+    ">0.995": 13161,
+    "<0.95": 22289
+   }
+  },
+  {
+   "league": "eng.1",
+   "match": "Coventry City at Nottingham Forest",
+   "date": "2026-09-19",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 11.8,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 0,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "eng.1",
+   "match": "Liverpool at AFC Bournemouth",
+   "date": "2026-09-20",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 8.3,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 35148,
+    "0.99-0.995": 5254,
+    ">0.995": 7676,
+    "<0.95": 22400
+   }
+  },
+  {
+   "league": "eng.1",
+   "match": "Sunderland at Manchester City",
+   "date": "2026-09-20",
+   "lead_at_88": 2,
+   "leader_won": true,
+   "window_min": 4.0,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 57754,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "eng.1",
+   "match": "Manchester United at Fulham",
+   "date": "2026-09-20",
+   "lead_at_88": 1,
+   "leader_won": false,
+   "window_min": 7.8,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 0,
+    "<0.95": 56157
+   }
+  },
+  {
+   "league": "esp.1",
+   "match": "Barcelona at Elche",
+   "date": "2026-08-23",
+   "lead_at_88": 5,
+   "leader_won": true,
+   "window_min": 4.0,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 413134,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "esp.1",
+   "match": "Real Betis at Valencia",
+   "date": "2026-08-25",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 10.4,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 1042,
+    "0.99-0.995": 5007,
+    ">0.995": 426,
+    "<0.95": 14517
+   }
+  },
+  {
+   "league": "esp.1",
+   "match": "Real Sociedad at Real Madrid",
+   "date": "2026-08-26",
+   "lead_at_88": 3,
+   "leader_won": true,
+   "window_min": 7.6,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 602393,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "esp.1",
+   "match": "Osasuna at Celta Vigo",
+   "date": "2026-08-27",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 4.6,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 936,
+    "0.99-0.995": 980,
+    ">0.995": 3750,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "esp.1",
+   "match": "Athletic Club at Barcelona",
+   "date": "2026-08-27",
+   "lead_at_88": 2,
+   "leader_won": true,
+   "window_min": 4.0,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 508638,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "esp.1",
+   "match": "Villarreal at Alav\u00e9s",
+   "date": "2026-08-28",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 9.2,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 63328,
+    "0.99-0.995": 29112,
+    ">0.995": 1495,
+    "<0.95": 222909
+   }
+  },
+  {
+   "league": "esp.1",
+   "match": "Real Betis at Levante",
+   "date": "2026-08-29",
+   "lead_at_88": 2,
+   "leader_won": true,
+   "window_min": 7.2,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 10598,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "esp.1",
+   "match": "Espanyol at Real Sociedad",
+   "date": "2026-08-29",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 9.6,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 12391,
+    "0.99-0.995": 13611,
+    ">0.995": 5937,
+    "<0.95": 2581
+   }
+  },
+  {
+   "league": "esp.1",
+   "match": "Atl\u00e9tico Madrid at Sevilla",
+   "date": "2026-08-29",
+   "lead_at_88": 2,
+   "leader_won": true,
+   "window_min": 10.5,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 1235,
+    "0.99-0.995": 16062,
+    ">0.995": 117764,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "esp.1",
+   "match": "M\u00e1laga at Real Madrid",
+   "date": "2026-08-30",
+   "lead_at_88": 3,
+   "leader_won": true,
+   "window_min": 7.7,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 5188,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "esp.1",
+   "match": "Valencia at Deportivo",
+   "date": "2026-08-30",
+   "lead_at_88": 2,
+   "leader_won": true,
+   "window_min": 5.0,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 5,
+    ">0.995": 4322,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "esp.1",
+   "match": "Athletic Club at Celta Vigo",
+   "date": "2026-08-30",
+   "lead_at_88": 2,
+   "leader_won": true,
+   "window_min": 4.0,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 139,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "esp.1",
+   "match": "Getafe at Osasuna",
+   "date": "2026-08-31",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 7.1,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 25585,
+    "0.99-0.995": 15501,
+    ">0.995": 8595,
+    "<0.95": 2464
+   }
+  },
+  {
+   "league": "esp.1",
+   "match": "Rayo Vallecano at Barcelona",
+   "date": "2026-08-31",
+   "lead_at_88": 2,
+   "leader_won": true,
+   "window_min": 9.3,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 835,
+    ">0.995": 130641,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "esp.1",
+   "match": "Real Madrid at Real Betis",
+   "date": "2026-09-04",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 12.3,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 16392,
+    "0.99-0.995": 26473,
+    ">0.995": 3886,
+    "<0.95": 282290
+   }
+  },
+  {
+   "league": "esp.1",
+   "match": "Atl\u00e9tico Madrid at Athletic Club",
+   "date": "2026-09-05",
+   "lead_at_88": 2,
+   "leader_won": true,
+   "window_min": 9.1,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 2301,
+    "0.99-0.995": 5724,
+    ">0.995": 12854,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "esp.1",
+   "match": "Barcelona at Valencia",
+   "date": "2026-09-06",
+   "lead_at_88": 5,
+   "leader_won": true,
+   "window_min": 9.3,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 2620,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "esp.1",
+   "match": "Osasuna at Alav\u00e9s",
+   "date": "2026-09-06",
+   "lead_at_88": 2,
+   "leader_won": true,
+   "window_min": 11.4,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 44944,
+    ">0.995": 14483,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "esp.1",
+   "match": "Sevilla at Espanyol",
+   "date": "2026-09-06",
+   "lead_at_88": 1,
+   "leader_won": false,
+   "window_min": 8.7,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 0,
+    "<0.95": 256124
+   }
+  },
+  {
+   "league": "esp.1",
+   "match": "Valencia at Sevilla",
+   "date": "2026-09-11",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 12.2,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 49554,
+    "0.99-0.995": 8423,
+    ">0.995": 2044628,
+    "<0.95": 60141
+   }
+  },
+  {
+   "league": "esp.1",
+   "match": "Espanyol at Osasuna",
+   "date": "2026-09-12",
+   "lead_at_88": 2,
+   "leader_won": true,
+   "window_min": 7.2,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 77,
+    ">0.995": 2838,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "esp.1",
+   "match": "Rayo Vallecano at Real Madrid",
+   "date": "2026-09-12",
+   "lead_at_88": 2,
+   "leader_won": true,
+   "window_min": 9.7,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 9389,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "esp.1",
+   "match": "Barcelona at Levante",
+   "date": "2026-09-13",
+   "lead_at_88": 2,
+   "leader_won": true,
+   "window_min": 11.1,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 3750,
+    "0.99-0.995": 2179,
+    ">0.995": 25886,
+    "<0.95": 113802
+   }
+  },
+  {
+   "league": "esp.1",
+   "match": "Atl\u00e9tico Madrid at Real Sociedad",
+   "date": "2026-09-13",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 10.1,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 6798,
+    "0.99-0.995": 5812,
+    ">0.995": 111386,
+    "<0.95": 1659
+   }
+  },
+  {
+   "league": "esp.1",
+   "match": "Real Betis at Villarreal",
+   "date": "2026-09-14",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 4.0,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 12548,
+    "0.99-0.995": 8357,
+    ">0.995": 134,
+    "<0.95": 12170
+   }
+  },
+  {
+   "league": "esp.1",
+   "match": "Espanyol at Rayo Vallecano",
+   "date": "2026-09-15",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 12.6,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 37481,
+    "0.99-0.995": 6214,
+    ">0.995": 11942,
+    "<0.95": 7911
+   }
+  },
+  {
+   "league": "esp.1",
+   "match": "Valencia at Alav\u00e9s",
+   "date": "2026-09-15",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 4.0,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 86632,
+    "0.99-0.995": 16226,
+    ">0.995": 30168,
+    "<0.95": 92
+   }
+  },
+  {
+   "league": "esp.1",
+   "match": "Osasuna at Atl\u00e9tico Madrid",
+   "date": "2026-09-16",
+   "lead_at_88": 4,
+   "leader_won": true,
+   "window_min": 5.8,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 2292,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "esp.1",
+   "match": "Sevilla at Deportivo",
+   "date": "2026-09-16",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 9.4,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 15751,
+    "0.99-0.995": 12713,
+    ">0.995": 1803,
+    "<0.95": 3208
+   }
+  },
+  {
+   "league": "esp.1",
+   "match": "Getafe at Real Betis",
+   "date": "2026-09-17",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 8.9,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 46983,
+    "0.99-0.995": 4635,
+    ">0.995": 61789,
+    "<0.95": 1456
+   }
+  },
+  {
+   "league": "esp.1",
+   "match": "Villarreal at M\u00e1laga",
+   "date": "2026-09-17",
+   "lead_at_88": 2,
+   "leader_won": true,
+   "window_min": 4.0,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 211866,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "esp.1",
+   "match": "Elche at Espanyol",
+   "date": "2026-09-18",
+   "lead_at_88": 2,
+   "leader_won": true,
+   "window_min": 8.0,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 1868,
+    "0.99-0.995": 32899,
+    ">0.995": 30583,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "esp.1",
+   "match": "Barcelona at Sevilla",
+   "date": "2026-09-19",
+   "lead_at_88": 2,
+   "leader_won": true,
+   "window_min": 4.0,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 56090,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "esp.1",
+   "match": "M\u00e1laga at Getafe",
+   "date": "2026-09-20",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 14.6,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 16861,
+    "0.99-0.995": 13864,
+    ">0.995": 14818,
+    "<0.95": 45331
+   }
+  },
+  {
+   "league": "esp.1",
+   "match": "Real Madrid at Atl\u00e9tico Madrid",
+   "date": "2026-09-20",
+   "lead_at_88": 2,
+   "leader_won": true,
+   "window_min": 10.3,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 41941,
+    "0.99-0.995": 2559,
+    ">0.995": 20962,
+    "<0.95": 44693
+   }
+  },
+  {
+   "league": "esp.1",
+   "match": "Levante at Villarreal",
+   "date": "2026-09-20",
+   "lead_at_88": 2,
+   "leader_won": true,
+   "window_min": 8.3,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 1325,
+    ">0.995": 5012,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "ger.1",
+   "match": "VfB Stuttgart at Bayern Munich",
+   "date": "2026-08-28",
+   "lead_at_88": 3,
+   "leader_won": true,
+   "window_min": 9.3,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 9983,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "ger.1",
+   "match": "Eintracht Frankfurt at 1. FC Union Berlin",
+   "date": "2026-08-29",
+   "lead_at_88": 1,
+   "leader_won": false,
+   "window_min": 8.9,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 0,
+    "<0.95": 10183
+   }
+  },
+  {
+   "league": "ger.1",
+   "match": "TSG Hoffenheim at FC Cologne",
+   "date": "2026-08-29",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 9.2,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 39,
+    "0.99-0.995": 241,
+    ">0.995": 546,
+    "<0.95": 5433
+   }
+  },
+  {
+   "league": "ger.1",
+   "match": "Borussia M\u00f6nchengladbach at RB Leipzig",
+   "date": "2026-08-29",
+   "lead_at_88": 3,
+   "leader_won": true,
+   "window_min": 5.0,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 56572,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "ger.1",
+   "match": "Bayer Leverkusen at SV Elversberg",
+   "date": "2026-08-29",
+   "lead_at_88": 2,
+   "leader_won": true,
+   "window_min": 11.2,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 6067,
+    "0.99-0.995": 6304,
+    ">0.995": 59033,
+    "<0.95": 13818
+   }
+  },
+  {
+   "league": "ger.1",
+   "match": "Hamburg SV at Borussia Dortmund",
+   "date": "2026-08-29",
+   "lead_at_88": 2,
+   "leader_won": true,
+   "window_min": 8.2,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 3719,
+    "0.99-0.995": 1024,
+    ">0.995": 5975,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "ger.1",
+   "match": "Werder Bremen at SC Freiburg",
+   "date": "2026-08-30",
+   "lead_at_88": 3,
+   "leader_won": true,
+   "window_min": 7.5,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 1173,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "ger.1",
+   "match": "Schalke 04 at FC Augsburg",
+   "date": "2026-08-30",
+   "lead_at_88": 2,
+   "leader_won": true,
+   "window_min": 7.3,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 540,
+    ">0.995": 10841,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "ger.1",
+   "match": "FC Cologne at VfB Stuttgart",
+   "date": "2026-09-04",
+   "lead_at_88": 2,
+   "leader_won": true,
+   "window_min": 11.3,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 20,
+    ">0.995": 12198,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "ger.1",
+   "match": "1. FC Union Berlin at Bayer Leverkusen",
+   "date": "2026-09-05",
+   "lead_at_88": 4,
+   "leader_won": true,
+   "window_min": 7.2,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 756,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "ger.1",
+   "match": "SC Freiburg at SC Paderborn 07",
+   "date": "2026-09-05",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 8.6,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 642,
+    "0.99-0.995": 1438,
+    ">0.995": 104,
+    "<0.95": 1723
+   }
+  },
+  {
+   "league": "ger.1",
+   "match": "Borussia Dortmund at TSG Hoffenheim",
+   "date": "2026-09-05",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 9.7,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 2258,
+    "0.99-0.995": 150,
+    ">0.995": 26746,
+    "<0.95": 22020
+   }
+  },
+  {
+   "league": "ger.1",
+   "match": "RB Leipzig at Werder Bremen",
+   "date": "2026-09-05",
+   "lead_at_88": 3,
+   "leader_won": true,
+   "window_min": 5.7,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 816,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "ger.1",
+   "match": "Mainz at Hamburg SV",
+   "date": "2026-09-06",
+   "lead_at_88": 4,
+   "leader_won": true,
+   "window_min": 6.8,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 205,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "ger.1",
+   "match": "FC Augsburg at Eintracht Frankfurt",
+   "date": "2026-09-06",
+   "lead_at_88": 2,
+   "leader_won": true,
+   "window_min": 7.9,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 287,
+    "0.99-0.995": 0,
+    ">0.995": 6340,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "ger.1",
+   "match": "Schalke 04 at 1. FC Union Berlin",
+   "date": "2026-09-11",
+   "lead_at_88": 2,
+   "leader_won": true,
+   "window_min": 17.2,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 68005,
+    "0.99-0.995": 3035,
+    ">0.995": 34460,
+    "<0.95": 170326
+   }
+  },
+  {
+   "league": "ger.1",
+   "match": "SC Paderborn 07 at Borussia Dortmund",
+   "date": "2026-09-12",
+   "lead_at_88": 2,
+   "leader_won": true,
+   "window_min": 7.1,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 150,
+    ">0.995": 14624,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "ger.1",
+   "match": "Bayer Leverkusen at FC Augsburg",
+   "date": "2026-09-12",
+   "lead_at_88": 1,
+   "leader_won": false,
+   "window_min": 10.2,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 0,
+    "<0.95": 5876
+   }
+  },
+  {
+   "league": "ger.1",
+   "match": "Eintracht Frankfurt at Mainz",
+   "date": "2026-09-12",
+   "lead_at_88": 3,
+   "leader_won": true,
+   "window_min": 7.3,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 7734,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "ger.1",
+   "match": "Borussia M\u00f6nchengladbach at SC Freiburg",
+   "date": "2026-09-12",
+   "lead_at_88": 5,
+   "leader_won": true,
+   "window_min": 5.9,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 1232,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "ger.1",
+   "match": "VfB Stuttgart at TSG Hoffenheim",
+   "date": "2026-09-12",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 4.0,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 6041,
+    "0.99-0.995": 10763,
+    ">0.995": 13260,
+    "<0.95": 2242
+   }
+  },
+  {
+   "league": "ger.1",
+   "match": "Hamburg SV at RB Leipzig",
+   "date": "2026-09-13",
+   "lead_at_88": 5,
+   "leader_won": true,
+   "window_min": 7.3,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 346,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "ger.1",
+   "match": "Bayern Munich at SV Elversberg",
+   "date": "2026-09-13",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 4.0,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 2661,
+    "0.99-0.995": 3407,
+    ">0.995": 27958,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "ger.1",
+   "match": "1. FC Union Berlin at Bayern Munich",
+   "date": "2026-09-18",
+   "lead_at_88": 7,
+   "leader_won": true,
+   "window_min": 4.0,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 52,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "ger.1",
+   "match": "Mainz at Borussia M\u00f6nchengladbach",
+   "date": "2026-09-19",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 12.9,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 64158,
+    "0.99-0.995": 32576,
+    ">0.995": 28367,
+    "<0.95": 1358
+   }
+  },
+  {
+   "league": "ger.1",
+   "match": "FC Cologne at Hamburg SV",
+   "date": "2026-09-19",
+   "lead_at_88": 2,
+   "leader_won": true,
+   "window_min": 7.1,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 9282,
+    "0.99-0.995": 0,
+    ">0.995": 5285,
+    "<0.95": 9714
+   }
+  },
+  {
+   "league": "ger.1",
+   "match": "Borussia Dortmund at VfB Stuttgart",
+   "date": "2026-09-19",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 4.0,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 0,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "ger.1",
+   "match": "RB Leipzig at Bayer Leverkusen",
+   "date": "2026-09-20",
+   "lead_at_88": 2,
+   "leader_won": true,
+   "window_min": 7.2,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 68421,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "ger.1",
+   "match": "TSG Hoffenheim at SC Paderborn 07",
+   "date": "2026-09-20",
+   "lead_at_88": 2,
+   "leader_won": true,
+   "window_min": 4.0,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 720,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "ita.1",
+   "match": "Juventus at Frosinone",
+   "date": "2026-08-23",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 12.4,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 17196,
+    "0.99-0.995": 12668,
+    ">0.995": 89,
+    "<0.95": 8986
+   }
+  },
+  {
+   "league": "ita.1",
+   "match": "Lecce at Venezia",
+   "date": "2026-08-23",
+   "lead_at_88": 2,
+   "leader_won": true,
+   "window_min": 7.0,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 3,
+    "0.99-0.995": 0,
+    ">0.995": 3165,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "ita.1",
+   "match": "Sassuolo at Atalanta",
+   "date": "2026-08-23",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 9.2,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 1954,
+    "0.99-0.995": 1658,
+    ">0.995": 1406,
+    "<0.95": 4250
+   }
+  },
+  {
+   "league": "ita.1",
+   "match": "AC Milan at Torino",
+   "date": "2026-08-23",
+   "lead_at_88": 2,
+   "leader_won": true,
+   "window_min": 5.6,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 1400,
+    "0.99-0.995": 237,
+    ">0.995": 66283,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "ita.1",
+   "match": "Lazio at Bologna",
+   "date": "2026-08-24",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 8.0,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 20151,
+    "0.99-0.995": 37264,
+    ">0.995": 9126,
+    "<0.95": 16414
+   }
+  },
+  {
+   "league": "ita.1",
+   "match": "Fiorentina at AS Roma",
+   "date": "2026-08-24",
+   "lead_at_88": 4,
+   "leader_won": true,
+   "window_min": 4.0,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 1716,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "ita.1",
+   "match": "Venezia at AC Milan",
+   "date": "2026-08-28",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 8.2,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 5234,
+    "0.99-0.995": 9856,
+    ">0.995": 103278,
+    "<0.95": 2583
+   }
+  },
+  {
+   "league": "ita.1",
+   "match": "Frosinone at Fiorentina",
+   "date": "2026-08-29",
+   "lead_at_88": 3,
+   "leader_won": true,
+   "window_min": 9.6,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 2476,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "ita.1",
+   "match": "Udinese at Monza",
+   "date": "2026-08-29",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 4.0,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 1449,
+    "0.99-0.995": 888,
+    ">0.995": 60,
+    "<0.95": 6
+   }
+  },
+  {
+   "league": "ita.1",
+   "match": "Torino at Sassuolo",
+   "date": "2026-08-29",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 9.2,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 949,
+    "0.99-0.995": 310,
+    ">0.995": 57890,
+    "<0.95": 610
+   }
+  },
+  {
+   "league": "ita.1",
+   "match": "Parma at Juventus",
+   "date": "2026-08-29",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 9.4,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 2569,
+    ">0.995": 5325,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "ita.1",
+   "match": "Como at Napoli",
+   "date": "2026-08-30",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 4.0,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 14055,
+    "0.99-0.995": 606,
+    ">0.995": 18179,
+    "<0.95": 11296
+   }
+  },
+  {
+   "league": "ita.1",
+   "match": "Internazionale at Cagliari",
+   "date": "2026-08-30",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 8.9,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 6620,
+    "0.99-0.995": 3438,
+    ">0.995": 0,
+    "<0.95": 10510
+   }
+  },
+  {
+   "league": "ita.1",
+   "match": "Genoa at Lazio",
+   "date": "2026-08-30",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 5.7,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 11115,
+    "0.99-0.995": 1012,
+    ">0.995": 26300,
+    "<0.95": 2334
+   }
+  },
+  {
+   "league": "ita.1",
+   "match": "AS Roma at Lecce",
+   "date": "2026-08-31",
+   "lead_at_88": 4,
+   "leader_won": true,
+   "window_min": 9.4,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 226,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "ita.1",
+   "match": "Como at Genoa",
+   "date": "2026-09-04",
+   "lead_at_88": 3,
+   "leader_won": true,
+   "window_min": 4.0,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 5946,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "ita.1",
+   "match": "Torino at Fiorentina",
+   "date": "2026-09-05",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 4.0,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 11089,
+    "0.99-0.995": 3986,
+    ">0.995": 13675,
+    "<0.95": 144
+   }
+  },
+  {
+   "league": "ita.1",
+   "match": "Atalanta at AS Roma",
+   "date": "2026-09-05",
+   "lead_at_88": 1,
+   "leader_won": false,
+   "window_min": 10.8,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 0,
+    "<0.95": 22106
+   }
+  },
+  {
+   "league": "ita.1",
+   "match": "Venezia at Frosinone",
+   "date": "2026-09-06",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 11.3,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 13677,
+    "0.99-0.995": 621,
+    ">0.995": 1486,
+    "<0.95": 28818
+   }
+  },
+  {
+   "league": "ita.1",
+   "match": "Sassuolo at Bologna",
+   "date": "2026-09-06",
+   "lead_at_88": 1,
+   "leader_won": false,
+   "window_min": 10.1,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 0,
+    "<0.95": 14631
+   }
+  },
+  {
+   "league": "ita.1",
+   "match": "AC Milan at Juventus",
+   "date": "2026-09-06",
+   "lead_at_88": 1,
+   "leader_won": false,
+   "window_min": 10.2,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 0,
+    "<0.95": 65528
+   }
+  },
+  {
+   "league": "ita.1",
+   "match": "Lecce at Cagliari",
+   "date": "2026-09-07",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 7.8,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 5876,
+    "0.99-0.995": 48170,
+    ">0.995": 957,
+    "<0.95": 20853
+   }
+  },
+  {
+   "league": "ita.1",
+   "match": "Fiorentina at Venezia",
+   "date": "2026-09-11",
+   "lead_at_88": 2,
+   "leader_won": true,
+   "window_min": 8.2,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 529,
+    ">0.995": 2249,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "ita.1",
+   "match": "Cagliari at Atalanta",
+   "date": "2026-09-12",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 4.0,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 7471,
+    "0.99-0.995": 1182,
+    ">0.995": 24,
+    "<0.95": 167
+   }
+  },
+  {
+   "league": "ita.1",
+   "match": "Monza at Lecce",
+   "date": "2026-09-13",
+   "lead_at_88": 2,
+   "leader_won": true,
+   "window_min": 8.4,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 9906,
+    "0.99-0.995": 537,
+    ">0.995": 7922,
+    "<0.95": 9682
+   }
+  },
+  {
+   "league": "ita.1",
+   "match": "Bologna at Napoli",
+   "date": "2026-09-13",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 9.3,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 15352,
+    "0.99-0.995": 3148,
+    ">0.995": 19937,
+    "<0.95": 1798
+   }
+  },
+  {
+   "league": "ita.1",
+   "match": "Parma at Como",
+   "date": "2026-09-14",
+   "lead_at_88": 2,
+   "leader_won": true,
+   "window_min": 8.7,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 69893,
+    "0.99-0.995": 17579,
+    ">0.995": 169096,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "ita.1",
+   "match": "AS Roma at Torino",
+   "date": "2026-09-14",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 9.5,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 5447,
+    "0.99-0.995": 7299,
+    ">0.995": 1527758,
+    "<0.95": 7057
+   }
+  },
+  {
+   "league": "ita.1",
+   "match": "Udinese at Internazionale",
+   "date": "2026-09-14",
+   "lead_at_88": 3,
+   "leader_won": true,
+   "window_min": 8.3,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 2305,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "ita.1",
+   "match": "Sassuolo at Monza",
+   "date": "2026-09-18",
+   "lead_at_88": 2,
+   "leader_won": true,
+   "window_min": 9.9,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 3012,
+    "0.99-0.995": 5137,
+    ">0.995": 13780,
+    "<0.95": 9362
+   }
+  },
+  {
+   "league": "ita.1",
+   "match": "Cagliari at Udinese",
+   "date": "2026-09-19",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 4.0,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 2049,
+    "0.99-0.995": 1506,
+    ">0.995": 155,
+    "<0.95": 1242
+   }
+  },
+  {
+   "league": "ita.1",
+   "match": "Lazio at Venezia",
+   "date": "2026-09-19",
+   "lead_at_88": 2,
+   "leader_won": true,
+   "window_min": 7.2,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 392,
+    ">0.995": 21151,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "ita.1",
+   "match": "Como at Frosinone",
+   "date": "2026-09-20",
+   "lead_at_88": 2,
+   "leader_won": true,
+   "window_min": 9.3,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 2794,
+    "0.99-0.995": 319,
+    ">0.995": 4524,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "ita.1",
+   "match": "Genoa at Parma",
+   "date": "2026-09-20",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 10.4,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 763,
+    "0.99-0.995": 172,
+    ">0.995": 557,
+    "<0.95": 2729
+   }
+  },
+  {
+   "league": "ita.1",
+   "match": "Atalanta at Juventus",
+   "date": "2026-09-20",
+   "lead_at_88": 2,
+   "leader_won": true,
+   "window_min": 7.2,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 204,
+    ">0.995": 26209,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "ita.1",
+   "match": "Lecce at AC Milan",
+   "date": "2026-09-20",
+   "lead_at_88": 3,
+   "leader_won": true,
+   "window_min": 7.2,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 1989,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "fra.1",
+   "match": "Lille at Angers",
+   "date": "2026-08-23",
+   "lead_at_88": 2,
+   "leader_won": true,
+   "window_min": 8.6,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 880,
+    ">0.995": 4278,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "fra.1",
+   "match": "AS Monaco at Le Havre AC",
+   "date": "2026-08-23",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 8.1,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 14802,
+    "0.99-0.995": 61,
+    ">0.995": 1160,
+    "<0.95": 3361
+   }
+  },
+  {
+   "league": "fra.1",
+   "match": "Paris Saint-Germain at Lille",
+   "date": "2026-08-28",
+   "lead_at_88": 2,
+   "leader_won": false,
+   "window_min": 10.1,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 17003,
+    "0.99-0.995": 9211,
+    ">0.995": 0,
+    "<0.95": 58499
+   }
+  },
+  {
+   "league": "fra.1",
+   "match": "Lens at Strasbourg",
+   "date": "2026-08-29",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 11.7,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 13111,
+    "0.99-0.995": 8336,
+    ">0.995": 3286,
+    "<0.95": 6196
+   }
+  },
+  {
+   "league": "fra.1",
+   "match": "Angers at AJ Auxerre",
+   "date": "2026-08-29",
+   "lead_at_88": 2,
+   "leader_won": true,
+   "window_min": 15.3,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 118,
+    ">0.995": 250,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "fra.1",
+   "match": "Toulouse at Brest",
+   "date": "2026-08-29",
+   "lead_at_88": 1,
+   "leader_won": false,
+   "window_min": 9.7,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 1158,
+    "0.99-0.995": 0,
+    ">0.995": 0,
+    "<0.95": 10881
+   }
+  },
+  {
+   "league": "fra.1",
+   "match": "Troyes at Lorient",
+   "date": "2026-08-29",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 4.0,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 58,
+    "0.99-0.995": 64,
+    ">0.995": 382,
+    "<0.95": 6
+   }
+  },
+  {
+   "league": "fra.1",
+   "match": "Nice at Paris FC",
+   "date": "2026-08-30",
+   "lead_at_88": 2,
+   "leader_won": true,
+   "window_min": 9.1,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 10,
+    ">0.995": 2520,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "fra.1",
+   "match": "Marseille at AS Monaco",
+   "date": "2026-08-30",
+   "lead_at_88": 2,
+   "leader_won": true,
+   "window_min": 9.7,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 3566,
+    "0.99-0.995": 511,
+    ">0.995": 27719,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "fra.1",
+   "match": "Lille at Toulouse",
+   "date": "2026-09-03",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 4.0,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 100,
+    "0.99-0.995": 12934,
+    ">0.995": 4611,
+    "<0.95": 2934
+   }
+  },
+  {
+   "league": "fra.1",
+   "match": "AS Monaco at Paris Saint-Germain",
+   "date": "2026-09-04",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 10.0,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 1415,
+    "0.99-0.995": 507,
+    ">0.995": 5164,
+    "<0.95": 28766
+   }
+  },
+  {
+   "league": "fra.1",
+   "match": "Lorient at Lens",
+   "date": "2026-09-05",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 7.5,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 6748,
+    "0.99-0.995": 7301,
+    ">0.995": 824,
+    "<0.95": 8594
+   }
+  },
+  {
+   "league": "fra.1",
+   "match": "Brest at Le Havre AC",
+   "date": "2026-09-05",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 14.3,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 5026,
+    "0.99-0.995": 3608,
+    ">0.995": 2099,
+    "<0.95": 1861
+   }
+  },
+  {
+   "league": "fra.1",
+   "match": "Strasbourg at Troyes",
+   "date": "2026-09-06",
+   "lead_at_88": 3,
+   "leader_won": true,
+   "window_min": 10.3,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 5230,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "fra.1",
+   "match": "Stade Rennais at Angers",
+   "date": "2026-09-06",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 11.4,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 9212,
+    "0.99-0.995": 1573,
+    ">0.995": 3013,
+    "<0.95": 32069
+   }
+  },
+  {
+   "league": "fra.1",
+   "match": "Paris FC at Marseille",
+   "date": "2026-09-06",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 10.3,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 14455,
+    "0.99-0.995": 4133,
+    ">0.995": 928,
+    "<0.95": 13657
+   }
+  },
+  {
+   "league": "fra.1",
+   "match": "Marseille at Stade Rennais",
+   "date": "2026-09-11",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 8.9,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 5804,
+    "0.99-0.995": 6358,
+    ">0.995": 2858,
+    "<0.95": 7697
+   }
+  },
+  {
+   "league": "fra.1",
+   "match": "Nice at AJ Auxerre",
+   "date": "2026-09-12",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 9.3,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 1769,
+    "0.99-0.995": 1382,
+    ">0.995": 799,
+    "<0.95": 748
+   }
+  },
+  {
+   "league": "fra.1",
+   "match": "Troyes at Lille",
+   "date": "2026-09-13",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 9.0,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 892,
+    "0.99-0.995": 369,
+    ">0.995": 4151,
+    "<0.95": 1228
+   }
+  },
+  {
+   "league": "fra.1",
+   "match": "Paris Saint-Germain at Brest",
+   "date": "2026-09-13",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 7.2,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 12565,
+    "0.99-0.995": 5228,
+    ">0.995": 9687,
+    "<0.95": 21440
+   }
+  },
+  {
+   "league": "fra.1",
+   "match": "Lens at AS Monaco",
+   "date": "2026-09-18",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 7.8,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 5785,
+    "0.99-0.995": 1272,
+    ">0.995": 0,
+    "<0.95": 28386
+   }
+  },
+  {
+   "league": "fra.1",
+   "match": "Strasbourg at Paris FC",
+   "date": "2026-09-19",
+   "lead_at_88": 2,
+   "leader_won": true,
+   "window_min": 10.6,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 0,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "fra.1",
+   "match": "Troyes at Angers",
+   "date": "2026-09-19",
+   "lead_at_88": 2,
+   "leader_won": true,
+   "window_min": 12.4,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 8,
+    ">0.995": 142,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "fra.1",
+   "match": "Lorient at Le Mans",
+   "date": "2026-09-19",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 4.0,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 1790,
+    "0.99-0.995": 0,
+    ">0.995": 1665,
+    "<0.95": 9
+   }
+  },
+  {
+   "league": "fra.1",
+   "match": "Le Havre AC at Toulouse",
+   "date": "2026-09-19",
+   "lead_at_88": 2,
+   "leader_won": true,
+   "window_min": 10.2,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 1727,
+    "0.99-0.995": 948,
+    ">0.995": 14802,
+    "<0.95": 5772
+   }
+  },
+  {
+   "league": "fra.1",
+   "match": "Brest at AJ Auxerre",
+   "date": "2026-09-20",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 8.0,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 1453,
+    "0.99-0.995": 550,
+    ">0.995": 0,
+    "<0.95": 6273
+   }
+  },
+  {
+   "league": "fra.1",
+   "match": "Lille at Nice",
+   "date": "2026-09-20",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 9.8,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 2375,
+    "0.99-0.995": 135,
+    ">0.995": 20300,
+    "<0.95": 3462
+   }
+  },
+  {
+   "league": "fra.1",
+   "match": "Paris Saint-Germain at Marseille",
+   "date": "2026-09-20",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 10.6,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 39258,
+    "0.99-0.995": 9554,
+    ">0.995": 352,
+    "<0.95": 1866
+   }
+  },
+  {
+   "league": "uefa.champions",
+   "match": "Aston Villa at Club Brugge",
+   "date": "2026-09-08",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 8.1,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 11316,
+    "0.99-0.995": 28501,
+    ">0.995": 3745,
+    "<0.95": 12356
+   }
+  },
+  {
+   "league": "uefa.champions",
+   "match": "Villarreal at Borussia Dortmund",
+   "date": "2026-09-08",
+   "lead_at_88": 2,
+   "leader_won": true,
+   "window_min": 8.0,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 81996,
+    "0.99-0.995": 2381,
+    ">0.995": 159353,
+    "<0.95": 6457
+   }
+  },
+  {
+   "league": "uefa.champions",
+   "match": "Manchester City at FC Porto",
+   "date": "2026-09-08",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 9.4,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 2082,
+    "0.99-0.995": 10552,
+    ">0.995": 27757,
+    "<0.95": 1032
+   }
+  },
+  {
+   "league": "uefa.champions",
+   "match": "Real Betis at Lille",
+   "date": "2026-09-08",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 9.3,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 4367,
+    "0.99-0.995": 246,
+    ">0.995": 2808,
+    "<0.95": 16608
+   }
+  },
+  {
+   "league": "uefa.champions",
+   "match": "Internazionale at Real Madrid",
+   "date": "2026-09-08",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 7.9,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 38041,
+    "0.99-0.995": 20744,
+    ">0.995": 0,
+    "<0.95": 40441
+   }
+  },
+  {
+   "league": "uefa.champions",
+   "match": "Feyenoord Rotterdam at Barcelona",
+   "date": "2026-09-09",
+   "lead_at_88": 4,
+   "leader_won": true,
+   "window_min": 4.0,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 1572,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "uefa.champions",
+   "match": "Viking FK at VfB Stuttgart",
+   "date": "2026-09-09",
+   "lead_at_88": 2,
+   "leader_won": true,
+   "window_min": 4.0,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 2725,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "uefa.champions",
+   "match": "Atl\u00e9tico Madrid at Liverpool",
+   "date": "2026-09-09",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 9.3,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 28117,
+    "0.99-0.995": 4339,
+    ">0.995": 3392,
+    "<0.95": 53027
+   }
+  },
+  {
+   "league": "uefa.champions",
+   "match": "Arsenal at Napoli",
+   "date": "2026-09-09",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 7.4,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 20907,
+    "0.99-0.995": 4356,
+    ">0.995": 824343,
+    "<0.95": 32376
+   }
+  },
+  {
+   "league": "uefa.champions",
+   "match": "Slovan Bratislava at Paris Saint-Germain",
+   "date": "2026-09-09",
+   "lead_at_88": 5,
+   "leader_won": true,
+   "window_min": 6.2,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 0,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "uefa.champions",
+   "match": "Galatasaray at Sporting CP",
+   "date": "2026-09-09",
+   "lead_at_88": 2,
+   "leader_won": true,
+   "window_min": 5.5,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 39,
+    ">0.995": 2200,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "uefa.champions",
+   "match": "RB Leipzig at Como",
+   "date": "2026-09-10",
+   "lead_at_88": 2,
+   "leader_won": true,
+   "window_min": 8.8,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 143,
+    ">0.995": 12773,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "uefa.champions",
+   "match": "Sabah FK at Manchester United",
+   "date": "2026-09-10",
+   "lead_at_88": 4,
+   "leader_won": true,
+   "window_min": 4.0,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 110,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "uefa.europa",
+   "match": "Benfica at AC Milan",
+   "date": "2026-09-16",
+   "lead_at_88": 2,
+   "leader_won": true,
+   "window_min": 8.2,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 10967,
+    "0.99-0.995": 449,
+    ">0.995": 3266,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "uefa.europa",
+   "match": "NK Celje at Bayer Leverkusen",
+   "date": "2026-09-16",
+   "lead_at_88": 2,
+   "leader_won": true,
+   "window_min": 4.0,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 11,
+    ">0.995": 431,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "uefa.europa",
+   "match": "Marseille at Besiktas",
+   "date": "2026-09-17",
+   "lead_at_88": 3,
+   "leader_won": true,
+   "window_min": 11.3,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 6746,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "uefa.europa",
+   "match": "Ferencvaros at Celtic",
+   "date": "2026-09-17",
+   "lead_at_88": 2,
+   "leader_won": true,
+   "window_min": 8.0,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 628,
+    "0.99-0.995": 3329,
+    ">0.995": 102960,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "uefa.europa",
+   "match": "Lech Poznan at Crystal Palace",
+   "date": "2026-09-17",
+   "lead_at_88": 3,
+   "leader_won": true,
+   "window_min": 6.2,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 20,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "uefa.europa",
+   "match": "AFC Bournemouth at Real Sociedad",
+   "date": "2026-09-17",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 4.0,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 8796,
+    "0.99-0.995": 1768,
+    ">0.995": 4760,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "por.1",
+   "match": "C.D. Nacional at Vit\u00f3ria de Guimaraes",
+   "date": "2026-08-23",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 6.3,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 1143,
+    "0.99-0.995": 152,
+    ">0.995": 536,
+    "<0.95": 17
+   }
+  },
+  {
+   "league": "por.1",
+   "match": "FC Famalicao at Santa Clara",
+   "date": "2026-08-23",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 8.0,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 5984,
+    "0.99-0.995": 760,
+    ">0.995": 0,
+    "<0.95": 180
+   }
+  },
+  {
+   "league": "por.1",
+   "match": "Arouca at FC Porto",
+   "date": "2026-08-23",
+   "lead_at_88": 2,
+   "leader_won": true,
+   "window_min": 9.8,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 795,
+    ">0.995": 3998,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "por.1",
+   "match": "Casa Pia at Gil Vicente",
+   "date": "2026-08-24",
+   "lead_at_88": 2,
+   "leader_won": true,
+   "window_min": 4.0,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 7,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "por.1",
+   "match": "Sporting CP at Rio Ave",
+   "date": "2026-08-28",
+   "lead_at_88": 4,
+   "leader_won": true,
+   "window_min": 4.0,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 20,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "por.1",
+   "match": "Maritimo at Arouca",
+   "date": "2026-08-29",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 10.2,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 713,
+    "0.99-0.995": 366,
+    ">0.995": 103,
+    "<0.95": 314
+   }
+  },
+  {
+   "league": "por.1",
+   "match": "FC Porto at Acad\u00e9mico de Viseu",
+   "date": "2026-08-29",
+   "lead_at_88": 3,
+   "leader_won": true,
+   "window_min": 4.0,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 52,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "por.1",
+   "match": "Estrela at C.D. Nacional",
+   "date": "2026-08-30",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 9.4,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 307,
+    "0.99-0.995": 100,
+    ">0.995": 1006,
+    "<0.95": 635
+   }
+  },
+  {
+   "league": "por.1",
+   "match": "Moreirense at Casa Pia",
+   "date": "2026-08-30",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 4.0,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 60,
+    "0.99-0.995": 475,
+    ">0.995": 480,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "por.1",
+   "match": "Estoril at Benfica",
+   "date": "2026-08-31",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 4.0,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 5380,
+    "0.99-0.995": 130,
+    ">0.995": 1226,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "por.1",
+   "match": "Vit\u00f3ria de Guimaraes at Braga",
+   "date": "2026-08-31",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 4.0,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 173,
+    "0.99-0.995": 177,
+    ">0.995": 2300,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "por.1",
+   "match": "Moreirense at FC Porto",
+   "date": "2026-09-04",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 12.4,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 16794,
+    "0.99-0.995": 304,
+    ">0.995": 6192,
+    "<0.95": 5
+   }
+  },
+  {
+   "league": "por.1",
+   "match": "Braga at Alverca",
+   "date": "2026-09-05",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 12.2,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 977,
+    "0.99-0.995": 290,
+    ">0.995": 315,
+    "<0.95": 785
+   }
+  },
+  {
+   "league": "por.1",
+   "match": "Benfica at Maritimo",
+   "date": "2026-09-05",
+   "lead_at_88": 3,
+   "leader_won": true,
+   "window_min": 5.2,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 146,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "por.1",
+   "match": "C.D. Nacional at Sporting CP",
+   "date": "2026-09-05",
+   "lead_at_88": 2,
+   "leader_won": true,
+   "window_min": 7.0,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 5,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "por.1",
+   "match": "Rio Ave at Santa Clara",
+   "date": "2026-09-06",
+   "lead_at_88": 3,
+   "leader_won": true,
+   "window_min": 8.1,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 0,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "por.1",
+   "match": "Acad\u00e9mico de Viseu at Gil Vicente",
+   "date": "2026-09-06",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 9.1,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 3268,
+    "0.99-0.995": 6357,
+    ">0.995": 9,
+    "<0.95": 5069
+   }
+  },
+  {
+   "league": "por.1",
+   "match": "Benfica at Moreirense",
+   "date": "2026-09-09",
+   "lead_at_88": 4,
+   "leader_won": true,
+   "window_min": 8.5,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 0,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "por.1",
+   "match": "Braga at Estrela",
+   "date": "2026-09-10",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 8.9,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 10859,
+    "0.99-0.995": 2111,
+    ">0.995": 1044,
+    "<0.95": 6154
+   }
+  },
+  {
+   "league": "por.1",
+   "match": "Alverca at C.D. Nacional",
+   "date": "2026-09-12",
+   "lead_at_88": 2,
+   "leader_won": true,
+   "window_min": 10.2,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 678,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "por.1",
+   "match": "FC Porto at Casa Pia",
+   "date": "2026-09-12",
+   "lead_at_88": 2,
+   "leader_won": true,
+   "window_min": 8.1,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 54,
+    ">0.995": 3110,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "por.1",
+   "match": "Santa Clara at Arouca",
+   "date": "2026-09-13",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 10.2,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 152,
+    "0.99-0.995": 37,
+    ">0.995": 0,
+    "<0.95": 1481
+   }
+  },
+  {
+   "league": "por.1",
+   "match": "Gil Vicente at Benfica",
+   "date": "2026-09-13",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 10.6,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 26869,
+    "0.99-0.995": 9807,
+    ">0.995": 9526,
+    "<0.95": 3277
+   }
+  },
+  {
+   "league": "por.1",
+   "match": "Sporting CP at FC Famalicao",
+   "date": "2026-09-13",
+   "lead_at_88": 1,
+   "leader_won": false,
+   "window_min": 11.1,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 3461,
+    "0.99-0.995": 0,
+    ">0.995": 0,
+    "<0.95": 97692
+   }
+  },
+  {
+   "league": "por.1",
+   "match": "Maritimo at Moreirense",
+   "date": "2026-09-14",
+   "lead_at_88": 2,
+   "leader_won": true,
+   "window_min": 5.6,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 6566,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "por.1",
+   "match": "Estoril at Braga",
+   "date": "2026-09-14",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 10.0,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 44971,
+    "0.99-0.995": 3225,
+    ">0.995": 12151,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "por.1",
+   "match": "FC Famalicao at C.D. Nacional",
+   "date": "2026-09-19",
+   "lead_at_88": 4,
+   "leader_won": true,
+   "window_min": 7.2,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 217,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "por.1",
+   "match": "Maritimo at Gil Vicente",
+   "date": "2026-09-19",
+   "lead_at_88": 1,
+   "leader_won": false,
+   "window_min": 10.7,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 21,
+    "0.99-0.995": 0,
+    ">0.995": 0,
+    "<0.95": 3426
+   }
+  },
+  {
+   "league": "por.1",
+   "match": "Rio Ave at Alverca",
+   "date": "2026-09-19",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 9.8,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 0,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "por.1",
+   "match": "Acad\u00e9mico de Viseu at Estrela",
+   "date": "2026-09-20",
+   "lead_at_88": 2,
+   "leader_won": true,
+   "window_min": 11.4,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 82,
+    ">0.995": 315,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "por.1",
+   "match": "Moreirense at Vit\u00f3ria de Guimaraes",
+   "date": "2026-09-20",
+   "lead_at_88": 1,
+   "leader_won": false,
+   "window_min": 12.0,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 21,
+    "0.99-0.995": 0,
+    ">0.995": 0,
+    "<0.95": 8615
+   }
+  },
+  {
+   "league": "por.1",
+   "match": "Benfica at FC Porto",
+   "date": "2026-09-20",
+   "lead_at_88": 2,
+   "leader_won": true,
+   "window_min": 7.2,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 121,
+    ">0.995": 52930,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "ned.1",
+   "match": "ADO Den Haag at Go Ahead Eagles",
+   "date": "2026-08-23",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 8.9,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 177,
+    "0.99-0.995": 25,
+    ">0.995": 608,
+    "<0.95": 134
+   }
+  },
+  {
+   "league": "ned.1",
+   "match": "Feyenoord Rotterdam at SC Cambuur",
+   "date": "2026-08-23",
+   "lead_at_88": 3,
+   "leader_won": true,
+   "window_min": 4.0,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 9,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "ned.1",
+   "match": "Fortuna Sittard at FC Groningen",
+   "date": "2026-08-28",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 13.0,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 737,
+    "0.99-0.995": 1275,
+    ">0.995": 725,
+    "<0.95": 11602
+   }
+  },
+  {
+   "league": "ned.1",
+   "match": "Ajax Amsterdam at Telstar",
+   "date": "2026-08-30",
+   "lead_at_88": 4,
+   "leader_won": true,
+   "window_min": 4.0,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 94,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "ned.1",
+   "match": "FC Twente at SC Cambuur",
+   "date": "2026-08-30",
+   "lead_at_88": 4,
+   "leader_won": true,
+   "window_min": 6.1,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 20,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "ned.1",
+   "match": "Excelsior at Willem II",
+   "date": "2026-09-05",
+   "lead_at_88": 3,
+   "leader_won": true,
+   "window_min": 7.6,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 80,
+    ">0.995": 0,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "ned.1",
+   "match": "SC Cambuur at Telstar",
+   "date": "2026-09-06",
+   "lead_at_88": 1,
+   "leader_won": false,
+   "window_min": 15.9,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 3451,
+    "0.99-0.995": 0,
+    ">0.995": 0,
+    "<0.95": 21757
+   }
+  },
+  {
+   "league": "ned.1",
+   "match": "Fortuna Sittard at ADO Den Haag",
+   "date": "2026-09-06",
+   "lead_at_88": 2,
+   "leader_won": true,
+   "window_min": 11.4,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 300,
+    "0.99-0.995": 1968,
+    ">0.995": 14078,
+    "<0.95": 1317
+   }
+  },
+  {
+   "league": "ned.1",
+   "match": "Go Ahead Eagles at FC Utrecht",
+   "date": "2026-09-08",
+   "lead_at_88": 1,
+   "leader_won": false,
+   "window_min": 6.6,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 0,
+    "<0.95": 1423
+   }
+  },
+  {
+   "league": "ned.1",
+   "match": "Telstar at FC Twente",
+   "date": "2026-09-09",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 4.0,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 318,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "ned.1",
+   "match": "ADO Den Haag at FC Twente",
+   "date": "2026-09-12",
+   "lead_at_88": 2,
+   "leader_won": true,
+   "window_min": 8.2,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 216,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "ned.1",
+   "match": "Ajax Amsterdam at Fortuna Sittard",
+   "date": "2026-09-12",
+   "lead_at_88": 3,
+   "leader_won": true,
+   "window_min": 10.9,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 1448,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "ned.1",
+   "match": "Feyenoord Rotterdam at PEC Zwolle",
+   "date": "2026-09-13",
+   "lead_at_88": 7,
+   "leader_won": true,
+   "window_min": 4.0,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 0,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "ned.1",
+   "match": "Willem II at Ajax Amsterdam",
+   "date": "2026-09-15",
+   "lead_at_88": 4,
+   "leader_won": true,
+   "window_min": 6.5,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 3,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "ned.1",
+   "match": "PEC Zwolle at FC Groningen",
+   "date": "2026-09-18",
+   "lead_at_88": 3,
+   "leader_won": true,
+   "window_min": 7.5,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 807,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "ned.1",
+   "match": "Heerenveen at Sparta Rotterdam",
+   "date": "2026-09-19",
+   "lead_at_88": 4,
+   "leader_won": true,
+   "window_min": 4.0,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 0,
+    "<0.95": 0
+   }
+  },
+  {
+   "league": "ned.1",
+   "match": "Fortuna Sittard at Willem II",
+   "date": "2026-09-19",
+   "lead_at_88": 1,
+   "leader_won": true,
+   "window_min": 7.4,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 196,
+    "0.99-0.995": 455,
+    ">0.995": 0,
+    "<0.95": 32
+   }
+  },
+  {
+   "league": "ned.1",
+   "match": "FC Utrecht at Feyenoord Rotterdam",
+   "date": "2026-09-20",
+   "lead_at_88": 5,
+   "leader_won": true,
+   "window_min": 4.0,
+   "ft_marked": true,
+   "shares": {
+    "0.95-0.99": 0,
+    "0.99-0.995": 0,
+    ">0.995": 1008,
+    "<0.95": 0
+   }
+  }
+ ]
+}

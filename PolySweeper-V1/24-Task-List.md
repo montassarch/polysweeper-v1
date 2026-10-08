@@ -191,3 +191,4 @@ Handled privately by the owner; not tracked in this vault.
 - [x] Dashboard (snapshot and 15-second live mode)
 - [x] Full bot logic spec and audit
 - [x] Venue decision: Polymarket global
+- [ ] Start lab/stock_ladder_shadow.py on the laptop by 18:30 UTC Fri 9 Oct (row 9 real test)

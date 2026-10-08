@@ -53,7 +53,12 @@ owner plainly and propose a new date; never lower the bar to make a rule pass.
 - [x] (2026-10-07: 0 of 36 filled at the safe moment; leaning NO, kept running in the background) **0.999 queue test** (owner yes 2026-10-07 02:45): `lab/queue999.py` running on the laptop (restarted 2026-10-07 04:00, to ~2026-10-08 03:00 Tunisia), read-only; raw output local in `lab/data/raw/queue999/`, **summary pushed every 3 h to `lab/results/queue999-summary.json`** (cloud lab can read it). Question: if we rest a 5-share buy at 0.999 once a match is over, does it fill, and how fast? Next laptop session writes the answer in that day's research note. Early: 0 of 7 filled (too few to judge). First look: queues are big (Dodgers game ~1M shares at 0.999, LoL 45k).
 - [ ] **MAIN JOB (owner 2026-10-07): late US-games resting bids** (scoreboard row 4). `lab/queue_late.py` running on the laptop from 2026-10-07 16:44 to ~21 Oct (read-only; summary pushed every 3 h to `lab/results/queue-late-summary.json`; if the laptop restarts, start it again: `py lab/queue_late.py 300`). Cloud lab: same question on public history. — **laptop + lab**
 - [x] (done 2026-10-07: ESPN ~140 s ahead, 11/11 agree, 0 shares left; safety source only) **Tennis end race** running on the laptop until ~2026-10-07 13:30 Tunisia (`lab/tennis_end_race.py`, output `lab/data/raw/tennis_end_race/` is LOCAL ONLY, git-ignored): next laptop session reads it and reports: ESPN "final" vs Polymarket "ended" (seconds), winner agreement, shares left at 0.96-0.995 at the ESPN moment. Write the result into today's research note so the lab sees it.
-- [ ] **CEO plan (owner 2026-10-07: "you are the CEO, plan everything")**, in order — **assistant + lab**:
+- [ ] **NARROWED PLAN (owner yes 2026-10-08), replaces the CEO plan below until 21 Oct:** only (1) row 4 late US-games
+  resting bids with a rule usable live (hindsight "last 10 min" guard is not enough: live clock rule still had 6 loser
+  fills), (2) row 9 stock/ETF ladder last-hour sweep, (3) backup research: market making (both sides, spread +
+  rewards). 21 Oct: neither near 300 safe fills with 0 losses -> switch to the backup, owner decides. Details:
+  [[30-Research-Hub]] "Owner's focus". — **lab + assistant**
+- [ ] (superseded 2026-10-08 by the narrowed plan) **CEO plan (owner 2026-10-07: "you are the CEO, plan everything")**, in order — **assistant + lab**:
   1. Row 4 keeps running to 21 Oct (main job). 2. Row 8 late football 2+ goals: tester measures on past matches
   (next free tester run). 3. Row 7 elections: Brazil runoff 25 Oct, recorder ready by 23 Oct; US 3 Nov.
   4. Usage budget: lab runs save hourly; heavy laptop work outside 08:00-12:00 Tunisia so the 09:00 researcher isn't starved.

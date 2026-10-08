@@ -35,6 +35,22 @@ tester; the 17:00 phone summary starts with it. Every run works on a scoreboard 
 
 ## Owner's focus (serves the question above)
 
+**NARROWED 2026-10-08 (owner yes): until 21 Oct the lab works on only 2 lines, plus 1 backup study. Everything
+else stops (no new effort, no new ideas outside these).**
+1. **Row 4, late US-games resting bids, with a LIVE rule.** The "last 10 min before the end" guard (0 losers in
+   4,351 fills) uses hindsight; the live clock rule (last period, clock <= 10 min) still let 6 loser fills in 3
+   games through (`lab/results/2026-10-08-row4-clock.json`). Find a rule usable live (clock + lead + "no single
+   play flips it", card 3; cancel-follow shield, card 2) that removes them, then count fills.
+2. **Row 9, stock/ETF ladder last-hour sweep** (card 1, [[R-2026-10-08]]): 3 earlier weeks of tape (need 0 losers in
+   150+ right-side fills), recorder from Fri 9 Oct 18:30 UTC.
+3. **Backup: market making (be the maker on both sides, earn the spread)**, research only: Polymarket liquidity
+   rewards and maker rebates, spreads and volume per market type, adverse-selection risk, who already does it,
+   rough $/day at $100-500 capital. Ready by 21 Oct so the switch is planned, not improvised.
+- **21 Oct:** if neither line is near 300 safe pretend fills with 0 losses, switch to the backup (owner decides).
+- Stopped: after-result sweep, 0.999 race (row 3: end-join 3 of 147), late football (row 8: NO), price-only in-play,
+  crypto/weather ladders, CS2/esports source hunt (only matters for the stopped lines). Laptop recorders may keep
+  running in the background, no lab time on them.
+
 **MAIN JOB until 21 Oct (owner 2026-10-07 16:45): scoreboard row 4, resting buys at 0.98-0.99 late in US games**
 (MLB, NHL, NFL, college football; NBA from ~21 Oct). Why this one: profit 1-2 cents a share, so one loss costs
 ~50-100 wins (not ~1,000 as at 0.999), and public data already shows 1,688 fills with 0.2% on losers, none in

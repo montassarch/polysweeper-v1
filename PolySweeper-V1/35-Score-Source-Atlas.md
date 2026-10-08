@@ -91,7 +91,32 @@ by game id); per-game matching is the next fix.)
 - Unofficial endpoints (365Scores, LiveScore, bo3.gg, Setka widget) can change or block without notice. Terms of
   use not yet read.
 
-## Next steps (proposed)
+## Update 8 Oct evening: next steps done (owner yes)
+
+1. **bo3.gg per game fixed** (game filter + name suffixes): esports found on bo3.gg: CS2 65/74, Mobile Legends
+   12/13, Rainbow Six 7/8, LoL 7/7, Valorant 6/6, Dota 2 4/4. Still missing: Honor of Kings (0/11), Overwatch
+   (0/6): Liquipedia API only.
+2. **Slow ESPN pass done with 0 refusals** (1 request every 2 s, stops itself after 3 refusals; today and tomorrow
+   only, so leagues playing the day after show low ESPN numbers). ESPN found 459 matches, mostly US sports (MLB
+   12/12, NFL 4/4, CFB 16/62). New total: **2,091 of 3,068 matches (68%) on at least one free source.**
+3. **Speed test started:** `lab/feeds_end_race.py` on the laptop for 7 days (to ~15 Oct). Every live Polymarket
+   match except esports: 365Scores and LiveScore "over" vs Polymarket "ended", final-score agreement, shares left.
+   Light: per-match JSON (2-4 KB), 4-6 s per round, 15 MB memory, every call has a timeout, errors don't stop it.
+   Summary pushed every 3 h: `lab/results/feeds-end-race-summary.json`.
+4. **Cricket:** ICC's own data provider (Sportz, `assets-icc.sportz.io/cricket/v1/schedule`, public web key from
+   icc-cricket.com) answers with status, result and scores for international cricket. LiveScore has cricket live
+   + per-match JSON. ESPNcricinfo and the Cricbuzz API stay blocked; the Cricbuzz page has embedded data (not parsed).
+5. **Terms of use** (honest): Liquipedia publishes clear API rules (1 request per 2 s, `parse` 1 per 30 s, own
+   app name, credit Liquipedia), and our use fits them. LiveScore and bo3.gg ask robots to stay away from `/api/`
+   in robots.txt; their terms pages load by script and could not be read in full. 365Scores' data host has no
+   robots rule. These unofficial feeds can block or change without notice, so: keep rates low, and never depend on
+   one of them alone.
+
+**First speed result, CS2 (6 matches): bo3.gg is SLOWER than Polymarket**, by 1.5-6 min (median about 4 min),
+and agreed on the winner 6 of 6. bo3.gg's own end time is about 5-7 min before its status turns "finished", and
+small matches have no live round data on bo3.gg. So for CS2, bo3.gg is a winner check, not a speed edge.
+
+## Next steps (proposed, first list)
 
 1. Fix bo3.gg matching per game (Dota 2, LoL, Valorant, R6, MLBB) and re-run coverage.
 2. A polite ESPN mapping pass (1 request/s) for rugby, AFL, MMA and smaller football leagues.

@@ -1,32 +1,56 @@
 {
- "updated": "2026-10-08T17:46:58+00:00",
- "matches_saved": 0,
+ "updated": "2026-10-08T18:28:49+00:00",
+ "matches_saved": 2,
  "s365": {
-  "n": 0,
-  "source_first": 0,
-  "median_lead_s": null,
-  "p10_lead_s": null,
-  "p90_lead_s": null,
-  "score_agree": 0,
+  "n": 2,
+  "source_first": 2,
+  "median_lead_s": 102.1,
+  "p10_lead_s": 36.0,
+  "p90_lead_s": 102.1,
+  "score_agree": 2,
   "score_disagree": []
  },
  "livescore": {
-  "n": 0,
-  "source_first": 0,
-  "median_lead_s": null,
-  "p10_lead_s": null,
-  "p90_lead_s": null,
-  "score_agree": 0,
+  "n": 2,
+  "source_first": 2,
+  "median_lead_s": 52.4,
+  "p10_lead_s": 30.1,
+  "p90_lead_s": 52.4,
+  "score_agree": 2,
   "score_disagree": []
  },
  "pm_never_ended": 0,
- "by_series": {},
- "started": "2026-10-08T17:45:23+00:00",
- "discovered": 7,
- "no_source": 1,
- "errors": 0,
+ "by_series": {
+  "morocco-1": {
+   "n": 1,
+   "lead_365": {
+    "n": 1,
+    "median": 102.1
+   },
+   "lead_ls": {
+    "n": 1,
+    "median": 52.4
+   }
+  },
+  "atp": {
+   "n": 1,
+   "lead_365": {
+    "n": 1,
+    "median": 36.0
+   },
+   "lead_ls": {
+    "n": 1,
+    "median": 30.1
+   }
+  }
+ },
+ "started": "2026-10-08T17:47:34+00:00",
+ "discovered": 11,
+ "no_source": 2,
+ "errors": 7,
  "no_source_examples": [
-  "Braga (Doubles): Gurri/Izquierdo vs Domingues/Torres"
+  "Braga (Doubles): Gurri/Izquierdo vs Domingues/Torres",
+  "AS FAR vs. Wydad Sportif Témara"
  ],
- "watching_now": 7
+ "watching_now": 9
 }

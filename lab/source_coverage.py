@@ -11,7 +11,7 @@ Sources tried (all free, no key):
 Output: lab/results/source-coverage.json (per league: matches, % found per source) + unmatched examples.
   py lab/source_coverage.py [hours_ahead=48]
 """
-import json, re, sys, time, unicodedata, urllib.request
+import json, re, sys, time, unicodedata, urllib.error, urllib.request
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
@@ -26,7 +26,7 @@ PLAIN = {"User-Agent": "polysweeper-research/0.1"}   # ESPN returns 403 to a bar
 STOP = {"fc", "cf", "sc", "ac", "afc", "club", "de", "the", "cd", "ca", "fk", "sk", "if", "bk", "ud", "sd", "rc",
         "us", "as", "ss", "esports", "esport", "gaming", "team", "basketball", "hockey", "baseball", "football",
         "women", "w", "1", "2", "ii", "u21", "u23", "u19", "u20", "calcio", "spor", "kulubu", "sv", "vfb", "vfl",
-        "tsg", "1.", "fsv", "real", "atletico", "deportivo", "club", "cs", "ks", "nk", "hnk", "gnk", "fcsb", "jk"}
+        "tsg", "1.", "fsv", "lol", "dota2", "mmln", "academy_", "real", "atletico", "deportivo", "club", "cs", "ks", "nk", "hnk", "gnk", "fcsb", "jk"}
 
 
 def fetch(url, headers=None, timeout=20):
@@ -103,27 +103,39 @@ def espn_games(days):
             m = re.search(r"/leagues/([^?/]+)", it.get("$ref", ""))
             if m:
                 slugs.append((s, m.group(1)))
-    rng = f"{days[0]:%Y%m%d}-{days[-1]:%Y%m%d}"
-
-    def one(sl):
-        d = fetch(f"https://site.api.espn.com/apis/site/v2/sports/{sl[0]}/{sl[1]}/scoreboard?dates={rng}&limit=500", PLAIN) or {}
-        g = []
-        for ev in d.get("events", []):
-            for c in ev.get("competitions", []):
-                cs = c.get("competitors", [])
-                if len(cs) == 2:
-                    nm = [(x.get("team") or x.get("athlete") or {}).get("displayName", "") for x in cs]
-                    g.append((parse_ts(c.get("date") or ev.get("date")), nm[0], nm[1], f"espn:{sl[1]}"))
-            for grp in ev.get("groupings", []):          # tennis
-                for c in grp.get("competitions", []):
+    # ESPN refused the laptop after a 12-thread burst (8 Oct). The live bot uses ESPN from the same machine,
+    # so: one request every 2 s, one day per request (ranges give 400), stop at 3 refusals in a row.
+    res, refused = [], 0
+    for sl in slugs:
+        for day in days[1:3]:          # today + tomorrow only (keeps it to ~25 min at 2 s)
+            if refused >= 3:
+                break
+            time.sleep(2)
+            try:
+                req = urllib.request.Request(f"https://site.api.espn.com/apis/site/v2/sports/{sl[0]}/{sl[1]}"
+                                             f"/scoreboard?dates={day:%Y%m%d}", headers=PLAIN)
+                with urllib.request.urlopen(req, timeout=20) as r:
+                    d = json.load(r)
+                refused = 0
+            except urllib.error.HTTPError as e:
+                refused += e.code in (403, 429)
+                continue
+            except Exception:  # noqa: BLE001
+                continue
+            for ev in d.get("events", []):
+                for c in ev.get("competitions", []):
                     cs = c.get("competitors", [])
                     if len(cs) == 2:
-                        nm = [(x.get("athlete") or {}).get("displayName", "") for x in cs]
-                        g.append((parse_ts(c.get("date")), nm[0], nm[1], f"espn:{sl[1]}"))
-        return g
-
-    with ThreadPoolExecutor(12) as ex:
-        res = [x for r in ex.map(one, slugs) for x in r]
+                        nm = [(x.get("team") or x.get("athlete") or {}).get("displayName", "") for x in cs]
+                        res.append((parse_ts(c.get("date") or ev.get("date")), nm[0], nm[1], f"espn:{sl[1]}"))
+                for grp in ev.get("groupings", []):          # tennis
+                    for c in grp.get("competitions", []):
+                        cs = c.get("competitors", [])
+                        if len(cs) == 2:
+                            nm = [(x.get("athlete") or {}).get("displayName", "") for x in cs]
+                            res.append((parse_ts(c.get("date")), nm[0], nm[1], f"espn:{sl[1]}"))
+    if refused >= 3:
+        print("ESPN refused 3 times in a row: stopped early (results partial)", flush=True)
     print("espn leagues", len(slugs), "games", len(res), flush=True)
     return res
 
@@ -157,21 +169,28 @@ def livescore_games(days):
     return res
 
 
+BO3_GAMES = {1: "cs2", 2: "valorant", 3: "lol", 4: "dota2", 7: "r6", 8: "mlbb"}
+BO3_SUFFIX = re.compile(r"-(\d+|cs|cs2|lol|dota2|dota|val|valorant|r6|r6s|mlbb|mmln|mlbb-\w+)$")
+
+
 def bo3_games(days):
+    """bo3.gg per game (discipline), current + upcoming + recent finished; slug suffixes like '-1', '-lol' removed."""
     res = []
-    for status in ("current", "upcoming", "finished"):
-        for off in range(0, 400, 50):
-            d = fetch(f"https://api.bo3.gg/api/v1/matches?filter[matches.status][in]={status}&sort="
-                      f"{'-end_date' if status == 'finished' else 'start_date'}&page[limit]=50&page[offset]={off}") or {}
-            rows = d.get("results", [])
-            for m in rows:
-                s = re.sub(r"-\d{2}-\d{2}-\d{4}$", "", m.get("slug", ""))
-                if "-vs-" in s:
-                    a, b = s.split("-vs-", 1)
-                    res.append((parse_ts(m.get("start_date")), a.replace("-", " "), b.replace("-", " "),
-                                f"bo3:d{m.get('discipline_id')}"))
-            if len(rows) < 50:
-                break
+    for disc, game in BO3_GAMES.items():
+        for status, sort in (("current", "start_date"), ("upcoming", "start_date"), ("finished", "-end_date")):
+            for off in range(0, 300, 50):
+                d = fetch(f"https://api.bo3.gg/api/v1/matches?filter[matches.discipline_id][eq]={disc}"
+                          f"&filter[matches.status][in]={status}&sort={sort}&page[limit]=50&page[offset]={off}") or {}
+                rows = d.get("results", [])
+                for m in rows:
+                    s = re.sub(r"-\d{2}-\d{2}-\d{4}$", "", m.get("slug", "")).strip("-")
+                    if "-vs-" in s:
+                        a, b = (BO3_SUFFIX.sub("", x.strip("-")) for x in s.split("-vs-", 1))
+                        res.append((parse_ts(m.get("start_date")), a.replace("-", " "), b.replace("-", " "),
+                                    f"bo3:{game}"))
+                if len(rows) < 50:
+                    break
+                time.sleep(0.5)
     print("bo3 games", len(res), flush=True)
     return res
 

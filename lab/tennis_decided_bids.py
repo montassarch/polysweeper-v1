@@ -22,7 +22,8 @@ from polysweeper.collector import get_json  # noqa: E402
 DATA = "https://data-api.polymarket.com"
 # LEAGUE=tennis (default) | cs2 | dota2 | lol | val   -> own event list, tape folder and result file
 LEAGUE = os.environ.get("LEAGUE", "tennis")
-SERIES = {"tennis": {"ATP": 10365, "WTA": 10366}, "cs2": {"CS2": 10310}, "dota2": {"DOTA2": 10309}, "lol": {"LOL": 10311}, "val": {"VAL": 10369}}[LEAGUE]
+SERIES = {"tennis": {"ATP": 10365, "WTA": 10366}, "cs2": {"CS2": 10310}, "dota2": {"DOTA2": 10309}, "lol": {"LOL": 10311}, "val": {"VAL": 10369},
+          "soccer": {"EPL": 10188, "LAL": 10193, "BUN": 10194, "SEA": 10203, "FL1": 10195, "UCL": 10204, "MLS": 10189, "ELC": 10355, "BRA": 10359}}[LEAGUE]
 EVENTS = ROOT / f"lab/data/raw/{LEAGUE}_events.json"
 TAPE = ROOT / f"lab/data/raw/{LEAGUE}_tape"
 RESULT = ROOT / f"lab/results/2026-10-09-{LEAGUE}-decided-bids.json"
@@ -35,16 +36,17 @@ def games():
         if e["slug"] != e["game"] or not e.get("finished"):
             continue
         ms = [m for m in e["markets"] if m.get("type") == "moneyline"]
-        if len(ms) != 1:
+        if LEAGUE != "soccer" and len(ms) != 1:
             continue
-        try:
-            px = [float(x) for x in json.loads(ms[0]["final"])]
-        except Exception:
-            continue
-        if sorted(px) != [0.0, 1.0]:
-            continue
-        out.append({"game": e["game"], "sport": e["sport"], "cid": ms[0]["cid"], "fin": e["finished"], "start": e.get("start"), "px": px,
-                    "score": e.get("score")})
+        for k, m in enumerate(ms):                       # soccer: three "Will X win / draw?" markets per match, each its own bet
+            try:
+                px = [float(x) for x in json.loads(m["final"])]
+            except Exception:
+                continue
+            if sorted(px) != [0.0, 1.0]:
+                continue
+            out.append({"game": e["game"] if LEAGUE != "soccer" else f"{e['game']}-m{k}", "sport": e["sport"], "cid": m["cid"], "fin": e["finished"],
+                        "start": e.get("start"), "px": px, "score": e.get("score")})
     return out
 
 

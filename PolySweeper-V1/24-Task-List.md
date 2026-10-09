@@ -193,3 +193,4 @@ Handled privately by the owner; not tracked in this vault.
 - [x] Full bot logic spec and audit
 - [x] Venue decision: Polymarket global
 - [ ] Start lab/stock_ladder_shadow.py on the laptop by 18:30 UTC Fri 9 Oct (row 9 real test)
+- [ ] (2026-10-09) Laptop: run `py lab\tennis_end_bids.py record 72` (tennis only) for real queue and joins, then `python3 lab/tennis_end_bids.py analyze` after 30+ matches (scoreboard row 10).

@@ -23,12 +23,14 @@ On 21 Oct: a method with real fills and 0 losses goes to a tiny real-money test 
 | 7 | Slow markets (elections, small events) | 21/21 right (Quebec) | 0 | $5-550 per market | **NOT YET**: small money | R-2026-10-06 tester |
 | 8 | Football, lead of 2+ goals at minute 88+ (owner idea 2026-10-07) | 22 of 62 lead-2 matches had 5+ shares at 0.95-0.99 in 45 days (lead 3+: 1 of 46) | 28 of 3,099 lead-2 leaders failed (0.9%); 1 of 62 in Part B (PSG-Lille, with fills); lead 3+: 0 of 1,970 | far below 200 | **NO**: lead 2 loses 1 in 110; lead 3+ is safe but the cheap fills do not exist | `lab/late_football.py`; [[R-2026-10-08]] |
 | 9 | Stock/ETF far strikes, last hour (`lab/stock_ladder_shadow.py`) | 0 real (18 smoke-test fills) | 0 | tiny | **NOT YET**: tape 332 fills, 0 losers; real recorder run Fri 9 Oct | R-2026-10-08 |
+| 10 | Tennis "match is over" resting bid on the winner (0.99-0.998, singles, 2 of 3 score sources) | 0 real; model: 35-45% of ~50 matches/day fill even with 60 s delay and 25% of queue (353 matches, 7 days) | 0 modelled | ~$0.9/day | **NOT YET**: rival bots and real queue unmeasured; needs laptop `tennis_end_bids.py record` | [[R-2026-10-09]], `lab/tennis_t1_stress.py` |
 
 **Verdict words:** YES = real fills, 0 losses, enough cases to trust. NO = loses or never fills. NOT YET = not enough data.
 A "YES" needs **200+ pretend fills with 0 losses**, the same bar as [[32-Go-Live-Checklist]] (50 fills with 0 losses
 would only prove the loss rate is below ~6%). Owner's bar (2026-10-08): fills needed = larger of 200 and 3 / (1 - price), 0 losses; win rate above price + fees (0.99 needs 300, 0.999 needs 3,000).
 
 ## Changes
+- 2026-10-09 17:00: row 10 added (tennis match-over bid, stress test: NOT YET); row 4 cannot reach 200 by 21 Oct ([[R-2026-10-09]]).
 - 2026-10-08 17:00: row 4 queue_late 9 games (9/9 at 0.98, 0 losers); row 9 added, recorder dry run OK ([[R-2026-10-08]]).
 - 2026-10-08: row 8 tested (cloud one-off, 16,020 matches + 45 days of trades): NO. Also, 1-goal leads fail 14% at minute 88, not 3-5% ([[R-2026-10-08]]).
 - 2026-10-08: owner yes: bar = win rate above price + fees, fills needed = larger of 200 and 3 / (1 - price), 0 losses (replaces 100% / 98.5%).

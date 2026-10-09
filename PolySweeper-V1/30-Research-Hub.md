@@ -123,6 +123,7 @@ The lab updates this table every day. Every rejected or parked idea also goes in
 | — | Buying on price during play (price-only rule) | — | Loss rate matches the price: no edge | rejected (2026-10-03) |
 
 ## Daily research notes
+- [[R-2026-10-09]] — row 4 13-month study (0.6% loser fills, 0 after last play, too thin by 21 Oct); tennis match-over bid T1 stress test: NOT YET, promising
 - [[R-2026-10-08]] — row 8 football late lead NO; row 4 weaker on public tape; row 9 stock ladders recorder ready; market-making backup NO
 
 Folder `Research/`, one note per day: `R-<date>`. Newest first:

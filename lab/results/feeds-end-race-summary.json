@@ -1,13 +1,13 @@
 {
- "updated": "2026-10-09T19:16:30+00:00",
- "matches_saved": 130,
+ "updated": "2026-10-09T22:21:37+00:00",
+ "matches_saved": 153,
  "s365": {
-  "n": 124,
-  "source_first": 115,
-  "median_lead_s": 167.3,
+  "n": 146,
+  "source_first": 137,
+  "median_lead_s": 182.9,
   "p10_lead_s": 24.5,
-  "p90_lead_s": 348.4,
-  "score_agree": 115,
+  "p90_lead_s": 349.6,
+  "score_agree": 136,
   "score_disagree": [
    "Braga (Doubles): Campos/Nikles vs Drzewiecki/Kalender",
    "Samsun (Doubles): Bagaric/Kulambayeva vs Karamoko/Akugue",
@@ -17,16 +17,17 @@
    "Braga (Doubles): Forcano/Luque vs Laaroussi/Diez",
    "Villena (Doubles): Cukierman/Romboli vs Jans/Vliegen",
    "Antofagasta (Doubles): Magadan/Merino vs Cigarran/Fuente",
-   "Palermo (Doubles): Bilardo/Ricca vs Forejtek/Wiskandt"
+   "Palermo (Doubles): Bilardo/Ricca vs Forejtek/Wiskandt",
+   "Antofagasta (Doubles): Ribeiro/Zormann vs Couto/Ribero"
   ]
  },
  "livescore": {
-  "n": 112,
-  "source_first": 98,
-  "median_lead_s": 155.7,
-  "p10_lead_s": -0.9,
-  "p90_lead_s": 326.0,
-  "score_agree": 101,
+  "n": 134,
+  "source_first": 120,
+  "median_lead_s": 157.3,
+  "p10_lead_s": -0.5,
+  "p90_lead_s": 329.9,
+  "score_agree": 122,
   "score_disagree": [
    "Shanghai Rolex Masters: Ben Shelton vs Daniel Altmaier",
    "Shanghai Rolex Masters: Alexander Zverev vs Yibing Wu",
@@ -38,7 +39,8 @@
    "Braga (Doubles): Forcano/Luque vs Laaroussi/Diez",
    "Villena (Doubles): Cukierman/Romboli vs Jans/Vliegen",
    "Antofagasta (Doubles): Magadan/Merino vs Cigarran/Fuente",
-   "Palermo (Doubles): Bilardo/Ricca vs Forejtek/Wiskandt"
+   "Palermo (Doubles): Bilardo/Ricca vs Forejtek/Wiskandt",
+   "Antofagasta (Doubles): Ribeiro/Zormann vs Couto/Ribero"
   ]
  },
  "pm_never_ended": 4,
@@ -55,24 +57,24 @@
    }
   },
   "atp": {
-   "n": 39,
+   "n": 42,
    "lead_365": {
-    "n": 37,
+    "n": 40,
     "median": 181.1
    },
    "lead_ls": {
-    "n": 38,
-    "median": 160.2
+    "n": 41,
+    "median": 157.3
    }
   },
   "romania-1": {
-   "n": 2,
+   "n": 3,
    "lead_365": {
-    "n": 2,
+    "n": 3,
     "median": 230.2
    },
    "lead_ls": {
-    "n": 2,
+    "n": 3,
     "median": 196.8
    }
   },
@@ -88,13 +90,13 @@
    }
   },
   "atp-doubles": {
-   "n": 10,
+   "n": 11,
    "lead_365": {
-    "n": 8,
+    "n": 9,
     "median": 73.7
    },
    "lead_ls": {
-    "n": 8,
+    "n": 9,
     "median": 34.0
    }
   },
@@ -165,10 +167,10 @@
    }
   },
   "cfb-2026": {
-   "n": 4,
+   "n": 5,
    "lead_365": {
-    "n": 4,
-    "median": 42.6
+    "n": 5,
+    "median": 40.7
    },
    "lead_ls": {
     "n": 0,
@@ -242,14 +244,14 @@
    }
   },
   "uefa-womens-world-cup-qualification": {
-   "n": 13,
+   "n": 16,
    "lead_365": {
-    "n": 13,
-    "median": 121.6
+    "n": 16,
+    "median": 136.0
    },
    "lead_ls": {
-    "n": 13,
-    "median": 60.2
+    "n": 16,
+    "median": 63.9
    }
   },
   "chinese-super-league": {
@@ -361,12 +363,111 @@
     "n": 1,
     "median": 294.7
    }
+  },
+  "primera-divisin-argentina": {
+   "n": 1,
+   "lead_365": {
+    "n": 1,
+    "median": 339.2
+   },
+   "lead_ls": {
+    "n": 1,
+    "median": 338.6
+   }
+  },
+  "primeira-liga": {
+   "n": 2,
+   "lead_365": {
+    "n": 1,
+    "median": 186.2
+   },
+   "lead_ls": {
+    "n": 2,
+    "median": 153.5
+   }
+  },
+  "ligue-2": {
+   "n": 5,
+   "lead_365": {
+    "n": 5,
+    "median": 328.3
+   },
+   "lead_ls": {
+    "n": 5,
+    "median": 324.2
+   }
+  },
+  "serie-b": {
+   "n": 1,
+   "lead_365": {
+    "n": 1,
+    "median": 154.2
+   },
+   "lead_ls": {
+    "n": 1,
+    "median": 115.8
+   }
+  },
+  "bundesliga-2025": {
+   "n": 1,
+   "lead_365": {
+    "n": 1,
+    "median": 306.5
+   },
+   "lead_ls": {
+    "n": 1,
+    "median": 280.1
+   }
+  },
+  "ligue-1-2025": {
+   "n": 1,
+   "lead_365": {
+    "n": 1,
+    "median": 202.0
+   },
+   "lead_ls": {
+    "n": 1,
+    "median": 189.0
+   }
+  },
+  "soccer-enl": {
+   "n": 1,
+   "lead_365": {
+    "n": 1,
+    "median": 349.6
+   },
+   "lead_ls": {
+    "n": 1,
+    "median": 275.7
+   }
+  },
+  "bolivia-1": {
+   "n": 1,
+   "lead_365": {
+    "n": 1,
+    "median": 205.7
+   },
+   "lead_ls": {
+    "n": 1,
+    "median": 173.7
+   }
+  },
+  "la-liga-2025": {
+   "n": 1,
+   "lead_365": {
+    "n": 1,
+    "median": 389.0
+   },
+   "lead_ls": {
+    "n": 1,
+    "median": 360.3
+   }
   }
  },
  "started": "2026-10-08T18:31:00+00:00",
- "discovered": 147,
- "no_source": 15,
- "errors": 1198,
+ "discovered": 152,
+ "no_source": 16,
+ "errors": 1238,
  "no_source_examples": [
   "AS FAR vs. Wydad Sportif Témara",
   "Braga (Doubles): Pereira/Lopez vs Forcano/Luque",
@@ -382,7 +483,8 @@
   "IFK Goteborg vs. Vasteraas SK",
   "Al Nassr Saudi Club vs. Al Diraiyah Saudi Club",
   "PSV vs. SC Heerenveen",
-  "West Ham United FC vs. Queens Park Rangers FC"
+  "West Ham United FC vs. Queens Park Rangers FC",
+  "Moghreb Athletic Tétouan vs. Fath Union Sport"
  ],
- "watching_now": 19
+ "watching_now": 1
 }

@@ -1,0 +1,462 @@
+{
+ "matches_with_complete_tape": 3001,
+ "fills_ge_0.95": 22599,
+ "by_time_all_prices_0.95_0.9995": {
+  "0-60s": {
+   "fills": 9270,
+   "games": 2354,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "shares": 4205183,
+   "median_shares": 33.88,
+   "games_ge5": 2230
+  },
+  "60-120s": {
+   "fills": 2652,
+   "games": 1094,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "shares": 847532,
+   "median_shares": 17.51,
+   "games_ge5": 934
+  },
+  "120-180s": {
+   "fills": 1288,
+   "games": 668,
+   "loser_fills": 2,
+   "loser_games": 1,
+   "shares": 386553,
+   "median_shares": 21.73,
+   "games_ge5": 568
+  },
+  "180-300s": {
+   "fills": 1832,
+   "games": 813,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "shares": 409349,
+   "median_shares": 17.0,
+   "games_ge5": 706
+  },
+  "300-600s": {
+   "fills": 2830,
+   "games": 926,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "shares": 845655,
+   "median_shares": 17.65,
+   "games_ge5": 816
+  },
+  "600-1800s": {
+   "fills": 4727,
+   "games": 966,
+   "loser_fills": 41,
+   "loser_games": 12,
+   "shares": 1430333,
+   "median_shares": 14.69,
+   "games_ge5": 880
+  }
+ },
+ "by_time_cheap_0.96_0.995": {
+  "0-60s": {
+   "fills": 3128,
+   "games": 921,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "shares": 942792,
+   "median_shares": 23.87,
+   "games_ge5": 828
+  },
+  "60-120s": {
+   "fills": 1564,
+   "games": 775,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "shares": 374224,
+   "median_shares": 16.39,
+   "games_ge5": 636
+  },
+  "120-180s": {
+   "fills": 957,
+   "games": 519,
+   "loser_fills": 2,
+   "loser_games": 1,
+   "shares": 258039,
+   "median_shares": 20.93,
+   "games_ge5": 432
+  },
+  "180-300s": {
+   "fills": 1444,
+   "games": 657,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "shares": 326362,
+   "median_shares": 14.7,
+   "games_ge5": 561
+  },
+  "300-600s": {
+   "fills": 2037,
+   "games": 756,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "shares": 389171,
+   "median_shares": 18.66,
+   "games_ge5": 658
+  },
+  "600-1800s": {
+   "fills": 3315,
+   "games": 815,
+   "loser_fills": 29,
+   "loser_games": 10,
+   "shares": 729532,
+   "median_shares": 12.3,
+   "games_ge5": 739
+  }
+ },
+ "by_time_0.98_0.995": {
+  "0-60s": {
+   "fills": 2999,
+   "games": 874,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "shares": 922383,
+   "median_shares": 23.23,
+   "games_ge5": 785
+  },
+  "60-120s": {
+   "fills": 1172,
+   "games": 583,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "shares": 209617,
+   "median_shares": 14.49,
+   "games_ge5": 475
+  },
+  "120-180s": {
+   "fills": 610,
+   "games": 341,
+   "loser_fills": 2,
+   "loser_games": 1,
+   "shares": 162161,
+   "median_shares": 17.73,
+   "games_ge5": 274
+  },
+  "180-300s": {
+   "fills": 828,
+   "games": 396,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "shares": 134281,
+   "median_shares": 9.61,
+   "games_ge5": 333
+  },
+  "300-600s": {
+   "fills": 1000,
+   "games": 419,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "shares": 158310,
+   "median_shares": 14.79,
+   "games_ge5": 348
+  },
+  "600-1800s": {
+   "fills": 1513,
+   "games": 418,
+   "loser_fills": 13,
+   "loser_games": 3,
+   "shares": 295693,
+   "median_shares": 10.0,
+   "games_ge5": 371
+  }
+ },
+ "bands_last_180s": {
+  "0.95-0.96": {
+   "fills": 372,
+   "games": 232,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "shares": 87481,
+   "median_shares": 31.57,
+   "games_ge5": 209
+  },
+  "0.96-0.97": {
+   "fills": 398,
+   "games": 222,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "shares": 160104,
+   "median_shares": 30.05,
+   "games_ge5": 194
+  },
+  "0.97-0.98": {
+   "fills": 470,
+   "games": 310,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "shares": 120790,
+   "median_shares": 31.0,
+   "games_ge5": 261
+  },
+  "0.98-0.99": {
+   "fills": 650,
+   "games": 387,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "shares": 117754,
+   "median_shares": 17.44,
+   "games_ge5": 325
+  },
+  "0.99-0.995": {
+   "fills": 4131,
+   "games": 1230,
+   "loser_fills": 2,
+   "loser_games": 1,
+   "shares": 1176407,
+   "median_shares": 20.0,
+   "games_ge5": 1077
+  },
+  "0.995-0.9995": {
+   "fills": 7189,
+   "games": 1707,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "shares": 3776732,
+   "median_shares": 39.81,
+   "games_ge5": 1639
+  }
+ },
+ "bands_180_600s": {
+  "0.95-0.96": {
+   "fills": 622,
+   "games": 326,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "shares": 388550,
+   "median_shares": 27.52,
+   "games_ge5": 288
+  },
+  "0.96-0.97": {
+   "fills": 673,
+   "games": 369,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "shares": 165816,
+   "median_shares": 29.0,
+   "games_ge5": 316
+  },
+  "0.97-0.98": {
+   "fills": 980,
+   "games": 475,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "shares": 257126,
+   "median_shares": 22.91,
+   "games_ge5": 412
+  },
+  "0.98-0.99": {
+   "fills": 949,
+   "games": 428,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "shares": 155530,
+   "median_shares": 11.23,
+   "games_ge5": 354
+  },
+  "0.99-0.995": {
+   "fills": 879,
+   "games": 391,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "shares": 137061,
+   "median_shares": 11.11,
+   "games_ge5": 329
+  },
+  "0.995-0.9995": {
+   "fills": 559,
+   "games": 158,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "shares": 150921,
+   "median_shares": 14.08,
+   "games_ge5": 138
+  }
+ },
+ "sellers_last180s_cheap": {
+  "distinct_wallets": 1802,
+  "top3_share": 0.055
+ },
+ "pegup": {
+  "matches": 3305,
+  "model": "5-share bid at B joined T s before the stamp; SELL prints in [0.95, B] after the join fill it first",
+  "cells": {
+   "B=0.99 T=300s": {
+    "filled_matches": 1816,
+    "share_of_matches": 0.549,
+    "loser_fills": 1,
+    "median_wait_s": 175,
+    "profit_per_fill_usd": 0.05
+   },
+   "B=0.99 T=180s": {
+    "filled_matches": 1519,
+    "share_of_matches": 0.46,
+    "loser_fills": 1,
+    "median_wait_s": 93,
+    "profit_per_fill_usd": 0.05
+   },
+   "B=0.99 T=120s": {
+    "filled_matches": 1281,
+    "share_of_matches": 0.388,
+    "loser_fills": 0,
+    "median_wait_s": 55,
+    "profit_per_fill_usd": 0.05
+   },
+   "B=0.99 T=90s": {
+    "filled_matches": 1114,
+    "share_of_matches": 0.337,
+    "loser_fills": 0,
+    "median_wait_s": 38,
+    "profit_per_fill_usd": 0.05
+   },
+   "B=0.99 T=60s": {
+    "filled_matches": 882,
+    "share_of_matches": 0.267,
+    "loser_fills": 0,
+    "median_wait_s": 20,
+    "profit_per_fill_usd": 0.05
+   },
+   "B=0.99 T=30s": {
+    "filled_matches": 611,
+    "share_of_matches": 0.185,
+    "loser_fills": 0,
+    "median_wait_s": 8,
+    "profit_per_fill_usd": 0.05
+   },
+   "B=0.992 T=300s": {
+    "filled_matches": 1932,
+    "share_of_matches": 0.585,
+    "loser_fills": 1,
+    "median_wait_s": 171,
+    "profit_per_fill_usd": 0.04
+   },
+   "B=0.992 T=180s": {
+    "filled_matches": 1632,
+    "share_of_matches": 0.494,
+    "loser_fills": 1,
+    "median_wait_s": 92,
+    "profit_per_fill_usd": 0.04
+   },
+   "B=0.992 T=120s": {
+    "filled_matches": 1386,
+    "share_of_matches": 0.419,
+    "loser_fills": 0,
+    "median_wait_s": 54,
+    "profit_per_fill_usd": 0.04
+   },
+   "B=0.992 T=90s": {
+    "filled_matches": 1206,
+    "share_of_matches": 0.365,
+    "loser_fills": 0,
+    "median_wait_s": 36,
+    "profit_per_fill_usd": 0.04
+   },
+   "B=0.992 T=60s": {
+    "filled_matches": 935,
+    "share_of_matches": 0.283,
+    "loser_fills": 0,
+    "median_wait_s": 19,
+    "profit_per_fill_usd": 0.04
+   },
+   "B=0.992 T=30s": {
+    "filled_matches": 623,
+    "share_of_matches": 0.189,
+    "loser_fills": 0,
+    "median_wait_s": 8,
+    "profit_per_fill_usd": 0.04
+   },
+   "B=0.995 T=300s": {
+    "filled_matches": 1966,
+    "share_of_matches": 0.595,
+    "loser_fills": 1,
+    "median_wait_s": 169,
+    "profit_per_fill_usd": 0.025
+   },
+   "B=0.995 T=180s": {
+    "filled_matches": 1658,
+    "share_of_matches": 0.502,
+    "loser_fills": 1,
+    "median_wait_s": 92,
+    "profit_per_fill_usd": 0.025
+   },
+   "B=0.995 T=120s": {
+    "filled_matches": 1410,
+    "share_of_matches": 0.427,
+    "loser_fills": 0,
+    "median_wait_s": 54,
+    "profit_per_fill_usd": 0.025
+   },
+   "B=0.995 T=90s": {
+    "filled_matches": 1228,
+    "share_of_matches": 0.372,
+    "loser_fills": 0,
+    "median_wait_s": 36,
+    "profit_per_fill_usd": 0.025
+   },
+   "B=0.995 T=60s": {
+    "filled_matches": 952,
+    "share_of_matches": 0.288,
+    "loser_fills": 0,
+    "median_wait_s": 19,
+    "profit_per_fill_usd": 0.025
+   },
+   "B=0.995 T=30s": {
+    "filled_matches": 624,
+    "share_of_matches": 0.189,
+    "loser_fills": 0,
+    "median_wait_s": 8,
+    "profit_per_fill_usd": 0.025
+   },
+   "B=0.998 T=300s": {
+    "filled_matches": 2015,
+    "share_of_matches": 0.61,
+    "loser_fills": 1,
+    "median_wait_s": 168,
+    "profit_per_fill_usd": 0.01
+   },
+   "B=0.998 T=180s": {
+    "filled_matches": 1706,
+    "share_of_matches": 0.516,
+    "loser_fills": 1,
+    "median_wait_s": 91,
+    "profit_per_fill_usd": 0.01
+   },
+   "B=0.998 T=120s": {
+    "filled_matches": 1448,
+    "share_of_matches": 0.438,
+    "loser_fills": 0,
+    "median_wait_s": 53,
+    "profit_per_fill_usd": 0.01
+   },
+   "B=0.998 T=90s": {
+    "filled_matches": 1256,
+    "share_of_matches": 0.38,
+    "loser_fills": 0,
+    "median_wait_s": 35,
+    "profit_per_fill_usd": 0.01
+   },
+   "B=0.998 T=60s": {
+    "filled_matches": 973,
+    "share_of_matches": 0.294,
+    "loser_fills": 0,
+    "median_wait_s": 19,
+    "profit_per_fill_usd": 0.01
+   },
+   "B=0.998 T=30s": {
+    "filled_matches": 627,
+    "share_of_matches": 0.19,
+    "loser_fills": 0,
+    "median_wait_s": 8,
+    "profit_per_fill_usd": 0.01
+   }
+  }
+ }
+}

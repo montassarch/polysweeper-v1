@@ -250,6 +250,8 @@ def stage_espn():
     only = {x for x in os.environ.get("ESPN_SPORTS", "").split(",") if x}
     games = [g for g in load_games() if has_fill(g) and (not only or g["sport"] in only)]
     todo = [g for g in games if not (PLAYS / f"{g['game']}.json").exists()]
+    if os.environ.get("ESPN_REVERSE"):
+        todo.reverse()                                 # a second worker can start from the other end
     print("games with a fill:", len(games), "ESPN to pull:", len(todo), flush=True)
     n = 0
     with ThreadPoolExecutor(int(os.environ.get("ESPN_THREADS", 4))) as pool:

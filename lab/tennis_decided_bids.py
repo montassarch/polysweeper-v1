@@ -6,9 +6,11 @@ Why tennis: ~40 matches a day on Polymarket (US games with cheap decided-state s
 Polymarket's own "ended" flag, so the last ~2-3 minutes before the stamp are mostly AFTER the real end of the match.
   python3 lab/tennis_decided_bids.py pull [days=60]     events + public taker trades [stamp-30min, stamp+15min], price >= 0.9
   python3 lab/tennis_decided_bids.py report             table by time before the stamp and price band -> lab/results/2026-10-09-tennis-decided-bids.json
+  python3 lab/tennis_decided_bids.py pegup              price-priority model: a 5-share bid at B joined T seconds before the stamp -> same json
+  python3 lab/tennis_decided_bids.py replay joins.jsonl replay live join times ({"slug","join_ts","bid_on"} per line) against the real tape
 A "fill" = taker SELL into a resting buy bid. Queue position is NOT modelled.  Raw files: lab/data/raw/tennis_* (git-ignored).
 """
-import collections, json, sys
+import collections, json, os, sys
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
@@ -18,8 +20,12 @@ sys.path.insert(0, str(ROOT / "lab"))
 from polysweeper.collector import get_json  # noqa: E402
 
 DATA = "https://data-api.polymarket.com"
-EVENTS = ROOT / "lab/data/raw/tennis_events.json"
-TAPE = ROOT / "lab/data/raw/tennis_tape"
+# LEAGUE=tennis (default) | cs2 | dota2 | lol | val   -> own event list, tape folder and result file
+LEAGUE = os.environ.get("LEAGUE", "tennis")
+SERIES = {"tennis": {"ATP": 10365, "WTA": 10366}, "cs2": {"CS2": 10310}, "dota2": {"DOTA2": 10309}, "lol": {"LOL": 10311}, "val": {"VAL": 10369}}[LEAGUE]
+EVENTS = ROOT / f"lab/data/raw/{LEAGUE}_events.json"
+TAPE = ROOT / f"lab/data/raw/{LEAGUE}_tape"
+RESULT = ROOT / f"lab/results/2026-10-09-{LEAGUE}-decided-bids.json"
 TAPE.mkdir(parents=True, exist_ok=True)
 
 
@@ -65,7 +71,7 @@ def pull_one(g):
 
 def pull(days):
     import usports_events as U
-    U.SERIES = {"ATP": 10365, "WTA": 10366}
+    U.SERIES = SERIES
     U.OUT = EVENTS
     if not EVENTS.exists():
         U.main(days)
@@ -121,7 +127,7 @@ def report():
     # wallets: concentration of the SELLers in the last 180 s, cheap band
     w = collections.Counter(x["w"] for x in fills if x["sb"] < 180 and 0.96 <= x["price"] < 0.995)
     out["sellers_last180s_cheap"] = {"distinct_wallets": len(w), "top3_share": round(sum(v for _, v in w.most_common(3)) / max(1, sum(w.values())), 3)}
-    (ROOT / "lab/results/2026-10-09-tennis-decided-bids.json").write_text(json.dumps(out, indent=1))
+    RESULT.write_text(json.dumps(out, indent=1))
     for k in ("by_time_all_prices_0.95_0.9995", "by_time_cheap_0.96_0.995", "by_time_0.98_0.995"):
         print("\n==", k)
         for kk, v in out[k].items():
@@ -133,8 +139,99 @@ def report():
     print(out["matches_with_complete_tape"], "matches;", out["sellers_last180s_cheap"])
 
 
+def pegup(shares=5.0):
+    """A bid at price B joined at stamp-T. Every taker SELL arriving later with a print at or below B would have met our bid first
+    (price priority; no other bidder above B assumed), so our order fills once such SELLs add up to `shares`.
+    Fill price = B (our limit). Counts per match; loser = the filled token did not win. Other pegging bots and our own delay are NOT modelled."""
+    gs = games()
+    data = []
+    for g in gs:
+        f = TAPE / f"{g['game']}.json"
+        if not f.exists():
+            continue
+        d = json.loads(f.read_text())
+        if d["ok"]:
+            data.append((g, d["trades"]))
+    out = {"matches": len(data), "model": f"{shares:g}-share bid at B joined T s before the stamp; SELL prints in [0.95, B] after the join fill it first", "cells": {}}
+    for B in (0.99, 0.992, 0.995, 0.998):
+        for T in (300, 180, 120, 90, 60, 30):
+            filled = lost = 0
+            fill_wait = []
+            for g, tr in data:
+                tok_sold = collections.defaultdict(float)
+                for t in sorted(tr):
+                    if t[1] == "SELL" and 0.95 <= t[2] <= B + 1e-9 and g["fin"] - T <= t[0] < g["fin"]:
+                        tok_sold[t[4]] += t[3]
+                        if tok_sold[t[4]] >= shares:
+                            filled += 1
+                            lost += int(g["px"][t[4]] != 1.0)
+                            fill_wait.append(t[0] - (g["fin"] - T))
+                            break
+            fw = sorted(fill_wait)
+            out["cells"][f"B={B} T={T}s"] = {"filled_matches": filled, "share_of_matches": round(filled / max(1, len(data)), 3), "loser_fills": lost,
+                                             "median_wait_s": (fw[len(fw) // 2] if fw else None), "profit_per_fill_usd": round((1 - B) * shares, 3)}
+    prev = json.loads(RESULT.read_text()) if RESULT.exists() else {}
+    prev["pegup"] = out
+    RESULT.write_text(json.dumps(prev, indent=1))
+    print(out["model"], "| matches", out["matches"])
+    print(f"{'bid':>7s} {'T':>5s} {'filled':>7s} {'share':>6s} {'losers':>6s} {'med wait':>9s}")
+    for k, v in out["cells"].items():
+        print(f"{k:>14s} {v['filled_matches']:7d} {v['share_of_matches']:6.3f} {v['loser_fills']:6d} {str(v['median_wait_s']):>9s}")
+
+
+def replay(path):
+    """Replay join times recorded live (JSONL: {"slug": event slug, "join_ts": unix seconds, "bid_on": outcome name or index (optional)}):
+    for each match fetch the public tape and report whether a 5-share bid at B would have been filled (price priority, no other bidder above B)
+    before Polymarket's finished stamp, and whether it was on the winner. Output lines: lab/results/<LEAGUE>-replay.jsonl"""
+    from polysweeper.collector import GAMMA, parse_ts
+    outp = ROOT / f"lab/results/{LEAGUE}-replay.jsonl"
+    res = []
+    for line in open(path, encoding="utf-8"):
+        r = json.loads(line)
+        ev = get_json(f"{GAMMA}/events?slug={r['slug']}")
+        if not ev:
+            continue
+        e = ev[0]
+        ms = [m for m in e.get("markets", []) if m.get("sportsMarketType") == "moneyline"]
+        if len(ms) != 1 or not e.get("finishedTimestamp"):
+            continue
+        m = ms[0]
+        px = [float(x) for x in json.loads(m["outcomePrices"])]
+        outs = json.loads(m["outcomes"])
+        fin = parse_ts(e["finishedTimestamp"])
+        bid_on = r.get("bid_on")
+        idx = bid_on if isinstance(bid_on, int) else (outs.index(bid_on) if bid_on in outs else (px.index(1.0) if 1.0 in px else None))
+        if idx is None:
+            continue
+        g = {"game": r["slug"], "cid": m["conditionId"], "fin": fin}
+        pull_one({**g, "px": px})            # caches the tape
+        d = json.loads((TAPE / f"{r['slug']}.json").read_text())
+        row = {"slug": r["slug"], "join_ts": r["join_ts"], "stamp": fin, "window_s": fin - r["join_ts"], "token": idx, "won": int(px[idx] == 1.0)}
+        for B in (0.99, 0.992, 0.995, 0.998):
+            sold = 0.0
+            row[f"fill_{B}"] = 0
+            for t in sorted(d["trades"]):
+                if t[1] == "SELL" and t[4] == idx and 0.95 <= t[2] <= B + 1e-9 and r["join_ts"] <= t[0] < fin:
+                    sold += t[3]
+                    if sold >= 5.0:
+                        row[f"fill_{B}"] = 1
+                        row[f"wait_{B}"] = t[0] - r["join_ts"]
+                        break
+        res.append(row)
+    outp.write_text("\n".join(json.dumps(x) for x in res))
+    n = len(res)
+    for B in (0.99, 0.992, 0.995, 0.998):
+        f = sum(x[f"fill_{B}"] for x in res)
+        lost = sum(1 for x in res if x[f"fill_{B}"] and not x["won"])
+        print(f"B={B}: matches {n} filled {f} ({f / max(1, n):.2f}) filled on a loser {lost}")
+
+
 if __name__ == "__main__":
     if sys.argv[1] == "pull":
         pull(int(sys.argv[2]) if len(sys.argv) > 2 else 60)
+    elif sys.argv[1] == "pegup":
+        pegup()
+    elif sys.argv[1] == "replay":
+        replay(sys.argv[2])
     else:
         report()

@@ -57,9 +57,14 @@ def late(x, X):
         return False
     if x["sport"] == "MLB":
         return False
-    if x["period"] > REG[x["sport"]]:
-        return True
-    return x["period"] == REG[x["sport"]] and x["clock"] is not None and x["clock"] <= X
+    if x["period"] > REG[x["sport"]] and x["sport"] in ("CFB", "NFL"):
+        return False                                        # football overtime is not "decided" while the other team still has a possession
+    if x["sport"] == "NHL":
+        # ESPN's NHL clock COUNTS UP from 0:00 (elapsed in the period); remaining = 1200 - clock in periods 1-3
+        if x["period"] > 3:
+            return True                                     # overtime: sudden death, a lead of 1+ means the game is over; shootout: undecided until the end
+        return x["period"] == 3 and x["clock"] is not None and (1200 - x["clock"]) <= X
+    return x["period"] >= REG[x["sport"]] and x["clock"] is not None and x["clock"] <= X
 
 
 def mlb_outs_left_for_trailing(x):
@@ -231,4 +236,4 @@ if __name__ == "__main__":
     result["loser_fill_state"] = {"loser_fills_with_state": len(L), "bought_side_ahead": sum(1 for x in L if x["lead"] >= 1),
                                   "tied": sum(1 for x in L if x["lead"] == 0), "behind": sum(1 for x in L if x["lead"] < 0)}
     print("loser fills, state at the fill:", result["loser_fill_state"])
-    (ROOT / "lab/results/2026-10-09-row4-history-rules.json").write_text(json.dumps(result, indent=1))
+    (ROOT / f"lab/results/2026-10-09-row4-history-rules{'-d45' if DELTA else ''}.json").write_text(json.dumps(result, indent=1))

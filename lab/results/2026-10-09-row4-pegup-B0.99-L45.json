@@ -1,0 +1,138 @@
+{
+ "B": 0.99,
+ "delay_s": 45,
+ "shares": 5.0,
+ "cells": {
+  "CFB | D1 clock<=1s": {
+   "games": 512,
+   "gate_reached": 494,
+   "window_sum": 503419.0,
+   "filled": 73,
+   "wait_sum": 354067.0,
+   "join_after_stamp": 21,
+   "loser": 1
+  },
+  "CFB | T60 lead>=1": {
+   "games": 512,
+   "gate_reached": 502,
+   "window_sum": 785477.0,
+   "filled": 109,
+   "wait_sum": 465375.0,
+   "join_after_stamp": 7,
+   "loser": 3
+  },
+  "MLB | MLB game over": {
+   "games": 2557,
+   "gate_reached": 1881,
+   "window_sum": 239128.0,
+   "filled": 559,
+   "wait_sum": 55559.0,
+   "join_after_stamp": 7
+  },
+  "NBA | D1 clock<=1s": {
+   "games": 1175,
+   "gate_reached": 1172,
+   "window_sum": 169632.0,
+   "filled": 260,
+   "wait_sum": 6130.0,
+   "join_after_stamp": 10
+  },
+  "NBA | T120 lead>=9 (NBA)": {
+   "games": 1175,
+   "gate_reached": 820,
+   "filled": 193,
+   "wait_sum": 8753.0,
+   "window_sum": 325165.0,
+   "join_after_stamp": 3
+  },
+  "NBA | T60 lead>=1": {
+   "games": 1175,
+   "gate_reached": 1173,
+   "filled": 462,
+   "wait_sum": 92717.0,
+   "window_sum": 515023.0,
+   "join_after_stamp": 3,
+   "loser": 12
+  },
+  "NBA | T60 lead>=5 (NBA)": {
+   "games": 1175,
+   "gate_reached": 1025,
+   "filled": 344,
+   "wait_sum": 21160.0,
+   "window_sum": 344287.0,
+   "join_after_stamp": 3,
+   "loser": 5
+  },
+  "NFL | D1 clock<=1s": {
+   "games": 374,
+   "gate_reached": 341,
+   "window_sum": 112891.0,
+   "filled": 116,
+   "wait_sum": 3915.0
+  },
+  "NFL | T60 lead>=1": {
+   "games": 374,
+   "gate_reached": 369,
+   "window_sum": 184422.0,
+   "filled": 132,
+   "wait_sum": 27833.0,
+   "loser": 1
+  },
+  "NFL | T60 lead>=3 (NFL)": {
+   "games": 374,
+   "gate_reached": 339,
+   "window_sum": 168273.0,
+   "filled": 118,
+   "wait_sum": 25004.0
+  },
+  "NHL | D1 clock<=1s": {
+   "games": 1258,
+   "gate_reached": 1255,
+   "window_sum": 31514470.0,
+   "filled": 549,
+   "wait_sum": 31253939.0,
+   "join_after_stamp": 10
+  },
+  "NHL | T120 lead>=2 (NHL)": {
+   "games": 1258,
+   "gate_reached": 783,
+   "window_sum": 31322930.0,
+   "filled": 306,
+   "wait_sum": 31049159.0,
+   "join_after_stamp": 3
+  },
+  "NHL | T60 lead>=1": {
+   "games": 1258,
+   "gate_reached": 1256,
+   "window_sum": 31637095.0,
+   "filled": 647,
+   "wait_sum": 31280086.0,
+   "join_after_stamp": 10,
+   "loser": 3
+  },
+  "NHL | T60 lead>=2 (NHL)": {
+   "games": 1258,
+   "gate_reached": 772,
+   "window_sum": 31249633.0,
+   "filled": 230,
+   "wait_sum": 31043115.0,
+   "join_after_stamp": 2
+  },
+  "WNBA | D1 clock<=1s": {
+   "games": 362,
+   "gate_reached": 362,
+   "filled": 66,
+   "wait_sum": 1904.0,
+   "window_sum": 32147.0,
+   "join_after_stamp": 4
+  },
+  "WNBA | T60 lead>=1": {
+   "games": 362,
+   "gate_reached": 362,
+   "filled": 131,
+   "wait_sum": 33729.0,
+   "window_sum": 151867.0,
+   "loser": 4
+  }
+ }
+}

@@ -1,0 +1,2191 @@
+{
+ "coverage": {
+  "fills": 197577,
+  "with_state": 183656,
+  "games_with_fills": 6323,
+  "games_matched_espn": 6238,
+  "by_sport": {
+   "CFB": [
+    544,
+    512
+   ],
+   "NFL": [
+    375,
+    374
+   ],
+   "NHL": [
+    1273,
+    1258
+   ],
+   "WNBA": [
+    368,
+    362
+   ],
+   "NBA": [
+    1182,
+    1175
+   ],
+   "MLB": [
+    2581,
+    2557
+   ]
+  }
+ },
+ "CFB": {
+  "all fills (no gate)": {
+   "fills": 3623,
+   "games": 535,
+   "loser_fills": 12,
+   "loser_games": 5,
+   "ub95_per_game": 0.0195,
+   "shares": 4188341
+  },
+  "T30: last period/OT, clock<=30s, buyer ahead": {
+   "fills": 1178,
+   "games": 283,
+   "loser_fills": 4,
+   "loser_games": 1,
+   "ub95_per_game": 0.0167,
+   "shares": 1290940
+  },
+  "T60: last period/OT, clock<=60s, buyer ahead": {
+   "fills": 1484,
+   "games": 326,
+   "loser_fills": 4,
+   "loser_games": 1,
+   "ub95_per_game": 0.0145,
+   "shares": 2671814
+  },
+  "T90: last period/OT, clock<=90s, buyer ahead": {
+   "fills": 1696,
+   "games": 354,
+   "loser_fills": 7,
+   "loser_games": 2,
+   "ub95_per_game": 0.0177,
+   "shares": 2794469
+  },
+  "T120: last period/OT, clock<=120s, buyer ahead": {
+   "fills": 2177,
+   "games": 397,
+   "loser_fills": 10,
+   "loser_games": 4,
+   "ub95_per_game": 0.0229,
+   "shares": 3259522
+  },
+  "T180: last period/OT, clock<=180s, buyer ahead": {
+   "fills": 2484,
+   "games": 418,
+   "loser_fills": 12,
+   "loser_games": 5,
+   "ub95_per_game": 0.025,
+   "shares": 3579378
+  },
+  "T300: last period/OT, clock<=300s, buyer ahead": {
+   "fills": 2858,
+   "games": 442,
+   "loser_fills": 12,
+   "loser_games": 5,
+   "ub95_per_game": 0.0236,
+   "shares": 3717151
+  },
+  "T600: last period/OT, clock<=600s, buyer ahead": {
+   "fills": 3270,
+   "games": 475,
+   "loser_fills": 12,
+   "loser_games": 5,
+   "ub95_per_game": 0.022,
+   "shares": 3981693
+  },
+  "T60L3: ...clock<=60s, lead>=3": {
+   "fills": 1282,
+   "games": 299,
+   "loser_fills": 4,
+   "loser_games": 1,
+   "ub95_per_game": 0.0158,
+   "shares": 2487061
+  },
+  "T60L5: ...clock<=60s, lead>=5": {
+   "fills": 940,
+   "games": 233,
+   "loser_fills": 4,
+   "loser_games": 1,
+   "ub95_per_game": 0.0202,
+   "shares": 2365756
+  },
+  "T60L9: ...clock<=60s, lead>=9": {
+   "fills": 528,
+   "games": 168,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "ub95_per_game": 0.0177,
+   "shares": 1953310
+  },
+  "T60L10: ...clock<=60s, lead>=10": {
+   "fills": 497,
+   "games": 163,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "ub95_per_game": 0.0182,
+   "shares": 1941263
+  },
+  "T60L15: ...clock<=60s, lead>=15": {
+   "fills": 247,
+   "games": 104,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "ub95_per_game": 0.0284,
+   "shares": 318140
+  },
+  "T120L3: ...clock<=120s, lead>=3": {
+   "fills": 1943,
+   "games": 371,
+   "loser_fills": 10,
+   "loser_games": 4,
+   "ub95_per_game": 0.0245,
+   "shares": 3069576
+  },
+  "T120L5: ...clock<=120s, lead>=5": {
+   "fills": 1532,
+   "games": 299,
+   "loser_fills": 6,
+   "loser_games": 2,
+   "ub95_per_game": 0.0209,
+   "shares": 2892752
+  },
+  "T120L9: ...clock<=120s, lead>=9": {
+   "fills": 1016,
+   "games": 230,
+   "loser_fills": 2,
+   "loser_games": 1,
+   "ub95_per_game": 0.0205,
+   "shares": 2449111
+  },
+  "T120L10: ...clock<=120s, lead>=10": {
+   "fills": 970,
+   "games": 223,
+   "loser_fills": 2,
+   "loser_games": 1,
+   "ub95_per_game": 0.0211,
+   "shares": 2432362
+  },
+  "T120L15: ...clock<=120s, lead>=15": {
+   "fills": 457,
+   "games": 147,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "ub95_per_game": 0.0202,
+   "shares": 543171
+  },
+  "T300L3: ...clock<=300s, lead>=3": {
+   "fills": 2623,
+   "games": 416,
+   "loser_fills": 12,
+   "loser_games": 5,
+   "ub95_per_game": 0.0251,
+   "shares": 3526740
+  },
+  "T300L5: ...clock<=300s, lead>=5": {
+   "fills": 2206,
+   "games": 346,
+   "loser_fills": 8,
+   "loser_games": 3,
+   "ub95_per_game": 0.0223,
+   "shares": 3349779
+  },
+  "T300L9: ...clock<=300s, lead>=9": {
+   "fills": 1657,
+   "games": 279,
+   "loser_fills": 2,
+   "loser_games": 1,
+   "ub95_per_game": 0.0169,
+   "shares": 2892399
+  },
+  "T300L10: ...clock<=300s, lead>=10": {
+   "fills": 1599,
+   "games": 270,
+   "loser_fills": 2,
+   "loser_games": 1,
+   "ub95_per_game": 0.0174,
+   "shares": 2874752
+  },
+  "T300L15: ...clock<=300s, lead>=15": {
+   "fills": 788,
+   "games": 190,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "ub95_per_game": 0.0156,
+   "shares": 836020
+  },
+  "FB120: football, clock<=120s, buyer ahead AND has the ball": {
+   "fills": 1226,
+   "games": 286,
+   "loser_fills": 1,
+   "loser_games": 1,
+   "ub95_per_game": 0.0165,
+   "shares": 2556231
+  },
+  "FB300: football, clock<=300s, buyer ahead AND has the ball": {
+   "fills": 1605,
+   "games": 343,
+   "loser_fills": 3,
+   "loser_games": 2,
+   "ub95_per_game": 0.0182,
+   "shares": 2747433
+  },
+  "D1 timed: last period/OT, clock<=1s, buyer ahead": {
+   "fills": 789,
+   "games": 230,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "ub95_per_game": 0.0129,
+   "shares": 1117307
+  },
+  "D1b timed: last period/OT, clock<=5s, buyer ahead": {
+   "fills": 910,
+   "games": 246,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "ub95_per_game": 0.0121,
+   "shares": 1152195
+  }
+ },
+ "NFL": {
+  "all fills (no gate)": {
+   "fills": 11300,
+   "games": 375,
+   "loser_fills": 3,
+   "loser_games": 2,
+   "ub95_per_game": 0.0167,
+   "shares": 18732961
+  },
+  "T30: last period/OT, clock<=30s, buyer ahead": {
+   "fills": 4699,
+   "games": 304,
+   "loser_fills": 1,
+   "loser_games": 1,
+   "ub95_per_game": 0.0155,
+   "shares": 9656600
+  },
+  "T60: last period/OT, clock<=60s, buyer ahead": {
+   "fills": 5241,
+   "games": 317,
+   "loser_fills": 1,
+   "loser_games": 1,
+   "ub95_per_game": 0.0149,
+   "shares": 10134982
+  },
+  "T90: last period/OT, clock<=90s, buyer ahead": {
+   "fills": 5830,
+   "games": 325,
+   "loser_fills": 1,
+   "loser_games": 1,
+   "ub95_per_game": 0.0145,
+   "shares": 11554040
+  },
+  "T120: last period/OT, clock<=120s, buyer ahead": {
+   "fills": 7218,
+   "games": 345,
+   "loser_fills": 1,
+   "loser_games": 1,
+   "ub95_per_game": 0.0137,
+   "shares": 13549490
+  },
+  "T180: last period/OT, clock<=180s, buyer ahead": {
+   "fills": 8050,
+   "games": 351,
+   "loser_fills": 1,
+   "loser_games": 1,
+   "ub95_per_game": 0.0134,
+   "shares": 14580659
+  },
+  "T300: last period/OT, clock<=300s, buyer ahead": {
+   "fills": 9270,
+   "games": 354,
+   "loser_fills": 3,
+   "loser_games": 2,
+   "ub95_per_game": 0.0177,
+   "shares": 15904146
+  },
+  "T600: last period/OT, clock<=600s, buyer ahead": {
+   "fills": 10348,
+   "games": 356,
+   "loser_fills": 3,
+   "loser_games": 2,
+   "ub95_per_game": 0.0176,
+   "shares": 16772889
+  },
+  "T60L3: ...clock<=60s, lead>=3": {
+   "fills": 4467,
+   "games": 282,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "ub95_per_game": 0.0106,
+   "shares": 9308650
+  },
+  "T60L5: ...clock<=60s, lead>=5": {
+   "fills": 2595,
+   "games": 211,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "ub95_per_game": 0.0141,
+   "shares": 5707799
+  },
+  "T60L9: ...clock<=60s, lead>=9": {
+   "fills": 1256,
+   "games": 150,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "ub95_per_game": 0.0198,
+   "shares": 3476159
+  },
+  "T60L10: ...clock<=60s, lead>=10": {
+   "fills": 1179,
+   "games": 146,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "ub95_per_game": 0.0203,
+   "shares": 2949789
+  },
+  "T60L15: ...clock<=60s, lead>=15": {
+   "fills": 591,
+   "games": 95,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "ub95_per_game": 0.031,
+   "shares": 1634232
+  },
+  "T120L3: ...clock<=120s, lead>=3": {
+   "fills": 6360,
+   "games": 310,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "ub95_per_game": 0.0096,
+   "shares": 12589347
+  },
+  "T120L5: ...clock<=120s, lead>=5": {
+   "fills": 4099,
+   "games": 239,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "ub95_per_game": 0.0125,
+   "shares": 8602959
+  },
+  "T120L9: ...clock<=120s, lead>=9": {
+   "fills": 2420,
+   "games": 182,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "ub95_per_game": 0.0163,
+   "shares": 6156270
+  },
+  "T120L10: ...clock<=120s, lead>=10": {
+   "fills": 2293,
+   "games": 174,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "ub95_per_game": 0.0171,
+   "shares": 5610904
+  },
+  "T120L15: ...clock<=120s, lead>=15": {
+   "fills": 1110,
+   "games": 114,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "ub95_per_game": 0.0259,
+   "shares": 3297080
+  },
+  "T300L3: ...clock<=300s, lead>=3": {
+   "fills": 8412,
+   "games": 319,
+   "loser_fills": 2,
+   "loser_games": 1,
+   "ub95_per_game": 0.0148,
+   "shares": 14944003
+  },
+  "T300L5: ...clock<=300s, lead>=5": {
+   "fills": 6091,
+   "games": 252,
+   "loser_fills": 2,
+   "loser_games": 1,
+   "ub95_per_game": 0.0187,
+   "shares": 10932730
+  },
+  "T300L9: ...clock<=300s, lead>=9": {
+   "fills": 4282,
+   "games": 203,
+   "loser_fills": 2,
+   "loser_games": 1,
+   "ub95_per_game": 0.0232,
+   "shares": 8441647
+  },
+  "T300L10: ...clock<=300s, lead>=10": {
+   "fills": 4068,
+   "games": 197,
+   "loser_fills": 2,
+   "loser_games": 1,
+   "ub95_per_game": 0.0239,
+   "shares": 7849364
+  },
+  "T300L15: ...clock<=300s, lead>=15": {
+   "fills": 2232,
+   "games": 131,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "ub95_per_game": 0.0226,
+   "shares": 4732701
+  },
+  "FB120: football, clock<=120s, buyer ahead AND has the ball": {
+   "fills": 2241,
+   "games": 228,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "ub95_per_game": 0.0131,
+   "shares": 3944765
+  },
+  "FB300: football, clock<=300s, buyer ahead AND has the ball": {
+   "fills": 3423,
+   "games": 269,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "ub95_per_game": 0.0111,
+   "shares": 5316109
+  },
+  "D1 timed: last period/OT, clock<=1s, buyer ahead": {
+   "fills": 3831,
+   "games": 285,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "ub95_per_game": 0.0105,
+   "shares": 8458866
+  },
+  "D1b timed: last period/OT, clock<=5s, buyer ahead": {
+   "fills": 4011,
+   "games": 289,
+   "loser_fills": 1,
+   "loser_games": 1,
+   "ub95_per_game": 0.0163,
+   "shares": 8767615
+  }
+ },
+ "NBA": {
+  "all fills (no gate)": {
+   "fills": 84825,
+   "games": 1182,
+   "loser_fills": 162,
+   "loser_games": 7,
+   "ub95_per_game": 0.0111,
+   "shares": 63738075
+  },
+  "T30: last period/OT, clock<=30s, buyer ahead": {
+   "fills": 25984,
+   "games": 971,
+   "loser_fills": 95,
+   "loser_games": 4,
+   "ub95_per_game": 0.0094,
+   "shares": 21472017
+  },
+  "T60: last period/OT, clock<=60s, buyer ahead": {
+   "fills": 34136,
+   "games": 1098,
+   "loser_fills": 95,
+   "loser_games": 4,
+   "ub95_per_game": 0.0083,
+   "shares": 27968754
+  },
+  "T90: last period/OT, clock<=90s, buyer ahead": {
+   "fills": 39800,
+   "games": 1134,
+   "loser_fills": 117,
+   "loser_games": 5,
+   "ub95_per_game": 0.0092,
+   "shares": 32216902
+  },
+  "T120: last period/OT, clock<=120s, buyer ahead": {
+   "fills": 44467,
+   "games": 1152,
+   "loser_fills": 119,
+   "loser_games": 5,
+   "ub95_per_game": 0.0091,
+   "shares": 35172958
+  },
+  "T180: last period/OT, clock<=180s, buyer ahead": {
+   "fills": 51285,
+   "games": 1162,
+   "loser_fills": 119,
+   "loser_games": 5,
+   "ub95_per_game": 0.009,
+   "shares": 39819365
+  },
+  "T300: last period/OT, clock<=300s, buyer ahead": {
+   "fills": 62954,
+   "games": 1166,
+   "loser_fills": 161,
+   "loser_games": 6,
+   "ub95_per_game": 0.0101,
+   "shares": 48952809
+  },
+  "T600: last period/OT, clock<=600s, buyer ahead": {
+   "fills": 79704,
+   "games": 1169,
+   "loser_fills": 162,
+   "loser_games": 7,
+   "ub95_per_game": 0.0112,
+   "shares": 60621828
+  },
+  "T60L3: ...clock<=60s, lead>=3": {
+   "fills": 29307,
+   "games": 1026,
+   "loser_fills": 66,
+   "loser_games": 3,
+   "ub95_per_game": 0.0075,
+   "shares": 25184666
+  },
+  "T60L5: ...clock<=60s, lead>=5": {
+   "fills": 21637,
+   "games": 923,
+   "loser_fills": 1,
+   "loser_games": 1,
+   "ub95_per_game": 0.0051,
+   "shares": 20390224
+  },
+  "T60L9: ...clock<=60s, lead>=9": {
+   "fills": 9642,
+   "games": 712,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "ub95_per_game": 0.0042,
+   "shares": 10223351
+  },
+  "T60L10: ...clock<=60s, lead>=10": {
+   "fills": 7680,
+   "games": 655,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "ub95_per_game": 0.0046,
+   "shares": 8423348
+  },
+  "T60L15: ...clock<=60s, lead>=15": {
+   "fills": 3196,
+   "games": 413,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "ub95_per_game": 0.0072,
+   "shares": 3426471
+  },
+  "T120L3: ...clock<=120s, lead>=3": {
+   "fills": 39638,
+   "games": 1081,
+   "loser_fills": 90,
+   "loser_games": 4,
+   "ub95_per_game": 0.0084,
+   "shares": 32388869
+  },
+  "T120L5: ...clock<=120s, lead>=5": {
+   "fills": 31654,
+   "games": 984,
+   "loser_fills": 25,
+   "loser_games": 2,
+   "ub95_per_game": 0.0064,
+   "shares": 27503006
+  },
+  "T120L9: ...clock<=120s, lead>=9": {
+   "fills": 16721,
+   "games": 791,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "ub95_per_game": 0.0038,
+   "shares": 16346880
+  },
+  "T120L10: ...clock<=120s, lead>=10": {
+   "fills": 13665,
+   "games": 744,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "ub95_per_game": 0.004,
+   "shares": 13414513
+  },
+  "T120L15: ...clock<=120s, lead>=15": {
+   "fills": 5903,
+   "games": 504,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "ub95_per_game": 0.0059,
+   "shares": 5474366
+  },
+  "T300L3: ...clock<=300s, lead>=3": {
+   "fills": 58125,
+   "games": 1099,
+   "loser_fills": 132,
+   "loser_games": 5,
+   "ub95_per_game": 0.0095,
+   "shares": 46168720
+  },
+  "T300L5: ...clock<=300s, lead>=5": {
+   "fills": 50132,
+   "games": 1008,
+   "loser_fills": 67,
+   "loser_games": 3,
+   "ub95_per_game": 0.0077,
+   "shares": 41282809
+  },
+  "T300L9: ...clock<=300s, lead>=9": {
+   "fills": 34290,
+   "games": 832,
+   "loser_fills": 33,
+   "loser_games": 1,
+   "ub95_per_game": 0.0057,
+   "shares": 29865054
+  },
+  "T300L10: ...clock<=300s, lead>=10": {
+   "fills": 30381,
+   "games": 794,
+   "loser_fills": 25,
+   "loser_games": 1,
+   "ub95_per_game": 0.006,
+   "shares": 26674186
+  },
+  "T300L15: ...clock<=300s, lead>=15": {
+   "fills": 16086,
+   "games": 583,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "ub95_per_game": 0.0051,
+   "shares": 15530175
+  },
+  "D1 timed: last period/OT, clock<=1s, buyer ahead": {
+   "fills": 10433,
+   "games": 483,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "ub95_per_game": 0.0062,
+   "shares": 11098167
+  },
+  "D1b timed: last period/OT, clock<=5s, buyer ahead": {
+   "fills": 13819,
+   "games": 583,
+   "loser_fills": 1,
+   "loser_games": 1,
+   "ub95_per_game": 0.0081,
+   "shares": 13403655
+  }
+ },
+ "WNBA": {
+  "all fills (no gate)": {
+   "fills": 4681,
+   "games": 366,
+   "loser_fills": 30,
+   "loser_games": 5,
+   "ub95_per_game": 0.0285,
+   "shares": 2263923
+  },
+  "T30: last period/OT, clock<=30s, buyer ahead": {
+   "fills": 1517,
+   "games": 236,
+   "loser_fills": 4,
+   "loser_games": 1,
+   "ub95_per_game": 0.0199,
+   "shares": 730011
+  },
+  "T60: last period/OT, clock<=60s, buyer ahead": {
+   "fills": 2101,
+   "games": 284,
+   "loser_fills": 28,
+   "loser_games": 3,
+   "ub95_per_game": 0.0271,
+   "shares": 938128
+  },
+  "T90: last period/OT, clock<=90s, buyer ahead": {
+   "fills": 2439,
+   "games": 311,
+   "loser_fills": 28,
+   "loser_games": 3,
+   "ub95_per_game": 0.0247,
+   "shares": 1152857
+  },
+  "T120: last period/OT, clock<=120s, buyer ahead": {
+   "fills": 2742,
+   "games": 325,
+   "loser_fills": 28,
+   "loser_games": 3,
+   "ub95_per_game": 0.0237,
+   "shares": 1248504
+  },
+  "T180: last period/OT, clock<=180s, buyer ahead": {
+   "fills": 3121,
+   "games": 339,
+   "loser_fills": 30,
+   "loser_games": 5,
+   "ub95_per_game": 0.0308,
+   "shares": 1477419
+  },
+  "T300: last period/OT, clock<=300s, buyer ahead": {
+   "fills": 3764,
+   "games": 354,
+   "loser_fills": 30,
+   "loser_games": 5,
+   "ub95_per_game": 0.0295,
+   "shares": 1906374
+  },
+  "T600: last period/OT, clock<=600s, buyer ahead": {
+   "fills": 4515,
+   "games": 359,
+   "loser_fills": 30,
+   "loser_games": 5,
+   "ub95_per_game": 0.0291,
+   "shares": 2195924
+  },
+  "T60L3: ...clock<=60s, lead>=3": {
+   "fills": 1775,
+   "games": 258,
+   "loser_fills": 26,
+   "loser_games": 3,
+   "ub95_per_game": 0.0298,
+   "shares": 806997
+  },
+  "T60L5: ...clock<=60s, lead>=5": {
+   "fills": 1336,
+   "games": 225,
+   "loser_fills": 14,
+   "loser_games": 2,
+   "ub95_per_game": 0.0277,
+   "shares": 626255
+  },
+  "T60L9: ...clock<=60s, lead>=9": {
+   "fills": 476,
+   "games": 141,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "ub95_per_game": 0.021,
+   "shares": 234569
+  },
+  "T60L10: ...clock<=60s, lead>=10": {
+   "fills": 396,
+   "games": 127,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "ub95_per_game": 0.0233,
+   "shares": 182130
+  },
+  "T60L15: ...clock<=60s, lead>=15": {
+   "fills": 137,
+   "games": 68,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "ub95_per_game": 0.0431,
+   "shares": 63685
+  },
+  "T120L3: ...clock<=120s, lead>=3": {
+   "fills": 2416,
+   "games": 300,
+   "loser_fills": 26,
+   "loser_games": 3,
+   "ub95_per_game": 0.0256,
+   "shares": 1117373
+  },
+  "T120L5: ...clock<=120s, lead>=5": {
+   "fills": 1972,
+   "games": 269,
+   "loser_fills": 14,
+   "loser_games": 2,
+   "ub95_per_game": 0.0232,
+   "shares": 935963
+  },
+  "T120L9: ...clock<=120s, lead>=9": {
+   "fills": 952,
+   "games": 191,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "ub95_per_game": 0.0156,
+   "shares": 504959
+  },
+  "T120L10: ...clock<=120s, lead>=10": {
+   "fills": 805,
+   "games": 177,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "ub95_per_game": 0.0168,
+   "shares": 430012
+  },
+  "T120L15: ...clock<=120s, lead>=15": {
+   "fills": 271,
+   "games": 101,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "ub95_per_game": 0.0292,
+   "shares": 132323
+  },
+  "T300L3: ...clock<=300s, lead>=3": {
+   "fills": 3438,
+   "games": 329,
+   "loser_fills": 28,
+   "loser_games": 5,
+   "ub95_per_game": 0.0317,
+   "shares": 1775243
+  },
+  "T300L5: ...clock<=300s, lead>=5": {
+   "fills": 2994,
+   "games": 301,
+   "loser_fills": 16,
+   "loser_games": 4,
+   "ub95_per_game": 0.0302,
+   "shares": 1593833
+  },
+  "T300L9: ...clock<=300s, lead>=9": {
+   "fills": 1934,
+   "games": 228,
+   "loser_fills": 2,
+   "loser_games": 2,
+   "ub95_per_game": 0.0274,
+   "shares": 1157615
+  },
+  "T300L10: ...clock<=300s, lead>=10": {
+   "fills": 1750,
+   "games": 216,
+   "loser_fills": 1,
+   "loser_games": 1,
+   "ub95_per_game": 0.0218,
+   "shares": 1078855
+  },
+  "T300L15: ...clock<=300s, lead>=15": {
+   "fills": 855,
+   "games": 147,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "ub95_per_game": 0.0202,
+   "shares": 698038
+  },
+  "D1 timed: last period/OT, clock<=1s, buyer ahead": {
+   "fills": 437,
+   "games": 125,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "ub95_per_game": 0.0237,
+   "shares": 225838
+  },
+  "D1b timed: last period/OT, clock<=5s, buyer ahead": {
+   "fills": 637,
+   "games": 151,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "ub95_per_game": 0.0196,
+   "shares": 314419
+  }
+ },
+ "NHL": {
+  "all fills (no gate)": {
+   "fills": 22214,
+   "games": 1263,
+   "loser_fills": 11,
+   "loser_games": 7,
+   "ub95_per_game": 0.0104,
+   "shares": 6549734
+  },
+  "T30: last period/OT, clock<=30s, buyer ahead": {
+   "fills": 8513,
+   "games": 1037,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "ub95_per_game": 0.0029,
+   "shares": 3638852
+  },
+  "T60: last period/OT, clock<=60s, buyer ahead": {
+   "fills": 10400,
+   "games": 1099,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "ub95_per_game": 0.0027,
+   "shares": 3956189
+  },
+  "T90: last period/OT, clock<=90s, buyer ahead": {
+   "fills": 11638,
+   "games": 1146,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "ub95_per_game": 0.0026,
+   "shares": 4190993
+  },
+  "T120: last period/OT, clock<=120s, buyer ahead": {
+   "fills": 12433,
+   "games": 1168,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "ub95_per_game": 0.0026,
+   "shares": 4403397
+  },
+  "T180: last period/OT, clock<=180s, buyer ahead": {
+   "fills": 14212,
+   "games": 1195,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "ub95_per_game": 0.0025,
+   "shares": 4835472
+  },
+  "T300: last period/OT, clock<=300s, buyer ahead": {
+   "fills": 16300,
+   "games": 1218,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "ub95_per_game": 0.0025,
+   "shares": 5678063
+  },
+  "T600: last period/OT, clock<=600s, buyer ahead": {
+   "fills": 18915,
+   "games": 1228,
+   "loser_fills": 2,
+   "loser_games": 1,
+   "ub95_per_game": 0.0039,
+   "shares": 6183244
+  },
+  "T60L3: ...clock<=60s, lead>=3": {
+   "fills": 1698,
+   "games": 381,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "ub95_per_game": 0.0078,
+   "shares": 1256164
+  },
+  "T60L5: ...clock<=60s, lead>=5": {
+   "fills": 85,
+   "games": 41,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "ub95_per_game": 0.0705,
+   "shares": 45402
+  },
+  "T60L9: ...clock<=60s, lead>=9": {
+   "fills": 1,
+   "games": 1,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "ub95_per_game": 0.95,
+   "shares": 2
+  },
+  "T120L3: ...clock<=120s, lead>=3": {
+   "fills": 2400,
+   "games": 433,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "ub95_per_game": 0.0069,
+   "shares": 1492353
+  },
+  "T120L5: ...clock<=120s, lead>=5": {
+   "fills": 139,
+   "games": 50,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "ub95_per_game": 0.0582,
+   "shares": 56455
+  },
+  "T120L9: ...clock<=120s, lead>=9": {
+   "fills": 1,
+   "games": 1,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "ub95_per_game": 0.95,
+   "shares": 2
+  },
+  "T300L3: ...clock<=300s, lead>=3": {
+   "fills": 4295,
+   "games": 484,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "ub95_per_game": 0.0062,
+   "shares": 2620936
+  },
+  "T300L5: ...clock<=300s, lead>=5": {
+   "fills": 337,
+   "games": 72,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "ub95_per_game": 0.0408,
+   "shares": 157339
+  },
+  "T300L9: ...clock<=300s, lead>=9": {
+   "fills": 1,
+   "games": 1,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "ub95_per_game": 0.95,
+   "shares": 2
+  },
+  "D1 timed: last period/OT, clock<=1s, buyer ahead": {
+   "fills": 6927,
+   "games": 903,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "ub95_per_game": 0.0033,
+   "shares": 3181975
+  },
+  "D1b timed: last period/OT, clock<=5s, buyer ahead": {
+   "fills": 7105,
+   "games": 919,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "ub95_per_game": 0.0033,
+   "shares": 3224459
+  }
+ },
+ "MLB": {
+  "all fills (no gate)": {
+   "fills": 32563,
+   "games": 2564,
+   "loser_fills": 55,
+   "loser_games": 11,
+   "ub95_per_game": 0.0071,
+   "shares": 11039670
+  },
+  "MLB inn>=7, buyer ahead": {
+   "fills": 22384,
+   "games": 1850,
+   "loser_fills": 38,
+   "loser_games": 8,
+   "ub95_per_game": 0.0078,
+   "shares": 8153252
+  },
+  "MLB inn>=8, buyer ahead": {
+   "fills": 21242,
+   "games": 1846,
+   "loser_fills": 38,
+   "loser_games": 8,
+   "ub95_per_game": 0.0078,
+   "shares": 7840906
+  },
+  "MLB inn>=9, buyer ahead": {
+   "fills": 15635,
+   "games": 1768,
+   "loser_fills": 36,
+   "loser_games": 7,
+   "ub95_per_game": 0.0074,
+   "shares": 6081514
+  },
+  "MLB inn>=9, lead>=2": {
+   "fills": 11300,
+   "games": 1300,
+   "loser_fills": 36,
+   "loser_games": 7,
+   "ub95_per_game": 0.0101,
+   "shares": 4824142
+  },
+  "MLB inn>=9, lead>=3": {
+   "fills": 8212,
+   "games": 968,
+   "loser_fills": 30,
+   "loser_games": 3,
+   "ub95_per_game": 0.008,
+   "shares": 3519018
+  },
+  "MLB inn>=9, lead>=4": {
+   "fills": 5633,
+   "games": 722,
+   "loser_fills": 17,
+   "loser_games": 2,
+   "ub95_per_game": 0.0087,
+   "shares": 2667885
+  },
+  "MLB inn>=8, lead>=3": {
+   "fills": 13739,
+   "games": 1063,
+   "loser_fills": 32,
+   "loser_games": 4,
+   "ub95_per_game": 0.0086,
+   "shares": 5275180
+  },
+  "MLB inn>=8, lead>=4": {
+   "fills": 10656,
+   "games": 822,
+   "loser_fills": 19,
+   "loser_games": 3,
+   "ub95_per_game": 0.0094,
+   "shares": 4346087
+  },
+  "D2 MLB: game over (final out / walk-off) by ESPN state": {
+   "fills": 3400,
+   "games": 925,
+   "loser_fills": 0,
+   "loser_games": 0,
+   "ub95_per_game": 0.0032,
+   "shares": 2228986
+  },
+  "MLB trailing team has <= 3 outs left, buyer ahead": {
+   "fills": 15673,
+   "games": 1670,
+   "loser_fills": 36,
+   "loser_games": 7,
+   "ub95_per_game": 0.0079,
+   "shares": 4855006
+  },
+  "MLB trailing team has <= 6 outs left, buyer ahead": {
+   "fills": 18924,
+   "games": 1689,
+   "loser_fills": 38,
+   "loser_games": 8,
+   "ub95_per_game": 0.0085,
+   "shares": 5916090
+  }
+ },
+ "bands": {
+  "T60 | CFB/NFL": {
+   "0.95-0.96": {
+    "fills": 116,
+    "games": 43,
+    "loser_fills": 1,
+    "loser_games": 1,
+    "ub95_per_game": 0.1056,
+    "shares": 17971
+   },
+   "0.96-0.97": {
+    "fills": 167,
+    "games": 51,
+    "loser_fills": 3,
+    "loser_games": 2,
+    "ub95_per_game": 0.1183,
+    "shares": 52768
+   },
+   "0.97-0.98": {
+    "fills": 147,
+    "games": 53,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "ub95_per_game": 0.055,
+    "shares": 41013
+   },
+   "0.98-0.99": {
+    "fills": 150,
+    "games": 62,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "ub95_per_game": 0.0472,
+    "shares": 42221
+   },
+   "0.99-0.995": {
+    "fills": 2640,
+    "games": 240,
+    "loser_fills": 1,
+    "loser_games": 1,
+    "ub95_per_game": 0.0196,
+    "shares": 2081635
+   },
+   "0.995-0.9995": {
+    "fills": 3935,
+    "games": 516,
+    "loser_fills": 4,
+    "loser_games": 1,
+    "ub95_per_game": 0.0092,
+    "shares": 10682940
+   }
+  },
+  "T60 | NBA/WNBA": {
+   "0.95-0.96": {
+    "fills": 1262,
+    "games": 232,
+    "loser_fills": 62,
+    "loser_games": 11,
+    "ub95_per_game": 0.0773,
+    "shares": 527345
+   },
+   "0.96-0.97": {
+    "fills": 1539,
+    "games": 248,
+    "loser_fills": 29,
+    "loser_games": 9,
+    "ub95_per_game": 0.0625,
+    "shares": 535173
+   },
+   "0.97-0.98": {
+    "fills": 2160,
+    "games": 259,
+    "loser_fills": 31,
+    "loser_games": 5,
+    "ub95_per_game": 0.0402,
+    "shares": 596337
+   },
+   "0.98-0.99": {
+    "fills": 2897,
+    "games": 314,
+    "loser_fills": 66,
+    "loser_games": 7,
+    "ub95_per_game": 0.0415,
+    "shares": 1199269
+   },
+   "0.99-0.995": {
+    "fills": 12990,
+    "games": 608,
+    "loser_fills": 57,
+    "loser_games": 5,
+    "ub95_per_game": 0.0172,
+    "shares": 6782366
+   },
+   "0.995-0.9995": {
+    "fills": 20350,
+    "games": 1151,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "ub95_per_game": 0.0026,
+    "shares": 20925247
+   }
+  },
+  "T60 | NHL": {
+   "0.95-0.96": {
+    "fills": 141,
+    "games": 55,
+    "loser_fills": 23,
+    "loser_games": 2,
+    "ub95_per_game": 0.1101,
+    "shares": 26156
+   },
+   "0.96-0.97": {
+    "fills": 166,
+    "games": 60,
+    "loser_fills": 6,
+    "loser_games": 1,
+    "ub95_per_game": 0.0766,
+    "shares": 20232
+   },
+   "0.97-0.98": {
+    "fills": 121,
+    "games": 66,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "ub95_per_game": 0.0444,
+    "shares": 17806
+   },
+   "0.98-0.99": {
+    "fills": 152,
+    "games": 75,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "ub95_per_game": 0.0392,
+    "shares": 15021
+   },
+   "0.99-0.995": {
+    "fills": 5405,
+    "games": 638,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "ub95_per_game": 0.0047,
+    "shares": 1053306
+   },
+   "0.995-0.9995": {
+    "fills": 4843,
+    "games": 735,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "ub95_per_game": 0.0041,
+    "shares": 2887862
+   }
+  },
+  "T120 | CFB/NFL": {
+   "0.95-0.96": {
+    "fills": 239,
+    "games": 90,
+    "loser_fills": 3,
+    "loser_games": 2,
+    "ub95_per_game": 0.0683,
+    "shares": 74308
+   },
+   "0.96-0.97": {
+    "fills": 365,
+    "games": 99,
+    "loser_fills": 4,
+    "loser_games": 2,
+    "ub95_per_game": 0.0622,
+    "shares": 141048
+   },
+   "0.97-0.98": {
+    "fills": 341,
+    "games": 96,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "ub95_per_game": 0.0307,
+    "shares": 128426
+   },
+   "0.98-0.99": {
+    "fills": 444,
+    "games": 141,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "ub95_per_game": 0.021,
+    "shares": 159492
+   },
+   "0.99-0.995": {
+    "fills": 3511,
+    "games": 340,
+    "loser_fills": 5,
+    "loser_games": 3,
+    "ub95_per_game": 0.0226,
+    "shares": 2588724
+   },
+   "0.995-0.9995": {
+    "fills": 5440,
+    "games": 596,
+    "loser_fills": 6,
+    "loser_games": 2,
+    "ub95_per_game": 0.0105,
+    "shares": 14060797
+   }
+  },
+  "T120 | NBA/WNBA": {
+   "0.95-0.96": {
+    "fills": 1949,
+    "games": 324,
+    "loser_fills": 73,
+    "loser_games": 13,
+    "ub95_per_game": 0.063,
+    "shares": 707016
+   },
+   "0.96-0.97": {
+    "fills": 2384,
+    "games": 360,
+    "loser_fills": 42,
+    "loser_games": 12,
+    "ub95_per_game": 0.0534,
+    "shares": 740859
+   },
+   "0.97-0.98": {
+    "fills": 3271,
+    "games": 389,
+    "loser_fills": 58,
+    "loser_games": 8,
+    "ub95_per_game": 0.0368,
+    "shares": 834864
+   },
+   "0.98-0.99": {
+    "fills": 4219,
+    "games": 452,
+    "loser_fills": 85,
+    "loser_games": 8,
+    "ub95_per_game": 0.0317,
+    "shares": 1657803
+   },
+   "0.99-0.995": {
+    "fills": 16137,
+    "games": 745,
+    "loser_fills": 62,
+    "loser_games": 6,
+    "ub95_per_game": 0.0158,
+    "shares": 8337249
+   },
+   "0.995-0.9995": {
+    "fills": 26853,
+    "games": 1238,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "ub95_per_game": 0.0024,
+    "shares": 26426410
+   }
+  },
+  "T120 | NHL": {
+   "0.95-0.96": {
+    "fills": 243,
+    "games": 94,
+    "loser_fills": 24,
+    "loser_games": 3,
+    "ub95_per_game": 0.0804,
+    "shares": 33985
+   },
+   "0.96-0.97": {
+    "fills": 260,
+    "games": 99,
+    "loser_fills": 8,
+    "loser_games": 2,
+    "ub95_per_game": 0.0622,
+    "shares": 28500
+   },
+   "0.97-0.98": {
+    "fills": 179,
+    "games": 91,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "ub95_per_game": 0.0324,
+    "shares": 22084
+   },
+   "0.98-0.99": {
+    "fills": 255,
+    "games": 120,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "ub95_per_game": 0.0247,
+    "shares": 28029
+   },
+   "0.99-0.995": {
+    "fills": 6464,
+    "games": 744,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "ub95_per_game": 0.004,
+    "shares": 1176695
+   },
+   "0.995-0.9995": {
+    "fills": 5714,
+    "games": 789,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "ub95_per_game": 0.0038,
+    "shares": 3198674
+   }
+  },
+  "D1 clock<=1s | CFB/NFL": {
+   "0.95-0.96": {
+    "fills": 1,
+    "games": 1,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "ub95_per_game": 0.95,
+    "shares": 0
+   },
+   "0.96-0.97": {
+    "fills": 0,
+    "games": 0,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "ub95_per_game": null,
+    "shares": 0
+   },
+   "0.97-0.98": {
+    "fills": 9,
+    "games": 2,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "ub95_per_game": 0.7764,
+    "shares": 147
+   },
+   "0.98-0.99": {
+    "fills": 6,
+    "games": 4,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "ub95_per_game": 0.5271,
+    "shares": 755
+   },
+   "0.99-0.995": {
+    "fills": 1493,
+    "games": 156,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "ub95_per_game": 0.019,
+    "shares": 1230656
+   },
+   "0.995-0.9995": {
+    "fills": 3121,
+    "games": 421,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "ub95_per_game": 0.0071,
+    "shares": 8344763
+   }
+  },
+  "D1 clock<=1s | NBA/WNBA": {
+   "0.95-0.96": {
+    "fills": 54,
+    "games": 11,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "ub95_per_game": 0.2384,
+    "shares": 19605
+   },
+   "0.96-0.97": {
+    "fills": 70,
+    "games": 14,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "ub95_per_game": 0.1926,
+    "shares": 7582
+   },
+   "0.97-0.98": {
+    "fills": 14,
+    "games": 8,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "ub95_per_game": 0.3123,
+    "shares": 5538
+   },
+   "0.98-0.99": {
+    "fills": 83,
+    "games": 16,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "ub95_per_game": 0.1707,
+    "shares": 38993
+   },
+   "0.99-0.995": {
+    "fills": 3767,
+    "games": 205,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "ub95_per_game": 0.0145,
+    "shares": 2481912
+   },
+   "0.995-0.9995": {
+    "fills": 7020,
+    "games": 477,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "ub95_per_game": 0.0063,
+    "shares": 8803100
+   }
+  },
+  "D1 clock<=1s | NHL": {
+   "0.95-0.96": {
+    "fills": 18,
+    "games": 15,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "ub95_per_game": 0.181,
+    "shares": 2133
+   },
+   "0.96-0.97": {
+    "fills": 28,
+    "games": 13,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "ub95_per_game": 0.2058,
+    "shares": 5820
+   },
+   "0.97-0.98": {
+    "fills": 43,
+    "games": 21,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "ub95_per_game": 0.1329,
+    "shares": 4419
+   },
+   "0.98-0.99": {
+    "fills": 53,
+    "games": 25,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "ub95_per_game": 0.1129,
+    "shares": 8180
+   },
+   "0.99-0.995": {
+    "fills": 3585,
+    "games": 477,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "ub95_per_game": 0.0063,
+    "shares": 899850
+   },
+   "0.995-0.9995": {
+    "fills": 3289,
+    "games": 599,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "ub95_per_game": 0.005,
+    "shares": 2273945
+   }
+  },
+  "D1b clock<=5s | CFB/NFL": {
+   "0.95-0.96": {
+    "fills": 3,
+    "games": 3,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "ub95_per_game": 0.6316,
+    "shares": 31
+   },
+   "0.96-0.97": {
+    "fills": 8,
+    "games": 5,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "ub95_per_game": 0.4507,
+    "shares": 2378
+   },
+   "0.97-0.98": {
+    "fills": 14,
+    "games": 7,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "ub95_per_game": 0.3482,
+    "shares": 4464
+   },
+   "0.98-0.99": {
+    "fills": 21,
+    "games": 12,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "ub95_per_game": 0.2209,
+    "shares": 2004
+   },
+   "0.99-0.995": {
+    "fills": 1703,
+    "games": 168,
+    "loser_fills": 1,
+    "loser_games": 1,
+    "ub95_per_game": 0.0279,
+    "shares": 1418927
+   },
+   "0.995-0.9995": {
+    "fills": 3197,
+    "games": 432,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "ub95_per_game": 0.0069,
+    "shares": 8498879
+   }
+  },
+  "D1b clock<=5s | NBA/WNBA": {
+   "0.95-0.96": {
+    "fills": 194,
+    "games": 44,
+    "loser_fills": 17,
+    "loser_games": 1,
+    "ub95_per_game": 0.1033,
+    "shares": 56625
+   },
+   "0.96-0.97": {
+    "fills": 227,
+    "games": 53,
+    "loser_fills": 7,
+    "loser_games": 1,
+    "ub95_per_game": 0.0864,
+    "shares": 47882
+   },
+   "0.97-0.98": {
+    "fills": 230,
+    "games": 45,
+    "loser_fills": 17,
+    "loser_games": 1,
+    "ub95_per_game": 0.1011,
+    "shares": 90466
+   },
+   "0.98-0.99": {
+    "fills": 274,
+    "games": 63,
+    "loser_fills": 1,
+    "loser_games": 1,
+    "ub95_per_game": 0.0731,
+    "shares": 97484
+   },
+   "0.99-0.995": {
+    "fills": 5395,
+    "games": 286,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "ub95_per_game": 0.0104,
+    "shares": 3310641
+   },
+   "0.995-0.9995": {
+    "fills": 8787,
+    "games": 572,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "ub95_per_game": 0.0052,
+    "shares": 10309949
+   }
+  },
+  "D1b clock<=5s | NHL": {
+   "0.95-0.96": {
+    "fills": 19,
+    "games": 16,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "ub95_per_game": 0.1707,
+    "shares": 2565
+   },
+   "0.96-0.97": {
+    "fills": 29,
+    "games": 14,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "ub95_per_game": 0.1926,
+    "shares": 5846
+   },
+   "0.97-0.98": {
+    "fills": 43,
+    "games": 21,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "ub95_per_game": 0.1329,
+    "shares": 4419
+   },
+   "0.98-0.99": {
+    "fills": 59,
+    "games": 29,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "ub95_per_game": 0.0981,
+    "shares": 8483
+   },
+   "0.99-0.995": {
+    "fills": 3665,
+    "games": 494,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "ub95_per_game": 0.006,
+    "shares": 906693
+   },
+   "0.995-0.9995": {
+    "fills": 3381,
+    "games": 607,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "ub95_per_game": 0.0049,
+    "shares": 2309283
+   }
+  },
+  "MLB game over | MLB": {
+   "0.95-0.96": {
+    "fills": 22,
+    "games": 10,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "ub95_per_game": 0.2589,
+    "shares": 1511
+   },
+   "0.96-0.97": {
+    "fills": 38,
+    "games": 13,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "ub95_per_game": 0.2058,
+    "shares": 4361
+   },
+   "0.97-0.98": {
+    "fills": 25,
+    "games": 17,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "ub95_per_game": 0.1616,
+    "shares": 3387
+   },
+   "0.98-0.99": {
+    "fills": 22,
+    "games": 13,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "ub95_per_game": 0.2058,
+    "shares": 9998
+   },
+   "0.99-0.995": {
+    "fills": 1130,
+    "games": 299,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "ub95_per_game": 0.01,
+    "shares": 374759
+   },
+   "0.995-0.9995": {
+    "fills": 2248,
+    "games": 681,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "ub95_per_game": 0.0044,
+    "shares": 1844230
+   }
+  }
+ },
+ "split": {
+  "T60 | CFB/NFL": {
+   "before 2026-03-01": {
+    "fills": 5314,
+    "games": 426,
+    "loser_fills": 1,
+    "loser_games": 1,
+    "ub95_per_game": 0.0111,
+    "shares": 11001524
+   },
+   "from 2026-03-01": {
+    "fills": 1411,
+    "games": 217,
+    "loser_fills": 4,
+    "loser_games": 1,
+    "ub95_per_game": 0.0217,
+    "shares": 1805272
+   }
+  },
+  "T60 | NBA/WNBA": {
+   "before 2026-03-01": {
+    "fills": 20261,
+    "games": 705,
+    "loser_fills": 67,
+    "loser_games": 3,
+    "ub95_per_game": 0.011,
+    "shares": 18192409
+   },
+   "from 2026-03-01": {
+    "fills": 15976,
+    "games": 677,
+    "loser_fills": 56,
+    "loser_games": 4,
+    "ub95_per_game": 0.0135,
+    "shares": 10714473
+   }
+  },
+  "T60 | NHL": {
+   "before 2026-03-01": {
+    "fills": 4086,
+    "games": 620,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "ub95_per_game": 0.0048,
+    "shares": 2383748
+   },
+   "from 2026-03-01": {
+    "fills": 6314,
+    "games": 479,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "ub95_per_game": 0.0062,
+    "shares": 1572441
+   }
+  },
+  "T120 | CFB/NFL": {
+   "before 2026-03-01": {
+    "fills": 7377,
+    "games": 453,
+    "loser_fills": 2,
+    "loser_games": 2,
+    "ub95_per_game": 0.0138,
+    "shares": 14462120
+   },
+   "from 2026-03-01": {
+    "fills": 2018,
+    "games": 289,
+    "loser_fills": 9,
+    "loser_games": 3,
+    "ub95_per_game": 0.0266,
+    "shares": 2346893
+   }
+  },
+  "T120 | NBA/WNBA": {
+   "before 2026-03-01": {
+    "fills": 24839,
+    "games": 734,
+    "loser_fills": 91,
+    "loser_games": 4,
+    "ub95_per_game": 0.0124,
+    "shares": 21075796
+   },
+   "from 2026-03-01": {
+    "fills": 22370,
+    "games": 743,
+    "loser_fills": 56,
+    "loser_games": 4,
+    "ub95_per_game": 0.0123,
+    "shares": 15345666
+   }
+  },
+  "T120 | NHL": {
+   "before 2026-03-01": {
+    "fills": 4693,
+    "games": 653,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "ub95_per_game": 0.0046,
+    "shares": 2566721
+   },
+   "from 2026-03-01": {
+    "fills": 7740,
+    "games": 515,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "ub95_per_game": 0.0058,
+    "shares": 1836676
+   }
+  },
+  "D1 clock<=1s | CFB/NFL": {
+   "before 2026-03-01": {
+    "fills": 3806,
+    "games": 389,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "ub95_per_game": 0.0077,
+    "shares": 8099363
+   },
+   "from 2026-03-01": {
+    "fills": 814,
+    "games": 126,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "ub95_per_game": 0.0235,
+    "shares": 1476810
+   }
+  },
+  "D1 clock<=1s | NBA/WNBA": {
+   "before 2026-03-01": {
+    "fills": 8716,
+    "games": 395,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "ub95_per_game": 0.0076,
+    "shares": 9664379
+   },
+   "from 2026-03-01": {
+    "fills": 2154,
+    "games": 213,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "ub95_per_game": 0.014,
+    "shares": 1659626
+   }
+  },
+  "D1 clock<=1s | NHL": {
+   "before 2026-03-01": {
+    "fills": 3116,
+    "games": 525,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "ub95_per_game": 0.0057,
+    "shares": 1969829
+   },
+   "from 2026-03-01": {
+    "fills": 3811,
+    "games": 378,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "ub95_per_game": 0.0079,
+    "shares": 1212146
+   }
+  },
+  "D1b clock<=5s | CFB/NFL": {
+   "before 2026-03-01": {
+    "fills": 4007,
+    "games": 392,
+    "loser_fills": 1,
+    "loser_games": 1,
+    "ub95_per_game": 0.012,
+    "shares": 8284185
+   },
+   "from 2026-03-01": {
+    "fills": 914,
+    "games": 143,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "ub95_per_game": 0.0207,
+    "shares": 1635625
+   }
+  },
+  "D1b clock<=5s | NBA/WNBA": {
+   "before 2026-03-01": {
+    "fills": 10450,
+    "games": 454,
+    "loser_fills": 1,
+    "loser_games": 1,
+    "ub95_per_game": 0.0104,
+    "shares": 10796366
+   },
+   "from 2026-03-01": {
+    "fills": 4006,
+    "games": 280,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "ub95_per_game": 0.0106,
+    "shares": 2921708
+   }
+  },
+  "D1b clock<=5s | NHL": {
+   "before 2026-03-01": {
+    "fills": 3175,
+    "games": 532,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "ub95_per_game": 0.0056,
+    "shares": 1994932
+   },
+   "from 2026-03-01": {
+    "fills": 3930,
+    "games": 387,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "ub95_per_game": 0.0077,
+    "shares": 1229527
+   }
+  },
+  "MLB game over | MLB": {
+   "before 2026-03-01": {
+    "fills": 0,
+    "games": 0,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "ub95_per_game": null,
+    "shares": 0
+   },
+   "from 2026-03-01": {
+    "fills": 3400,
+    "games": 925,
+    "loser_fills": 0,
+    "loser_games": 0,
+    "ub95_per_game": 0.0032,
+    "shares": 2228986
+   }
+  }
+ },
+ "supply": {
+  "T60 | CFB/NFL": {
+   "matched_games": 886,
+   "games_with_cheap_fill": 256,
+   "share_of_games": 0.289,
+   "fills": 2790,
+   "fills_per_active_day": 21.14,
+   "games_per_active_day": 1.94,
+   "active_days": 132,
+   "median_shares_per_game": 1097.95,
+   "p25_shares": 221.47,
+   "games_with_ge5_shares": 249,
+   "loser_games": 1
+  },
+  "T60 | NBA/WNBA": {
+   "matched_games": 1537,
+   "games_with_cheap_fill": 636,
+   "share_of_games": 0.414,
+   "fills": 15887,
+   "fills_per_active_day": 52.26,
+   "games_per_active_day": 2.09,
+   "active_days": 304,
+   "median_shares_per_game": 3413.94,
+   "p25_shares": 601.27,
+   "games_with_ge5_shares": 628,
+   "loser_games": 7
+  },
+  "T60 | NHL": {
+   "matched_games": 1258,
+   "games_with_cheap_fill": 645,
+   "share_of_games": 0.513,
+   "fills": 5557,
+   "fills_per_active_day": 26.98,
+   "games_per_active_day": 3.13,
+   "active_days": 206,
+   "median_shares_per_game": 432.52000000000004,
+   "p25_shares": 91.8,
+   "games_with_ge5_shares": 618,
+   "loser_games": 0
+  },
+  "T120 | CFB/NFL": {
+   "matched_games": 886,
+   "games_with_cheap_fill": 376,
+   "share_of_games": 0.424,
+   "fills": 3955,
+   "fills_per_active_day": 29.96,
+   "games_per_active_day": 2.85,
+   "active_days": 132,
+   "median_shares_per_game": 847.74,
+   "p25_shares": 120.66,
+   "games_with_ge5_shares": 360,
+   "loser_games": 3
+  },
+  "T120 | NBA/WNBA": {
+   "matched_games": 1537,
+   "games_with_cheap_fill": 778,
+   "share_of_games": 0.506,
+   "fills": 20356,
+   "fills_per_active_day": 66.96,
+   "games_per_active_day": 2.56,
+   "active_days": 304,
+   "median_shares_per_game": 3561.4399999999996,
+   "p25_shares": 599.5799999999999,
+   "games_with_ge5_shares": 763,
+   "loser_games": 8
+  },
+  "T120 | NHL": {
+   "matched_games": 1258,
+   "games_with_cheap_fill": 756,
+   "share_of_games": 0.601,
+   "fills": 6719,
+   "fills_per_active_day": 32.62,
+   "games_per_active_day": 3.67,
+   "active_days": 206,
+   "median_shares_per_game": 398.76,
+   "p25_shares": 84.21,
+   "games_with_ge5_shares": 728,
+   "loser_games": 0
+  },
+  "D1 clock<=1s | CFB/NFL": {
+   "matched_games": 886,
+   "games_with_cheap_fill": 158,
+   "share_of_games": 0.178,
+   "fills": 1499,
+   "fills_per_active_day": 11.36,
+   "games_per_active_day": 1.2,
+   "active_days": 132,
+   "median_shares_per_game": 1381.74,
+   "p25_shares": 169.0,
+   "games_with_ge5_shares": 155,
+   "loser_games": 0
+  },
+  "D1 clock<=1s | NBA/WNBA": {
+   "matched_games": 1537,
+   "games_with_cheap_fill": 206,
+   "share_of_games": 0.134,
+   "fills": 3850,
+   "fills_per_active_day": 12.66,
+   "games_per_active_day": 0.68,
+   "active_days": 304,
+   "median_shares_per_game": 3245.1099999999997,
+   "p25_shares": 516.6600000000001,
+   "games_with_ge5_shares": 204,
+   "loser_games": 0
+  },
+  "D1 clock<=1s | NHL": {
+   "matched_games": 1258,
+   "games_with_cheap_fill": 478,
+   "share_of_games": 0.38,
+   "fills": 3638,
+   "fills_per_active_day": 17.66,
+   "games_per_active_day": 2.32,
+   "active_days": 206,
+   "median_shares_per_game": 525.2900000000001,
+   "p25_shares": 110.0,
+   "games_with_ge5_shares": 461,
+   "loser_games": 0
+  },
+  "D1b clock<=5s | CFB/NFL": {
+   "matched_games": 886,
+   "games_with_cheap_fill": 173,
+   "share_of_games": 0.195,
+   "fills": 1724,
+   "fills_per_active_day": 13.06,
+   "games_per_active_day": 1.31,
+   "active_days": 132,
+   "median_shares_per_game": 1335.89,
+   "p25_shares": 169.71,
+   "games_with_ge5_shares": 170,
+   "loser_games": 1
+  },
+  "D1b clock<=5s | NBA/WNBA": {
+   "matched_games": 1537,
+   "games_with_cheap_fill": 297,
+   "share_of_games": 0.193,
+   "fills": 5669,
+   "fills_per_active_day": 18.65,
+   "games_per_active_day": 0.98,
+   "active_days": 304,
+   "median_shares_per_game": 2360.52,
+   "p25_shares": 372.38,
+   "games_with_ge5_shares": 292,
+   "loser_games": 1
+  },
+  "D1b clock<=5s | NHL": {
+   "matched_games": 1258,
+   "games_with_cheap_fill": 496,
+   "share_of_games": 0.394,
+   "fills": 3724,
+   "fills_per_active_day": 18.08,
+   "games_per_active_day": 2.41,
+   "active_days": 206,
+   "median_shares_per_game": 510.24,
+   "p25_shares": 100.0,
+   "games_with_ge5_shares": 478,
+   "loser_games": 0
+  },
+  "MLB game over | MLB": {
+   "matched_games": 2557,
+   "games_with_cheap_fill": 302,
+   "share_of_games": 0.118,
+   "fills": 1152,
+   "fills_per_active_day": 5.59,
+   "games_per_active_day": 1.47,
+   "active_days": 206,
+   "median_shares_per_game": 150.0,
+   "p25_shares": 25.5,
+   "games_with_ge5_shares": 284,
+   "loser_games": 0
+  }
+ },
+ "loser_fill_state": {
+  "loser_fills_with_state": 763,
+  "bought_side_ahead": 725,
+  "tied": 15,
+  "behind": 23
+ }
+}

@@ -1,0 +1,279 @@
+{
+ "B": 0.995,
+ "delay_s": 45,
+ "shares": 5.0,
+ "cells": {
+  "CFB | D1 clock<=1s": {
+   "games": 512,
+   "gate_reached": 494,
+   "window_sum": 503419.0,
+   "join_after_stamp": 21,
+   "filled": 58,
+   "wait_sum": 11327.0
+  },
+  "CFB | T60 lead>=1": {
+   "games": 512,
+   "gate_reached": 502,
+   "window_sum": 785477.0,
+   "filled": 104,
+   "wait_sum": 30940.0,
+   "join_after_stamp": 7,
+   "loser": 3
+  },
+  "MLB | MLB game over": {
+   "games": 2557,
+   "gate_reached": 1881,
+   "window_sum": 239128.0,
+   "filled": 287,
+   "wait_sum": 65006.0,
+   "join_after_stamp": 7
+  },
+  "NBA | D1 clock<=1s": {
+   "games": 1175,
+   "gate_reached": 1172,
+   "window_sum": 169632.0,
+   "filled": 167,
+   "wait_sum": 12695.0,
+   "join_after_stamp": 10
+  },
+  "NBA | T120 lead>=9 (NBA)": {
+   "games": 1175,
+   "gate_reached": 820,
+   "window_sum": 325165.0,
+   "filled": 187,
+   "wait_sum": 10815.0,
+   "join_after_stamp": 3
+  },
+  "NBA | T60 lead>=1": {
+   "games": 1175,
+   "gate_reached": 1173,
+   "filled": 449,
+   "wait_sum": 102274.0,
+   "window_sum": 515023.0,
+   "join_after_stamp": 3,
+   "loser": 9
+  },
+  "NBA | T60 lead>=5 (NBA)": {
+   "games": 1175,
+   "gate_reached": 1025,
+   "filled": 316,
+   "wait_sum": 28323.0,
+   "window_sum": 344287.0,
+   "join_after_stamp": 3,
+   "loser": 1
+  },
+  "NFL | D1 clock<=1s": {
+   "games": 374,
+   "gate_reached": 341,
+   "window_sum": 112891.0,
+   "filled": 99,
+   "wait_sum": 6611.0
+  },
+  "NFL | T60 lead>=1": {
+   "games": 374,
+   "gate_reached": 369,
+   "window_sum": 184422.0,
+   "filled": 130,
+   "wait_sum": 21401.0,
+   "loser": 1
+  },
+  "NFL | T60 lead>=3 (NFL)": {
+   "games": 374,
+   "gate_reached": 339,
+   "window_sum": 168273.0,
+   "filled": 112,
+   "wait_sum": 16757.0
+  },
+  "NHL | D1 clock<=1s": {
+   "games": 1258,
+   "gate_reached": 1255,
+   "window_sum": 31514470.0,
+   "filled": 464,
+   "wait_sum": 243641.0,
+   "join_after_stamp": 10
+  },
+  "NHL | T120 lead>=2 (NHL)": {
+   "games": 1258,
+   "gate_reached": 783,
+   "window_sum": 31322930.0,
+   "filled": 302,
+   "wait_sum": 31052291.0,
+   "join_after_stamp": 3
+  },
+  "NHL | T60 lead>=1": {
+   "games": 1258,
+   "gate_reached": 1256,
+   "window_sum": 31637095.0,
+   "filled": 625,
+   "wait_sum": 272578.0,
+   "join_after_stamp": 10,
+   "loser": 2
+  },
+  "NHL | T60 lead>=2 (NHL)": {
+   "games": 1258,
+   "gate_reached": 772,
+   "window_sum": 31249633.0,
+   "filled": 199,
+   "wait_sum": 28122.0,
+   "join_after_stamp": 2
+  },
+  "WNBA | D1 clock<=1s": {
+   "games": 362,
+   "gate_reached": 362,
+   "filled": 38,
+   "wait_sum": 2599.0,
+   "window_sum": 32147.0,
+   "join_after_stamp": 4
+  },
+  "WNBA | T60 lead>=1": {
+   "games": 362,
+   "gate_reached": 362,
+   "filled": 129,
+   "wait_sum": 36076.0,
+   "window_sum": 151867.0,
+   "loser": 4
+  }
+ },
+ "loser_games": [
+  [
+   "CFB",
+   "T60 lead>=1",
+   "cfb-ncat-bryant-2026-10-03",
+   -1070,
+   0.9525
+  ],
+  [
+   "CFB",
+   "T60 lead>=1",
+   "cfb-monst-idaho-2026-10-02",
+   -202,
+   0.96
+  ],
+  [
+   "CFB",
+   "T60 lead>=1",
+   "cfb-ncst-vand-2026-09-19",
+   -809,
+   0.961
+  ],
+  [
+   "NHL",
+   "T60 lead>=1",
+   "nhl-cbj-det-2026-04-07",
+   -1263,
+   0.95
+  ],
+  [
+   "NHL",
+   "T60 lead>=1",
+   "nhl-tor-las-2026-01-15",
+   -604,
+   0.95
+  ],
+  [
+   "NBA",
+   "T60 lead>=1",
+   "nba-lal-hou-2026-04-24",
+   -1800,
+   0.95
+  ],
+  [
+   "NBA",
+   "T60 lead>=1",
+   "nba-mia-cha-2026-04-14",
+   -1752,
+   0.95
+  ],
+  [
+   "NBA",
+   "T60 lead>=1",
+   "nba-lal-orl-2026-03-21",
+   -810,
+   0.95
+  ],
+  [
+   "NBA",
+   "T60 lead>=1",
+   "nba-nop-hou-2026-03-13",
+   -718,
+   0.95
+  ],
+  [
+   "NBA",
+   "T60 lead>=1",
+   "nba-dal-orl-2026-03-05",
+   -326,
+   0.95
+  ],
+  [
+   "NBA",
+   "T60 lead>=1",
+   "nba-cle-det-2026-02-27",
+   -1376,
+   0.95
+  ],
+  [
+   "NBA",
+   "T60 lead>=1",
+   "nba-phi-tor-2026-01-11",
+   -1798,
+   0.97
+  ],
+  [
+   "NBA",
+   "T60 lead>=1",
+   "nba-min-phx-2025-11-21",
+   -802,
+   0.95
+  ],
+  [
+   "NBA",
+   "T60 lead>=5 (NBA)",
+   "nba-min-phx-2025-11-21",
+   -802,
+   0.95
+  ],
+  [
+   "NBA",
+   "T60 lead>=1",
+   "nba-chi-por-2025-11-19",
+   -802,
+   0.95
+  ],
+  [
+   "WNBA",
+   "T60 lead>=1",
+   "wnba-las-ind-2026-08-06",
+   -1348,
+   0.96
+  ],
+  [
+   "WNBA",
+   "T60 lead>=1",
+   "wnba-atl-dal-2026-07-29",
+   -745,
+   0.96
+  ],
+  [
+   "WNBA",
+   "T60 lead>=1",
+   "wnba-chi-nyl-2026-07-22",
+   -632,
+   0.98
+  ],
+  [
+   "WNBA",
+   "T60 lead>=1",
+   "wnba-chi-dal-2026-06-20",
+   -529,
+   0.98
+  ],
+  [
+   "NFL",
+   "T60 lead>=1",
+   "nfl-den-ind-2025-09-14",
+   -332,
+   0.99
+  ]
+ ]
+}

@@ -1,0 +1,31 @@
+{
+  "ok": true,
+  "problems": [],
+  "version": "1.0",
+  "data_dir": "D:\\a\\polysweeper-v1\\polysweeper-v1\\code\\data\\shadow",
+  "bot_state": "running",
+  "matches_shown": 54,
+  "open_shown": 19,
+  "trades_shown": 714,
+  "feed_items": 400,
+  "detail_lines": 6,
+  "equity_points": 695,
+  "kpis": {
+    "net": -11.2052,
+    "today": -2.1283,
+    "wins": 670,
+    "losses": 25,
+    "open": 19,
+    "win_rate": 96.4029,
+    "buys_today": 89,
+    "skips_today": 72,
+    "buys": 714
+  },
+  "chips": {
+    "Bot": "Bot: running",
+    "Live prices": "Live prices: connected \u00b7 108 books \u00b7 91% match",
+    "2-second checks": "2-second checks: 4 match(es) near the end \u00b7 1 caught",
+    "Autopilot": "Autopilot: no log yet",
+    "Problems": "Problems today: 0 \u00b7 16 feed reconnects"
+  }
+}

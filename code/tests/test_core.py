@@ -1303,19 +1303,42 @@ class FinalBidTests(unittest.TestCase):
         self.assertEqual(sold_into(tr, "T", 0.99, 100, until=120), 12)
         self.assertEqual(sold_into(tr, "T", 0.97, 100), 0)                  # sells above our price never fill us
 
-    def test_pm_agrees(self):
-        from polysweeper.finalbid import pm_agrees
+    def test_pm_veto_is_last_and_only_refuses(self):
+        from polysweeper.finalbid import pm_veto
         e = {"title": "Bruins vs. Senators", "score": "4-2", "ended": False}
         o = ["Bruins", "Senators"]
-        self.assertTrue(pm_agrees(e, o, 0, "us", 4, 2))
-        self.assertFalse(pm_agrees(e, o, 1, "us", 2, 4))                    # Polymarket has the other side ahead
-        self.assertIsNone(pm_agrees(dict(e, score="3-2"), o, 0, "us", 4, 2))   # not caught up yet: wait
-        self.assertIsNone(pm_agrees(dict(e, score="2-2"), o, 0, "us", 4, 2))
+        self.assertIsNone(pm_veto(e, o, 0, "us"))
+        self.assertIn("other side", pm_veto(e, o, 1, "us"))                 # Polymarket has the other side ahead
+        self.assertIsNone(pm_veto(dict(e, score="3-2"), o, 0, "us"))        # not caught up yet: no veto
+        self.assertIsNone(pm_veto(dict(e, score="2-2"), o, 0, "us"))
         t = {"title": "Shanghai: Jannik Sinner vs Carlos Alcaraz", "score": "6-3, 7-6(7-4)"}
         p = ["Jannik Sinner", "Carlos Alcaraz"]
-        self.assertTrue(pm_agrees(t, p, 0, "tennis", 2, 0))
-        self.assertFalse(pm_agrees(t, p, 1, "tennis", 0, 2))
-        self.assertIsNone(pm_agrees(dict(t, score="6-3, 5-4"), p, 0, "tennis", 2, 0))
+        self.assertIsNone(pm_veto(t, p, 0, "tennis"))
+        self.assertIn("other side", pm_veto(t, p, 1, "tennis"))
+        self.assertIsNone(pm_veto(dict(t, score="6-3, 5-4"), p, 1, "tennis"))   # not finished on Polymarket
+
+    def test_second_sources(self):
+        from polysweeper.finalbid import espn_winner, ls_winner
+        o = ["Bruins", "Senators"]
+        ls = {"Eps": "FT", "Tr1": "2", "Tr2": "4", "T1": [{"Nm": "Ottawa Senators"}], "T2": [{"Nm": "Boston Bruins"}]}
+        self.assertEqual(ls_winner(ls, o), 0)                                 # home Senators lost 2-4: Bruins won
+        self.assertEqual(ls_winner(dict(ls, Tr1="4", Tr2="2"), o), 1)                # home Senators won 4-2
+        self.assertIsNone(ls_winner(dict(ls, Eps="Int."), o))                # interrupted is not over
+        self.assertIsNone(ls_winner(dict(ls, Eps="Ret."), o))
+        self.assertIsNone(ls_winner(dict(ls, Eps="3rd"), o))
+
+        def comp(done, w0):
+            return {"status": {"type": {"completed": done, "state": "post" if done else "in"}},
+                    "competitors": [{"team": {"displayName": "Boston Bruins"}, "winner": w0},
+                                    {"team": {"displayName": "Ottawa Senators"}, "winner": not w0}]}
+        self.assertEqual(espn_winner({"events": [{"competitions": [comp(True, True)]}]}, o), 0)
+        self.assertEqual(espn_winner({"events": [{"competitions": [comp(True, False)]}]}, o), 1)
+        self.assertIsNone(espn_winner({"events": [{"competitions": [comp(False, True)]}]}, o))
+        tennis = {"events": [{"groupings": [{"competitions": [{
+            "status": {"type": {"completed": True, "state": "post"}},
+            "competitors": [{"athlete": {"displayName": "Carlos Alcaraz"}, "winner": True},
+                            {"athlete": {"displayName": "Jannik Sinner"}, "winner": False}]}]}]}]}
+        self.assertEqual(espn_winner(tennis, ["Jannik Sinner", "Carlos Alcaraz"]), 1)
 
     def fake_shadow(self, ended=False, score="4-2", bids=(("0.98", "50"),), asks=()):
         from polysweeper.finalbid import FinalBid
@@ -1393,12 +1416,15 @@ class FinalBidTests(unittest.TestCase):
         self.push_final(fb)
         fb.step(now=1000)
         self.assertIn("market does not agree", sh.logged[-1]["reason"])
-        sh, fb = self.fake_shadow(score="3-2")                   # Polymarket's score not caught up: wait
+        sh, fb = self.fake_shadow(score="3-2")                   # Polymarket not caught up: no veto, we bid
         self.push_final(fb)
         fb.step(now=1000)
-        self.assertEqual(sh.logged, [])
-        fb.step(now=1000 + 901)                                  # never agreed within 15 minutes
-        self.assertIn("never agreed", sh.logged[-1]["reason"])
+        self.assertIn("F:m1:0", sh.state["final_bids"])
+        sh, fb = self.fake_shadow()                              # 365Scores and the second source disagree
+        fb.q.put(("disagree", "m1", {"second": "LiveScore", "second_idx": 1}))
+        fb.step(now=1000)
+        self.assertIn("sources disagree", sh.logged[-1]["reason"])
+        self.assertEqual(sh.state.get("final_bids", {}), {})
 
     def test_ask_at_or_below_our_price_is_a_taker_buy(self):
         sh, fb = self.fake_shadow(asks=(("0.985", "20"),))

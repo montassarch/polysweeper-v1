@@ -10,8 +10,11 @@ How (nothing here places a real order; it only reads public data):
   2. A background thread asks 365Scores (Israel, free JSON) about each candidate every few seconds. When 365Scores
      says the game has normally ended ("Just Ended", "Ended", "Final", after OT/SO), with a clear winner, it hands
      the result to the main loop. Walkovers, retirements, abandoned or unknown states are never used.
-  3. Two sources must agree: Polymarket's own score must name the SAME winner (checked again every loop, for up to
-     15 minutes). Then the winner's book is read: the market must agree too (best bid 0.97+).
+  3. Order of checks (owner 2026-10-09): 365Scores first, then AT ONCE a second fast source (LiveScore; ESPN where
+     LiveScore has no such league) must say the same game is over with the same winner. Polymarket is checked LAST
+     and only as a veto: its score must not show the other side ahead, and it must not have flagged the match
+     ended yet (too late to rest a bid). (v2.8 waited for Polymarket's score to agree, and that only happens at
+     its ended flag, so every bid came too late.) Then the winner's book: best bid 0.97+.
   4. Pretend bid: 5 shares at one tick above the best bid, capped at price_max (0.995). If that is already the
      best bid, we join the queue behind the shares already there. If someone sells at or below our price
      (an ask), it is a plain taker buy instead (fee paid).
@@ -35,13 +38,21 @@ from .collector import UA, parse_ts
 from .scorecheck import sport_of, title_teams, us_score, winner_outcome
 
 S365 = "https://webws.365scores.com/web"
+LS = "https://prod-public-api.livescore.com/v1/api/app"
+LS_SPORT = {"atp": "tennis", "wta": "tennis", "itf": "tennis", "nhl": "hockey", "nba": "basketball", "wnba": "basketball"}
+LS_OVER = {"FT", "AET", "AP", "Ended", "Fin"}          # never "Int." (interrupted) or "Ret." (retired)
+ESPN = "https://site.api.espn.com/apis/site/v2/sports"
+ESPN_PATH = {"atp": "tennis/atp", "wta": "tennis/wta", "nhl": "hockey/nhl", "mlb": "baseball/mlb",
+             "nfl": "football/nfl", "cfb": "football/college-football", "nba": "basketball/nba",
+             "wnba": "basketball/wnba"}
+ESPN_QUERY = {"football/college-football": ["?groups=80&limit=300", "?groups=81&limit=300"]}   # FBS + FCS
+SECOND_WAIT_S = 600       # after 365Scores says final, wait this long for the second source
 TRADES = "https://data-api.polymarket.com/trades"
 SPORT365 = {"atp": 3, "wta": 3, "itf": 3, "nhl": 4, "nba": 2, "wnba": 2, "nfl": 6, "cfb": 6, "mlb": 7}
 FINAL_OK = {"just ended", "ended", "final", "after ot", "after overtime", "after so", "after penalties shootout",
             "after extra innings", "end of game"}
 HOT_BID = 0.85            # candidate once a side's best bid is this high (or the match is flagged ended)
 MIN_MARKET_BID = 0.97     # the winner's best bid must be at least this when we place (the market agrees)
-AGREE_WAIT_S = 900        # wait this long for Polymarket's score to agree with 365Scores, then give up
 MAX_REST_S = 1800         # cancel a resting bid after 30 minutes
 POLL_365_S = 4            # per-game 365Scores read, per candidate
 LIST_365_S = 60           # 365Scores "current games" list per sport
@@ -110,26 +121,52 @@ def bid_price(best_bid, tick, cap):
     return p, p <= best_bid + 1e-9
 
 
-def pm_agrees(event, outcomes, idx, sport, home, away):
-    """Does Polymarket's own score name the same winner as 365Scores? True / False / None (not yet).
-    Tennis: Polymarket's set score must show the match won by idx. US sports: Polymarket names a winner only
-    once it flags the game ended, so before that its CURRENT score must equal 365Scores' final score with
-    idx ahead (a stale score, or a late change, does not agree)."""
+def pm_veto(event, outcomes, idx, sport):
+    """Polymarket, checked LAST: a reason to refuse, or None. Refuse when its score shows the OTHER side ahead
+    (tennis: the other side has won; US sports: more points). A score that has not caught up yet is fine."""
     if sport == "tennis":
         w = winner_outcome(event, outcomes, sport)
-        return None if w is None else w == idx
-    if sport != "us":
-        return False
+        return None if w is None or w == idx else f"Polymarket score {event.get('score')} says the other side won"
     r, teams = us_score(event.get("score")), title_teams(event.get("title", ""))
     if not r or not teams or r[0] == r[1]:
         return None
     lead_name = teams[0 if r[0] > r[1] else 1].strip().lower()
     hits = [i for i, o in enumerate(outcomes) if o.strip().lower() == lead_name]
-    if len(hits) != 1:
-        return False
-    if sorted(r) != sorted((home, away)):
-        return None                              # Polymarket's score not caught up yet (or different): wait
-    return hits[0] == idx
+    if len(hits) == 1 and hits[0] != idx:
+        return f"Polymarket score {event.get('score')} has the other side ahead"
+    return None
+
+
+def ls_winner(d, outcomes):
+    """LiveScore scoreboard JSON -> outcome index of the winner if the game is normally over, else None."""
+    if not d or str(d.get("Eps") or "") not in LS_OVER:
+        return None
+    try:
+        h, a = float(d.get("Tr1")), float(d.get("Tr2"))
+        m = side_map(outcomes, d["T1"][0]["Nm"], d["T2"][0]["Nm"])
+    except (TypeError, ValueError, KeyError, IndexError):
+        return None
+    if not m or h == a:
+        return None
+    return m[0] if h > a else m[1]
+
+
+def espn_winner(board, outcomes):
+    """ESPN scoreboard JSON -> outcome index of the winner of the one completed game between these two sides."""
+    hits = []
+    for ev in (board or {}).get("events", []):
+        comps = list(ev.get("competitions", [])) + [c for g in ev.get("groupings", []) for c in g.get("competitions", [])]
+        for c in comps:
+            cs = c.get("competitors", [])
+            st = (c.get("status") or ev.get("status") or {}).get("type", {})
+            if len(cs) != 2 or not st.get("completed") or st.get("state") != "post":
+                continue
+            names = [(x.get("team") or x.get("athlete") or {}).get("displayName", "") for x in cs]
+            m = side_map(outcomes, names[0], names[1])
+            won = [bool(x.get("winner")) for x in cs]
+            if m and won.count(True) == 1:
+                hits.append(m[0] if won[0] else m[1])
+    return hits[0] if len(hits) == 1 else None
 
 
 def queue_at(bids, price):
@@ -190,6 +227,8 @@ class FinalBid:
                 break
             if kind == "final" and key not in self.results and key not in self.done:
                 self.results[key] = dict(data, t=now)
+            elif kind == "disagree" and key not in self.done:
+                self._finish(key, "skip", f"sources disagree: 365Scores and {data['second']} name different winners", data)
             elif kind == "fills" and key in self.orders:
                 self.orders[key]["sold_at_price"] = data
         for mid in list(self.results):
@@ -221,26 +260,24 @@ class FinalBid:
             bids = [(self.sh.live.top(t) or self.sh.last_best.get(mid, {}).get(i) or (None, None))[1]
                     for i, t in enumerate(info["tokens"])]
             if e.get("ended") is True or max((b for b in bids if b is not None), default=0) >= HOT_BID:
-                c[mid] = {"sport365": SPORT365[info["league"]], "outcomes": list(info["outcomes"]), "start": st}
+                c[mid] = {"sport365": SPORT365[info["league"]], "league": info["league"],
+                          "outcomes": list(info["outcomes"]), "start": st}
         self.candidates = c
 
     def _try_place(self, mid, now):
         r = self.results[mid]
         info = self.sh.markets.get(mid)
-        if info is None or now - r["t"] > AGREE_WAIT_S:
-            self._finish(mid, "skip", "Polymarket's score never agreed with 365Scores" if info else "market left the list", r)
+        if info is None:
+            self._finish(mid, "skip", "market left the list", r)
             return
         idx = r["winner_idx"]
         e = info["event"]
         if e.get("ended") is True:
             self._finish(mid, "skip", "Polymarket had already flagged the match ended (too late to rest a bid)", r)
             return
-        agree = pm_agrees(e, info["outcomes"], idx, sport_of(info["league"]), r["home"], r["away"])
-        if agree is None:
-            return                              # Polymarket's score not final yet: look again next loop
-        if not agree:
-            self._finish(mid, "skip", f"sources disagree: 365Scores says {info['outcomes'][idx]} "
-                                      f"{r['home']}-{r['away']}, Polymarket score {e.get('score')}", r)
+        veto = pm_veto(e, info["outcomes"], idx, sport_of(info["league"]))   # Polymarket last, veto only
+        if veto:
+            self._finish(mid, "skip", veto, r)
             return
         book = self.sh.fetch_books({mid}).get(str(info["tokens"][idx])) or {}
         bids, asks = book.get("bids", []), book.get("asks", [])
@@ -278,7 +315,7 @@ class FinalBid:
         del self.results[mid]
         self.sh.log(self.sh.trade_f, dict(o, type="final_bid_placed", ts=self.sh_now()))
         print(f"[{self.sh_now()}] PRETEND BID (FINAL-BID) {o['outcome']} {L.min_shares:g} @ {price:.3f} | "
-              f"{(o['question'] or '')[:50]} | 365Scores {r['status']} {r['home']}-{r['away']}, PM score {e.get('score')}"
+              f"{(o['question'] or '')[:50]} | 365Scores {r['status']} {r['home']}-{r['away']} + {r.get('second')}, PM score {e.get('score')}"
               + (f", queue ahead {q_ahead:g}" if joins else ", top of the book"))
         self.sh.save()
 
@@ -322,7 +359,7 @@ class FinalBid:
                "vwap": price, "worst_price": price, "shares": L.min_shares, "fee": fee,
                "cost": L.min_shares * price + fee, "how": o["how"], "rested_s": round(now - o["t0"], 1),
                "event_ended_flag": (self.sh.markets.get(o["market_id"], {}).get("event") or {}).get("ended"),
-               "confirm": f"365Scores {o['s365']['status']} {o['s365']['home']}-{o['s365']['away']}; PM score {o['pm_score']}"}
+               "confirm": f"365Scores {o['s365']['status']} {o['s365']['home']}-{o['s365']['away']} + {o['s365'].get('second')}; PM score {o['pm_score']}"}
         self.sh.log(self.sh.trade_f, rec)
         self.sh.state["entered"].append(o["key"])
         self.sh.state.setdefault("matches", {})[f"final_bid:{o['event_id']}"] = o["outcome"]
@@ -352,11 +389,12 @@ class FinalBid:
     # -- background thread: 365Scores and public trades only (no logging, no state) --
     def _run(self):
         games, lists, last_game, last_trades = {}, {}, {}, {}
+        ls_ids, ls_lists, first, espn_cache = {}, {}, {}, {}
         while not self._stop.is_set():
             try:
                 now = time.time()
                 cands = self.candidates
-                for cache in (games, last_game):        # forget matches that are no longer candidates
+                for cache in (games, last_game, ls_ids, first):        # forget matches that are no longer candidates
                     for k in [k for k in cache if k not in cands]:
                         del cache[k]
                 for k in [k for k in last_trades if k not in self.orders_view]:
@@ -379,17 +417,48 @@ class FinalBid:
                         if len(hits) == 1:
                             games[mid] = hits[0]
                         continue
+                    sp_ls = LS_SPORT.get(c["league"])
+                    if sp_ls and mid not in ls_ids:     # LiveScore id, looked up once the 365 game is known
+                        if now - ls_lists.get(sp_ls, (0, None))[0] > LIST_365_S:
+                            d = fetch(f"{LS}/live/{sp_ls}/0?MD=1")
+                            ls_lists[sp_ls] = (now, [x for st in (d or {}).get("Stages", []) for x in st.get("Events", [])])
+                        hits = [x.get("Eid") for x in ls_lists[sp_ls][1]
+                                if x.get("Eid") and x.get("T1") and x.get("T2")
+                                and side_map(c["outcomes"], x["T1"][0].get("Nm"), x["T2"][0].get("Nm"))]
+                        if len(hits) == 1:
+                            ls_ids[mid] = hits[0]
                     if now - last_game.get(mid, 0) < POLL_365_S:
                         continue
                     last_game[mid] = now
                     gid, (home_idx, away_idx) = games[mid]
-                    d = fetch(f"{S365}/game/?appTypeId=5&langId=1&timezoneName=UTC&userCountryId=1&gameId={gid}")
-                    f = final_365((d or {}).get("game"))
-                    if f:
+                    if mid not in first:                # 1st source: 365Scores
+                        d = fetch(f"{S365}/game/?appTypeId=5&langId=1&timezoneName=UTC&userCountryId=1&gameId={gid}")
+                        f = final_365((d or {}).get("game"))
+                        if not f:
+                            continue
                         side, h, a, status = f
-                        self.q.put(("final", mid, {"game_id": gid, "status": status, "home": h, "away": a,
-                                                   "winner_idx": home_idx if side == "home" else away_idx,
-                                                   "seen": round(time.time(), 2)}))
+                        first[mid] = {"game_id": gid, "status": status, "home": h, "away": a,
+                                      "winner_idx": home_idx if side == "home" else away_idx, "seen": round(now, 2)}
+                    r = first[mid]
+                    if now - r["seen"] > SECOND_WAIT_S:
+                        continue                        # second source never confirmed (or disagreed): give up
+                    w2, src = None, None                # 2nd source, asked at once: LiveScore, else ESPN
+                    if mid in ls_ids:
+                        w2, src = ls_winner(fetch(f"{LS}/scoreboard/{LS_SPORT[c['league']]}/{ls_ids[mid]}?locale=en"),
+                                            c["outcomes"]), "LiveScore"
+                    if w2 is None and c["league"] in ESPN_PATH:
+                        path = ESPN_PATH[c["league"]]
+                        if now - espn_cache.get(path, (0, None))[0] > 10:      # ESPN at most every 10 s per league
+                            boards = [fetch(f"{ESPN}/{path}/scoreboard{q}") for q in ESPN_QUERY.get(path, [""])]
+                            espn_cache[path] = (now, {"events": [ev for b in boards for ev in (b or {}).get("events", [])]})
+                        w2, src = espn_winner(espn_cache[path][1], c["outcomes"]), "ESPN"
+                    if w2 is None:
+                        continue                        # not confirmed yet: ask again in a few seconds
+                    if w2 != r["winner_idx"]:
+                        self.q.put(("disagree", mid, dict(r, second=src, second_idx=w2)))
+                        r["seen"] = -1e12               # never again for this match
+                        continue
+                    self.q.put(("final", mid, dict(r, second=src, confirmed=round(time.time(), 2))))
                 for key, o in self.orders_view.items():
                     if now - last_trades.get(key, 0) < TRADES_S or not o.get("cond"):
                         continue

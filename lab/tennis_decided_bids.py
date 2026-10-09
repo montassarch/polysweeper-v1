@@ -188,10 +188,15 @@ def replay(path):
     res = []
     for line in open(path, encoding="utf-8"):
         r = json.loads(line)
-        ev = get_json(f"{GAMMA}/events?slug={r['slug']}")
+        if r.get("slug"):
+            ev = get_json(f"{GAMMA}/events?slug={r['slug']}")
+        else:                                           # feeds_end_race records carry the Polymarket event id, not the slug
+            one = get_json(f"{GAMMA}/events/{r['event']}")
+            ev = [one] if isinstance(one, dict) else None
         if not ev:
             continue
         e = ev[0]
+        r.setdefault("slug", e.get("slug"))
         ms = [m for m in e.get("markets", []) if m.get("sportsMarketType") == "moneyline"]
         if len(ms) != 1 or not e.get("finishedTimestamp"):
             continue

@@ -86,6 +86,7 @@ def main():
     groups = [("CONFIRMED RESULT rule", lambda r: r.get("rule") == "confirmed"),
               ("SCORE CHECK rule (Polymarket score says this side won)", lambda r: r.get("rule") == "score"),
               ("MLB LEAD 7+ rule (7+ runs ahead after 8 innings, game still on)", lambda r: r.get("rule") == "mlb_lead7"),
+              ("FINAL BID rule (365Scores final + Polymarket score agree, pretend resting bid)", lambda r: r.get("rule") == "final_bid"),
               ("PRICE ONLY rule, match flagged ended", lambda r: r.get("rule", "price_only") == "price_only" and r["event_ended_flag"] is True),
               ("PRICE ONLY rule, match still in play", lambda r: r.get("rule", "price_only") == "price_only" and r["event_ended_flag"] is not True)]
     for label, test in groups:

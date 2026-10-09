@@ -1257,3 +1257,187 @@ class AlertTests(unittest.TestCase):
     def test_tests_never_alert(self):
         from polysweeper import alerts
         self.assertEqual(alerts.topic(), "")
+
+
+
+class FinalBidTests(unittest.TestCase):
+    """Rule final_bid: pretend resting bid after 365Scores says final AND Polymarket's score agrees."""
+
+    def game(self, **kw):
+        g = {"statusGroup": 4, "statusText": "Just Ended", "winDescription": "", "winner": 1,
+             "homeCompetitor": {"name": "Boston Bruins", "score": 4.0},
+             "awayCompetitor": {"name": "Ottawa Senators", "score": 2.0}}
+        g.update(kw)
+        return g
+
+    def test_final_365_normal_and_refusals(self):
+        from polysweeper.finalbid import final_365
+        self.assertEqual(final_365(self.game()), ("home", 4.0, 2.0, "Just Ended"))
+        self.assertIsNone(final_365(self.game(statusGroup=3)))                       # still playing
+        self.assertIsNone(final_365(self.game(statusText="WalkOver")))
+        self.assertIsNone(final_365(self.game(statusText="Postponed")))
+        self.assertIsNone(final_365(self.game(winDescription="Retired")))
+        self.assertIsNone(final_365(self.game(winner=2)))                            # winner field disagrees
+        self.assertIsNone(final_365(self.game(awayCompetitor={"name": "x", "score": 4.0})))   # tie
+        self.assertIsNone(final_365(None))
+
+    def test_side_map(self):
+        from polysweeper.finalbid import side_map
+        self.assertEqual(side_map(["Bruins", "Senators"], "Boston Bruins", "Ottawa Senators"), (0, 1))
+        self.assertEqual(side_map(["Senators", "Bruins"], "Boston Bruins", "Ottawa Senators"), (1, 0))
+        self.assertEqual(side_map(["Jannik Sinner", "Carlos Alcaraz"], "Alcaraz C.", "Sinner J."), (1, 0))
+        self.assertIsNone(side_map(["Bruins", "Senators"], "Boston Bruins", "Toronto Maple Leafs"))
+
+    def test_bid_price_queue_and_sells(self):
+        from polysweeper.finalbid import bid_price, queue_at, sold_into
+        self.assertEqual(bid_price(0.98, 0.01, 0.995), (0.99, False))       # one tick above: top of the book
+        self.assertEqual(bid_price(0.995, 0.001, 0.995), (0.995, True))     # at the cap: join the queue
+        self.assertEqual(queue_at([{"price": "0.995", "size": "120"}, {"price": "0.99", "size": "9"}], 0.995), 120)
+        tr = [{"asset": "T", "side": "SELL", "price": "0.99", "size": "3", "timestamp": 105},
+              {"asset": "T", "side": "SELL", "price": "0.99", "size": "4", "timestamp": 99},    # before we placed
+              {"asset": "T", "side": "BUY", "price": "0.99", "size": "9", "timestamp": 106},    # a buyer
+              {"asset": "U", "side": "SELL", "price": "0.99", "size": "9", "timestamp": 106},   # other token
+              {"asset": "T", "side": "SELL", "price": "0.98", "size": "9", "timestamp": 106},   # below us: hits us first
+              {"asset": "T", "side": "SELL", "price": "0.99", "size": "2.5", "timestamp": 140}]
+        self.assertEqual(sold_into(tr, "T", 0.99, 100), 14.5)
+        self.assertEqual(sold_into(tr, "T", 0.99, 100, until=120), 12)
+        self.assertEqual(sold_into(tr, "T", 0.97, 100), 0)                  # sells above our price never fill us
+
+    def test_pm_agrees(self):
+        from polysweeper.finalbid import pm_agrees
+        e = {"title": "Bruins vs. Senators", "score": "4-2", "ended": False}
+        o = ["Bruins", "Senators"]
+        self.assertTrue(pm_agrees(e, o, 0, "us", 4, 2))
+        self.assertFalse(pm_agrees(e, o, 1, "us", 2, 4))                    # Polymarket has the other side ahead
+        self.assertIsNone(pm_agrees(dict(e, score="3-2"), o, 0, "us", 4, 2))   # not caught up yet: wait
+        self.assertIsNone(pm_agrees(dict(e, score="2-2"), o, 0, "us", 4, 2))
+        t = {"title": "Shanghai: Jannik Sinner vs Carlos Alcaraz", "score": "6-3, 7-6(7-4)"}
+        p = ["Jannik Sinner", "Carlos Alcaraz"]
+        self.assertTrue(pm_agrees(t, p, 0, "tennis", 2, 0))
+        self.assertFalse(pm_agrees(t, p, 1, "tennis", 0, 2))
+        self.assertIsNone(pm_agrees(dict(t, score="6-3, 5-4"), p, 0, "tennis", 2, 0))
+
+    def fake_shadow(self, ended=False, score="4-2", bids=(("0.98", "50"),), asks=()):
+        from polysweeper.finalbid import FinalBid
+
+        class Live:
+            def top(self, tok):
+                return None
+
+        class Sh:
+            pass
+        sh = Sh()
+        sh.limits = Limits(min_shares=5.0, price_max=0.995)
+        sh.live = Live()
+        sh.last_best = {"m1": {0: (None, 0.98), 1: (0.03, 0.01)}}
+        sh.state = {"pending": {}, "entered": []}
+        sh.counters = {"entries": 0}
+        sh.logged = []
+        sh.trade_f = None
+        sh.log = lambda f, rec: sh.logged.append(rec)
+        sh.save = lambda: None
+        sh.markets = {"m1": {"league": "nhl", "outcomes": ["Bruins", "Senators"], "tokens": ["T0", "T1"],
+                             "event": {"id": "e1", "title": "Bruins vs. Senators", "score": score, "ended": ended,
+                                       "startTime": "1970-01-01T00:10:00Z"},   # 600 s, before the test clock
+                             "market": {"question": "Bruins vs. Senators", "conditionId": "C",
+                                        "orderPriceMinTickSize": 0.01}}}
+        sh.fetch_books = lambda mids: {"T0": {"bids": [{"price": p, "size": s} for p, s in bids],
+                                              "asks": [{"price": p, "size": s} for p, s in asks]}}
+        fb = FinalBid(sh)
+        fb.start = lambda: None                 # no background thread in tests (no network)
+        return sh, fb
+
+    def push_final(self, fb, winner_idx=0, home=4, away=2):
+        fb.q.put(("final", "m1", {"game_id": 1, "status": "Just Ended", "home": home, "away": away,
+                                  "winner_idx": winner_idx, "seen": 0}))
+
+    def test_place_fill_and_entry(self):
+        sh, fb = self.fake_shadow()
+        fb.step(now=1000)
+        self.assertIn("m1", fb.candidates)                       # near the end: 365Scores is asked about it
+        self.push_final(fb)
+        fb.step(now=1002)
+        o = sh.state["final_bids"]["F:m1:0"]
+        self.assertEqual((o["price"], o["joins_queue"], o["queue_ahead"]), (0.99, False, 0.0))
+        self.assertNotIn("m1", fb.candidates)
+        fb.q.put(("fills", "F:m1:0", 3.0))
+        fb.step(now=1010)
+        self.assertIn("F:m1:0", sh.state["final_bids"])          # 3 of 5 shares: not filled yet
+        fb.q.put(("fills", "F:m1:0", 6.0))
+        fb.step(now=1020)
+        self.assertNotIn("F:m1:0", sh.state["final_bids"])
+        rec = sh.state["pending"]["F:m1:0"]
+        self.assertEqual((rec["rule"], rec["vwap"], rec["fee"], rec["cost"]), ("final_bid", 0.99, 0.0, 4.95))
+        self.assertEqual(sh.state["matches"]["final_bid:e1"], "Bruins")
+        self.push_final(fb)                                      # a repeat message never places a second bid
+        fb.step(now=1030)
+        self.assertEqual(sh.state["final_bids"], {})
+
+    def test_cancel_when_polymarket_flags_ended(self):
+        sh, fb = self.fake_shadow()
+        self.push_final(fb)
+        fb.step(now=1000)
+        sh.markets["m1"]["event"]["ended"] = True
+        fb.step(now=1030)
+        self.assertEqual(sh.state["final_bids"], {})
+        self.assertEqual(sh.state["pending"], {})
+        self.assertEqual(sh.logged[-1]["type"], "final_bid_cancel")
+
+    def test_refuses_when_sources_or_market_disagree(self):
+        sh, fb = self.fake_shadow(score="2-4")                   # Polymarket says the Senators are ahead
+        self.push_final(fb)
+        fb.step(now=1000)
+        self.assertEqual(sh.logged[-1]["type"], "final_bid_skip")
+        self.assertEqual(sh.state.get("final_bids", {}), {})
+        sh, fb = self.fake_shadow(bids=(("0.90", "50"),))        # market's best bid only 0.90
+        self.push_final(fb)
+        fb.step(now=1000)
+        self.assertIn("market does not agree", sh.logged[-1]["reason"])
+        sh, fb = self.fake_shadow(score="3-2")                   # Polymarket's score not caught up: wait
+        self.push_final(fb)
+        fb.step(now=1000)
+        self.assertEqual(sh.logged, [])
+        fb.step(now=1000 + 901)                                  # never agreed within 15 minutes
+        self.assertIn("never agreed", sh.logged[-1]["reason"])
+
+    def test_ask_at_or_below_our_price_is_a_taker_buy(self):
+        sh, fb = self.fake_shadow(asks=(("0.985", "20"),))
+        self.push_final(fb)
+        fb.step(now=1000)
+        rec = sh.state["pending"]["F:m1:0"]
+        self.assertEqual((rec["how"], rec["vwap"]), ("taker", 0.985))
+        self.assertGreater(rec["fee"], 0)
+
+    def test_few_shares_offered_rests_below_them(self):
+        sh, fb = self.fake_shadow(asks=(("0.985", "2"),))       # only 2 shares offered at 0.985
+        self.push_final(fb)
+        fb.step(now=1000)
+        self.assertEqual(sh.state["pending"], {})
+        o = sh.state["final_bids"]["F:m1:0"]
+        self.assertEqual((o["price"], o["joins_queue"]), (0.975, True))
+
+    def test_already_ended_and_missing_market(self):
+        sh, fb = self.fake_shadow(ended=True)
+        self.push_final(fb)
+        fb.step(now=1000)
+        self.assertIn("already flagged", sh.logged[-1]["reason"])
+        sh, fb = self.fake_shadow()
+        self.push_final(fb)
+        fb.step(now=1000)
+        info = sh.markets.pop("m1")                              # one failed market list: keep the bid
+        fb.step(now=1010)
+        self.assertIn("F:m1:0", sh.state["final_bids"])
+        fb.step(now=1400)                                        # gone for over 5 minutes: cancel
+        self.assertEqual(sh.state["final_bids"], {})
+        self.assertIn("left the list", sh.logged[-1]["reason"])
+
+    def test_one_bad_market_does_not_block(self):
+        sh, fb = self.fake_shadow()
+        sh.fetch_books = lambda mids: (_ for _ in ()).throw(ValueError("bad book"))
+        errs = []
+        sh.error = lambda where, exc: errs.append(where)
+        self.push_final(fb)
+        fb.step(now=1000)
+        self.assertEqual(errs, ["final_bid place m1"])
+        fb.step(now=1002)
+        self.assertEqual(errs, ["final_bid place m1"])          # not repeated every loop

@@ -16,6 +16,10 @@ the end (a side bid 0.85+) get their score re-read every 2 seconds; the moment o
 ended, its book is read and the rules run at once. Every score change of every watched match,
 with the prices at that moment, goes to data/shadow/daily/<date>.jsonl.
 
+Rule final_bid (v2.8, owner 2026-10-09): after 365Scores says the match ended normally AND Polymarket's own score
+agrees, a pretend resting buy (5 shares, one tick above the best bid, max 0.995) is counted filled only when public
+taker sells reach our price (finalbid.py). Tennis and US sports.
+
 Usage (from the code/ folder):
   python -m polysweeper.shadow --leagues cs2 lol dota2 val --minutes 60
   python -m polysweeper.shadow --leagues cs2 lol epl --forever
@@ -43,6 +47,7 @@ from .livefeed import LiveFeed
 from . import alerts
 from .scorecheck import allows as score_allows, mlb_big_lead, sport_of, winner_outcome
 from .endwindow import EndWatch
+from .finalbid import FinalBid
 
 OUT = Path("data/shadow")
 WATCH_MIN_ASK = 0.90          # start recording full snapshots from this ask
@@ -142,6 +147,7 @@ class Shadow:
         self.counters = {"snapshots": 0, "entries": 0, "thin": 0, "settled": 0, "errors": 0,
                          "fast_reads": 0, "fast_rechecks": 0, "score_rows": 0}
         self.confirmer = Confirmer()
+        self.finalbid = FinalBid(self)      # rule final_bid: pretend resting bid after a confirmed final
 
     # -- bookkeeping ---------------------------------------------------
     def save(self):
@@ -552,7 +558,7 @@ class Shadow:
                                               "outcome", "vwap", "cost", "shares")}
                        for r in self.state["pending"].values()]
             c = self.feed_check
-            snap = {"ts": now_iso(), "t": round(now, 2), "version": "2.7", "started": self.started_at,
+            snap = {"ts": now_iso(), "t": round(now, 2), "version": "2.8", "started": self.started_at,
                     "live_on": self.live_on, "live_feed": self.live.status(),
                     "agree_pct": round(100 * c["agree"] / c["checks"], 1) if c["checks"] else None,
                     "counters": self.counters, "markets": rows, "pending": pending}
@@ -712,6 +718,10 @@ class Shadow:
                     self.live_status()
                     next_status = t + STATUS_EVERY
                 try:
+                    self.finalbid.step()
+                except Exception as exc:
+                    self.error("final_bid", exc)
+                try:
                     self.check_fills()
                 except Exception as exc:
                     self.error("check_fills", exc)
@@ -725,6 +735,7 @@ class Shadow:
             print("stopped by user")
         finally:
             self.live.stop()
+            self.finalbid.stop()
             self.endwatch.close_all()
             self.live_status()
             self.save()

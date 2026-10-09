@@ -16,6 +16,10 @@ ps-tester says no), add one row here, newest at the top of its table. One line e
 
 | Date | Idea | Rejected by | Why (plain words) | Note |
 |---|---|---|---|---|
+| 2026-10-09 | Cancel-follow shield for resting bids (#26) | researcher | In 248 of 259 loser fills (96%, 13 months of US games) the bought side was still ahead at the fill; the flip came later, so a cancel-on-turn shield removes at most 4% | [[R-2026-10-09]] |
+| 2026-10-09 | One-event buffer rule (#27) | researcher | Loser leads were 2-14 points/goals/runs; clock plus lead rules still lose in football and basketball | [[R-2026-10-09]] |
+| 2026-10-09 | "Last 10-12 minutes before the stamp" guard for resting bids | researcher | 14 loser games in 13 months have a fill inside the last 12 min (3 inside the last 5); the 32-day "0 losers" was luck, and the stamp is unknown live | [[R-2026-10-09]] |
+| 2026-10-09 | Clock-only and inning/lead rules as zero-loss guards (row 4) | researcher | Last 60 s: CFB 1/353, NFL 1/327, NBA 5/1,126, WNBA 3/313 games lost; MLB 9th inning lead 4+: 2/730; "clock 1 s or less" lost a football game to a last-play touchdown. Only "after the last play" (0 of 4,263 games) and a few lead-plus-clock rules are clean | [[R-2026-10-09]] |
 | 2026-10-06 | Flashscore as a faster score source (#20) | researcher | Its final is ~42 s ahead of Polymarket, but the winner is already at 0.99 a median 77 s earlier | [[R-2026-10-06]] |
 | 2026-10-05 | Buy during the 2-hour UMA result-check window (#5) | researcher | Results do get overturned (loser at 0.999 once); few markets | [[R-2026-10-05]] |
 | 2026-10-05 | Liquidity rewards / maker rebates (#8) | researcher | Our resting orders get picked off on news; no near-zero-risk version | [[R-2026-10-05]] |
@@ -62,4 +66,5 @@ ps-tester says no), add one row here, newest at the top of its table. One line e
 | 2026-10-08 | Resting NO bids on far stock strikes (maker side) | ps-researcher: only 7 gambler buys at 1.5c+ in 22 sessions ([[R-2026-10-08]]) |
 | 2026-10-08 | Post-close stock-ladder sweep | ps-researcher: 93% of cheap fills within 2 min of close, speed race ([[R-2026-10-08]]) |
 | 2026-10-08 | Stock Up/Down markets as dead-strike source | ps-researcher: losers under 2 moves, ties pay 50/50 ([[R-2026-10-08]]) |
+| 2026-10-09 | Decided-state bid history test for esports (CS2, Dota 2, LoL, Valorant) | ps-researcher: Gamma has no finished stamp for esports events, so the same tape model cannot be built; needs live recording ([[R-2026-10-09]]) |
 | 2026-10-08 | ESPN win probability / game clock 5 min as row 4 guard | ps-researcher: loser fills had 0.999 and 1-2 min left ([[R-2026-10-08]]) |

@@ -1,22 +1,22 @@
 {
  "started": "2026-10-08T10:38:38.510404+00:00",
- "hours": 0.34,
+ "hours": 23.07,
  "markets": 38,
  "totals": {
-  "A_reward": 7.594,
-  "A_mtm": 3.25,
-  "A_cap": 5365.25,
-  "A_fills": 5.0,
-  "B_reward": 6.06,
-  "B_mtm": 0.8,
-  "B_cap": 5192.2,
-  "B_fills": 1.0
+  "A_reward": 388.128,
+  "A_mtm": -388.257,
+  "A_cap": 8780.1,
+  "A_fills": 273.0,
+  "B_reward": 313.617,
+  "B_mtm": -253.745,
+  "B_cap": 6984.893,
+  "B_fills": 108.0
  },
  "per_day_if_linear": {
-  "A_reward": 537.49,
-  "A_mtm": 230.03,
-  "B_reward": 428.9,
-  "B_mtm": 56.62
+  "A_reward": 403.71,
+  "A_mtm": -403.85,
+  "B_reward": 326.21,
+  "B_mtm": -263.93
  },
  "per_market": [
   {
@@ -25,10 +25,10 @@
    "rate": 2049.99968,
    "v": 4.5,
    "size": 50.0,
-   "samples": 19,
-   "median_book_q": 150121.6,
+   "samples": 1224,
+   "median_book_q": 173097.2,
    "A": {
-    "reward": 0.007,
+    "reward": 0.422,
     "fills": 0,
     "fill_sh": 0.0,
     "inv": 0.0,
@@ -38,7 +38,7 @@
     "peak_cap": 49.5
    },
    "B": {
-    "reward": 0.004,
+    "reward": 0.238,
     "fills": 0,
     "fill_sh": 0.0,
     "inv": 0.0,
@@ -54,10 +54,10 @@
    "rate": 2001.99872,
    "v": 4.5,
    "size": 50.0,
-   "samples": 19,
-   "median_book_q": 200964.9,
+   "samples": 1224,
+   "median_book_q": 217444.4,
    "A": {
-    "reward": 0.005,
+    "reward": 0.307,
     "fills": 0,
     "fill_sh": 0.0,
     "inv": 0.0,
@@ -67,7 +67,7 @@
     "peak_cap": 49.5
    },
    "B": {
-    "reward": 0.003,
+    "reward": 0.172,
     "fills": 0,
     "fill_sh": 0.0,
     "inv": 0.0,
@@ -83,20 +83,20 @@
    "rate": 2000,
    "v": 4.5,
    "size": 50.0,
-   "samples": 19,
-   "median_book_q": 368741.4,
+   "samples": 1224,
+   "median_book_q": 347901.5,
    "A": {
-    "reward": 0.003,
-    "fills": 0,
-    "fill_sh": 0.0,
-    "inv": 0.0,
-    "mtm": 0.0,
+    "reward": 0.228,
+    "fills": 1,
+    "fill_sh": 50.0,
+    "inv": -50.0,
+    "mtm": 0.25,
     "worst": 0.0,
     "exit_mtm": null,
-    "peak_cap": 49.5
+    "peak_cap": 90.2
    },
    "B": {
-    "reward": 0.002,
+    "reward": 0.128,
     "fills": 0,
     "fill_sh": 0.0,
     "inv": 0.0,
@@ -112,10 +112,10 @@
    "rate": 500,
    "v": 3.5,
    "size": 200.0,
-   "samples": 19,
-   "median_book_q": 232803.0,
+   "samples": 1224,
+   "median_book_q": 154781.1,
    "A": {
-    "reward": 0.009,
+    "reward": 0.464,
     "fills": 0,
     "fill_sh": 0.0,
     "inv": 0.0,
@@ -125,7 +125,7 @@
     "peak_cap": 198.0
    },
    "B": {
-    "reward": 0.004,
+    "reward": 0.206,
     "fills": 0,
     "fill_sh": 0.0,
     "inv": 0.0,
@@ -141,20 +141,20 @@
    "rate": 140,
    "v": 4.5,
    "size": 50.0,
-   "samples": 19,
-   "median_book_q": 7686.9,
+   "samples": 1224,
+   "median_book_q": 7526.8,
    "A": {
-    "reward": 0.01,
-    "fills": 0,
-    "fill_sh": 0.0,
-    "inv": 0.0,
-    "mtm": 0.0,
+    "reward": 0.617,
+    "fills": 2,
+    "fill_sh": 51.0,
+    "inv": 49.0,
+    "mtm": 0.255,
     "worst": 0.0,
     "exit_mtm": null,
-    "peak_cap": 49.5
+    "peak_cap": 61.8
    },
    "B": {
-    "reward": 0.005,
+    "reward": 0.359,
     "fills": 0,
     "fill_sh": 0.0,
     "inv": 0.0,
@@ -170,27 +170,27 @@
    "rate": 134.99952000000002,
    "v": 6.5,
    "size": 100.0,
-   "samples": 19,
-   "median_book_q": 59364.0,
+   "samples": 1224,
+   "median_book_q": 69853.9,
    "A": {
-    "reward": 0.003,
-    "fills": 0,
-    "fill_sh": 0.0,
-    "inv": 0.0,
-    "mtm": 0.0,
-    "worst": 0.0,
+    "reward": 0.157,
+    "fills": 13,
+    "fill_sh": 1100.0,
+    "inv": -100.0,
+    "mtm": 0.15,
+    "worst": -0.15,
     "exit_mtm": null,
-    "peak_cap": 99.8
+    "peak_cap": 274.4
    },
    "B": {
-    "reward": 0.003,
+    "reward": 0.156,
     "fills": 0,
     "fill_sh": 0.0,
     "inv": 0.0,
     "mtm": 0.0,
     "worst": 0.0,
     "exit_mtm": null,
-    "peak_cap": 99.6
+    "peak_cap": 99.7
    }
   },
   {
@@ -199,10 +199,10 @@
    "rate": 1336,
    "v": 4.5,
    "size": 200.0,
-   "samples": 19,
-   "median_book_q": 524457.8,
+   "samples": 1224,
+   "median_book_q": 464913.6,
    "A": {
-    "reward": 0.005,
+    "reward": 0.4,
     "fills": 0,
     "fill_sh": 0.0,
     "inv": 0.0,
@@ -212,7 +212,7 @@
     "peak_cap": 198.0
    },
    "B": {
-    "reward": 0.003,
+    "reward": 0.225,
     "fills": 0,
     "fill_sh": 0.0,
     "inv": 0.0,
@@ -228,27 +228,27 @@
    "rate": 1035.99712,
    "v": 6.5,
    "size": 150.0,
-   "samples": 19,
-   "median_book_q": 313502.2,
+   "samples": 1224,
+   "median_book_q": 385341.5,
    "A": {
-    "reward": 0.006,
-    "fills": 0,
-    "fill_sh": 0.0,
-    "inv": 0.0,
-    "mtm": 0.0,
-    "worst": 0.0,
+    "reward": 0.282,
+    "fills": 7,
+    "fill_sh": 1050.0,
+    "inv": 150.0,
+    "mtm": 0.75,
+    "worst": -8.25,
     "exit_mtm": null,
-    "peak_cap": 148.5
+    "peak_cap": 192.0
    },
    "B": {
-    "reward": 0.004,
-    "fills": 0,
-    "fill_sh": 0.0,
+    "reward": 0.196,
+    "fills": 2,
+    "fill_sh": 300.0,
     "inv": 0.0,
     "mtm": 0.0,
-    "worst": 0.0,
+    "worst": -2.25,
     "exit_mtm": null,
-    "peak_cap": 145.5
+    "peak_cap": 275.2
    }
   },
   {
@@ -257,20 +257,20 @@
    "rate": 1030.99888,
    "v": 4.5,
    "size": 200.0,
-   "samples": 19,
-   "median_book_q": 698595.9,
+   "samples": 1224,
+   "median_book_q": 573336.9,
    "A": {
-    "reward": 0.003,
-    "fills": 0,
-    "fill_sh": 0.0,
-    "inv": 0.0,
-    "mtm": 0.0,
-    "worst": 0.0,
+    "reward": 0.277,
+    "fills": 1,
+    "fill_sh": 200.0,
+    "inv": -200.0,
+    "mtm": -1.0,
+    "worst": -1.0,
     "exit_mtm": null,
-    "peak_cap": 198.0
+    "peak_cap": 343.0
    },
    "B": {
-    "reward": 0.002,
+    "reward": 0.155,
     "fills": 0,
     "fill_sh": 0.0,
     "inv": 0.0,
@@ -286,27 +286,27 @@
    "rate": 254,
    "v": 6.5,
    "size": 100.0,
-   "samples": 19,
-   "median_book_q": 57527.0,
+   "samples": 1224,
+   "median_book_q": 74812.9,
    "A": {
-    "reward": 0.005,
-    "fills": 0,
-    "fill_sh": 0.0,
-    "inv": 0.0,
-    "mtm": 0.0,
-    "worst": 0.0,
+    "reward": 0.241,
+    "fills": 9,
+    "fill_sh": 887.0,
+    "inv": -87.0,
+    "mtm": 4.955,
+    "worst": -1.5,
     "exit_mtm": null,
-    "peak_cap": 99.0
+    "peak_cap": 173.6
    },
    "B": {
-    "reward": 0.004,
-    "fills": 0,
-    "fill_sh": 0.0,
-    "inv": 0.0,
-    "mtm": 0.0,
+    "reward": 0.18,
+    "fills": 1,
+    "fill_sh": 100.0,
+    "inv": 100.0,
+    "mtm": 2.5,
     "worst": 0.0,
     "exit_mtm": null,
-    "peak_cap": 97.0
+    "peak_cap": 134.5
    }
   },
   {
@@ -315,27 +315,27 @@
    "rate": 200,
    "v": 6.5,
    "size": 200.0,
-   "samples": 19,
-   "median_book_q": 6188.0,
+   "samples": 1224,
+   "median_book_q": 15910.2,
    "A": {
-    "reward": 0.063,
-    "fills": 0,
-    "fill_sh": 0.0,
-    "inv": 0.0,
-    "mtm": 0.0,
+    "reward": 2.122,
+    "fills": 51,
+    "fill_sh": 4559.6,
+    "inv": 425.3,
+    "mtm": 31.956,
     "worst": 0.0,
     "exit_mtm": null,
-    "peak_cap": 198.0
+    "peak_cap": 528.6
    },
    "B": {
-    "reward": 0.043,
-    "fills": 0,
-    "fill_sh": 0.0,
-    "inv": 0.0,
-    "mtm": 0.0,
+    "reward": 1.69,
+    "fills": 4,
+    "fill_sh": 800.0,
+    "inv": 400.0,
+    "mtm": 4.0,
     "worst": 0.0,
     "exit_mtm": null,
-    "peak_cap": 194.0
+    "peak_cap": 510.0
    }
   },
   {
@@ -344,20 +344,20 @@
    "rate": 1000,
    "v": 2.5,
    "size": 200.0,
-   "samples": 19,
-   "median_book_q": 52014.4,
+   "samples": 1224,
+   "median_book_q": 71162.9,
    "A": {
-    "reward": 0.033,
-    "fills": 0,
-    "fill_sh": 0.0,
-    "inv": 0.0,
-    "mtm": 0.0,
+    "reward": 1.741,
+    "fills": 5,
+    "fill_sh": 300.1,
+    "inv": 99.9,
+    "mtm": 1.5,
     "worst": 0.0,
     "exit_mtm": null,
-    "peak_cap": 198.0
+    "peak_cap": 231.0
    },
    "B": {
-    "reward": 0.008,
+    "reward": 0.48,
     "fills": 0,
     "fill_sh": 0.0,
     "inv": 0.0,
@@ -373,10 +373,10 @@
    "rate": 500,
    "v": 4.5,
    "size": 200.0,
-   "samples": 19,
-   "median_book_q": 147760.8,
+   "samples": 1224,
+   "median_book_q": 134441.2,
    "A": {
-    "reward": 0.007,
+    "reward": 0.508,
     "fills": 0,
     "fill_sh": 0.0,
     "inv": 0.0,
@@ -386,7 +386,7 @@
     "peak_cap": 198.0
    },
    "B": {
-    "reward": 0.004,
+    "reward": 0.286,
     "fills": 0,
     "fill_sh": 0.0,
     "inv": 0.0,
@@ -402,27 +402,27 @@
    "rate": 200,
    "v": 4.5,
    "size": 200.0,
-   "samples": 19,
-   "median_book_q": 371.6,
+   "samples": 509,
+   "median_book_q": 402.0,
    "A": {
-    "reward": 0.491,
-    "fills": 1,
-    "fill_sh": 5.0,
-    "inv": 5.0,
-    "mtm": 0.1,
-    "worst": 0.0,
+    "reward": 18.799,
+    "fills": 22,
+    "fill_sh": 3064.6,
+    "inv": 152.4,
+    "mtm": 16.064,
+    "worst": -36.149,
     "exit_mtm": null,
-    "peak_cap": 198.0
+    "peak_cap": 414.0
    },
    "B": {
-    "reward": 0.266,
-    "fills": 0,
-    "fill_sh": 0.0,
+    "reward": 8.141,
+    "fills": 6,
+    "fill_sh": 1200.0,
     "inv": 0.0,
-    "mtm": 0.0,
-    "worst": 0.0,
+    "mtm": 6.0,
+    "worst": -24.0,
     "exit_mtm": null,
-    "peak_cap": 194.0
+    "peak_cap": 360.0
    }
   },
   {
@@ -431,10 +431,10 @@
    "rate": 200,
    "v": 3.5,
    "size": 200.0,
-   "samples": 19,
-   "median_book_q": 36537.9,
+   "samples": 1224,
+   "median_book_q": 53254.2,
    "A": {
-    "reward": 0.01,
+    "reward": 0.462,
     "fills": 0,
     "fill_sh": 0.0,
     "inv": 0.0,
@@ -444,7 +444,7 @@
     "peak_cap": 198.0
    },
    "B": {
-    "reward": 0.005,
+    "reward": 0.206,
     "fills": 0,
     "fill_sh": 0.0,
     "inv": 0.0,
@@ -460,27 +460,27 @@
    "rate": 101.99872,
    "v": 4.5,
    "size": 200.0,
-   "samples": 19,
-   "median_book_q": 2061.9,
+   "samples": 1224,
+   "median_book_q": 1953.8,
    "A": {
-    "reward": 0.075,
-    "fills": 0,
-    "fill_sh": 0.0,
-    "inv": 0.0,
+    "reward": 4.385,
+    "fills": 1,
+    "fill_sh": 49.3,
+    "inv": -49.3,
     "mtm": 0.0,
     "worst": 0.0,
     "exit_mtm": null,
-    "peak_cap": 196.0
+    "peak_cap": 213.5
    },
    "B": {
-    "reward": 0.039,
+    "reward": 2.769,
     "fills": 0,
     "fill_sh": 0.0,
     "inv": 0.0,
     "mtm": 0.0,
     "worst": 0.0,
     "exit_mtm": null,
-    "peak_cap": 192.0
+    "peak_cap": 194.0
    }
   },
   {
@@ -489,27 +489,27 @@
    "rate": 100,
    "v": 2.5,
    "size": 100.0,
-   "samples": 19,
-   "median_book_q": 80.0,
+   "samples": 496,
+   "median_book_q": 71.6,
    "A": {
-    "reward": 0.354,
-    "fills": 1,
-    "fill_sh": 100.0,
-    "inv": 100.0,
-    "mtm": 0.5,
-    "worst": 0.0,
+    "reward": 9.271,
+    "fills": 38,
+    "fill_sh": 3448.6,
+    "inv": -387.4,
+    "mtm": 90.541,
+    "worst": -1.5,
     "exit_mtm": null,
-    "peak_cap": 114.0
+    "peak_cap": 387.0
    },
    "B": {
-    "reward": 0.086,
-    "fills": 0,
-    "fill_sh": 0.0,
-    "inv": 0.0,
-    "mtm": 0.0,
-    "worst": 0.0,
+    "reward": 2.58,
+    "fills": 19,
+    "fill_sh": 1656.8,
+    "inv": -143.2,
+    "mtm": -5.403,
+    "worst": -31.62,
     "exit_mtm": null,
-    "peak_cap": 97.0
+    "peak_cap": 332.9
    }
   },
   {
@@ -518,155 +518,10 @@
    "rate": 80,
    "v": 4.5,
    "size": 50.0,
-   "samples": 19,
-   "median_book_q": 7346.3,
+   "samples": 1224,
+   "median_book_q": 7989.3,
    "A": {
-    "reward": 0.004,
-    "fills": 0,
-    "fill_sh": 0.0,
-    "inv": 0.0,
-    "mtm": 0.0,
-    "worst": 0.0,
-    "exit_mtm": null,
-    "peak_cap": 49.0
-   },
-   "B": {
-    "reward": 0.002,
-    "fills": 0,
-    "fill_sh": 0.0,
-    "inv": 0.0,
-    "mtm": 0.0,
-    "worst": 0.0,
-    "exit_mtm": null,
-    "peak_cap": 48.0
-   }
-  },
-  {
-   "q": "Will Robinhood be first to list tokenized stocks in the US?",
-   "type": "crypto_ladder_other",
-   "rate": 76,
-   "v": 4.5,
-   "size": 50.0,
-   "samples": 19,
-   "median_book_q": 837.0,
-   "A": {
-    "reward": 0.036,
-    "fills": 0,
-    "fill_sh": 0.0,
-    "inv": 0.0,
-    "mtm": 0.0,
-    "worst": 0.0,
-    "exit_mtm": null,
-    "peak_cap": 49.0
-   },
-   "B": {
-    "reward": 0.019,
-    "fills": 0,
-    "fill_sh": 0.0,
-    "inv": 0.0,
-    "mtm": 0.0,
-    "worst": 0.0,
-    "exit_mtm": null,
-    "peak_cap": 48.0
-   }
-  },
-  {
-   "q": "Will Pump.fun reach $0.0100 by December 31, 2026?",
-   "type": "crypto_ladder_other",
-   "rate": 50,
-   "v": 6.5,
-   "size": 20.0,
-   "samples": 19,
-   "median_book_q": 0.0,
-   "A": {
-    "reward": 0.637,
-    "fills": 0,
-    "fill_sh": 0.0,
-    "inv": 0.0,
-    "mtm": 0.0,
-    "worst": 0.0,
-    "exit_mtm": null,
-    "peak_cap": 18.6
-   },
-   "B": {
-    "reward": 0.632,
-    "fills": 0,
-    "fill_sh": 0.0,
-    "inv": 0.0,
-    "mtm": 0.0,
-    "worst": 0.0,
-    "exit_mtm": null,
-    "peak_cap": 18.2
-   }
-  },
-  {
-   "q": "Will Pump.fun dip to $0.0026 by December 31, 2026?",
-   "type": "crypto_ladder_other",
-   "rate": 50,
-   "v": 6.5,
-   "size": 20.0,
-   "samples": 19,
-   "median_book_q": 443.2,
-   "A": {
-    "reward": 0.018,
-    "fills": 0,
-    "fill_sh": 0.0,
-    "inv": 0.0,
-    "mtm": 0.0,
-    "worst": 0.0,
-    "exit_mtm": null,
-    "peak_cap": 19.4
-   },
-   "B": {
-    "reward": 0.012,
-    "fills": 0,
-    "fill_sh": 0.0,
-    "inv": 0.0,
-    "mtm": 0.0,
-    "worst": 0.0,
-    "exit_mtm": null,
-    "peak_cap": 19.0
-   }
-  },
-  {
-   "q": "Will StripChain launch a token by December 31, 2027?",
-   "type": "crypto_ladder_other",
-   "rate": 3,
-   "v": 4.5,
-   "size": 30.0,
-   "samples": 19,
-   "median_book_q": 0.0,
-   "A": {
-    "reward": 0.0,
-    "fills": 0,
-    "fill_sh": 0.0,
-    "inv": 0.0,
-    "mtm": 0.0,
-    "worst": 0.0,
-    "exit_mtm": null,
-    "peak_cap": 11.1
-   },
-   "B": {
-    "reward": 0.0,
-    "fills": 0,
-    "fill_sh": 0.0,
-    "inv": 0.0,
-    "mtm": 0.0,
-    "worst": 0.0,
-    "exit_mtm": null,
-    "peak_cap": 10.8
-   }
-  },
-  {
-   "q": "Will another city host the final of the 2030 FIFA World Cup?",
-   "type": "sports_futures",
-   "rate": 146,
-   "v": 4.5,
-   "size": 50.0,
-   "samples": 19,
-   "median_book_q": 5483.7,
-   "A": {
-    "reward": 0.014,
+    "reward": 0.307,
     "fills": 0,
     "fill_sh": 0.0,
     "inv": 0.0,
@@ -676,7 +531,152 @@
     "peak_cap": 49.5
    },
    "B": {
-    "reward": 0.008,
+    "reward": 0.167,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 48.5
+   }
+  },
+  {
+   "q": "Will Robinhood be first to list tokenized stocks in the US?",
+   "type": "crypto_ladder_other",
+   "rate": 76,
+   "v": 4.5,
+   "size": 50.0,
+   "samples": 1224,
+   "median_book_q": 450.6,
+   "A": {
+    "reward": 24.602,
+    "fills": 6,
+    "fill_sh": 300.0,
+    "inv": -100.0,
+    "mtm": -15.5,
+    "worst": -17.0,
+    "exit_mtm": null,
+    "peak_cap": 109.0
+   },
+   "B": {
+    "reward": 22.968,
+    "fills": 6,
+    "fill_sh": 300.0,
+    "inv": -100.0,
+    "mtm": -12.5,
+    "worst": -16.0,
+    "exit_mtm": null,
+    "peak_cap": 108.0
+   }
+  },
+  {
+   "q": "Will Pump.fun reach $0.0100 by December 31, 2026?",
+   "type": "crypto_ladder_other",
+   "rate": 50,
+   "v": 6.5,
+   "size": 20.0,
+   "samples": 1224,
+   "median_book_q": 0.0,
+   "A": {
+    "reward": 27.404,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 19.8
+   },
+   "B": {
+    "reward": 26.624,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 19.4
+   }
+  },
+  {
+   "q": "Will Pump.fun dip to $0.0026 by December 31, 2026?",
+   "type": "crypto_ladder_other",
+   "rate": 50,
+   "v": 6.5,
+   "size": 20.0,
+   "samples": 1224,
+   "median_book_q": 165.4,
+   "A": {
+    "reward": 7.569,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 19.8
+   },
+   "B": {
+    "reward": 4.77,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 19.4
+   }
+  },
+  {
+   "q": "Will StripChain launch a token by December 31, 2027?",
+   "type": "crypto_ladder_other",
+   "rate": 3,
+   "v": 4.5,
+   "size": 30.0,
+   "samples": 1224,
+   "median_book_q": 0.0,
+   "A": {
+    "reward": 1.84,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 29.7
+   },
+   "B": {
+    "reward": 1.855,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 29.4
+   }
+  },
+  {
+   "q": "Will another city host the final of the 2030 FIFA World Cup?",
+   "type": "sports_futures",
+   "rate": 146,
+   "v": 4.5,
+   "size": 50.0,
+   "samples": 1224,
+   "median_book_q": 6145.8,
+   "A": {
+    "reward": 0.808,
+    "fills": 0,
+    "fill_sh": 0.0,
+    "inv": 0.0,
+    "mtm": 0.0,
+    "worst": 0.0,
+    "exit_mtm": null,
+    "peak_cap": 49.5
+   },
+   "B": {
+    "reward": 0.456,
     "fills": 0,
     "fill_sh": 0.0,
     "inv": 0.0,
@@ -692,10 +692,10 @@
    "rate": 138,
    "v": 4.5,
    "size": 50.0,
-   "samples": 19,
-   "median_book_q": 18354.9,
+   "samples": 1224,
+   "median_book_q": 15086.5,
    "A": {
-    "reward": 0.004,
+    "reward": 0.303,
     "fills": 0,
     "fill_sh": 0.0,
     "inv": 0.0,
@@ -705,7 +705,7 @@
     "peak_cap": 49.5
    },
    "B": {
-    "reward": 0.002,
+    "reward": 0.17,
     "fills": 0,
     "fill_sh": 0.0,
     "inv": 0.0,
@@ -721,27 +721,27 @@
    "rate": 36,
    "v": 4.5,
    "size": 20.0,
-   "samples": 19,
+   "samples": 1224,
    "median_book_q": 0.0,
    "A": {
-    "reward": 0.475,
-    "fills": 0,
-    "fill_sh": 0.0,
-    "inv": 0.0,
-    "mtm": 0.0,
-    "worst": 0.0,
+    "reward": 26.167,
+    "fills": 1,
+    "fill_sh": 20.0,
+    "inv": 20.0,
+    "mtm": -1.5,
+    "worst": -1.9,
     "exit_mtm": null,
-    "peak_cap": 18.8
+    "peak_cap": 29.9
    },
    "B": {
-    "reward": 0.475,
-    "fills": 0,
-    "fill_sh": 0.0,
-    "inv": 0.0,
-    "mtm": 0.0,
-    "worst": 0.0,
+    "reward": 25.404,
+    "fills": 1,
+    "fill_sh": 20.0,
+    "inv": 20.0,
+    "mtm": -1.3,
+    "worst": -1.7,
     "exit_mtm": null,
-    "peak_cap": 18.4
+    "peak_cap": 29.5
    }
   },
   {
@@ -750,10 +750,10 @@
    "rate": 50,
    "v": 6.5,
    "size": 50.0,
-   "samples": 19,
-   "median_book_q": 397.5,
+   "samples": 1224,
+   "median_book_q": 403.6,
    "A": {
-    "reward": 0.058,
+    "reward": 3.673,
     "fills": 0,
     "fill_sh": 0.0,
     "inv": 0.0,
@@ -763,7 +763,7 @@
     "peak_cap": 49.0
    },
    "B": {
-    "reward": 0.04,
+    "reward": 2.538,
     "fills": 0,
     "fill_sh": 0.0,
     "inv": 0.0,
@@ -779,26 +779,26 @@
    "rate": 500,
    "v": 2.5,
    "size": 1000.0,
-   "samples": 19,
-   "median_book_q": 388096.4,
+   "samples": 731,
+   "median_book_q": 494476.8,
    "A": {
-    "reward": 0.011,
-    "fills": 0,
-    "fill_sh": 0.0,
+    "reward": 0.314,
+    "fills": 2,
+    "fill_sh": 2000.0,
     "inv": 0.0,
     "mtm": 0.0,
-    "worst": 0.0,
-    "exit_mtm": null,
-    "peak_cap": 990.0
+    "worst": -5.0,
+    "exit_mtm": 0.0,
+    "peak_cap": 1805.0
    },
    "B": {
-    "reward": 0.003,
+    "reward": 0.079,
     "fills": 0,
     "fill_sh": 0.0,
     "inv": 0.0,
     "mtm": 0.0,
     "worst": 0.0,
-    "exit_mtm": null,
+    "exit_mtm": 0.0,
     "peak_cap": 970.0
    }
   },
@@ -808,26 +808,26 @@
    "rate": 50,
    "v": 2.5,
    "size": 1000.0,
-   "samples": 19,
-   "median_book_q": 12076.4,
+   "samples": 693,
+   "median_book_q": 31094.6,
    "A": {
-    "reward": 0.019,
-    "fills": 0,
-    "fill_sh": 0.0,
-    "inv": 0.0,
-    "mtm": 0.0,
-    "worst": 0.0,
-    "exit_mtm": null,
-    "peak_cap": 990.0
+    "reward": 0.55,
+    "fills": 3,
+    "fill_sh": 1602.9,
+    "inv": 397.1,
+    "mtm": -4.044,
+    "worst": -9.044,
+    "exit_mtm": -8.399,
+    "peak_cap": 1406.0
    },
    "B": {
-    "reward": 0.006,
+    "reward": 0.149,
     "fills": 0,
     "fill_sh": 0.0,
     "inv": 0.0,
     "mtm": 0.0,
     "worst": 0.0,
-    "exit_mtm": null,
+    "exit_mtm": 0.0,
     "peak_cap": 970.0
    }
   },
@@ -837,26 +837,26 @@
    "rate": 10.000359999999999,
    "v": 4.5,
    "size": 50.0,
-   "samples": 19,
-   "median_book_q": 4761.3,
+   "samples": 872,
+   "median_book_q": 12641.0,
    "A": {
-    "reward": 0.001,
+    "reward": 0.024,
     "fills": 0,
     "fill_sh": 0.0,
     "inv": 0.0,
     "mtm": 0.0,
     "worst": 0.0,
-    "exit_mtm": null,
+    "exit_mtm": 0.0,
     "peak_cap": 49.5
    },
    "B": {
-    "reward": 0.001,
+    "reward": 0.014,
     "fills": 0,
     "fill_sh": 0.0,
     "inv": 0.0,
     "mtm": 0.0,
     "worst": 0.0,
-    "exit_mtm": null,
+    "exit_mtm": 0.0,
     "peak_cap": 48.5
    }
   },
@@ -866,27 +866,27 @@
    "rate": 19.99972,
    "v": 4.5,
    "size": 50.0,
-   "samples": 19,
-   "median_book_q": 8343.6,
+   "samples": 989,
+   "median_book_q": 8541.5,
    "A": {
-    "reward": 0.001,
-    "fills": 0,
-    "fill_sh": 0.0,
+    "reward": 0.066,
+    "fills": 6,
+    "fill_sh": 300.0,
     "inv": 0.0,
-    "mtm": 0.0,
-    "worst": 0.0,
+    "mtm": -9.0,
+    "worst": -9.25,
     "exit_mtm": null,
-    "peak_cap": 49.5
+    "peak_cap": 121.2
    },
    "B": {
-    "reward": 0.001,
-    "fills": 0,
-    "fill_sh": 0.0,
+    "reward": 0.042,
+    "fills": 2,
+    "fill_sh": 100.0,
     "inv": 0.0,
-    "mtm": 0.0,
-    "worst": 0.0,
+    "mtm": -9.0,
+    "worst": -9.75,
     "exit_mtm": null,
-    "peak_cap": 48.5
+    "peak_cap": 84.2
    }
   },
   {
@@ -895,27 +895,27 @@
    "rate": 247,
    "v": 4.5,
    "size": 20.0,
-   "samples": 19,
+   "samples": 1224,
    "median_book_q": 0.0,
    "A": {
-    "reward": 2.348,
-    "fills": 1,
-    "fill_sh": 20.0,
-    "inv": -20.0,
-    "mtm": 0.6,
-    "worst": 0.0,
+    "reward": 123.295,
+    "fills": 17,
+    "fill_sh": 317.0,
+    "inv": -37.0,
+    "mtm": 8.515,
+    "worst": -7.88,
     "exit_mtm": null,
-    "peak_cap": 31.1
+    "peak_cap": 68.9
    },
    "B": {
-    "reward": 2.122,
-    "fills": 1,
-    "fill_sh": 20.0,
-    "inv": -20.0,
-    "mtm": 0.8,
-    "worst": 0.0,
+    "reward": 102.82,
+    "fills": 11,
+    "fill_sh": 200.0,
+    "inv": -40.0,
+    "mtm": 6.4,
+    "worst": -8.4,
     "exit_mtm": null,
-    "peak_cap": 30.7
+    "peak_cap": 54.3
    }
   },
   {
@@ -924,27 +924,27 @@
    "rate": 213,
    "v": 4.5,
    "size": 20.0,
-   "samples": 19,
-   "median_book_q": 446.1,
+   "samples": 1224,
+   "median_book_q": 318.0,
    "A": {
-    "reward": 0.102,
-    "fills": 0,
-    "fill_sh": 0.0,
-    "inv": 0.0,
-    "mtm": 0.0,
-    "worst": 0.0,
+    "reward": 15.879,
+    "fills": 3,
+    "fill_sh": 60.0,
+    "inv": -20.0,
+    "mtm": -1.9,
+    "worst": -5.0,
     "exit_mtm": null,
-    "peak_cap": 19.2
+    "peak_cap": 32.9
    },
    "B": {
-    "reward": 0.038,
-    "fills": 0,
-    "fill_sh": 0.0,
-    "inv": 0.0,
-    "mtm": 0.0,
-    "worst": 0.0,
+    "reward": 10.797,
+    "fills": 2,
+    "fill_sh": 40.0,
+    "inv": -40.0,
+    "mtm": -0.8,
+    "worst": -1.2,
     "exit_mtm": null,
-    "peak_cap": 18.8
+    "peak_cap": 45.6
    }
   },
   {
@@ -953,27 +953,27 @@
    "rate": 80,
    "v": 4.5,
    "size": 20.0,
-   "samples": 19,
-   "median_book_q": 224.8,
+   "samples": 1224,
+   "median_book_q": 57.3,
    "A": {
-    "reward": 0.04,
-    "fills": 0,
-    "fill_sh": 0.0,
-    "inv": 0.0,
-    "mtm": 0.0,
-    "worst": 0.0,
+    "reward": 12.362,
+    "fills": 1,
+    "fill_sh": 20.0,
+    "inv": 20.0,
+    "mtm": 0.5,
+    "worst": -1.0,
     "exit_mtm": null,
-    "peak_cap": 19.4
+    "peak_cap": 26.4
    },
    "B": {
-    "reward": 0.018,
-    "fills": 0,
-    "fill_sh": 0.0,
-    "inv": 0.0,
-    "mtm": 0.0,
-    "worst": 0.0,
+    "reward": 6.811,
+    "fills": 1,
+    "fill_sh": 20.0,
+    "inv": 20.0,
+    "mtm": 0.7,
+    "worst": -0.8,
     "exit_mtm": null,
-    "peak_cap": 19.0
+    "peak_cap": 26.0
    }
   },
   {
@@ -982,10 +982,10 @@
    "rate": 40,
    "v": 6.5,
    "size": 20.0,
-   "samples": 19,
+   "samples": 1224,
    "median_book_q": 0.0,
    "A": {
-    "reward": 0.528,
+    "reward": 34.0,
     "fills": 0,
     "fill_sh": 0.0,
     "inv": 0.0,
@@ -995,7 +995,7 @@
     "peak_cap": 18.6
    },
    "B": {
-    "reward": 0.528,
+    "reward": 34.0,
     "fills": 0,
     "fill_sh": 0.0,
     "inv": 0.0,
@@ -1011,27 +1011,27 @@
    "rate": 202,
    "v": 4.5,
    "size": 100.0,
-   "samples": 19,
+   "samples": 526,
    "median_book_q": 0.0,
    "A": {
-    "reward": 0.29,
-    "fills": 0,
-    "fill_sh": 0.0,
-    "inv": 0.0,
-    "mtm": 0.0,
-    "worst": 0.0,
+    "reward": 19.557,
+    "fills": 26,
+    "fill_sh": 1643.5,
+    "inv": 203.8,
+    "mtm": -211.991,
+    "worst": -213.241,
     "exit_mtm": null,
-    "peak_cap": 97.0
+    "peak_cap": 205.0
    },
    "B": {
-    "reward": 0.218,
-    "fills": 0,
-    "fill_sh": 0.0,
-    "inv": 0.0,
-    "mtm": 0.0,
-    "worst": 0.0,
+    "reward": 17.371,
+    "fills": 16,
+    "fill_sh": 1378.2,
+    "inv": -21.8,
+    "mtm": -66.672,
+    "worst": -75.483,
     "exit_mtm": null,
-    "peak_cap": 95.0
+    "peak_cap": 198.0
    }
   },
   {
@@ -1040,27 +1040,27 @@
    "rate": 188,
    "v": 4.5,
    "size": 100.0,
-   "samples": 19,
-   "median_book_q": 196.1,
+   "samples": 648,
+   "median_book_q": 0.0,
    "A": {
-    "reward": 0.693,
-    "fills": 1,
-    "fill_sh": 10.0,
-    "inv": -10.0,
-    "mtm": 0.05,
-    "worst": 0.0,
+    "reward": 22.809,
+    "fills": 25,
+    "fill_sh": 2033.8,
+    "inv": -213.8,
+    "mtm": -169.002,
+    "worst": -171.112,
     "exit_mtm": null,
-    "peak_cap": 104.2
+    "peak_cap": 279.1
    },
    "B": {
-    "reward": 0.587,
-    "fills": 0,
-    "fill_sh": 0.0,
-    "inv": 0.0,
-    "mtm": 0.0,
-    "worst": 0.0,
+    "reward": 15.274,
+    "fills": 12,
+    "fill_sh": 1015.6,
+    "inv": 184.4,
+    "mtm": -126.336,
+    "worst": -208.851,
     "exit_mtm": null,
-    "peak_cap": 97.0
+    "peak_cap": 282.3
    }
   },
   {
@@ -1069,27 +1069,27 @@
    "rate": 89,
    "v": 4.5,
    "size": 100.0,
-   "samples": 19,
-   "median_book_q": 4.9,
+   "samples": 403,
+   "median_book_q": 0.0,
    "A": {
-    "reward": 0.312,
-    "fills": 0,
-    "fill_sh": 0.0,
+    "reward": 8.125,
+    "fills": 14,
+    "fill_sh": 1400.0,
     "inv": 0.0,
-    "mtm": 0.0,
-    "worst": 0.0,
+    "mtm": -6.0,
+    "worst": -99.5,
     "exit_mtm": null,
-    "peak_cap": 98.0
+    "peak_cap": 254.0
    },
    "B": {
-    "reward": 0.105,
-    "fills": 0,
-    "fill_sh": 0.0,
-    "inv": 0.0,
-    "mtm": 0.0,
-    "worst": 0.0,
+    "reward": 7.804,
+    "fills": 14,
+    "fill_sh": 1307.7,
+    "inv": -92.3,
+    "mtm": 49.724,
+    "worst": -92.0,
     "exit_mtm": null,
-    "peak_cap": 96.0
+    "peak_cap": 334.8
    }
   },
   {
@@ -1098,27 +1098,27 @@
    "rate": 97,
    "v": 4.5,
    "size": 100.0,
-   "samples": 19,
-   "median_book_q": 2.0,
+   "samples": 661,
+   "median_book_q": 0.0,
    "A": {
-    "reward": 0.917,
-    "fills": 1,
-    "fill_sh": 100.0,
-    "inv": 100.0,
-    "mtm": 2.0,
-    "worst": 0.0,
+    "reward": 17.794,
+    "fills": 19,
+    "fill_sh": 1709.1,
+    "inv": -309.1,
+    "mtm": -123.756,
+    "worst": -123.756,
     "exit_mtm": null,
-    "peak_cap": 145.5
+    "peak_cap": 307.8
    },
    "B": {
-    "reward": 0.76,
-    "fills": 0,
-    "fill_sh": 0.0,
-    "inv": 0.0,
-    "mtm": 0.0,
-    "worst": 0.0,
+    "reward": 15.338,
+    "fills": 11,
+    "fill_sh": 1008.0,
+    "inv": -192.0,
+    "mtm": -101.057,
+    "worst": -101.057,
     "exit_mtm": null,
-    "peak_cap": 96.0
+    "peak_cap": 289.3
    }
   }
  ]

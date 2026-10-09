@@ -123,3 +123,17 @@ small matches have no live round data on bo3.gg. So for CS2, bo3.gg is a winner 
 3. An end-race speed test for 365Scores and LiveScore on football and basketball (like `cs2_end_race.py`).
 4. Cricket: test Cricbuzz page data and LiveScore cricket live feed.
 5. Read the terms of use for the sources we would rely on.
+
+## Speed results, 9 Oct 10:50 Tunisia (laptop, interim)
+
+- **365Scores vs Polymarket "ended" flag:** 65 matches, 365Scores first in 57, **median 181 s ahead** (10th pct -2 s,
+  90th 348 s); **final score agreed 65 of 65**. By sport: ATP 20 (median 181 s), NHL 10 (15 s), NBA 6 (198 s),
+  WTA 5, CFB 4 (43 s), football leagues 200 s+.
+- **LiveScore:** 55 matches, first in 50, **median 157 s ahead**; agreed 53 of 55 (the 2 misses: tennis, LiveScore
+  showed 1-0 in sets for a 2-0 match: its tennis score field is not reliable).
+- **But at that moment the winner's sell side is already empty:** 39 of 39 two-way matches and 17 of 17 football
+  matches had **no asks** on the winner when 365Scores said "over" (only the loser had stale asks). So the lead is
+  over Polymarket's flag, not over the market: **no taker buys**. It fits the resting-bid ideas (row 4 "after the
+  last play" R4b, tennis T1 in [[R-2026-10-09]]), where sellers hit our bid: 365Scores could be the trigger and
+  agreement check.
+- **CS2 / bo3.gg (28 matches, final):** bo3.gg never first, median **245 s behind** Polymarket; winner agreed 28/28.

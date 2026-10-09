@@ -1,24 +1,25 @@
 {
- "updated": "2026-10-09T06:58:42+00:00",
- "matches_saved": 57,
+ "updated": "2026-10-09T09:41:41+00:00",
+ "matches_saved": 67,
  "s365": {
-  "n": 55,
-  "source_first": 47,
-  "median_lead_s": 161.5,
-  "p10_lead_s": -2.6,
+  "n": 65,
+  "source_first": 57,
+  "median_lead_s": 181.1,
+  "p10_lead_s": -1.6,
   "p90_lead_s": 348.4,
-  "score_agree": 55,
+  "score_agree": 65,
   "score_disagree": []
  },
  "livescore": {
-  "n": 45,
-  "source_first": 40,
+  "n": 55,
+  "source_first": 50,
   "median_lead_s": 157.3,
-  "p10_lead_s": -0.9,
-  "p90_lead_s": 303.0,
-  "score_agree": 44,
+  "p10_lead_s": 10.2,
+  "p90_lead_s": 330.0,
+  "score_agree": 53,
   "score_disagree": [
-   "Shanghai Rolex Masters: Ben Shelton vs Daniel Altmaier"
+   "Shanghai Rolex Masters: Ben Shelton vs Daniel Altmaier",
+   "Shanghai Rolex Masters: Alexander Zverev vs Yibing Wu"
   ]
  },
  "pm_never_ended": 2,
@@ -35,14 +36,14 @@
    }
   },
   "atp": {
-   "n": 15,
+   "n": 20,
    "lead_365": {
-    "n": 15,
-    "median": 161.5
+    "n": 20,
+    "median": 181.1
    },
    "lead_ls": {
-    "n": 15,
-    "median": 133.5
+    "n": 20,
+    "median": 155.7
    }
   },
   "romania-1": {
@@ -178,14 +179,14 @@
    }
   },
   "wta": {
-   "n": 3,
+   "n": 5,
    "lead_365": {
-    "n": 3,
+    "n": 5,
     "median": 167.3
    },
    "lead_ls": {
-    "n": 2,
-    "median": 277.2
+    "n": 4,
+    "median": 156.6
    }
   },
   "mlb": {
@@ -198,18 +199,33 @@
     "n": 0,
     "median": null
    }
+  },
+  "k-league": {
+   "n": 3,
+   "lead_365": {
+    "n": 3,
+    "median": 346.9
+   },
+   "lead_ls": {
+    "n": 3,
+    "median": 330.0
+   }
   }
  },
  "started": "2026-10-08T18:31:00+00:00",
- "discovered": 60,
- "no_source": 5,
- "errors": 241,
+ "discovered": 69,
+ "no_source": 9,
+ "errors": 268,
  "no_source_examples": [
   "AS FAR vs. Wydad Sportif Témara",
   "Braga (Doubles): Pereira/Lopez vs Forcano/Luque",
   "Shanghai Rolex Masters (Doubles): Buse/Vallejo vs Andreozzi/Guinard",
   "China Open (Doubles): Siniakova/Zhang vs Hunter/Mladenovic",
-  "Shanghai Rolex Masters (Doubles): Harrison/Skupski vs Arneodo/Gonzalez"
+  "Shanghai Rolex Masters (Doubles): Harrison/Skupski vs Arneodo/Gonzalez",
+  "Wuning 3 (Doubles): Seggerman/Wang vs Santillan/Zheng",
+  "Shanghai Rolex Masters (Doubles): Pel/Tabilo vs Galloway/Goransson",
+  "Suzhou (Doubles): Prozorova/Sasnovich vs Li/Zheng",
+  "Wuning 3 (Doubles): Friend/Sueoka vs Demin/Derepasko"
  ],
- "watching_now": 5
+ "watching_now": 4
 }

@@ -1,22 +1,22 @@
 {
- "updated": "2026-10-09T00:42:47+00:00",
- "matches_saved": 17,
+ "updated": "2026-10-09T03:52:29+00:00",
+ "matches_saved": 44,
  "s365": {
-  "n": 15,
-  "source_first": 15,
-  "median_lead_s": 203.2,
-  "p10_lead_s": 95.7,
-  "p90_lead_s": 403.7,
-  "score_agree": 15,
+  "n": 42,
+  "source_first": 36,
+  "median_lead_s": 198.0,
+  "p10_lead_s": -5.4,
+  "p90_lead_s": 403.2,
+  "score_agree": 42,
   "score_disagree": []
  },
  "livescore": {
-  "n": 14,
-  "source_first": 14,
-  "median_lead_s": 183.4,
-  "p10_lead_s": 49.7,
-  "p90_lead_s": 403.3,
-  "score_agree": 14,
+  "n": 34,
+  "source_first": 32,
+  "median_lead_s": 171.5,
+  "p10_lead_s": 30.1,
+  "p90_lead_s": 401.7,
+  "score_agree": 34,
   "score_disagree": []
  },
  "pm_never_ended": 2,
@@ -88,35 +88,112 @@
    }
   },
   "brazil-serie-b": {
-   "n": 1,
+   "n": 2,
    "lead_365": {
-    "n": 1,
-    "median": 403.7
+    "n": 2,
+    "median": 677.3
    },
    "lead_ls": {
-    "n": 1,
-    "median": 403.3
+    "n": 2,
+    "median": 676.8
    }
   },
   "brazil-serie-a": {
+   "n": 4,
+   "lead_365": {
+    "n": 4,
+    "median": 215.6
+   },
+   "lead_ls": {
+    "n": 3,
+    "median": 68.8
+   }
+  },
+  "primera-a": {
+   "n": 2,
+   "lead_365": {
+    "n": 2,
+    "median": 283.0
+   },
+   "lead_ls": {
+    "n": 2,
+    "median": 210.2
+   }
+  },
+  "nhl-2026": {
+   "n": 9,
+   "lead_365": {
+    "n": 9,
+    "median": -5.4
+   },
+   "lead_ls": {
+    "n": 8,
+    "median": 165.2
+   }
+  },
+  "nba-2026": {
+   "n": 5,
+   "lead_365": {
+    "n": 5,
+    "median": 198.0
+   },
+   "lead_ls": {
+    "n": 5,
+    "median": 75.0
+   }
+  },
+  "cfb-2026": {
+   "n": 4,
+   "lead_365": {
+    "n": 4,
+    "median": 42.6
+   },
+   "lead_ls": {
+    "n": 0,
+    "median": null
+   }
+  },
+  "soccer-gtm": {
    "n": 1,
    "lead_365": {
     "n": 1,
-    "median": 160.6
+    "median": 403.2
    },
    "lead_ls": {
     "n": 1,
-    "median": 49.7
+    "median": 401.7
+   }
+  },
+  "nfl-2026": {
+   "n": 1,
+   "lead_365": {
+    "n": 1,
+    "median": 629.5
+   },
+   "lead_ls": {
+    "n": 0,
+    "median": null
+   }
+  },
+  "wta": {
+   "n": 1,
+   "lead_365": {
+    "n": 1,
+    "median": 321.0
+   },
+   "lead_ls": {
+    "n": 1,
+    "median": 277.2
    }
   }
  },
  "started": "2026-10-08T18:31:00+00:00",
- "discovered": 39,
+ "discovered": 48,
  "no_source": 2,
- "errors": 68,
+ "errors": 156,
  "no_source_examples": [
   "AS FAR vs. Wydad Sportif Témara",
   "Braga (Doubles): Pereira/Lopez vs Forcano/Luque"
  ],
- "watching_now": 24
+ "watching_now": 6
 }

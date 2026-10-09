@@ -1,23 +1,25 @@
 {
- "updated": "2026-10-09T03:52:29+00:00",
- "matches_saved": 44,
+ "updated": "2026-10-09T06:58:42+00:00",
+ "matches_saved": 57,
  "s365": {
-  "n": 42,
-  "source_first": 36,
-  "median_lead_s": 198.0,
-  "p10_lead_s": -5.4,
-  "p90_lead_s": 403.2,
-  "score_agree": 42,
+  "n": 55,
+  "source_first": 47,
+  "median_lead_s": 161.5,
+  "p10_lead_s": -2.6,
+  "p90_lead_s": 348.4,
+  "score_agree": 55,
   "score_disagree": []
  },
  "livescore": {
-  "n": 34,
-  "source_first": 32,
-  "median_lead_s": 171.5,
-  "p10_lead_s": 30.1,
-  "p90_lead_s": 401.7,
-  "score_agree": 34,
-  "score_disagree": []
+  "n": 45,
+  "source_first": 40,
+  "median_lead_s": 157.3,
+  "p10_lead_s": -0.9,
+  "p90_lead_s": 303.0,
+  "score_agree": 44,
+  "score_disagree": [
+   "Shanghai Rolex Masters: Ben Shelton vs Daniel Altmaier"
+  ]
  },
  "pm_never_ended": 2,
  "by_series": {
@@ -33,14 +35,14 @@
    }
   },
   "atp": {
-   "n": 7,
+   "n": 15,
    "lead_365": {
-    "n": 7,
-    "median": 202.2
+    "n": 15,
+    "median": 161.5
    },
    "lead_ls": {
-    "n": 7,
-    "median": 160.2
+    "n": 15,
+    "median": 133.5
    }
   },
   "romania-1": {
@@ -121,24 +123,24 @@
    }
   },
   "nhl-2026": {
-   "n": 9,
+   "n": 10,
    "lead_365": {
-    "n": 9,
-    "median": -5.4
+    "n": 10,
+    "median": 14.5
    },
    "lead_ls": {
-    "n": 8,
-    "median": 165.2
+    "n": 9,
+    "median": 89.8
    }
   },
   "nba-2026": {
-   "n": 5,
+   "n": 6,
    "lead_365": {
-    "n": 5,
+    "n": 6,
     "median": 198.0
    },
    "lead_ls": {
-    "n": 5,
+    "n": 6,
     "median": 75.0
    }
   },
@@ -176,24 +178,38 @@
    }
   },
   "wta": {
+   "n": 3,
+   "lead_365": {
+    "n": 3,
+    "median": 167.3
+   },
+   "lead_ls": {
+    "n": 2,
+    "median": 277.2
+   }
+  },
+  "mlb": {
    "n": 1,
    "lead_365": {
     "n": 1,
-    "median": 321.0
+    "median": 255.8
    },
    "lead_ls": {
-    "n": 1,
-    "median": 277.2
+    "n": 0,
+    "median": null
    }
   }
  },
  "started": "2026-10-08T18:31:00+00:00",
- "discovered": 48,
- "no_source": 2,
- "errors": 156,
+ "discovered": 60,
+ "no_source": 5,
+ "errors": 241,
  "no_source_examples": [
   "AS FAR vs. Wydad Sportif Témara",
-  "Braga (Doubles): Pereira/Lopez vs Forcano/Luque"
+  "Braga (Doubles): Pereira/Lopez vs Forcano/Luque",
+  "Shanghai Rolex Masters (Doubles): Buse/Vallejo vs Andreozzi/Guinard",
+  "China Open (Doubles): Siniakova/Zhang vs Hunter/Mladenovic",
+  "Shanghai Rolex Masters (Doubles): Harrison/Skupski vs Arneodo/Gonzalez"
  ],
- "watching_now": 6
+ "watching_now": 5
 }

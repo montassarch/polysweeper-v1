@@ -1,13 +1,13 @@
 {
- "updated": "2026-10-10T10:51:09+00:00",
- "matches_saved": 208,
+ "updated": "2026-10-10T13:54:53+00:00",
+ "matches_saved": 242,
  "s365": {
-  "n": 195,
-  "source_first": 181,
-  "median_lead_s": 168.9,
-  "p10_lead_s": 24.5,
-  "p90_lead_s": 348.4,
-  "score_agree": 179,
+  "n": 221,
+  "source_first": 207,
+  "median_lead_s": 181.1,
+  "p10_lead_s": 31.9,
+  "p90_lead_s": 384.0,
+  "score_agree": 205,
   "score_disagree": [
    "Braga (Doubles): Campos/Nikles vs Drzewiecki/Kalender",
    "Samsun (Doubles): Bagaric/Kulambayeva vs Karamoko/Akugue",
@@ -28,12 +28,12 @@
   ]
  },
  "livescore": {
-  "n": 177,
-  "source_first": 155,
-  "median_lead_s": 155.7,
-  "p10_lead_s": -1.7,
-  "p90_lead_s": 329.9,
-  "score_agree": 160,
+  "n": 205,
+  "source_first": 180,
+  "median_lead_s": 158.2,
+  "p10_lead_s": -1.4,
+  "p90_lead_s": 360.3,
+  "score_agree": 186,
   "score_disagree": [
    "Shanghai Rolex Masters: Ben Shelton vs Daniel Altmaier",
    "Shanghai Rolex Masters: Alexander Zverev vs Yibing Wu",
@@ -51,10 +51,12 @@
    "Shanghai Rolex Masters (Doubles): Nouza/Venus vs Nys/Roger-Vasselin",
    "Shanghai Rolex Masters (Doubles): Pavlasek/Rikl vs Arevalo/Pavic",
    "China Open (Doubles): Siniakova/Zhang vs Routliffe/Sutjiadi",
-   "Wuning 3 (Doubles): Demin/Derepasko vs Santillan/Zheng"
+   "Wuning 3 (Doubles): Demin/Derepasko vs Santillan/Zheng",
+   "Braga (Doubles): Gurri/Izquierdo vs Laaroussi/Diez",
+   "Braga (Doubles): Cervantes/Molchanov vs Drzewiecki/Kalender"
   ]
  },
- "pm_never_ended": 9,
+ "pm_never_ended": 13,
  "by_series": {
   "morocco-1": {
    "n": 3,
@@ -68,13 +70,13 @@
    }
   },
   "atp": {
-   "n": 53,
+   "n": 59,
    "lead_365": {
-    "n": 47,
-    "median": 168.9
+    "n": 50,
+    "median": 175.5
    },
    "lead_ls": {
-    "n": 48,
+    "n": 53,
     "median": 155.7
    }
   },
@@ -101,13 +103,13 @@
    }
   },
   "atp-doubles": {
-   "n": 14,
+   "n": 16,
    "lead_365": {
     "n": 12,
     "median": 82.5
    },
    "lead_ls": {
-    "n": 12,
+    "n": 14,
     "median": 34.0
    }
   },
@@ -211,13 +213,13 @@
    }
   },
   "wta": {
-   "n": 26,
+   "n": 30,
    "lead_365": {
-    "n": 25,
-    "median": 154.6
+    "n": 28,
+    "median": 167.3
    },
    "lead_ls": {
-    "n": 24,
+    "n": 27,
     "median": 142.9
    }
   },
@@ -266,25 +268,25 @@
    }
   },
   "chinese-super-league": {
-   "n": 3,
+   "n": 5,
    "lead_365": {
-    "n": 3,
+    "n": 5,
     "median": 225.5
    },
    "lead_ls": {
-    "n": 3,
-    "median": 225.0
+    "n": 5,
+    "median": 198.4
    }
   },
   "ukraine-premier-liha": {
-   "n": 1,
+   "n": 3,
    "lead_365": {
-    "n": 1,
-    "median": 116.8
+    "n": 2,
+    "median": 245.4
    },
    "lead_ls": {
-    "n": 1,
-    "median": 115.9
+    "n": 2,
+    "median": 244.7
    }
   },
   "saudi-professional-league": {
@@ -321,9 +323,9 @@
    }
   },
   "russian-premier-league": {
-   "n": 1,
+   "n": 2,
    "lead_365": {
-    "n": 1,
+    "n": 2,
     "median": 200.6
    },
    "lead_ls": {
@@ -332,14 +334,14 @@
    }
   },
   "bundesliga-2": {
-   "n": 2,
+   "n": 5,
    "lead_365": {
-    "n": 2,
-    "median": 279.0
+    "n": 5,
+    "median": 140.3
    },
    "lead_ls": {
-    "n": 2,
-    "median": 199.6
+    "n": 5,
+    "median": 89.4
    }
   },
   "denmark-superliga": {
@@ -365,13 +367,13 @@
    }
   },
   "tur-2025": {
-   "n": 1,
+   "n": 2,
    "lead_365": {
-    "n": 0,
-    "median": null
+    "n": 1,
+    "median": 73.6
    },
    "lead_ls": {
-    "n": 1,
+    "n": 2,
     "median": 294.7
    }
   },
@@ -442,14 +444,14 @@
    }
   },
   "soccer-enl": {
-   "n": 1,
+   "n": 3,
    "lead_365": {
-    "n": 1,
-    "median": 349.6
+    "n": 3,
+    "median": 914.8
    },
    "lead_ls": {
-    "n": 1,
-    "median": 275.7
+    "n": 3,
+    "median": 914.2
    }
   },
   "bolivia-1": {
@@ -464,7 +466,7 @@
    }
   },
   "la-liga-2025": {
-   "n": 1,
+   "n": 2,
    "lead_365": {
     "n": 1,
     "median": 389.0
@@ -506,12 +508,78 @@
     "n": 0,
     "median": null
    }
+  },
+  "soccer-auc": {
+   "n": 1,
+   "lead_365": {
+    "n": 1,
+    "median": 264.0
+   },
+   "lead_ls": {
+    "n": 1,
+    "median": -1.4
+   }
+  },
+  "premier-league-2025": {
+   "n": 1,
+   "lead_365": {
+    "n": 1,
+    "median": 305.7
+   },
+   "lead_ls": {
+    "n": 1,
+    "median": 304.9
+   }
+  },
+  "efl-championship": {
+   "n": 3,
+   "lead_365": {
+    "n": 3,
+    "median": 365.5
+   },
+   "lead_ls": {
+    "n": 3,
+    "median": 304.6
+   }
+  },
+  "soccer-el1": {
+   "n": 2,
+   "lead_365": {
+    "n": 2,
+    "median": 309.1
+   },
+   "lead_ls": {
+    "n": 2,
+    "median": 308.6
+   }
+  },
+  "soccer-el2": {
+   "n": 2,
+   "lead_365": {
+    "n": 2,
+    "median": 707.2
+   },
+   "lead_ls": {
+    "n": 2,
+    "median": 706.6
+   }
+  },
+  "indian-super-league": {
+   "n": 1,
+   "lead_365": {
+    "n": 1,
+    "median": 921.5
+   },
+   "lead_ls": {
+    "n": 0,
+    "median": null
+   }
   }
  },
  "started": "2026-10-08T18:31:00+00:00",
- "discovered": 219,
- "no_source": 23,
- "errors": 1762,
+ "discovered": 257,
+ "no_source": 24,
+ "errors": 1926,
  "no_source_examples": [
   "AS FAR vs. Wydad Sportif Témara",
   "Braga (Doubles): Pereira/Lopez vs Forcano/Luque",
@@ -535,7 +603,8 @@
   "Shanghai Rolex Masters (Doubles): Cerundolo/Tirante vs Schnaitter/Wallner",
   "Shanghai Rolex Masters (Doubles): Zhang/Zhou vs Frantzen/Haase",
   "Shanghai Rolex Masters (Doubles): Liutarevich/Medvedev vs Bublik/Shelton",
-  "FK Kolos Kovalivka vs. FK Epitsentr Dunaivtsi"
+  "FK Kolos Kovalivka vs. FK Epitsentr Dunaivtsi",
+  "FC Hradec Králové vs. SK Artis Brno"
  ],
- "watching_now": 13
+ "watching_now": 17
 }

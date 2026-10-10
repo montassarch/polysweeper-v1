@@ -1,13 +1,13 @@
 {
- "updated": "2026-10-09T22:21:37+00:00",
- "matches_saved": 153,
+ "updated": "2026-10-10T01:26:39+00:00",
+ "matches_saved": 156,
  "s365": {
-  "n": 146,
-  "source_first": 137,
+  "n": 148,
+  "source_first": 139,
   "median_lead_s": 182.9,
   "p10_lead_s": 24.5,
-  "p90_lead_s": 349.6,
-  "score_agree": 136,
+  "p90_lead_s": 355.6,
+  "score_agree": 138,
   "score_disagree": [
    "Braga (Doubles): Campos/Nikles vs Drzewiecki/Kalender",
    "Samsun (Doubles): Bagaric/Kulambayeva vs Karamoko/Akugue",
@@ -22,12 +22,12 @@
   ]
  },
  "livescore": {
-  "n": 134,
-  "source_first": 120,
+  "n": 136,
+  "source_first": 122,
   "median_lead_s": 157.3,
   "p10_lead_s": -0.5,
-  "p90_lead_s": 329.9,
-  "score_agree": 122,
+  "p90_lead_s": 330.0,
+  "score_agree": 124,
   "score_disagree": [
    "Shanghai Rolex Masters: Ben Shelton vs Daniel Altmaier",
    "Shanghai Rolex Masters: Alexander Zverev vs Yibing Wu",
@@ -43,7 +43,7 @@
    "Antofagasta (Doubles): Ribeiro/Zormann vs Couto/Ribero"
   ]
  },
- "pm_never_ended": 4,
+ "pm_never_ended": 5,
  "by_series": {
   "morocco-1": {
    "n": 3,
@@ -134,7 +134,7 @@
    }
   },
   "primera-a": {
-   "n": 2,
+   "n": 3,
    "lead_365": {
     "n": 2,
     "median": 283.0
@@ -365,13 +365,13 @@
    }
   },
   "primera-divisin-argentina": {
-   "n": 1,
+   "n": 3,
    "lead_365": {
-    "n": 1,
+    "n": 3,
     "median": 339.2
    },
    "lead_ls": {
-    "n": 1,
+    "n": 3,
     "median": 338.6
    }
   },
@@ -465,9 +465,9 @@
   }
  },
  "started": "2026-10-08T18:31:00+00:00",
- "discovered": 152,
- "no_source": 16,
- "errors": 1238,
+ "discovered": 168,
+ "no_source": 17,
+ "errors": 1324,
  "no_source_examples": [
   "AS FAR vs. Wydad Sportif Témara",
   "Braga (Doubles): Pereira/Lopez vs Forcano/Luque",
@@ -484,7 +484,8 @@
   "Al Nassr Saudi Club vs. Al Diraiyah Saudi Club",
   "PSV vs. SC Heerenveen",
   "West Ham United FC vs. Queens Park Rangers FC",
-  "Moghreb Athletic Tétouan vs. Fath Union Sport"
+  "Moghreb Athletic Tétouan vs. Fath Union Sport",
+  "Atlanta Dream vs. New York Liberty"
  ],
- "watching_now": 1
+ "watching_now": 14
 }

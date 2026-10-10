@@ -1,13 +1,13 @@
 {
- "updated": "2026-10-10T07:45:25+00:00",
- "matches_saved": 195,
+ "updated": "2026-10-10T10:51:09+00:00",
+ "matches_saved": 208,
  "s365": {
-  "n": 187,
-  "source_first": 173,
-  "median_lead_s": 167.3,
+  "n": 195,
+  "source_first": 181,
+  "median_lead_s": 168.9,
   "p10_lead_s": 24.5,
   "p90_lead_s": 348.4,
-  "score_agree": 171,
+  "score_agree": 179,
   "score_disagree": [
    "Braga (Doubles): Campos/Nikles vs Drzewiecki/Kalender",
    "Samsun (Doubles): Bagaric/Kulambayeva vs Karamoko/Akugue",
@@ -28,12 +28,12 @@
   ]
  },
  "livescore": {
-  "n": 168,
-  "source_first": 146,
-  "median_lead_s": 156.6,
-  "p10_lead_s": -2.1,
+  "n": 177,
+  "source_first": 155,
+  "median_lead_s": 155.7,
+  "p10_lead_s": -1.7,
   "p90_lead_s": 329.9,
-  "score_agree": 151,
+  "score_agree": 160,
   "score_disagree": [
    "Shanghai Rolex Masters: Ben Shelton vs Daniel Altmaier",
    "Shanghai Rolex Masters: Alexander Zverev vs Yibing Wu",
@@ -54,7 +54,7 @@
    "Wuning 3 (Doubles): Demin/Derepasko vs Santillan/Zheng"
   ]
  },
- "pm_never_ended": 5,
+ "pm_never_ended": 9,
  "by_series": {
   "morocco-1": {
    "n": 3,
@@ -68,13 +68,13 @@
    }
   },
   "atp": {
-   "n": 48,
+   "n": 53,
    "lead_365": {
-    "n": 46,
-    "median": 175.5
+    "n": 47,
+    "median": 168.9
    },
    "lead_ls": {
-    "n": 47,
+    "n": 48,
     "median": 155.7
    }
   },
@@ -211,13 +211,13 @@
    }
   },
   "wta": {
-   "n": 19,
+   "n": 26,
    "lead_365": {
-    "n": 19,
-    "median": 151.1
+    "n": 25,
+    "median": 154.6
    },
    "lead_ls": {
-    "n": 17,
+    "n": 24,
     "median": 142.9
    }
   },
@@ -233,13 +233,13 @@
    }
   },
   "k-league": {
-   "n": 4,
+   "n": 5,
    "lead_365": {
-    "n": 4,
+    "n": 5,
     "median": 393.5
    },
    "lead_ls": {
-    "n": 4,
+    "n": 5,
     "median": 339.5
    }
   },
@@ -509,9 +509,9 @@
   }
  },
  "started": "2026-10-08T18:31:00+00:00",
- "discovered": 203,
- "no_source": 19,
- "errors": 1684,
+ "discovered": 219,
+ "no_source": 23,
+ "errors": 1762,
  "no_source_examples": [
   "AS FAR vs. Wydad Sportif Témara",
   "Braga (Doubles): Pereira/Lopez vs Forcano/Luque",
@@ -531,7 +531,11 @@
   "Moghreb Athletic Tétouan vs. Fath Union Sport",
   "Atlanta Dream vs. New York Liberty",
   "Shanghai Rolex Masters (Doubles): Luz/Matos vs Cabral/Tracy",
-  "Shanghai Rolex Masters (Doubles): Arends/Johnson vs Melo/Zverev"
+  "Shanghai Rolex Masters (Doubles): Arends/Johnson vs Melo/Zverev",
+  "Shanghai Rolex Masters (Doubles): Cerundolo/Tirante vs Schnaitter/Wallner",
+  "Shanghai Rolex Masters (Doubles): Zhang/Zhou vs Frantzen/Haase",
+  "Shanghai Rolex Masters (Doubles): Liutarevich/Medvedev vs Bublik/Shelton",
+  "FK Kolos Kovalivka vs. FK Epitsentr Dunaivtsi"
  ],
- "watching_now": 10
+ "watching_now": 13
 }

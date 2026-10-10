@@ -1,13 +1,13 @@
 {
- "updated": "2026-10-10T04:36:25+00:00",
- "matches_saved": 173,
+ "updated": "2026-10-10T07:45:25+00:00",
+ "matches_saved": 195,
  "s365": {
-  "n": 165,
-  "source_first": 154,
-  "median_lead_s": 180.3,
+  "n": 187,
+  "source_first": 173,
+  "median_lead_s": 167.3,
   "p10_lead_s": 24.5,
-  "p90_lead_s": 349.6,
-  "score_agree": 154,
+  "p90_lead_s": 348.4,
+  "score_agree": 171,
   "score_disagree": [
    "Braga (Doubles): Campos/Nikles vs Drzewiecki/Kalender",
    "Samsun (Doubles): Bagaric/Kulambayeva vs Karamoko/Akugue",
@@ -19,16 +19,21 @@
    "Antofagasta (Doubles): Magadan/Merino vs Cigarran/Fuente",
    "Palermo (Doubles): Bilardo/Ricca vs Forejtek/Wiskandt",
    "Antofagasta (Doubles): Ribeiro/Zormann vs Couto/Ribero",
-   "Suzhou (Doubles): Li/Zhang vs Brooks/Ovcharenko"
+   "Suzhou (Doubles): Li/Zhang vs Brooks/Ovcharenko",
+   "Washington State vs. Utah State",
+   "Shanghai Rolex Masters (Doubles): Nouza/Venus vs Nys/Roger-Vasselin",
+   "Shanghai Rolex Masters (Doubles): Pavlasek/Rikl vs Arevalo/Pavic",
+   "China Open (Doubles): Siniakova/Zhang vs Routliffe/Sutjiadi",
+   "Wuning 3 (Doubles): Demin/Derepasko vs Santillan/Zheng"
   ]
  },
  "livescore": {
-  "n": 149,
-  "source_first": 132,
-  "median_lead_s": 157.3,
-  "p10_lead_s": -0.6,
-  "p90_lead_s": 330.0,
-  "score_agree": 136,
+  "n": 168,
+  "source_first": 146,
+  "median_lead_s": 156.6,
+  "p10_lead_s": -2.1,
+  "p90_lead_s": 329.9,
+  "score_agree": 151,
   "score_disagree": [
    "Shanghai Rolex Masters: Ben Shelton vs Daniel Altmaier",
    "Shanghai Rolex Masters: Alexander Zverev vs Yibing Wu",
@@ -42,7 +47,11 @@
    "Antofagasta (Doubles): Magadan/Merino vs Cigarran/Fuente",
    "Palermo (Doubles): Bilardo/Ricca vs Forejtek/Wiskandt",
    "Antofagasta (Doubles): Ribeiro/Zormann vs Couto/Ribero",
-   "Suzhou (Doubles): Li/Zhang vs Brooks/Ovcharenko"
+   "Suzhou (Doubles): Li/Zhang vs Brooks/Ovcharenko",
+   "Shanghai Rolex Masters (Doubles): Nouza/Venus vs Nys/Roger-Vasselin",
+   "Shanghai Rolex Masters (Doubles): Pavlasek/Rikl vs Arevalo/Pavic",
+   "China Open (Doubles): Siniakova/Zhang vs Routliffe/Sutjiadi",
+   "Wuning 3 (Doubles): Demin/Derepasko vs Santillan/Zheng"
   ]
  },
  "pm_never_ended": 5,
@@ -59,14 +68,14 @@
    }
   },
   "atp": {
-   "n": 43,
+   "n": 48,
    "lead_365": {
-    "n": 41,
+    "n": 46,
     "median": 175.5
    },
    "lead_ls": {
-    "n": 42,
-    "median": 157.3
+    "n": 47,
+    "median": 155.7
    }
   },
   "romania-1": {
@@ -92,13 +101,13 @@
    }
   },
   "atp-doubles": {
-   "n": 11,
+   "n": 14,
    "lead_365": {
-    "n": 9,
-    "median": 73.7
+    "n": 12,
+    "median": 82.5
    },
    "lead_ls": {
-    "n": 9,
+    "n": 12,
     "median": 34.0
    }
   },
@@ -169,10 +178,10 @@
    }
   },
   "cfb-2026": {
-   "n": 9,
+   "n": 11,
    "lead_365": {
-    "n": 9,
-    "median": 42.6
+    "n": 11,
+    "median": 59.5
    },
    "lead_ls": {
     "n": 0,
@@ -202,14 +211,14 @@
    }
   },
   "wta": {
-   "n": 11,
+   "n": 19,
    "lead_365": {
-    "n": 11,
-    "median": 167.3
+    "n": 19,
+    "median": 151.1
    },
    "lead_ls": {
-    "n": 9,
-    "median": 156.6
+    "n": 17,
+    "median": 142.9
    }
   },
   "mlb": {
@@ -224,25 +233,25 @@
    }
   },
   "k-league": {
-   "n": 3,
+   "n": 4,
    "lead_365": {
-    "n": 3,
-    "median": 346.9
+    "n": 4,
+    "median": 393.5
    },
    "lead_ls": {
-    "n": 3,
-    "median": 330.0
+    "n": 4,
+    "median": 339.5
    }
   },
   "wta-doubles": {
-   "n": 2,
+   "n": 3,
    "lead_365": {
-    "n": 2,
-    "median": 316.4
+    "n": 3,
+    "median": 212.5
    },
    "lead_ls": {
-    "n": 2,
-    "median": 294.4
+    "n": 3,
+    "median": 188.8
    }
   },
   "uefa-womens-world-cup-qualification": {
@@ -466,14 +475,14 @@
    }
   },
   "mex-2025": {
-   "n": 1,
+   "n": 2,
    "lead_365": {
-    "n": 1,
-    "median": 72.8
+    "n": 2,
+    "median": 321.8
    },
    "lead_ls": {
-    "n": 1,
-    "median": -0.6
+    "n": 2,
+    "median": 321.3
    }
   },
   "soccer-fpd": {
@@ -486,12 +495,23 @@
     "n": 1,
     "median": 347.3
    }
+  },
+  "wnba": {
+   "n": 1,
+   "lead_365": {
+    "n": 1,
+    "median": 108.1
+   },
+   "lead_ls": {
+    "n": 0,
+    "median": null
+   }
   }
  },
  "started": "2026-10-08T18:31:00+00:00",
- "discovered": 186,
- "no_source": 17,
- "errors": 1517,
+ "discovered": 203,
+ "no_source": 19,
+ "errors": 1684,
  "no_source_examples": [
   "AS FAR vs. Wydad Sportif Témara",
   "Braga (Doubles): Pereira/Lopez vs Forcano/Luque",
@@ -509,7 +529,9 @@
   "PSV vs. SC Heerenveen",
   "West Ham United FC vs. Queens Park Rangers FC",
   "Moghreb Athletic Tétouan vs. Fath Union Sport",
-  "Atlanta Dream vs. New York Liberty"
+  "Atlanta Dream vs. New York Liberty",
+  "Shanghai Rolex Masters (Doubles): Luz/Matos vs Cabral/Tracy",
+  "Shanghai Rolex Masters (Doubles): Arends/Johnson vs Melo/Zverev"
  ],
- "watching_now": 15
+ "watching_now": 10
 }

@@ -60,6 +60,13 @@ owner plainly and propose a new date; never lower the bar to make a rule pass.
   [[30-Research-Hub]] "Owner's focus". — **lab + assistant**
 - [x] (checked 2026-10-08: no code change needed now, see R-2026-10-08 "positionIds check") **V1 session (found 2026-10-08):** new-contract test markets (5-30 Oct) keep outcome ids in `positionIds`; `collector.py` and `shadow.py` read only `clobTokenIds`, so they would skip those markets. Check and handle before they go wide. — **V1 session**
 - [ ] Re-check `positionIds` vs `clobTokenIds` on live sports markets weekly until 30 Oct (and if any moneyline market lacks `clobTokenIds`, or `positionIds` gets CLOB order books). — **lab analyst**
+- [ ] **Ideas borrowed from a trading-bot prompt seen on X (owner yes 2026-10-10; free, no paid AI in the loop).** Build 1 and 2 after the weekly usage reset (12 Oct), through safe-deploy + ps-reviewer: — **assistant**
+  1. **Auto-stop:** a final_bid loss switches the rule off until reviewed (later, real money: stop after 1 loss / daily limit).
+  2. **Markouts:** after every pretend fill, record the winner's price at +1 s, +10 s, +60 s; a drop = adverse selection warning.
+  3. Hard limits in code for real money: stale data, too many API errors, sources disagree -> no order; no setting can override.
+  4. Per-sport source reliability: final_bid only in sports where 365Scores + second source are proven on enough matches.
+  5. Lock pass/fail lines before each test runs; report every variant tried.
+  6. Nightly analyst also reviews final_bid fills and markouts.
 - [ ] **Bug (found 2026-10-09):** an autopilot test run from a temp copy (`%TEMP%	mp...pc`) rewrote the REAL desktop shortcut `PolySweeper.lnk` to point at the temp folder, so the app would not open. Fixed the shortcut by hand. Fix `autopilot.py` (~line 356): only make the shortcut when running from the real repo folder (or never in tests). — **V1 session**
 - [ ] (owner 2026-10-09) **Shadow rule `final_bid` live from 9 Oct** (v2.8): watch fills and losses daily; bar 300 fills, 0 losses (tennis + US). Next: football 3-way, LiveScore as third source. — **assistant + analyst**
 - [ ] (owner 2026-10-08) **Score-source atlas**: next steps 1-5 done 8 Oct. Running on the laptop: `lab/feeds_end_race.py` to ~15 Oct (if the laptop restarts: `py lab/feeds_end_race.py 168`), `lab/cs2_end_race.py` to ~10 Oct. Report speed results; then pick which sources join shadow as checks. — **laptop session**

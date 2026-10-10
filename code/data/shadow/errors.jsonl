@@ -85,3 +85,8 @@
 {"ts": "2026-10-10T14:30:48+00:00", "where": "live feed", "error": "ConnectionError: feed closed by the server"}
 {"ts": "2026-10-10T15:11:56+00:00", "where": "live feed", "error": "ConnectionError: feed closed by the server"}
 {"ts": "2026-10-10T15:46:49+00:00", "where": "live feed", "error": "ConnectionError: feed closed by the server"}
+{"ts": "2026-10-10T17:21:01+00:00", "where": "live feed", "error": "ConnectionError: feed closed by the server"}
+{"ts": "2026-10-10T17:24:32+00:00", "where": "live feed", "error": "ConnectionError: feed closed by the server"}
+{"ts": "2026-10-10T18:23:57+00:00", "where": "live feed", "error": "ConnectionError: feed closed by the server"}
+{"ts": "2026-10-10T18:27:37+00:00", "where": "live feed", "error": "ConnectionError: feed closed by the server"}
+{"ts": "2026-10-10T19:55:11+00:00", "where": "live feed", "error": "ConnectionError: feed closed by the server"}

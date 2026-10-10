@@ -1,9 +1,9 @@
 {
- "updated": "2026-10-10T03:54:46+00:00",
- "games": 30,
+ "updated": "2026-10-10T06:55:49+00:00",
+ "games": 33,
  "at_0.98": {
-  "tries": 30,
-  "filled": 25,
+  "tries": 33,
+  "filled": 28,
   "filled_on_loser": 0,
   "filled_unresolved": 0,
   "by_league_tries_filled_lost": {
@@ -18,8 +18,8 @@
     0
    ],
    "cfb": [
+    12,
     9,
-    6,
     0
    ],
    "nfl": [
@@ -31,8 +31,8 @@
   "loser_fills": []
  },
  "at_0.99": {
-  "tries": 30,
-  "filled": 17,
+  "tries": 33,
+  "filled": 20,
   "filled_on_loser": 0,
   "filled_unresolved": 0,
   "by_league_tries_filled_lost": {
@@ -47,8 +47,8 @@
     0
    ],
    "cfb": [
-    9,
-    4,
+    12,
+    7,
     0
    ],
    "nfl": [

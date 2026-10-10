@@ -1,13 +1,13 @@
 {
- "updated": "2026-10-10T13:54:53+00:00",
- "matches_saved": 242,
+ "updated": "2026-10-10T17:05:58+00:00",
+ "matches_saved": 279,
  "s365": {
-  "n": 221,
-  "source_first": 207,
-  "median_lead_s": 181.1,
-  "p10_lead_s": 31.9,
-  "p90_lead_s": 384.0,
-  "score_agree": 205,
+  "n": 246,
+  "source_first": 231,
+  "median_lead_s": 190.7,
+  "p10_lead_s": 33.7,
+  "p90_lead_s": 445.9,
+  "score_agree": 230,
   "score_disagree": [
    "Braga (Doubles): Campos/Nikles vs Drzewiecki/Kalender",
    "Samsun (Doubles): Bagaric/Kulambayeva vs Karamoko/Akugue",
@@ -28,12 +28,12 @@
   ]
  },
  "livescore": {
-  "n": 205,
-  "source_first": 180,
-  "median_lead_s": 158.2,
-  "p10_lead_s": -1.4,
-  "p90_lead_s": 360.3,
-  "score_agree": 186,
+  "n": 240,
+  "source_first": 214,
+  "median_lead_s": 171.5,
+  "p10_lead_s": -0.6,
+  "p90_lead_s": 509.1,
+  "score_agree": 221,
   "score_disagree": [
    "Shanghai Rolex Masters: Ben Shelton vs Daniel Altmaier",
    "Shanghai Rolex Masters: Alexander Zverev vs Yibing Wu",
@@ -81,14 +81,14 @@
    }
   },
   "romania-1": {
-   "n": 3,
+   "n": 4,
    "lead_365": {
-    "n": 3,
-    "median": 230.2
+    "n": 4,
+    "median": 305.2
    },
    "lead_ls": {
-    "n": 3,
-    "median": 196.8
+    "n": 4,
+    "median": 247.1
    }
   },
   "liga-1": {
@@ -290,14 +290,14 @@
    }
   },
   "saudi-professional-league": {
-   "n": 2,
+   "n": 3,
    "lead_365": {
-    "n": 2,
+    "n": 3,
     "median": 84.8
    },
    "lead_ls": {
-    "n": 1,
-    "median": -0.6
+    "n": 2,
+    "median": 141.9
    }
   },
   "soccer-hr1": {
@@ -312,21 +312,21 @@
    }
   },
   "czechia-1": {
-   "n": 1,
+   "n": 3,
    "lead_365": {
     "n": 1,
     "median": 84.7
    },
    "lead_ls": {
-    "n": 1,
+    "n": 3,
     "median": 84.1
    }
   },
   "russian-premier-league": {
-   "n": 2,
+   "n": 4,
    "lead_365": {
-    "n": 2,
-    "median": 200.6
+    "n": 4,
+    "median": 219.9
    },
    "lead_ls": {
     "n": 0,
@@ -356,24 +356,24 @@
    }
   },
   "norway-eliteserien": {
-   "n": 1,
+   "n": 2,
    "lead_365": {
     "n": 1,
     "median": 116.8
    },
    "lead_ls": {
-    "n": 1,
-    "median": 115.6
+    "n": 2,
+    "median": 546.6
    }
   },
   "tur-2025": {
-   "n": 2,
+   "n": 4,
    "lead_365": {
     "n": 1,
     "median": 73.6
    },
    "lead_ls": {
-    "n": 2,
+    "n": 4,
     "median": 294.7
    }
   },
@@ -400,36 +400,36 @@
    }
   },
   "ligue-2": {
-   "n": 5,
+   "n": 7,
    "lead_365": {
-    "n": 5,
-    "median": 328.3
+    "n": 7,
+    "median": 330.7
    },
    "lead_ls": {
-    "n": 5,
-    "median": 324.2
+    "n": 7,
+    "median": 326.6
    }
   },
   "serie-b": {
-   "n": 1,
+   "n": 5,
    "lead_365": {
-    "n": 1,
-    "median": 154.2
+    "n": 3,
+    "median": 2055.7
    },
    "lead_ls": {
-    "n": 1,
-    "median": 115.8
+    "n": 5,
+    "median": 2116.7
    }
   },
   "bundesliga-2025": {
-   "n": 1,
+   "n": 6,
    "lead_365": {
-    "n": 1,
-    "median": 306.5
+    "n": 6,
+    "median": 263.9
    },
    "lead_ls": {
-    "n": 1,
-    "median": 280.1
+    "n": 6,
+    "median": 229.7
    }
   },
   "ligue-1-2025": {
@@ -466,13 +466,13 @@
    }
   },
   "la-liga-2025": {
-   "n": 2,
+   "n": 3,
    "lead_365": {
     "n": 1,
     "median": 389.0
    },
    "lead_ls": {
-    "n": 1,
+    "n": 2,
     "median": 360.3
    }
   },
@@ -521,35 +521,35 @@
    }
   },
   "premier-league-2025": {
-   "n": 1,
+   "n": 5,
    "lead_365": {
-    "n": 1,
-    "median": 305.7
+    "n": 5,
+    "median": 119.1
    },
    "lead_ls": {
-    "n": 1,
-    "median": 304.9
+    "n": 5,
+    "median": 133.9
    }
   },
   "efl-championship": {
-   "n": 3,
+   "n": 9,
    "lead_365": {
-    "n": 3,
-    "median": 365.5
+    "n": 9,
+    "median": 393.7
    },
    "lead_ls": {
-    "n": 3,
-    "median": 304.6
+    "n": 9,
+    "median": 390.1
    }
   },
   "soccer-el1": {
-   "n": 2,
+   "n": 4,
    "lead_365": {
     "n": 2,
     "median": 309.1
    },
    "lead_ls": {
-    "n": 2,
+    "n": 4,
     "median": 308.6
    }
   },
@@ -565,21 +565,54 @@
    }
   },
   "indian-super-league": {
-   "n": 1,
+   "n": 2,
    "lead_365": {
     "n": 1,
     "median": 921.5
    },
    "lead_ls": {
+    "n": 1,
+    "median": 251.2
+   }
+  },
+  "serie-a-2025": {
+   "n": 1,
+   "lead_365": {
+    "n": 1,
+    "median": 83.9
+   },
+   "lead_ls": {
+    "n": 1,
+    "median": -2.5
+   }
+  },
+  "ere-2025": {
+   "n": 1,
+   "lead_365": {
+    "n": 1,
+    "median": 210.2
+   },
+   "lead_ls": {
+    "n": 1,
+    "median": 208.9
+   }
+  },
+  "la-liga-2": {
+   "n": 1,
+   "lead_365": {
     "n": 0,
     "median": null
+   },
+   "lead_ls": {
+    "n": 1,
+    "median": 758.4
    }
   }
  },
  "started": "2026-10-08T18:31:00+00:00",
- "discovered": 257,
- "no_source": 24,
- "errors": 1926,
+ "discovered": 309,
+ "no_source": 33,
+ "errors": 2163,
  "no_source_examples": [
   "AS FAR vs. Wydad Sportif Témara",
   "Braga (Doubles): Pereira/Lopez vs Forcano/Luque",
@@ -604,7 +637,16 @@
   "Shanghai Rolex Masters (Doubles): Zhang/Zhou vs Frantzen/Haase",
   "Shanghai Rolex Masters (Doubles): Liutarevich/Medvedev vs Bublik/Shelton",
   "FK Kolos Kovalivka vs. FK Epitsentr Dunaivtsi",
-  "FC Hradec Králové vs. SK Artis Brno"
+  "FC Hradec Králové vs. SK Artis Brno",
+  "Al Hazem SC vs. NEOM SC",
+  "Middlesbrough FC vs. Wolverhampton Wanderers FC",
+  "Stockport County FC vs. Barnsley FC",
+  "Mansfield Town FC vs. Bromley FC",
+  "Milton Keynes Dons FC vs. Reading FC",
+  "Wealdstone FC vs. Yeovil Town FC",
+  "Tamworth FC vs. Barrow AFC",
+  "FC Halifax Town vs. Gateshead FC",
+  "Feyenoord Rotterdam vs. AZ"
  ],
- "watching_now": 17
+ "watching_now": 32
 }

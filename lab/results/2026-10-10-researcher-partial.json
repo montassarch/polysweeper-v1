@@ -1,0 +1,87 @@
+{
+ "author": "ps-researcher",
+ "date": "2026-10-10",
+ "status": "partial (saved ~4.5 h into the run; main notified)",
+ "final_bid_vs_tape": {
+  "script": "lab/final_bid_vs_tape.py",
+  "results": [
+   "lab/results/2026-10-10-finalbid-vs-tape.json",
+   "lab/results/2026-10-10-finalbid-window-check.json",
+   "lab/results/2026-10-10-finalbid-skips-after-flag.json"
+  ],
+  "shadow_rows": "final_bid: 20 placed, 20 cancelled at Polymarket flag, 13 skipped (flag already out), 0 filled (Oct 9 17:58 to Oct 10 08:02 UTC)",
+  "tape_says": "sells >=5 sh at or below our 0.995 inside the resting window: 1 of 20 (Preston-Krueger, 239 sh at 0.99, 18 s after placement, queue ahead 0, shadow recorded 0 fill = possible detection gap); 1 more only after the flag (Kasatkina, 1,057 sh within 60 s after). 13 skips: 0 of 13 had a sell <=0.995 in the 10 min after the decision.",
+  "live_lead": "placed->flag median 49 s (v2, n=19; 9 of 20 under 35 s); 13 of 33 chances (39%) had the flag already out. 365 seen->flag median 70 s vs feed-race 167 s.",
+  "model_check_same_20_matches": "tape fill share by lead before the flag: T=30 s 1/20, 60 s 3/20, 120 s 5/20, 180 s 8/20, 300 s 14/20 (60-day model: 19%, 29%, 43%, 50%, 60%)"
+ },
+ "row9_out_of_sample": {
+  "script": "lab/stock_ladder_oos.py (+ TAPE_OUT override in lab/stock_ladder_tape.py)",
+  "results": [
+   "lab/results/2026-10-10-stock-ladder-oos.json",
+   "lab/results/2026-10-10-stock-ladder-tape-oos.json"
+  ],
+  "card_test_8_9_oct": "last 90 min, 0.98-0.995, 5+ shares, right side, z>=6: 28 fills, 24 markets, 10 wallets, 0 losers; with >=1% distance 19 fills, 0 losers; Oct 9 any time before the close z>=6: 108 fills, 79 markets, 0 losers",
+  "yahoo_vs_settlement": "0 mismatches in about 1,090 settled strikes on Oct 6-9",
+  "recorder_status": "no lab/results/stock-ladder-shadow-summary.json in the repo; task-list line 204 (start recorder Fri 9 Oct) unticked: not confirmed running"
+ },
+ "mm_backup_23h_recorder": "see report; politics_short_dated pretend: reward 5.27/day + fill P&L +39.7/day on 1,666 peak capital (one market, US-Iran ceasefire, 51 fills); weather -531/day; stocks +111/day one-day marks; sports moneyline -13.6/day. Final read after the recorder ends 10 Oct 10:38 UTC.",
+ "final_bid_policy_counterfactual": {
+  "file": "lab/results/2026-10-10-finalbid-policy-counterfactual.json",
+  "sample": "25 chances with the v2 pipeline (19 placed + 6 skipped because the flag was already out), Oct 10 01:36-08:02 UTC",
+  "P0_current": "1 of 25 would fill by tape (Preston-Krueger, shadow recorded 0)",
+  "P1_keep_bid_after_flag": "2 of 19 placed",
+  "P2_bid_at_365_final_no_second_source_wait": "3 of 25 (Penguins 2,598 sh sold 7 s after the 365 final, 5 s before our placement; Kasatkina 1,065 sh 38+ s after; Preston 239 sh)",
+  "cheap_sells_timing": "of 6,260+3,900 cheap (<=0.995) winner shares sold around the 20 matches, 62% fell in the 120 s BEFORE the 365 final; 0 after 120 s"
+ },
+ "post_flag_cheap_sells_large_sample": {
+  "source": "code/data/shadow/events.jsonl end_window live trades, Oct 3-10, 15 min after the Polymarket ended flag",
+  "tennis": "344 windows: 14% have >=5 sh sold <=0.995 after the flag (10% within 60 s); first one median 4.6 s after the flag (p25 1.9, p75 17.8)",
+  "esports": "406 windows: 6% (3% within 60 s), median 27 s",
+  "us_sports": "76 windows: 0%",
+  "football": "74 windows: 1%"
+ },
+ "cheap_asks_after_result_trend": {
+  "windows_with_cheap_asks_at_start": "Oct 3 3%, Oct 4 5%, Oct 5 2%, Oct 6 2%, Oct 7 0%, Oct 8 0%, Oct 9 0%, Oct 10 0% (967 windows)",
+  "cheap_asks_vanish": "median 84 s (tennis), 88 s (esports), 135 s (US sports) BEFORE the Polymarket flag; no trend over 8 days",
+  "sold_into_bids_share_at_or_below_0.995": "about 1-4% of shares per day, the rest at 0.995+"
+ },
+ "news": {
+  "changelog": "nothing new since 7 Oct (Data API /v2/tokens). 2 Oct: crypto prices default to Chainlink on PolyBolt; 29 Sep: equity TWAP channel, source vendor named per price, new symbols spcx/intc/mstr/crcl/mu.",
+  "taker_rebate_program": "live since 28 May 2026: rebate by 30-day weighted volume wV = size x (1-entry price) x weight (sports 1.0); Bronze needs $2,000 wV; at 0.99 each 5-share buy adds 0.05 wV, so irrelevant for us.",
+  "status_page": "no incidents or maintenance in the last 14 days",
+  "py-clob-client-v2": "v1.2.0 25 Sep adds position_id orders (Exchange V3 signing); old py-clob-client archived 25 May",
+  "football": "club football resumed TODAY Sat 10 Oct (ESPN: EPL 6, La Liga 4, Bundesliga 6, Serie A 3 today; none on 26 Sep and 3 Oct); Polymarket lists 60-100 events per league for the next 7 days; weekly volume of finished football events fell from $160-200M (W37-38) to $5.6M and $2.4M (W39-40)"
+ },
+ "KEY_anchor_correction_T1": {
+  "finding": "The T1 model (R-2026-10-09, tennis_t1_stress.py) set the moment the free sources say over at stamp - 160 s, copied from the feed race. That 160 s is the lead over the Gamma ended FLAG. Against Polymarket finishedTimestamp (the stamp) the lead is a median 25 s (p25 6, p75 50; 20 live matches; first cloud-probe match 17 s). The flag comes a median 51 s after the stamp on the PC (p25 22, p75 138; probe first match 150 s).",
+  "consequence": "Fills at T=60-180 s before the stamp happen in the last minutes of PLAY, not after the end. Re-anchored on the stamp (792 ATP/WTA singles, 14 days, B=0.995, 5 shares, price priority): join at stamp -180 s 54%, -120 s 46%, -60 s 30%, -30 s 19-24%, join at the stamp 19-21%, +15 s 15-17%, +30 s 10-13%, +60 s 8-9%, +120 s 3%. With the live lead distribution and a 15 s pipeline delay, hold to stamp+120 s: 23%; cancel at the stamp: 13%.",
+  "file": "lab/results/2026-10-10-tennis-stamp-anchor.json, lab/tennis_stamp_anchor.py, lab/results/2026-10-10-stamp-vs-flag.json",
+  "cheap_sell_timing_share_of_matches_with_5plus_sh_at_or_below_0.995": "-600..-300 s 30%, -300..-180 23%, -180..-120 18%, -120..-60 27%, -60..-30 23%, -30..0 19%, 0..30 16%, 30..60 10%, 60..120 8%, 120..300 3%, 300..900 1%",
+  "by_day_fill_share_join_stamp_hold_120": "13%-40%, Oct 10 so far 12% (17 matches); last 2 days 27%"
+ },
+ "market_delay_fields": {
+  "secondsDelay_per_moneyline_market": "NBA 0 (41 of 41), MLB 0 (6 of 6), everything else 1 s (NHL, NFL, CFB, WNBA, ATP, WTA, LoL, Dota2, Valorant, football); CS2 32 with 1 s and 68 with 3 s. The help-centre text (3 s; 1 s tested on NBA and MLB) is out of date.",
+  "file": "lab/results/2026-10-10-seconds-delay.json"
+ },
+ "us_calendar": {
+  "listed_games_with_moneyline_next_24_days": "NHL 166, CFB 213 (89 today, 99 on 17 Oct), NFL 43 (12 on 11 Oct, 11 on 18 Oct, 11 on 25 Oct), NBA 41 (preseason to 17 Oct, 3-8 a day), MLB 6, WNBA 3",
+  "file": "lab/results/2026-10-10-us-games-listed.json"
+ },
+ "volume_trend_weekly_finished_events": {
+  "file": "lab/results/2026-10-10-volume-trend.json",
+  "tennis": "W36 $150M, W37 $130M, W38 $77M, W39 $85M, W40 $111M, W41 partial $83M",
+  "esports": "$176M, $173M, $135M, $157M, $175M, $143M partial",
+  "football": "W37 $203M, W38 $161M, W39 $5.6M, W40 $2.4M (no club matches 21 Sep-9 Oct), back from 10 Oct",
+  "NFL": "W38 $99M W39 $122M W40 $118M",
+  "MLB": "$47-67M until W39, $22M W40, $17M W41 (playoffs)"
+ },
+ "T1_price_and_size": {
+  "price_sweep_join_stamp_hold_120_792_matches": "B=0.990 19.6%, 0.991 19.7%, 0.992 19.8%, 0.995 20.1%, 0.998 20.5% (fill share flat); 92% of shares sold in the 120 s after the stamp print at 0.999 and 7.8% at exactly 0.99, nothing between. Bidding 0.991 (one tick above the 0.99 crowd) earns $0.045 per 5-share fill vs $0.025 at 0.995.",
+  "size_scaling_B0.991_queue_free_upper_bound": "5 sh 19.7% of matches ($0.40/day at 45 matches/day), 20 sh 18.2% ($1.47), 50 sh 16.0% ($3.25), 100 sh 14.3% ($5.78), 200 sh 12.2% ($9.92), 500 sh 8.1% ($16.4); median cheap volume when present 350 shares (p25 88, p75 1,227)",
+  "post_flag_cheap_sells_by_league_PC_windows": "ATP 14.8% of 250 windows, WTA 11.7% of 94, CS2 5.3% of 281, LoL 5.9% of 34, Dota2 7.4% of 27, Valorant 33% of 12, NHL/NFL/CFB/MLB 0 of 76, football 0 of 12"
+ },
+ "helper_thread_lead": {
+  "v2_skips_late_detection": "4 of 13 skipped chances had the 365 final first seen 588-2,066 s AFTER Polymarket stamp (Frech 982 s, Ruse 588 s, Llamas 704 s, Moeller 2,066 s). Preston fill at 06:21:09 sits inside the 06:21-06:31 window of the Ruse case. Possible stalls in the final_bid helper thread (single try block, trades poll last) or a candidate rule that waits for bid>=0.85 / ended flag. Unproven; needs the PC log."
+ },
+ "positionIds_recheck_10_oct": "1,593 open moneyline markets sampled in 19 leagues: all have clobTokenIds; 1,242 (78%, was 58% on 8 Oct) also have positionIds; 0 positionIds-only; positionId tokens still have no CLOB book"
+}

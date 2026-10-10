@@ -1,0 +1,454 @@
+{
+ "generated": "2026-10-10T08:13:55.560058Z",
+ "bids": [
+  {
+   "key": "F:5099718:0",
+   "league": "cfb",
+   "q": "Florida A&M vs. Alabama State",
+   "price": 0.995,
+   "best_bid": 0.999,
+   "queue_ahead": 1570.0,
+   "rested_s": 3.8,
+   "shadow_filled": 0.0,
+   "sells_in_window_total": 0,
+   "sells_in_window_le_px": 0,
+   "sells_window_by_price": {},
+   "sells_after_cancel_10min_le_px": 0,
+   "sells_after_cancel_by_price": {
+    "0.999": 5.12
+   },
+   "sells_before_t0_le_px_600s": 1221.4,
+   "n_trades_pulled": 488,
+   "t0": 1791573709.0772722,
+   "t_end": 1791573712.0
+  },
+  {
+   "key": "F:4497797:0",
+   "league": "nhl",
+   "q": "Kraken vs. Red Wings",
+   "price": 0.995,
+   "best_bid": 0.999,
+   "queue_ahead": 0,
+   "rested_s": 32.8,
+   "shadow_filled": 0.0,
+   "sells_in_window_total": 0,
+   "sells_in_window_le_px": 0,
+   "sells_window_by_price": {},
+   "sells_after_cancel_10min_le_px": 0,
+   "sells_after_cancel_by_price": {
+    "0.999": 330.51
+   },
+   "sells_before_t0_le_px_600s": 191.2,
+   "n_trades_pulled": 131,
+   "t0": 1791596214.0793314,
+   "t_end": 1791596246.0
+  },
+  {
+   "key": "F:4497787:1",
+   "league": "nhl",
+   "q": "Rangers vs. Capitals",
+   "price": 0.995,
+   "best_bid": 0.999,
+   "queue_ahead": 0,
+   "rested_s": 95.1,
+   "shadow_filled": 0.0,
+   "sells_in_window_total": 104.8,
+   "sells_in_window_le_px": 0,
+   "sells_window_by_price": {
+    "0.999": 104.8
+   },
+   "sells_after_cancel_10min_le_px": 0,
+   "sells_after_cancel_by_price": {
+    "0.999": 40.09
+   },
+   "sells_before_t0_le_px_600s": 1286.8,
+   "n_trades_pulled": 98,
+   "t0": 1791596412.198934,
+   "t_end": 1791596507.0
+  },
+  {
+   "key": "F:4497792:1",
+   "league": "nhl",
+   "q": "Penguins vs. Blue Jackets",
+   "price": 0.995,
+   "best_bid": 0.99,
+   "queue_ahead": 0.0,
+   "rested_s": 30.7,
+   "shadow_filled": 0.0,
+   "sells_in_window_total": 0,
+   "sells_in_window_le_px": 0,
+   "sells_window_by_price": {},
+   "sells_after_cancel_10min_le_px": 2.8,
+   "sells_after_cancel_by_price": {
+    "0.99": 2.8,
+    "0.999": 4692.28
+   },
+   "sells_before_t0_le_px_600s": 9550.7,
+   "n_trades_pulled": 387,
+   "t0": 1791596927.5127835,
+   "t_end": 1791596958.0
+  },
+  {
+   "key": "F:4497802:0",
+   "league": "nhl",
+   "q": "Ducks vs. Jets",
+   "price": 0.995,
+   "best_bid": 0.999,
+   "queue_ahead": 0,
+   "rested_s": 205.1,
+   "shadow_filled": 0.0,
+   "sells_in_window_total": 0,
+   "sells_in_window_le_px": 0,
+   "sells_window_by_price": {},
+   "sells_after_cancel_10min_le_px": 0,
+   "sells_after_cancel_by_price": {
+    "0.999": 101.78
+   },
+   "sells_before_t0_le_px_600s": 0,
+   "n_trades_pulled": 67,
+   "t0": 1791599642.1480982,
+   "t_end": 1791599847.0
+  },
+  {
+   "key": "F:5095269:1",
+   "league": "cfb",
+   "q": "Florida State vs. Louisville",
+   "price": 0.995,
+   "best_bid": 0.999,
+   "queue_ahead": 5000.0,
+   "rested_s": 49.1,
+   "shadow_filled": 0.0,
+   "sells_in_window_total": 52.3,
+   "sells_in_window_le_px": 0,
+   "sells_window_by_price": {
+    "0.999": 52.31
+   },
+   "sells_after_cancel_10min_le_px": 0,
+   "sells_after_cancel_by_price": {
+    "0.999": 169.79999999999998
+   },
+   "sells_before_t0_le_px_600s": 0,
+   "n_trades_pulled": 22,
+   "t0": 1791600201.8741202,
+   "t_end": 1791600250.0
+  },
+  {
+   "key": "F:5461076:0",
+   "league": "wta",
+   "q": "Wuhan Tennis Open, Qualification: Aoi Ito vs Alycia Parks",
+   "price": 0.995,
+   "best_bid": 0.999,
+   "queue_ahead": 1150.0,
+   "rested_s": 41.0,
+   "shadow_filled": 0.0,
+   "sells_in_window_total": 26.0,
+   "sells_in_window_le_px": 0,
+   "sells_window_by_price": {
+    "0.999": 26.0
+   },
+   "sells_after_cancel_10min_le_px": 0,
+   "sells_after_cancel_by_price": {
+    "0.999": 681.25
+   },
+   "sells_before_t0_le_px_600s": 1737.2,
+   "n_trades_pulled": 72,
+   "t0": 1791606124.5939956,
+   "t_end": 1791606165.0
+  },
+  {
+   "key": "F:5095381:0",
+   "league": "cfb",
+   "q": "Wyoming vs. San Jose State",
+   "price": 0.995,
+   "best_bid": 0.999,
+   "queue_ahead": 0,
+   "rested_s": 118.3,
+   "shadow_filled": 0.0,
+   "sells_in_window_total": 31.5,
+   "sells_in_window_le_px": 0,
+   "sells_window_by_price": {
+    "0.999": 31.490000000000002
+   },
+   "sells_after_cancel_10min_le_px": 0,
+   "sells_after_cancel_by_price": {
+    "0.999": 726.47
+   },
+   "sells_before_t0_le_px_600s": 2863.9,
+   "n_trades_pulled": 243,
+   "t0": 1791606321.862924,
+   "t_end": 1791606440.0
+  },
+  {
+   "key": "F:5095485:0",
+   "league": "cfb",
+   "q": "Iowa vs. Washington",
+   "price": 0.995,
+   "best_bid": 0.999,
+   "queue_ahead": 23331.25,
+   "rested_s": 96.0,
+   "shadow_filled": 0.0,
+   "sells_in_window_total": 306.1,
+   "sells_in_window_le_px": 0,
+   "sells_window_by_price": {
+    "0.999": 306.12
+   },
+   "sells_after_cancel_10min_le_px": 0,
+   "sells_after_cancel_by_price": {
+    "0.999": 12.79
+   },
+   "sells_before_t0_le_px_600s": 0,
+   "n_trades_pulled": 18,
+   "t0": 1791606520.4970515,
+   "t_end": 1791606616.0
+  },
+  {
+   "key": "F:5454575:0",
+   "league": "wta",
+   "q": "Suzhou: Kyoka Okamura vs Elvina Kalieva",
+   "price": 0.995,
+   "best_bid": 0.999,
+   "queue_ahead": 1150.0,
+   "rested_s": 155.1,
+   "shadow_filled": 0.0,
+   "sells_in_window_total": 659.3,
+   "sells_in_window_le_px": 0,
+   "sells_window_by_price": {
+    "0.999": 659.34
+   },
+   "sells_after_cancel_10min_le_px": 0,
+   "sells_after_cancel_by_price": {
+    "0.999": 1157.83
+   },
+   "sells_before_t0_le_px_600s": 1490.2,
+   "n_trades_pulled": 201,
+   "t0": 1791611582.4453666,
+   "t_end": 1791611737.0
+  },
+  {
+   "key": "F:5461072:0",
+   "league": "wta",
+   "q": "Wuhan Tennis Open, Qualification: Daria Kasatkina vs Viktorija Golubic",
+   "price": 0.995,
+   "best_bid": 0.99,
+   "queue_ahead": 0.0,
+   "rested_s": 16.3,
+   "shadow_filled": 0.0,
+   "sells_in_window_total": 0,
+   "sells_in_window_le_px": 0,
+   "sells_window_by_price": {},
+   "sells_after_cancel_10min_le_px": 1065.5,
+   "sells_after_cancel_by_price": {
+    "0.99": 1065.47,
+    "0.999": 5558.17
+   },
+   "sells_before_t0_le_px_600s": 9245.0,
+   "n_trades_pulled": 414,
+   "t0": 1791611850.0403643,
+   "t_end": 1791611866.0
+  },
+  {
+   "key": "F:5455111:0",
+   "league": "atp",
+   "q": "Wuning 3: Alibek Kachmazov vs Omar Jasika",
+   "price": 0.995,
+   "best_bid": 0.999,
+   "queue_ahead": 0,
+   "rested_s": 27.7,
+   "shadow_filled": 0.0,
+   "sells_in_window_total": 0,
+   "sells_in_window_le_px": 0,
+   "sells_window_by_price": {},
+   "sells_after_cancel_10min_le_px": 0,
+   "sells_after_cancel_by_price": {
+    "0.999": 90.0
+   },
+   "sells_before_t0_le_px_600s": 6.3,
+   "n_trades_pulled": 65,
+   "t0": 1791612031.372706,
+   "t_end": 1791612059.0
+  },
+  {
+   "key": "F:5434049:0",
+   "league": "atp",
+   "q": "Shanghai Rolex Masters: Daniil Medvedev vs Jan-Lennard Struff",
+   "price": 0.995,
+   "best_bid": 0.999,
+   "queue_ahead": 0,
+   "rested_s": 145.1,
+   "shadow_filled": 0.0,
+   "sells_in_window_total": 5532.0,
+   "sells_in_window_le_px": 0,
+   "sells_window_by_price": {
+    "0.999": 5532.000000000001
+   },
+   "sells_after_cancel_10min_le_px": 0,
+   "sells_after_cancel_by_price": {
+    "0.999": 2887.01
+   },
+   "sells_before_t0_le_px_600s": 10269.4,
+   "n_trades_pulled": 644,
+   "t0": 1791612380.129501,
+   "t_end": 1791612525.0
+  },
+  {
+   "key": "F:5427278:1",
+   "league": "atp",
+   "q": "Shanghai Rolex Masters: Thiago Agustin Tirante vs Rafael Jodar",
+   "price": 0.995,
+   "best_bid": 0.999,
+   "queue_ahead": 0,
+   "rested_s": 49.0,
+   "shadow_filled": 0.0,
+   "sells_in_window_total": 2858.4,
+   "sells_in_window_le_px": 0,
+   "sells_window_by_price": {
+    "0.999": 2858.38
+   },
+   "sells_after_cancel_10min_le_px": 0,
+   "sells_after_cancel_by_price": {
+    "0.999": 18321.04
+   },
+   "sells_before_t0_le_px_600s": 5084.6,
+   "n_trades_pulled": 521,
+   "t0": 1791612761.3850877,
+   "t_end": 1791612810.0
+  },
+  {
+   "key": "F:5427272:0",
+   "league": "atp",
+   "q": "Shanghai Rolex Masters: Jiri Lehecka vs Nuno Borges",
+   "price": 0.995,
+   "best_bid": 0.999,
+   "queue_ahead": 0,
+   "rested_s": 79.1,
+   "shadow_filled": 0.0,
+   "sells_in_window_total": 476.7,
+   "sells_in_window_le_px": 0,
+   "sells_window_by_price": {
+    "0.999": 476.69000000000005
+   },
+   "sells_after_cancel_10min_le_px": 0,
+   "sells_after_cancel_by_price": {
+    "0.999": 40331.689999999995
+   },
+   "sells_before_t0_le_px_600s": 997.6,
+   "n_trades_pulled": 340,
+   "t0": 1791612874.637807,
+   "t_end": 1791612953.0
+  },
+  {
+   "key": "F:5461086:1",
+   "league": "wta",
+   "q": "Wuhan Tennis Open, Qualification: Taylah Preston vs Ashlyn Krueger",
+   "price": 0.995,
+   "best_bid": 0.99,
+   "queue_ahead": 0.0,
+   "rested_s": 163.9,
+   "shadow_filled": 0.0,
+   "sells_in_window_total": 617.4,
+   "sells_in_window_le_px": 239.4,
+   "sells_window_by_price": {
+    "0.99": 239.41,
+    "0.999": 377.94000000000005
+   },
+   "sells_after_cancel_10min_le_px": 0,
+   "sells_after_cancel_by_price": {
+    "0.999": 93.57
+   },
+   "sells_before_t0_le_px_600s": 225.8,
+   "n_trades_pulled": 151,
+   "t0": 1791613250.9045887,
+   "t_end": 1791613414.0
+  },
+  {
+   "key": "F:5427274:1",
+   "league": "atp",
+   "q": "Shanghai Rolex Masters: Camilo Ugo Carabelli vs Felix Auger-Aliassime",
+   "price": 0.995,
+   "best_bid": 0.999,
+   "queue_ahead": 0,
+   "rested_s": 8.7,
+   "shadow_filled": 0.0,
+   "sells_in_window_total": 263.9,
+   "sells_in_window_le_px": 0,
+   "sells_window_by_price": {
+    "0.999": 263.91
+   },
+   "sells_after_cancel_10min_le_px": 0,
+   "sells_after_cancel_by_price": {
+    "0.999": 24042.760000000006
+   },
+   "sells_before_t0_le_px_600s": 22348.8,
+   "n_trades_pulled": 529,
+   "t0": 1791616207.0847075,
+   "t_end": 1791616215.0
+  },
+  {
+   "key": "F:5461066:1",
+   "league": "wta",
+   "q": "Wuhan Tennis Open, Qualification: Peyton Stearns vs Han Shi",
+   "price": 0.995,
+   "best_bid": 0.999,
+   "queue_ahead": 1150.0,
+   "rested_s": 52.6,
+   "shadow_filled": 0.0,
+   "sells_in_window_total": 610.1,
+   "sells_in_window_le_px": 0,
+   "sells_window_by_price": {
+    "0.999": 610.07
+   },
+   "sells_after_cancel_10min_le_px": 0,
+   "sells_after_cancel_by_price": {
+    "0.999": 451.34
+   },
+   "sells_before_t0_le_px_600s": 170.1,
+   "n_trades_pulled": 330,
+   "t0": 1791616467.9863076,
+   "t_end": 1791616520.0
+  },
+  {
+   "key": "F:5454577:0",
+   "league": "wta",
+   "q": "Suzhou: Rebecca Sramkova vs Renata Zarazua",
+   "price": 0.995,
+   "best_bid": 0.999,
+   "queue_ahead": 1150.0,
+   "rested_s": 23.6,
+   "shadow_filled": 0.0,
+   "sells_in_window_total": 159.2,
+   "sells_in_window_le_px": 0,
+   "sells_window_by_price": {
+    "0.999": 159.19
+   },
+   "sells_after_cancel_10min_le_px": 0,
+   "sells_after_cancel_by_price": {
+    "0.999": 253.0
+   },
+   "sells_before_t0_le_px_600s": 175.6,
+   "n_trades_pulled": 111,
+   "t0": 1791617566.9815843,
+   "t_end": 1791617590.0
+  },
+  {
+   "key": "F:5461068:1",
+   "league": "wta",
+   "q": "Wuhan Tennis Open, Qualification: Sofia Kenin vs Kamilla Rakhimova",
+   "price": 0.995,
+   "best_bid": 0.999,
+   "queue_ahead": 0,
+   "rested_s": 32.1,
+   "shadow_filled": 0.0,
+   "sells_in_window_total": 0,
+   "sells_in_window_le_px": 0,
+   "sells_window_by_price": {},
+   "sells_after_cancel_10min_le_px": 0,
+   "sells_after_cancel_by_price": {
+    "0.999": 5464.32
+   },
+   "sells_before_t0_le_px_600s": 148.2,
+   "n_trades_pulled": 157,
+   "t0": 1791618435.8101988,
+   "t_end": 1791618467.0
+  }
+ ]
+}

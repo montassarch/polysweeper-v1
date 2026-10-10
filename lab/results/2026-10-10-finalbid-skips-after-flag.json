@@ -1,0 +1,119 @@
+[
+ {
+  "q": "Braga: Elmer Moeller vs Tiago Pereira",
+  "league": "atp",
+  "before_dec_le995_120s": 0,
+  "after_dec_60s": 0,
+  "after_dec_300s": 0,
+  "after_dec_600s": 0,
+  "all_sells_after_300s": 0
+ },
+ {
+  "q": "Villena: Pablo Llamas Ruiz vs Pedro Martinez",
+  "league": "atp",
+  "before_dec_le995_120s": 0,
+  "after_dec_60s": 0,
+  "after_dec_300s": 0,
+  "after_dec_600s": 0,
+  "all_sells_after_300s": 1169.0
+ },
+ {
+  "q": "Samsun: Bianca Andreescu vs Anna Blinkova",
+  "league": "wta",
+  "before_dec_le995_120s": 0,
+  "after_dec_60s": 0,
+  "after_dec_300s": 0,
+  "after_dec_600s": 0,
+  "all_sells_after_300s": 9168.0
+ },
+ {
+  "q": "Palermo: Massimo Giunta vs Alejandro Moro Canas",
+  "league": "atp",
+  "before_dec_le995_120s": 938.0,
+  "after_dec_60s": 0,
+  "after_dec_300s": 0,
+  "after_dec_600s": 0,
+  "all_sells_after_300s": 1341.0
+ },
+ {
+  "q": "Antofagasta: Matheus Pucinelli de Almeida vs Joao ",
+  "league": "atp",
+  "before_dec_le995_120s": 1078.0,
+  "after_dec_60s": 0,
+  "after_dec_300s": 0,
+  "after_dec_600s": 0,
+  "all_sells_after_300s": 3897.0
+ },
+ {
+  "q": "Palermo: Enrico Dalla Valle vs Francesco Passaro",
+  "league": "atp",
+  "before_dec_le995_120s": 375.0,
+  "after_dec_60s": 0,
+  "after_dec_300s": 0,
+  "after_dec_600s": 0,
+  "all_sells_after_300s": 4615.0
+ },
+ {
+  "q": "Antofagasta: Juan Carlos Prado vs Miguel Tobon",
+  "league": "atp",
+  "before_dec_le995_120s": 0,
+  "after_dec_60s": 0,
+  "after_dec_300s": 0,
+  "after_dec_600s": 0,
+  "all_sells_after_300s": 127.0
+ },
+ {
+  "q": "Columbia vs. Marist",
+  "league": "cfb",
+  "before_dec_le995_120s": 0,
+  "after_dec_60s": 0,
+  "after_dec_300s": 0,
+  "after_dec_600s": 0,
+  "all_sells_after_300s": 0
+ },
+ {
+  "q": "Wuning 3: Keisuke Saitoh vs Jay Dylan Friend",
+  "league": "atp",
+  "before_dec_le995_120s": 0,
+  "after_dec_60s": 0,
+  "after_dec_300s": 0,
+  "after_dec_600s": 0,
+  "all_sells_after_300s": 140.0
+ },
+ {
+  "q": "Wuhan Tennis Open, Qualification: Talia Gibson vs ",
+  "league": "wta",
+  "before_dec_le995_120s": 0,
+  "after_dec_60s": 0,
+  "after_dec_300s": 0,
+  "after_dec_600s": 0,
+  "all_sells_after_300s": 1521.0
+ },
+ {
+  "q": "Wuhan Tennis Open, Qualification: Magdalena Frech ",
+  "league": "wta",
+  "before_dec_le995_120s": 0,
+  "after_dec_60s": 0,
+  "after_dec_300s": 0,
+  "after_dec_600s": 0,
+  "all_sells_after_300s": 0
+ },
+ {
+  "q": "Wuhan Tennis Open, Qualification: Gabriela Ruse vs",
+  "league": "wta",
+  "before_dec_le995_120s": 0,
+  "after_dec_60s": 0,
+  "after_dec_300s": 0,
+  "after_dec_600s": 0,
+  "all_sells_after_300s": 15348.0
+ },
+ {
+  "q": "Wuhan Tennis Open, Qualification: Zeynep Sonmez vs",
+  "league": "wta",
+  "before_dec_le995_120s": 0,
+  "after_dec_60s": 0,
+  "after_dec_300s": 0,
+  "after_dec_600s": 0,
+  "all_sells_after_300s": 159.0
+ }
+]

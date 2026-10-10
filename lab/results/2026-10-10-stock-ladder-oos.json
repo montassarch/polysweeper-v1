@@ -1,0 +1,385 @@
+{
+ "by_day": {
+  "2026-10-06": {
+   "z>=6": {
+    "fills": 3,
+    "markets": 3,
+    "shares": 30,
+    "wallets": 2,
+    "losers": 0,
+    "avg_price": 0.99
+   },
+   "z4-6": {
+    "fills": 8,
+    "markets": 8,
+    "shares": 112,
+    "wallets": 4,
+    "losers": 0,
+    "avg_price": 0.9889
+   },
+   "z2-4": {
+    "fills": 13,
+    "markets": 11,
+    "shares": 427,
+    "wallets": 8,
+    "losers": 0,
+    "avg_price": 0.9904
+   },
+   "z<2": {
+    "fills": 10,
+    "markets": 5,
+    "shares": 229,
+    "wallets": 4,
+    "losers": 0,
+    "avg_price": 0.9847
+   },
+   "wrong_side": {
+    "fills": 0,
+    "markets": 0,
+    "shares": 0,
+    "wallets": 0,
+    "losers": 0,
+    "avg_price": null
+   },
+   "z>=6_any_time_before_close": {
+    "fills": 14,
+    "markets": 5,
+    "shares": 1658,
+    "wallets": 8,
+    "losers": 0,
+    "avg_price": 0.9898
+   }
+  },
+  "2026-10-07": {
+   "z>=6": {
+    "fills": 6,
+    "markets": 4,
+    "shares": 160,
+    "wallets": 3,
+    "losers": 0,
+    "avg_price": 0.9873
+   },
+   "z4-6": {
+    "fills": 9,
+    "markets": 9,
+    "shares": 226,
+    "wallets": 7,
+    "losers": 0,
+    "avg_price": 0.9897
+   },
+   "z2-4": {
+    "fills": 14,
+    "markets": 8,
+    "shares": 1557,
+    "wallets": 5,
+    "losers": 0,
+    "avg_price": 0.9878
+   },
+   "z<2": {
+    "fills": 8,
+    "markets": 6,
+    "shares": 402,
+    "wallets": 4,
+    "losers": 0,
+    "avg_price": 0.9866
+   },
+   "wrong_side": {
+    "fills": 0,
+    "markets": 0,
+    "shares": 0,
+    "wallets": 0,
+    "losers": 0,
+    "avg_price": null
+   },
+   "z>=6_any_time_before_close": {
+    "fills": 7,
+    "markets": 5,
+    "shares": 211,
+    "wallets": 4,
+    "losers": 0,
+    "avg_price": 0.987
+   }
+  },
+  "2026-10-08": {
+   "z>=6": {
+    "fills": 11,
+    "markets": 8,
+    "shares": 1255,
+    "wallets": 4,
+    "losers": 0,
+    "avg_price": 0.9877
+   },
+   "z4-6": {
+    "fills": 5,
+    "markets": 5,
+    "shares": 156,
+    "wallets": 4,
+    "losers": 0,
+    "avg_price": 0.9899
+   },
+   "z2-4": {
+    "fills": 8,
+    "markets": 6,
+    "shares": 651,
+    "wallets": 3,
+    "losers": 0,
+    "avg_price": 0.9865
+   },
+   "z<2": {
+    "fills": 3,
+    "markets": 3,
+    "shares": 140,
+    "wallets": 3,
+    "losers": 0,
+    "avg_price": 0.9833
+   },
+   "wrong_side": {
+    "fills": 0,
+    "markets": 0,
+    "shares": 0,
+    "wallets": 0,
+    "losers": 0,
+    "avg_price": null
+   },
+   "z>=6_any_time_before_close": {
+    "fills": 11,
+    "markets": 8,
+    "shares": 1255,
+    "wallets": 4,
+    "losers": 0,
+    "avg_price": 0.9877
+   }
+  },
+  "2026-10-09": {
+   "z>=6": {
+    "fills": 17,
+    "markets": 16,
+    "shares": 692,
+    "wallets": 8,
+    "losers": 0,
+    "avg_price": 0.9899
+   },
+   "z4-6": {
+    "fills": 3,
+    "markets": 3,
+    "shares": 570,
+    "wallets": 3,
+    "losers": 0,
+    "avg_price": 0.987
+   },
+   "z2-4": {
+    "fills": 14,
+    "markets": 10,
+    "shares": 566,
+    "wallets": 7,
+    "losers": 0,
+    "avg_price": 0.9849
+   },
+   "z<2": {
+    "fills": 8,
+    "markets": 5,
+    "shares": 2094,
+    "wallets": 5,
+    "losers": 0,
+    "avg_price": 0.9876
+   },
+   "wrong_side": {
+    "fills": 3,
+    "markets": 3,
+    "shares": 107,
+    "wallets": 1,
+    "losers": 0,
+    "avg_price": 0.9883
+   },
+   "z>=6_any_time_before_close": {
+    "fills": 108,
+    "markets": 79,
+    "shares": 3485,
+    "wallets": 30,
+    "losers": 0,
+    "avg_price": 0.9883
+   }
+  }
+ },
+ "oos_8_9_oct_z6": {
+  "fills": 28,
+  "markets": 24,
+  "shares": 1947,
+  "wallets": 10,
+  "losers": 0,
+  "avg_price": 0.9891
+ },
+ "oos_by_family": {
+  "dailyclose_above": {
+   "fills": 8,
+   "markets": 8,
+   "shares": 325,
+   "wallets": 5,
+   "losers": 0,
+   "avg_price": 0.9891
+  },
+  "updown": {
+   "fills": 11,
+   "markets": 7,
+   "shares": 1037,
+   "wallets": 4,
+   "losers": 0,
+   "avg_price": 0.9883
+  },
+  "weekly_bracket": {
+   "fills": 4,
+   "markets": 4,
+   "shares": 40,
+   "wallets": 2,
+   "losers": 0,
+   "avg_price": 0.99
+  },
+  "weekly_hit": {
+   "fills": 5,
+   "markets": 5,
+   "shares": 545,
+   "wallets": 2,
+   "losers": 0,
+   "avg_price": 0.99
+  }
+ },
+ "oos_by_ticker": {
+  "AMZN": {
+   "fills": 2,
+   "markets": 2,
+   "shares": 20,
+   "wallets": 2,
+   "losers": 0,
+   "avg_price": 0.99
+  },
+  "GOOGL": {
+   "fills": 4,
+   "markets": 4,
+   "shares": 36,
+   "wallets": 4,
+   "losers": 0,
+   "avg_price": 0.99
+  },
+  "META": {
+   "fills": 1,
+   "markets": 1,
+   "shares": 10,
+   "wallets": 1,
+   "losers": 0,
+   "avg_price": 0.99
+  },
+  "MSFT": {
+   "fills": 2,
+   "markets": 2,
+   "shares": 220,
+   "wallets": 2,
+   "losers": 0,
+   "avg_price": 0.991
+  },
+  "MU": {
+   "fills": 3,
+   "markets": 3,
+   "shares": 30,
+   "wallets": 1,
+   "losers": 0,
+   "avg_price": 0.99
+  },
+  "NVDA": {
+   "fills": 4,
+   "markets": 4,
+   "shares": 535,
+   "wallets": 3,
+   "losers": 0,
+   "avg_price": 0.99
+  },
+  "PLTR": {
+   "fills": 3,
+   "markets": 2,
+   "shares": 60,
+   "wallets": 3,
+   "losers": 0,
+   "avg_price": 0.9897
+  },
+  "SPCX": {
+   "fills": 1,
+   "markets": 1,
+   "shares": 19,
+   "wallets": 1,
+   "losers": 0,
+   "avg_price": 0.99
+  },
+  "SPY": {
+   "fills": 5,
+   "markets": 2,
+   "shares": 990,
+   "wallets": 1,
+   "losers": 0,
+   "avg_price": 0.9846
+  },
+  "TSLA": {
+   "fills": 3,
+   "markets": 3,
+   "shares": 26,
+   "wallets": 3,
+   "losers": 0,
+   "avg_price": 0.99
+  }
+ },
+ "oos_z6_dist1pct": {
+  "fills": 19,
+  "markets": 18,
+  "shares": 920,
+  "wallets": 9,
+  "losers": 0,
+  "avg_price": 0.9901
+ },
+ "right_side_losers_any_z": [
+  {
+   "slug": "nvda-week-october-9-2026",
+   "g": "$225-$230",
+   "p": 0.99,
+   "sz": 10,
+   "z": 1.41,
+   "dist": 3.884,
+   "min_to_end": 5500.9,
+   "end": "2026-10-09",
+   "fam": "weekly_bracket"
+  }
+ ],
+ "yahoo_vs_settlement": {
+  "dailyclose_above": {
+   "0.05-0.2%|ok": 12,
+   "0.2-0.5%|ok": 12,
+   "0.5-1%|ok": 21,
+   "1%+|ok": 138,
+   "<0.05%|ok": 1
+  },
+  "updown": {
+   "0.05-0.2%|ok": 2,
+   "0.2-0.5%|ok": 8,
+   "0.5-1%|ok": 15,
+   "1%+|ok": 44,
+   "<0.05%|ok": 3
+  },
+  "weekly_hit": {
+   "0.05-0.2%|ok": 19,
+   "0.2-0.5%|ok": 45,
+   "0.5-1%|ok": 57,
+   "1%+|ok": 376,
+   "<0.05%|ok": 3
+  },
+  "weekly_above": {
+   "0.05-0.2%|ok": 2,
+   "0.2-0.5%|ok": 4,
+   "0.5-1%|ok": 9,
+   "1%+|ok": 139
+  },
+  "weekly_bracket": {
+   "0.05-0.2%|ok": 2,
+   "0.2-0.5%|ok": 8,
+   "0.5-1%|ok": 13,
+   "1%+|ok": 109
+  }
+ },
+ "yahoo_mismatches": []
+}

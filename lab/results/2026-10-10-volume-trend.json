@@ -1,0 +1,324 @@
+{
+ "weeks": [
+  "2026-W35",
+  "2026-W36",
+  "2026-W37",
+  "2026-W38",
+  "2026-W39",
+  "2026-W40",
+  "2026-W41",
+  "2026-W42"
+ ],
+ "by_group": {
+  "tennis": {
+   "2026-W35": {
+    "events": 83,
+    "volume_usd": 22020762
+   },
+   "2026-W36": {
+    "events": 515,
+    "volume_usd": 149545670
+   },
+   "2026-W37": {
+    "events": 555,
+    "volume_usd": 130330082
+   },
+   "2026-W38": {
+    "events": 457,
+    "volume_usd": 76518501
+   },
+   "2026-W39": {
+    "events": 481,
+    "volume_usd": 85302640
+   },
+   "2026-W40": {
+    "events": 558,
+    "volume_usd": 111157882
+   },
+   "2026-W41": {
+    "events": 354,
+    "volume_usd": 82564997
+   }
+  },
+  "esports": {
+   "2026-W35": {
+    "events": 148,
+    "volume_usd": 18513816
+   },
+   "2026-W36": {
+    "events": 469,
+    "volume_usd": 175850887
+   },
+   "2026-W37": {
+    "events": 519,
+    "volume_usd": 172939680
+   },
+   "2026-W38": {
+    "events": 394,
+    "volume_usd": 134762742
+   },
+   "2026-W39": {
+    "events": 594,
+    "volume_usd": 156771940
+   },
+   "2026-W40": {
+    "events": 447,
+    "volume_usd": 174995036
+   },
+   "2026-W41": {
+    "events": 320,
+    "volume_usd": 142522064
+   }
+  },
+  "football": {
+   "2026-W35": {
+    "events": 198,
+    "volume_usd": 5553250
+   },
+   "2026-W36": {
+    "events": 695,
+    "volume_usd": 53041377
+   },
+   "2026-W37": {
+    "events": 1153,
+    "volume_usd": 202971686
+   },
+   "2026-W38": {
+    "events": 988,
+    "volume_usd": 161439146
+   },
+   "2026-W39": {
+    "events": 183,
+    "volume_usd": 5548957
+   },
+   "2026-W40": {
+    "events": 39,
+    "volume_usd": 2370959
+   },
+   "2026-W41": {
+    "events": 112,
+    "volume_usd": 12176317
+   }
+  },
+  "MLB": {
+   "2026-W35": {
+    "events": 58,
+    "volume_usd": 46651
+   },
+   "2026-W36": {
+    "events": 847,
+    "volume_usd": 47466372
+   },
+   "2026-W37": {
+    "events": 1070,
+    "volume_usd": 58494896
+   },
+   "2026-W38": {
+    "events": 1127,
+    "volume_usd": 63366395
+   },
+   "2026-W39": {
+    "events": 1047,
+    "volume_usd": 66607853
+   },
+   "2026-W40": {
+    "events": 171,
+    "volume_usd": 21840374
+   },
+   "2026-W41": {
+    "events": 123,
+    "volume_usd": 16643245
+   }
+  },
+  "NFL": {
+   "2026-W35": {
+    "events": 2,
+    "volume_usd": 642374
+   },
+   "2026-W37": {
+    "events": 60,
+    "volume_usd": 27022892
+   },
+   "2026-W38": {
+    "events": 48,
+    "volume_usd": 98677740
+   },
+   "2026-W39": {
+    "events": 63,
+    "volume_usd": 122280044
+   },
+   "2026-W40": {
+    "events": 63,
+    "volume_usd": 117861291
+   },
+   "2026-W41": {
+    "events": 12,
+    "volume_usd": 29668543
+   }
+  },
+  "CFB": {
+   "2026-W35": {
+    "events": 40,
+    "volume_usd": 199034
+   },
+   "2026-W36": {
+    "events": 129,
+    "volume_usd": 15070758
+   },
+   "2026-W37": {
+    "events": 130,
+    "volume_usd": 20647507
+   },
+   "2026-W38": {
+    "events": 128,
+    "volume_usd": 32524818
+   },
+   "2026-W39": {
+    "events": 181,
+    "volume_usd": 43296756
+   },
+   "2026-W40": {
+    "events": 153,
+    "volume_usd": 31321929
+   },
+   "2026-W41": {
+    "events": 25,
+    "volume_usd": 9308832
+   }
+  },
+  "NHL": {
+   "2026-W38": {
+    "events": 12,
+    "volume_usd": 271360
+   },
+   "2026-W39": {
+    "events": 50,
+    "volume_usd": 1309548
+   },
+   "2026-W40": {
+    "events": 36,
+    "volume_usd": 9708698
+   },
+   "2026-W41": {
+    "events": 33,
+    "volume_usd": 10131056
+   }
+  },
+  "NBA/WNBA": {
+   "2026-W35": {
+    "events": 5,
+    "volume_usd": 1976297
+   },
+   "2026-W36": {
+    "events": 1,
+    "volume_usd": 337659
+   },
+   "2026-W38": {
+    "events": 15,
+    "volume_usd": 4718573
+   },
+   "2026-W39": {
+    "events": 18,
+    "volume_usd": 7422329
+   },
+   "2026-W40": {
+    "events": 14,
+    "volume_usd": 7008091
+   },
+   "2026-W41": {
+    "events": 28,
+    "volume_usd": 11622536
+   },
+   "2026-W42": {
+    "events": 2,
+    "volume_usd": 0
+   }
+  }
+ },
+ "by_league_total": {
+  "ATP": {
+   "events": 2104,
+   "volume_usd": 436197840
+  },
+  "WTA": {
+   "events": 899,
+   "volume_usd": 221242694
+  },
+  "CS2": {
+   "events": 2054,
+   "volume_usd": 376598664
+  },
+  "DOTA2": {
+   "events": 293,
+   "volume_usd": 196742683
+  },
+  "LOL": {
+   "events": 398,
+   "volume_usd": 361155588
+  },
+  "VAL": {
+   "events": 146,
+   "volume_usd": 41859228
+  },
+  "EPL": {
+   "events": 299,
+   "volume_usd": 99846176
+  },
+  "LAL": {
+   "events": 395,
+   "volume_usd": 101506951
+  },
+  "BUN": {
+   "events": 199,
+   "volume_usd": 27015324
+  },
+  "SEA": {
+   "events": 299,
+   "volume_usd": 40642271
+  },
+  "FL1": {
+   "events": 299,
+   "volume_usd": 23538125
+  },
+  "UCL": {
+   "events": 144,
+   "volume_usd": 81774661
+  },
+  "MLS": {
+   "events": 870,
+   "volume_usd": 29758350
+  },
+  "ELC": {
+   "events": 489,
+   "volume_usd": 16693080
+  },
+  "BRA": {
+   "events": 374,
+   "volume_usd": 22326754
+  },
+  "MLB": {
+   "events": 4443,
+   "volume_usd": 274465786
+  },
+  "NFL": {
+   "events": 248,
+   "volume_usd": 396152884
+  },
+  "CFB": {
+   "events": 786,
+   "volume_usd": 152369634
+  },
+  "NHL": {
+   "events": 131,
+   "volume_usd": 21420663
+  },
+  "NBA": {
+   "events": 25,
+   "volume_usd": 8622893
+  },
+  "WNBA": {
+   "events": 58,
+   "volume_usd": 24462591
+  }
+ }
+}

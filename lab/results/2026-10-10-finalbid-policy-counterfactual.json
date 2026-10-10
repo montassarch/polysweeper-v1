@@ -1,0 +1,332 @@
+[
+ {
+  "kind": "skip",
+  "league": "atp",
+  "q": "Braga: Elmer Moeller vs Tiago Pereira",
+  "v2": false,
+  "P0_now": 0,
+  "P1_keep_after_flag": null,
+  "P2_first_source_keep": 0,
+  "P2_first_source_cancel_flag": null
+ },
+ {
+  "kind": "skip",
+  "league": "atp",
+  "q": "Villena: Pablo Llamas Ruiz vs Pedro Martinez",
+  "v2": false,
+  "P0_now": 0,
+  "P1_keep_after_flag": null,
+  "P2_first_source_keep": 0,
+  "P2_first_source_cancel_flag": null
+ },
+ {
+  "kind": "skip",
+  "league": "wta",
+  "q": "Samsun: Bianca Andreescu vs Anna Blinkova",
+  "v2": false,
+  "P0_now": 0,
+  "P1_keep_after_flag": null,
+  "P2_first_source_keep": 0,
+  "P2_first_source_cancel_flag": null
+ },
+ {
+  "kind": "skip",
+  "league": "atp",
+  "q": "Palermo: Massimo Giunta vs Alejandro Moro Can",
+  "v2": false,
+  "P0_now": 0,
+  "P1_keep_after_flag": null,
+  "P2_first_source_keep": 6224.0,
+  "P2_first_source_cancel_flag": null
+ },
+ {
+  "kind": "skip",
+  "league": "atp",
+  "q": "Antofagasta: Matheus Pucinelli de Almeida vs ",
+  "v2": false,
+  "P0_now": 0,
+  "P1_keep_after_flag": null,
+  "P2_first_source_keep": 0,
+  "P2_first_source_cancel_flag": null
+ },
+ {
+  "kind": "placed",
+  "league": "cfb",
+  "q": "Florida A&M vs. Alabama State",
+  "v2": false,
+  "P0_now": 0,
+  "P1_keep_after_flag": 0,
+  "P2_first_source_keep": 0,
+  "P2_first_source_cancel_flag": 0
+ },
+ {
+  "kind": "skip",
+  "league": "atp",
+  "q": "Palermo: Enrico Dalla Valle vs Francesco Pass",
+  "v2": false,
+  "P0_now": 0,
+  "P1_keep_after_flag": null,
+  "P2_first_source_keep": 0,
+  "P2_first_source_cancel_flag": null
+ },
+ {
+  "kind": "skip",
+  "league": "atp",
+  "q": "Antofagasta: Juan Carlos Prado vs Miguel Tobo",
+  "v2": false,
+  "P0_now": 0,
+  "P1_keep_after_flag": null,
+  "P2_first_source_keep": 0,
+  "P2_first_source_cancel_flag": null
+ },
+ {
+  "kind": "placed",
+  "league": "nhl",
+  "q": "Kraken vs. Red Wings",
+  "v2": true,
+  "P0_now": 0,
+  "P1_keep_after_flag": 0,
+  "P2_first_source_keep": 0,
+  "P2_first_source_cancel_flag": 0
+ },
+ {
+  "kind": "placed",
+  "league": "nhl",
+  "q": "Rangers vs. Capitals",
+  "v2": true,
+  "P0_now": 0,
+  "P1_keep_after_flag": 0,
+  "P2_first_source_keep": 0,
+  "P2_first_source_cancel_flag": 0
+ },
+ {
+  "kind": "placed",
+  "league": "nhl",
+  "q": "Penguins vs. Blue Jackets",
+  "v2": true,
+  "P0_now": 0,
+  "P1_keep_after_flag": 3.0,
+  "P2_first_source_keep": 2598.0,
+  "P2_first_source_cancel_flag": 2595.0
+ },
+ {
+  "kind": "placed",
+  "league": "nhl",
+  "q": "Ducks vs. Jets",
+  "v2": true,
+  "P0_now": 0,
+  "P1_keep_after_flag": 0,
+  "P2_first_source_keep": 0,
+  "P2_first_source_cancel_flag": 0
+ },
+ {
+  "kind": "skip",
+  "league": "cfb",
+  "q": "Columbia vs. Marist",
+  "v2": true,
+  "P0_now": 0,
+  "P1_keep_after_flag": null,
+  "P2_first_source_keep": 0,
+  "P2_first_source_cancel_flag": null
+ },
+ {
+  "kind": "placed",
+  "league": "cfb",
+  "q": "Florida State vs. Louisville",
+  "v2": true,
+  "P0_now": 0,
+  "P1_keep_after_flag": 0,
+  "P2_first_source_keep": 0,
+  "P2_first_source_cancel_flag": 0
+ },
+ {
+  "kind": "skip",
+  "league": "atp",
+  "q": "Wuning 3: Keisuke Saitoh vs Jay Dylan Friend",
+  "v2": true,
+  "P0_now": 0,
+  "P1_keep_after_flag": null,
+  "P2_first_source_keep": 0,
+  "P2_first_source_cancel_flag": null
+ },
+ {
+  "kind": "placed",
+  "league": "wta",
+  "q": "Wuhan Tennis Open, Qualification: Aoi Ito vs ",
+  "v2": true,
+  "P0_now": 0,
+  "P1_keep_after_flag": 0,
+  "P2_first_source_keep": 0,
+  "P2_first_source_cancel_flag": 0
+ },
+ {
+  "kind": "placed",
+  "league": "cfb",
+  "q": "Wyoming vs. San Jose State",
+  "v2": true,
+  "P0_now": 0,
+  "P1_keep_after_flag": 0,
+  "P2_first_source_keep": 0,
+  "P2_first_source_cancel_flag": 0
+ },
+ {
+  "kind": "placed",
+  "league": "cfb",
+  "q": "Iowa vs. Washington",
+  "v2": true,
+  "P0_now": 0,
+  "P1_keep_after_flag": 0,
+  "P2_first_source_keep": 0,
+  "P2_first_source_cancel_flag": 0
+ },
+ {
+  "kind": "skip",
+  "league": "wta",
+  "q": "Wuhan Tennis Open, Qualification: Talia Gibso",
+  "v2": true,
+  "P0_now": 0,
+  "P1_keep_after_flag": null,
+  "P2_first_source_keep": 0,
+  "P2_first_source_cancel_flag": null
+ },
+ {
+  "kind": "skip",
+  "league": "wta",
+  "q": "Wuhan Tennis Open, Qualification: Magdalena F",
+  "v2": true,
+  "P0_now": 0,
+  "P1_keep_after_flag": null,
+  "P2_first_source_keep": 0,
+  "P2_first_source_cancel_flag": null
+ },
+ {
+  "kind": "placed",
+  "league": "wta",
+  "q": "Suzhou: Kyoka Okamura vs Elvina Kalieva",
+  "v2": true,
+  "P0_now": 0,
+  "P1_keep_after_flag": 0,
+  "P2_first_source_keep": 0,
+  "P2_first_source_cancel_flag": 0
+ },
+ {
+  "kind": "placed",
+  "league": "wta",
+  "q": "Wuhan Tennis Open, Qualification: Daria Kasat",
+  "v2": true,
+  "P0_now": 0,
+  "P1_keep_after_flag": 1065.0,
+  "P2_first_source_keep": 1065.0,
+  "P2_first_source_cancel_flag": 0
+ },
+ {
+  "kind": "placed",
+  "league": "atp",
+  "q": "Wuning 3: Alibek Kachmazov vs Omar Jasika",
+  "v2": true,
+  "P0_now": 0,
+  "P1_keep_after_flag": 0,
+  "P2_first_source_keep": 0,
+  "P2_first_source_cancel_flag": 0
+ },
+ {
+  "kind": "placed",
+  "league": "atp",
+  "q": "Shanghai Rolex Masters: Daniil Medvedev vs Ja",
+  "v2": true,
+  "P0_now": 0,
+  "P1_keep_after_flag": 0,
+  "P2_first_source_keep": 0,
+  "P2_first_source_cancel_flag": 0
+ },
+ {
+  "kind": "placed",
+  "league": "atp",
+  "q": "Shanghai Rolex Masters: Thiago Agustin Tirant",
+  "v2": true,
+  "P0_now": 0,
+  "P1_keep_after_flag": 0,
+  "P2_first_source_keep": 0,
+  "P2_first_source_cancel_flag": 0
+ },
+ {
+  "kind": "placed",
+  "league": "atp",
+  "q": "Shanghai Rolex Masters: Jiri Lehecka vs Nuno ",
+  "v2": true,
+  "P0_now": 0,
+  "P1_keep_after_flag": 0,
+  "P2_first_source_keep": 0,
+  "P2_first_source_cancel_flag": 0
+ },
+ {
+  "kind": "placed",
+  "league": "wta",
+  "q": "Wuhan Tennis Open, Qualification: Taylah Pres",
+  "v2": true,
+  "P0_now": 239.0,
+  "P1_keep_after_flag": 239.0,
+  "P2_first_source_keep": 239.0,
+  "P2_first_source_cancel_flag": 239.0
+ },
+ {
+  "kind": "skip",
+  "league": "wta",
+  "q": "Wuhan Tennis Open, Qualification: Gabriela Ru",
+  "v2": true,
+  "P0_now": 0,
+  "P1_keep_after_flag": null,
+  "P2_first_source_keep": 0,
+  "P2_first_source_cancel_flag": null
+ },
+ {
+  "kind": "placed",
+  "league": "atp",
+  "q": "Shanghai Rolex Masters: Camilo Ugo Carabelli ",
+  "v2": true,
+  "P0_now": 0,
+  "P1_keep_after_flag": 0,
+  "P2_first_source_keep": 0,
+  "P2_first_source_cancel_flag": 0
+ },
+ {
+  "kind": "placed",
+  "league": "wta",
+  "q": "Wuhan Tennis Open, Qualification: Peyton Stea",
+  "v2": true,
+  "P0_now": 0,
+  "P1_keep_after_flag": 0,
+  "P2_first_source_keep": 0,
+  "P2_first_source_cancel_flag": 0
+ },
+ {
+  "kind": "placed",
+  "league": "wta",
+  "q": "Suzhou: Rebecca Sramkova vs Renata Zarazua",
+  "v2": true,
+  "P0_now": 0,
+  "P1_keep_after_flag": 0,
+  "P2_first_source_keep": 0,
+  "P2_first_source_cancel_flag": 0
+ },
+ {
+  "kind": "placed",
+  "league": "wta",
+  "q": "Wuhan Tennis Open, Qualification: Sofia Kenin",
+  "v2": true,
+  "P0_now": 0,
+  "P1_keep_after_flag": 0,
+  "P2_first_source_keep": 0,
+  "P2_first_source_cancel_flag": 0
+ },
+ {
+  "kind": "skip",
+  "league": "wta",
+  "q": "Wuhan Tennis Open, Qualification: Zeynep Sonm",
+  "v2": true,
+  "P0_now": 0,
+  "P1_keep_after_flag": null,
+  "P2_first_source_keep": 0,
+  "P2_first_source_cancel_flag": null
+ }
+]

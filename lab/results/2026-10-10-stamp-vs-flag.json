@@ -1,0 +1,182 @@
+[
+ {
+  "q": "Florida A&M vs. Alabama State",
+  "league": "cfb",
+  "seen_to_stamp": -3.4,
+  "stamp_to_flag": 8.0,
+  "seen_to_flag": 4.6,
+  "placed_to_stamp": -5.1,
+  "spec": "28-27"
+ },
+ {
+  "q": "Kraken vs. Red Wings",
+  "league": "nhl",
+  "seen_to_stamp": 0.6,
+  "stamp_to_flag": 42.0,
+  "seen_to_flag": 42.6,
+  "placed_to_stamp": -10.1,
+  "spec": "6-3"
+ },
+ {
+  "q": "Rangers vs. Capitals",
+  "league": "nhl",
+  "seen_to_stamp": 46.2,
+  "stamp_to_flag": 60.0,
+  "seen_to_flag": 106.2,
+  "placed_to_stamp": 34.8,
+  "spec": "1-3"
+ },
+ {
+  "q": "Penguins vs. Blue Jackets",
+  "league": "nhl",
+  "seen_to_stamp": 14.4,
+  "stamp_to_flag": 28.0,
+  "seen_to_flag": 42.4,
+  "placed_to_stamp": 2.5,
+  "spec": "2-3"
+ },
+ {
+  "q": "Ducks vs. Jets",
+  "league": "nhl",
+  "seen_to_stamp": 98.4,
+  "stamp_to_flag": 138.0,
+  "seen_to_flag": 236.4,
+  "placed_to_stamp": 66.9,
+  "spec": "5-1"
+ },
+ {
+  "q": "Florida State vs. Louisville",
+  "league": "cfb",
+  "seen_to_stamp": 117.5,
+  "stamp_to_flag": -67.0,
+  "seen_to_flag": 50.5,
+  "placed_to_stamp": 115.1,
+  "spec": "20-44"
+ },
+ {
+  "q": "Wuhan Tennis Open, Qualification: Aoi Ito ",
+  "league": "wta",
+  "seen_to_stamp": 73.8,
+  "stamp_to_flag": -3.0,
+  "seen_to_flag": 70.8,
+  "placed_to_stamp": 43.4,
+  "spec": "6-4, 6-1"
+ },
+ {
+  "q": "Wyoming vs. San Jose State",
+  "league": "cfb",
+  "seen_to_stamp": -6.2,
+  "stamp_to_flag": 138.0,
+  "seen_to_flag": 131.8,
+  "placed_to_stamp": -19.9,
+  "spec": "16-13"
+ },
+ {
+  "q": "Iowa vs. Washington",
+  "league": "cfb",
+  "seen_to_stamp": -1.0,
+  "stamp_to_flag": 110.0,
+  "seen_to_flag": 109.0,
+  "placed_to_stamp": -14.5,
+  "spec": "41-24"
+ },
+ {
+  "q": "Suzhou: Kyoka Okamura vs Elvina Kalieva",
+  "league": "wta",
+  "seen_to_stamp": 60.1,
+  "stamp_to_flag": 146.0,
+  "seen_to_flag": 206.1,
+  "placed_to_stamp": 8.6,
+  "spec": "6-1, 7-6(7-1)"
+ },
+ {
+  "q": "Wuhan Tennis Open, Qualification: Daria Ka",
+  "league": "wta",
+  "seen_to_stamp": 27.0,
+  "stamp_to_flag": 5.0,
+  "seen_to_flag": 32.0,
+  "placed_to_stamp": 11.0,
+  "spec": "4-6, 7-6(7-3), 6-4"
+ },
+ {
+  "q": "Wuning 3: Alibek Kachmazov vs Omar Jasika",
+  "league": "atp",
+  "seen_to_stamp": 23.8,
+  "stamp_to_flag": 31.0,
+  "seen_to_flag": 54.8,
+  "placed_to_stamp": -3.4,
+  "spec": "7-6(7-4), 6-3"
+ },
+ {
+  "q": "Shanghai Rolex Masters: Daniil Medvedev vs",
+  "league": "atp",
+  "seen_to_stamp": -3.8,
+  "stamp_to_flag": 152.0,
+  "seen_to_flag": 148.2,
+  "placed_to_stamp": -7.1,
+  "spec": "4-6, 6-4, 6-3"
+ },
+ {
+  "q": "Shanghai Rolex Masters: Thiago Agustin Tir",
+  "league": "atp",
+  "seen_to_stamp": 46.5,
+  "stamp_to_flag": 64.0,
+  "seen_to_flag": 110.5,
+  "placed_to_stamp": -15.4,
+  "spec": "6-4, 2-6, 3-6"
+ },
+ {
+  "q": "Shanghai Rolex Masters: Jiri Lehecka vs Nu",
+  "league": "atp",
+  "seen_to_stamp": 44.8,
+  "stamp_to_flag": 84.0,
+  "seen_to_flag": 128.8,
+  "placed_to_stamp": -5.6,
+  "spec": "6-3, 3-6, 6-3"
+ },
+ {
+  "q": "Wuhan Tennis Open, Qualification: Taylah P",
+  "league": "wta",
+  "seen_to_stamp": 50.2,
+  "stamp_to_flag": 146.0,
+  "seen_to_flag": 196.2,
+  "placed_to_stamp": 17.1,
+  "spec": "3-6, 6-7(8-10)"
+ },
+ {
+  "q": "Shanghai Rolex Masters: Camilo Ugo Carabel",
+  "league": "atp",
+  "seen_to_stamp": 40.9,
+  "stamp_to_flag": -19.0,
+  "seen_to_flag": 21.9,
+  "placed_to_stamp": 26.9,
+  "spec": "6-4, 6-7(1-7), 5-7"
+ },
+ {
+  "q": "Wuhan Tennis Open, Qualification: Peyton S",
+  "league": "wta",
+  "seen_to_stamp": 5.9,
+  "stamp_to_flag": 64.0,
+  "seen_to_flag": 69.9,
+  "placed_to_stamp": -12.0,
+  "spec": "6-2, 5-7, 4-6"
+ },
+ {
+  "q": "Suzhou: Rebecca Sramkova vs Renata Zarazua",
+  "league": "wta",
+  "seen_to_stamp": 13.4,
+  "stamp_to_flag": 22.0,
+  "seen_to_flag": 35.4,
+  "placed_to_stamp": 1.0,
+  "spec": "7-5, 6-3"
+ },
+ {
+  "q": "Wuhan Tennis Open, Qualification: Sofia Ke",
+  "league": "wta",
+  "seen_to_stamp": 21.8,
+  "stamp_to_flag": 36.0,
+  "seen_to_flag": 57.8,
+  "placed_to_stamp": -4.8,
+  "spec": "0-6, 3-6"
+ }
+]

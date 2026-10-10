@@ -16,12 +16,12 @@ Yahoo and Pyth can disagree.
 
 Read-only. Nothing here places orders.
 """
-import bisect, collections, datetime, itertools, json, math, re, sys
+import bisect, collections, datetime, itertools, json, math, os, re, sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 RAW = ROOT / "lab/data/raw/stockladder"
-OUT = ROOT / "lab/results/2026-10-08-stock-ladder-tape.json"
+OUT = Path(os.environ["TAPE_OUT"]) if os.environ.get("TAPE_OUT") else ROOT / "lab/results/2026-10-08-stock-ladder-tape.json"   # TAPE_OUT overrides the result file
 CLOSE_H = 20  # 16:00 ET = 20:00 UTC while US daylight time lasts (until 1 Nov 2026)
 
 
